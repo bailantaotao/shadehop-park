@@ -90,20 +90,20 @@
   }
  },
  "charger_summary": {
-  "fast": 0,
+  "fast": 2,
   "nearest_any_m": 779,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "nearest_fast_m": 1267,
+  "nearest_slow_m": 779,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 5,
-  "unknown": 5
+  "slow": 1,
+  "total": 4,
+  "unknown": 1
  },
  "chargers": [
   {
    "access": null,
    "brand": "EValue",
-   "capacity": 7,
+   "capacity": null,
    "distance_m": 779,
    "distance_method": "straight_line",
    "fee": "yes",
@@ -111,7 +111,7 @@
     "lat": 25.07114,
     "lng": 121.365178
    },
-   "max_kw": null,
+   "max_kw": 7.0,
    "method": "osm",
    "name": "EValue 三井林口",
    "opening_hours": null,
@@ -122,8 +122,9 @@
     "url": "https://www.openstreetmap.org/node/10649110861"
    },
    "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "output",
    "verified_at": "2026-10-12"
   },
   {
@@ -147,15 +148,31 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13651716778"
    },
-   "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "sockets",
    "verified_at": "2026-10-12"
   },
   {
    "access": null,
    "brand": "U-Power 新北林口站",
-   "capacity": 360,
+   "capacity": null,
    "distance_m": 1335,
    "distance_method": "straight_line",
    "fee": null,
@@ -163,7 +180,7 @@
     "lat": 25.076712,
     "lng": 121.380438
    },
-   "max_kw": null,
+   "max_kw": 360.0,
    "method": "osm",
    "name": "U-Power 新北林口站",
    "opening_hours": null,
@@ -174,8 +191,9 @@
     "url": "https://www.openstreetmap.org/node/10648160168"
    },
    "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "output",
    "verified_at": "2026-10-12"
   },
   {
@@ -202,38 +220,14 @@
    "sockets": [],
    "speed": "unknown",
    "speed_label": "未標示",
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": null,
-   "distance_m": 1977,
-   "distance_method": "straight_line",
-   "fee": null,
-   "location": {
-    "lat": 25.077299,
-    "lng": 121.386873
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "GoStation",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5905442794,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5905442794"
-   },
-   "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
+   "speed_source": null,
    "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "lk-w1087265797",
+ "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
@@ -414,11 +408,13 @@
   "surface": null,
   "wheelchair": null
  },
+ "playground_mapped": true,
  "rain_cover": {
   "confidence": "low",
+  "covered_area_m2": 0,
   "covered_ratio": 0.0,
   "method": "osm",
-  "note": "OSM 未標示覆蓋此遊戲場的高架或屋頂；未實地驗證",
+  "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1087265797",
   "value": false,
   "verified_at": "2026-10-12"

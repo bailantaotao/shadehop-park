@@ -2,7 +2,7 @@
 
 > 新北市林口區兒童遊戲場的遮陽/避雨資訊：哪些在高架或屋頂下（下雨可玩）、每個月每半小時被大樓陰影遮住多少、最遮陰的時段、附近停車場，以及電動車快充（DC）/慢充（AC）充電站。資料來自 OpenStreetMap（{{ meta.generated_from_osm_base }}），遮陰為模型推估。
 
-收錄 {{ meta.counts.parks }} 處遊戲場：全天候遮蔽（A）{{ meta.counts.by_level.A }} 處、建物陰影遮陰（C）{{ meta.counts.by_level.C }} 處、部分遮陽/樹蔭（B）{{ meta.counts.by_level.B }} 處、大多曝曬 {{ meta.counts.by_level.none }} 處。
+收錄 {{ meta.counts.parks }} 處（OSM 標示的遊戲場 {{ meta.counts.mapped_playgrounds }} 處；遊戲設施未標示、待確認的公園 {{ meta.counts.park_candidates }} 處，`kind: "park"`）：全天候遮蔽（A）{{ meta.counts.by_level.A }} 處、建物陰影遮陰（C）{{ meta.counts.by_level.C }} 處、部分遮陽/樹蔭（B）{{ meta.counts.by_level.B }} 處、大多曝曬 {{ meta.counts.by_level.none }} 處。
 
 ## 如何正確使用這份資料
 

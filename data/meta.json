@@ -21,13 +21,15 @@
   "buildings_with_height": 412,
   "by_level": {
    "A": 0,
-   "B": 0,
+   "B": 1,
    "C": 0,
-   "none": 8
+   "none": 53
   },
-  "chargers_in_bbox": 7,
+  "chargers_in_bbox": 6,
+  "mapped_playgrounds": 8,
+  "park_candidates": 46,
   "parking_lots_in_bbox": 246,
-  "parks": 8
+  "parks": 54
  },
  "fetched_at": "2026-10-12T18:10:05+00:00",
  "generated_from_osm_base": "2026-10-12T18:20:36Z",

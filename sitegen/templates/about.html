@@ -4,7 +4,7 @@
 {% block head %}<script type="application/ld+json">{{ dataset_ld | tojson_ld | safe }}</script>{% endblock %}
 {% block main %}
 <h1 style="font-size:1.4rem">資料與方法</h1>
-<p>本站收錄 {{ meta.region.city }}{{ meta.region.name }} 在 OpenStreetMap 上標記為兒童遊戲場（<code>leisure=playground</code>）、且非私人的地點，共 {{ meta.counts.parks }} 處。資料版本 {{ meta.generated_from_osm_base }}。</p>
+<p>本站收錄 {{ meta.region.city }}{{ meta.region.name }} 在 OpenStreetMap 上非私人的兒童遊戲場（<code>leisure=playground</code>）{{ meta.counts.mapped_playgrounds }} 處，以及尚未標示遊戲場的公園（<code>leisure=park</code>）{{ meta.counts.park_candidates }} 處，共 {{ meta.counts.parks }} 處。台灣多數社區公園都有遊戲設施，但 OSM 上很少單獨標示，因此公園列為「遊戲設施待確認」。資料版本 {{ meta.generated_from_osm_base }}。</p>
 
 <section>
 <h2>遮蔽分級</h2>

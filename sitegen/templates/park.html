@@ -12,6 +12,7 @@
 <div class="badges">
   <span class="badge {{ p.level }}">{{ p.level_label }}</span>
   {% if p.park_name %}<span class="badge">位於 {{ p.park_name }}</span>{% endif %}
+  {% if not p.playground_mapped %}<span class="badge">遊戲設施未在 OSM 標示，待確認</span>{% endif %}
   {% if p.geometry_estimated %}<span class="badge">範圍為估計（OSM 僅標示一點）</span>{% endif %}
 </div>
 <p>{{ description }}</p>
@@ -48,6 +49,7 @@
 </table>
 </div>
 <p class="legend" style="margin-top:6px"><span><span class="dot hi"></span>≥60%</span><span><span class="dot mid"></span>30–60%</span><span><span class="dot lo"></span>&lt;30%</span><span><span class="dot night"></span>無日照</span></p>
+{% if p.shade_timetable.building_height_known_share < 0.3 %}<p class="banner">⚠️ 周邊建物只有 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘以 9m 估計，大樓陰影可能被<strong>低估</strong>。</p>{% endif %}
 <p class="prov">方法：{{ METHOD_LABEL[p.shade_timetable.method] }}；信心：{{ CONF_LABEL[p.shade_timetable.confidence] }}。周邊 {{ p.shade_timetable.buildings_considered }} 棟建物中 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘以 9m 估計。{{ p.shade_timetable.note }}</p>
 </section>
 

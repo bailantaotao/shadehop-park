@@ -8,6 +8,8 @@
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z]{2,4}-[nwr][0-9]+$", "description": "Stable ID: region prefix + OSM element type initial + OSM id, e.g. lk-w123456." },
     "name": { "type": "string" },
+    "kind": { "enum": ["playground", "park"], "description": "park = a park with no playground mapped in OSM (play equipment unconfirmed)." },
+    "playground_mapped": { "type": "boolean" },
     "name_source": { "enum": ["osm_name", "park_name", "nearest_street", "none"] },
     "park_name": { "type": ["string", "null"] },
     "region": { "type": "object", "properties": { "city": { "type": "string" }, "district": { "type": "string" } } },
@@ -159,6 +161,7 @@
         "operator": { "type": ["string", "null"] },
         "speed": { "enum": ["fast", "slow", "both", "unknown"], "description": "fast = DC (CCS/CHAdeMO/Supercharger), slow = AC (Type 1/Type 2), unknown = not tagged." },
         "speed_label": { "type": "string" },
+        "speed_source": { "enum": ["sockets", "output", "brand", null], "description": "Evidence for speed: socket tags, tagged power, or a DC-only operator." },
         "max_kw": { "type": ["number", "null"] },
         "sockets": {
           "type": "array",

@@ -66,6 +66,9 @@ TZ_OFFSET_H = 8  # Asia/Taipei, no DST
 # Classification thresholds.
 COVERED_FULL_RATIO = 0.5  # >= this share under a roof/viaduct -> level A
 COVERED_PARTIAL_RATIO = 0.15
+# A park with at least this much area under a viaduct (not pavilions) has a rain-proof play spot even if
+# the share of the whole park is small.
+COVERED_MIN_AREA_M2 = 150
 SHADED_SLOT_RATIO = 0.6  # a slot counts as "shaded" at >= 60% coverage
 LEVEL_C_MIN_DAYTIME_SHARE = 0.4  # share of 09-16 slots shaded, averaged over months
 

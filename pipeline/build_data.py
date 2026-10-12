@@ -17,7 +17,7 @@ from shapely.geometry import Point
 from shapely.ops import unary_union
 
 from . import config
-from .chargers import classify
+from .chargers import classify, is_car_charger
 from .geo import LocalProjection, element_geometry, is_area
 from .shade import Caster, ShadeModel, best_windows, daytime_shaded_share, timetable
 
@@ -132,7 +132,9 @@ class Builder:
                     z0 = 4.0 if low else config.VIADUCT_DECK_BOTTOM_M
                     z1 = 5.0 if low else config.VIADUCT_DECK_TOP_M
                     self.casters.append(Caster(deck, z0, z1, "viaduct", False))
-                    self.covers.append({"geom": deck, "kind": "under_viaduct", "item": item})
+                    # Footbridges/boardwalks are too narrow to shelter anyone from rain.
+                    if not low:
+                        self.covers.append({"geom": deck, "kind": "under_viaduct", "item": item})
             elif tags.get("man_made") == "bridge" and is_area(xy):
                 self.casters.append(Caster(xy, config.VIADUCT_DECK_BOTTOM_M, config.VIADUCT_DECK_TOP_M, "viaduct", False))
                 self.covers.append({"geom": xy, "kind": "under_viaduct", "item": item})
@@ -155,7 +157,7 @@ class Builder:
             access = tags.get("access", "")
             if tags.get("amenity") == "parking" and access not in EXCLUDED_ACCESS:
                 self.parking.append(item)
-            if tags.get("amenity") == "charging_station" and access not in EXCLUDED_ACCESS:
+            if tags.get("amenity") == "charging_station" and access not in EXCLUDED_ACCESS and is_car_charger(tags):
                 self.chargers.append(item)
             if tags.get("amenity") == "toilets" and access not in EXCLUDED_ACCESS:
                 self.toilets.append(item)
@@ -205,19 +207,20 @@ class Builder:
                     items.setdefault(c["kind"], []).append(osm_ref(c["item"]["el"]))
             for kind, geoms in by_kind.items():
                 ratios[kind] = round(unary_union(geoms).intersection(zone).area / zone.area, 2)
-        all_cover = 0.0
+        all_cover, area = 0.0, 0.0
         if items:
             geoms = [self.covers[i]["geom"] for i in self.cover_tree.query(zone)]
-            all_cover = round(unary_union(geoms).intersection(zone).area / zone.area, 2)
+            area = unary_union(geoms).intersection(zone).area
+            all_cover = round(area / zone.area, 2)
         tagged = tags.get("covered")
         if tagged == "yes":
-            all_cover = max(all_cover, 1.0)
+            all_cover, area = max(all_cover, 1.0), zone.area
             ratios["roof"] = max(ratios.get("roof", 0), 1.0)
         elif tagged == "partial":
             all_cover = max(all_cover, config.COVERED_PARTIAL_RATIO)
-        return {"ratio": all_cover, "by_kind": ratios, "refs": items, "tagged": tagged}
+        return {"ratio": all_cover, "area_m2": int(round(area)), "by_kind": ratios, "refs": items, "tagged": tagged}
 
-    def build_one(self, item: dict) -> dict | None:
+    def build_one(self, item: dict, kind: str = "playground") -> dict | None:
         tags, el = item["tags"], item["el"]
         if tags.get("access", "") in EXCLUDED_ACCESS:
             return None
@@ -229,22 +232,31 @@ class Builder:
         if zone.area < 4:
             return None
 
-        park = self._containing_park(center)
-        park_name = park["tags"].get("name") if park else None
-        if tags.get("name"):
-            name, name_source = tags["name"], "osm_name"
-        elif park_name:
-            name, name_source = f"{park_name} 遊戲場", "park_name"
+        if kind == "park":
+            park_name = tags.get("name")
+            if park_name:
+                name, name_source = park_name, "osm_name"
+            else:
+                street = self._nearest_street(zone)
+                name, name_source = (f"公園（近{street}）", "nearest_street") if street else ("未命名公園", "none")
         else:
-            street = self._nearest_street(zone)
-            name, name_source = (f"遊戲場（近{street}）", "nearest_street") if street else ("未命名遊戲場", "none")
+            park = self._containing_park(center)
+            park_name = park["tags"].get("name") if park else None
+            if tags.get("name"):
+                name, name_source = tags["name"], "osm_name"
+            elif park_name:
+                name, name_source = f"{park_name} 遊戲場", "park_name"
+            else:
+                street = self._nearest_street(zone)
+                name, name_source = (f"遊戲場（近{street}）", "nearest_street") if street else ("未命名遊戲場", "none")
 
         src = osm_ref(el)["url"]
         d = self.osm_date
 
         # --- rain / roof cover
         cover = self._cover(zone, tags)
-        if cover["ratio"] >= config.COVERED_FULL_RATIO:
+        viaduct_area = cover["by_kind"].get("under_viaduct", 0) * zone.area
+        if cover["ratio"] >= config.COVERED_FULL_RATIO or viaduct_area >= config.COVERED_MIN_AREA_M2:
             rain_value = True
         elif cover["ratio"] >= config.COVERED_PARTIAL_RATIO:
             rain_value = "partial"
@@ -254,9 +266,11 @@ class Builder:
             rain_value, "computed" if cover["refs"] else "osm", d,
             "medium" if rain_value is not False else "low", src,
             covered_ratio=cover["ratio"],
+            covered_area_m2=cover["area_m2"],
             note=(
-                "由 OSM 高架/屋頂幾何與遊戲場範圍交集推算，尚未實地驗證"
-                if rain_value is not False else "OSM 未標示覆蓋此遊戲場的高架或屋頂；未實地驗證"
+                (f"約 {cover['area_m2']} m² 在高架/屋頂下（佔 {int(cover['ratio'] * 100)}%）；"
+                 "由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入")
+                if rain_value is not False else "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證"
             ),
         )
 
@@ -272,11 +286,11 @@ class Builder:
 
         # --- shade types
         shade_types = []
-        for kind, ratio in sorted(cover["by_kind"].items()):
-            shade_types.append(fact(True, "computed", d, "medium", src, type=kind,
+        for cover_kind, ratio in sorted(cover["by_kind"].items()):
+            shade_types.append(fact(True, "computed", d, "medium", src, type=cover_kind,
                                     level="A" if ratio >= config.COVERED_FULL_RATIO else "B",
-                                    rain_proof=kind in ("under_viaduct", "roof", "pavilion"),
-                                    covered_ratio=ratio, osm=cover["refs"].get(kind, [])))
+                                    rain_proof=cover_kind in ("under_viaduct", "roof", "pavilion"),
+                                    covered_ratio=ratio, osm=cover["refs"].get(cover_kind, [])))
         if trees_in_zone:
             shade_types.append(fact(True, "osm", d, "low", src, type="tree_canopy", level="B", rain_proof=False,
                                     trees=trees_in_zone, note="樹冠大小未知時以直徑 6m 估計；落葉季節遮蔭會變少"))
@@ -303,7 +317,7 @@ class Builder:
                 "kind_label": PARKING_KIND.get(t.get("parking", ""), "停車場"),
                 "distance_m": int(round(dist)),
                 "distance_method": "straight_line",
-                "capacity": num(t.get("capacity")) and int(num(t.get("capacity"))),
+                "capacity": int(t["capacity"]) if t.get("capacity", "").isdigit() else None,
                 "capacity_disabled": t.get("capacity:disabled"),
                 "capacity_parent": t.get("capacity:parent"),
                 "fee": t.get("fee"),
@@ -327,7 +341,7 @@ class Builder:
                 "operator": t.get("operator"),
                 "brand": t.get("brand") or t.get("network"),
                 **info,
-                "capacity": num(t.get("capacity")) and int(num(t.get("capacity"))),
+                "capacity": int(t["capacity"]) if t.get("capacity", "").isdigit() else None,
                 "fee": t.get("fee"),
                 "opening_hours": t.get("opening_hours"),
                 "access": t.get("access"),
@@ -370,6 +384,8 @@ class Builder:
         loc = self._latlng(item["geom"])
         return {
             "id": f"{config.REGION['id_prefix']}-{el['type'][0]}{el['id']}",
+            "kind": kind,
+            "playground_mapped": kind == "playground",
             "name": name,
             "name_source": name_source,
             "park_name": park_name,
@@ -411,6 +427,15 @@ class Builder:
 
     def build(self) -> list[dict]:
         records = [r for r in (self.build_one(p) for p in self.playgrounds) if r]
+        # Most Taiwanese neighbourhood parks have play equipment that OSM does not map
+        # separately; list parks without a mapped playground as unconfirmed candidates.
+        pg_points = [p["geom"] if isinstance(p["geom"], Point) else p["geom"].representative_point() for p in self.playgrounds]
+        for park in self.parks:
+            if any(park["geom"].contains(pt) for pt in pg_points):
+                continue
+            r = self.build_one(park, kind="park")
+            if r:
+                records.append(r)
         # Drop duplicate playgrounds (node mapped inside an already-mapped area).
         areas = [self.proj.to_xy(Point(r["location"]["lng"], r["location"]["lat"])) for r in records]
         keep = []
@@ -456,6 +481,8 @@ class Builder:
             "fetched_at": self.raw.get("fetched_at"),
             "counts": {
                 "parks": len(parks),
+                "mapped_playgrounds": sum(1 for p in parks if p["kind"] == "playground"),
+                "park_candidates": sum(1 for p in parks if p["kind"] == "park"),
                 "by_level": levels,
                 "parking_lots_in_bbox": len(self.parking),
                 "chargers_in_bbox": len(self.chargers),
@@ -490,6 +517,8 @@ def summary(p: dict) -> dict:
         "fast_nearest_m": p["charger_summary"]["nearest_fast_m"],
         "slow_nearest_m": p["charger_summary"]["nearest_slow_m"],
         "toilet": p["amenities"]["toilet"]["value"],
+        "kind": p["kind"],
+        "height_known": p["shade_timetable"]["building_height_known_share"],
         "timetable": p["shade_timetable"]["slots"],
         "best": p["best_shade_windows"],
     }

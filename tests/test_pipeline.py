@@ -4,7 +4,7 @@ import pytest
 from shapely.geometry import Polygon
 
 from pipeline.build_data import Builder, summary
-from pipeline.chargers import classify
+from pipeline.chargers import classify, is_car_charger
 from pipeline.shade import Caster, ShadeModel, best_windows, shadow
 from pipeline.sun import sun_position
 
@@ -55,6 +55,12 @@ def test_floating_deck_shadow_moves_off_the_ground_beneath():
     ({"socket:nacs": "2"}, "unknown"),
     ({"charging_station:output": "50 kW"}, "fast"),
     ({}, "unknown"),
+    ({"socket:type": "type1_combo;type2_combo"}, "fast"),
+    ({"capacity": "7kw"}, "slow"),
+    ({"capacity": "360kw"}, "fast"),
+    ({"capacity": "8"}, "unknown"),
+    ({"brand": "U-Power 新北林口站"}, "fast"),
+    ({"brand": "EVOASIS"}, "unknown"),
 ])
 def test_charger_classification(tags, speed):
     assert classify(tags)["speed"] == speed
@@ -71,7 +77,14 @@ def parks():
 
 
 def test_filters_private_and_outside(parks):
-    assert set(parks) == {10, 20, 30}
+    assert set(parks) == {10, 20, 30, 70}
+
+
+def test_park_candidate_and_footbridge(parks):
+    p = parks[70]
+    assert p["kind"] == "park" and p["playground_mapped"] is False and p["name"] == "測試公園"
+    assert p["rain_cover"]["value"] is False  # a footbridge is not shelter
+    assert parks[10]["kind"] == "playground" and parks[10]["park_name"] == "高架公園"
 
 
 def test_under_viaduct_is_level_a(parks):
@@ -150,3 +163,15 @@ def test_records_match_schema(parks):
     schema = json.loads((Path(__file__).resolve().parent.parent / "schema" / "park.schema.json").read_text())
     for p in parks.values():
         jsonschema.validate(p, schema)
+
+
+def test_brand_inference_is_labelled():
+    info = classify({"brand": "U-Power"})
+    assert info["speed_source"] == "brand" and "營運商" in info["speed_label"]
+    assert classify({"socket:type2": "1"})["speed_source"] == "sockets"
+
+
+def test_scooter_swap_is_not_a_car_charger():
+    assert not is_car_charger({"name": "GoStation"})
+    assert not is_car_charger({"brand": "Gogoro"})
+    assert is_car_charger({"brand": "EVOASIS"})

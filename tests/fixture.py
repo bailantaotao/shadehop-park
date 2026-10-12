@@ -42,6 +42,11 @@ def raw():
         node(31, -1200, -1000, leisure="playground", access="private"),
         # Outside boundary: excluded.
         node(32, 5000, 5000, leisure="playground"),
+        # Park without a mapped playground, crossed by a footbridge (not rain cover).
+        way(70, ring(-1000, 500, -900, 600), leisure="park", name="測試公園"),
+        way(71, [ll(-1010, 550), ll(-890, 550)], highway="footway", bridge="yes", layer="1"),
+        # Park that contains playground A: must not be listed separately.
+        way(72, ring(-50, -50, 50, 50), leisure="park", name="高架公園"),
         # Parking and chargers near playground A.
         node(40, 50, 50, amenity="parking", name="測試停車場", capacity="120", fee="yes", parking="surface"),
         node(41, 900, 900, amenity="parking", access="private"),

@@ -2,7 +2,10 @@
 
 DC sockets (CCS1/CCS2/CHAdeMO/Tesla Supercharger/GB-T DC) => fast (快充).
 AC sockets (Type 1/Type 2/Tesla destination) => slow (慢充).
-A station can be both. Nothing usable tagged => unknown, never guessed.
+A station can be both. When sockets are missing we fall back to tagged power
+(`*:output`, or kW mistakenly put in `capacity`), then to operators whose
+networks are DC-only; `speed_source` records which evidence was used.
+Nothing usable => unknown, never guessed.
 """
 
 from __future__ import annotations
@@ -29,6 +32,18 @@ AC_SOCKETS = {
 _AMBIGUOUS = {"nacs"}
 FAST_POWER_KW = 20.0
 
+# Networks that only operate DC fast chargers in Taiwan.
+DC_ONLY_BRANDS = ("u-power", "tesla supercharger", "超級充電站")
+# Not car chargers: scooter battery-swap stations.
+SCOOTER_SWAP = ("gostation", "gogoro", "ionex", "光陽")
+
+
+def is_car_charger(tags: dict[str, str]) -> bool:
+    text = " ".join(tags.get(k, "") for k in ("name", "brand", "operator", "network")).lower()
+    if any(w in text for w in SCOOTER_SWAP):
+        return False
+    return tags.get("motorcar") != "no"
+
 
 def _kw(value: str | None) -> float | None:
     if not value:
@@ -50,6 +65,12 @@ def _count(value: str) -> int:
 
 
 def classify(tags: dict[str, str]) -> dict:
+    tags = dict(tags)
+    # Non-standard `socket:type=type1_combo;type2_combo` -> socket:<type>=yes
+    for kind in tags.pop("socket:type", "").split(";"):
+        kind = kind.strip()
+        if kind and f"socket:{kind}" not in tags:
+            tags[f"socket:{kind}"] = "yes"
     sockets = []
     for key, value in tags.items():
         if not key.startswith("socket:") or key.count(":") != 1 or value == "no":
@@ -68,11 +89,20 @@ def classify(tags: dict[str, str]) -> dict:
         sockets.append({"type": kind, "label": label, "current": current, "count": _count(value), "output_kw": power})
 
     station_kw = _kw(tags.get("charging_station:output") or tags.get("output"))
+    capacity = tags.get("capacity", "").lower()
+    if station_kw is None and "kw" in capacity:
+        station_kw = _kw(capacity)  # power mistakenly tagged as capacity
     has_dc = any(s["current"] == "DC" for s in sockets)
     has_ac = any(s["current"] == "AC" for s in sockets)
-    if not sockets and station_kw is not None:
+    source = "sockets" if (has_dc or has_ac) else None
+    if not source and station_kw is not None:
         has_dc = station_kw >= FAST_POWER_KW
         has_ac = not has_dc
+        source = "output"
+    if not source:
+        text = " ".join(tags.get(k, "") for k in ("name", "brand", "operator", "network")).lower()
+        if any(b in text for b in DC_ONLY_BRANDS):
+            has_dc, source = True, "brand"
 
     if has_dc and has_ac:
         speed = "both"
@@ -85,7 +115,9 @@ def classify(tags: dict[str, str]) -> dict:
     powers = [s["output_kw"] for s in sockets if s["output_kw"]] + ([station_kw] if station_kw else [])
     return {
         "speed": speed,
-        "speed_label": {"fast": "快充 (DC)", "slow": "慢充 (AC)", "both": "快充 + 慢充", "unknown": "未標示"}[speed],
+        "speed_label": {"fast": "快充 (DC)", "slow": "慢充 (AC)", "both": "快充 + 慢充", "unknown": "未標示"}[speed]
+        + ("（依營運商判斷）" if source == "brand" else ""),
+        "speed_source": source,
         "sockets": sockets,
         "max_kw": max(powers) if powers else None,
     }

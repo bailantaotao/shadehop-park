@@ -1,0 +1,52 @@
+{
+ "assumptions": {
+  "AMENITY_RADIUS_M": 200,
+  "CHARGER_RADIUS_M": 2000,
+  "COVERED_FULL_RATIO": 0.5,
+  "COVERED_PARTIAL_RATIO": 0.15,
+  "DEFAULT_BUILDING_HEIGHT_M": 9.0,
+  "LEVEL_C_MIN_DAYTIME_SHARE": 0.4,
+  "LEVEL_HEIGHT_M": 3.0,
+  "PARKING_RADIUS_M": 800,
+  "PLAYGROUND_NODE_RADIUS_M": 12,
+  "ROOF_HEIGHT_M": 3.0,
+  "SHADED_SLOT_RATIO": 0.6,
+  "TREE_DEFAULT_CROWN_M": 6.0,
+  "TREE_DEFAULT_HEIGHT_M": 6.0,
+  "VIADUCT_DECK_BOTTOM_M": 8.0,
+  "VIADUCT_DECK_TOP_M": 10.0
+ },
+ "counts": {
+  "buildings_in_bbox": 5863,
+  "buildings_with_height": 412,
+  "by_level": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "none": 8
+  },
+  "chargers_in_bbox": 7,
+  "parking_lots_in_bbox": 246,
+  "parks": 8
+ },
+ "fetched_at": "2026-10-12T18:10:05+00:00",
+ "generated_from_osm_base": "2026-10-12T18:20:36Z",
+ "level_labels": {
+  "A": "全天候遮蔽（下雨可玩）",
+  "B": "部分遮陽設施 / 樹蔭",
+  "C": "建物陰影遮陰（依時段）",
+  "none": "大多曝曬"
+ },
+ "license": "Data © OpenStreetMap contributors, ODbL 1.0. Derived shade values are estimates.",
+ "region": {
+  "city": "新北市",
+  "city_en": "New Taipei City",
+  "id": "linkou",
+  "id_prefix": "lk",
+  "name": "林口區",
+  "name_en": "Linkou District",
+  "osm_city_name": "新北市",
+  "osm_district_name": "林口區",
+  "tdx_city": "NewTaipei"
+ }
+}

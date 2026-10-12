@@ -3,6 +3,8 @@
 
   var SLOT_START = 6 * 60, SLOT_MIN = 30, SLOTS = 24, TZ = 8;
   var SHADOW_MIN_ZOOM = 16, MAX_SHADOW_M = 600;
+  var PARK_HREF = window.SHADEHOP_PARK_HREF || "parks/{id}/";
+  function parkHref(id) { return PARK_HREF.replace("{id}", encodeURIComponent(id)); }
   var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false };
   var state = { date: null, slot: 8, user: null, features: [], casters: null, playTimer: null };
 
@@ -61,7 +63,7 @@
     return "<strong>" + esc(p.name) + "</strong><br>" +
       (p.rain === true ? "☔ 下雨可玩<br>" : "") +
       slotLabel(state.slot) + " 遮陰：" + (v === null ? "無日照" : Math.round(v * 100) + "%") +
-      '<br><a href="parks/' + encodeURIComponent(p.id) + '/">詳細資料 →</a>';
+      '<br><a href="' + parkHref(p.id) + '">詳細資料 →</a>';
   }
 
   function drawMarkers() {
@@ -142,7 +144,7 @@
     }).join("");
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">☔ 下雨可玩</span>', B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
-    return '<article class="card"><h3><a href="parks/' + encodeURIComponent(p.id) + '/">' + esc(p.name) + "</a></h3>" +
+    return '<article class="card"><h3><a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
       '<div class="badges">' + levelBadge + (p.kind === "park" ? '<span class="badge">遊戲設施待確認</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +

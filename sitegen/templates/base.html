@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}林口遮陽公園地圖{% endblock %}</title>
+<meta name="description" content="{% block description %}新北市林口區遮陽、下雨也能玩的兒童遊戲場地圖：依時間顯示大樓陰影、附近停車場與電動車快充/慢充。{% endblock %}">
+<link rel="canonical" href="{% block canonical %}{{ site_url }}/{% endblock %}">
+<link rel="alternate" type="text/plain" title="LLM guide" href="{{ site_url }}/llms.txt">
+<link rel="alternate" type="application/geo+json" title="Parks GeoJSON" href="{{ site_url }}/api/parks.geojson">
+<link rel="stylesheet" href="{{ root }}static/style.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+<header class="top">
+  <h1><a href="{{ root }}" style="color:inherit;text-decoration:none">☂️ 林口遮陽公園地圖</a></h1>
+  <span class="muted small">ShadeHop</span>
+  <nav><a href="{{ root }}">地圖</a><a href="{{ root }}about/">資料與方法</a><a href="{{ root }}llms.txt">llms.txt</a></nav>
+</header>
+<main>
+{% block main %}{% endblock %}
+</main>
+<footer>
+  地圖與資料 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 貢獻者（ODbL）。遮陰為模型推估，出門前請以現場為準。
+  資料版本 {{ (meta.generated_from_osm_base or '')[:10] }}。
+</footer>
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+# ShadeHop 林口遮陽公園地圖 — 全部遊戲場
+
+資料版本：{{ meta.generated_from_osm_base }}（OpenStreetMap）。遮陰為模型推估；距離為直線距離。說明見 {{ site_url }}/llms.txt
+{% for p in parks %}
+## {{ p.name }}
+
+- 網址: {{ site_url }}/parks/{{ p.id }}/
+- 資料: {{ site_url }}/api/parks/{{ p.id }}.json
+- 座標: {{ p.location.lat }}, {{ p.location.lng }}
+- 分級: {{ p.level }}（{{ p.level_label }}）
+- 下雨可玩: {{ RAIN_LABEL[p.rain_cover.value] }}（遮蔽比例 {{ (p.rain_cover.covered_ratio * 100) | round | int }}%，{{ METHOD_LABEL[p.rain_cover.method] }}，信心{{ CONF_LABEL[p.rain_cover.confidence] }}）
+- 最遮陰時段: {% for m in ['1','4','7','10'] %}{% set w = p.best_shade_windows[m] %}{{ m }}月 {{ (w.start ~ '–' ~ w.end) if w else '無' }}{% if not loop.last %}；{% endif %}{% endfor %}
+- 最近停車場: {% if p.parking %}{{ p.parking[0].name }} {{ p.parking[0].distance_m }}m{% else %}800m 內未標示{% endif %}
+- 充電站（2km 內）: 快充 {{ p.charger_summary.fast }}（最近 {{ p.charger_summary.nearest_fast_m if p.charger_summary.nearest_fast_m is not none else '—' }}m）、慢充 {{ p.charger_summary.slow }}（最近 {{ p.charger_summary.nearest_slow_m if p.charger_summary.nearest_slow_m is not none else '—' }}m）
+- 摘要: {{ describe(p) }}
+{% endfor %}

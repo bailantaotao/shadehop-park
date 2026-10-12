@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}{{ p.name }}｜{{ p.level_label }}｜林口遮陽公園地圖{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+{% block canonical %}{{ site_url }}/parks/{{ p.id }}/{% endblock %}
+{% block head %}
+<link rel="alternate" type="application/json" href="{{ site_url }}/api/parks/{{ p.id }}.json">
+<script type="application/ld+json">{{ ld | tojson_ld | safe }}</script>
+{% endblock %}
+{% block main %}
+<p class="small"><a href="{{ root }}">← 回地圖</a></p>
+<h1 style="font-size:1.4rem;margin:.2em 0">{{ p.name }}</h1>
+<div class="badges">
+  <span class="badge {{ p.level }}">{{ p.level_label }}</span>
+  {% if p.park_name %}<span class="badge">位於 {{ p.park_name }}</span>{% endif %}
+  {% if p.geometry_estimated %}<span class="badge">範圍為估計（OSM 僅標示一點）</span>{% endif %}
+</div>
+<p>{{ description }}</p>
+
+<section>
+<h2>下雨可以玩嗎？</h2>
+<p><strong>{{ RAIN_LABEL[p.rain_cover.value] }}</strong>（遮蔽比例約 {{ (p.rain_cover.covered_ratio * 100) | round | int }}%）</p>
+{% for s in p.shade_types %}
+<p class="small">• {{ SHADE_TYPE_LABEL.get(s.type, s.type) }}{% if s.covered_ratio is defined %}：覆蓋約 {{ (s.covered_ratio * 100) | round | int }}%{% endif %}{% if s.trees %}：OSM 標記 {{ s.trees }} 棵樹{% endif %}{% if s.note %}（{{ s.note }}）{% endif %}</p>
+{% endfor %}
+<p class="prov">依據：{{ METHOD_LABEL[p.rain_cover.method] }}；信心：{{ CONF_LABEL[p.rain_cover.confidence] }}；資料日期 {{ p.rain_cover.verified_at }}。{{ p.rain_cover.note }}</p>
+</section>
+
+<section>
+<h2>什麼時候最遮陰？</h2>
+<div class="tablewrap">
+<table>
+<thead><tr><th>月份</th><th>最長連續遮陰時段（≥60%）</th><th>平均遮陰</th></tr></thead>
+<tbody>
+{% for m in range(1, 13) %}{% set w = p.best_shade_windows[m|string] %}
+<tr><td>{{ m }} 月</td><td>{% if w %}{{ w.start }}–{{ w.end }}{% else %}<span class="muted">沒有明顯遮陰時段</span>{% endif %}</td><td>{% if w %}{{ (w.mean * 100) | round | int }}%{% endif %}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+<h3 style="font-size:1rem">逐時遮陰推估（每月 15 日，每 30 分鐘）</h3>
+<div class="tablewrap">
+<table class="heat" aria-label="遮陰熱圖：列為月份，欄為時間">
+<thead><tr><th></th>{% for l in SLOT_LABELS %}<th scope="col">{% if loop.index0 % 2 == 0 %}{{ l[:2] }}{% endif %}</th>{% endfor %}</tr></thead>
+<tbody>
+{% for m in range(1, 13) %}<tr><th scope="row">{{ m }}月</th>{% for v in p.shade_timetable.slots[m|string] %}<td class="{{ v | shade_class }}" title="{{ m }}月 {{ SLOT_LABELS[loop.index0] }}：{% if v is none %}太陽未升起{% else %}{{ (v * 100) | round | int }}%{% endif %}"></td>{% endfor %}</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+<p class="legend" style="margin-top:6px"><span><span class="dot hi"></span>≥60%</span><span><span class="dot mid"></span>30–60%</span><span><span class="dot lo"></span>&lt;30%</span><span><span class="dot night"></span>無日照</span></p>
+<p class="prov">方法：{{ METHOD_LABEL[p.shade_timetable.method] }}；信心：{{ CONF_LABEL[p.shade_timetable.confidence] }}。周邊 {{ p.shade_timetable.buildings_considered }} 棟建物中 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘以 9m 估計。{{ p.shade_timetable.note }}</p>
+</section>
+
+<section>
+<h2>附近停車</h2>
+{% if p.parking %}
+<div class="tablewrap"><table>
+<thead><tr><th>停車場</th><th>類型</th><th>直線距離</th><th>車位</th><th>收費</th><th>限高</th></tr></thead>
+<tbody>
+{% for q in p.parking %}<tr>
+<td><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}">{{ q.name }}</a>{% if q.access == 'customers' %} <span class="badge">限顧客</span>{% endif %}</td>
+<td>{{ q.kind_label }}</td><td>{{ q.distance_m }} m</td>
+<td>{{ q.capacity if q.capacity else '—' }}{% if q.capacity_parent %}（親子 {{ q.capacity_parent }}）{% endif %}</td>
+<td>{{ {'yes':'收費','no':'免費'}.get(q.fee, '—') }}</td><td>{{ (q.maxheight_m ~ ' m') if q.maxheight_m else '—' }}</td>
+</tr>{% endfor %}
+</tbody></table></div>
+{% else %}<p class="muted">OSM 在 {{ meta.assumptions.PARKING_RADIUS_M }}m 內未標示停車場。</p>{% endif %}
+<p class="prov">來源：OpenStreetMap，{{ p.updated_at }}。距離為直線距離，實際步行會較遠。即時剩餘車位請以停車場現場或政府即時資訊為準。</p>
+</section>
+
+<section>
+<h2>電動車充電（快充 / 慢充）</h2>
+<p>{{ p.charger_summary.radius_m }}m 內：快充 {{ p.charger_summary.fast }} 站、慢充 {{ p.charger_summary.slow }} 站{% if p.charger_summary.unknown %}、未標示類型 {{ p.charger_summary.unknown }} 站{% endif %}。</p>
+{% if p.chargers %}
+<div class="tablewrap"><table>
+<thead><tr><th>充電站</th><th>類型</th><th>插頭</th><th>最大功率</th><th>直線距離</th></tr></thead>
+<tbody>
+{% for c in p.chargers %}<tr>
+<td><a href="https://www.google.com/maps/dir/?api=1&destination={{ c.location.lat }},{{ c.location.lng }}">{{ c.name }}</a>{% if c.operator and c.operator != c.name %}<br><span class="small muted">{{ c.operator }}</span>{% endif %}{% if c.access == 'customers' %} <span class="badge">限顧客</span>{% endif %}</td>
+<td>{{ c.speed_label }}</td>
+<td>{% for s in c.sockets %}{{ s.label }}{% if s.count > 1 %} ×{{ s.count }}{% endif %}{% if not loop.last %}、{% endif %}{% else %}<span class="muted">未標示</span>{% endfor %}</td>
+<td>{{ (c.max_kw | round(1) ~ ' kW') if c.max_kw else '—' }}</td>
+<td>{{ c.distance_m }} m</td>
+</tr>{% endfor %}
+</tbody></table></div>
+{% endif %}
+<p class="prov">來源：OpenStreetMap 的 socket:* 標記；DC 插頭（CCS1/CCS2/CHAdeMO/Supercharger）歸為快充，AC 插頭（Type 1/Type 2）歸為慢充，無標記者不猜測。資料日期 {{ p.updated_at }}。</p>
+</section>
+
+<section>
+<h2>生活機能</h2>
+<ul>
+<li>公廁（{{ meta.assumptions.AMENITY_RADIUS_M }}m 內）：{% if p.amenities.toilet.value %}有，約 {{ p.amenities.toilet.distance_m }}m{% if p.amenities.toilet.changing_table %}，有尿布台{% endif %}{% else %}<span class="muted">{{ p.amenities.toilet.note }}</span>{% endif %}</li>
+<li>飲水機：{% if p.amenities.drinking_water.value %}有，約 {{ p.amenities.drinking_water.distance_m }}m{% else %}<span class="muted">未標示</span>{% endif %}</li>
+{% if p.playground.surface %}<li>地面材質：{{ p.playground.surface }}{% if p.playground.surface in ('rubber', 'tartan', 'artificial_turf') %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
+{% if p.playground.equipment %}<li>設施：{{ p.playground.equipment | join('、') }}</li>{% endif %}
+</ul>
+</section>
+
+<section>
+<h2>資料來源與更正</h2>
+<p class="prov">OSM 物件：<a href="{{ p.osm.url }}">{{ p.osm.type }}/{{ p.osm.id }}</a>。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
+資料有誤？直接在 <a href="https://www.openstreetmap.org/edit?{{ p.osm.type }}={{ p.osm.id }}">OpenStreetMap 上修正</a>（例如補上 covered=yes、building:levels、充電站 socket:*），下次更新會自動反映。</p>
+</section>
+{% endblock %}

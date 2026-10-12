@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}資料與方法｜林口遮陽公園地圖{% endblock %}
+{% block canonical %}{{ site_url }}/about/{% endblock %}
+{% block head %}<script type="application/ld+json">{{ dataset_ld | tojson_ld | safe }}</script>{% endblock %}
+{% block main %}
+<h1 style="font-size:1.4rem">資料與方法</h1>
+<p>本站收錄 {{ meta.region.city }}{{ meta.region.name }} 在 OpenStreetMap 上標記為兒童遊戲場（<code>leisure=playground</code>）、且非私人的地點，共 {{ meta.counts.parks }} 處。資料版本 {{ meta.generated_from_osm_base }}。</p>
+
+<section>
+<h2>遮蔽分級</h2>
+<table>
+<thead><tr><th>等級</th><th>說明</th><th>數量</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>{{ meta.level_labels.A }}：遊戲場 ≥ {{ (meta.assumptions.COVERED_FULL_RATIO * 100) | int }}% 面積位於高架道路/軌道或屋頂下方</td><td>{{ meta.counts.by_level.A }}</td></tr>
+<tr><td>C</td><td>{{ meta.level_labels.C }}：全年 09–16 時平均有 ≥ {{ (meta.assumptions.LEVEL_C_MIN_DAYTIME_SHARE * 100) | int }}% 時段遮陰 ≥ {{ (meta.assumptions.SHADED_SLOT_RATIO * 100) | int }}%</td><td>{{ meta.counts.by_level.C }}</td></tr>
+<tr><td>B</td><td>{{ meta.level_labels.B }}：部分遮蔽或有樹</td><td>{{ meta.counts.by_level.B }}</td></tr>
+<tr><td>—</td><td>{{ meta.level_labels.none }}</td><td>{{ meta.counts.by_level.none }}</td></tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h2>遮陰怎麼算</h2>
+<ol>
+<li>從 OSM 取得建物輪廓與高度（<code>height</code> 或 <code>building:levels</code> × {{ meta.assumptions.LEVEL_HEIGHT_M }}m）。沒有高度的建物以 {{ meta.assumptions.DEFAULT_BUILDING_HEIGHT_M }}m 估計。目前範圍內 {{ meta.counts.buildings_in_bbox }} 棟建物中有 {{ meta.counts.buildings_with_height }} 棟有高度資料。</li>
+<li>高架橋面以道路寬度（<code>width</code>/<code>lanes</code>，或依道路等級估計）展開，假設橋面離地 {{ meta.assumptions.VIADUCT_DECK_BOTTOM_M }}–{{ meta.assumptions.VIADUCT_DECK_TOP_M }}m；涼亭/遮雨棚假設 {{ meta.assumptions.ROOF_HEIGHT_M }}m；樹木預設樹冠 {{ meta.assumptions.TREE_DEFAULT_CROWN_M }}m。</li>
+<li>依天文公式計算每月 15 日、每 30 分鐘的太陽方位與高度角，把每個物體沿太陽方向投影成地面陰影，計算陰影覆蓋遊戲場的比例。</li>
+<li>未計入：地形（林口台地邊坡）、臨時遮蔽、雲量。高架下方在早晚太陽角度低時仍可能被側面照到，模型有考慮這點。</li>
+</ol>
+</section>
+
+<section>
+<h2>停車與充電</h2>
+<p>停車場與電動車充電站同樣來自 OSM（<code>amenity=parking</code>、<code>amenity=charging_station</code>），排除私人設施。距離為直線距離。充電站依插頭種類判定：DC（CCS1、CCS2、CHAdeMO、Tesla Supercharger）為快充，AC（Type 1、Type 2）為慢充；未標示者顯示「未標示」，不推測。</p>
+</section>
+
+<section>
+<h2>給 AI Agent 與開發者</h2>
+<ul>
+<li><a href="{{ root }}llms.txt">llms.txt</a>、<a href="{{ root }}llms-full.txt">llms-full.txt</a>（全部公園的文字摘要）</li>
+<li><a href="{{ root }}openapi.json">OpenAPI</a>、<a href="{{ root }}schema/park.schema.json">JSON Schema</a></li>
+<li>資料下載：<a href="{{ root }}api/parks.geojson">GeoJSON</a>、<a href="{{ root }}api/parks.json">JSON</a>、<a href="{{ root }}api/parks.csv">CSV</a></li>
+<li>MCP Server：見原始碼庫 <code>mcp_server/</code></li>
+</ul>
+<p>每一筆事實都附 <code>method</code>（資料取得方式）、<code>verified_at</code>、<code>confidence</code>、<code>source</code>。引用時請註明資料日期，並說明遮陰為模型推估。</p>
+</section>
+
+<section>
+<h2>授權</h2>
+<p>{{ meta.license }}</p>
+</section>
+{% endblock %}

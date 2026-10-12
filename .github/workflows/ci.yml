@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt -r requirements-mcp.txt pytest jsonschema
+      - run: python -m pytest -q
+      - name: Build site from committed data
+        if: hashFiles('data/parks.json') != ''
+        run: python -m sitegen.build_site

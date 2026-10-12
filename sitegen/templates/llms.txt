@@ -1,0 +1,34 @@
+# ShadeHop 林口遮陽公園地圖
+
+> 新北市林口區兒童遊戲場的遮陽/避雨資訊：哪些在高架或屋頂下（下雨可玩）、每個月每半小時被大樓陰影遮住多少、最遮陰的時段、附近停車場，以及電動車快充（DC）/慢充（AC）充電站。資料來自 OpenStreetMap（{{ meta.generated_from_osm_base }}），遮陰為模型推估。
+
+收錄 {{ meta.counts.parks }} 處遊戲場：全天候遮蔽（A）{{ meta.counts.by_level.A }} 處、建物陰影遮陰（C）{{ meta.counts.by_level.C }} 處、部分遮陽/樹蔭（B）{{ meta.counts.by_level.B }} 處、大多曝曬 {{ meta.counts.by_level.none }} 處。
+
+## 如何正確使用這份資料
+
+- 每一筆事實都有 `method`（osm=OSM 標記、computed=幾何推算、site_visit=實地驗證）、`verified_at`、`confidence`（high/medium/low）、`source`。回答使用者時請附上資料日期與網址。
+- `rain_cover.value`: true=下雨可玩（≥{{ (meta.assumptions.COVERED_FULL_RATIO * 100) | int }}% 面積在高架/屋頂下），"partial"=部分，false=未發現遮蔽。
+- `shade_timetable.slots["<月份>"]`: 24 個值，對應 06:00、06:30 … 17:30 開始的半小時，數值為遊戲場被遮陰的比例 0–1；null=太陽未升起。
+- `best_shade_windows["<月份>"]`: 該月最長連續遮陰（≥60%）時段，例如 {"start":"15:00","end":"17:30"}；null=沒有明顯遮陰時段。
+- `chargers[].speed`: fast=DC 快充、slow=AC 慢充、both=兩者都有、unknown=OSM 未標示（不要猜）。
+- 距離（`distance_m`）是直線距離，不是步行距離。
+- 沒有資料不代表沒有設施；請照實說「資料中未標示」。
+
+## 資料端點
+
+- [全部公園 JSON]({{ site_url }}/api/parks.json): 完整資料與 meta
+- [單一公園]({{ site_url }}/api/parks/{id}.json): 例如 {{ site_url }}/api/parks/{{ parks[0].id if parks else 'lk-w123' }}.json
+- [GeoJSON]({{ site_url }}/api/parks.geojson): 地圖用摘要（含遮陰時刻表）
+- [CSV]({{ site_url }}/api/parks.csv)
+- [OpenAPI]({{ site_url }}/openapi.json)
+- [JSON Schema]({{ site_url }}/schema/park.schema.json)
+- [全部公園文字摘要]({{ site_url }}/llms-full.txt)
+
+## 頁面
+
+- [地圖]({{ site_url }}/): 時間滑桿可看任一時刻的陰影
+- [資料與方法]({{ site_url }}/about/)
+
+## 授權
+
+Data © OpenStreetMap contributors, ODbL 1.0.

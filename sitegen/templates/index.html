@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ root }}static/vendor/leaflet-1.9.4/leaflet.css">
+<script type="application/ld+json">{{ dataset_ld | tojson_ld | safe }}</script>
+{% endblock %}
+{% block main %}
+<div class="controls" aria-label="篩選">
+  <div class="timebar">
+    <label for="date">日期</label>
+    <input type="date" id="date">
+    <label for="slot">時間</label>
+    <input type="range" id="slot" min="0" max="23" step="1" value="8" aria-describedby="slotOut">
+    <output id="slotOut" for="slot">10:00</output>
+    <button class="chip" id="nowBtn" type="button">現在</button>
+    <button class="chip" id="playBtn" type="button" aria-pressed="false">▶ 播放一天</button>
+  </div>
+  <div class="chips" role="group" aria-label="條件">
+    <button class="chip" data-filter="rain" aria-pressed="false">☔ 下雨可玩</button>
+    <button class="chip" data-filter="shade" aria-pressed="false">🌳 此時段有遮陰</button>
+    <button class="chip" data-filter="parking" aria-pressed="false">🅿️ 停車 ≤ 300m</button>
+    <button class="chip" data-filter="fast" aria-pressed="false">⚡ 2km 內有快充</button>
+    <button class="chip" data-filter="slow" aria-pressed="false">🔌 2km 內有慢充</button>
+    <button class="chip" data-filter="toilet" aria-pressed="false">🚻 附近有廁所</button>
+    <button class="chip" id="locBtn" type="button">📍 依我的位置排序</button>
+  </div>
+  <div class="banner" id="weather" role="status"></div>
+</div>
+
+<div id="map" role="region" aria-label="地圖"></div>
+<div class="legend">
+  <span><span class="dot a"></span>藍色外框：全天候遮蔽（高架/屋頂下，下雨可玩）</span>
+  <span><span class="dot hi"></span>此時遮陰 ≥ 60%</span>
+  <span><span class="dot mid"></span>30–60%</span>
+  <span><span class="dot lo"></span>&lt; 30%</span>
+  <span><span class="dot night"></span>日出前/日落後</span>
+  <span><span class="dot shadow"></span>此時建物陰影（放大地圖後顯示）</span>
+</div>
+
+<h2 id="count" style="margin-top:18px">公園</h2>
+<div class="list" id="list"></div>
+
+<noscript>
+<section>
+<h2>全部公園</h2>
+<ul>
+{% for p in parks %}<li><a href="{{ root }}parks/{{ p.id }}/">{{ p.name }}</a> — {{ p.level_label }}</li>
+{% endfor %}
+</ul>
+</section>
+</noscript>
+{% endblock %}
+{% block scripts %}
+<script src="{{ root }}static/vendor/leaflet-1.9.4/leaflet.js"></script>
+<script src="{{ root }}static/sun.js"></script>
+<script src="{{ root }}static/app.js"></script>
+{% endblock %}

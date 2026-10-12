@@ -1,139 +1,175 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://shadehop.example/schema/park.schema.json",
+  "$id": "https://bailantaotao.github.io/shadehop-park/schema/park.schema.json",
   "title": "ShadeHop Park",
-  "description": "A park/playground record. Every factual claim is wrapped in a Fact with provenance so humans and AI agents can verify it.",
+  "description": "A children's playground with shade / rain cover, nearby parking and EV chargers. Every factual claim carries provenance (method, verified_at, confidence, source).",
   "type": "object",
-  "required": ["id", "name", "location", "zones", "updated_at"],
+  "required": ["id", "name", "location", "osm", "level", "rain_cover", "shade_types", "shade_timetable", "best_shade_windows", "parking", "chargers", "charger_summary", "amenities", "updated_at"],
   "properties": {
-    "id": { "type": "string", "pattern": "^[a-z]{3}-[0-9]{4}$", "description": "Stable ID, e.g. tpe-0001. Never reused." },
+    "id": { "type": "string", "pattern": "^[a-z]{2,4}-[nwr][0-9]+$", "description": "Stable ID: region prefix + OSM element type initial + OSM id, e.g. lk-w123456." },
     "name": { "type": "string" },
-    "name_en": { "type": "string" },
-    "address": { "type": "string" },
-    "location": {
-      "type": "object",
-      "required": ["lat", "lng"],
-      "properties": {
-        "lat": { "type": "number", "minimum": 21.5, "maximum": 26.5 },
-        "lng": { "type": "number", "minimum": 118, "maximum": 122.5 }
-      }
-    },
-    "opening_hours": { "type": "string", "description": "OSM opening_hours syntax, e.g. '24/7'." },
-    "zones": {
-      "type": "array",
-      "minItems": 1,
-      "items": { "$ref": "#/$defs/Zone" }
-    },
-    "amenities": {
-      "type": "object",
-      "properties": {
-        "toilet": { "$ref": "#/$defs/FactBool" },
-        "family_toilet": { "$ref": "#/$defs/FactBool" },
-        "nursing_room": { "$ref": "#/$defs/FactBool" },
-        "drinking_water": { "$ref": "#/$defs/FactBool" },
-        "stroller_friendly": { "$ref": "#/$defs/FactBool" }
-      }
-    },
-    "parking": {
-      "type": "array",
-      "items": { "$ref": "#/$defs/Parking" }
-    },
-    "photos": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["url", "taken_at"],
-        "properties": {
-          "url": { "type": "string", "format": "uri" },
-          "taken_at": { "type": "string", "format": "date" },
-          "caption": { "type": "string" }
-        }
-      }
-    },
-    "updated_at": { "type": "string", "format": "date" }
-  },
-  "$defs": {
-    "Provenance": {
-      "type": "object",
-      "required": ["method", "verified_at", "confidence"],
-      "properties": {
-        "method": { "enum": ["site_visit", "user_report", "computed", "official_data", "satellite", "osm"] },
-        "source": { "type": "string", "description": "URL or dataset identifier." },
-        "verified_at": { "type": "string", "format": "date" },
-        "confidence": { "enum": ["high", "medium", "low"] }
-      }
-    },
-    "FactBool": {
+    "name_source": { "enum": ["osm_name", "park_name", "nearest_street", "none"] },
+    "park_name": { "type": ["string", "null"] },
+    "region": { "type": "object", "properties": { "city": { "type": "string" }, "district": { "type": "string" } } },
+    "location": { "$ref": "#/$defs/LatLng" },
+    "address": { "type": ["string", "null"] },
+    "osm": { "$ref": "#/$defs/OsmRef" },
+    "geometry_estimated": { "type": "boolean", "description": "True when OSM maps the playground as a point; area is approximated by a circle." },
+    "area_m2": { "type": "integer" },
+    "level": { "enum": ["A", "B", "C", "none"], "description": "A = rain-proof (viaduct/roof), B = partial fixed shade or trees, C = computed building shadow for much of the day, none = mostly exposed." },
+    "level_label": { "type": "string" },
+    "rain_cover": {
       "allOf": [
         { "$ref": "#/$defs/Provenance" },
-        { "type": "object", "required": ["value"], "properties": { "value": { "type": ["boolean", "null"] } } }
+        {
+          "type": "object",
+          "required": ["value", "covered_ratio"],
+          "properties": {
+            "value": { "enum": [true, false, "partial"] },
+            "covered_ratio": { "type": "number", "minimum": 0, "maximum": 1 },
+            "note": { "type": "string" }
+          }
+        }
       ]
     },
-    "Zone": {
-      "type": "object",
-      "required": ["id", "kind", "shade_types"],
-      "properties": {
-        "id": { "type": "string" },
-        "kind": { "enum": ["playground", "lawn", "water_play", "sandpit", "seating", "other"] },
-        "age_range": { "type": "array", "items": { "enum": ["0-2", "2-5", "5-12"] } },
-        "geometry": { "type": "object", "description": "GeoJSON Polygon of the zone." },
-        "surface": { "enum": ["rubber", "sand", "grass", "wood_chips", "concrete", "other"] },
-        "fenced": { "$ref": "#/$defs/FactBool" },
-        "shade_types": {
-          "type": "array",
-          "items": {
-            "allOf": [
-              { "$ref": "#/$defs/Provenance" },
-              {
-                "type": "object",
-                "required": ["type", "level"],
-                "properties": {
-                  "type": { "enum": ["under_viaduct", "roof", "shade_sail", "pavilion", "tree_canopy", "building_shadow"] },
-                  "level": { "enum": ["A", "B", "C"], "description": "A=sun+rain all day, B=fixed sun shade, C=time-dependent building shadow." },
-                  "rain_proof": { "type": "boolean" },
-                  "clearance_m": { "type": "number" },
-                  "notes": { "type": "string", "description": "e.g. 'edges get wet in side wind', 'traffic noise'." }
-                }
-              }
-            ]
-          }
-        },
-        "shade_timetable": {
-          "description": "Computed shade ratio (0–1) per month (1–12) per 30-min slot starting 06:00 local time.",
-          "allOf": [
-            { "$ref": "#/$defs/Provenance" },
-            {
-              "type": "object",
-              "required": ["slots"],
-              "properties": {
-                "slot_start": { "type": "string", "default": "06:00" },
-                "slot_minutes": { "type": "integer", "default": 30 },
-                "slots": {
-                  "type": "object",
-                  "patternProperties": {
-                    "^(1[0-2]|[1-9])$": { "type": "array", "items": { "type": "number", "minimum": 0, "maximum": 1 } }
-                  },
-                  "additionalProperties": false
-                }
-              }
+    "shade_types": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "#/$defs/Provenance" },
+          {
+            "type": "object",
+            "required": ["type", "level"],
+            "properties": {
+              "type": { "enum": ["under_viaduct", "roof", "pavilion", "shade_sail", "tree_canopy", "building_shadow"] },
+              "level": { "enum": ["A", "B", "C"] },
+              "rain_proof": { "type": "boolean" },
+              "covered_ratio": { "type": "number" },
+              "trees": { "type": "integer" },
+              "daytime_shaded_share": { "type": "number" },
+              "osm": { "type": "array", "items": { "$ref": "#/$defs/OsmRef" } }
             }
+          }
+        ]
+      }
+    },
+    "daytime_shaded_share": { "type": "number", "minimum": 0, "maximum": 1, "description": "Share of 09:00-16:00 half-hour slots with >= 60% shade, averaged over the year." },
+    "shade_timetable": {
+      "allOf": [
+        { "$ref": "#/$defs/Provenance" },
+        {
+          "type": "object",
+          "required": ["slots", "slot_start", "slot_minutes"],
+          "properties": {
+            "slot_start": { "const": "06:00" },
+            "slot_minutes": { "const": 30 },
+            "building_height_known_share": { "type": "number" },
+            "buildings_considered": { "type": "integer" },
+            "slots": {
+              "type": "object",
+              "description": "Month (\"1\"..\"12\", sampled on the 15th) -> 24 values for slots starting 06:00, 06:30 ... 17:30. Value = shaded share of the playground (0-1); null = sun below 3 degrees.",
+              "patternProperties": { "^(1[0-2]|[1-9])$": { "type": "array", "minItems": 24, "maxItems": 24, "items": { "type": ["number", "null"], "minimum": 0, "maximum": 1 } } },
+              "additionalProperties": false
+            }
+          }
+        }
+      ]
+    },
+    "best_shade_windows": {
+      "type": "object",
+      "description": "Month -> longest continuous run of >= 60% shade, or null.",
+      "patternProperties": {
+        "^(1[0-2]|[1-9])$": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "object", "required": ["start", "end", "mean"], "properties": { "start": { "type": "string" }, "end": { "type": "string" }, "start_slot": { "type": "integer" }, "end_slot": { "type": "integer" }, "mean": { "type": "number" } } }
           ]
         }
       }
     },
+    "playground": { "type": "object" },
+    "amenities": {
+      "type": "object",
+      "properties": {
+        "toilet": { "$ref": "#/$defs/Provenance" },
+        "drinking_water": { "$ref": "#/$defs/Provenance" }
+      }
+    },
+    "parking": { "type": "array", "items": { "$ref": "#/$defs/Parking" } },
+    "chargers": { "type": "array", "items": { "$ref": "#/$defs/Charger" } },
+    "charger_summary": {
+      "type": "object",
+      "required": ["radius_m", "total", "fast", "slow", "nearest_fast_m", "nearest_slow_m"],
+      "properties": {
+        "radius_m": { "type": "integer" },
+        "total": { "type": "integer" },
+        "fast": { "type": "integer" },
+        "slow": { "type": "integer" },
+        "unknown": { "type": "integer" },
+        "nearest_fast_m": { "type": ["integer", "null"] },
+        "nearest_slow_m": { "type": ["integer", "null"] },
+        "nearest_any_m": { "type": ["integer", "null"] }
+      }
+    },
+    "updated_at": { "type": "string", "format": "date" },
+    "sources": { "type": "array" }
+  },
+  "$defs": {
+    "LatLng": {
+      "type": "object",
+      "required": ["lat", "lng"],
+      "properties": { "lat": { "type": "number", "minimum": 21.5, "maximum": 26.5 }, "lng": { "type": "number", "minimum": 118, "maximum": 122.5 } }
+    },
+    "OsmRef": {
+      "type": "object",
+      "required": ["type", "id", "url"],
+      "properties": { "type": { "enum": ["node", "way", "relation"] }, "id": { "type": "integer" }, "url": { "type": "string" } }
+    },
+    "Provenance": {
+      "type": "object",
+      "required": ["method", "verified_at", "confidence", "source"],
+      "properties": {
+        "method": { "enum": ["site_visit", "user_report", "computed", "official_data", "satellite", "osm"] },
+        "source": { "type": "string" },
+        "verified_at": { "type": "string", "format": "date" },
+        "confidence": { "enum": ["high", "medium", "low"] }
+      }
+    },
     "Parking": {
       "type": "object",
-      "required": ["name", "walk_m"],
+      "required": ["name", "distance_m", "distance_method", "location", "osm"],
       "properties": {
         "name": { "type": "string" },
-        "tdx_id": { "type": "string", "description": "TDX parking lot ID, used to fetch real-time availability." },
-        "location": { "$ref": "#/properties/location" },
-        "walk_m": { "type": "integer", "description": "Walking-network distance to the playground zone." },
-        "fee": { "type": "string" },
-        "height_limit_m": { "type": "number" },
-        "family_spaces": { "type": "boolean" },
-        "source": { "type": "string" },
-        "verified_at": { "type": "string", "format": "date" }
+        "kind": { "type": ["string", "null"] },
+        "distance_m": { "type": "integer" },
+        "distance_method": { "const": "straight_line" },
+        "capacity": { "type": ["integer", "null"] },
+        "fee": { "type": ["string", "null"] },
+        "maxheight_m": { "type": ["number", "null"] },
+        "access": { "type": ["string", "null"] },
+        "location": { "$ref": "#/$defs/LatLng" },
+        "osm": { "$ref": "#/$defs/OsmRef" }
+      }
+    },
+    "Charger": {
+      "type": "object",
+      "required": ["name", "speed", "sockets", "distance_m", "location", "osm"],
+      "properties": {
+        "name": { "type": "string" },
+        "operator": { "type": ["string", "null"] },
+        "speed": { "enum": ["fast", "slow", "both", "unknown"], "description": "fast = DC (CCS/CHAdeMO/Supercharger), slow = AC (Type 1/Type 2), unknown = not tagged." },
+        "speed_label": { "type": "string" },
+        "max_kw": { "type": ["number", "null"] },
+        "sockets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "type": { "type": "string" }, "label": { "type": "string" }, "current": { "enum": ["AC", "DC", null] }, "count": { "type": "integer" }, "output_kw": { "type": ["number", "null"] } }
+          }
+        },
+        "distance_m": { "type": "integer" },
+        "location": { "$ref": "#/$defs/LatLng" },
+        "osm": { "$ref": "#/$defs/OsmRef" }
       }
     }
   }

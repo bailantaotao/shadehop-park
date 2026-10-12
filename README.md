@@ -53,7 +53,7 @@ MCP Server（Claude Desktop / Claude Code 設定）：
 ## 自動化
 
 - `Refresh data`：每週一與 `pipeline/` 有變更時，從 OSM 重新抓資料、重算並提交回分支。
-- `Deploy site`：設定 repository variable `PAGES_ENABLED=true`，並在 Settings → Pages 選 GitHub Actions 後部署。
+- `Deploy to Cloudflare Pages`：預設分支有新 commit 或資料更新後自動部署。需要先在 repo 加上 secrets `CLOUDFLARE_API_TOKEN`（權限：Account → Cloudflare Pages → Edit）與 `CLOUDFLARE_ACCOUNT_ID`；可選 variables `CF_PAGES_PROJECT`、`SITE_URL`（自訂網域時設定）。
 
 ## 資料正確性與限制
 

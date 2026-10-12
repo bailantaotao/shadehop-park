@@ -16,7 +16,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "public"
-SITE_URL = (os.environ.get("SITE_URL") or "https://bailantaotao.github.io/shadehop-park").rstrip("/")
+SITE_URL = (os.environ.get("SITE_URL") or "https://shadehop-park.pages.dev").rstrip("/")
 
 SPEED_LABEL = {"fast": "快充", "slow": "慢充", "both": "快充+慢充", "unknown": "未標示"}
 RAIN_LABEL = {True: "可以（有遮蔽）", "partial": "部分區域有遮蔽", False: "不行（未發現遮蔽）"}
@@ -204,6 +204,15 @@ def build(out: Path = OUT) -> None:
         + "</urlset>\n"
     )
     (out / ".nojekyll").write_text("")
+    # Cloudflare Pages headers: let browser-based agents fetch the JSON, and serve
+    # GeoJSON / llms.txt with explicit types.
+    (out / "_headers").write_text(
+        "/api/*\n  Access-Control-Allow-Origin: *\n\n"
+        "/openapi.json\n  Access-Control-Allow-Origin: *\n\n"
+        "/api/*.geojson\n  Content-Type: application/geo+json; charset=utf-8\n\n"
+        "/llms.txt\n  Content-Type: text/plain; charset=utf-8\n\n"
+        "/llms-full.txt\n  Content-Type: text/plain; charset=utf-8\n"
+    )
     print(f"built {len(parks)} park pages into {out}")
 
 

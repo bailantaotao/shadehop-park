@@ -75,4 +75,5 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     assert "/parks/lk-w20/" in (out / "sitemap.xml").read_text()
     assert "快充" in (out / "llms-full.txt").read_text()
     assert (out / "api" / "casters.geojson").exists()
+    assert "Access-Control-Allow-Origin" in (out / "_headers").read_text()
     assert json.loads((out / "openapi.json").read_text())["openapi"].startswith("3.1")

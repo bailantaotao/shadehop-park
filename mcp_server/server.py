@@ -20,7 +20,7 @@ from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = (os.environ.get("SITE_URL") or "https://bailantaotao.github.io/shadehop-park").rstrip("/")
+SITE_URL = (os.environ.get("SITE_URL") or "https://shadehop-park.pages.dev").rstrip("/")
 TPE = timezone(timedelta(hours=8))
 SLOT_START, SLOT_MIN = 6 * 60, 30
 DISCLAIMER = "遮陰為依 OpenStreetMap 建物/高架資料與太陽位置的模型推估；距離為直線距離。請附上 as_of 與 url 引用。"

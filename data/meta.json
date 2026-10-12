@@ -7,12 +7,14 @@
   "DEFAULT_BUILDING_HEIGHT_M": 9.0,
   "LEVEL_C_MIN_DAYTIME_SHARE": 0.4,
   "LEVEL_HEIGHT_M": 3.0,
+  "MAX_LEVEL_HEIGHT_M": 6.0,
   "PARKING_RADIUS_M": 800,
   "PLAYGROUND_NODE_RADIUS_M": 12,
   "ROOF_HEIGHT_M": 3.0,
   "SHADED_SLOT_RATIO": 0.6,
   "TREE_DEFAULT_CROWN_M": 6.0,
   "TREE_DEFAULT_HEIGHT_M": 6.0,
+  "TYPE_HEIGHT_MIN_SAMPLES": 20,
   "VIADUCT_DECK_BOTTOM_M": 8.0,
   "VIADUCT_DECK_TOP_M": 10.0
  },
@@ -23,16 +25,22 @@
    "A": 0,
    "B": 1,
    "C": 0,
-   "none": 53
+   "none": 52
   },
   "chargers_in_bbox": 6,
-  "mapped_playgrounds": 8,
+  "mapped_playgrounds": 7,
   "park_candidates": 46,
   "parking_lots_in_bbox": 246,
-  "parks": 54
+  "parks": 53
  },
- "fetched_at": "2026-10-12T18:28:26+00:00",
- "generated_from_osm_base": "2026-10-12T18:28:36Z",
+ "default_building_heights_by_type": {
+  "apartments": 24.0,
+  "residential": 9.0,
+  "school": 9.0,
+  "yes": 9.0
+ },
+ "fetched_at": "2026-10-12T18:23:33+00:00",
+ "generated_from_osm_base": "2026-10-12T18:26:36Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
   "B": "部分遮陽設施 / 樹蔭",

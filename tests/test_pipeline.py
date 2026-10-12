@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 import pytest
 from shapely.geometry import Polygon
 
-from pipeline.build_data import Builder, summary
+from pipeline.build_data import Builder, building_height, summary
 from pipeline.chargers import classify, is_car_charger
 from pipeline.shade import Caster, ShadeModel, best_windows, shadow
 from pipeline.sun import sun_position
@@ -64,6 +64,20 @@ def test_floating_deck_shadow_moves_off_the_ground_beneath():
 ])
 def test_charger_classification(tags, speed):
     assert classify(tags)["speed"] == speed
+
+
+def test_building_height_typo_falls_back_to_levels():
+    assert building_height({"building": "apartments", "building:levels": "8", "height": "290"}) == (0.0, 24.0, True)
+    assert building_height({"building": "office", "building:levels": "30", "height": "128.9"})[1] == 128.9
+    assert building_height({"building": "apartments"}, default=24.0) == (0.0, 24.0, False)
+
+
+def test_untagged_buildings_use_local_type_height():
+    tall = [{"type": "way", "id": 900 + i, "tags": {"building": "apartments", "building:levels": str(10 + i)}} for i in range(20)]
+    data = raw()
+    data["elements"] += tall
+    assert Builder(data).default_heights == {"apartments": 45.0}  # lower quartile of 30..87 m
+    assert Builder(raw()).default_heights == {}  # too few samples -> global default
 
 
 def test_charger_max_kw():

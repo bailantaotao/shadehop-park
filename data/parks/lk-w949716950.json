@@ -26,8 +26,20 @@
   "10": null,
   "11": null,
   "12": null,
-  "2": null,
-  "3": null,
+  "2": {
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 0.6,
+   "start": "17:00",
+   "start_slot": 22
+  },
+  "3": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.62,
+   "start": "17:30",
+   "start_slot": 23
+  },
   "4": null,
   "5": null,
   "6": null,
@@ -357,7 +369,7 @@
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.25,
     null,
     null
    ],
@@ -383,7 +395,7 @@
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.13,
     null,
     null
    ],
@@ -436,7 +448,7 @@
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.6,
     null
    ],
    "3": [
@@ -463,7 +475,7 @@
     0.0,
     0.0,
     0.0,
-    0.06
+    0.62
    ],
    "4": [
     0.0,
@@ -629,7 +641,7 @@
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T18:28:36Z",
+   "as_of": "2026-10-12T18:26:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"

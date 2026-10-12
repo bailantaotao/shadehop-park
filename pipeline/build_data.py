@@ -25,6 +25,8 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
 EXCLUDED_ACCESS = {"private", "no"}
+# Bridges in these states are not (yet / any more) physically there.
+NOT_BUILT = {"proposed", "razed", "abandoned", "disused"}
 FOOT_HIGHWAYS = {"footway", "path", "cycleway", "steps", "pedestrian", "corridor", "bridleway"}
 LEVEL_LABELS = {
     "A": "全天候遮蔽（下雨可玩）",
@@ -56,15 +58,18 @@ def osm_ref(el: dict) -> dict:
     return {"type": el["type"], "id": el["id"], "url": f"https://www.openstreetmap.org/{el['type']}/{el['id']}"}
 
 
-def building_height(tags: dict) -> tuple[float, float, bool]:
-    """(z0, z1, known) for a building."""
+def building_height(tags: dict, default: float = config.DEFAULT_BUILDING_HEIGHT_M) -> tuple[float, float, bool]:
+    """(z0, z1, known) for a building; `default` is used when neither height nor levels is tagged."""
     h = num(tags.get("height"))
+    levels = num(tags.get("building:levels"))
+    if h is not None and levels and h > levels * config.MAX_LEVEL_HEIGHT_M + config.MAX_ROOF_EXTRA_M:
+        h = None  # typo such as height=290 on an 8-storey block; trust the level count
     known = h is not None
-    if h is None and num(tags.get("building:levels")) is not None:
-        h = num(tags["building:levels"]) * config.LEVEL_HEIGHT_M + (num(tags.get("roof:levels")) or 0) * config.LEVEL_HEIGHT_M
+    if h is None and levels is not None:
+        h = levels * config.LEVEL_HEIGHT_M + (num(tags.get("roof:levels")) or 0) * config.LEVEL_HEIGHT_M
         known = True
     if h is None:
-        h = config.DEFAULT_BUILDING_HEIGHT_M
+        h = default
     z0 = num(tags.get("min_height"))
     if z0 is None and num(tags.get("building:min_level")) is not None:
         z0 = num(tags["building:min_level"]) * config.LEVEL_HEIGHT_M
@@ -102,7 +107,27 @@ class Builder:
         self._index()
 
     # ---------------------------------------------------------------- indexing
+    def _default_heights(self) -> dict[str, float]:
+        """Per building=* value, a conservative (lower-quartile) height from buildings of that
+        type in the same data that do carry height/levels. Used only for untagged buildings."""
+        known: dict[str, list[float]] = {}
+        for el in self.raw["elements"]:
+            tags = el.get("tags", {})
+            kind = tags.get("building")
+            if not kind or kind in ("no", "roof"):
+                continue
+            _, z1, ok = building_height(tags)
+            if ok:
+                known.setdefault(kind, []).append(z1)
+        out = {}
+        for kind, hs in sorted(known.items()):
+            if len(hs) >= config.TYPE_HEIGHT_MIN_SAMPLES:
+                hs.sort()
+                out[kind] = max(config.DEFAULT_BUILDING_HEIGHT_M, hs[len(hs) // 4])
+        return out
+
     def _index(self) -> None:
+        self.default_heights = self._default_heights()
         self.playgrounds, self.parks, self.casters, self.covers = [], [], [], []
         self.parking, self.chargers, self.toilets, self.water, self.streets = [], [], [], [], []
         self.trees_xy = []
@@ -125,7 +150,8 @@ class Builder:
                 self.parks.append(item)
 
             bridge = tags.get("bridge")
-            if bridge and bridge != "no" and ("highway" in tags or "railway" in tags) and el["type"] == "way":
+            built = tags.get("highway") not in NOT_BUILT and tags.get("railway") not in NOT_BUILT
+            if bridge and bridge != "no" and built and ("highway" in tags or "railway" in tags) and el["type"] == "way":
                 if not is_area(xy):
                     deck = xy.buffer(bridge_width(tags) / 2, cap_style="flat")
                     low = tags.get("highway") in FOOT_HIGHWAYS
@@ -144,7 +170,7 @@ class Builder:
                 self.casters.append(Caster(roof, config.ROOF_HEIGHT_M - 0.5, config.ROOF_HEIGHT_M, "roof", False))
                 self.covers.append({"geom": roof, "kind": kind, "item": item})
             elif "building" in tags and tags["building"] != "no" and is_area(xy):
-                z0, z1, known = building_height(tags)
+                z0, z1, known = building_height(tags, self.default_heights.get(tags["building"], config.DEFAULT_BUILDING_HEIGHT_M))
                 self.casters.append(Caster(xy, z0, z1, "building", known))
 
             if tags.get("natural") == "tree" and el["type"] == "node":
@@ -426,7 +452,7 @@ class Builder:
         }
 
     def build(self) -> list[dict]:
-        records = [r for r in (self.build_one(p) for p in self.playgrounds) if r]
+        built = [(r, p["xy"]) for r, p in ((self.build_one(p), p) for p in self.playgrounds) if r]
         # Most Taiwanese neighbourhood parks have play equipment that OSM does not map
         # separately; list parks without a mapped playground as unconfirmed candidates.
         pg_points = [p["geom"] if isinstance(p["geom"], Point) else p["geom"].representative_point() for p in self.playgrounds]
@@ -435,8 +461,10 @@ class Builder:
                 continue
             r = self.build_one(park, kind="park")
             if r:
-                records.append(r)
-        # Drop duplicate playgrounds (node mapped inside an already-mapped area).
+                built.append((r, park["xy"]))
+        records = [r for r, _ in built]
+        # Drop duplicates: a node mapped inside/next to an already-mapped area, or an area
+        # mostly inside a larger one of the same kind (e.g. the equipment patch of a playground).
         areas = [self.proj.to_xy(Point(r["location"]["lng"], r["location"]["lat"])) for r in records]
         keep = []
         for i, r in enumerate(records):
@@ -445,8 +473,15 @@ class Builder:
                     not o["geometry_estimated"] and areas[i].distance(areas[j]) < 25
                     for j, o in enumerate(records) if j != i
                 )
-                if dup:
-                    continue
+            else:
+                xy = built[i][1]
+                dup = any(
+                    not o["geometry_estimated"] and o["kind"] == r["kind"] and built[j][1].area > xy.area
+                    and built[j][1].intersection(xy).area >= config.NESTED_DUPLICATE_RATIO * xy.area
+                    for j, o in enumerate(records) if j != i
+                )
+            if dup:
+                continue
             keep.append(r)
         keep.sort(key=lambda r: r["id"])
         return keep
@@ -497,8 +532,10 @@ class Builder:
                     "TREE_DEFAULT_CROWN_M", "TREE_DEFAULT_HEIGHT_M", "COVERED_FULL_RATIO",
                     "COVERED_PARTIAL_RATIO", "SHADED_SLOT_RATIO", "LEVEL_C_MIN_DAYTIME_SHARE",
                     "PARKING_RADIUS_M", "CHARGER_RADIUS_M", "AMENITY_RADIUS_M",
+                    "MAX_LEVEL_HEIGHT_M", "TYPE_HEIGHT_MIN_SAMPLES",
                 )
             },
+            "default_building_heights_by_type": self.default_heights,
             "level_labels": LEVEL_LABELS,
         }
 

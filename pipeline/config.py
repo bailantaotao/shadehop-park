@@ -34,6 +34,12 @@ SHADOW_SEARCH_RADIUS_M = 400
 PLAYGROUND_NODE_RADIUS_M = 12  # playgrounds mapped as a single point
 LEVEL_HEIGHT_M = 3.0  # per building:levels
 DEFAULT_BUILDING_HEIGHT_M = 9.0  # building with no height/levels tag
+# Untagged buildings of a type with >= this many tagged examples in the data
+# use that type's lower-quartile height instead (e.g. apartments in Linkou).
+TYPE_HEIGHT_MIN_SAMPLES = 20
+# height > levels * MAX_LEVEL_HEIGHT_M + MAX_ROOF_EXTRA_M is treated as a typo.
+MAX_LEVEL_HEIGHT_M = 6.0
+MAX_ROOF_EXTRA_M = 15.0
 VIADUCT_DECK_BOTTOM_M = 8.0
 VIADUCT_DECK_TOP_M = 10.0
 ROOF_HEIGHT_M = 3.0  # amenity=shelter / building=roof
@@ -66,6 +72,7 @@ TZ_OFFSET_H = 8  # Asia/Taipei, no DST
 # Classification thresholds.
 COVERED_FULL_RATIO = 0.5  # >= this share under a roof/viaduct -> level A
 COVERED_PARTIAL_RATIO = 0.15
+NESTED_DUPLICATE_RATIO = 0.8  # an area this much inside a larger one of the same kind is a duplicate
 # A park with at least this much area under a viaduct (not pavilions) has a rain-proof play spot even if
 # the share of the whole park is small.
 COVERED_MIN_AREA_M2 = 150

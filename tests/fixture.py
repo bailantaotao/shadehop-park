@@ -36,9 +36,13 @@ def raw():
         # Playground C: 20x20 m directly north of a 60 m tall, 80 m wide tower (sun is to the south).
         way(20, ring(500, 10, 520, 30), leisure="playground"),
         way(21, ring(470, -30, 550, 0), building="yes", height="60"),
+        # Equipment patch mapped as its own playground inside playground C: duplicate, dropped.
+        way(22, ring(505, 15, 515, 25), leisure="playground", surface="wood"),
         # Playground exposed: nothing around.
         node(30, -1000, -1000, leisure="playground"),
         # Private playground: excluded.
+        # A proposed (not built) viaduct over it must not count as cover.
+        way(33, [ll(-1300, -1000), ll(-700, -1000)], highway="proposed", proposed="primary", bridge="yes", width="30"),
         node(31, -1200, -1000, leisure="playground", access="private"),
         # Outside boundary: excluded.
         node(32, 5000, 5000, leisure="playground"),

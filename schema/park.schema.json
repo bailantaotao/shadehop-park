@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://shadehop.example/schema/park.schema.json",
+  "title": "ShadeHop Park",
+  "description": "A park/playground record. Every factual claim is wrapped in a Fact with provenance so humans and AI agents can verify it.",
+  "type": "object",
+  "required": ["id", "name", "location", "zones", "updated_at"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z]{3}-[0-9]{4}$", "description": "Stable ID, e.g. tpe-0001. Never reused." },
+    "name": { "type": "string" },
+    "name_en": { "type": "string" },
+    "address": { "type": "string" },
+    "location": {
+      "type": "object",
+      "required": ["lat", "lng"],
+      "properties": {
+        "lat": { "type": "number", "minimum": 21.5, "maximum": 26.5 },
+        "lng": { "type": "number", "minimum": 118, "maximum": 122.5 }
+      }
+    },
+    "opening_hours": { "type": "string", "description": "OSM opening_hours syntax, e.g. '24/7'." },
+    "zones": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/Zone" }
+    },
+    "amenities": {
+      "type": "object",
+      "properties": {
+        "toilet": { "$ref": "#/$defs/FactBool" },
+        "family_toilet": { "$ref": "#/$defs/FactBool" },
+        "nursing_room": { "$ref": "#/$defs/FactBool" },
+        "drinking_water": { "$ref": "#/$defs/FactBool" },
+        "stroller_friendly": { "$ref": "#/$defs/FactBool" }
+      }
+    },
+    "parking": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Parking" }
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "taken_at"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "taken_at": { "type": "string", "format": "date" },
+          "caption": { "type": "string" }
+        }
+      }
+    },
+    "updated_at": { "type": "string", "format": "date" }
+  },
+  "$defs": {
+    "Provenance": {
+      "type": "object",
+      "required": ["method", "verified_at", "confidence"],
+      "properties": {
+        "method": { "enum": ["site_visit", "user_report", "computed", "official_data", "satellite", "osm"] },
+        "source": { "type": "string", "description": "URL or dataset identifier." },
+        "verified_at": { "type": "string", "format": "date" },
+        "confidence": { "enum": ["high", "medium", "low"] }
+      }
+    },
+    "FactBool": {
+      "allOf": [
+        { "$ref": "#/$defs/Provenance" },
+        { "type": "object", "required": ["value"], "properties": { "value": { "type": ["boolean", "null"] } } }
+      ]
+    },
+    "Zone": {
+      "type": "object",
+      "required": ["id", "kind", "shade_types"],
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "enum": ["playground", "lawn", "water_play", "sandpit", "seating", "other"] },
+        "age_range": { "type": "array", "items": { "enum": ["0-2", "2-5", "5-12"] } },
+        "geometry": { "type": "object", "description": "GeoJSON Polygon of the zone." },
+        "surface": { "enum": ["rubber", "sand", "grass", "wood_chips", "concrete", "other"] },
+        "fenced": { "$ref": "#/$defs/FactBool" },
+        "shade_types": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              { "$ref": "#/$defs/Provenance" },
+              {
+                "type": "object",
+                "required": ["type", "level"],
+                "properties": {
+                  "type": { "enum": ["under_viaduct", "roof", "shade_sail", "pavilion", "tree_canopy", "building_shadow"] },
+                  "level": { "enum": ["A", "B", "C"], "description": "A=sun+rain all day, B=fixed sun shade, C=time-dependent building shadow." },
+                  "rain_proof": { "type": "boolean" },
+                  "clearance_m": { "type": "number" },
+                  "notes": { "type": "string", "description": "e.g. 'edges get wet in side wind', 'traffic noise'." }
+                }
+              }
+            ]
+          }
+        },
+        "shade_timetable": {
+          "description": "Computed shade ratio (0–1) per month (1–12) per 30-min slot starting 06:00 local time.",
+          "allOf": [
+            { "$ref": "#/$defs/Provenance" },
+            {
+              "type": "object",
+              "required": ["slots"],
+              "properties": {
+                "slot_start": { "type": "string", "default": "06:00" },
+                "slot_minutes": { "type": "integer", "default": 30 },
+                "slots": {
+                  "type": "object",
+                  "patternProperties": {
+                    "^(1[0-2]|[1-9])$": { "type": "array", "items": { "type": "number", "minimum": 0, "maximum": 1 } }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "Parking": {
+      "type": "object",
+      "required": ["name", "walk_m"],
+      "properties": {
+        "name": { "type": "string" },
+        "tdx_id": { "type": "string", "description": "TDX parking lot ID, used to fetch real-time availability." },
+        "location": { "$ref": "#/properties/location" },
+        "walk_m": { "type": "integer", "description": "Walking-network distance to the playground zone." },
+        "fee": { "type": "string" },
+        "height_limit_m": { "type": "number" },
+        "family_spaces": { "type": "boolean" },
+        "source": { "type": "string" },
+        "verified_at": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

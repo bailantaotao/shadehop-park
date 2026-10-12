@@ -3,7 +3,6 @@ name: Deploy site
 # Settings -> Pages -> Source = GitHub Actions. Optional variable SITE_URL.
 on:
   push:
-    branches: [main]
   workflow_run:
     workflows: ["Refresh data"]
     types: [completed]

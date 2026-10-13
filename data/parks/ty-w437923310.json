@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 117,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/5040151918",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 597,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/437923310",
-   "value": null,
+   "name": "捷運鶯桃福德站",
+   "source": "https://www.openstreetmap.org/node/4990733837",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 231,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "八德區麥當勞桃鶯店(2F)",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

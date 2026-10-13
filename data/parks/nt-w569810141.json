@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 286,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/6180428005",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,12 +18,21 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 859,
+   "method": "osm",
+   "name": "汐科站",
+   "source": "https://www.openstreetmap.org/node/289281847",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
    "changing_table": null,
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/569810141",
    "value": null,
    "verified_at": "2026-10-12"

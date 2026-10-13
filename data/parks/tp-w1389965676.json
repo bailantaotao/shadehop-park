@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 123,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/4328118623",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 28,
@@ -9,14 +18,34 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 392,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/1389965676",
-   "value": null,
+   "name": "捷運市政府站",
+   "source": "https://www.openstreetmap.org/node/3512275767",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "其他",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 198,
+   "family": {
+    "accessible": true,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 258,
+    "family_room": false,
+    "name": "忠信地下停車場"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "信義14號",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },
@@ -903,7 +932,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T13:50:59+00:00",
+   "as_of": "2026-10-13T15:42:28+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

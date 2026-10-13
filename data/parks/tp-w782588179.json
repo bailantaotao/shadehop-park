@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 199,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/4082740465",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 197,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 129,
+   "distance_m": 669,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/782588179",
+   "name": "捷運麟光站",
+   "source": "https://www.openstreetmap.org/node/689442955",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "民眾洽公場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 125,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "臥龍街派出所",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

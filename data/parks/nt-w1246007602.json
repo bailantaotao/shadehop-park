@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 146,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/12038761854",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 934,
+   "method": "osm",
+   "name": "捷運頂溪站",
+   "source": "https://www.openstreetmap.org/node/3812564426",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 66,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1246007602",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/6427779669",
    "value": true,
    "verified_at": "2026-10-12"
   }

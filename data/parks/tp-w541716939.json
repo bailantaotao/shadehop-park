@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 35,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/3835833946",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 122,
@@ -9,14 +18,27 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 333,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/541716939",
-   "value": null,
+   "name": "捷運劍潭站",
+   "source": "https://www.openstreetmap.org/node/3495094875",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "公園",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 73,
+   "family": null,
+   "family_room": true,
+   "method": "official_data",
+   "name": "華齡公園景觀",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

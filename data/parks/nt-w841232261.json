@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/841232261",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 691,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/841232261",
-   "value": null,
+   "name": "捷運臺北大學站",
+   "source": "https://www.openstreetmap.org/node/4990733842",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": null,
+   "category": null,
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 287,
+   "family": null,
+   "family_room": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/7093253849",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

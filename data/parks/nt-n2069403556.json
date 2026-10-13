@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/2069403556",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 553,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/node/2069403556",
-   "value": null,
+   "name": "猴硐站",
+   "source": "https://www.openstreetmap.org/node/289131479",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "文化育樂活動場所",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 22,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "猴硐煤礦園區烘沙室",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

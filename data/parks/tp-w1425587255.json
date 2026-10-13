@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 292,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/13125207038",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "name": null,
    "source": "https://www.openstreetmap.org/way/1425587255",
    "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": null,
+   "category": null,
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 268,
+   "family": null,
+   "family_room": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/12060836326",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

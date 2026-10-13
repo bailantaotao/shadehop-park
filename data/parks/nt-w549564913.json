@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 179,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/4257323613",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 457,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/549564913",
-   "value": null,
+   "name": "捷運頭前庄站",
+   "source": "https://www.openstreetmap.org/node/2083320835",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "社福機構、集會場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 153,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "中港第一市民活動中心1F",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },
@@ -657,7 +679,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:36+08:00",
+   "as_of": "2026-10-13T23:15:37+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

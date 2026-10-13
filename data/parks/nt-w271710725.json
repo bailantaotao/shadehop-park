@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/271710725",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 1266,
+   "method": "osm",
+   "name": "瑞芳站",
+   "source": "https://www.openstreetmap.org/node/289131555",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 0,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/271710725",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/271710720",
    "value": true,
    "verified_at": "2026-10-12"
   }

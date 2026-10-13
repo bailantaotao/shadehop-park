@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 265,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/5455666199",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "name": null,
    "source": "https://www.openstreetmap.org/way/845536793",
    "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 267,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "八德區統一超商榮興店",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

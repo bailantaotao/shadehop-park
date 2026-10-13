@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 209,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/5225847729",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 1497,
+   "method": "osm",
+   "name": "桃園站",
+   "source": "https://www.openstreetmap.org/node/246416407",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": true,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 31,
+   "family": {
+    "accessible": false,
+    "category": "公園",
+    "changing_table": true,
+    "distance_m": 50,
+    "family_room": true,
+    "name": "桃園區三民公園女廁（兒童遊戲場旁）"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1446726274",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/8000187350",
    "value": true,
    "verified_at": "2026-10-12"
   }
@@ -82,7 +111,7 @@
    "name": "三民公園停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通",
+   "operator": "程豐資通股份有限公司",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -120,7 +149,7 @@
    "name": "新永和停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通",
+   "operator": "程豐資通股份有限公司",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -738,7 +767,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:38+08:00",
+   "as_of": "2026-10-13T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

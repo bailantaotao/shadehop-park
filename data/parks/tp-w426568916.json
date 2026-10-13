@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 58,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/9784185740",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,34 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 196,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/426568916",
-   "value": null,
+   "name": "捷運台電大樓站",
+   "source": "https://www.openstreetmap.org/node/253559357",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": null,
+   "category": null,
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 215,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 217,
+    "family_room": true,
+    "name": "臺北市客家文化主題公園美食體驗坊1樓"
+   },
+   "family_room": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1540007767",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

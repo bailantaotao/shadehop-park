@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/647561819",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 758,
+   "method": "osm",
+   "name": "猴硐站",
+   "source": "https://www.openstreetmap.org/node/289131479",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 0,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 171,
+    "family_room": false,
+    "name": "猴硐煤礦園區烘沙室"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/647561819",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/2076157607",
    "value": true,
    "verified_at": "2026-10-12"
   }

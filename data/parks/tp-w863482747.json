@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/863482747",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 55,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 1252,
+   "method": "osm",
+   "name": "捷運大直站",
+   "source": "https://www.openstreetmap.org/node/1681745146",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 19,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/863482747",
+   "name": "流動廁所",
+   "source": "https://www.openstreetmap.org/relation/11791161",
    "value": true,
    "verified_at": "2026-10-12"
   }

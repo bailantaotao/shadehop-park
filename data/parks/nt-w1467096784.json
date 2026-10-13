@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 55,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/6499848132",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 1079,
+   "method": "osm",
+   "name": "捷運公館站",
+   "source": "https://www.openstreetmap.org/node/3530915063",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": true,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 12,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1467096784",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1467096797",
    "value": true,
    "verified_at": "2026-10-12"
   }

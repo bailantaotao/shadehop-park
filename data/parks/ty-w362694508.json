@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 16,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/3669613466",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "name": null,
    "source": "https://www.openstreetmap.org/way/362694508",
    "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 293,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "麥當勞中壢民族分公司(1F)",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },
@@ -272,7 +294,7 @@
    "name": "桃園－平鎮",
    "opening_hours": "7x24小時",
    "operation_type": "私有民營",
-   "operator": "台灣特斯拉汽車有限公司",
+   "operator": "特斯拉",
    "osm": null,
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -838,7 +860,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:38+08:00",
+   "as_of": "2026-10-13T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

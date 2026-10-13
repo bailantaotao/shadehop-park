@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 132,
+   "method": "osm",
+   "name": "蝦皮店到店",
+   "source": "https://www.openstreetmap.org/node/9401545421",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 70,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "medium",
-   "distance_m": 136,
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
    "method": "osm",
-   "note": null,
+   "name": null,
    "source": "https://www.openstreetmap.org/way/543889115",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "交通",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 125,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "景美女中地下停車場B1",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

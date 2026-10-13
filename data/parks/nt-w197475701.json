@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 204,
+   "method": "osm",
+   "name": "OK超商",
+   "source": "https://www.openstreetmap.org/way/196798922",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 28,
+   "distance_m": 470,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/197475701",
+   "name": "瑞芳站",
+   "source": "https://www.openstreetmap.org/node/289131555",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 35,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "麥當勞瑞芳中山店",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

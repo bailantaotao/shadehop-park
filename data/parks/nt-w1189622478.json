@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1189622478",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 180,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 137,
+   "distance_m": 200,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1189622478",
+   "name": "猴硐站",
+   "source": "https://www.openstreetmap.org/node/289131479",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "其他",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 10,
+   "family": {
+    "accessible": true,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 175,
+    "family_room": false,
+    "name": "猴硐火車站"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "侯硐路232號",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

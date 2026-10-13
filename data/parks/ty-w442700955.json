@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 272,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/6898027606",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "medium",
-   "distance_m": 187,
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
    "method": "osm",
-   "note": null,
+   "name": null,
    "source": "https://www.openstreetmap.org/way/442700955",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "觀光地區及風景區",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 25,
+   "family": null,
+   "family_room": true,
+   "method": "official_data",
+   "name": "新屋濱海植物園",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

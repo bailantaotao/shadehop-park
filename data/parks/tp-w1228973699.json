@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 70,
+   "method": "osm",
+   "name": "玉霞商店",
+   "source": "https://www.openstreetmap.org/node/4043621280",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 59,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 124,
+   "distance_m": 1138,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1228973699",
+   "name": "萬華站",
+   "source": "https://www.openstreetmap.org/node/1273038428",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "交通",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 0,
+   "family": null,
+   "family_room": true,
+   "method": "official_data",
+   "name": "青年公園棒球場地下停車場",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

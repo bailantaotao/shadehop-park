@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 67,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/13308370989",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,27 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "name": null,
    "source": "https://www.openstreetmap.org/way/1019638090",
    "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "社福機構、集會場所",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 263,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "衛生福利部桃園醫院(醫療)B1F",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },
@@ -64,7 +86,7 @@
    "name": "永豐路停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通",
+   "operator": "程豐資通股份有限公司",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -681,13 +703,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:38+08:00",
+   "as_of": "2026-10-13T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T13:51:01+00:00",
+   "as_of": "2026-10-13T15:42:30+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"

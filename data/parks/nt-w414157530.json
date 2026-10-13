@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 130,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/14157037500",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 38,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 366,
+   "method": "osm",
+   "name": "捷運輔大站",
+   "source": "https://www.openstreetmap.org/node/3812564424",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 12,
+   "family": {
+    "accessible": false,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 18,
+    "family_room": false,
+    "name": "台北捷運新莊區段(輔大站)B1站外"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/414157530",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/4442247490",
    "value": true,
    "verified_at": "2026-10-12"
   }

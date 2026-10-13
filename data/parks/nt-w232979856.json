@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 122,
+   "method": "osm",
+   "name": "蝦皮店到店",
+   "source": "https://www.openstreetmap.org/node/10092252233",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 142,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 523,
+   "method": "osm",
+   "name": "捷運三峽站",
+   "source": "https://www.openstreetmap.org/node/13976613665",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 50,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/232979856",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/12292029540",
    "value": true,
    "verified_at": "2026-10-12"
   }
@@ -174,7 +196,7 @@
    "name": "新北－三峽",
    "opening_hours": "7x24小時",
    "operation_type": "私有民營",
-   "operator": "台灣特斯拉汽車有限公司",
+   "operator": "特斯拉",
    "osm": null,
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -740,7 +762,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:36+08:00",
+   "as_of": "2026-10-13T23:15:37+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 193,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/4293261323",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 124,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 46,
+   "distance_m": 1205,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/839459463",
+   "name": "捷運萬芳社區站",
+   "source": "https://www.openstreetmap.org/node/689418701",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 38,
+   "family": {
+    "accessible": true,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 268,
+    "family_room": true,
+    "name": "北二高木柵休息站"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "台灣中油木柵加油站",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

@@ -1,6 +1,15 @@
 {
  "address": "桃園市八德區興豐路1315號",
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/427778849",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/427778849",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 0,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/427778849",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1336686558",
    "value": true,
    "verified_at": "2026-10-12"
   }

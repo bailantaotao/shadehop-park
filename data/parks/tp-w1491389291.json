@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 104,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/13413775729",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 179,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 474,
+   "method": "osm",
+   "name": "捷運東門站",
+   "source": "https://www.openstreetmap.org/node/1940469232",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": true,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 110,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1491389291",
+   "name": "四號公廁",
+   "source": "https://www.openstreetmap.org/way/1053359183",
    "value": true,
    "verified_at": "2026-10-12"
   }

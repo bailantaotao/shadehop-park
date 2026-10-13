@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 292,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/8118206947",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 1432,
+   "method": "osm",
+   "name": "捷運新北產業園區站",
+   "source": "https://www.openstreetmap.org/node/3509945102",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 86,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 253,
+    "family_room": false,
+    "name": "五股更新閱覽室3F"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/344208118",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/4877207690",
    "value": true,
    "verified_at": "2026-10-12"
   }

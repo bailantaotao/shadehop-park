@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 111,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/3835835528",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 26,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 15,
+   "distance_m": 483,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/node/7284500387",
+   "name": "捷運劍潭站",
+   "source": "https://www.openstreetmap.org/node/3495094875",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "公園",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 8,
+   "family": {
+    "accessible": false,
+    "category": "公園",
+    "changing_table": true,
+    "distance_m": 268,
+    "family_room": true,
+    "name": "華齡公園景觀"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "前港公園",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

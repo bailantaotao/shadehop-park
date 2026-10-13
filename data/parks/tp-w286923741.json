@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/286923741",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 20,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 142,
+   "distance_m": 1274,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/286923741",
+   "name": "捷運港墘站",
+   "source": "https://www.openstreetmap.org/node/3501186374",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 83,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "台亞堤頂交流道加油站",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

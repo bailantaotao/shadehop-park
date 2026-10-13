@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 284,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/2819773593",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 153,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 109,
+   "distance_m": 474,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1307521149",
+   "name": "捷運台電大樓站",
+   "source": "https://www.openstreetmap.org/node/253559357",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "公園",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 135,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 192,
+    "family_room": true,
+    "name": "臺北市客家文化主題公園美食體驗坊1樓"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "古亭河濱公園",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

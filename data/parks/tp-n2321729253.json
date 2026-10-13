@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 91,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/416570065",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 78,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 96,
+   "distance_m": 94,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/node/2321729253",
+   "name": "捷運芝山站",
+   "source": "https://www.openstreetmap.org/node/3495094877",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "交通",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 115,
+   "family": null,
+   "family_room": true,
+   "method": "official_data",
+   "name": "捷運芝山站南",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

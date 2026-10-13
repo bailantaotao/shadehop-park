@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 84,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/4153948146",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,14 +18,34 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 268,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/787066470",
-   "value": null,
+   "name": "捷運迴龍站",
+   "source": "https://www.openstreetmap.org/node/3812564425",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "文化育樂活動場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 195,
+   "family": {
+    "accessible": false,
+    "category": "社福機構、集會場所",
+    "changing_table": true,
+    "distance_m": 267,
+    "family_room": false,
+    "name": "樂生療養院迴龍院區1F(小兒科)"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "桃園市立圖書館迴龍分館4F",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

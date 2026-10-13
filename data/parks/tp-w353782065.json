@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 312,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/5505377654",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 134,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 620,
+   "method": "osm",
+   "name": "捷運景美站",
+   "source": "https://www.openstreetmap.org/node/3530915061",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 44,
+   "family": {
+    "accessible": false,
+    "category": "其他",
+    "changing_table": true,
+    "distance_m": 101,
+    "family_room": false,
+    "name": "文山4號"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/353782065",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/4007811636",
    "value": true,
    "verified_at": "2026-10-12"
   }

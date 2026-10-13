@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 66,
+   "method": "osm",
+   "name": "OK超商",
+   "source": "https://www.openstreetmap.org/node/3458930785",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 80,
+   "distance_m": 1174,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/372425036",
+   "name": "捷運龍埔站",
+   "source": "https://www.openstreetmap.org/node/4990733844",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "社福機構、集會場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 98,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "柑園市民活動中心",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 153,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/6275650886",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 105,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "medium",
-   "distance_m": 177,
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
    "method": "osm",
-   "note": null,
+   "name": null,
    "source": "https://www.openstreetmap.org/node/3209268152",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "民眾洽公場所",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 140,
+   "family": null,
+   "family_room": true,
+   "method": "official_data",
+   "name": "復興區衛生所1F",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

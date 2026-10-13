@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 148,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/907971186",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,12 +18,21 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 671,
+   "method": "osm",
+   "name": "南港站",
+   "source": "https://www.openstreetmap.org/node/4275358087",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
    "changing_table": null,
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
    "verified_at": "2026-10-12"
@@ -879,7 +897,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T13:50:59+00:00",
+   "as_of": "2026-10-13T15:42:28+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

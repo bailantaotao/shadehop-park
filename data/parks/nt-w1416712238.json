@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 90,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/3441073825",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 549,
+   "method": "osm",
+   "name": "捷運中和站",
+   "source": "https://www.openstreetmap.org/node/5444300912",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": true,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 42,
+   "family": {
+    "accessible": false,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 89,
+    "family_room": false,
+    "name": "中和國小地下停車場B1"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1416712238",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1416712235",
    "value": true,
    "verified_at": "2026-10-12"
   }
@@ -710,7 +739,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:36+08:00",
+   "as_of": "2026-10-13T23:15:37+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

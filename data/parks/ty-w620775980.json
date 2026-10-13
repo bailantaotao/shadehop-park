@@ -1,10 +1,28 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 285,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/13125207037",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
+   "source": "https://www.openstreetmap.org/way/620775980",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
    "source": "https://www.openstreetmap.org/way/620775980",
    "value": null,
    "verified_at": "2026-10-12"
@@ -14,7 +32,7 @@
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/620775980",
    "value": null,
    "verified_at": "2026-10-12"
@@ -50,7 +68,7 @@
    "access": null,
    "brand": null,
    "capacity": 2,
-   "charging_rate": "計度/尖峰/12.5元每度，計度/離峰/6.5元每度",
+   "charging_rate": "計度/離峰/6.5元每度，計度/尖峰/13.5元每度",
    "distance_m": 399,
    "distance_method": "straight_line",
    "fee": null,
@@ -66,22 +84,22 @@
    "operation_type": "私有民營",
    "operator": "特爾電力股份有限公司",
    "osm": null,
-   "parking_rate": "計時/每日/30元每小時",
+   "parking_rate": "計時/每日/30元每小時/無最高上限",
    "restriction": null,
    "sockets": [
-    {
-     "count": 1,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    },
     {
      "count": 1,
      "current": "DC",
      "label": "CCS1",
      "output_kw": null,
      "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
     }
    ],
    "source": "tdx",
@@ -630,7 +648,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:38+08:00",
+   "as_of": "2026-10-13T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 200,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/2938450958",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 98,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 0,
+   "distance_m": 115,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/1467747007",
+   "name": "捷運小碧潭站",
+   "source": "https://www.openstreetmap.org/node/3800658231",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "觀光地區及風景區",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 0,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 161,
+    "family_room": false,
+    "name": "中央公有市場東側1F"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "小碧潭景觀",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

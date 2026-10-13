@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 80,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/5409497711",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 0,
+   "distance_m": 1396,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/575209310",
+   "name": "桃園站",
+   "source": "https://www.openstreetmap.org/node/246416407",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "公園",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 0,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 40,
+    "family_room": false,
+    "name": "桃園市立圖書館大林分館1F"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "大林公園",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 133,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/6863892162",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 72,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 30,
+   "method": "osm",
+   "name": "第二航廈站",
+   "source": "https://www.openstreetmap.org/node/13934857304",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 0,
+   "family": {
+    "accessible": true,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 77,
+    "family_room": true,
+    "name": "桃園國際機場第二航廈(資訊處)2F"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/node/11774498018",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/11774498017",
    "value": true,
    "verified_at": "2026-10-12"
   }

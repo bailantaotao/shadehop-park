@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 454,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/13169373651",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 30,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/366269952",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
-   "changing_table": true,
+   "accessible": null,
+   "category": null,
+   "changing_table": null,
    "confidence": "medium",
    "distance_m": 0,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": true,
+    "distance_m": 45,
+    "family_room": false,
+    "name": "十三行博物館西東側2F"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/366269952",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/8690270631",
    "value": true,
    "verified_at": "2026-10-12"
   }
@@ -664,7 +693,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:36+08:00",
+   "as_of": "2026-10-13T23:15:37+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

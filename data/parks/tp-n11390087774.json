@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 242,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/4043621256",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 72,
@@ -9,13 +18,26 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 178,
+   "distance_m": 1260,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/node/11390087774",
+   "name": "萬華站",
+   "source": "https://www.openstreetmap.org/node/1273038428",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "交通",
+   "changing_table": true,
+   "confidence": "high",
+   "distance_m": 80,
+   "family": null,
+   "family_room": true,
+   "method": "official_data",
+   "name": "青年公園高爾夫球場地下停車場",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

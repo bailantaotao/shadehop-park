@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 149,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/5949987494",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 45,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 906,
+   "method": "osm",
+   "name": "捷運芝山站",
+   "source": "https://www.openstreetmap.org/node/3495094877",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 58,
+   "family": {
+    "accessible": true,
+    "category": "文化育樂活動場所",
+    "changing_table": false,
+    "distance_m": 158,
+    "family_room": true,
+    "name": "國立臺灣科學教育館B1西"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/529298436",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/5142085014",
    "value": true,
    "verified_at": "2026-10-12"
   }

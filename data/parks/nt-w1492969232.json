@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1492969232",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "medium",
-   "distance_m": 90,
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
    "method": "osm",
-   "note": null,
+   "name": null,
    "source": "https://www.openstreetmap.org/way/1492969232",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "社福機構、集會場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 26,
+   "family": {
+    "accessible": true,
+    "category": "觀光地區及風景區",
+    "changing_table": true,
+    "distance_m": 214,
+    "family_room": false,
+    "name": "北觀處金山遊客中心"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "新北市金山區豐漁市民活動中心",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

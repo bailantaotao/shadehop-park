@@ -1,10 +1,28 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 203,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/10864173602",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
+   "source": "https://www.openstreetmap.org/way/1421268939",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
    "source": "https://www.openstreetmap.org/way/1421268939",
    "value": null,
    "verified_at": "2026-10-12"
@@ -14,7 +32,7 @@
    "confidence": "low",
    "distance_m": null,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
+   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1421268939",
    "value": null,
    "verified_at": "2026-10-12"

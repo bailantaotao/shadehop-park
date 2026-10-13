@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 141,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/2981969835",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "medium",
-   "distance_m": 160,
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
    "method": "osm",
-   "note": null,
+   "name": null,
    "source": "https://www.openstreetmap.org/way/129526387",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "商業營業場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 143,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "摩斯漢堡經國店",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }
@@ -162,7 +184,7 @@
    "name": "全聯桃園天祥",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "私有民營",
-   "operator": "程豐資通",
+   "operator": "程豐資通股份有限公司",
    "osm": null,
    "parking_rate": "計時/每日/20元每小時",
    "restriction": null,
@@ -366,7 +388,7 @@
    "name": "桃園－大業",
    "opening_hours": "7x24小時",
    "operation_type": "私有民營",
-   "operator": "台灣特斯拉汽車有限公司",
+   "operator": "特斯拉",
    "osm": null,
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -932,7 +954,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:38+08:00",
+   "as_of": "2026-10-13T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

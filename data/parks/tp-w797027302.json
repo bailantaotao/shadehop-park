@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 147,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/12441245072",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 13,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 3,
+   "distance_m": 411,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/797027302",
+   "name": "捷運明德站",
+   "source": "https://www.openstreetmap.org/node/3495094878",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "公園",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 21,
+   "family": {
+    "accessible": false,
+    "category": "公園",
+    "changing_table": true,
+    "distance_m": 157,
+    "family_room": false,
+    "name": "建民公園景觀公"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "克強公園景觀公廁",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

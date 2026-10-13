@@ -1,6 +1,15 @@
 {
  "address": "253新北市石門區八甲里德茂1-101號",
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 442,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/13919573171",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/758996193",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 0,
+   "family": null,
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/758996193",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/9910706023",
    "value": true,
    "verified_at": "2026-10-12"
   }

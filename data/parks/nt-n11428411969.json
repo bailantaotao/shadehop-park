@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 444,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/way/793313667",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 151,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 2,
+   "distance_m": 127,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/node/11428411969",
+   "name": "十分站",
+   "source": "https://www.openstreetmap.org/node/765335750",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "社福機構、集會場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 28,
+   "family": {
+    "accessible": true,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 133,
+    "family_room": false,
+    "name": "十分火車站"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "十分社區",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

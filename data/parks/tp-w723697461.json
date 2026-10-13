@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 238,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/13551381070",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 129,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 127,
+   "distance_m": 444,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/723697461",
+   "name": "捷運圓山站",
+   "source": "https://www.openstreetmap.org/node/3495094874",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "交通",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 30,
+   "family": {
+    "accessible": true,
+    "category": "宗教禮儀場所",
+    "changing_table": false,
+    "distance_m": 173,
+    "family_room": true,
+    "name": "孔廟"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "大龍國小地下停車場",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

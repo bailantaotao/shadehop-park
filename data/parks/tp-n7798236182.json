@@ -1,6 +1,15 @@
 {
  "address": "110台北市信義區信義路五段106號B1",
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 60,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/2672528907",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 189,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 65,
+   "distance_m": 274,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/node/7798236182",
+   "name": "捷運象山站",
+   "source": "https://www.openstreetmap.org/node/3494960745",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "文化育樂活動場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 50,
+   "family": {
+    "accessible": false,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 93,
+    "family_room": false,
+    "name": "信義廣場地下停車場"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "信義運動中心2F",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

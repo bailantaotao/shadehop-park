@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 196,
+   "method": "osm",
+   "name": "7-Eleven",
+   "source": "https://www.openstreetmap.org/node/4328118623",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 66,
@@ -9,14 +18,34 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+  "station": {
+   "confidence": "medium",
+   "distance_m": 451,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/1390296809",
-   "value": null,
+   "name": "捷運市政府站",
+   "source": "https://www.openstreetmap.org/node/3512275767",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "其他",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 218,
+   "family": {
+    "accessible": false,
+    "category": "交通",
+    "changing_table": true,
+    "distance_m": 250,
+    "family_room": false,
+    "name": "捷運廣慈奉天宮站"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "信義14號",
+   "source": "https://data.gov.tw/dataset/30794",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },

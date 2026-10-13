@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 460,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/11641153054",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 929,
+   "method": "osm",
+   "name": "捷運三重站",
+   "source": "https://www.openstreetmap.org/node/4653351593",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "toilet": {
+   "accessible": true,
+   "category": null,
    "changing_table": null,
    "confidence": "medium",
    "distance_m": 19,
+   "family": {
+    "accessible": false,
+    "category": "公園",
+    "changing_table": true,
+    "distance_m": 198,
+    "family_room": true,
+    "name": "幸福水漾公園(疏洪)"
+   },
+   "family_room": null,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/446933456",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/8224414303",
    "value": true,
    "verified_at": "2026-10-12"
   }

@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 232,
+   "method": "osm",
+   "name": "合作社",
+   "source": "https://www.openstreetmap.org/node/2616849079",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 42,
@@ -9,13 +18,33 @@
    "value": true,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 16,
+   "distance_m": 189,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/relation/14023603",
+   "name": "捷運台大醫院站",
+   "source": "https://www.openstreetmap.org/node/2973163775",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "公園",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 17,
+   "family": {
+    "accessible": true,
+    "category": "社福機構、集會場所",
+    "changing_table": false,
+    "distance_m": 241,
+    "family_room": true,
+    "name": "臺大醫院二東2F-01-0"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "二二八和平公園1號凱達格蘭大道",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

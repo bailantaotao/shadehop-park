@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 127,
+   "method": "osm",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/2785395714",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,33 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 0,
+   "distance_m": 538,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/way/289134027",
+   "name": "鶯歌站",
+   "source": "https://www.openstreetmap.org/node/4802842933",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": "公園",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 2,
+   "family": {
+    "accessible": false,
+    "category": "民眾洽公場所",
+    "changing_table": false,
+    "distance_m": 299,
+    "family_room": true,
+    "name": "新北市三鶯水資源回收中心"
+   },
+   "family_room": false,
+   "method": "official_data",
+   "name": "鶯歌北鶯公園(近中正一路401號)",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }
@@ -687,13 +716,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T20:55:36+08:00",
+   "as_of": "2026-10-13T23:15:37+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T13:50:57+00:00",
+   "as_of": "2026-10-13T15:42:26+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

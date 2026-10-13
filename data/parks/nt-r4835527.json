@@ -1,6 +1,15 @@
 {
  "address": null,
  "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 36,
+   "method": "osm",
+   "name": "便利商店",
+   "source": "https://www.openstreetmap.org/node/3451698895",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
@@ -9,13 +18,26 @@
    "value": null,
    "verified_at": "2026-10-12"
   },
-  "toilet": {
-   "changing_table": null,
+  "station": {
    "confidence": "medium",
-   "distance_m": 95,
+   "distance_m": 1282,
    "method": "osm",
-   "note": null,
-   "source": "https://www.openstreetmap.org/relation/4835527",
+   "name": "捷運新店站",
+   "source": "https://www.openstreetmap.org/node/3461854239",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "accessible": false,
+   "category": "社福機構、集會場所",
+   "changing_table": false,
+   "confidence": "high",
+   "distance_m": 63,
+   "family": null,
+   "family_room": false,
+   "method": "official_data",
+   "name": "美城里管理委員會B1",
+   "source": "https://data.gov.tw/dataset/30794",
    "value": true,
    "verified_at": "2026-10-12"
   }

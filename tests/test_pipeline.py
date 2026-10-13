@@ -353,7 +353,7 @@ def test_official_tdx_chargers_merge_with_osm():
            "license": "政府資料開放授權條款第1版", "attribution": "資料介接「交通部TDX平臺」",
            "stations": [st("A", 105, 0, "AC"),      # same spot as OSM slow charger 50 -> replaces it
                         st("B", 310, 0, "AC"),      # next to OSM fast charger 51, but AC only -> both kept
-                        st("C", 600, 0, "DC")]}
+                        st("C", 450, 0, "DC")]}
     b = Builder(raw(), tdx=tdx)
     parks = {p["osm"]["id"]: p for p in b.build()}
     p = parks[10]

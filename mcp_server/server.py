@@ -110,7 +110,7 @@ def search_parks(
         when: ISO datetime (Asia/Taipei if no offset). Default: now. Used for shade_at_requested_time.
         need_rain_cover: Only playgrounds under a viaduct/roof (rain-proof, level A).
         min_shade: 0-1. Only playgrounds whose computed shade at `when` is at least this (rain-proof ones always pass).
-        need_fast_charger / need_slow_charger: Require a DC fast / AC slow EV charger within 2 km.
+        need_fast_charger / need_slow_charger: Require a DC fast / AC slow EV charger within 500 m (charger_summary.radius_m).
         max_parking_m: Require a parking lot within this straight-line distance.
         need_toilet: Require a public toilet within 200 m (per OSM).
         limit: Max results.

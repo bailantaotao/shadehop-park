@@ -8,6 +8,7 @@
   var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false, fav: false };
   var Favs = window.ShadeHopFavs;
   var LIST_MAX = 60;
+  var CHARGER_R = window.SHADEHOP_CHARGER_RADIUS_M || 500;
   // Parks load per region as the map view reaches it; nobody has to pick a region first.
   var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {} };
   var chargersOn = true;  // one on-map toggle for all chargers
@@ -56,8 +57,12 @@
   var DROP_LAYERS = /^(poi_r\d+|building-3d|natural_earth)$/;  // keep poi_transit (MRT/rail stations)
   var OSM_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-  function rasterBase() {
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: OSM_ATTR }).addTo(map);
+  // The image map shows immediately; the vector map replaces it once it has drawn.
+  var rasterLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: OSM_ATTR }).addTo(map);
+  function baseNote(on) {
+    var el = map.getContainer().querySelector(".map-loading");
+    if (on && !el) { el = L.DomUtil.create("div", "map-loading", map.getContainer()); el.textContent = "地圖載入中…"; }
+    if (el) el.hidden = !on;
   }
   function hasWebGL() {
     try {
@@ -99,13 +104,24 @@
       fetch(VECTOR_STYLE).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
       loadScript(MAPLIBRE + "maplibre-gl.js").then(function () { return loadScript(BRIDGE); }),
     ]).then(function (res) {
-      L.maplibreGL({
+      var gl = L.maplibreGL({
         style: simplifyStyle(res[0]),
         attribution: '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank">OpenMapTiles</a> ' + OSM_ATTR,
       }).addTo(map);
-    }).catch(rasterBase);
+      var glMap = gl.getMaplibreMap();
+      var swapped = false;
+      function swap() {
+        if (swapped) return;
+        swapped = true;
+        map.removeLayer(rasterLayer);
+        baseNote(false);
+      }
+      // "idle" = style, tiles and labels for the current view are drawn.
+      glMap.once("idle", swap);
+      setTimeout(function () { if (!swapped) baseNote(false); }, 15000);  // slow network: keep image map, drop the note
+    }).catch(function () { baseNote(false); });  // keep the image map
   }
-  if (hasWebGL()) vectorBase(); else rasterBase();
+  if (hasWebGL()) { baseNote(true); vectorBase(); }
   var shadowLayer = L.layerGroup().addTo(map);
   var markerLayer = L.layerGroup().addTo(map);
   var markers = {};
@@ -288,7 +304,7 @@
       '<div class="facts">' +
       (best ? '<span>最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>本月沒有明顯遮陰時段</span>") +
       "<span>🅿️ " + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : "800m 內未標示停車場") + "</span>" +
-      "<span>⚡ 快充 " + (p.fast_nearest_m !== null ? p.fast_nearest_m + "m" : "2km 內無") + " · 🔌 慢充 " + (p.slow_nearest_m !== null ? p.slow_nearest_m + "m" : "2km 內無") + "</span>" +
+      "<span>⚡ 快充 " + (p.fast_nearest_m !== null ? p.fast_nearest_m + "m" : CHARGER_R + "m 內無") + " · 🔌 慢充 " + (p.slow_nearest_m !== null ? p.slow_nearest_m + "m" : CHARGER_R + "m 內無") + "</span>" +
       '<span class="small">' + dist.replace(/^ · /, "") + "</span>" +
       '</div><button class="link" data-focus="' + esc(p.id) + '">在地圖上看</button></article>';
   }

@@ -60,7 +60,7 @@ MAX_OSM_AGE_DAYS = 3
 # Search radii from a playground.
 PARKING_RADIUS_M = 800
 PARKING_MAX = 6
-CHARGER_RADIUS_M = 2000
+CHARGER_RADIUS_M = 500  # "nearby" chargers: a short walk from the playground
 CHARGER_MAX = 8
 # An OSM charger this close to an official (TDX) station is the same station.
 CHARGER_MERGE_M = 40

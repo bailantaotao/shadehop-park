@@ -19,8 +19,8 @@
     <button class="chip" data-filter="rain" aria-pressed="false">☔ 下雨可玩</button>
     <button class="chip" data-filter="shade" aria-pressed="false">🌳 此時段有遮陰</button>
     <button class="chip" data-filter="parking" aria-pressed="false">🅿️ 停車 ≤ 300m</button>
-    <button class="chip" data-filter="fast" aria-pressed="false">⚡ 2km 內有快充</button>
-    <button class="chip" data-filter="slow" aria-pressed="false">🔌 2km 內有慢充</button>
+    <button class="chip" data-filter="fast" aria-pressed="false">⚡ {{ meta.assumptions.CHARGER_RADIUS_M }}m 內有快充</button>
+    <button class="chip" data-filter="slow" aria-pressed="false">🔌 {{ meta.assumptions.CHARGER_RADIUS_M }}m 內有慢充</button>
     <button class="chip" data-filter="toilet" aria-pressed="false">🚻 附近有廁所</button>
   </div>
   <div class="banner" id="weather" role="status"></div>
@@ -55,6 +55,7 @@
 {% endblock %}
 {% block scripts %}
 <script src="{{ root }}static/vendor/leaflet-1.9.4/leaflet.js"></script>
+<script>window.SHADEHOP_CHARGER_RADIUS_M = {{ meta.assumptions.CHARGER_RADIUS_M }};</script>
 <script src="{{ root }}{{ asset('static/sun.js') }}"></script>
 <script src="{{ root }}{{ asset('static/favs.js') }}"></script>
 <script src="{{ root }}{{ asset('static/app.js') }}"></script>

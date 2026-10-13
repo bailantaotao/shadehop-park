@@ -123,3 +123,6 @@ footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align:
 .map-night { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); z-index: 1000; max-width: 70%;
   background: rgba(11,26,51,.85); color: #fff; padding: 6px 12px; border-radius: 8px; font-size: .88rem; text-align: center; pointer-events: none; }
 .map-night[hidden] { display: none; }
+.map-loading { position: absolute; left: 56px; top: 10px; z-index: 1000; background: rgba(255,255,255,.92); color: #333;
+  padding: 4px 10px; border-radius: 6px; font-size: .82rem; box-shadow: 0 1px 3px rgba(0,0,0,.25); pointer-events: none; }
+.map-loading[hidden] { display: none; }

@@ -47,10 +47,65 @@
   // Canvas draws hundreds of markers much faster than SVG on old phones.
   var map = L.map("map", { zoomControl: true, preferCanvas: true });
   map.createPane("chargers").style.zIndex = 650;
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }).addTo(map);
+  // ------------------------------------------------------------ base map
+  // OSM vector map (OpenFreeMap "Liberty") drawn by MapLibre inside Leaflet, simplified for this
+  // map: no shop/bank/restaurant icons, no 3D buildings, Chinese-only labels. MapLibre needs
+  // WebGL; without it (or if anything fails to load) we fall back to OSM image tiles.
+  var VECTOR_STYLE = "https://tiles.openfreemap.org/styles/liberty";
+  var MAPLIBRE = "static/vendor/maplibre-gl-5.24.0/", BRIDGE = "static/vendor/maplibre-gl-leaflet-0.1.4/leaflet-maplibre-gl.js";
+  var DROP_LAYERS = /^(poi_r\d+|building-3d|natural_earth)$/;  // keep poi_transit (MRT/rail stations)
+  var OSM_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+
+  function rasterBase() {
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: OSM_ATTR }).addTo(map);
+  }
+  function hasWebGL() {
+    try {
+      var c = document.createElement("canvas");
+      return !!(window.WebGLRenderingContext && (c.getContext("webgl2") || c.getContext("webgl")));
+    } catch (e) { return false; }
+  }
+  function loadScript(src) {
+    return new Promise(function (ok, fail) {
+      var el = document.createElement("script");
+      el.src = src; el.onload = ok; el.onerror = fail;
+      document.head.appendChild(el);
+    });
+  }
+  function simplifyStyle(style) {
+    style.layers = style.layers.filter(function (l) { return !DROP_LAYERS.test(l.id); });
+    style.layers.forEach(function (l) {
+      // Transit icons: rail/MRT stations and airports only - bus stops are clutter here.
+      if (l.id === "poi_transit") {
+        l.filter = ["match", ["get", "class"], ["airport", "rail", "railway"], true, false];
+        l.layout["icon-image"] = ["match", ["get", "subclass"], "subway", "railway_metro", ["to-string", ["get", "class"]]];
+      }
+      var tf = l.layout && l.layout["text-field"];
+      // Labels default to "pinyin + 漢字"; show the local (Chinese) name only.
+      if (tf && JSON.stringify(tf).indexOf("name:latin") >= 0) {
+        l.layout["text-field"] = ["coalesce", ["get", "name:nonlatin"], ["get", "name"]];
+      }
+    });
+    // Symbols in layers higher in the stack are placed first, so stations win over street names.
+    var i = style.layers.findIndex(function (l) { return l.id === "poi_transit"; });
+    if (i >= 0) style.layers.push(style.layers.splice(i, 1)[0]);
+    return style;
+  }
+  function vectorBase() {
+    var css = document.createElement("link");
+    css.rel = "stylesheet"; css.href = MAPLIBRE + "maplibre-gl.css";
+    document.head.appendChild(css);
+    Promise.all([
+      fetch(VECTOR_STYLE).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
+      loadScript(MAPLIBRE + "maplibre-gl.js").then(function () { return loadScript(BRIDGE); }),
+    ]).then(function (res) {
+      L.maplibreGL({
+        style: simplifyStyle(res[0]),
+        attribution: '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank">OpenMapTiles</a> ' + OSM_ATTR,
+      }).addTo(map);
+    }).catch(rasterBase);
+  }
+  if (hasWebGL()) vectorBase(); else rasterBase();
   var shadowLayer = L.layerGroup().addTo(map);
   var markerLayer = L.layerGroup().addTo(map);
   var markers = {};
@@ -413,19 +468,31 @@
     btn.title = (chargersOn ? "隱藏充電站" : "顯示充電站") + (chargersLoaded ? "（畫面中 " + n + " 座）" : "");
   }
 
+  // Zoomed out, hundreds of icons would bury the parks: draw small dots, icons from this zoom up.
+  var CHARGER_ICON_ZOOM = 14;
+  var DOT_COLOR = { fast: "#d9480f", both: "#d9480f", slow: "#1971c2", unknown: "#868e96" };
+  var chargerMode = null;
+
   function drawChargers() {
     countChargers();
     chargerLayer.clearLayers();
+    chargerMode = map.getZoom() >= CHARGER_ICON_ZOOM ? "icon" : "dot";
+    if (!chargersOn) return;
     chargers.forEach(function (f) {
-      var p = f.properties, k = CHG[p.speed] || CHG.unknown;
-      if (!chargersOn) return;
-      L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
-        pane: "chargers",
-        title: p.name + "（" + (p.speed === "unknown" ? "未標示" : p.speed_label) + "）",
-        icon: L.divIcon({ className: "chg " + k.cls, html: k.icon, iconSize: [24, 24], iconAnchor: [12, 12] }),
-      }).bindPopup(function () { return chargerPopup(f); }).addTo(chargerLayer);
+      var p = f.properties, k = CHG[p.speed] || CHG.unknown, ll = [f.geometry.coordinates[1], f.geometry.coordinates[0]];
+      var title = p.name + "（" + (p.speed === "unknown" ? "未標示" : p.speed_label) + "）";
+      var m = chargerMode === "icon"
+        ? L.marker(ll, { pane: "chargers", title: title,
+            icon: L.divIcon({ className: "chg " + k.cls, html: k.icon, iconSize: [24, 24], iconAnchor: [12, 12] }) })
+        : L.circleMarker(ll, { pane: "chargers", radius: 3.5, weight: 1, color: "#fff",
+            fillColor: DOT_COLOR[p.speed] || DOT_COLOR.unknown, fillOpacity: 0.9 });
+      m.bindPopup(function () { return chargerPopup(f); }).addTo(chargerLayer);
     });
   }
+  map.on("zoomend", function () {
+    var mode = map.getZoom() >= CHARGER_ICON_ZOOM ? "icon" : "dot";
+    if (mode !== chargerMode) drawChargers();
+  });
 
   // ------------------------------------------------------- on-map controls
   // Small toast inside the map for locate errors etc.

@@ -10,7 +10,7 @@
   var LIST_MAX = 60;
   // Parks load per region as the map view reaches it; nobody has to pick a region first.
   var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {} };
-  var layers = { fast: true, slow: true, unknown: false };
+  var chargersOn = true;  // one on-map toggle for all chargers
   // Shadow casters are split into ~1 km tiles; only tiles in view are downloaded.
   var tiles = { index: null, deg: 0.01, data: {} };
 
@@ -381,11 +381,6 @@
   var chargerLayer = L.layerGroup().addTo(map), chargers = [], chargersLoaded = false;
   var CHG = { fast: { icon: "⚡", cls: "fast" }, both: { icon: "⚡", cls: "both" }, slow: { icon: "🔌", cls: "slow" }, unknown: { icon: "?", cls: "unknown" } };
 
-  function chargerShown(p) {
-    if (p.speed === "both") return layers.fast || layers.slow;
-    return layers[p.speed] || false;
-  }
-
   function chargerPopup(f) {
     var p = f.properties;
     var note = p.speed_source === "brand" ? "（依營運商判斷）" : p.speed_source === "name" ? "（依站名判斷）" : "";
@@ -405,20 +400,17 @@
         : '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>');
   }
 
-  // Show how many stations of each kind are in view, so a toggle never looks dead
-  // when the area simply has none.
+  // Show how many stations are in view, so the toggle never looks dead when the area has none.
   function countChargers() {
-    var b = map.getBounds(), n = { fast: 0, slow: 0, unknown: 0 };
+    var b = map.getBounds(), n = 0;
     chargers.forEach(function (f) {
-      var p = f.properties, c = f.geometry.coordinates;
-      if (!b.contains([c[1], c[0]])) return;
-      if (p.speed === "both") { n.fast++; n.slow++; } else if (n[p.speed] !== undefined) n[p.speed]++;
+      var c = f.geometry.coordinates;
+      if (b.contains([c[1], c[0]])) n++;
     });
-    document.querySelectorAll("[data-layer]").forEach(function (btn) {
-      var out = btn.querySelector(".n");
-      if (out) out.textContent = chargersLoaded ? n[btn.dataset.layer] : "…";
-      btn.title = btn.getAttribute("aria-label") + (chargersLoaded ? "：畫面中 " + n[btn.dataset.layer] + " 座" : "");
-    });
+    var btn = document.querySelector(".chg-btn");
+    if (!btn) return;
+    btn.querySelector(".n").textContent = chargersLoaded ? n : "…";
+    btn.title = (chargersOn ? "隱藏充電站" : "顯示充電站") + (chargersLoaded ? "（畫面中 " + n + " 座）" : "");
   }
 
   function drawChargers() {
@@ -426,7 +418,7 @@
     chargerLayer.clearLayers();
     chargers.forEach(function (f) {
       var p = f.properties, k = CHG[p.speed] || CHG.unknown;
-      if (!chargerShown(p)) return;
+      if (!chargersOn) return;
       L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
         pane: "chargers",
         title: p.name + "（" + (p.speed === "unknown" ? "未標示" : p.speed_label) + "）",
@@ -481,23 +473,20 @@
   }
   map.addControl(new LocateControl());
 
-  // Charger layer toggles on the map (like an EV map app), each with the count in view.
+  // One charger toggle on the map (like an EV map app), with the number of stations in view.
+  var BOLT = '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg>';
   var ChargerControl = L.Control.extend({
     options: { position: "topright" },
     onAdd: function () {
       var box = L.DomUtil.create("div", "map-ctl chg-ctl");
-      box.setAttribute("role", "group"); box.setAttribute("aria-label", "地圖上顯示的充電站");
-      [["fast", "⚡", "快充站（DC）"], ["slow", "🔌", "慢充站（AC）"], ["unknown", "?", "未標示快慢的充電站"]].forEach(function (d) {
-        var b = L.DomUtil.create("button", "chg-btn " + d[0], box);
-        b.type = "button"; b.dataset.layer = d[0]; b.title = d[2];
-        b.setAttribute("aria-pressed", String(layers[d[0]]));
-        b.setAttribute("aria-label", d[2]);
-        b.innerHTML = '<span class="ico" aria-hidden="true">' + d[1] + '</span><span class="n"></span>';
-        L.DomEvent.on(b, "click", function () {
-          layers[d[0]] = !layers[d[0]];
-          b.setAttribute("aria-pressed", String(layers[d[0]]));
-          drawChargers();
-        });
+      var b = L.DomUtil.create("button", "chg-btn", box);
+      b.type = "button"; b.setAttribute("aria-label", "地圖上顯示充電站");
+      b.setAttribute("aria-pressed", String(chargersOn));
+      b.innerHTML = BOLT + '<span class="n"></span>';
+      L.DomEvent.on(b, "click", function () {
+        chargersOn = !chargersOn;
+        b.setAttribute("aria-pressed", String(chargersOn));
+        drawChargers();
       });
       L.DomEvent.disableClickPropagation(box);
       return box;

@@ -103,14 +103,10 @@ footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align:
 .map-ctl .locate.busy svg { animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: .3; } }
 .chg-ctl { display: flex; flex-direction: column; gap: 8px; }
-.chg-btn { position: relative; width: 42px; height: 42px; border-radius: 50%; border: 2px solid #fff;
-  box-shadow: 0 1px 5px rgba(0,0,0,.35); background: #fff; color: #555; font-size: 18px; line-height: 1;
-  display: flex; align-items: center; justify-content: center; padding: 0; }
-.chg-btn[aria-pressed="true"].fast { background: #d9480f; color: #fff; }
-.chg-btn[aria-pressed="true"].slow { background: #1971c2; color: #fff; }
-.chg-btn[aria-pressed="true"].unknown { background: #868e96; color: #fff; }
-.chg-btn[aria-pressed="false"] .ico { filter: grayscale(1); opacity: .55; }
-.chg-btn.unknown .ico { font-weight: 700; }
+.chg-btn { position: relative; width: 48px; height: 48px; border-radius: 50%; border: 2px solid #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,.35); background: #fff; color: #868e96; padding: 0;
+  display: flex; align-items: center; justify-content: center; }
+.chg-btn[aria-pressed="true"] { background: #d9480f; color: #fff; }
 .chg-btn .n { position: absolute; top: -6px; right: -6px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 9px;
   background: #fff; color: #222; font-size: 11px; font-weight: 700; line-height: 18px; box-shadow: 0 0 0 1px rgba(0,0,0,.2); }
 .chg-btn .n:empty { display: none; }

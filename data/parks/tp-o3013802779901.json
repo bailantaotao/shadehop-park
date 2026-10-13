@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 452,
@@ -172,7 +172,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/225047556"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -198,7 +198,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1093592740"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -224,7 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/366413151"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -250,7 +250,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1146947161"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -276,7 +276,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4836651142"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -302,7 +302,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440896857"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -323,7 +323,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "臺北市",
@@ -654,12 +654,12 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T03:55:06Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -671,5 +671,5 @@
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-12"
 }

@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 452,
@@ -108,7 +108,7 @@
  "chargers": [
   {
    "access": "yes",
-   "brand": "Tesla, Inc.",
+   "brand": "Tesla Supercharger",
    "capacity": 6,
    "distance_m": 1990,
    "distance_method": "straight_line",
@@ -121,7 +121,7 @@
    "method": "osm",
    "name": "臺北花博超級充電站",
    "opening_hours": "24/7",
-   "operator": "Tesla, Inc.",
+   "operator": "Tesla",
    "osm": {
     "id": 4640527292,
     "type": "node",
@@ -146,7 +146,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -204,7 +204,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3033922309"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -230,7 +230,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/827809838"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -256,7 +256,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/501914548"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -282,7 +282,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/375102594"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -308,7 +308,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/356780458"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -334,7 +334,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1432522064"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -355,7 +355,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "臺北市",
@@ -364,7 +364,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.04,
-  "buildings_considered": 585,
+  "buildings_considered": 589,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -686,12 +686,12 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T03:55:06Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -703,5 +703,5 @@
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-12"
 }

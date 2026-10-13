@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1389965677",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1389965677",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 206,
@@ -176,7 +176,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/937535250"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -202,7 +202,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/764466776"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -228,7 +228,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1390296816"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -254,7 +254,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/964323335"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -280,7 +280,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1391735382"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -306,7 +306,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326497596"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -327,7 +327,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1389965677",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "臺北市",
@@ -500,7 +500,7 @@
     1.0
    ],
    "4": [
-    0.66,
+    0.47,
     0.34,
     0.11,
     0.0,
@@ -658,7 +658,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1389965677",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [
   {
@@ -677,12 +677,12 @@
    "source": "https://www.openstreetmap.org/way/1389965677",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T03:55:06Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -694,5 +694,5 @@
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-12"
 }

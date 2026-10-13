@@ -17,15 +17,15 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: Fetch OSM
-        run: python -m pipeline.fetch_osm
+      - name: Extract OSM (Geofabrik Taiwan extract; Overpass as fallback)
+        run: python -m pipeline.extract_pbf || python -m pipeline.fetch_osm
       - name: Fetch city park registry
         run: python -m pipeline.fetch_city
       - name: Build data

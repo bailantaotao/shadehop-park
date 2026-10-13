@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/616030088",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,22 +17,22 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/616030088",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 2489,
  "best_shade_windows": {
   "1": {
-   "end": "09:00",
-   "end_slot": 6,
-   "mean": 0.6,
-   "start": "08:30",
-   "start_slot": 5
+   "end": "07:30",
+   "end_slot": 3,
+   "mean": 0.67,
+   "start": "07:00",
+   "start_slot": 2
   },
   "10": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.79,
+   "mean": 0.8,
    "start": "06:00",
    "start_slot": 0
   },
@@ -53,14 +53,14 @@
   "2": {
    "end": "08:00",
    "end_slot": 4,
-   "mean": 0.7,
+   "mean": 0.72,
    "start": "07:00",
    "start_slot": 2
   },
   "3": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.79,
+   "mean": 0.8,
    "start": "06:30",
    "start_slot": 1
   },
@@ -102,7 +102,7 @@
   "9": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.69,
+   "mean": 0.71,
    "start": "06:00",
    "start_slot": 0
   }
@@ -158,7 +158,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -185,7 +185,7 @@
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -212,7 +212,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -271,7 +271,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980921"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -297,21 +297,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980932"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": "yes",
    "capacity": 528,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 547,
+   "distance_m": 548,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.069141,
-    "lng": 121.362876
+    "lat": 25.069249,
+    "lng": 121.362788
    },
    "maxheight_m": null,
    "method": "osm",
@@ -323,7 +323,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/553172230"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 550,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.078983,
+    "lng": 121.360499
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1561417932,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1561417932"
+   },
+   "verified_at": "2026-10-12"
   },
   {
    "access": "customers",
@@ -349,7 +375,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/443054017"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -375,33 +401,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/443054014"
    },
-   "verified_at": "2026-05-06"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 682,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "rooftop",
-   "kind_label": "屋頂停車場",
-   "location": {
-    "lat": 25.070152,
-    "lng": 121.365388
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "屋頂停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1310980917,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1310980917"
-   },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -422,7 +422,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/616030088",
   "value": false,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "新北市",
@@ -430,8 +430,8 @@
   "id": "linkou"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.03,
-  "buildings_considered": 118,
+  "building_height_known_share": 0.05,
+  "buildings_considered": 129,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -441,7 +441,7 @@
    "1": [
     null,
     null,
-    0.59,
+    0.67,
     0.56,
     0.58,
     0.6,
@@ -465,7 +465,7 @@
     null
    ],
    "10": [
-    0.84,
+    0.89,
     0.84,
     0.68,
     0.45,
@@ -492,7 +492,7 @@
    ],
    "11": [
     null,
-    0.64,
+    0.72,
     0.58,
     0.53,
     0.53,
@@ -519,7 +519,7 @@
    "12": [
     null,
     null,
-    0.56,
+    0.6,
     0.58,
     0.66,
     0.63,
@@ -545,7 +545,7 @@
    "2": [
     null,
     null,
-    0.77,
+    0.8,
     0.63,
     0.47,
     0.41,
@@ -570,7 +570,7 @@
    ],
    "3": [
     null,
-    0.77,
+    0.8,
     0.8,
     0.56,
     0.38,
@@ -725,7 +725,7 @@
     0.22
    ],
    "9": [
-    0.75,
+    0.8,
     0.7,
     0.62,
     0.42,
@@ -753,12 +753,12 @@
   },
   "source": "https://www.openstreetmap.org/way/616030088",
   "value": null,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-05-06T03:25:00Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -770,5 +770,5 @@
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-05-06"
+ "updated_at": "2026-10-12"
 }

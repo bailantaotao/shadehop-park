@@ -18,6 +18,9 @@ REGIONS = {
         "osm_boundary": 'area["name"="新北市"]["boundary"="administrative"]->.p;\nrel(area.p)["boundary"="administrative"]["name"="林口區"]',
         # Sub-districts used to label each park (None: the region is one district).
         "osm_districts": None,
+        # Same selection for extract_pbf (Geofabrik file): boundary tags, district admin_level.
+        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "7", "name": "林口區"},
+        "osm_district_level": None,
         "tdx_city": "NewTaipei",
         # Official registry: names/addresses only, matched by park name.
         "registry": "ntpc_parks",
@@ -35,6 +38,8 @@ REGIONS = {
         "label": "台北市",
         "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="臺北市"]',
         "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="7"]',
+        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "臺北市"},
+        "osm_district_level": "7",
         "tdx_city": "Taipei",
         # Official registry of every children's playground, with coordinates.
         "registry": "taipei_playgrounds",
@@ -48,6 +53,9 @@ DEFAULT_REGION = "linkou"
 # Extra margin around the region bbox for things that can serve a park
 # near the edge (parking, chargers, buildings that cast shadows).
 BBOX_MARGIN_M = 1500
+
+# Reject OSM data older than this (stale Overpass mirrors).
+MAX_OSM_AGE_DAYS = 3
 
 # Search radii from a playground.
 PARKING_RADIUS_M = 800

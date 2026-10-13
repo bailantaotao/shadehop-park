@@ -31,6 +31,13 @@ RAW_DIR = ROOT / "data" / "raw"
 UA = "shadehop-park/0.1 (https://github.com/bailantaotao/shadehop-park)"
 
 
+def stale(osm_base: str | None, now: datetime | None = None) -> bool:
+    if not osm_base:
+        return False
+    age = (now or datetime.now(timezone.utc)) - datetime.fromisoformat(osm_base.replace("Z", "+00:00"))
+    return age.days > config.MAX_OSM_AGE_DAYS
+
+
 def overpass(query: str) -> dict:
     last = None
     for attempt in range(4):
@@ -38,7 +45,14 @@ def overpass(query: str) -> dict:
             try:
                 r = requests.post(url, data={"data": query}, headers={"User-Agent": UA}, timeout=300)
                 if r.status_code == 200:
-                    return r.json()
+                    data = r.json()
+                    base = data.get("osm3s", {}).get("timestamp_osm_base")
+                    if stale(base):
+                        # Mirrors can lag by months (one served 2026-05 data in 2026-10).
+                        last = f"{url}: stale data (osm_base={base})"
+                        print("overpass failed:", last, file=sys.stderr)
+                        continue
+                    return data
                 last = f"{url}: HTTP {r.status_code} {r.text[:200]}"
             except requests.RequestException as e:
                 last = f"{url}: {e}"

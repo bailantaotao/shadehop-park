@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1455719921",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1455719921",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 1302,
@@ -143,7 +143,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -170,7 +170,7 @@
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -212,7 +212,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.06,
@@ -260,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980933"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -286,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1455719919"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -312,7 +312,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980941"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -338,7 +338,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13349356636"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -364,7 +364,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980951"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": "customers",
@@ -390,7 +390,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1455628177"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -411,7 +411,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1455719921",
   "value": false,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "新北市",
@@ -742,16 +742,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1455719921",
   "value": null,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-05-06T03:25:00Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-05-06"
+ "updated_at": "2026-10-12"
 }

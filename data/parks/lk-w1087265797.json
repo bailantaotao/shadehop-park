@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1087265797",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1087265797",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 126,
@@ -125,7 +125,7 @@
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -167,7 +167,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -194,7 +194,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -221,7 +221,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.01,
@@ -269,7 +269,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1082650196"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -295,33 +295,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1086756774"
    },
-   "verified_at": "2026-05-06"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 328,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.075536,
-    "lng": 121.369314
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1086756765,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1086756765"
-   },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -347,7 +321,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/738999521"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -373,7 +347,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/570835120"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -399,7 +373,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/570835119"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 480,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.075934,
+    "lng": 121.371929
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 570835117,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/570835117"
+   },
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -420,7 +420,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1087265797",
   "value": false,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "新北市",
@@ -428,8 +428,8 @@
   "id": "linkou"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.01,
-  "buildings_considered": 129,
+  "building_height_known_share": 0.02,
+  "buildings_considered": 128,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -484,7 +484,7 @@
     0.0,
     0.0,
     0.1,
-    1.0,
+    0.99,
     null,
     null
    ],
@@ -589,7 +589,7 @@
     0.0,
     0.0,
     0.0,
-    0.38,
+    0.19,
     1.0
    ],
    "4": [
@@ -616,7 +616,7 @@
     0.0,
     0.0,
     0.0,
-    0.47
+    0.29
    ],
    "5": [
     0.3,
@@ -745,22 +745,22 @@
     0.0,
     0.0,
     0.0,
-    0.42,
+    0.21,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/1087265797",
   "value": null,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-05-06T03:25:00Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-05-06"
+ "updated_at": "2026-10-12"
 }

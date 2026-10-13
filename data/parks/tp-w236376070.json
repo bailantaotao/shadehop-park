@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/236376070",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": null,
    "source": "https://www.openstreetmap.org/way/236376070",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 624,
@@ -53,16 +53,16 @@
   "2": null,
   "3": null,
   "4": {
-   "end": "07:00",
-   "end_slot": 2,
-   "mean": 0.8,
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.91,
    "start": "06:00",
    "start_slot": 0
   },
   "5": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.98,
+   "mean": 0.95,
    "start": "06:00",
    "start_slot": 0
   },
@@ -76,14 +76,14 @@
   "7": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.83,
+   "mean": 0.82,
    "start": "06:00",
    "start_slot": 0
   },
   "8": {
-   "end": "07:00",
-   "end_slot": 2,
-   "mean": 0.91,
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 1.0,
    "start": "06:00",
    "start_slot": 0
   },
@@ -125,7 +125,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -189,7 +189,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1136941199"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -215,7 +215,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/14134429490"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -241,7 +241,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/14134441812"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -267,7 +267,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/372582373"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -293,7 +293,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/278135985"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -319,7 +319,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/864673387"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -340,7 +340,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/236376070",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "臺北市",
@@ -489,7 +489,7 @@
    "3": [
     null,
     0.21,
-    0.03,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -514,7 +514,7 @@
    ],
    "4": [
     0.91,
-    0.69,
+    0.27,
     0.0,
     0.0,
     0.0,
@@ -539,8 +539,8 @@
     0.05
    ],
    "5": [
-    0.98,
-    0.07,
+    0.95,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -566,7 +566,7 @@
    ],
    "6": [
     0.75,
-    0.03,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -591,8 +591,8 @@
     0.03
    ],
    "7": [
-    0.83,
-    0.25,
+    0.82,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -618,7 +618,7 @@
    ],
    "8": [
     1.0,
-    0.81,
+    0.28,
     0.0,
     0.0,
     0.0,
@@ -644,7 +644,7 @@
    ],
    "9": [
     0.59,
-    0.41,
+    0.26,
     0.0,
     0.0,
     0.0,
@@ -671,12 +671,12 @@
   },
   "source": "https://www.openstreetmap.org/way/236376070",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T03:55:06Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -688,5 +688,5 @@
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-12"
 }

@@ -21,26 +21,26 @@
   "VIADUCT_DECK_TOP_M": 10.0
  },
  "counts": {
-  "buildings_in_bbox": 112200,
-  "buildings_with_height": 34880,
+  "buildings_in_bbox": 112770,
+  "buildings_with_height": 34939,
   "by_level": {
    "A": 9,
    "B": 28,
    "C": 19,
-   "none": 651
+   "none": 652
   },
-  "chargers_in_bbox": 25,
+  "chargers_in_bbox": 27,
   "city_registry_parks": 560,
-  "mapped_playgrounds": 365,
-  "matched_city_registry": 181,
-  "official_only": 297,
-  "park_candidates": 45,
-  "parking_lots_in_bbox": 2754,
-  "parks": 707
+  "mapped_playgrounds": 366,
+  "matched_city_registry": 182,
+  "official_only": 296,
+  "park_candidates": 46,
+  "parking_lots_in_bbox": 2792,
+  "parks": 708
  },
  "coverage": "新北市林口區、臺北市",
- "fetched_at": "2026-10-13T03:24:23+00:00",
- "generated_from_osm_base": "2026-05-06T03:25:00Z",
+ "fetched_at": "2026-10-13T04:37:30+00:00",
+ "generated_from_osm_base": "2026-10-12T20:21:35Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
   "B": "部分遮陽設施 / 樹蔭",
@@ -120,22 +120,22 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 5379,
-    "buildings_with_height": 396,
+    "buildings_in_bbox": 5863,
+    "buildings_with_height": 412,
     "by_level": {
      "A": 0,
      "B": 1,
      "C": 0,
-     "none": 51
+     "none": 52
     },
-    "chargers_in_bbox": 4,
+    "chargers_in_bbox": 6,
     "city_registry_parks": 40,
     "mapped_playgrounds": 7,
     "matched_city_registry": 28,
     "official_only": 0,
-    "park_candidates": 45,
-    "parking_lots_in_bbox": 240,
-    "parks": 52
+    "park_candidates": 46,
+    "parking_lots_in_bbox": 246,
+    "parks": 53
    },
    "default_building_heights_by_type": {
     "apartments": 24.0,
@@ -143,8 +143,8 @@
     "school": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T03:24:23+00:00",
-   "generated_from_osm_base": "2026-05-06T03:25:00Z",
+   "fetched_at": "2026-10-13T04:37:30+00:00",
+   "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "新北市",
     "city_en": "New Taipei City",
@@ -177,8 +177,8 @@
    },
    "city_registry_not_in_osm": [],
    "counts": {
-    "buildings_in_bbox": 106821,
-    "buildings_with_height": 34484,
+    "buildings_in_bbox": 106907,
+    "buildings_with_height": 34527,
     "by_level": {
      "A": 9,
      "B": 27,
@@ -187,11 +187,11 @@
     },
     "chargers_in_bbox": 21,
     "city_registry_parks": 520,
-    "mapped_playgrounds": 358,
-    "matched_city_registry": 153,
-    "official_only": 297,
+    "mapped_playgrounds": 359,
+    "matched_city_registry": 154,
+    "official_only": 296,
     "park_candidates": 0,
-    "parking_lots_in_bbox": 2514,
+    "parking_lots_in_bbox": 2546,
     "parks": 655
    },
    "default_building_heights_by_type": {
@@ -200,7 +200,7 @@
     "church": 9.0,
     "college": 9.0,
     "commercial": 15.0,
-    "construction": 27.0,
+    "construction": 24.0,
     "detached": 9.0,
     "dormitory": 9.0,
     "government": 9.0,
@@ -226,8 +226,8 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T03:37:40+00:00",
-   "generated_from_osm_base": "2026-10-13T03:55:06Z",
+   "fetched_at": "2026-10-13T04:37:30+00:00",
+   "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "臺北市",
     "city_en": "Taipei City",

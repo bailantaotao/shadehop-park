@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1454791458",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1454791458",
    "value": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 471,
@@ -66,8 +66,8 @@
   "nearest_slow_m": 785,
   "radius_m": 2000,
   "slow": 1,
-  "total": 4,
-  "unknown": 1
+  "total": 5,
+  "unknown": 2
  },
  "chargers": [
   {
@@ -95,7 +95,7 @@
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -137,7 +137,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -164,7 +164,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -191,7 +191,34 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "output",
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "brand": "EVOASIS",
+   "capacity": 8,
+   "distance_m": 1725,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "location": {
+    "lat": 25.050686,
+    "lng": 121.372513
+   },
+   "max_kw": null,
+   "method": "osm",
+   "name": "EVOASIS",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1547383478,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1547383478"
+   },
+   "sockets": [],
+   "speed": "unknown",
+   "speed_label": "未標示",
+   "speed_source": null,
+   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -250,7 +277,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846000"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -276,7 +303,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/484586800"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -302,7 +329,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980954"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -328,7 +355,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846014"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": "customers",
@@ -354,7 +381,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1447605085"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -380,7 +407,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980953"
    },
-   "verified_at": "2026-05-06"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -401,7 +428,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1454791458",
   "value": false,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "新北市",
@@ -409,8 +436,8 @@
   "id": "linkou"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.1,
-  "buildings_considered": 103,
+  "building_height_known_share": 0.08,
+  "buildings_considered": 118,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -732,12 +759,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1454791458",
   "value": null,
-  "verified_at": "2026-05-06"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-05-06T03:25:00Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -749,5 +776,5 @@
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-05-06"
+ "updated_at": "2026-10-12"
 }

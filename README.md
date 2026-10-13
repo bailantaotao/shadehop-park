@@ -16,7 +16,9 @@
 地區設定在 `pipeline/config.py` 的 `REGIONS`（目前 `linkou`、`taipei`）。
 
 ```
-pipeline/fetch_osm.py   Overpass API（大範圍分塊抓）→ data/raw/<region>.osm.json.gz（不進 git，CI 每次重抓）
+pipeline/extract_pbf.py Geofabrik 台灣 .osm.pbf（每日更新，約 330 MB）→ data/raw/<region>.osm.json.gz（不進 git，CI 每次重抓）
+                          本機約 1 分鐘、記憶體約 1.7 GB；不依賴常常塞車或資料過期的 Overpass
+pipeline/fetch_osm.py   備用：Overpass API（大範圍分塊抓；拒絕超過 3 天的過期鏡像資料），輸出格式相同
 pipeline/fetch_city.py  官方名冊 → data/raw/<region>.city_parks.json
                           林口：新北市公園名冊（無座標，依名稱比對）
                           臺北：臺北市兒童遊戲場名冊（含座標與遊具數量，依位置比對；OSM 沒有的也列入）
@@ -42,7 +44,8 @@ mcp_server/server.py    MCP Server，讓 AI Agent 直接查詢
 
 ```bash
 pip install -r requirements.txt
-python -m pipeline.fetch_osm      # 全部地區；或 python -m pipeline.fetch_osm taipei。需要能連 Overpass API
+python -m pipeline.extract_pbf    # 下載 Geofabrik 台灣檔並切出全部地區
+python -m pipeline.extract_pbf --pbf ~/Downloads/taiwan-latest.osm.pbf taipei   # 用已下載的檔案、只做台北
 python -m pipeline.fetch_city     # 官方名冊；抓不到時沿用舊檔
 python -m pipeline.build_data     # 全部地區（需要每個地區的 raw 檔）
 python -m sitegen.build_site && python -m http.server -d public 8000

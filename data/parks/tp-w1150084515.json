@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1150084515",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": null,
    "source": "https://www.openstreetmap.org/way/1150084515",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  },
  "area_m2": 1010,
@@ -163,7 +163,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1176878062"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   },
   {
    "access": null,
@@ -189,7 +189,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1312931509"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "playground": {
@@ -210,7 +210,7 @@
   "note": "約 438 m² 在高架/屋頂下（佔 43%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1150084515",
   "value": true,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "region": {
   "city": "臺北市",
@@ -541,7 +541,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1150084515",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-12"
  },
  "shade_types": [
   {
@@ -551,11 +551,6 @@
    "method": "computed",
    "osm": [
     {
-     "id": 827002725,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/827002725"
-    },
-    {
      "id": 137326796,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/137326796"
@@ -564,22 +559,27 @@
      "id": 1133685539,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1133685539"
+    },
+    {
+     "id": 827002725,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/827002725"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/1150084515",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-12"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T03:55:06Z",
+   "as_of": "2026-10-12T20:21:35Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-12"
 }

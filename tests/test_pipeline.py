@@ -321,3 +321,12 @@ def test_point_playground_zone_excludes_buildings():
     # June 12:15: the near-vertical sun is just west of south, so the 60 m tower casts only a ~5 m strip
     # on the playground beside its east wall (the untrimmed circle would also count the tower itself).
     assert p["shade_timetable"]["slots"]["6"][12] < 0.4
+
+
+def test_stale_overpass_data_is_rejected():
+    from pipeline.fetch_osm import stale
+
+    now = datetime(2026, 10, 13, tzinfo=timezone.utc)
+    assert stale("2026-05-06T03:25:00Z", now)
+    assert not stale("2026-10-12T20:21:35Z", now)
+    assert not stale(None, now)

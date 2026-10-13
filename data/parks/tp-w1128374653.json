@@ -336,23 +336,7 @@
  },
  "name": "慶城公園 遊戲場",
  "name_source": "park_name",
- "official": {
-  "address": null,
-  "distance_m": 35,
-  "equipment": {
-   "搖搖樂": 1,
-   "組合遊具": 1
-  },
-  "facilities": null,
-  "features": null,
-  "management": "圓山所",
-  "method": "location_match",
-  "name": "慶城公園",
-  "phone": null,
-  "registry_points": 1,
-  "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-10-13"
- },
+ "official": null,
  "osm": {
   "id": 1128374653,
   "type": "way",
@@ -881,12 +865,6 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
-  },
-  {
-   "as_of": "2026-10-13T11:06:04+00:00",
-   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
-   "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
-   "url": "https://data.gov.tw/dataset/136476"
   }
  ],
  "updated_at": "2026-10-12"

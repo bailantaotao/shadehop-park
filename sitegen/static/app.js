@@ -458,26 +458,37 @@
     if (!weatherAt || distM([weatherAt.lng, weatherAt.lat], [c.lng, c.lat]) > 8000) weather();
   }
 
-  function weather() {
-    var c = map.getCenter();
-    weatherAt = c;
-    var url = "https://api.open-meteo.com/v1/forecast?latitude=" + c.lat.toFixed(3) + "&longitude=" + c.lng.toFixed(3) +
-      "&current=precipitation&hourly=precipitation_probability,uv_index&forecast_hours=3&timezone=Asia%2FTaipei";
-    fetch(url).then(function (r) { return r.json(); }).then(function (w) {
-      var rainNow = w.current && w.current.precipitation > 0;
-      var prob = Math.max.apply(null, (w.hourly && w.hourly.precipitation_probability) || [0]);
-      var uv = Math.max.apply(null, (w.hourly && w.hourly.uv_index) || [0]);
-      var msg = "";
-      if (rainNow || prob >= 60) {
-        msg = "☔ 地圖這一帶" + (rainNow ? "現在正在下雨" : "未來 3 小時降雨機率 " + prob + "%") + "，已幫你開啟「下雨可玩」。";
-        filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
-      } else if (uv >= 6) {
-        msg = "☀️ 未來 3 小時紫外線指數最高 " + uv.toFixed(0) + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
-      }
-      $("#weather").textContent = msg ? msg + "（天氣：Open-Meteo）" : "";
-      render();
-    }).catch(function () {});
+  // The district of the park nearest the map centre: the weather endpoint takes a district, not
+  // coordinates, so no position leaves the browser.
+  function centreDistrict() {
+    var c = map.getCenter(), best = null, bestD = Infinity;
+    state.features.forEach(function (f) {
+      var d = distM([c.lng, c.lat], f.geometry.coordinates);
+      if (d < bestD) { bestD = d; best = f; }
+    });
+    if (!best || bestD > 5000) return null;
+    var r = state.regions.find(function (x) { return x.id === best.properties.region; });
+    return r ? { city: r.city, district: best.properties.district } : null;
   }
+
+  function weather() {
+    var where = centreDistrict();
+    if (!where) return;  // parks in view not loaded yet; loadRegion calls weatherIfMoved again
+    weatherAt = map.getCenter();
+    fetch("api/weather?city=" + encodeURIComponent(where.city) + "&district=" + encodeURIComponent(where.district))
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (w) {
+        var rainy = w.pop !== null && w.pop >= 60, msg = "";
+        if (rainy) {
+          msg = "☔ " + where.district + "未來 3 小時降雨機率 " + w.pop + "%" + (w.weather ? "（" + w.weather + "）" : "") + "，已幫你開啟「下雨可玩」。";
+          filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
+        } else if (w.uv !== null && w.uv >= 6) {
+          msg = "☀️ " + where.district + "今天紫外線指數 " + w.uv + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
+        }
+        $("#weather").textContent = msg ? msg + "（天氣：中央氣象署）" : "";
+        render();
+      }).catch(function () {});
+  }
+
 
   // ------------------------------------------------------- regions & view
   function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -492,6 +503,7 @@
       fetch("api/regions/" + r.id + ".geojson").then(function (res) { return res.json(); }).then(function (gj) {
         state.features = state.features.concat(gj.features);
         render();
+        weatherIfMoved();  // the weather needs a park nearby to know the district
       }).catch(function () { state.loaded[r.id] = false; });
     });
   }
@@ -503,6 +515,7 @@
       fetch("api/regions/" + r.id + ".geojson").then(function (res) { return res.json(); }).then(function (gj) {
         state.features = state.features.concat(gj.features);
         render();
+        weatherIfMoved();  // the weather needs a park nearby to know the district
       }).catch(function () { state.loaded[r.id] = false; });
     });
   }

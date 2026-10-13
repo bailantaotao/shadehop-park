@@ -13,3 +13,5 @@ data/raw/*.part
 .env.*
 # Shade timetable cache between builds (CI keeps it with actions/cache).
 .cache/
+# Local secrets for `wrangler pages dev` (Pages Functions)
+.dev.vars

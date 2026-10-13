@@ -48,6 +48,7 @@
 <section>
 <h2>停車與充電</h2>
 <p>停車場來自 OSM（<code>amenity=parking</code>），排除私人設施。距離為直線距離。</p>
+<p>天氣（未來 3 小時降雨機率、今天紫外線指數）來自中央氣象署「<a href="https://opendata.cwa.gov.tw/">鄉鎮天氣預報</a>」（政府資料開放授權條款第1版，每天發布 4 次）。網頁只送出公園所在的行政區名稱查詢，不送出座標或您的位置。</p>
 <p>公廁以環境部環境管理署「<a href="https://data.gov.tw/dataset/30794">全國公廁建檔資料</a>」為主（政府資料開放授權條款第1版，每月更新），包含公園、車站、百貨、加油站、速食店等場所，標示親子廁所、尿布台與無障礙廁所；再補上 OpenStreetMap 有、官方資料沒有的公廁（{{ meta.assumptions.TOILET_RADIUS_M }}m 內）。便利商店（{{ meta.assumptions.CONVENIENCE_RADIUS_M }}m 內）與車站（{{ meta.assumptions.STATION_RADIUS_M }}m 內）來自 OpenStreetMap。距離皆為直線距離。</p>
 <p>電動車充電站以交通部「<a href="https://data.gov.tw/dataset/170220">充電站之基本資料</a>」為主（資料介接「交通部TDX平臺」，每週更新；每支充電槍標示 AC 或 DC：DC 為快充、AC 為慢充），再補上 OSM 有、官方資料沒有的站（<code>amenity=charging_station</code>，例如部分特斯拉超充站）。兩邊在 {{ meta.assumptions.CHARGER_MERGE_M }}m 內視為同一站、以官方資料為準。OSM 的站依插頭種類判定快慢：DC（CCS1、CCS2、CHAdeMO、Tesla Supercharger）為快充，AC（Type 1、Type 2）為慢充；未標示者顯示「未標示」，不推測。機車換電站（Gogoro、Ionex、BES）與手機充電站不列入。</p>
 <table>

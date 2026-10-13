@@ -292,6 +292,8 @@ def build(out: Path = OUT) -> None:
         f"/parks/{old}-* /parks/{new}-:splat 301\n/api/parks/{old}-* /api/parks/{new}-:splat 301\n" for old, new in moves))
     # Cloudflare Pages headers: let browser-based agents fetch the JSON, and serve
     # GeoJSON / llms.txt with explicit types.
+    # Only /api/weather runs a Pages Function (functions/api/weather.js); everything else stays static.
+    _write_json(out / "_routes.json", {"version": 1, "include": ["/api/weather"], "exclude": []})
     (out / "_headers").write_text(
         "/api/*\n  Access-Control-Allow-Origin: *\n\n"
         # Vendored libraries live in versioned folders, so browsers can keep them for good.

@@ -57,6 +57,13 @@ jobs:
           else
             npx --yes "$WRANGLER" pages project create "$PROJECT" --production-branch "$BRANCH"
           fi
+      - name: Pass the weather key to Pages Functions
+        if: steps.creds.outputs.ok == 'true'
+        env:
+          CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
+        run: |
+          if [ -z "$CWA_API_KEY" ]; then echo "::warning::CWA_API_KEY not set; /api/weather will answer 503"; exit 0; fi
+          printf '%s' "$CWA_API_KEY" | npx --yes "$WRANGLER" pages secret put CWA_API_KEY --project-name "$PROJECT"
       - name: Deploy
         if: steps.creds.outputs.ok == 'true'
         run: npx --yes "$WRANGLER" pages deploy public --project-name "$PROJECT" --branch "$BRANCH" --commit-dirty=true

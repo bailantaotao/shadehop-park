@@ -1,5 +1,5 @@
 /* Park page: favourite star, share, and the "is now a good time?" card (shade now and today,
-   rain chance and UV from Open-Meteo). */
+   rain chance and UV from 中央氣象署 via our /api/weather, which only gets the district). */
 (function () {
   "use strict";
   document.dispatchEvent(new CustomEvent("shadehop:favs"));  // show the saved star state
@@ -97,17 +97,17 @@
     ? "白天最陰涼：<b>" + best.start + "–" + best.end + "</b>（平均遮陰 " + Math.round(best.mean * 100) + "%）"
     : "白天最陰涼：<span class=\"muted\">8–17 點沒有明顯的遮陰時段，建議避開中午、多帶帽子</span>";
 
-  // Rain chance and UV for the next 3 hours at this park (Open-Meteo, free, no key).
-  var url = "https://api.open-meteo.com/v1/forecast?latitude=" + park.lat.toFixed(3) + "&longitude=" + park.lng.toFixed(3) +
-    "&hourly=precipitation_probability,uv_index&forecast_hours=3&timezone=Asia%2FTaipei";
+  // Rain chance (next 3 hours) and today's UV for this park's district, from 中央氣象署.
   var ctl = window.AbortController ? new AbortController() : null;
   if (ctl) setTimeout(function () { ctl.abort(); }, 8000);  // a slow weather service must not leave dashes forever
-  fetch(url, ctl ? { signal: ctl.signal } : {}).then(function (r) { return r.json(); }).then(function (w) {
-    var h = w.hourly || {};
-    var rain = Math.max.apply(null, h.precipitation_probability || [NaN]);
-    var uv = Math.max.apply(null, h.uv_index || [NaN]);
-    if (isFinite(rain)) setStat("nowRain", Math.round(rain) + "%", rain >= 60 ? "lo" : rain >= 30 ? "mid" : "");
-    if (isFinite(uv)) setStat("nowUv", String(Math.round(uv)), uv >= 8 ? "lo" : uv >= 6 ? "mid" : "");
+  fetch(park.weather, ctl ? { signal: ctl.signal } : {}).then(function (r) {
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }).then(function (w) {
+    if (w.pop !== null) setStat("nowRain", w.pop + "%", w.pop >= 60 ? "lo" : w.pop >= 30 ? "mid" : "");
+    else setStat("nowRain", "暫無", "");
+    if (w.uv !== null) setStat("nowUv", String(w.uv), w.uv >= 8 ? "lo" : w.uv >= 6 ? "mid" : "");
+    else setStat("nowUv", "暫無", "");
   }).catch(function () {
     setStat("nowRain", "暫無", ""); setStat("nowUv", "暫無", "");
   });

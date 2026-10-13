@@ -552,7 +552,9 @@
       var m = chargerMode === "icon"
         ? L.marker(ll, { pane: "chargers", title: title,
             icon: L.divIcon({ className: "chg " + k.cls, html: k.html, iconSize: [k.size, k.size], iconAnchor: [k.size / 2, k.size / 2] }) })
-        : L.circleMarker(ll, { pane: "chargers", radius: 3.5, weight: 1, color: "#fff",
+        // Dots share the parks' canvas: a canvas in its own pane would cover the whole map and
+        // swallow every click meant for the parks underneath.
+        : L.circleMarker(ll, { radius: 3.5, weight: 1, color: "#fff",
             fillColor: DOT_COLOR[p.speed] || DOT_COLOR.unknown, fillOpacity: 0.9 });
       m.bindPopup(function () { return chargerPopup(f); }).addTo(chargerLayer);
     });

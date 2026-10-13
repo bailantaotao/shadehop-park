@@ -67,12 +67,12 @@ jobs:
         run: |
           sleep 15
           fail=0
-          for path in / /llms.txt /sitemap.xml /robots.txt /openapi.json /api/parks.geojson /api/regions/index.json /api/casters/index.json /about/; do
+          for path in / /llms.txt /sitemap.xml /robots.txt /openapi.json /api/parks.geojson /api/parks.json /api/regions/index.json /api/casters/index.json /about/; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' "$SITE_URL$path")
             echo "$code $SITE_URL$path"
             [ "$code" = 200 ] || fail=1
           done
-          first=$(python -c "import json;print(json.load(open('data/parks.json'))['parks'][0]['id'])")
+          first=$(ls data/parks | head -1 | sed 's/\.json$//')
           code=$(curl -s -o /tmp/park -w '%{http_code}' "$SITE_URL/parks/$first/")
           echo "$code $SITE_URL/parks/$first/"; [ "$code" = 200 ] || fail=1
           grep -q '"@type": "Playground"' /tmp/park || { echo "JSON-LD missing"; fail=1; }

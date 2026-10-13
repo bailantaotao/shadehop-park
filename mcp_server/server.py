@@ -1,8 +1,8 @@
 """ShadeHop MCP server: lets AI agents query shaded/rain-proof playgrounds, parking and EV chargers.
 
     pip install -r requirements-mcp.txt
-    python -m mcp_server.server                       # stdio, reads data/parks.json
-    SHADEHOP_DATA_URL=https://.../api/parks.json python -m mcp_server.server
+    python -m mcp_server.server                       # stdio, reads data/meta.json + data/parks/*.json
+    SHADEHOP_DATA_URL=https://.../api/ python -m mcp_server.server   # reads api/meta.json + api/regions/<region>.json
     python -m mcp_server.server --http --port 8000    # streamable HTTP
 
 Optional real-time parking (TDX): set TDX_CLIENT_ID / TDX_CLIENT_SECRET.
@@ -32,8 +32,14 @@ def load() -> dict:
     if url:
         import requests
 
-        return requests.get(url, timeout=30).json()
-    return json.loads((ROOT / "data" / "parks.json").read_text())
+        # Older configs point at .../api/parks.json, which is now a slim list; use the full per-region files.
+        base = url.removesuffix("parks.json").rstrip("/") + "/"
+        meta = requests.get(base + "meta.json", timeout=30).json()
+        parks = [p for rid in meta["region_ids"] for p in requests.get(f"{base}regions/{rid}.json", timeout=60).json()["parks"]]
+        return {"meta": meta, "parks": parks}
+    data = ROOT / "data"
+    return {"meta": json.loads((data / "meta.json").read_text()),
+            "parks": [json.loads(f.read_text()) for f in sorted((data / "parks").glob("*.json"))]}
 
 
 def _parks() -> list[dict]:

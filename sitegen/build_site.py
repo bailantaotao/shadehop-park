@@ -1,4 +1,4 @@
-"""Generate the static site (HTML + machine-readable endpoints) from data/parks.json.
+"""Generate the static site (HTML + machine-readable endpoints) from data/meta.json and data/parks/*.json.
 
     SITE_URL=https://example.org python -m sitegen.build_site   # writes public/
 """
@@ -119,13 +119,14 @@ def openapi(meta: dict) -> dict:
         },
         "servers": [{"url": SITE_URL}],
         "paths": {
-            "/api/parks.json": {"get": {"operationId": "listParks", "summary": "全部公園（完整資料）",
+            "/api/parks.json": {"get": {"operationId": "listParks",
+                                        "summary": "全部公園（精簡：不含遮陰時刻表、停車與充電清單、來源；完整資料見 regions/{region}.json）",
                                         "responses": {"200": {"description": "{meta, parks[]}", "content": {"application/json": {}}}}}},
             "/api/parks.geojson": {"get": {"operationId": "listParksGeoJSON", "summary": "全部公園（GeoJSON 摘要，含遮陰時刻表）",
                                            "responses": {"200": {"description": "FeatureCollection", "content": {"application/geo+json": {}}}}}},
             "/api/parks/{id}.json": {"get": {
                 "operationId": "getPark", "summary": "單一公園完整資料",
-                "parameters": [{"name": "id", "in": "path", "required": True, "schema": {"type": "string", "example": "lk-w123456"}}],
+                "parameters": [{"name": "id", "in": "path", "required": True, "schema": {"type": "string", "example": "nt-w123456"}}],
                 "responses": {"200": {"description": "Park", "content": {"application/json": {"schema": {"$ref": f"{SITE_URL}/schema/park.schema.json"}}}},
                               "404": {"description": "Not found"}}}},
             "/api/regions/index.json": {"get": {"operationId": "listRegions", "summary": "地區清單（id、名稱、範圍、公園數）",
@@ -134,15 +135,38 @@ def openapi(meta: dict) -> dict:
                 "operationId": "listRegionParksGeoJSON", "summary": "單一地區的公園（GeoJSON 摘要）",
                 "parameters": [{"name": "region", "in": "path", "required": True, "schema": {"type": "string", "enum": meta["region_ids"]}}],
                 "responses": {"200": {"description": "FeatureCollection", "content": {"application/geo+json": {}}}}}},
+            "/api/regions/{region}.json": {"get": {
+                "operationId": "listRegionParks", "summary": "單一地區全部公園（完整資料）",
+                "parameters": [{"name": "region", "in": "path", "required": True, "schema": {"type": "string", "enum": meta["region_ids"]}}],
+                "responses": {"200": {"description": "{meta, parks[]}", "content": {"application/json": {}}}}}},
             "/api/meta.json": {"get": {"operationId": "getMeta", "summary": "資料集版本、計數與模型假設",
                                        "responses": {"200": {"description": "meta", "content": {"application/json": {}}}}}},
         },
     }
 
 
+# Fields left out of the all-parks download (api/parks.json) to keep it small as cities are added;
+# they are in api/parks/<id>.json and api/regions/<region>.json.
+SLIM_DROP = ("shade_timetable", "chargers", "parking", "sources")
+
+
+def _write_json(path: Path, obj) -> None:
+    path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n")
+
+
+def load_dataset(data: Path = DATA) -> tuple[dict, list[dict]]:
+    """meta.json plus every data/parks/<id>.json, ordered by id."""
+    meta = json.loads((data / "meta.json").read_text())
+    parks = [json.loads(f.read_text()) for f in sorted((data / "parks").glob("*.json"))]
+    return meta, parks
+
+
+def slim(p: dict) -> dict:
+    return {k: v for k, v in p.items() if k not in SLIM_DROP}
+
+
 def build(out: Path = OUT) -> None:
-    payload = json.loads((DATA / "parks.json").read_text())
-    meta, parks = payload["meta"], payload["parks"]
+    meta, parks = load_dataset(DATA)
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
@@ -169,7 +193,6 @@ def build(out: Path = OUT) -> None:
     (out / "api" / "parks").mkdir(parents=True)
     (out / "schema").mkdir()
     shutil.copy(ROOT / "schema" / "park.schema.json", out / "schema" / "park.schema.json")
-    shutil.copy(DATA / "parks.json", out / "api" / "parks.json")
     shutil.copy(DATA / "parks.geojson", out / "api" / "parks.geojson")
     shutil.copy(DATA / "meta.json", out / "api" / "meta.json")
     shutil.copy(DATA / "parks.csv", out / "api" / "parks.csv")
@@ -180,6 +203,13 @@ def build(out: Path = OUT) -> None:
         shutil.copytree(DATA / "casters", out / "api" / "casters")
     for p in parks:
         shutil.copy(DATA / "parks" / f"{p['id']}.json", out / "api" / "parks" / f"{p['id']}.json")
+    # Full data, one file per region (each stays far below Cloudflare's 25 MB per-file limit).
+    for rid in meta["region_ids"]:
+        mine = [p for p in parks if p["region"]["id"] == rid]
+        _write_json(out / "api" / "regions" / f"{rid}.json", {"meta": meta["regions"][rid], "parks": mine})
+    # Every park in one file, without the bulky per-park lists.
+    _write_json(out / "api" / "parks.json", {"meta": {**meta, "slim": {"dropped": list(SLIM_DROP),
+                "full": "/api/regions/{region}.json, /api/parks/{id}.json"}}, "parks": [slim(p) for p in parks]})
 
     dataset_ld = {
         "@context": "https://schema.org",
@@ -196,7 +226,8 @@ def build(out: Path = OUT) -> None:
             {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": f"{SITE_URL}/api/parks.geojson"},
             {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE_URL}/api/parks.json"},
             {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{SITE_URL}/api/parks.csv"},
-        ],
+        ] + [{"@type": "DataDownload", "encodingFormat": "application/json", "name": f"{r['label']}完整資料",
+              "contentUrl": f"{SITE_URL}/api/regions/{r['id']}.json"} for r in regions],
     }
 
     def render(tpl: str, path: str, **kw) -> None:

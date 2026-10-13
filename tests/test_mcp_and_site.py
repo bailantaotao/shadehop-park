@@ -34,7 +34,8 @@ def dataset(tmp_path_factory):
 
 @pytest.fixture
 def loaded(dataset, monkeypatch):
-    payload = json.loads((dataset / "parks.json").read_text())
+    meta, parks = bs.load_dataset(dataset)
+    payload = {"meta": meta, "parks": parks}
     monkeypatch.setattr(srv, "load", lambda: payload)
     return payload
 
@@ -101,3 +102,10 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     assert "臺北市" in (out / "llms.txt").read_text() and "新北市" in (out / "llms.txt").read_text()
     assert "Access-Control-Allow-Origin" in (out / "_headers").read_text()
     assert json.loads((out / "openapi.json").read_text())["openapi"].startswith("3.1")
+    assert not (dataset / "parks.json").exists()
+    full = json.loads((out / "api" / "regions" / "taipei.json").read_text())
+    assert full["meta"]["region"]["id"] == "taipei" and all(p["id"].startswith("tp-") and "shade_timetable" in p for p in full["parks"])
+    allp = json.loads((out / "api" / "parks.json").read_text())
+    assert len(allp["parks"]) == len(list((dataset / "parks").glob("*.json")))
+    assert all("shade_timetable" not in p and "level" in p for p in allp["parks"])
+    assert "regions/taipei.json" in (out / "llms.txt").read_text()

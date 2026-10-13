@@ -13,5 +13,5 @@ jobs:
       - run: pip install -r requirements.txt -r requirements-mcp.txt pytest jsonschema
       - run: python -m pytest -q
       - name: Build site from committed data
-        if: hashFiles('data/parks.json') != ''
+        if: hashFiles('data/meta.json') != ''
         run: python -m sitegen.build_site

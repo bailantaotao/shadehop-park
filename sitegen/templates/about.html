@@ -65,7 +65,7 @@
 <ul>
 <li><a href="{{ root }}llms.txt">llms.txt</a>、<a href="{{ root }}llms-full.txt">llms-full.txt</a>（全部公園的文字摘要）</li>
 <li><a href="{{ root }}openapi.json">OpenAPI</a>、<a href="{{ root }}schema/park.schema.json">JSON Schema</a></li>
-<li>資料下載：<a href="{{ root }}api/parks.geojson">GeoJSON</a>、<a href="{{ root }}api/parks.json">JSON</a>、<a href="{{ root }}api/parks.csv">CSV</a></li>
+<li>資料下載：<a href="{{ root }}api/parks.geojson">GeoJSON</a>、<a href="{{ root }}api/parks.json">JSON（精簡）</a>、<a href="{{ root }}api/parks.csv">CSV</a>；完整資料（含遮陰時刻表、停車與充電清單）依地區下載：{% for r in regions %}<a href="{{ root }}api/regions/{{ r.id }}.json">{{ r.label }}</a>{% if not loop.last %}、{% endif %}{% endfor %}</li>
 <li>MCP Server：見原始碼庫 <code>mcp_server/</code></li>
 </ul>
 <p>每一筆事實都附 <code>method</code>（資料取得方式）、<code>verified_at</code>、<code>confidence</code>、<code>source</code>。引用時請註明資料日期，並說明遮陰為模型推估。</p>

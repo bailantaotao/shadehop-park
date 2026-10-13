@@ -21,7 +21,9 @@
 
 ## 資料端點
 
-- [全部公園 JSON]({{ site_url }}/api/parks.json): 完整資料與 meta
+- [全部公園 JSON（精簡）]({{ site_url }}/api/parks.json): 每座公園的分級與摘要，不含遮陰時刻表、停車與充電清單
+{% for r in regions %}- [{{ r.label }}完整資料 JSON]({{ site_url }}/api/regions/{{ r.id }}.json): 該地區全部公園的完整資料
+{% endfor %}
 - [單一公園]({{ site_url }}/api/parks/{id}.json): 例如 {{ site_url }}/api/parks/{{ parks[0].id if parks else 'lk-w123' }}.json
 - [GeoJSON]({{ site_url }}/api/parks.geojson): 地圖用摘要（含遮陰時刻表）
 - [CSV]({{ site_url }}/api/parks.csv)

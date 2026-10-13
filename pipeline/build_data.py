@@ -962,7 +962,9 @@ def write_outputs(parks: list[dict], meta: dict, out: Path = DATA, casters: list
         old.unlink()
     for p in parks:
         _dump(out / "parks" / f"{p['id']}.json", p, pretty=True)
-    _dump(out / "parks.json", {"meta": meta, "parks": parks})
+    # No combined parks.json in data/: it outgrew Cloudflare's 25 MB file limit and bloated git.
+    # The site build assembles per-region and slim downloads from data/parks/*.json instead.
+    (out / "parks.json").unlink(missing_ok=True)
     _dump(out / "meta.json", meta, pretty=True)
     _dump(out / "parks.geojson", _feature_collection(parks))
     # Per-region map data, so a phone only downloads the region it is looking at.

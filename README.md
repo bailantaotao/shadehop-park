@@ -22,7 +22,7 @@ pipeline/fetch_osm.py   備用：Overpass API（大範圍分塊抓；拒絕超�
 pipeline/fetch_city.py  官方名冊 → data/raw/<region>.city_parks.json
                           新北市：新北市公園名冊；桃園市：特色遊戲場、埤塘公園（皆無座標，依名稱＋行政區比對）
                           臺北：臺北市兒童遊戲場名冊（含座標與遊具數量，依位置比對；OSM 沒有的也列入）
-pipeline/build_data.py  遮蔽判定、陰影時刻表、停車/充電配對 → data/parks/*.json, parks.json, parks.geojson, parks.csv,
+pipeline/build_data.py  遮蔽判定、陰影時刻表、停車/充電配對 → data/parks/*.json, parks.geojson, parks.csv,
                           regions/<region>.geojson（地圖用，手機只載入正在看的地區）、casters/<x>_<y>.geojson（約 1 km 分塊的陰影物件）
 sitegen/build_site.py   靜態網站 → public/（地圖、每座公園一頁 + JSON-LD、llms.txt、sitemap、OpenAPI）
 mcp_server/server.py    MCP Server，讓 AI Agent 直接查詢
@@ -58,7 +58,7 @@ MCP Server（Claude Desktop / Claude Code 設定）：
 { "mcpServers": { "shadehop": { "command": "python", "args": ["-m", "mcp_server.server"], "cwd": "/path/to/shadehop-park" } } }
 ```
 
-可選環境變數：`SHADEHOP_DATA_URL`（改讀線上 `api/parks.json`）、`TDX_CLIENT_ID` / `TDX_CLIENT_SECRET`（即時車位）、`SITE_URL`。
+可選環境變數：`SHADEHOP_DATA_URL`（改讀線上資料，例如 `https://shadehop-park.pages.dev/api/`）、`TDX_CLIENT_ID` / `TDX_CLIENT_SECRET`（即時車位）、`SITE_URL`。
 
 ## 自動化
 

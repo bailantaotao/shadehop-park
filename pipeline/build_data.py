@@ -678,9 +678,16 @@ class Builder:
         for i in order:
             r = records[i]
             if not any(k["name"] == r["name"] and k["kind"] == r["kind"] and k["indoor"] == r["indoor"]
-                       and k["_zone"].distance(r["_zone"]) < config.SAME_NAME_MERGE_M for k in kept):
+                       and k["_zone"].distance(r["_zone"]) < self._merge_gap(k, r) for k in kept):
                 kept.append(r)
         return kept
+
+    @staticmethod
+    def _merge_gap(a: dict, b: dict) -> float:
+        # Mapped outlines are real shapes: only near-touching fragments are one place. Two outlined
+        # play areas in a big park (青年公園) stay separate; estimated points merge within the wider gap.
+        both_mapped = not a["geometry_estimated"] and not b["geometry_estimated"]
+        return config.SAME_NAME_MERGE_MAPPED_M if both_mapped else config.SAME_NAME_MERGE_M
 
     def _official(self, entry: dict, method: str, distance_m: int | None = None, group: list[dict] | None = None) -> dict:
         group = group or [entry]

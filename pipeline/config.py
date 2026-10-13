@@ -141,6 +141,7 @@ OFFICIAL_MATCH_M = 40
 OFFICIAL_MERGE_M = 60
 # Places of the same kind with the same (often derived) name this close together are one place.
 SAME_NAME_MERGE_M = 60
+SAME_NAME_MERGE_MAPPED_M = 15  # when both are mapped outlines
 NESTED_DUPLICATE_RATIO = 0.8  # an area this much inside a larger one of the same kind is a duplicate
 # A mapped playground with at least this much area under a viaduct (not pavilions), and at least
 # COVERED_PARTIAL_RATIO of it covered, has a rain-proof play spot. For whole parks (equipment location

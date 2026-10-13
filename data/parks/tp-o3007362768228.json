@@ -2,129 +2,141 @@
  "address": null,
  "amenities": {
   "drinking_water": {
-   "confidence": "low",
-   "distance_m": null,
+   "confidence": "medium",
+   "distance_m": 57,
    "method": "osm",
-   "source": "https://www.openstreetmap.org/way/630887807",
-   "value": null,
+   "source": "https://data.gov.tw/dataset/136476",
+   "value": true,
    "verified_at": "2026-10-12"
   },
   "toilet": {
    "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+   "confidence": "medium",
+   "distance_m": 92,
    "method": "osm",
-   "note": "OSM 在 200m 內未標示公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/630887807",
-   "value": null,
+   "note": null,
+   "source": "https://data.gov.tw/dataset/136476",
+   "value": true,
    "verified_at": "2026-10-12"
   }
  },
- "area_m2": 101,
+ "area_m2": 452,
  "best_shade_windows": {
   "1": null,
   "10": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.65,
-   "start": "16:30",
-   "start_slot": 21
+   "mean": 0.95,
+   "start": "16:00",
+   "start_slot": 20
   },
-  "11": null,
-  "12": {
+  "11": {
    "end": "17:00",
    "end_slot": 22,
    "mean": 1.0,
    "start": "16:30",
    "start_slot": 21
   },
-  "2": null,
+  "12": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.83,
+   "start": "16:00",
+   "start_slot": 20
+  },
+  "2": {
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 0.84,
+   "start": "16:30",
+   "start_slot": 21
+  },
   "3": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.97,
-   "start": "17:00",
-   "start_slot": 22
+   "mean": 0.95,
+   "start": "16:00",
+   "start_slot": 20
   },
   "4": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 1.0,
-   "start": "17:30",
-   "start_slot": 23
+   "mean": 0.94,
+   "start": "15:30",
+   "start_slot": 19
   },
   "5": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 1.0,
-   "start": "17:30",
-   "start_slot": 23
+   "mean": 0.91,
+   "start": "15:30",
+   "start_slot": 19
   },
   "6": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 1.0,
-   "start": "17:30",
-   "start_slot": 23
+   "mean": 0.84,
+   "start": "16:00",
+   "start_slot": 20
   },
   "7": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 1.0,
-   "start": "17:30",
-   "start_slot": 23
+   "mean": 0.9,
+   "start": "16:00",
+   "start_slot": 20
   },
   "8": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 1.0,
-   "start": "17:30",
-   "start_slot": 23
+   "mean": 0.92,
+   "start": "15:30",
+   "start_slot": 19
   },
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 1.0,
-   "start": "17:00",
-   "start_slot": 22
+   "mean": 0.9,
+   "start": "15:30",
+   "start_slot": 19
   }
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": 81,
+  "nearest_any_m": 96,
   "nearest_fast_m": null,
-  "nearest_slow_m": 81,
+  "nearest_slow_m": 96,
   "radius_m": 500,
-  "slow": 2,
-  "total": 2,
+  "slow": 3,
+  "total": 3,
   "unknown": 0
  },
  "chargers": [
   {
    "access": null,
    "brand": null,
-   "capacity": 1,
-   "charging_rate": "計度/固定/8元每度",
-   "distance_m": 81,
+   "capacity": 6,
+   "charging_rate": "計度/00:00-24:00/每度8元",
+   "distance_m": 96,
    "distance_method": "straight_line",
    "fee": null,
-   "floors": "1",
+   "floors": "B1",
    "location": {
-    "lat": 25.17312,
-    "lng": 121.44089
+    "lat": 25.02043,
+    "lng": 121.50325
    },
    "max_kw": null,
    "method": "official_data",
-   "name": "Acon-eco新北淡水國小站",
-   "opening_hours": "國定例假日/07:00-22:00",
-   "operation_type": "公辦民營",
-   "operator": "連展電能科技股份有限公司",
+   "name": "青年二期社會住宅地下停車場",
+   "opening_hours": "24小時/每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "承翊系統整合股份有限公司",
    "osm": null,
-   "parking_rate": "計時/國定例假日/50元/每小時",
-   "restriction": "以現場告示",
+   "parking_rate": "計時/每日/每小時30元",
+   "restriction": null,
    "sockets": [
     {
-     "count": 1,
+     "count": 6,
      "current": "AC",
      "label": "Type 1 (J1772)",
      "output_kw": null,
@@ -135,99 +147,158 @@
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
-   "tdx_id": "89132567-S0084",
+   "tdx_id": "TPE1769",
    "verified_at": "2026-10-13"
   },
   {
    "access": null,
    "brand": null,
    "capacity": 3,
-   "charging_rate": "計度/固定/8元每度",
-   "distance_m": 260,
+   "charging_rate": "計度/固定/8 元每度",
+   "distance_m": 122,
    "distance_method": "straight_line",
    "fee": null,
-   "floors": "1F, B1",
+   "floors": "B1",
    "location": {
-    "lat": 25.172644,
-    "lng": 121.439186
+    "lat": 25.02027,
+    "lng": 121.50346
    },
    "max_kw": null,
    "method": "official_data",
-   "name": "新北市三民立體停車場",
-   "opening_hours": "7x24小時",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
+   "name": "青年一期社會住宅地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "台灣大動力服務股份有限公司",
    "osm": null,
-   "parking_rate": "30元/小時",
+   "parking_rate": "計時/每日/30元每小時，每12小時最高/150元每12小時",
    "restriction": null,
    "sockets": [
     {
      "count": 2,
      "current": "AC",
-     "label": "Type 2",
+     "label": "Type 1 (J1772)",
      "output_kw": null,
-     "type": "type2"
+     "type": "type1"
     },
     {
      "count": 1,
      "current": "AC",
-     "label": "Type 1 (J1772)",
+     "label": "Type 2",
      "output_kw": null,
-     "type": "type1"
+     "type": "type2"
     }
    ],
    "source": "tdx",
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
-   "tdx_id": "90807408-SCSD02814",
+   "tdx_id": "TPE1401",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 7,
+   "charging_rate": "AC/計度/一般/ 8.0元每度,AC/計度/尖峰/ 0元每度,AC/計度/離峰/ 0元每度",
+   "distance_m": 273,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.02381,
+    "lng": 121.50307
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "青年公園棒球場地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0318",
    "verified_at": "2026-10-13"
   }
  ],
- "daytime_shaded_share": 0.0,
- "geometry_estimated": false,
- "id": "nt-w630887807",
+ "daytime_shaded_share": 0.02,
+ "geometry_estimated": true,
+ "id": "tp-o3007362768228",
  "indoor": false,
  "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 25.17322,
-  "lng": 121.441754
+  "lat": 25.021269,
+  "lng": 121.502714
  },
- "name": "遊戲場（近原德路117巷）",
- "name_source": "nearest_street",
- "official": null,
- "osm": {
-  "id": 630887807,
-  "type": "way",
-  "url": "https://www.openstreetmap.org/way/630887807"
+ "name": "青年公園",
+ "name_source": "official",
+ "official": {
+  "address": null,
+  "distance_m": null,
+  "equipment": {
+   "其他": 1,
+   "攀爬組": 1,
+   "組合遊具": 1,
+   "鞦韆": 2
+  },
+  "facilities": null,
+  "features": null,
+  "management": "青年所",
+  "method": "official_record",
+  "name": "青年公園",
+  "phone": null,
+  "registry_points": 5,
+  "source": "https://data.gov.tw/dataset/136476",
+  "verified_at": "2026-10-13"
  },
- "park_name": null,
+ "osm": null,
+ "park_name": "青年公園",
  "parking": [
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 151,
+   "distance_m": 240,
    "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
    "location": {
-    "lat": 25.171594,
-    "lng": 121.441656
+    "lat": 25.019372,
+    "lng": 121.501214
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中山收費停車場",
+   "name": "停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 294112369,
+    "id": 310165306,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/294112369"
+    "url": "https://www.openstreetmap.org/way/310165306"
    },
    "verified_at": "2026-10-12"
   },
@@ -236,50 +307,50 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 189,
+   "distance_m": 261,
    "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
    "location": {
-    "lat": 25.171406,
-    "lng": 121.442492
+    "lat": 25.019225,
+    "lng": 121.50114
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
-   "operator": "台灣普客二四股份有限公司",
-   "osm": {
-    "id": 294112242,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/294112242"
-   },
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 249,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.172347,
-    "lng": 121.4392
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "淡水區三民停車場",
+   "name": "停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 289839749,
+    "id": 310165307,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/289839749"
+    "url": "https://www.openstreetmap.org/way/310165307"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": 276,
+   "capacity_disabled": "6",
+   "capacity_parent": null,
+   "distance_m": 277,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "underground",
+   "kind_label": "地下停車場",
+   "location": {
+    "lat": 25.023837,
+    "lng": 121.503156
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "青年公園棒球場地下停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 3192426185,
+    "type": "node",
+    "url": "https://www.openstreetmap.org/node/3192426185"
    },
    "verified_at": "2026-10-12"
   },
@@ -288,14 +359,14 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 314,
+   "distance_m": 295,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.173852,
-    "lng": 121.438393
+    "lat": 25.020516,
+    "lng": 121.505949
    },
    "maxheight_m": null,
    "method": "osm",
@@ -303,9 +374,9 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 295645472,
+    "id": 229774713,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/295645472"
+    "url": "https://www.openstreetmap.org/way/229774713"
    },
    "verified_at": "2026-10-12"
   },
@@ -314,50 +385,50 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 318,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.175811,
-    "lng": 121.439809
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 299434886,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/299434886"
-   },
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 351,
+   "distance_m": 303,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.17397,
-    "lng": 121.44533
+    "lat": 25.01717,
+    "lng": 121.501116
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "A區停車場",
+   "name": "汽車停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 971535308,
+    "id": 112003051,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/971535308"
+    "url": "https://www.openstreetmap.org/way/112003051"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 328,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 25.019185,
+    "lng": 121.500193
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 309971539,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/309971539"
    },
    "verified_at": "2026-10-12"
   }
@@ -371,25 +442,25 @@
   "surface": null,
   "wheelchair": null
  },
- "playground_mapped": true,
+ "playground_mapped": false,
  "rain_cover": {
   "confidence": "low",
   "covered_area_m2": 0,
   "covered_ratio": 0.0,
   "method": "osm",
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
-  "source": "https://www.openstreetmap.org/way/630887807",
+  "source": "https://data.gov.tw/dataset/136476",
   "value": false,
   "verified_at": "2026-10-12"
  },
  "region": {
-  "city": "新北市",
-  "district": "淡水區",
-  "id": "newtaipei"
+  "city": "臺北市",
+  "district": "萬華區",
+  "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.07,
-  "buildings_considered": 280,
+  "building_height_known_share": 0.14,
+  "buildings_considered": 653,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -416,13 +487,14 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.01,
+    0.57,
+    0.51,
     null,
     null
    ],
    "10": [
+    0.23,
     0.0,
     0.0,
     0.0,
@@ -441,10 +513,9 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.65,
+    0.42,
+    0.89,
+    1.0,
     null,
     null
    ],
@@ -468,9 +539,9 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.36,
+    0.23,
+    0.46,
+    1.0,
     null,
     null
    ],
@@ -483,6 +554,7 @@
     0.0,
     0.0,
     0.0,
+    0.07,
     0.0,
     0.0,
     0.0,
@@ -493,9 +565,8 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.44,
+    0.66,
     1.0,
     null,
     null
@@ -521,9 +592,9 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.32,
+    0.18,
+    0.69,
+    1.0,
     null
    ],
    "3": [
@@ -546,10 +617,10 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.94,
+    0.17,
+    0.8,
+    1.0,
+    1.0,
     1.0
    ],
    "4": [
@@ -571,11 +642,11 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.55,
+    0.09,
+    0.69,
+    1.0,
+    1.0,
+    1.0,
     1.0
    ],
    "5": [
@@ -597,11 +668,11 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
+    0.12,
+    0.6,
+    1.0,
+    0.93,
+    1.0,
     1.0
    ],
    "6": [
@@ -623,11 +694,11 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.04,
+    0.31,
+    0.67,
+    0.7,
+    1.0,
     1.0
    ],
    "7": [
@@ -649,11 +720,11 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.02,
+    0.31,
+    0.76,
+    0.84,
+    1.0,
     1.0
    ],
    "8": [
@@ -675,11 +746,11 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.06,
+    0.6,
+    1.0,
+    1.0,
+    1.0,
     1.0
    ],
    "9": [
@@ -701,15 +772,15 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.07,
+    0.6,
+    1.0,
+    1.0,
     1.0,
     null
    ]
   },
-  "source": "https://www.openstreetmap.org/way/630887807",
+  "source": "https://data.gov.tw/dataset/136476",
   "value": null,
   "verified_at": "2026-10-12"
  },
@@ -722,10 +793,16 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T16:35:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-13T11:06:04+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
+   "url": "https://data.gov.tw/dataset/136476"
   }
  ],
  "updated_at": "2026-10-12"

@@ -51,8 +51,8 @@
  "id": "nt-r11329253",
  "indoor": false,
  "kind": "park",
- "level": "A",
- "level_label": "全天候遮蔽（下雨可玩）",
+ "level": "B",
+ "level_label": "部分遮陽設施 / 樹蔭",
  "location": {
   "lat": 24.961078,
   "lng": 121.334709
@@ -254,7 +254,7 @@
   "method": "computed",
   "note": "約 1541 m² 在高架/屋頂下（佔 2%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/relation/11329253",
-  "value": true,
+  "value": "partial",
   "verified_at": "2026-10-12"
  },
  "region": {
@@ -621,7 +621,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T10:01:10+00:00",
+   "as_of": "2026-10-13T11:06:03+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

@@ -51,8 +51,8 @@
  "id": "nt-w416084896",
  "indoor": false,
  "kind": "park",
- "level": "A",
- "level_label": "全天候遮蔽（下雨可玩）",
+ "level": "B",
+ "level_label": "部分遮陽設施 / 樹蔭",
  "location": {
   "lat": 25.068358,
   "lng": 121.468672
@@ -241,7 +241,7 @@
   "method": "computed",
   "note": "約 1657 m² 在高架/屋頂下（佔 10%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/416084896",
-  "value": true,
+  "value": "partial",
   "verified_at": "2026-10-12"
  },
  "region": {

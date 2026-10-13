@@ -60,14 +60,14 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 7,
+  "fast": 1,
   "nearest_any_m": 400,
   "nearest_fast_m": 466,
   "nearest_slow_m": 400,
-  "radius_m": 2000,
-  "slow": 15,
-  "total": 24,
-  "unknown": 2
+  "radius_m": 500,
+  "slow": 2,
+  "total": 3,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -189,200 +189,6 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "83039115-S0003",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 23,
-   "charging_rate": "計度/固定/8.8元每度",
-   "distance_m": 653,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "4F, B1",
-   "location": {
-    "lat": 25.067742,
-    "lng": 121.36461
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "MITSUI OUTLET PARK 林口Ⅱ館",
-   "opening_hours": "每日/11:00-22:00",
-   "operation_type": "私有民營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "⚠️停車優惠僅限於MITSUI OUTLET PARK 林口當日消費之發票，為利於優惠折抵，請牢記車牌號碼。 1.每消費滿1,000元可折停車1小時，依此類推，請於消費同時，告知車牌號碼進行停車優惠折抵。 2.持永豐三井OUTLET聯名卡可於自動繳費機過卡，即享2小時停車優惠，每日每卡每車僅限優惠乙次。 3.憑威秀影城當日購買之票根，於繳費機掃描QR CODE，即享3小時停車優惠，每日每車限抵扣乙次。 4.以上3項優惠可合併使用，每車每日最高折抵5小時。",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 12,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    },
-    {
-     "count": 11,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "90807408-SCSD02763",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": "EValue",
-   "capacity": null,
-   "distance_m": 785,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "location": {
-    "lat": 25.07114,
-    "lng": 121.365178
-   },
-   "max_kw": 7.0,
-   "method": "osm",
-   "name": "EValue 三井林口",
-   "opening_hours": null,
-   "operator": "EValue",
-   "osm": {
-    "id": 10649110861,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10649110861"
-   },
-   "sockets": [],
-   "source": "osm",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "output",
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 5,
-   "charging_rate": "計度/固定/8元每度",
-   "distance_m": 846,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07373,
-    "lng": 121.37344
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "Acon-eco新北林口檔案館站",
-   "opening_hours": "24小時",
-   "operation_type": "私有民營",
-   "operator": "連展電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/30元/每小時",
-   "restriction": "以現場告示",
-   "sockets": [
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "89132567-S0128",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計度/固定/5元每度",
-   "distance_m": 847,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07375,
-    "lng": 121.36884
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "林口昕境廣場站",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "平日：$20/H，假日：$40/H",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "28371994-STP5180001",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 18,
-   "charging_rate": "計度/固定/8.8元每度",
-   "distance_m": 909,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "3F",
-   "location": {
-    "lat": 25.071507,
-    "lng": 121.363891
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "MITSUI OUTLET PARK 林口Ⅰ館",
-   "opening_hours": "平日 /11:00-22:00, 平日 /11:00-23:59, 假日 /11:00-22:00",
-   "operation_type": "私有民營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "依現場為準",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 9,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    },
-    {
-     "count": 11,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "90807408-SCSD02391",
    "verified_at": "2026-10-13"
   }
  ],
@@ -935,13 +741,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T12:35:36+08:00",
+   "as_of": "2026-10-13T16:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:10+00:00",
+   "as_of": "2026-10-13T08:42:08+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

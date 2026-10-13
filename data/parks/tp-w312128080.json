@@ -112,10 +112,10 @@
   "nearest_any_m": 134,
   "nearest_fast_m": 134,
   "nearest_slow_m": 314,
-  "radius_m": 2000,
-  "slow": 73,
-  "total": 76,
-  "unknown": 1
+  "radius_m": 500,
+  "slow": 4,
+  "total": 6,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -358,89 +358,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0155",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 12,
-   "charging_rate": "計分/1.25 元每分",
-   "distance_m": 511,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.04695,
-    "lng": 121.54249
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "大潤發中崙店停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "私有民營",
-   "operator": "台灣大動力服務股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/50元每小時，每日最高無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0447",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 567,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.03737,
-    "lng": 121.5445
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市立聯合醫院-仁愛院區停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "40元/時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0129",
    "verified_at": "2026-10-13"
   }
  ],
@@ -995,13 +912,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

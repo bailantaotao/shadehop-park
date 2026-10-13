@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 0,
   "nearest_any_m": 197,
-  "nearest_fast_m": 609,
+  "nearest_fast_m": null,
   "nearest_slow_m": 197,
-  "radius_m": 2000,
-  "slow": 33,
-  "total": 35,
+  "radius_m": 500,
+  "slow": 5,
+  "total": 5,
   "unknown": 0
  },
  "chargers": [
@@ -321,177 +321,6 @@
    "speed_source": "official",
    "tdx_id": "TPE0007",
    "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 6,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 510,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.06693,
-    "lng": 121.51193
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "延平國小地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "40元/時，最高上限200元/12小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1334",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 4,
-   "charging_rate": "計度/8元每度",
-   "distance_m": 530,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B2",
-   "location": {
-    "lat": 25.07499,
-    "lng": 121.51427
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市大龍新城地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "皇鋒通訊股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/50元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1258",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 4,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 560,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07426,
-    "lng": 121.512
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "啟聰學校地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "30元/小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0930",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": "yes",
-   "brand": "Tesla Supercharger",
-   "capacity": 6,
-   "distance_m": 609,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "location": {
-    "lat": 25.068721,
-    "lng": 121.52151
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "臺北花博超級充電站",
-   "opening_hours": "24/7",
-   "operator": "Tesla",
-   "osm": {
-    "id": 4640527292,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4640527292"
-   },
-   "sockets": [
-    {
-     "count": 6,
-     "current": null,
-     "label": "NACS",
-     "output_kw": null,
-     "type": "nacs"
-    },
-    {
-     "count": 6,
-     "current": "DC",
-     "label": "Tesla Supercharger",
-     "output_kw": null,
-     "type": "tesla_supercharger"
-    }
-   ],
-   "source": "osm",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "sockets",
-   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -1042,13 +871,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

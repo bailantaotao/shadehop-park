@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 0,
   "nearest_any_m": 115,
-  "nearest_fast_m": 675,
+  "nearest_fast_m": null,
   "nearest_slow_m": 115,
-  "radius_m": 2000,
-  "slow": 83,
-  "total": 85,
+  "radius_m": 500,
+  "slow": 2,
+  "total": 2,
   "unknown": 0
  },
  "chargers": [
@@ -206,286 +206,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1206",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 516,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.05657,
-    "lng": 121.53697
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下E區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U06",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 518,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.05718,
-    "lng": 121.53693
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下F區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U07",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 563,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.0542,
-    "lng": 121.53687
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下D區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U05",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 605,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.0534,
-    "lng": 121.53685
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下C區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U04",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 6,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 605,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.0593,
-    "lng": 121.53698
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下G區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U08",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計分/1.25 元每分",
-   "distance_m": 615,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B2",
-   "location": {
-    "lat": 25.06005,
-    "lng": 121.53652
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "USPACE三寶大樓地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "私有民營",
-   "operator": "台灣大動力服務股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/60元每小時，每日最高/320元 每日",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1733",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 8,
-   "charging_rate": "計度/固定/8 元每度",
-   "distance_m": 675,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.06142,
-    "lng": 121.52769
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "新生高架(錦州街-民權東路)",
-   "opening_hours": "7x24 小時",
-   "operation_type": "公辦公營",
-   "operator": "中興電工機械股份有限公司",
-   "osm": null,
-   "parking_rate": "充電停車免費",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    },
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    }
-   ],
-   "source": "tdx",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0386U07",
    "verified_at": "2026-10-13"
   }
  ],
@@ -1037,13 +757,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -2,7 +2,7 @@
  "assumptions": {
   "AMENITY_RADIUS_M": 200,
   "CHARGER_MERGE_M": 40,
-  "CHARGER_RADIUS_M": 2000,
+  "CHARGER_RADIUS_M": 500,
   "COVERED_FULL_RATIO": 0.5,
   "COVERED_PARTIAL_RATIO": 0.15,
   "DEFAULT_BUILDING_HEIGHT_M": 9.0,
@@ -30,9 +30,9 @@
    "C": 19,
    "none": 652
   },
-  "chargers_in_bbox": 487,
-  "chargers_official": 466,
-  "chargers_osm_only": 21,
+  "chargers_in_bbox": 483,
+  "chargers_official": 461,
+  "chargers_osm_only": 22,
   "city_registry_parks": 560,
   "mapped_playgrounds": 366,
   "matched_city_registry": 182,
@@ -42,7 +42,7 @@
   "parks": 708
  },
  "coverage": "新北市林口區、臺北市",
- "fetched_at": "2026-10-13T05:52:40+00:00",
+ "fetched_at": "2026-10-13T08:40:39+00:00",
  "generated_from_osm_base": "2026-10-12T20:21:35Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
@@ -65,16 +65,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-13T05:54:14+00:00",
+    "fetched_at": "2026-10-13T08:42:12+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-13T12:35:36+08:00",
+    "src_update_time": "2026-10-13T16:35:36+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 40,
-    "fetched_at": "2026-10-13T05:54:10+00:00",
+    "fetched_at": "2026-10-13T08:42:08+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "新北市政府農業局",
@@ -140,9 +140,9 @@
      "C": 0,
      "none": 52
     },
-    "chargers_in_bbox": 33,
-    "chargers_official": 28,
-    "chargers_osm_only": 5,
+    "chargers_in_bbox": 29,
+    "chargers_official": 23,
+    "chargers_osm_only": 6,
     "city_registry_parks": 40,
     "mapped_playgrounds": 7,
     "matched_city_registry": 28,
@@ -157,7 +157,7 @@
     "school": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T05:52:40+00:00",
+   "fetched_at": "2026-10-13T08:40:39+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "新北市",
@@ -182,16 +182,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-13T05:54:14+00:00",
+    "fetched_at": "2026-10-13T08:42:12+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-13T03:55:36+08:00",
+    "src_update_time": "2026-10-13T12:00:00+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 520,
-    "fetched_at": "2026-10-13T05:54:13+00:00",
+    "fetched_at": "2026-10-13T08:42:10+00:00",
     "kind": "playgrounds",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "臺北市政府工務局公園路燈工程管理處",
@@ -251,7 +251,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T05:52:40+00:00",
+   "fetched_at": "2026-10-13T08:40:39+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "臺北市",

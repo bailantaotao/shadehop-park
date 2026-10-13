@@ -106,9 +106,9 @@
   "nearest_any_m": 248,
   "nearest_fast_m": 248,
   "nearest_slow_m": 248,
-  "radius_m": 2000,
-  "slow": 12,
-  "total": 12,
+  "radius_m": 500,
+  "slow": 3,
+  "total": 3,
   "unknown": 0
  },
  "chargers": [
@@ -252,203 +252,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0724",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計分/固定/ 8.5 元每分",
-   "distance_m": 545,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.0881,
-    "lng": 121.60037
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "大湖活動中心暨溫水游泳池停車場",
-   "opening_hours": "24小時",
-   "operation_type": "公辦公營",
-   "operator": "思納捷科技股份有限公司",
-   "osm": null,
-   "parking_rate": "校園案預設'以分計費'",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0843",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度/尖峰/09:00-19:00/8 元每度,計度/離峰/00:00-09:00/8 元每度,計度/正常/19:00-24:00/8 元每度計分/8 元每分",
-   "distance_m": 1145,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07691,
-    "lng": 121.58872
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "內湖國中停車場",
-   "opening_hours": "每日00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "辰淵企業股份有限公司瑞光營運所",
-   "osm": null,
-   "parking_rate": "計時/每日/07:00-19:00/20 元每小時，計時/每日/19:00-7:00/20 元每小時，無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0612",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 5,
-   "charging_rate": "計度/尖峰/09:00-19:00/8 元每度,計度/離峰/00:00-09:00/8 元每度,計度/正常/19:00-24:00/8 元每度計分/8 元每分",
-   "distance_m": 1311,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07305,
-    "lng": 121.60169
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "麗湖國小地下停車場",
-   "opening_hours": "每日00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "辰淵企業股份有限公司麗湖營運所",
-   "osm": null,
-   "parking_rate": "計時/每日/07:00-19:00/20 元每小時，計時/每日/19:00-7:00/20 元每小時，無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0482",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 2,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 1541,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.07253,
-    "lng": 121.60553
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "康寧平面停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0300",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計度/固定/8.5 元每度",
-   "distance_m": 1746,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.08022,
-    "lng": 121.58007
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市內湖區內湖國民小學孝悌樓地下停車場",
-   "opening_hours": "周一至周五晚間6時30分至翌日早上6時30分及例假日全天",
-   "operation_type": "公辦公營",
-   "operator": "思納捷科技股份有限公司",
-   "osm": null,
-   "parking_rate": "校園案預設以分計費",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1820",
    "verified_at": "2026-10-13"
   }
  ],
@@ -1000,13 +803,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

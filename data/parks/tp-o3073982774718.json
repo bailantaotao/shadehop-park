@@ -108,14 +108,14 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 0,
   "nearest_any_m": 28,
-  "nearest_fast_m": 621,
+  "nearest_fast_m": null,
   "nearest_slow_m": 28,
-  "radius_m": 2000,
-  "slow": 23,
-  "total": 26,
-  "unknown": 1
+  "radius_m": 500,
+  "slow": 4,
+  "total": 4,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -275,155 +275,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1108",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 6,
-   "charging_rate": "計度/固定/8.00元每度",
-   "distance_m": 536,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07851,
-    "lng": 121.5743
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "大港墘公園地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "創玖科技股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/平日(08~20)/40元每小時/每日最高/280元每日,計時/平日(20~08)/20元每小時/每日最高/280元每日,計時/假日/20元每小時/每日最高/280元每日",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1388",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": "Power Express 全國特急電充電站(港墘路站)",
-   "capacity": null,
-   "distance_m": 621,
-   "distance_method": "straight_line",
-   "fee": null,
-   "location": {
-    "lat": 25.07491,
-    "lng": 121.572526
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "Power Express 全國特急電充電站(港墘路站)",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 14027851271,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/14027851271"
-   },
-   "sockets": [],
-   "source": "osm",
-   "speed": "fast",
-   "speed_label": "快充 (DC)（依站名判斷）",
-   "speed_source": "name",
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 5,
-   "charging_rate": "計度/固定/8元每度",
-   "distance_m": 725,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07956,
-    "lng": 121.56168
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "濱江國中地下停車場",
-   "opening_hours": "7x24 小時",
-   "operation_type": "公辦公營",
-   "operator": "連展電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/10元/每小時, 計時/每日/20元/每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0535",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 2,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 734,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.08573,
-    "lng": 121.57207
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "環山平面停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0381",
    "verified_at": "2026-10-13"
   }
  ],
@@ -974,13 +825,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

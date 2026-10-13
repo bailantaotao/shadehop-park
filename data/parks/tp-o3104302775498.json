@@ -36,13 +36,13 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 1,
+  "fast": 0,
   "nearest_any_m": 175,
-  "nearest_fast_m": 533,
+  "nearest_fast_m": null,
   "nearest_slow_m": 175,
-  "radius_m": 2000,
-  "slow": 7,
-  "total": 7,
+  "radius_m": 500,
+  "slow": 2,
+  "total": 2,
   "unknown": 0
  },
  "chargers": [
@@ -120,231 +120,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0843",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 13,
-   "charging_rate": "AC/計度/一般/ 8.000元每度;DC/計度/一般/ 9.8000元每度",
-   "distance_m": 533,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "5",
-   "location": {
-    "lat": 25.08413,
-    "lng": 121.59439
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "CITYLINK 內湖店停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "20元/半小時(平日每12小時最高收費120元、假日每12小時最高收費200元)",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "DC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    },
-    {
-     "count": 1,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    },
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "both",
-   "speed_label": "快充 + 慢充",
-   "speed_source": "official",
-   "tdx_id": "TPE1032",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 573,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.08132,
-    "lng": 121.59855
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "金湖臨時平面停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0724",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度/尖峰/09:00-19:00/8 元每度,計度/離峰/00:00-09:00/8 元每度,計度/正常/19:00-24:00/8 元每度計分/8 元每分",
-   "distance_m": 1485,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07691,
-    "lng": 121.58872
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "內湖國中停車場",
-   "opening_hours": "每日00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "辰淵企業股份有限公司瑞光營運所",
-   "osm": null,
-   "parking_rate": "計時/每日/07:00-19:00/20 元每小時，計時/每日/19:00-7:00/20 元每小時，無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0612",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 5,
-   "charging_rate": "計度/尖峰/09:00-19:00/8 元每度,計度/離峰/00:00-09:00/8 元每度,計度/正常/19:00-24:00/8 元每度計分/8 元每分",
-   "distance_m": 1512,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07305,
-    "lng": 121.60169
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "麗湖國小地下停車場",
-   "opening_hours": "每日00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "辰淵企業股份有限公司麗湖營運所",
-   "osm": null,
-   "parking_rate": "計時/每日/07:00-19:00/20 元每小時，計時/每日/19:00-7:00/20 元每小時，無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0482",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 2,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 1677,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.07253,
-    "lng": 121.60553
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "康寧平面停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0300",
    "verified_at": "2026-10-13"
   }
  ],
@@ -895,13 +670,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

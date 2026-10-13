@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 0,
   "nearest_any_m": 127,
-  "nearest_fast_m": 758,
+  "nearest_fast_m": null,
   "nearest_slow_m": 127,
-  "radius_m": 2000,
-  "slow": 60,
-  "total": 62,
+  "radius_m": 500,
+  "slow": 3,
+  "total": 3,
   "unknown": 0
  },
  "chargers": [
@@ -237,241 +237,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0228U12",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 10,
-   "charging_rate": "計度/固定/9 元每度",
-   "distance_m": 572,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "5",
-   "location": {
-    "lat": 25.06777,
-    "lng": 121.53721
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北農產運銷股份有限公司第二果菜批發市場停車場",
-   "opening_hours": "平日/00:00-24:00,假日 /00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "台北農產運銷股份有限公司台北市第二果菜批發市場",
-   "osm": null,
-   "parking_rate": "計時/每日/30 元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 12,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0738",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "台北魚市場",
-   "distance_m": 575,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.0663,
-    "lng": 121.53711
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北魚市停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": null,
-   "osm": null,
-   "parking_rate": null,
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0031",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 20,
-   "charging_rate": "計度/固定/9 元每度",
-   "distance_m": 585,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B3",
-   "location": {
-    "lat": 25.06765,
-    "lng": 121.53735
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北農產運銷股份有限公司第二果菜批發市場地下三樓停車場(濱江市場地下停車場)",
-   "opening_hours": "平日/00:00-24:00,假日 /00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "台北農產運銷股份有限公司台北市第二果菜批發市場",
-   "osm": null,
-   "parking_rate": "計時/每日30 元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0389",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 643,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.06444,
-    "lng": 121.53701
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下IB區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U11",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計時/每日/10元每1時",
-   "distance_m": 714,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.06337,
-    "lng": 121.53705
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "建國北路高架橋下IA區",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "寶盛國際股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0228U10",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 8,
-   "charging_rate": "計度/固定/8 元每度",
-   "distance_m": 758,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.06142,
-    "lng": 121.52769
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "新生高架(錦州街-民權東路)",
-   "opening_hours": "7x24 小時",
-   "operation_type": "公辦公營",
-   "operator": "中興電工機械股份有限公司",
-   "osm": null,
-   "parking_rate": "充電停車免費",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    },
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    }
-   ],
-   "source": "tdx",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0386U07",
    "verified_at": "2026-10-13"
   }
  ],
@@ -1023,13 +788,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

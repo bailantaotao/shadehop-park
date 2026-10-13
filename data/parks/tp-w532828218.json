@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 1,
   "nearest_any_m": 281,
   "nearest_fast_m": 368,
   "nearest_slow_m": 281,
-  "radius_m": 2000,
-  "slow": 27,
-  "total": 29,
+  "radius_m": 500,
+  "slow": 6,
+  "total": 7,
   "unknown": 0
  },
  "chargers": [
@@ -389,44 +389,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0742",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 6,
-   "charging_rate": "計度/固定/8 元每度",
-   "distance_m": 595,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.09583,
-    "lng": 121.51837
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市立天文科學教育館地下及戶外平面停車場",
-   "opening_hours": "週二~周日 07:30~18:00",
-   "operation_type": "公辦公營",
-   "operator": "臺北市立天文科學教育館",
-   "osm": null,
-   "parking_rate": "計時/每日/30 元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0101",
    "verified_at": "2026-10-13"
   }
  ],
@@ -968,7 +930,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

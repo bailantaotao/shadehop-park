@@ -67,182 +67,15 @@
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": 781,
+  "nearest_any_m": null,
   "nearest_fast_m": null,
-  "nearest_slow_m": 781,
-  "radius_m": 2000,
-  "slow": 4,
-  "total": 4,
+  "nearest_slow_m": null,
+  "radius_m": 500,
+  "slow": 0,
+  "total": 0,
   "unknown": 0
  },
- "chargers": [
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 2,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 781,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 24.98621,
-    "lng": 121.58286
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "政大三街臨時平面停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0726",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 6,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 1427,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 24.98945,
-    "lng": 121.57666
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "萬興國小地下停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時30元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0835",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度/00:00-24:00/每度8元",
-   "distance_m": 1653,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 24.99736,
-    "lng": 121.57877
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "嘟嘟房動物園站停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "承翊系統整合股份有限公司",
-   "osm": null,
-   "parking_rate": "平日：10元/小時，假日：06:00-22:00時60元/小時；22:00-06:00時10元/小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0739",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 14,
-   "charging_rate": "計度/00:00-24:00/每度8元",
-   "distance_m": 1659,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "2",
-   "location": {
-    "lat": 25.0007,
-    "lng": 121.58393
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "嘟嘟房捷運木柵機廠站停車場",
-   "opening_hours": "假日/08:00-22:00",
-   "operation_type": "公辦民營",
-   "operator": "承翊系統整合股份有限公司",
-   "osm": null,
-   "parking_rate": "120 元/次",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 14,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0139",
-   "verified_at": "2026-10-13"
-  }
- ],
+ "chargers": [],
  "daytime_shaded_share": 0.03,
  "geometry_estimated": true,
  "id": "tp-o3096312764465",
@@ -739,13 +572,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
-   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
-   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
-   "url": "https://data.gov.tw/dataset/170220"
-  },
-  {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

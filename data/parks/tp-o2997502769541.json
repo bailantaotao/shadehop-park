@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 1,
+  "fast": 0,
   "nearest_any_m": 129,
-  "nearest_fast_m": 745,
+  "nearest_fast_m": null,
   "nearest_slow_m": 129,
-  "radius_m": 2000,
-  "slow": 28,
-  "total": 29,
+  "radius_m": 500,
+  "slow": 6,
+  "total": 6,
   "unknown": 0
  },
  "chargers": [
@@ -358,127 +358,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1277",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 8,
-   "charging_rate": "AC/計度/一般/ 0.00元每度",
-   "distance_m": 597,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.02783,
-    "lng": 121.49159
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "雙園國中地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "30元/8:00~22:00，10元/22:00~8:00",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0288",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "免費",
-   "distance_m": 610,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.02851,
-    "lng": 121.49643
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "華江高中活動中心地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "亟泰工程技術顧問有限公司",
-   "osm": null,
-   "parking_rate": "免費",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0570",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 4,
-   "charging_rate": "計度/固定/8 元每度",
-   "distance_m": 745,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.032,
-    "lng": 121.5004
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "莒光社會住宅地下停車場",
-   "opening_hours": "7x24 小時或 每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "威瀧實業有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/30 元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1550",
    "verified_at": "2026-10-13"
   }
  ],
@@ -1029,13 +908,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

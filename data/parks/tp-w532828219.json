@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 1,
   "nearest_any_m": 279,
   "nearest_fast_m": 376,
   "nearest_slow_m": 279,
-  "radius_m": 2000,
-  "slow": 28,
-  "total": 30,
+  "radius_m": 500,
+  "slow": 6,
+  "total": 7,
   "unknown": 0
  },
  "chargers": [
@@ -389,44 +389,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0742",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 2,
-   "charging_rate": "計分/ 0.9元每分",
-   "distance_m": 596,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B3",
-   "location": {
-    "lat": 25.08789,
-    "lng": 121.52424
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "台北市公有士林市場停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "皇鋒通訊股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/40元第1小時,計時/每日/50元第2小時,計時/每日/60元第3小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1622",
    "verified_at": "2026-10-13"
   }
  ],
@@ -968,7 +930,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

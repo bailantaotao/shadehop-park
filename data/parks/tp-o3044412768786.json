@@ -108,14 +108,14 @@
   }
  },
  "charger_summary": {
-  "fast": 8,
+  "fast": 0,
   "nearest_any_m": 10,
-  "nearest_fast_m": 670,
+  "nearest_fast_m": null,
   "nearest_slow_m": 263,
-  "radius_m": 2000,
-  "slow": 51,
-  "total": 60,
-  "unknown": 3
+  "radius_m": 500,
+  "slow": 3,
+  "total": 5,
+  "unknown": 2
  },
  "chargers": [
   {
@@ -293,141 +293,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0500",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 37,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 654,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B2",
-   "location": {
-    "lat": 25.03186,
-    "lng": 121.53733
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "大安森林公園地下停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 19,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 18,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0095",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度/浮動/8元每度",
-   "distance_m": 670,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B2",
-   "location": {
-    "lat": 25.0208,
-    "lng": 121.54269
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "國立臺灣大學辛亥地下停車場",
-   "opening_hours": "7x24小時",
-   "operation_type": "公辦公營",
-   "operator": "台灣特斯拉汽車有限公司",
-   "osm": null,
-   "parking_rate": "計時/每日/40元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    },
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "Tesla TPC",
-     "output_kw": null,
-     "type": "tesla_tpc"
-    }
-   ],
-   "source": "tdx",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0880",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 704,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.02241,
-    "lng": 121.53368
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "辛亥高架橋下停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時30元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0127",
    "verified_at": "2026-10-13"
   }
  ],
@@ -978,13 +843,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

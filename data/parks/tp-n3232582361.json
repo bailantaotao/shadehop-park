@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 1,
+  "fast": 0,
   "nearest_any_m": 260,
-  "nearest_fast_m": 1825,
+  "nearest_fast_m": null,
   "nearest_slow_m": 260,
-  "radius_m": 2000,
-  "slow": 22,
-  "total": 23,
+  "radius_m": 500,
+  "slow": 4,
+  "total": 4,
   "unknown": 0
  },
  "chargers": [
@@ -283,193 +283,6 @@
    "speed_source": "official",
    "tdx_id": "TPE0360",
    "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 4,
-   "charging_rate": "計度/尖峰/16:00-22:00/7.00 元每度, 計度/半尖峰/09:00-16:00/7.00 元每度, 計度/半尖峰/22:00-23:59/7.00 元每度, 計度/半尖峰/06:00-11:00/7.00 元每度, 計度/半尖峰/14:00-23:59/7.00 元每度, 計度/離峰/23:59-09:00/7.00 元每度, 計度/離峰/23:59-06:00/7.00 元每度, 計度/離峰/11:00-14:00/7.00 元每度, 計度/半尖峰/09:00-23:59/7.00 元每度",
-   "distance_m": 555,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.0665,
-    "lng": 121.61064
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "南湖高中運動中心停車場",
-   "opening_hours": "星期一：00:00～23:59\n星期二：00:00～23:59\n星期三：00:00～23:59\n星期四：00:00～23:59\n星期五：00:00～23:59\n星期六：00:00～23:59\n星期日：00:00～23:59",
-   "operation_type": "公辦民營",
-   "operator": "舞動陽光有限公司內湖營業所",
-   "osm": null,
-   "parking_rate": "免費",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0358",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 2,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 653,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.07253,
-    "lng": 121.60553
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "康寧平面停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時20元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0300",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 725,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07261,
-    "lng": 121.61922
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "康樂合署大樓地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "30元/時(當日最高上限200元)",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1102",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 5,
-   "charging_rate": "計度/尖峰/09:00-19:00/8 元每度,計度/離峰/00:00-09:00/8 元每度,計度/正常/19:00-24:00/8 元每度計分/8 元每分",
-   "distance_m": 1044,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07305,
-    "lng": 121.60169
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "麗湖國小地下停車場",
-   "opening_hours": "每日00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "辰淵企業股份有限公司麗湖營運所",
-   "osm": null,
-   "parking_rate": "計時/每日/07:00-19:00/20 元每小時，計時/每日/19:00-7:00/20 元每小時，無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0482",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": "Mr.Charger恰吉先生",
-   "capacity": 2,
-   "distance_m": 1825,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "location": {
-    "lat": 25.060026,
-    "lng": 121.598768
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "恰吉先生快充站",
-   "opening_hours": "24/7",
-   "operator": "峻侖股份有限公司",
-   "osm": {
-    "id": 1185424104,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1185424104"
-   },
-   "sockets": [],
-   "source": "osm",
-   "speed": "fast",
-   "speed_label": "快充 (DC)（依站名判斷）",
-   "speed_source": "name",
-   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -1010,7 +823,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

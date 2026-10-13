@@ -108,14 +108,14 @@
   }
  },
  "charger_summary": {
-  "fast": 7,
+  "fast": 0,
   "nearest_any_m": 51,
-  "nearest_fast_m": 636,
+  "nearest_fast_m": null,
   "nearest_slow_m": 51,
-  "radius_m": 2000,
-  "slow": 18,
-  "total": 26,
-  "unknown": 1
+  "radius_m": 500,
+  "slow": 8,
+  "total": 8,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -428,34 +428,6 @@
    "speed_source": "official",
    "tdx_id": "28652185-SLINKOU001",
    "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": "U-Power 新北林口站",
-   "capacity": null,
-   "distance_m": 636,
-   "distance_method": "straight_line",
-   "fee": null,
-   "location": {
-    "lat": 25.076712,
-    "lng": 121.380438
-   },
-   "max_kw": 360.0,
-   "method": "osm",
-   "name": "U-Power 新北林口站",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 10648160168,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10648160168"
-   },
-   "sockets": [],
-   "source": "osm",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "output",
-   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -996,7 +968,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T12:35:36+08:00",
+   "as_of": "2026-10-13T16:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

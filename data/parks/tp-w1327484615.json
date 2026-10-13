@@ -108,14 +108,14 @@
   }
  },
  "charger_summary": {
-  "fast": 5,
+  "fast": 1,
   "nearest_any_m": 87,
   "nearest_fast_m": 397,
   "nearest_slow_m": 87,
-  "radius_m": 2000,
-  "slow": 46,
-  "total": 53,
-  "unknown": 3
+  "radius_m": 500,
+  "slow": 4,
+  "total": 6,
+  "unknown": 1
  },
  "chargers": [
   {
@@ -348,89 +348,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1485",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 5,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 516,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.02167,
-    "lng": 121.55193
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "嘉興公園地下停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時30元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0926",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 8,
-   "charging_rate": "計度 /固定 /12元 DC每度",
-   "distance_m": 579,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B4",
-   "location": {
-    "lat": 25.02607,
-    "lng": 121.54923
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "遠企中心地下停車場",
-   "opening_hours": "週日/11:00-21:30,週一至週四/11:00-21:30",
-   "operation_type": "私有民營",
-   "operator": "遠傳電信股份有限公司",
-   "osm": null,
-   "parking_rate": "計時 /每日/50元每半小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0069",
    "verified_at": "2026-10-13"
   }
  ],
@@ -972,7 +889,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

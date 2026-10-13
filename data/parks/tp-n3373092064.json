@@ -108,13 +108,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 0,
   "nearest_any_m": 291,
-  "nearest_fast_m": 874,
+  "nearest_fast_m": null,
   "nearest_slow_m": 291,
-  "radius_m": 2000,
-  "slow": 91,
-  "total": 93,
+  "radius_m": 500,
+  "slow": 6,
+  "total": 6,
   "unknown": 0
  },
  "chargers": [
@@ -372,127 +372,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0712",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 4,
-   "charging_rate": "計度/固定/8.00元每度",
-   "distance_m": 526,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.04508,
-    "lng": 121.54678
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "市民大道復敦段停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "創玖科技股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/平日(08~12)/30元每小時,計時/平日(12~23)/40元每小時,計時/平日(23~08)/10元每小時,計時/假日(08~12)/60元每小時,計時/假日(12~08)/10元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0155",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計分/1.25 元每分",
-   "distance_m": 553,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.04523,
-    "lng": 121.54824
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "USPACE富邦敦北大樓",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "私有民營",
-   "operator": "台灣大動力服務股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/平日/40元每小時，每日最高無上限；計時/假日/60元每小時，每日最高無上限",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1598",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度 /固定 /12元 DC每度",
-   "distance_m": 874,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B3",
-   "location": {
-    "lat": 25.04195,
-    "lng": 121.54489
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "太平洋崇光百貨股份有限公司忠孝店停車場",
-   "opening_hours": "每日/09:00-22:30",
-   "operation_type": "私有民營",
-   "operator": "遠傳電信股份有限公司",
-   "osm": null,
-   "parking_rate": "計時 /每日/60元每半小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    },
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    }
-   ],
-   "source": "tdx",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0135",
    "verified_at": "2026-10-13"
   }
  ],
@@ -1066,13 +945,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

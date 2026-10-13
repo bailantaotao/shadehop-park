@@ -48,13 +48,13 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 0,
   "nearest_any_m": 62,
-  "nearest_fast_m": 1595,
+  "nearest_fast_m": null,
   "nearest_slow_m": 62,
-  "radius_m": 2000,
-  "slow": 25,
-  "total": 26,
+  "radius_m": 500,
+  "slow": 5,
+  "total": 5,
   "unknown": 0
  },
  "chargers": [
@@ -261,148 +261,6 @@
    "speed_source": "official",
    "tdx_id": "TPE0360",
    "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 8,
-   "charging_rate": "計度/固定/5元每度",
-   "distance_m": 786,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "3F",
-   "location": {
-    "lat": 25.06126,
-    "lng": 121.61812
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "捷運內湖機廠站",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "私有民營",
-   "operator": "中興電工機械股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時0元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 8,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "33029464-STP6720001",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 8,
-   "charging_rate": "計度/固定/5元每度",
-   "distance_m": 823,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "3",
-   "location": {
-    "lat": 25.06139,
-    "lng": 121.61881
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "嘟嘟房捷運內湖機廠站停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "中興電工機械股份有限公司",
-   "osm": null,
-   "parking_rate": "每1小時0元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 8,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0678",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 898,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.07261,
-    "lng": 121.61922
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "康樂合署大樓地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "30元/時(當日最高上限200元)",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1102",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": "Mr.Charger恰吉先生",
-   "capacity": 2,
-   "distance_m": 1595,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "location": {
-    "lat": 25.060026,
-    "lng": 121.598768
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "恰吉先生快充站",
-   "opening_hours": "24/7",
-   "operator": "峻侖股份有限公司",
-   "osm": {
-    "id": 1185424104,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1185424104"
-   },
-   "sockets": [],
-   "source": "osm",
-   "speed": "fast",
-   "speed_label": "快充 (DC)（依站名判斷）",
-   "speed_source": "name",
-   "verified_at": "2026-10-12"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -955,13 +813,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

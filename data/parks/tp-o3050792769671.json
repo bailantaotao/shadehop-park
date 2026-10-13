@@ -108,14 +108,14 @@
   }
  },
  "charger_summary": {
-  "fast": 6,
+  "fast": 0,
   "nearest_any_m": 203,
-  "nearest_fast_m": 805,
+  "nearest_fast_m": null,
   "nearest_slow_m": 203,
-  "radius_m": 2000,
-  "slow": 62,
-  "total": 70,
-  "unknown": 3
+  "radius_m": 500,
+  "slow": 6,
+  "total": 6,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -344,134 +344,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1793",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 14,
-   "charging_rate": "計度/每度8.00元",
-   "distance_m": 509,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.03258,
-    "lng": 121.54093
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "大安高工地下停車場",
-   "opening_hours": "每日/00:00~24:00",
-   "operation_type": "公辦公營",
-   "operator": "源點科技股份有限公司",
-   "osm": null,
-   "parking_rate": "每小時30元",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0098",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "慢充每度8元",
-   "distance_m": 542,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1F",
-   "location": {
-    "lat": 25.03895,
-    "lng": 121.5443
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "168停車聯盟-復興南場",
-   "opening_hours": "24H",
-   "operation_type": "私有民營",
-   "operator": "助安企業股份有限公司",
-   "osm": null,
-   "parking_rate": "150/1H",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0408",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 3,
-   "charging_rate": "計度 /固定 /12元 DC每度",
-   "distance_m": 805,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B4",
-   "location": {
-    "lat": 25.04107,
-    "lng": 121.54307
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "太平洋崇光百貨股份有限公司復興店停車場",
-   "opening_hours": "每日/09:00-22:30",
-   "operation_type": "私有民營",
-   "operator": "遠傳電信股份有限公司",
-   "osm": null,
-   "parking_rate": "計時 /每日/60元每半小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS1",
-     "output_kw": null,
-     "type": "type1_combo"
-    },
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    }
-   ],
-   "source": "tdx",
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0542",
    "verified_at": "2026-10-13"
   }
  ],
@@ -1023,13 +895,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

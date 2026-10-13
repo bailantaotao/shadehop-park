@@ -102,14 +102,14 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 1,
   "nearest_any_m": 210,
   "nearest_fast_m": 336,
   "nearest_slow_m": 210,
-  "radius_m": 2000,
-  "slow": 36,
-  "total": 39,
-  "unknown": 1
+  "radius_m": 500,
+  "slow": 4,
+  "total": 5,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -307,127 +307,6 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "TPE1550",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 528,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.0356,
-    "lng": 121.50734
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市立聯合醫院-和平院區停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "40元/時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0666",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "計度/固定/0 元每度",
-   "distance_m": 596,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.03278,
-    "lng": 121.50769
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市中正區社會福利綜合大樓附設停車場",
-   "opening_hours": "平日/08:00-18:00,假日/08:00-18:00",
-   "operation_type": "公辦公營",
-   "operator": "裕電俥電股份有限公司",
-   "osm": null,
-   "parking_rate": "計次/每日/200 元每次",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE1227",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 13,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 656,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.02918,
-    "lng": 121.49957
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "萬華國中地下停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "20元/小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    },
-    {
-     "count": 6,
-     "current": "AC",
-     "label": "Type 2",
-     "output_kw": null,
-     "type": "type2"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0690",
    "verified_at": "2026-10-13"
   }
  ],
@@ -969,7 +848,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

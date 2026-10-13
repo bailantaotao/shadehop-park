@@ -112,10 +112,10 @@
   "nearest_any_m": 91,
   "nearest_fast_m": 91,
   "nearest_slow_m": 210,
-  "radius_m": 2000,
-  "slow": 77,
-  "total": 80,
-  "unknown": 1
+  "radius_m": 500,
+  "slow": 5,
+  "total": 7,
+  "unknown": 0
  },
  "chargers": [
   {
@@ -403,44 +403,6 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0944",
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 4,
-   "charging_rate": "計度/固定/8.00元每度",
-   "distance_m": 524,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "B1",
-   "location": {
-    "lat": 25.04467,
-    "lng": 121.55061
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "市民大道敦延段停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦公營",
-   "operator": "創玖科技股份有限公司",
-   "osm": null,
-   "parking_rate": "計時/平日(08~23)/30元每小時,計時/平日(23~08)/10元每小時,計時/假日(08~18)/30元每小時,計時/假日(18~23)/40元每小時,計時/假日(23~08)/10元每小時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0163",
    "verified_at": "2026-10-13"
   }
  ],
@@ -996,13 +958,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:55:36+08:00",
+   "as_of": "2026-10-13T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T05:54:13+00:00",
+   "as_of": "2026-10-13T08:42:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -51,6 +51,11 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
 .dot.a { background: transparent; border: 3px solid var(--a); } .dot.hi { background: var(--hi); } .dot.mid { background: var(--mid); } .dot.lo { background: var(--lo); } .dot.night { background: var(--night); }
 .dot.shadow { background: var(--shadow); border-radius: 2px; }
+.chg { display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 13px; line-height: 1;
+       color: #fff; border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); }
+.chg.fast { background: #d9480f; } .chg.slow { background: #1971c2; } .chg.unknown { background: #868e96; font-weight: 700; }
+.chg.both { background: linear-gradient(135deg, #d9480f 50%, #1971c2 50%); }
+.chg.inline { display: inline-flex; width: 18px; height: 18px; font-size: 10px; vertical-align: -4px; margin-right: 4px; border-width: 1px; }
 
 .list { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 6px; }

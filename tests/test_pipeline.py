@@ -62,6 +62,9 @@ def test_floating_deck_shadow_moves_off_the_ground_beneath():
     ({"capacity": "8"}, "unknown"),
     ({"brand": "U-Power 新北林口站"}, "fast"),
     ({"brand": "EVOASIS"}, "unknown"),
+    ({"name": "恰吉先生快充站", "brand": "Mr.Charger恰吉先生"}, "fast"),
+    ({"brand": "Power Express 全國特急電充電站(港墘路站)"}, "fast"),
+    ({"brand": "EVALUE充電站"}, "unknown"),
 ])
 def test_charger_classification(tags, speed):
     assert classify(tags)["speed"] == speed
@@ -190,6 +193,12 @@ def test_scooter_swap_is_not_a_car_charger():
     assert not is_car_charger({"name": "GoStation"})
     assert not is_car_charger({"brand": "Gogoro"})
     assert is_car_charger({"brand": "EVOASIS"})
+    assert not is_car_charger({"name": "BES電池交換站", "operator": "台灣城市動力", "scooter": "yes"})
+    assert not is_car_charger({"name": "板橋後站", "network": "BES 電池交換站"})
+    assert not is_car_charger({"scooter": "yes"})
+    assert not is_car_charger({"name": "機場捷運手機充電站/無線上網站"})
+    assert is_car_charger({"scooter": "yes", "motorcar": "yes"})
+    assert is_car_charger({})
 
 
 @pytest.mark.parametrize("name,key", [

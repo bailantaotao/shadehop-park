@@ -34,13 +34,19 @@ FAST_POWER_KW = 20.0
 
 # Networks that only operate DC fast chargers in Taiwan.
 DC_ONLY_BRANDS = ("u-power", "tesla supercharger", "超級充電站")
-# Not car chargers: scooter battery-swap stations.
-SCOOTER_SWAP = ("gostation", "gogoro", "ionex", "光陽")
+# A station whose own name says 快充 / 超充 is a DC fast charger.
+FAST_NAME_WORDS = ("快充", "超充", "超級充電", "特急電")
+# Not car chargers: scooter battery-swap stations (Gogoro, Ionex, BES/台灣城市動力)
+# and phone charging spots, which are also tagged amenity=charging_station.
+SCOOTER_SWAP = ("gostation", "gogoro", "ionex", "光陽", "bes", "電池交換", "城市動力")
+NOT_VEHICLE = ("手機", "phone")
 
 
 def is_car_charger(tags: dict[str, str]) -> bool:
     text = " ".join(tags.get(k, "") for k in ("name", "brand", "operator", "network")).lower()
-    if any(w in text for w in SCOOTER_SWAP):
+    if any(w in text for w in SCOOTER_SWAP + NOT_VEHICLE):
+        return False
+    if tags.get("scooter") == "yes" and tags.get("motorcar") not in ("yes", "designated", "only"):
         return False
     return tags.get("motorcar") != "no"
 
@@ -103,6 +109,8 @@ def classify(tags: dict[str, str]) -> dict:
         text = " ".join(tags.get(k, "") for k in ("name", "brand", "operator", "network")).lower()
         if any(b in text for b in DC_ONLY_BRANDS):
             has_dc, source = True, "brand"
+        elif any(w in text for w in FAST_NAME_WORDS):
+            has_dc, source = True, "name"
 
     if has_dc and has_ac:
         speed = "both"
@@ -116,7 +124,7 @@ def classify(tags: dict[str, str]) -> dict:
     return {
         "speed": speed,
         "speed_label": {"fast": "快充 (DC)", "slow": "慢充 (AC)", "both": "快充 + 慢充", "unknown": "未標示"}[speed]
-        + ("（依營運商判斷）" if source == "brand" else ""),
+        + {"brand": "（依營運商判斷）", "name": "（依站名判斷）"}.get(source, ""),
         "speed_source": source,
         "sockets": sockets,
         "max_kw": max(powers) if powers else None,

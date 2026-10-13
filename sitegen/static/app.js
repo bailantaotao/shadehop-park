@@ -6,7 +6,10 @@
   var PARK_HREF = window.SHADEHOP_PARK_HREF || "parks/{id}/";
   function parkHref(id) { return PARK_HREF.replace("{id}", encodeURIComponent(id)); }
   var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false };
-  var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], region: null };
+  var LIST_MAX = 60;
+  // Parks load per region as the map view reaches it; nobody has to pick a region first.
+  var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {} };
+  var layers = { fast: true, slow: true, unknown: false };
   // Shadow casters are split into ~1 km tiles; only tiles in view are downloaded.
   var tiles = { index: null, deg: 0.01, data: {} };
 
@@ -40,7 +43,9 @@
   }
 
   // ------------------------------------------------------------------ map
-  var map = L.map("map", { zoomControl: true });
+  // Canvas draws hundreds of markers much faster than SVG on old phones.
+  var map = L.map("map", { zoomControl: true, preferCanvas: true });
+  map.createPane("chargers").style.zIndex = 650;
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
@@ -184,15 +189,27 @@
       '</div><button class="link" data-focus="' + esc(p.id) + '">在地圖上看</button></article>';
   }
 
+  function inView(f) {
+    var c = f.geometry.coordinates;
+    return map.getBounds().contains([c[1], c[0]]);
+  }
+
   function drawList() {
-    var fs = state.features.filter(passes);
+    var fs = state.features.filter(function (f) { return passes(f) && inView(f); });
     fs.sort(function (a, b) {
       if (state.user) return distM(state.user, a.geometry.coordinates) - distM(state.user, b.geometry.coordinates);
       var ra = a.properties.rain === true ? 1 : 0, rb = b.properties.rain === true ? 1 : 0;
       return rb - ra || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
-    $("#count").textContent = "公園（" + fs.length + " / " + state.features.length + "）· " + month() + " 月 " + slotLabel(state.slot);
-    $("#list").innerHTML = fs.map(card).join("") || '<p class="muted">沒有符合條件的公園，試著取消一些篩選。</p>';
+    $("#count").textContent = "地圖範圍內的公園（" + fs.length + "）· " + month() + " 月 " + slotLabel(state.slot);
+    var html = fs.slice(0, LIST_MAX).map(card).join("");
+    if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
+    if (!fs.length) {
+      var covered = state.regions.some(function (r) { return regionInView(r); });
+      html = '<p class="muted">' + (covered ? "這個範圍沒有符合條件的公園，試著移動地圖或取消一些篩選。"
+        : "這個範圍還沒有資料。目前收錄：" + state.regions.map(function (r) { return r.city + (r.name !== r.city ? r.name : ""); }).join("、") + "。") + "</p>";
+    }
+    $("#list").innerHTML = html;
   }
 
   // Coalesce redraws to one per animation frame, so dragging the time slider stays smooth on slow phones.
@@ -240,6 +257,7 @@
     navigator.geolocation.getCurrentPosition(function (pos) {
       state.user = [pos.coords.longitude, pos.coords.latitude];
       L.circleMarker([pos.coords.latitude, pos.coords.longitude], { radius: 6, color: css("--text"), fillOpacity: 1 }).addTo(map);
+      map.setView([pos.coords.latitude, pos.coords.longitude], Math.max(map.getZoom(), 15));
       drawList();
     });
   });
@@ -252,16 +270,25 @@
       document.getElementById("map").scrollIntoView({ behavior: "smooth" });
     }
   });
-  map.on("moveend zoomend", loadCasters);
+  map.on("moveend", function () {
+    loadRegionsInView();
+    loadCasters();
+    saveView();
+    render();
+    weatherIfMoved();
+  });
 
   // ---------------------------------------------------------------- weather
-  function regionCenter(r) { return [(r.bbox[1] + r.bbox[3]) / 2, (r.bbox[0] + r.bbox[2]) / 2]; }
+  var weatherAt = null;
+  function weatherIfMoved() {
+    var c = map.getCenter();
+    if (!weatherAt || distM([weatherAt.lng, weatherAt.lat], [c.lng, c.lat]) > 8000) weather();
+  }
 
   function weather() {
-    var r = state.region;
-    if (!r) return;
-    var c = regionCenter(r);
-    var url = "https://api.open-meteo.com/v1/forecast?latitude=" + c[0].toFixed(3) + "&longitude=" + c[1].toFixed(3) +
+    var c = map.getCenter();
+    weatherAt = c;
+    var url = "https://api.open-meteo.com/v1/forecast?latitude=" + c.lat.toFixed(3) + "&longitude=" + c.lng.toFixed(3) +
       "&current=precipitation&hourly=precipitation_probability,uv_index&forecast_hours=3&timezone=Asia%2FTaipei";
     fetch(url).then(function (r) { return r.json(); }).then(function (w) {
       var rainNow = w.current && w.current.precipitation > 0;
@@ -269,7 +296,7 @@
       var uv = Math.max.apply(null, (w.hourly && w.hourly.uv_index) || [0]);
       var msg = "";
       if (rainNow || prob >= 60) {
-        msg = "☔ " + r.label + (rainNow ? "現在正在下雨" : "未來 3 小時降雨機率 " + prob + "%") + "，已幫你開啟「下雨可玩」。";
+        msg = "☔ 地圖這一帶" + (rainNow ? "現在正在下雨" : "未來 3 小時降雨機率 " + prob + "%") + "，已幫你開啟「下雨可玩」。";
         filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
       } else if (uv >= 6) {
         msg = "☀️ 未來 3 小時紫外線指數最高 " + uv.toFixed(0) + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
@@ -279,36 +306,90 @@
     }).catch(function () {});
   }
 
-  // --------------------------------------------------------------- regions
+  // ------------------------------------------------------- regions & view
   function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
+  function regionBounds(r) { return L.latLngBounds([r.bbox[1], r.bbox[0]], [r.bbox[3], r.bbox[2]]); }
+  function regionInView(r) { return map.getBounds().intersects(regionBounds(r)); }
 
-  function selectRegion(id, fit) {
-    var r = state.regions.find(function (x) { return x.id === id; }) || state.regions[0];
-    if (!r) return;
-    state.region = r;
-    document.querySelectorAll("[data-region]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.region === r.id)); });
-    if (location.hash !== "#" + r.id) history.replaceState(null, "", "#" + r.id);
-    storeSet("shadehop.region", r.id);
-    fetch("api/regions/" + r.id + ".geojson").then(function (res) { return res.json(); }).then(function (gj) {
-      if (state.region !== r) return;  // switched again meanwhile
-      state.features = gj.features;
-      if (fit !== false) map.fitBounds([[r.bbox[1], r.bbox[0]], [r.bbox[3], r.bbox[2]]]);
-      render();
-      weather();
+  function loadRegionsInView() {
+    state.regions.forEach(function (r) {
+      if (state.loaded[r.id] || !map.getBounds().pad(0.2).intersects(regionBounds(r))) return;
+      state.loaded[r.id] = true;
+      fetch("api/regions/" + r.id + ".geojson").then(function (res) { return res.json(); }).then(function (gj) {
+        state.features = state.features.concat(gj.features);
+        render();
+      }).catch(function () { state.loaded[r.id] = false; });
     });
   }
 
-  document.querySelectorAll("[data-region]").forEach(function (b) {
-    b.addEventListener("click", function () { selectRegion(b.dataset.region); });
+  function saveView() {
+    var c = map.getCenter(), v = map.getZoom() + "/" + c.lat.toFixed(5) + "/" + c.lng.toFixed(5);
+    history.replaceState(null, "", "#" + v);
+    storeSet("shadehop.view", v);
+  }
+
+  function initialView() {
+    // #zoom/lat/lng (shareable), an old #regionId link, the last view, or everything.
+    var h = location.hash.slice(1), saved = storeGet("shadehop.view");
+    var r = state.regions.find(function (x) { return x.id === h; });
+    if (r) return map.fitBounds(regionBounds(r));
+    var m = /^(\d+)\/(-?[\d.]+)\/(-?[\d.]+)$/.exec(h) || /^(\d+)\/(-?[\d.]+)\/(-?[\d.]+)$/.exec(saved || "");
+    if (m) return map.setView([Number(m[2]), Number(m[3])], Number(m[1]));
+    var all = state.regions.reduce(function (b, x) { return b ? b.extend(regionBounds(x)) : regionBounds(x); }, null);
+    if (all) map.fitBounds(all); else map.setView([25.05, 121.5], 11);
+  }
+
+  // ------------------------------------------------------------- chargers
+  var chargerLayer = L.layerGroup().addTo(map), chargers = [];
+  var CHG = { fast: { icon: "⚡", cls: "fast" }, both: { icon: "⚡", cls: "both" }, slow: { icon: "🔌", cls: "slow" }, unknown: { icon: "?", cls: "unknown" } };
+
+  function chargerShown(p) {
+    if (p.speed === "both") return layers.fast || layers.slow;
+    return layers[p.speed] || false;
+  }
+
+  function chargerPopup(p) {
+    var note = p.speed_source === "brand" ? "（依營運商判斷）" : p.speed_source === "name" ? "（依站名判斷）" : "";
+    return "<strong>" + esc(p.name) + "</strong><br>" +
+      (p.speed === "unknown" ? "快慢充：OSM 未標示" : esc(p.speed_label.replace(/（.*）$/, "")) + note) +
+      (p.max_kw ? "，最高 " + p.max_kw + " kW" : "") + "<br>" +
+      (p.sockets.length ? "插頭：" + esc(p.sockets.join("、")) + "<br>" : "") +
+      (p.capacity ? "車位：" + p.capacity + "<br>" : "") +
+      (p.opening_hours ? "時間：" + esc(p.opening_hours) + "<br>" : "") +
+      (p.operator ? "營運：" + esc(p.operator) + "<br>" : "") +
+      '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>';
+  }
+
+  function drawChargers() {
+    chargerLayer.clearLayers();
+    chargers.forEach(function (f) {
+      var p = f.properties, k = CHG[p.speed] || CHG.unknown;
+      if (!chargerShown(p)) return;
+      L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
+        pane: "chargers",
+        title: p.name + "（" + (p.speed === "unknown" ? "未標示" : p.speed_label) + "）",
+        icon: L.divIcon({ className: "chg " + k.cls, html: k.icon, iconSize: [24, 24], iconAnchor: [12, 12] }),
+      }).bindPopup(function () { return chargerPopup(p); }).addTo(chargerLayer);
+    });
+  }
+
+  document.querySelectorAll("[data-layer]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var k = b.dataset.layer; layers[k] = !layers[k];
+      b.setAttribute("aria-pressed", String(layers[k])); drawChargers();
+    });
   });
 
   // ------------------------------------------------------------------ init
   setNow();
   fetch("api/regions/index.json").then(function (r) { return r.json(); }).then(function (regions) {
     state.regions = regions;
-    var want = location.hash.slice(1) || storeGet("shadehop.region");
-    if (!regions.some(function (x) { return x.id === want; })) want = regions[0] && regions[0].id;
-    selectRegion(want);
+    initialView();  // fires moveend -> loads the regions in view
+    loadRegionsInView();
+    weather();
   });
+  fetch("api/chargers.geojson").then(function (r) { return r.json(); }).then(function (gj) {
+    chargers = gj.features; drawChargers();
+  }).catch(function () {});
 })();

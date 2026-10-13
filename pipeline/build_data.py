@@ -696,6 +696,29 @@ class Builder:
             r["sources"].append(self._registry_source())
         self.city_unmatched = [{"name": row["name"], "address": row.get("address")} for row in entries if row["ref"] not in matched]
 
+    def chargers_geojson(self) -> list[dict]:
+        """Every car charger in the region's bbox, for the map's charger layer."""
+        feats = []
+        for c in self.chargers:
+            t = c["tags"]
+            info = classify(t)
+            loc = self._latlng(c["geom"])
+            feats.append({
+                "type": "Feature",
+                "id": f"{c['el']['type'][0]}{c['el']['id']}",
+                "geometry": {"type": "Point", "coordinates": [loc["lng"], loc["lat"]]},
+                "properties": {
+                    "name": t.get("name") or t.get("brand") or t.get("operator") or "充電站",
+                    "operator": t.get("operator") or t.get("brand") or t.get("network"),
+                    "speed": info["speed"], "speed_label": info["speed_label"], "speed_source": info["speed_source"],
+                    "max_kw": info["max_kw"],
+                    "sockets": [f"{s['label']}×{s['count']}" + (f" {s['output_kw']:g}kW" if s["output_kw"] else "") for s in info["sockets"]],
+                    "capacity": int(t["capacity"]) if t.get("capacity", "").isdigit() else None, "fee": t.get("fee"), "opening_hours": t.get("opening_hours"),
+                    "access": t.get("access"), "osm": osm_ref(c["el"])["url"], "region": self.region["id"],
+                },
+            })
+        return feats
+
     def casters_geojson(self, parks: list[dict]) -> dict:
         """Shade casters near any park, for drawing live shadows on the map (tiled by write_outputs)."""
         zones = unary_union([
@@ -842,7 +865,8 @@ def _feature_collection(parks: list[dict]) -> dict:
     }
 
 
-def write_outputs(parks: list[dict], meta: dict, out: Path = DATA, casters: list[dict] | dict | None = None) -> None:
+def write_outputs(parks: list[dict], meta: dict, out: Path = DATA, casters: list[dict] | dict | None = None,
+                  chargers: list[dict] | None = None) -> None:
     if "regions" not in meta:  # a single region's meta
         meta = combine_meta([meta])
     (out / "parks").mkdir(parents=True, exist_ok=True)
@@ -863,6 +887,9 @@ def write_outputs(parks: list[dict], meta: dict, out: Path = DATA, casters: list
         regions.append({"id": rid, "label": rm["region"]["label"], "city": rm["region"]["city"], "name": rm["region"]["name"],
                         "parks": len(mine), "bbox": rm["bbox"]})
     _dump(out / "regions" / "index.json", regions, pretty=True)
+    if chargers is not None:
+        unique = {f["id"]: f for f in chargers}  # regions' bboxes may overlap
+        _dump(out / "chargers.geojson", {"type": "FeatureCollection", "features": [unique[k] for k in sorted(unique)]})
     if casters is not None:
         features = casters["features"] if isinstance(casters, dict) else casters
         shutil.rmtree(out / "casters", ignore_errors=True)
@@ -902,7 +929,7 @@ def load_city(region_id: str = config.DEFAULT_REGION, path: Path | None = None) 
 
 def main(argv: list[str]) -> None:
     region_ids = argv or list(config.REGIONS)
-    parks, metas, casters = [], [], []
+    parks, metas, casters, chargers = [], [], [], []
     for rid in region_ids:
         t = time.time()
         b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid])
@@ -910,9 +937,10 @@ def main(argv: list[str]) -> None:
         parks += mine
         metas.append(b.meta(mine))
         casters += b.casters_geojson(mine)["features"]
+        chargers += b.chargers_geojson()
         print(f"{rid}: {len(mine)} parks in {time.time() - t:.0f}s {json.dumps(metas[-1]['counts'], ensure_ascii=False)}", file=sys.stderr)
     parks.sort(key=lambda r: r["id"])
-    write_outputs(parks, combine_meta(metas), casters=casters)
+    write_outputs(parks, combine_meta(metas), casters=casters, chargers=chargers)
 
 
 if __name__ == "__main__":

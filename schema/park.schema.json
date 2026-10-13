@@ -179,7 +179,7 @@
         "operator": { "type": ["string", "null"] },
         "speed": { "enum": ["fast", "slow", "both", "unknown"], "description": "fast = DC (CCS/CHAdeMO/Supercharger), slow = AC (Type 1/Type 2), unknown = not tagged." },
         "speed_label": { "type": "string" },
-        "speed_source": { "enum": ["sockets", "output", "brand", null], "description": "Evidence for speed: socket tags, tagged power, or a DC-only operator." },
+        "speed_source": { "enum": ["sockets", "output", "brand", "name", null], "description": "Evidence for speed: socket tags, tagged power, a DC-only operator, or the station name saying 快充/超充." },
         "max_kw": { "type": ["number", "null"] },
         "sockets": {
           "type": "array",

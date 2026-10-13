@@ -5,10 +5,6 @@
 {% endblock %}
 {% block main %}
 <div class="controls" aria-label="篩選">
-  <div class="chips" role="group" aria-label="地區">
-    {% for r in regions %}<button class="chip" type="button" data-region="{{ r.id }}" aria-pressed="false">📍 {{ r.label }}</button>
-    {% endfor %}
-  </div>
   <div class="timebar">
     <label for="date">日期</label>
     <input type="date" id="date">
@@ -27,6 +23,12 @@
     <button class="chip" data-filter="toilet" aria-pressed="false">🚻 附近有廁所</button>
     <button class="chip" id="locBtn" type="button">📍 依我的位置排序</button>
   </div>
+  <div class="chips" role="group" aria-label="地圖上顯示充電站">
+    <span class="small muted">地圖上顯示：</span>
+    <button class="chip" type="button" data-layer="fast" aria-pressed="true">⚡ 快充站</button>
+    <button class="chip" type="button" data-layer="slow" aria-pressed="true">🔌 慢充站</button>
+    <button class="chip" type="button" data-layer="unknown" aria-pressed="false">❔ 未標示快慢的充電站</button>
+  </div>
   <div class="banner" id="weather" role="status"></div>
 </div>
 
@@ -38,6 +40,9 @@
   <span><span class="dot lo"></span>&lt; 30%</span>
   <span><span class="dot night"></span>日出前/日落後</span>
   <span><span class="dot shadow"></span>此時建物陰影（放大地圖後顯示）</span>
+  <span><span class="chg fast inline">⚡</span>快充站（DC）</span>
+  <span><span class="chg slow inline">🔌</span>慢充站（AC）</span>
+  <span><span class="chg both inline">⚡</span>快慢充都有</span>
 </div>
 
 <h2 id="count" style="margin-top:18px">公園</h2>

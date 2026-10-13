@@ -167,6 +167,8 @@ def build(out: Path = OUT) -> None:
     shutil.copy(DATA / "meta.json", out / "api" / "meta.json")
     shutil.copy(DATA / "parks.csv", out / "api" / "parks.csv")
     shutil.copytree(DATA / "regions", out / "api" / "regions")
+    if (DATA / "chargers.geojson").exists():
+        shutil.copy(DATA / "chargers.geojson", out / "api" / "chargers.geojson")
     if (DATA / "casters").exists():
         shutil.copytree(DATA / "casters", out / "api" / "casters")
     for p in parks:

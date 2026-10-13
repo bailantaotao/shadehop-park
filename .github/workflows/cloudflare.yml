@@ -60,3 +60,22 @@ jobs:
       - name: Deploy
         if: steps.creds.outputs.ok == 'true'
         run: npx --yes "$WRANGLER" pages deploy public --project-name "$PROJECT" --branch "$BRANCH" --commit-dirty=true
+      - name: Smoke-test the live site
+        if: steps.creds.outputs.ok == 'true'
+        env:
+          SITE_URL: ${{ vars.SITE_URL || format('https://{0}.pages.dev', vars.CF_PAGES_PROJECT || 'shadehop-park') }}
+        run: |
+          sleep 15
+          fail=0
+          for path in / /llms.txt /sitemap.xml /robots.txt /openapi.json /api/parks.geojson /about/; do
+            code=$(curl -s -o /tmp/body -w '%{http_code}' "$SITE_URL$path")
+            echo "$code $SITE_URL$path"
+            [ "$code" = 200 ] || fail=1
+          done
+          first=$(python -c "import json;print(json.load(open('data/parks.json'))['parks'][0]['id'])")
+          code=$(curl -s -o /tmp/park -w '%{http_code}' "$SITE_URL/parks/$first/")
+          echo "$code $SITE_URL/parks/$first/"; [ "$code" = 200 ] || fail=1
+          grep -q '"@type": "Playground"' /tmp/park || { echo "JSON-LD missing"; fail=1; }
+          grep -q "$SITE_URL/parks/" <(curl -s "$SITE_URL/sitemap.xml") || { echo "sitemap URLs do not match SITE_URL"; fail=1; }
+          curl -sI "$SITE_URL/api/parks.geojson" | grep -i -E '^(content-type|access-control-allow-origin):'
+          exit $fail

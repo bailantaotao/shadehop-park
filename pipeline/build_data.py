@@ -99,26 +99,31 @@ def bridge_width(tags: dict) -> float:
 REGION_PREFIXES = sorted({r["name"].removesuffix("區").removesuffix("市") for r in config.REGIONS.values()} | {"台北"}, key=len, reverse=True)
 
 
-def park_key(name: str | None) -> str | None:
-    """Comparable park name: no bracketed codes, spaces, region prefix or generic words.
+def park_key(name: str | None, prefixes: tuple[str, ...] = ()) -> str | None:
+    """Comparable park name: no bracketed codes, spaces, city/district prefix or generic words.
 
-    '扶輪公園(公13)', '林口扶輪公園' -> '扶輪公園'; '足夢運動公園 遊戲場' -> '足夢公園'.
+    '扶輪公園(公13)', '林口扶輪公園' (with prefix '林口') -> '扶輪公園'; '足夢運動公園 遊戲場' -> '足夢公園'.
     Names that reduce to nothing distinctive (e.g. '林口運動公園' -> '公園') return None.
     """
     if not name:
         return None
     k = re.sub(r"[（(].*?[)）]|\s|遊戲場|運動", "", name)
-    for prefix in REGION_PREFIXES:
+    for prefix in sorted(set(REGION_PREFIXES) | set(prefixes), key=len, reverse=True):
         k = k.removeprefix(prefix)
     return k if len(k) >= 3 and k != "公園" else None
 
 
-def city_aliases(name: str) -> set[str]:
+def city_aliases(name: str, prefixes: tuple[str, ...] = ()) -> set[str]:
     """Keys for a registry name, including aliases in brackets: '林口社區運動公園(小熊公園，公鄰23)' -> 小熊公園."""
-    keys = {park_key(name)}
+    keys = {park_key(name, prefixes)}
     for inner in re.findall(r"[（(](.*?)[)）]", name):
-        keys |= {park_key(part) for part in re.split(r"[，,、]", inner) if part.endswith("公園")}
+        keys |= {park_key(part, prefixes) for part in re.split(r"[，,、]", inner) if part.endswith("公園")}
     return {k for k in keys if k}
+
+
+def short_district(name: str | None) -> str | None:
+    """'林口區' -> '林口' (district names are written both ways)."""
+    return name.removesuffix("區") if name and len(name) > 2 else name
 
 
 def fact(value, method: str, verified_at: str, confidence: str, source: str, **extra) -> dict:
@@ -671,6 +676,8 @@ class Builder:
             "management": entry.get("management"),
             "phone": entry.get("phone"),
             "equipment": equipment or None,
+            "facilities": entry.get("facilities"),
+            "features": entry.get("features"),
             "registry_points": len(group),
             "method": method,
             "distance_m": distance_m,
@@ -743,20 +750,31 @@ class Builder:
         if not self.city:
             return
         entries = self.city["entries"]
+        # District names are a common prefix in OSM park names ('林口扶輪公園' vs registry '扶輪公園').
+        prefixes = tuple(sorted({short_district(n) for n, _ in self.districts} - {None}))
         by_key: dict[str, list[dict]] = {}
         for row in entries:
-            for k in city_aliases(row["name"]):
+            for k in city_aliases(row["name"], prefixes):
                 by_key.setdefault(k, []).append(row)
         matched = set()
         for r in records:
-            keys = {park_key(r["park_name"]), park_key(r["name"] if r["name_source"] == "osm_name" else None)} - {None}
+            keys = {park_key(r["park_name"], prefixes), park_key(r["name"] if r["name_source"] == "osm_name" else None, prefixes)} - {None}
             rows = {row["ref"]: row for k in keys for row in by_key.get(k, [])}
+            # Same name in several districts (e.g. 中山公園): keep the one in this park's district.
+            if len(rows) > 1:
+                d = short_district(r["region"]["district"])
+                rows = {ref: row for ref, row in rows.items() if short_district(row.get("district")) == d}
             if len(rows) != 1:
                 continue  # no match, or ambiguous
             row = next(iter(rows.values()))
+            if row.get("district") and self.districts and short_district(row["district"]) != short_district(r["region"]["district"]):
+                continue  # same name, different district: not the same park
             matched.add(row["ref"])
             r["official"] = self._official(row, "name_match")
             r["sources"].append(self._registry_source())
+            if row.get("playground") and r["kind"] == "park":
+                # The city's own playground list confirms play equipment in this park.
+                r["kind"] = "playground"
         self.city_unmatched = [{"name": row["name"], "address": row.get("address")} for row in entries if row["ref"] not in matched]
 
     def chargers_geojson(self) -> list[dict]:

@@ -210,11 +210,11 @@ def test_scooter_swap_is_not_a_car_charger():
     (None, None),
 ])
 def test_park_key(name, key):
-    assert park_key(name) == key
+    assert park_key(name, ("林口",)) == key
 
 
 def test_city_aliases_include_bracketed_names():
-    assert city_aliases("林口社區運動公園(小熊公園，公鄰23)") == {"社區公園", "小熊公園"}
+    assert city_aliases("林口社區運動公園(小熊公園，公鄰23)", ("林口",)) == {"社區公園", "小熊公園"}
 
 
 def registry(kind, entries):
@@ -375,3 +375,22 @@ def test_official_tdx_chargers_merge_with_osm():
 
     schema = json.loads((Path(__file__).resolve().parent.parent / "schema" / "park.schema.json").read_text())
     jsonschema.validate(p, schema)
+
+
+def test_name_match_uses_district_and_confirms_playgrounds():
+    from .fixture import ring
+
+    data = raw()
+    data["districts"] = [  # west and east halves of the test region
+        {"type": "relation", "id": 801, "tags": {"name": "西區"}, "members": [{"type": "way", "role": "outer", "geometry": ring(-2000, -2000, 0, 2000)}]},
+        {"type": "relation", "id": 802, "tags": {"name": "東區"}, "members": [{"type": "way", "role": "outer", "geometry": ring(0, -2000, 2000, 2000)}]},
+    ]
+    city = registry("parks", [
+        entry("e", "測試公園", district="東區"),
+        entry("w", "測試公園", district="西區", playground=True, facilities="鞦韆、溜滑梯"),
+    ])
+    parks = {p["osm"]["id"]: p for p in Builder(data, city).build()}
+    p = parks[70]  # 測試公園 lies in the west half
+    assert p["region"]["district"] == "西區"
+    assert p["official"]["facilities"] == "鞦韆、溜滑梯"
+    assert p["kind"] == "playground"  # confirmed by the city's playground list

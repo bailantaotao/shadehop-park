@@ -5,28 +5,30 @@ cited on the site and in llms.txt.
 """
 
 REGIONS = {
-    "linkou": {
-        "id": "linkou",
-        "id_prefix": "lk",
-        "name": "林口區",
+    "newtaipei": {
+        "id": "newtaipei",
+        "id_prefix": "nt",
+        # Linkou was the first region (ids lk-*); the site redirects and favs.js migrates them.
+        "former_prefixes": ["lk"],
+        "name": "新北市",
         "city": "新北市",
         "city_en": "New Taipei City",
-        "name_en": "Linkou District",
-        "label": "林口",
+        "name_en": "New Taipei City",
+        "label": "新北市",
         # Overpass selector for the region's boundary relation; parks are
         # filtered by the real boundary polygon returned from OSM.
-        "osm_boundary": 'area["name"="新北市"]["boundary"="administrative"]->.p;\nrel(area.p)["boundary"="administrative"]["name"="林口區"]',
+        "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="新北市"]',
         # Sub-districts used to label each park (None: the region is one district).
-        "osm_districts": None,
+        "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="7"]',
         # Same selection for extract_pbf (Geofabrik file): boundary tags, district admin_level.
-        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "7", "name": "林口區"},
-        "osm_district_level": None,
+        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "新北市"},
+        "osm_district_level": "7",
         "tdx_city": "NewTaipei",
-        # Official registry: names/addresses only, matched by park name.
+        # Official registry: names/addresses only, matched by park name (and district).
         "registry": "ntpc_parks",
         # OSM rarely maps play equipment here, so list parks as unconfirmed candidates.
         "park_candidates": True,
-        "fetch_tiles": 1,
+        "fetch_tiles": 4,
     },
     "taipei": {
         "id": "taipei",
@@ -47,8 +49,26 @@ REGIONS = {
         "park_candidates": False,
         "fetch_tiles": 3,
     },
+    "taoyuan": {
+        "id": "taoyuan",
+        "id_prefix": "ty",
+        "name": "桃園市",
+        "city": "桃園市",
+        "city_en": "Taoyuan City",
+        "name_en": "Taoyuan City",
+        "label": "桃園市",
+        "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="桃園市"]',
+        "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="7"]',
+        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "桃園市"},
+        "osm_district_level": "7",
+        "tdx_city": "Taoyuan",
+        # Official lists (featured playgrounds, pond parks): names/addresses/facilities, no coordinates.
+        "registry": "taoyuan_parks",
+        "park_candidates": True,
+        "fetch_tiles": 4,
+    },
 }
-DEFAULT_REGION = "linkou"
+DEFAULT_REGION = "newtaipei"
 
 # Extra margin around the region bbox for things that can serve a park
 # near the edge (parking, chargers, buildings that cast shadows).

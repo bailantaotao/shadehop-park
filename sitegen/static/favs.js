@@ -6,10 +6,18 @@
   var KEY = "shadehop.favs";
   var mem = null;  // fallback for this page view when storage is blocked
 
+  // Park ids whose region prefix changed (Linkou lk-* became New Taipei nt-*).
+  var MOVED = { "lk-": "nt-" };
+  function migrate(ids) {
+    return ids.map(function (id) {
+      var p = id.slice(0, 3);
+      return MOVED[p] ? MOVED[p] + id.slice(3) : id;
+    });
+  }
   function read() {
     try {
       var v = JSON.parse(localStorage.getItem(KEY) || "[]");
-      return Array.isArray(v) ? v : [];
+      return Array.isArray(v) ? migrate(v) : [];
     } catch (e) { return mem || []; }
   }
   function write(ids) {

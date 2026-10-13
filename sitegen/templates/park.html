@@ -25,7 +25,7 @@
   {% if p.geometry_estimated %}<span class="badge">範圍為估計（只有一個座標點）</span>{% endif %}
 </div>
 <p>{{ description }}</p>
-{% if p.official %}<p class="small">官方名冊：{{ p.official.name }}{% if p.official.address %}・{{ p.official.address }}{% endif %}{% if p.official.management %}・管理：{{ p.official.management }}{% if p.official.phone %} {{ p.official.phone }}{% endif %}{% endif %}{% if p.official.equipment %}<br>遊具：{% for k, v in p.official.equipment | dictsort %}{{ k }} {{ v }}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}（<a href="{{ p.official.source }}">政府開放資料</a>，{{ OFFICIAL_METHOD_LABEL[p.official.method] }}{% if p.official.distance_m is not none %}，相距約 {{ p.official.distance_m }}m{% endif %}）</p>{% endif %}
+{% if p.official %}<p class="small">官方名冊：{{ p.official.name }}{% if p.official.address %}・{{ p.official.address }}{% endif %}{% if p.official.management %}・管理：{{ p.official.management }}{% if p.official.phone %} {{ p.official.phone }}{% endif %}{% endif %}{% if p.official.facilities %}<br>設施：{{ p.official.facilities }}{% endif %}{% if p.official.equipment %}<br>遊具：{% for k, v in p.official.equipment | dictsort %}{{ k }} {{ v }}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}（<a href="{{ p.official.source }}">政府開放資料</a>，{{ OFFICIAL_METHOD_LABEL[p.official.method] }}{% if p.official.distance_m is not none %}，相距約 {{ p.official.distance_m }}m{% endif %}）</p>{% endif %}
 
 <section>
 <h2>下雨可以玩嗎？</h2>

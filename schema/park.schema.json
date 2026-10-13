@@ -25,6 +25,8 @@
         "management": { "type": ["string", "null"] },
         "phone": { "type": ["string", "null"] },
         "equipment": { "type": ["object", "null"], "additionalProperties": { "type": "integer" }, "description": "Official equipment counts, e.g. {\"鞦韆\": 2}." },
+        "facilities": { "type": ["string", "null"], "description": "Official facility description (free text), e.g. Taoyuan's 特色遊戲場 list." },
+        "features": { "type": ["string", "null"] },
         "registry_points": { "type": "integer", "description": "How many registry rows (points) were merged into this record; equipment is their sum." },
         "method": { "enum": ["name_match", "location_match", "official_record"] },
         "distance_m": { "type": ["integer", "null"] },

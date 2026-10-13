@@ -226,6 +226,10 @@ def build(out: Path = OUT) -> None:
         + "</urlset>\n"
     )
     (out / ".nojekyll").write_text("")
+    # Region ids changed over time (Linkou lk-* became New Taipei nt-*): keep old links working.
+    moves = [(old, r["id_prefix"]) for r in regions for old in r.get("former_prefixes", [])]
+    (out / "_redirects").write_text("".join(
+        f"/parks/{old}-* /parks/{new}-:splat 301\n/api/parks/{old}-* /api/parks/{new}-:splat 301\n" for old, new in moves))
     # Cloudflare Pages headers: let browser-based agents fetch the JSON, and serve
     # GeoJSON / llms.txt with explicit types.
     (out / "_headers").write_text(

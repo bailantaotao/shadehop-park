@@ -13,6 +13,8 @@ the previous file is kept, so an OSM refresh is never blocked.
 
 from __future__ import annotations
 
+import csv
+import io
 import json
 import re
 import sys
@@ -58,7 +60,7 @@ def ntpc_parks(region: dict) -> dict:
         "management": r.get("management"),
         "phone": r.get("localcallservice"),
         "lat": None, "lng": None, "equipment": None,
-    } for r in rows if r.get("area") == region["name"]]
+    } for r in rows if not region.get("registry_district") or r.get("area") == region["registry_district"]]
     entries.sort(key=lambda e: int(e["ref"] or 0))
     return {
         "kind": "parks",
@@ -125,7 +127,54 @@ def taipei_playgrounds(region: dict) -> dict:
     }
 
 
-FETCHERS = {"ntpc_parks": ntpc_parks, "taipei_playgrounds": taipei_playgrounds}
+TAOYUAN_DATASET = "https://opendata.tycg.gov.tw/api/dataset/4e233760-cb9c-4bca-bef2-e14ac80b1667/resource/{}/download"
+# (resource id, is a playground list)
+TAOYUAN_RESOURCES = [("cc8663dc-51f4-4a4f-9da1-f3fc266dc0c2", True),   # 特色遊戲場
+                     ("eff0b4d8-2ef3-49ec-b894-68b92dac23f0", False)]  # 埤塘公園
+
+
+def _csv(url: str) -> list[dict]:
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
+    r.raise_for_status()
+    for enc in ("utf-8-sig", "cp950"):
+        try:
+            text = r.content.decode(enc)
+            break
+        except UnicodeDecodeError:
+            continue
+    else:
+        raise ValueError("undecodable CSV")
+    return list(csv.DictReader(io.StringIO(text)))
+
+
+def taoyuan_parks(region: dict) -> dict:
+    entries: dict[str, dict] = {}
+    for res, is_playground in TAOYUAN_RESOURCES:
+        for r in _csv(TAOYUAN_DATASET.format(res)):
+            name = (r.get("公園名稱") or "").strip()
+            district = (r.get("區域") or "").strip()
+            if not name:
+                continue
+            ref = f"{district}/{name}"
+            e = entries.setdefault(ref, {
+                "ref": ref, "name": name, "district": district or None,
+                "address": (r.get("地址") or "").strip() or None,
+                "management": None, "phone": None, "lat": None, "lng": None, "equipment": None,
+                "facilities": None, "features": None, "playground": False,
+            })
+            e["playground"] = e["playground"] or is_playground
+            e["facilities"] = e["facilities"] or ((r.get("設施") or "").strip() or None)
+            e["features"] = e["features"] or ((r.get("特色") or "").strip() or None)
+    return {
+        "kind": "parks",
+        "source": "https://data.gov.tw/dataset/148726",
+        "publisher": "桃園市政府工務局",
+        "title": "桃園市公園（特色遊戲場、埤塘公園）",
+        "entries": sorted(entries.values(), key=lambda e: e["ref"]),
+    }
+
+
+FETCHERS = {"ntpc_parks": ntpc_parks, "taipei_playgrounds": taipei_playgrounds, "taoyuan_parks": taoyuan_parks}
 
 
 def fetch_region(region: dict) -> None:

@@ -1,4 +1,4 @@
-# ShadeHop Park 遮陽公園地圖（新北市林口區、臺北市）
+# ShadeHop Park 遮陽公園地圖（新北市、臺北市、桃園市）
 
 幫帶小孩的爸媽找到「**現在去不會曬、下雨也能玩**」的遊戲場，並附上附近停車場與電動車充電站（**快充 / 慢充**）。
 
@@ -13,14 +13,14 @@
 
 ## 架構
 
-地區設定在 `pipeline/config.py` 的 `REGIONS`（目前 `linkou`、`taipei`）。
+地區設定在 `pipeline/config.py` 的 `REGIONS`（目前 `newtaipei`、`taipei`、`taoyuan`）。
 
 ```
 pipeline/extract_pbf.py Geofabrik 台灣 .osm.pbf（每日更新，約 330 MB）→ data/raw/<region>.osm.json.gz（不進 git，CI 每次重抓）
                           本機約 1 分鐘、記憶體約 1.7 GB；不依賴常常塞車或資料過期的 Overpass
 pipeline/fetch_osm.py   備用：Overpass API（大範圍分塊抓；拒絕超過 3 天的過期鏡像資料），輸出格式相同
 pipeline/fetch_city.py  官方名冊 → data/raw/<region>.city_parks.json
-                          林口：新北市公園名冊（無座標，依名稱比對）
+                          新北市：新北市公園名冊；桃園市：特色遊戲場、埤塘公園（皆無座標，依名稱＋行政區比對）
                           臺北：臺北市兒童遊戲場名冊（含座標與遊具數量，依位置比對；OSM 沒有的也列入）
 pipeline/build_data.py  遮蔽判定、陰影時刻表、停車/充電配對 → data/parks/*.json, parks.json, parks.geojson, parks.csv,
                           regions/<region>.geojson（地圖用，手機只載入正在看的地區）、casters/<x>_<y>.geojson（約 1 km 分塊的陰影物件）

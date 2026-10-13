@@ -13,7 +13,7 @@ from .fixture import P  # noqa: E402
 
 
 def write_pbf(path):
-    """A tiny map: the 林口區 boundary (4 km square), features inside, one building far outside."""
+    """A tiny map: the 新北市 boundary (4 km square), features inside, one building far outside."""
     nodes, ways, rels = [], [], []
     nid = iter(range(1, 10_000))
 
@@ -29,7 +29,7 @@ def write_pbf(path):
 
     ways.append(Way(id=1, nodes=square(-2000, -2000, 2000, 2000), tags={}))  # untagged boundary ring
     rels.append(Relation(id=1, members=[("w", 1, "outer")],
-                         tags={"type": "boundary", "boundary": "administrative", "admin_level": "7", "name": "林口區"}))
+                         tags={"type": "boundary", "boundary": "administrative", "admin_level": "4", "name": "新北市"}))
     ways.append(Way(id=10, nodes=square(-10, -10, 10, 10), tags={"leisure": "playground", "name": "測試遊戲場"}))
     ways.append(Way(id=20, nodes=square(30, -10, 60, 20), tags={}))  # untagged multipolygon outer
     rels.append(Relation(id=20, members=[("w", 20, "outer")], tags={"type": "multipolygon", "building": "yes", "height": "30"}))
@@ -53,10 +53,10 @@ def test_extract_matches_overpass_shape(tmp_path, monkeypatch):
     pbf = tmp_path / "taiwan.osm.pbf"
     write_pbf(pbf)
     monkeypatch.setattr(ex, "RAW_DIR", tmp_path)
-    ex.extract(pbf, ["linkou"])
-    raw = json.load(gzip.open(tmp_path / "linkou.osm.json.gz", "rt"))
+    ex.extract(pbf, ["newtaipei"])
+    raw = json.load(gzip.open(tmp_path / "newtaipei.osm.json.gz", "rt"))
 
-    assert raw["region"] == "linkou" and raw["boundary"]["tags"]["name"] == "林口區"
+    assert raw["region"] == "newtaipei" and raw["boundary"]["tags"]["name"] == "新北市"
     keys = {(e["type"], e["id"]) for e in raw["elements"]}
     assert ("way", 10) in keys and ("relation", 20) in keys and ("way", 30) in keys
     assert ("way", 40) not in keys and ("way", 50) not in keys

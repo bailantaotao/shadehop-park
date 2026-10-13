@@ -447,9 +447,13 @@ class Builder:
         viaduct_area = cover["by_kind"].get("under_viaduct", 0) * zone.area
         if indoor is True:
             rain_value = True
-        elif cover["ratio"] >= config.COVERED_FULL_RATIO or viaduct_area >= config.COVERED_MIN_AREA_M2:
+        elif cover["ratio"] >= config.COVERED_FULL_RATIO or (
+                # A sizeable patch under a viaduct makes a mapped play area rain-proof. For a whole park
+                # we don't know where the equipment is, so a strip under a bridge is only "partial".
+                kind == "playground" and viaduct_area >= config.COVERED_MIN_AREA_M2
+                and cover["ratio"] >= config.COVERED_PARTIAL_RATIO):
             rain_value = True
-        elif cover["ratio"] >= config.COVERED_PARTIAL_RATIO:
+        elif cover["ratio"] >= config.COVERED_PARTIAL_RATIO or viaduct_area >= config.COVERED_MIN_AREA_M2:
             rain_value = "partial"
         else:
             rain_value = False
@@ -631,7 +635,7 @@ class Builder:
             pg_points = [p["geom"] if isinstance(p["geom"], Point) else p["geom"].representative_point() for p in self.playgrounds]
             jobs += [(park, "park") for park in self.parks if not any(park["geom"].contains(pt) for pt in pg_points)]
         built = [(r, item["xy"]) for r, (item, _) in zip(self._build_many(jobs), jobs) if r]
-        keep = self._dedupe(built)
+        keep = self._merge_same_name(self._dedupe(built))
         if self.city and self.city.get("kind") == "playgrounds":
             keep += self._match_official_points(keep)
         else:
@@ -663,6 +667,20 @@ class Builder:
                 r["_zone"] = xy if is_area(xy) else xy.buffer(config.PLAYGROUND_NODE_RADIUS_M)
                 keep.append(r)
         return keep
+
+    def _merge_same_name(self, records: list[dict]) -> list[dict]:
+        """Several unnamed OSM points or fragments in one park all get the same derived name
+        ("X公園 遊戲場", "公園（近Y路）") and would stack as separate markers. Keep one per cluster of
+        same-name, same-kind (and same indoor status) places within SAME_NAME_MERGE_M: the best covered, then the largest."""
+        rank = {"A": 0, "C": 1, "B": 2, "none": 3}
+        order = sorted(range(len(records)), key=lambda i: (rank[records[i]["level"]], -(records[i]["area_m2"] or 0), records[i]["id"]))
+        kept: list[dict] = []
+        for i in order:
+            r = records[i]
+            if not any(k["name"] == r["name"] and k["kind"] == r["kind"] and k["indoor"] == r["indoor"]
+                       and k["_zone"].distance(r["_zone"]) < config.SAME_NAME_MERGE_M for k in kept):
+                kept.append(r)
+        return kept
 
     def _official(self, entry: dict, method: str, distance_m: int | None = None, group: list[dict] | None = None) -> dict:
         group = group or [entry]

@@ -323,7 +323,7 @@ def test_point_playground_zone_excludes_buildings():
     from .fixture import node
 
     data = raw()
-    data["elements"].append(node(82, 555, -15, leisure="playground"))  # 5 m east of tower 21's wall
+    data["elements"].append(node(82, 555, -15, leisure="playground", name="牆邊遊戲場"))  # 5 m east of tower 21's wall
     p = {p["osm"]["id"]: p for p in Builder(data).build()}[82]
     circle = 3.14159 * 12 ** 2
     assert p["geometry_estimated"] and p["area_m2"] < circle * 0.85  # the part inside the tower is cut off
@@ -394,3 +394,29 @@ def test_name_match_uses_district_and_confirms_playgrounds():
     assert p["region"]["district"] == "西區"
     assert p["official"]["facilities"] == "鞦韆、溜滑梯"
     assert p["kind"] == "playground"  # confirmed by the city's playground list
+
+
+def test_big_park_with_a_strip_under_a_bridge_is_only_partial():
+    # 300x300 m riverside park crossed by a 30 m wide bridge: ~10% (9000 m²) covered. The equipment could
+    # be anywhere, so it is partial cover, not "全天候遮蔽".
+    from .fixture import ll, ring, way
+    data = raw()
+    data["elements"] += [
+        way(80, ring(1000, 1000, 1300, 1300), leisure="park", name="河濱公園"),
+        way(81, [ll(950, 1150), ll(1350, 1150)], highway="primary", bridge="yes", layer="1", width="30"),
+    ]
+    p = next(x for x in Builder(data).build() if x["name"] == "河濱公園")
+    assert p["rain_cover"]["value"] == "partial" and p["level"] != "A"
+
+
+def test_same_name_points_in_one_park_are_merged():
+    # Three unnamed playground points in one park all become "社區公園 遊戲場": one marker, not three.
+    from .fixture import node, ring, way
+    data = raw()
+    data["elements"] += [
+        way(90, ring(-1500, 1000, -1400, 1100), leisure="park", name="社區公園"),
+        node(91, -1480, 1050, leisure="playground"), node(92, -1460, 1050, leisure="playground"),
+        node(93, -1450, 1030, leisure="playground"),
+    ]
+    found = [p for p in Builder(data).build() if p["name"].startswith("社區公園")]
+    assert len(found) == 1

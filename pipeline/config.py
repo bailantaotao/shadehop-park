@@ -139,9 +139,12 @@ COVERED_PARTIAL_RATIO = 0.15
 OFFICIAL_MATCH_M = 40
 # Leftover official points with the same name this close together are one play area.
 OFFICIAL_MERGE_M = 60
+# Places of the same kind with the same (often derived) name this close together are one place.
+SAME_NAME_MERGE_M = 60
 NESTED_DUPLICATE_RATIO = 0.8  # an area this much inside a larger one of the same kind is a duplicate
-# A park with at least this much area under a viaduct (not pavilions) has a rain-proof play spot even if
-# the share of the whole park is small.
+# A mapped playground with at least this much area under a viaduct (not pavilions), and at least
+# COVERED_PARTIAL_RATIO of it covered, has a rain-proof play spot. For whole parks (equipment location
+# unknown) this much under a viaduct only counts as partial cover.
 COVERED_MIN_AREA_M2 = 150
 SHADED_SLOT_RATIO = 0.6  # a slot counts as "shaded" at >= 60% coverage
 LEVEL_C_MIN_DAYTIME_SHARE = 0.4  # share of 09-16 slots shaded, averaged over months

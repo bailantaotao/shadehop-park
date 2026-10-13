@@ -15,19 +15,13 @@
     <button class="chip" id="playBtn" type="button" aria-pressed="false">▶ 播放一天</button>
   </div>
   <div class="chips" role="group" aria-label="條件">
+    <button class="chip" data-filter="fav" aria-pressed="false">⭐ 我的最愛</button>
     <button class="chip" data-filter="rain" aria-pressed="false">☔ 下雨可玩</button>
     <button class="chip" data-filter="shade" aria-pressed="false">🌳 此時段有遮陰</button>
     <button class="chip" data-filter="parking" aria-pressed="false">🅿️ 停車 ≤ 300m</button>
     <button class="chip" data-filter="fast" aria-pressed="false">⚡ 2km 內有快充</button>
     <button class="chip" data-filter="slow" aria-pressed="false">🔌 2km 內有慢充</button>
     <button class="chip" data-filter="toilet" aria-pressed="false">🚻 附近有廁所</button>
-    <button class="chip" id="locBtn" type="button">📍 依我的位置排序</button>
-  </div>
-  <div class="chips" role="group" aria-label="地圖上顯示充電站">
-    <span class="small muted">地圖上顯示：</span>
-    <button class="chip" type="button" data-layer="fast" aria-pressed="true">⚡ 快充站<span class="n"></span></button>
-    <button class="chip" type="button" data-layer="slow" aria-pressed="true">🔌 慢充站<span class="n"></span></button>
-    <button class="chip" type="button" data-layer="unknown" aria-pressed="false">❔ 未標示快慢<span class="n"></span></button>
   </div>
   <div class="banner" id="weather" role="status"></div>
 </div>
@@ -61,5 +55,6 @@
 {% block scripts %}
 <script src="{{ root }}static/vendor/leaflet-1.9.4/leaflet.js"></script>
 <script src="{{ root }}static/sun.js"></script>
+<script src="{{ root }}static/favs.js"></script>
 <script src="{{ root }}static/app.js"></script>
 {% endblock %}

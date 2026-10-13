@@ -9,6 +9,12 @@
 {% block main %}
 <p class="small"><a href="{{ root }}">← 回地圖</a></p>
 <h1 style="font-size:1.4rem;margin:.2em 0">{{ p.name }}</h1>
+<div class="actions" id="parkActions" hidden>
+  <button type="button" class="chip fav" data-fav="{{ p.id }}" aria-pressed="false" title="加入我的最愛">☆<span class="fav-label">加入我的最愛</span></button>
+  <button type="button" class="chip" id="copyLink" data-url="{{ site_url }}/parks/{{ p.id }}/">🔗 複製連結</button>
+  <button type="button" class="chip" id="shareLink" data-text="{{ p.name }}：{{ p.level_label }}" hidden>📤 分享…</button>
+  <span class="small muted" id="copyStatus" role="status" aria-live="polite"></span>
+</div>
 <div class="badges">
   <span class="badge {{ p.level }}">{{ p.level_label }}</span>
   {% if p.park_name %}<span class="badge">位於 {{ p.park_name }}</span>{% endif %}
@@ -110,4 +116,8 @@
 {% else %}<p class="prov">這座遊戲場只出現在官方名冊，OpenStreetMap 尚未標示，因此範圍以座標點周圍 {{ meta.assumptions.PLAYGROUND_NODE_RADIUS_M }}m 估計。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
 可以到 <a href="https://www.openstreetmap.org/#map=19/{{ p.location.lat }}/{{ p.location.lng }}">OpenStreetMap</a> 把它畫上去（leisure=playground），下次更新會自動改用實際範圍。</p>{% endif %}
 </section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ root }}static/favs.js"></script>
+<script src="{{ root }}static/park.js"></script>
 {% endblock %}

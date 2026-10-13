@@ -5,7 +5,8 @@
   var SHADOW_MIN_ZOOM = 16, MAX_SHADOW_M = 600;
   var PARK_HREF = window.SHADEHOP_PARK_HREF || "parks/{id}/";
   function parkHref(id) { return PARK_HREF.replace("{id}", encodeURIComponent(id)); }
-  var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false };
+  var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false, fav: false };
+  var Favs = window.ShadeHopFavs;
   var LIST_MAX = 60;
   // Parks load per region as the map view reaches it; nobody has to pick a region first.
   var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {} };
@@ -62,18 +63,22 @@
     if (filters.fast && p.fast_nearest_m === null) return false;
     if (filters.slow && p.slow_nearest_m === null) return false;
     if (filters.toilet && !p.toilet) return false;
+    if (filters.fav && !Favs.has(p.id)) return false;
     return true;
   }
 
   function popupHtml(f) {
     var p = f.properties, v = shadeAt(f);
-    return "<strong>" + esc(p.name) + "</strong><br>" +
+    return Favs.button(p.id) + " <strong>" + esc(p.name) + "</strong><br>" +
       (p.rain === true ? "☔ 下雨可玩<br>" : "") +
       slotLabel(state.slot) + " 遮陰：" + (v === null ? "無日照" : Math.round(v * 100) + "%") +
       '<br><a href="' + parkHref(p.id) + '">詳細資料 →</a>';
   }
 
   function drawMarkers() {
+    // Redrawing replaces every marker, which would close an open popup; reopen it afterwards.
+    var open = null;
+    Object.keys(markers).forEach(function (id) { if (markers[id].isPopupOpen()) open = id; });
     markerLayer.clearLayers();
     markers = {};
     state.features.forEach(function (f) {
@@ -90,6 +95,7 @@
       m.addTo(markerLayer);
       markers[p.id] = m;
     });
+    if (open && markers[open]) markers[open].openPopup();
   }
 
   // ---------------------------------------------------------- live shadows
@@ -178,7 +184,7 @@
     }).join("");
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">☔ 下雨可玩</span>', B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
-    return '<article class="card"><h3><a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
+    return '<article class="card"><h3>' + Favs.button(p.id) + ' <a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
       '<div class="badges">' + levelBadge + (p.kind === "park" ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +
@@ -195,16 +201,19 @@
   }
 
   function drawList() {
-    var fs = state.features.filter(function (f) { return passes(f) && inView(f); });
+    // "My favourites" lists every favourite, wherever it is; otherwise only parks in view.
+    var fs = state.features.filter(function (f) { return passes(f) && (filters.fav || inView(f)); });
     fs.sort(function (a, b) {
       if (state.user) return distM(state.user, a.geometry.coordinates) - distM(state.user, b.geometry.coordinates);
       var ra = a.properties.rain === true ? 1 : 0, rb = b.properties.rain === true ? 1 : 0;
       return rb - ra || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
-    $("#count").textContent = "地圖範圍內的公園（" + fs.length + "）· " + month() + " 月 " + slotLabel(state.slot);
+    $("#count").textContent = (filters.fav ? "我的最愛（" : "地圖範圍內的公園（") + fs.length + "）· " + month() + " 月 " + slotLabel(state.slot);
     var html = fs.slice(0, LIST_MAX).map(card).join("");
     if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
-    if (!fs.length) {
+    if (!fs.length && filters.fav) {
+      html = '<p class="muted">還沒有收藏的公園。點公園名稱旁的 ☆ 就能加入；收藏只存在這個瀏覽器裡，不需要登入。</p>';
+    } else if (!fs.length) {
       var covered = state.regions.some(function (r) { return regionInView(r); });
       html = '<p class="muted">' + (covered ? "這個範圍沒有符合條件的公園，試著移動地圖或取消一些篩選。"
         : "這個範圍還沒有資料。目前收錄：" + state.regions.map(function (r) { return r.city + (r.name !== r.city ? r.name : ""); }).join("、") + "。") + "</p>";
@@ -213,14 +222,16 @@
   }
 
   // Coalesce redraws to one per animation frame, so dragging the time slider stays smooth on slow phones.
-  var pending = false;
-  function render() {
+  // Moving the map only changes the list and shadows (markers do not depend on the view).
+  var pending = null;
+  function render(viewOnly) {
     $("#slotOut").textContent = slotLabel(state.slot);
-    if (pending) return;
-    pending = true;
+    var full = !viewOnly || pending === "full";
+    if (pending) { pending = full ? "full" : "view"; return; }
+    pending = full ? "full" : "view";
     requestAnimationFrame(function () {
-      pending = false;
-      drawMarkers();
+      if (pending === "full") drawMarkers();
+      pending = null;
       drawShadows();
       drawList();
     });
@@ -249,16 +260,9 @@
   document.querySelectorAll("[data-filter]").forEach(function (b) {
     b.addEventListener("click", function () {
       var k = b.dataset.filter; filters[k] = !filters[k];
-      b.setAttribute("aria-pressed", String(filters[k])); render();
-    });
-  });
-  $("#locBtn").addEventListener("click", function () {
-    if (!navigator.geolocation) return;
-    navigator.geolocation.getCurrentPosition(function (pos) {
-      state.user = [pos.coords.longitude, pos.coords.latitude];
-      L.circleMarker([pos.coords.latitude, pos.coords.longitude], { radius: 6, color: css("--text"), fillOpacity: 1 }).addTo(map);
-      map.setView([pos.coords.latitude, pos.coords.longitude], Math.max(map.getZoom(), 15));
-      drawList();
+      b.setAttribute("aria-pressed", String(filters[k]));
+      if (k === "fav" && filters[k]) loadAllRegions();  // favourites can be in any region
+      render();
     });
   });
   $("#list").addEventListener("click", function (e) {
@@ -275,7 +279,7 @@
     loadCasters();
     saveView();
     countChargers();
-    render();
+    render(true);
     weatherIfMoved();
   });
 
@@ -323,6 +327,27 @@
       }).catch(function () { state.loaded[r.id] = false; });
     });
   }
+
+  function loadAllRegions() {
+    state.regions.forEach(function (r) {
+      if (state.loaded[r.id]) return;
+      state.loaded[r.id] = true;
+      fetch("api/regions/" + r.id + ".geojson").then(function (res) { return res.json(); }).then(function (gj) {
+        state.features = state.features.concat(gj.features);
+        render();
+      }).catch(function () { state.loaded[r.id] = false; });
+    });
+  }
+
+  // Leaflet popups stop click propagation, so stars inside them need their own handler.
+  map.on("popupopen", function (e) {
+    e.popup.getElement().querySelectorAll("[data-fav]").forEach(function (b) {
+      b.addEventListener("click", function (ev) { ev.preventDefault(); Favs.toggle(b.dataset.fav); });
+    });
+  });
+
+  // Re-filter when a star is toggled (the star buttons themselves update in favs.js).
+  document.addEventListener("shadehop:favs", function () { if (filters.fav) render(); });
 
   function saveView() {
     var c = map.getCenter(), v = map.getZoom() + "/" + c.lat.toFixed(5) + "/" + c.lng.toFixed(5);
@@ -373,7 +398,8 @@
     });
     document.querySelectorAll("[data-layer]").forEach(function (btn) {
       var out = btn.querySelector(".n");
-      if (out) out.textContent = chargersLoaded ? "（畫面中 " + n[btn.dataset.layer] + "）" : "（載入中）";
+      if (out) out.textContent = chargersLoaded ? n[btn.dataset.layer] : "…";
+      btn.title = btn.getAttribute("aria-label") + (chargersLoaded ? "：畫面中 " + n[btn.dataset.layer] + " 座" : "");
     });
   }
 
@@ -391,12 +417,75 @@
     });
   }
 
-  document.querySelectorAll("[data-layer]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      var k = b.dataset.layer; layers[k] = !layers[k];
-      b.setAttribute("aria-pressed", String(layers[k])); drawChargers();
-    });
+  // ------------------------------------------------------- on-map controls
+  // Small toast inside the map for locate errors etc.
+  var toastTimer = null;
+  function mapToast(msg) {
+    var el = document.querySelector(".map-toast");
+    if (!el) { el = L.DomUtil.create("div", "map-toast", map.getContainer()); el.setAttribute("role", "status"); }
+    el.textContent = msg; el.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.hidden = true; }, 4000);
+  }
+
+  // Locate me: centre on the user; the list then sorts by distance.
+  var userLayer = L.layerGroup().addTo(map);
+  var LocateControl = L.Control.extend({
+    options: { position: "topleft" },
+    onAdd: function () {
+      var box = L.DomUtil.create("div", "leaflet-bar map-ctl");
+      var b = L.DomUtil.create("button", "locate", box);
+      b.type = "button"; b.title = "回到我的位置"; b.setAttribute("aria-label", "回到我的位置");
+      b.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/>' +
+        '<circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>' +
+        '<path d="M12 1v3M12 20v3M1 12h3M20 12h3" stroke="currentColor" stroke-width="2"/></svg>';
+      L.DomEvent.disableClickPropagation(box);
+      L.DomEvent.on(b, "click", function () { locate(b); });
+      return box;
+    },
   });
+  function locate(b) {
+    if (!navigator.geolocation) { mapToast("這個瀏覽器不支援定位"); return; }
+    b.classList.add("busy");
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      b.classList.remove("busy"); b.classList.add("on");
+      var ll = [pos.coords.latitude, pos.coords.longitude];
+      state.user = [ll[1], ll[0]];
+      userLayer.clearLayers();
+      L.circle(ll, { radius: pos.coords.accuracy, stroke: false, fillColor: "#2b7bff", fillOpacity: 0.12, interactive: false }).addTo(userLayer);
+      L.circleMarker(ll, { radius: 7, color: "#fff", weight: 3, fillColor: "#2b7bff", fillOpacity: 1, interactive: false }).addTo(userLayer);
+      map.setView(ll, Math.max(map.getZoom(), 16));
+      render(true);
+    }, function (err) {
+      b.classList.remove("busy");
+      mapToast(err.code === 1 ? "沒有定位權限：請在瀏覽器設定允許這個網站使用位置" : "暫時無法取得位置，請稍後再試");
+    }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 });
+  }
+  map.addControl(new LocateControl());
+
+  // Charger layer toggles on the map (like an EV map app), each with the count in view.
+  var ChargerControl = L.Control.extend({
+    options: { position: "topright" },
+    onAdd: function () {
+      var box = L.DomUtil.create("div", "map-ctl chg-ctl");
+      box.setAttribute("role", "group"); box.setAttribute("aria-label", "地圖上顯示的充電站");
+      [["fast", "⚡", "快充站（DC）"], ["slow", "🔌", "慢充站（AC）"], ["unknown", "?", "未標示快慢的充電站"]].forEach(function (d) {
+        var b = L.DomUtil.create("button", "chg-btn " + d[0], box);
+        b.type = "button"; b.dataset.layer = d[0]; b.title = d[2];
+        b.setAttribute("aria-pressed", String(layers[d[0]]));
+        b.setAttribute("aria-label", d[2]);
+        b.innerHTML = '<span class="ico" aria-hidden="true">' + d[1] + '</span><span class="n"></span>';
+        L.DomEvent.on(b, "click", function () {
+          layers[d[0]] = !layers[d[0]];
+          b.setAttribute("aria-pressed", String(layers[d[0]]));
+          drawChargers();
+        });
+      });
+      L.DomEvent.disableClickPropagation(box);
+      return box;
+    },
+  });
+  map.addControl(new ChargerControl());
 
   // ------------------------------------------------------------------ init
   setNow();
@@ -409,6 +498,7 @@
   fetch("api/chargers.geojson").then(function (r) { return r.json(); }).then(function (gj) {
     chargers = gj.features; chargersLoaded = true; drawChargers();
   }).catch(function () {
-    document.querySelectorAll("[data-layer] .n").forEach(function (o) { o.textContent = "（暫時無法載入）"; });
+    document.querySelectorAll("[data-layer] .n").forEach(function (o) { o.textContent = "!"; });
+    mapToast("充電站資料暫時無法載入");
   });
 })();

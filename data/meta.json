@@ -69,21 +69,21 @@
   }
  ],
  "counts": {
-  "buildings_in_bbox": 5863,
-  "buildings_with_height": 412,
+  "buildings_in_bbox": 5379,
+  "buildings_with_height": 396,
   "by_level": {
    "A": 0,
    "B": 1,
    "C": 0,
-   "none": 52
+   "none": 51
   },
-  "chargers_in_bbox": 6,
+  "chargers_in_bbox": 4,
   "city_registry_parks": 40,
   "mapped_playgrounds": 7,
   "matched_city_registry": 28,
-  "park_candidates": 46,
-  "parking_lots_in_bbox": 246,
-  "parks": 53
+  "park_candidates": 45,
+  "parking_lots_in_bbox": 240,
+  "parks": 52
  },
  "default_building_heights_by_type": {
   "apartments": 24.0,
@@ -91,8 +91,8 @@
   "school": 9.0,
   "yes": 9.0
  },
- "fetched_at": "2026-10-12T18:39:00+00:00",
- "generated_from_osm_base": "2026-10-12T18:45:50Z",
+ "fetched_at": "2026-10-13T03:24:23+00:00",
+ "generated_from_osm_base": "2026-05-06T03:25:00Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
   "B": "部分遮陽設施 / 樹蔭",

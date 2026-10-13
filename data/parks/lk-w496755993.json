@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/496755993",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/496755993",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  },
  "area_m2": 7473,
@@ -37,30 +37,24 @@
    "start_slot": 0
   },
   "11": {
-   "end": "17:00",
-   "end_slot": 22,
-   "mean": 0.82,
-   "start": "16:30",
-   "start_slot": 21
+   "end": "07:00",
+   "end_slot": 2,
+   "mean": 0.68,
+   "start": "06:30",
+   "start_slot": 1
   },
-  "12": {
-   "end": "17:00",
-   "end_slot": 22,
-   "mean": 0.82,
-   "start": "16:30",
-   "start_slot": 21
-  },
+  "12": null,
   "2": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.81,
+   "mean": 0.67,
    "start": "17:00",
    "start_slot": 22
   },
   "3": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.85,
+   "mean": 0.92,
    "start": "17:30",
    "start_slot": 23
   },
@@ -113,84 +107,6 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 243,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.117908,
-    "lng": 121.297509
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1529198573,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1529198573"
-   },
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 302,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.117584,
-    "lng": 121.299658
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1529198678,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1529198678"
-   },
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 325,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.117032,
-    "lng": 121.29929
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1529198693,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1529198693"
-   },
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 367,
    "distance_method": "straight_line",
    "fee": null,
@@ -210,7 +126,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/496425419"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -236,7 +152,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/496425420"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -262,7 +178,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/496425424"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  ],
  "playground": {
@@ -282,7 +198,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/496755993",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-05-06"
  },
  "region": {
   "city": "新北市",
@@ -290,7 +206,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.0,
-  "buildings_considered": 150,
+  "buildings_considered": 58,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -318,8 +234,8 @@
     0.0,
     0.0,
     0.06,
-    0.21,
-    0.6,
+    0.17,
+    0.44,
     null,
     null
    ],
@@ -344,8 +260,8 @@
     0.0,
     0.02,
     0.08,
-    0.21,
-    0.55,
+    0.19,
+    0.48,
     null,
     null
    ],
@@ -369,9 +285,9 @@
     0.0,
     0.0,
     0.04,
-    0.14,
-    0.42,
-    0.82,
+    0.13,
+    0.32,
+    0.64,
     null,
     null
    ],
@@ -395,9 +311,9 @@
     0.0,
     0.0,
     0.03,
-    0.14,
-    0.42,
-    0.82,
+    0.11,
+    0.29,
+    0.59,
     null,
     null
    ],
@@ -422,9 +338,9 @@
     0.0,
     0.0,
     0.03,
-    0.11,
-    0.28,
-    0.81,
+    0.1,
+    0.24,
+    0.67,
     null
    ],
    "3": [
@@ -450,8 +366,8 @@
     0.02,
     0.08,
     0.18,
-    0.44,
-    0.85
+    0.42,
+    0.92
    ],
    "4": [
     0.23,
@@ -606,22 +522,22 @@
     0.04,
     0.1,
     0.21,
-    0.51,
+    0.5,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/496755993",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-05-06"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T18:45:50Z",
+   "as_of": "2026-05-06T03:25:00Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-05-06"
 }

@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/502807326",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/502807326",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  },
  "area_m2": 4554,
@@ -131,7 +131,7 @@
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "output",
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -173,7 +173,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -200,7 +200,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -236,32 +236,6 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 158,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078983,
-    "lng": 121.360499
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1561417932,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1561417932"
-   },
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 472,
    "distance_method": "straight_line",
    "fee": null,
@@ -281,7 +255,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980921"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -307,7 +281,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980932"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -333,7 +307,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1086756774"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   {
    "access": null,
@@ -359,7 +333,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1082650196"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  ],
  "playground": {
@@ -379,7 +353,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/502807326",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-05-06"
  },
  "region": {
   "city": "新北市",
@@ -387,7 +361,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.01,
-  "buildings_considered": 79,
+  "buildings_considered": 74,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -709,22 +683,22 @@
   },
   "source": "https://www.openstreetmap.org/way/502807326",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-05-06"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T18:45:50Z",
+   "as_of": "2026-05-06T03:25:00Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T03:22:26+00:00",
+   "as_of": "2026-10-13T03:28:39+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局 新北市公園",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-05-06"
 }

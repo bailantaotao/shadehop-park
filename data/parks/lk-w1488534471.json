@@ -7,7 +7,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1488534471",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   },
   "toilet": {
    "changing_table": null,
@@ -17,7 +17,7 @@
    "note": "OSM 在 200m 內未標示公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1488534471",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  },
  "area_m2": 8805,
@@ -71,7 +71,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "output",
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-05-06"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -111,15 +111,15 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1488534471",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-05-06"
  },
  "region": {
   "city": "新北市",
   "district": "林口區"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.12,
-  "buildings_considered": 8,
+  "building_height_known_share": 0.2,
+  "buildings_considered": 5,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -441,16 +441,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1488534471",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-05-06"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T18:45:50Z",
+   "as_of": "2026-05-06T03:25:00Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-05-06"
 }

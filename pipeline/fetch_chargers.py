@@ -61,13 +61,23 @@ def token(cid: str, secret: str) -> str:
     return r.json()["access_token"]
 
 
-def _get(path: str, tok: str, tries: int = 3) -> dict:
-    """GET with a few retries: TDX rate-limits bursts (429) and has brief 5xx outages."""
+PACE_S = 3  # seconds between calls; back-to-back calls for several cities hit TDX's rate limit (429)
+_last_call = 0.0
+
+
+def _get(path: str, tok: str, tries: int = 4) -> dict:
+    """GET at a gentle pace, retrying rate limits (429, honouring Retry-After) and brief 5xx outages."""
+    global _last_call
     for attempt in range(tries):
+        time.sleep(max(0.0, _last_call + PACE_S - time.monotonic()))
+        _last_call = time.monotonic()
         r = requests.get(f"{API}/{path}", params={"$format": "JSON"},
                          headers={"Authorization": f"Bearer {tok}", "User-Agent": UA, "Accept-Encoding": "gzip"}, timeout=120)
         if r.status_code in (429, 500, 502, 503, 504) and attempt < tries - 1:
-            time.sleep(10 * (attempt + 1))
+            wait = r.headers.get("Retry-After")
+            wait = int(wait) if wait and wait.isdigit() else 30 * (attempt + 1)
+            print(f"TDX {path}: HTTP {r.status_code}, retrying in {wait}s", file=sys.stderr)
+            time.sleep(wait)
             continue
         if not r.ok:
             print(f"TDX {path}: HTTP {r.status_code} {r.text[:200]!r}", file=sys.stderr)

@@ -108,14 +108,14 @@
   }
  },
  "charger_summary": {
-  "fast": 0,
+  "fast": 1,
   "nearest_any_m": 1883,
-  "nearest_fast_m": null,
+  "nearest_fast_m": 1883,
   "nearest_slow_m": null,
   "radius_m": 2000,
   "slow": 0,
   "total": 1,
-  "unknown": 1
+  "unknown": 0
  },
  "chargers": [
   {
@@ -140,9 +140,9 @@
     "url": "https://www.openstreetmap.org/way/1185424104"
    },
    "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
-   "speed_source": null,
+   "speed": "fast",
+   "speed_label": "快充 (DC)（依站名判斷）",
+   "speed_source": "name",
    "verified_at": "2026-10-12"
   }
  ],

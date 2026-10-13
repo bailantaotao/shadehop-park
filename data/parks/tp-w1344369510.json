@@ -85,42 +85,15 @@
  },
  "charger_summary": {
   "fast": 1,
-  "nearest_any_m": 1267,
+  "nearest_any_m": 1821,
   "nearest_fast_m": 1821,
   "nearest_slow_m": null,
   "radius_m": 2000,
   "slow": 0,
-  "total": 2,
-  "unknown": 1
+  "total": 1,
+  "unknown": 0
  },
  "chargers": [
-  {
-   "access": null,
-   "brand": null,
-   "capacity": null,
-   "distance_m": 1267,
-   "distance_method": "straight_line",
-   "fee": null,
-   "location": {
-    "lat": 25.048575,
-    "lng": 121.514512
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "機場捷運手機充電站/無線上網站",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5021873864,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5021873864"
-   },
-   "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
-   "speed_source": null,
-   "verified_at": "2026-10-12"
-  },
   {
    "access": "yes",
    "brand": "Tesla Supercharger",

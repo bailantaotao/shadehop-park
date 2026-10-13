@@ -48,14 +48,14 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 0,
+  "fast": 1,
   "nearest_any_m": 1595,
-  "nearest_fast_m": null,
+  "nearest_fast_m": 1595,
   "nearest_slow_m": null,
   "radius_m": 2000,
   "slow": 0,
   "total": 1,
-  "unknown": 1
+  "unknown": 0
  },
  "chargers": [
   {
@@ -80,9 +80,9 @@
     "url": "https://www.openstreetmap.org/way/1185424104"
    },
    "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
-   "speed_source": null,
+   "speed": "fast",
+   "speed_label": "快充 (DC)（依站名判斷）",
+   "speed_source": "name",
    "verified_at": "2026-10-12"
   }
  ],
@@ -636,7 +636,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T04:50:48+00:00",
+   "as_of": "2026-10-13T05:02:02+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

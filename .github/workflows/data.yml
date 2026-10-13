@@ -37,5 +37,11 @@ jobs:
           git add data
           if git diff --cached --quiet; then echo "no data changes"; exit 0; fi
           git commit -m "Refresh ${{ github.ref_name }} data from OpenStreetMap"
-          git pull --rebase origin "${{ github.ref_name }}"
+          # If someone pushed data or code while this ran, their push starts its own refresh
+          # with newer code; drop this result instead of failing on a data conflict.
+          if ! git pull --rebase origin "${{ github.ref_name }}"; then
+            git rebase --abort
+            echo "::notice::Branch changed during the refresh; skipping this commit (the newer push refreshes data itself)."
+            exit 0
+          fi
           git push origin "HEAD:${{ github.ref_name }}"

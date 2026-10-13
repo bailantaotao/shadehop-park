@@ -14,7 +14,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from .links import google_maps_url
+from .links import directions_url, google_maps_url
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -35,6 +35,12 @@ SHADE_TYPE_LABEL = {
 OFFICIAL_METHOD_LABEL = {"name_match": "依名稱比對", "location_match": "依位置比對", "official_record": "OSM 尚未標示"}
 SITE_NAME = "遮陽公園地圖"
 SLOT_LABELS = [f"{6 + i // 2:02d}:{'30' if i % 2 else '00'}" for i in range(24)]
+# OSM surface=* values parents care about (hot rubber in summer, sand to clean off...).
+SURFACE_LABEL = {
+    "rubber": "橡膠地墊", "tartan": "塑膠地墊", "artificial_turf": "人工草皮", "grass": "草地", "sand": "沙地",
+    "woodchips": "木屑", "wood": "木頭", "concrete": "水泥", "asphalt": "柏油", "paving_stones": "地磚",
+    "dirt": "泥土", "ground": "泥土", "gravel": "碎石", "pebblestone": "鵝卵石", "fine_gravel": "細碎石",
+}
 
 
 def shade_class(v) -> str:
@@ -156,11 +162,11 @@ def _write_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n")
 
 
-def _with_links(src: Path, dest: Path, links: dict[str, str]) -> None:
-    """Copy a park FeatureCollection, adding each park's Google Maps link as `gmaps` (map popups)."""
+def _with_links(src: Path, dest: Path, links: dict[str, dict]) -> None:
+    """Copy a park FeatureCollection, adding the site-build fields the map popup uses (links etc.)."""
     fc = json.loads(src.read_text())
     for f in fc["features"]:
-        f["properties"]["gmaps"] = links.get(f["id"])
+        f["properties"].update(links.get(f["id"], {}))
     _write_json(dest, fc)
 
 
@@ -180,7 +186,11 @@ def build(out: Path = OUT) -> None:
     # Display-only links are added here, not in the pipeline, so changing them needs no data rebuild.
     for p in parks:
         p["google_maps_url"] = google_maps_url(p)
-    links = {p["id"]: p["google_maps_url"] for p in parks}
+        p["directions_url"] = directions_url(p)
+    # Extra map-popup fields: links, and the nearest toilet's distance (the popup shows it).
+    links = {p["id"]: {"gmaps": p["google_maps_url"], "nav": p["directions_url"],
+                       "toilet_m": p["amenities"]["toilet"]["distance_m"] if p["amenities"]["toilet"]["value"] else None}
+             for p in parks}
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
@@ -199,7 +209,7 @@ def build(out: Path = OUT) -> None:
         "site_url": SITE_URL, "meta": meta, "today": date.today().isoformat(), "regions": regions,
         "SITE_NAME": SITE_NAME, "COVERAGE_SHORT": "・".join(r["label"] for r in regions),
         "REGISTRY_PUBLISHERS": "、".join(dict.fromkeys(publishers)) or "政府", "OFFICIAL_METHOD_LABEL": OFFICIAL_METHOD_LABEL,
-        "SPEED_LABEL": SPEED_LABEL, "RAIN_LABEL": RAIN_LABEL, "CONF_LABEL": CONF_LABEL,
+        "SPEED_LABEL": SPEED_LABEL, "RAIN_LABEL": RAIN_LABEL, "SURFACE_LABEL": SURFACE_LABEL, "CONF_LABEL": CONF_LABEL,
         "METHOD_LABEL": METHOD_LABEL, "SHADE_TYPE_LABEL": SHADE_TYPE_LABEL, "SLOT_LABELS": SLOT_LABELS,
     }
 

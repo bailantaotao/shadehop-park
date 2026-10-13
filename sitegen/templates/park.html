@@ -7,49 +7,84 @@
 <script type="application/ld+json">{{ ld | tojson_ld | safe }}</script>
 {% endblock %}
 {% block main %}
+{% set addr = (p.official.address if p.official and p.official.address else p.address) %}
+{% set t = p.amenities.toilet %}{% set w = p.amenities.drinking_water %}{% set pg = p.playground %}
+<div class="park">
 <p class="small"><a href="{{ root }}">← 回地圖</a></p>
-<h1 style="font-size:1.4rem;margin:.2em 0">{{ p.name }}</h1>
-<div class="actions" id="parkActions" hidden>
-  <button type="button" class="chip fav" data-fav="{{ p.id }}" aria-pressed="false" title="加入我的最愛">☆<span class="fav-label">加入我的最愛</span></button>
-  <button type="button" class="chip" id="copyLink" data-url="{{ site_url }}/parks/{{ p.id }}/">🔗 複製連結</button>
-  {% if p.google_maps_url %}<a class="chip" href="{{ p.google_maps_url }}" target="_blank" rel="noopener">⭐ Google 地圖評論 ↗</a>{% endif %}
-  <button type="button" class="chip" id="shareLink" data-text="{{ p.name }}：{{ p.level_label }}" hidden>📤 分享…</button>
-  <span class="small muted" id="copyStatus" role="status" aria-live="polite"></span>
-</div>
-<div class="badges">
-  <span class="badge {{ p.level }}">{{ p.level_label }}</span>
-  {% if p.park_name %}<span class="badge">位於 {{ p.park_name }}</span>{% endif %}
-  <span class="badge">{{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}</span>
-  {% if p.indoor is sameas true %}<span class="badge">室內{% if p.playground.fee == "yes" %}・需付費{% endif %}</span>{% elif p.indoor == "possible" %}<span class="badge">位於建物輪廓內：可能是室內或社區中庭，待確認</span>{% endif %}
-  {% if p.kind == "park" %}<span class="badge">遊戲設施未在 OSM 標示，待確認</span>{% endif %}
-  {% if p.official %}<span class="badge">官方遊戲場/公園名冊有列</span>{% endif %}
-  {% if p.geometry_estimated %}<span class="badge">範圍為估計（只有一個座標點）</span>{% endif %}
-</div>
-<p>{{ description }}</p>
-{% if p.official %}<p class="small">官方名冊：{{ p.official.name }}{% if p.official.address %}・{{ p.official.address }}{% endif %}{% if p.official.management %}・管理：{{ p.official.management }}{% if p.official.phone %} {{ p.official.phone }}{% endif %}{% endif %}{% if p.official.facilities %}<br>設施：{{ p.official.facilities }}{% endif %}{% if p.official.equipment %}<br>遊具：{% for k, v in p.official.equipment | dictsort %}{{ k }} {{ v }}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}（<a href="{{ p.official.source }}">政府開放資料</a>，{{ OFFICIAL_METHOD_LABEL[p.official.method] }}{% if p.official.distance_m is not none %}，相距約 {{ p.official.distance_m }}m{% endif %}）</p>{% endif %}
 
-<section>
-<h2>下雨可以玩嗎？</h2>
-<p><strong>{{ RAIN_LABEL[p.rain_cover.value] }}</strong>（遮蔽比例約 {{ (p.rain_cover.covered_ratio * 100) | round | int }}%）</p>
-{% for s in p.shade_types %}
-<p class="small">• {{ SHADE_TYPE_LABEL.get(s.type, s.type) }}{% if s.covered_ratio is defined %}：覆蓋約 {{ (s.covered_ratio * 100) | round | int }}%{% endif %}{% if s.trees %}：OSM 標記 {{ s.trees }} 棵樹{% endif %}{% if s.note %}（{{ s.note }}）{% endif %}</p>
-{% endfor %}
-<p class="prov">依據：{{ METHOD_LABEL[p.rain_cover.method] }}；信心：{{ CONF_LABEL[p.rain_cover.confidence] }}；資料日期 {{ p.rain_cover.verified_at }}。{{ p.rain_cover.note }}</p>
+{# 1. Name, where, and what to do next #}
+<section class="pcard">
+  <h1 class="pname">{{ p.name }}</h1>
+  <p class="muted small" style="margin:0">{{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}{% if addr %}・{{ addr }}{% endif %}{% if p.park_name and p.park_name not in p.name %}・位於{{ p.park_name }}{% endif %}</p>
+  <div class="pbtns">
+    <a class="pbtn primary" href="{{ p.directions_url }}" target="_blank" rel="noopener">導航</a>
+    <a class="pbtn" href="{{ p.google_maps_url }}" target="_blank" rel="noopener" title="Google 地圖上的評論">評論 ↗</a>
+    <button type="button" class="pbtn fav" data-fav="{{ p.id }}" data-on="已收藏" data-off="收藏" aria-pressed="false" title="加入我的最愛">☆<span class="fav-label">收藏</span></button>
+    <button type="button" class="pbtn" id="shareLink" data-url="{{ site_url }}/parks/{{ p.id }}/" data-text="{{ p.name }}：{{ p.level_label }}">分享</button>
+  </div>
+  <p class="small muted" id="copyStatus" role="status" aria-live="polite" style="margin:6px 0 0"></p>
+  {% if p.indoor is sameas true or p.indoor == "possible" or p.kind == "park" %}
+  <p class="pnote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。{% endif %}</p>
+  {% endif %}
 </section>
 
-<section>
-<h2>什麼時候最遮陰？</h2>
-<div class="tablewrap">
-<table>
-<thead><tr><th>月份</th><th>最長連續遮陰時段（≥60%）</th><th>平均遮陰</th></tr></thead>
-<tbody>
-{% for m in range(1, 13) %}{% set w = p.best_shade_windows[m|string] %}
-<tr><td>{{ m }} 月</td><td>{% if w %}{{ w.start }}–{{ w.end }}{% else %}<span class="muted">沒有明顯遮陰時段</span>{% endif %}</td><td>{% if w %}{{ (w.mean * 100) | round | int }}%{% endif %}</td></tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
-<h3 style="font-size:1rem">逐時遮陰推估（每月 15 日，每 30 分鐘）</h3>
+{# 2. Is now a good time? Filled in for the current time by park.js; this is the no-JS fallback. #}
+<section class="pcard" id="now">
+  <h2 class="ptitle">現在去適合嗎？</h2>
+  <div class="pstats">
+    <div class="pstat" id="nowShade"><b>—</b><span>遮陰</span></div>
+    <div class="pstat" id="nowRain"><b>—</b><span>降雨機率</span></div>
+    <div class="pstat" id="nowUv"><b>—</b><span>紫外線</span></div>
+  </div>
+  <p class="small muted" style="margin:10px 0 4px">今天的遮陰（06:00–18:00，每半小時）</p>
+  <div class="timeline" id="todayBar" aria-label="今天每半小時的遮陰"></div>
+  <div class="tl-axis"><span>6</span><span>9</span><span>12</span><span>15</span><span>18</span></div>
+  <p style="margin:10px 0 0" id="bestToday">最陰涼：<span class="muted">—</span></p>
+  <p style="margin:4px 0 0">下雨：<b>{{ {True: "有遮蔽，下雨可玩", "partial": "部分區域可躲雨", False: "沒有遮蔽處"}[p.rain_cover.value] }}</b></p>
+  <p class="small muted" style="margin:8px 0 0" id="nowNote">遮陰是依建物、高架與太陽位置推算的估計值。</p>
+  <script type="application/json" id="parkData">{{ {"slots": p.shade_timetable.slots, "best": p.best_shade_windows, "lat": p.location.lat, "lng": p.location.lng} | tojson }}</script>
+</section>
+
+{# 3. What parents need to know; rows without data are left out #}
+<section class="pcard">
+  <h2 class="ptitle">帶孩子要知道的</h2>
+  {% set rows = namespace(n=0) %}
+  <ul class="plist">
+  {% if t.value %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🚻</span>公廁約 {{ t.distance_m }}m{% if t.changing_table %}・有尿布台{% endif %}</li>{% endif %}
+  {% if w.value %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🚰</span>飲水機約 {{ w.distance_m }}m</li>{% endif %}
+  {% if p.official and p.official.equipment %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🛝</span><span>遊具：{% for k, v in p.official.equipment | dictsort %}<span class="tag">{{ k }}{% if v > 1 %} {{ v }}{% endif %}</span>{% endfor %}</span></li>
+  {% elif pg.equipment %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🛝</span><span>遊具：{% for e in pg.equipment %}<span class="tag">{{ e }}</span>{% endfor %}</span></li>{% endif %}
+  {% if p.official and p.official.facilities %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🏞️</span>設施：{{ p.official.facilities }}</li>{% endif %}
+  {% if pg.surface %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🟫</span>地面：{{ SURFACE_LABEL.get(pg.surface, pg.surface) }}{% if pg.surface in ("rubber", "tartan", "artificial_turf") %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
+  {% if pg.min_age or pg.max_age %}{% set rows.n = rows.n + 1 %}<li><span class="pico">👶</span>適合年齡：{% if pg.min_age %}{{ pg.min_age }} 歲{% endif %}–{% if pg.max_age %}{{ pg.max_age }} 歲{% endif %}</li>{% endif %}
+  {% if pg.opening_hours %}{% set rows.n = rows.n + 1 %}<li><span class="pico">🕘</span>{{ "24 小時開放" if pg.opening_hours == "24/7" else "開放時間：" ~ pg.opening_hours }}</li>{% endif %}
+  {% if p.official and p.official.management %}{% set rows.n = rows.n + 1 %}<li><span class="pico">📞</span>{{ p.official.management }}{% if p.official.phone %} <a href="tel:{{ p.official.phone | replace('(', '') | replace(')', '') | replace(' ', '') }}">{{ p.official.phone }}</a>{% endif %}</li>{% endif %}
+  </ul>
+  {% if rows.n == 0 %}<p class="muted small" style="margin:0">這裡的廁所、遊具等資料還很少。知道的話，歡迎到 OpenStreetMap 補上（見最下方「資料來源與回報錯誤」）。</p>{% endif %}
+</section>
+
+{# 4. Getting there #}
+<section class="pcard">
+  <h2 class="ptitle">停車與充電</h2>
+  <ul class="plist">
+  {% for q in p.parking[:3] %}<li><span class="pico">🅿️</span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}" target="_blank" rel="noopener">{{ q.name }}</a> {{ q.distance_m }}m{% if q.fee in ("yes", "no") %}・{{ {'yes':'收費','no':'免費'}[q.fee] }}{% endif %}{% if q.capacity %}・{{ q.capacity }} 格{% endif %}{% if q.capacity_parent %}{% if q.capacity_parent is string and q.capacity_parent.isdigit() %}（親子 {{ q.capacity_parent }} 格）{% elif q.capacity_parent != "no" %}・有親子車位{% endif %}{% endif %}{% if q.maxheight_m %}・限高 {{ q.maxheight_m }}m{% endif %}{% if q.access == 'customers' %}・限顧客{% endif %}</span></li>
+  {% else %}<li class="muted"><span class="pico">🅿️</span>{{ meta.assumptions.PARKING_RADIUS_M }}m 內沒有標示停車場</li>{% endfor %}
+  {% set cs = p.charger_summary %}
+  <li><span class="pico">⚡</span>{% if cs.total %}{% if cs.nearest_fast_m is not none %}快充 {{ cs.nearest_fast_m }}m{% else %}{{ cs.radius_m }}m 內沒有快充{% endif %}・{% if cs.nearest_slow_m is not none %}慢充 {{ cs.nearest_slow_m }}m{% else %}沒有慢充{% endif %}{% else %}{{ cs.radius_m }}m 內沒有充電站{% endif %}</li>
+  </ul>
+  {% if p.chargers %}
+  <details class="pmore"><summary>{{ cs.radius_m }}m 內的 {{ cs.total }} 個充電站</summary>
+  <ul class="plist">
+  {% for c in p.chargers %}<li><span class="chg inline {{ {'fast':'fast','both':'fast','slow':'slow'}.get(c.speed, 'unknown') }}"></span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ c.location.lat }},{{ c.location.lng }}" target="_blank" rel="noopener">{{ c.name }}</a> {{ c.distance_m }}m・{{ c.speed_label }}{% if c.sockets %}・{% for s in c.sockets %}{{ s.label }}{% if s.count > 1 %}×{{ s.count }}{% endif %}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}{% if c.charging_rate %}<br><span class="small muted">{{ c.charging_rate }}</span>{% endif %}{% if c.access == 'customers' %}・限顧客{% endif %}</span></li>{% endfor %}
+  </ul>
+  <p class="prov">來源：交通部「充電站之基本資料」（資料介接「交通部TDX平臺」）與 OpenStreetMap；同一地點兩邊都有時以交通部資料為準。距離為直線距離。</p>
+  </details>
+  {% endif %}
+</section>
+
+{# 5. Details most people skip #}
+<section class="pcard">
+<details class="pmore"><summary>全年遮陰表（每月、每半小時）</summary>
 <div class="tablewrap">
 <table class="heat" aria-label="遮陰熱圖：列為月份，欄為時間">
 <thead><tr><th></th>{% for l in SLOT_LABELS %}<th scope="col">{% if loop.index0 % 2 == 0 %}{{ l[:2] }}{% endif %}</th>{% endfor %}</tr></thead>
@@ -60,63 +95,36 @@
 </table>
 </div>
 <p class="legend" style="margin-top:6px"><span><span class="dot hi"></span>≥60%</span><span><span class="dot mid"></span>30–60%</span><span><span class="dot lo"></span>&lt;30%</span><span><span class="dot night"></span>無日照</span></p>
-{% if p.shade_timetable.building_height_known_share < 0.3 %}<p class="banner">⚠️ 周邊建物只有 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘依同類型建物的保守高度估計，大樓陰影可能被<strong>低估</strong>。</p>{% endif %}
+<div class="tablewrap"><table>
+<thead><tr><th>月份</th><th>最長連續遮陰時段（≥60%）</th><th>平均遮陰</th></tr></thead>
+<tbody>
+{% for m in range(1, 13) %}{% set bw = p.best_shade_windows[m|string] %}
+<tr><td>{{ m }} 月</td><td>{% if bw %}{{ bw.start }}–{{ bw.end }}{% else %}<span class="muted">沒有明顯遮陰時段</span>{% endif %}</td><td>{% if bw %}{{ (bw.mean * 100) | round | int }}%{% endif %}</td></tr>
+{% endfor %}
+</tbody></table></div>
+{% if p.shade_timetable.building_height_known_share < 0.3 %}<p class="banner">周邊建物只有 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘依同類型建物的保守高度估計，大樓陰影可能被低估。</p>{% endif %}
 <p class="prov">方法：{{ METHOD_LABEL[p.shade_timetable.method] }}；信心：{{ CONF_LABEL[p.shade_timetable.confidence] }}。周邊 {{ p.shade_timetable.buildings_considered }} 棟建物中 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘依同類型建物的保守高度估計（無樣本時以 9m 計）。{{ p.shade_timetable.note }}</p>
-</section>
+</details>
 
-<section>
-<h2>附近停車</h2>
-{% if p.parking %}
-<div class="tablewrap"><table>
-<thead><tr><th>停車場</th><th>類型</th><th>直線距離</th><th>車位</th><th>收費</th><th>限高</th></tr></thead>
-<tbody>
-{% for q in p.parking %}<tr>
-<td><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}">{{ q.name }}</a>{% if q.access == 'customers' %} <span class="badge">限顧客</span>{% endif %}</td>
-<td>{{ q.kind_label }}</td><td>{{ q.distance_m }} m</td>
-<td>{{ q.capacity if q.capacity else '—' }}{% if q.capacity_parent %}（親子 {{ q.capacity_parent }}）{% endif %}</td>
-<td>{{ {'yes':'收費','no':'免費'}.get(q.fee, '—') }}</td><td>{{ (q.maxheight_m ~ ' m') if q.maxheight_m else '—' }}</td>
-</tr>{% endfor %}
-</tbody></table></div>
-{% else %}<p class="muted">OSM 在 {{ meta.assumptions.PARKING_RADIUS_M }}m 內未標示停車場。</p>{% endif %}
-<p class="prov">來源：OpenStreetMap，{{ p.updated_at }}。距離為直線距離，實際步行會較遠。即時剩餘車位請以停車場現場或政府即時資訊為準。</p>
-</section>
+<details class="pmore"><summary>下雨遮蔽怎麼判斷的</summary>
+<p><b>{{ RAIN_LABEL[p.rain_cover.value] }}</b>（遮蔽比例約 {{ (p.rain_cover.covered_ratio * 100) | round | int }}%）・分級：{{ p.level_label }}</p>
+{% for s in p.shade_types %}
+<p class="small">• {{ SHADE_TYPE_LABEL.get(s.type, s.type) }}{% if s.covered_ratio is defined %}：覆蓋約 {{ (s.covered_ratio * 100) | round | int }}%{% endif %}{% if s.trees %}：OSM 標記 {{ s.trees }} 棵樹{% endif %}{% if s.note %}（{{ s.note }}）{% endif %}</p>
+{% endfor %}
+<p class="prov">依據：{{ METHOD_LABEL[p.rain_cover.method] }}；信心：{{ CONF_LABEL[p.rain_cover.confidence] }}；資料日期 {{ p.rain_cover.verified_at }}。{{ p.rain_cover.note }}</p>
+</details>
 
-<section>
-<h2>電動車充電（快充 / 慢充）</h2>
-<p>{{ p.charger_summary.radius_m }}m 內：快充 {{ p.charger_summary.fast }} 站、慢充 {{ p.charger_summary.slow }} 站{% if p.charger_summary.unknown %}、未標示類型 {{ p.charger_summary.unknown }} 站{% endif %}。</p>
-{% if p.chargers %}
-<div class="tablewrap"><table>
-<thead><tr><th>充電站</th><th>類型</th><th>插頭</th><th>費率／時間</th><th>直線距離</th></tr></thead>
-<tbody>
-{% for c in p.chargers %}<tr>
-<td><a href="https://www.google.com/maps/dir/?api=1&destination={{ c.location.lat }},{{ c.location.lng }}">{{ c.name }}</a>{% if c.operator and c.operator != c.name %}<br><span class="small muted">{{ c.operator }}</span>{% endif %}{% if c.access == 'customers' %} <span class="badge">限顧客</span>{% endif %}</td>
-<td>{{ c.speed_label }}{% if c.capacity %}<br><span class="small muted">{{ c.capacity }} 格</span>{% endif %}</td>
-<td>{% for s in c.sockets %}{{ s.label }}{% if s.count > 1 %} ×{{ s.count }}{% endif %}{% if not loop.last %}、{% endif %}{% else %}<span class="muted">未標示</span>{% endfor %}</td>
-<td>{% if c.charging_rate %}{{ c.charging_rate }}{% elif c.max_kw %}最高 {{ c.max_kw | round(1) }} kW{% else %}—{% endif %}{% if c.opening_hours %}<br><span class="small muted">{{ c.opening_hours }}</span>{% endif %}</td>
-<td>{{ c.distance_m }} m</td>
-</tr>{% endfor %}
-</tbody></table></div>
-{% endif %}
-<p class="prov">來源：交通部「充電站之基本資料」（資料介接「交通部TDX平臺」，每座站的充電槍標示 AC/DC），以及 OpenStreetMap 的 socket:* 標記（DC 插頭歸為快充、AC 插頭歸為慢充，無標記者不猜測）。同一地點兩邊都有時以交通部資料為準。</p>
-</section>
-
-<section>
-<h2>生活機能</h2>
-<ul>
-<li>公廁（{{ meta.assumptions.AMENITY_RADIUS_M }}m 內）：{% if p.amenities.toilet.value %}有，約 {{ p.amenities.toilet.distance_m }}m{% if p.amenities.toilet.changing_table %}，有尿布台{% endif %}{% else %}<span class="muted">{{ p.amenities.toilet.note }}</span>{% endif %}</li>
-<li>飲水機：{% if p.amenities.drinking_water.value %}有，約 {{ p.amenities.drinking_water.distance_m }}m{% else %}<span class="muted">未標示</span>{% endif %}</li>
-{% if p.playground.surface %}<li>地面材質：{{ p.playground.surface }}{% if p.playground.surface in ('rubber', 'tartan', 'artificial_turf') %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
-{% if p.playground.equipment %}<li>設施：{{ p.playground.equipment | join('、') }}</li>{% endif %}
-</ul>
-</section>
-
-<section>
-<h2>資料來源與更正</h2>
+<details class="pmore"><summary>資料來源與回報錯誤</summary>
+<p class="small">{{ description }}</p>
+{% if p.official %}<p class="prov">官方名冊：{{ p.official.name }}（<a href="{{ p.official.source }}">政府開放資料</a>，{{ OFFICIAL_METHOD_LABEL[p.official.method] }}{% if p.official.distance_m is not none %}，相距約 {{ p.official.distance_m }}m{% endif %}）</p>{% endif %}
 {% if p.osm %}<p class="prov">OSM 物件：<a href="{{ p.osm.url }}">{{ p.osm.type }}/{{ p.osm.id }}</a>。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
 資料有誤？直接在 <a href="https://www.openstreetmap.org/edit?{{ p.osm.type }}={{ p.osm.id }}">OpenStreetMap 上修正</a>（例如補上 covered=yes、building:levels、充電站 socket:*），下次更新會自動反映。</p>
 {% else %}<p class="prov">這座遊戲場只出現在官方名冊，OpenStreetMap 尚未標示，因此範圍以座標點周圍 {{ meta.assumptions.PLAYGROUND_NODE_RADIUS_M }}m 估計。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
 可以到 <a href="https://www.openstreetmap.org/#map=19/{{ p.location.lat }}/{{ p.location.lng }}">OpenStreetMap</a> 把它畫上去（leisure=playground），下次更新會自動改用實際範圍。</p>{% endif %}
+<p class="prov">停車場與設施來源：OpenStreetMap，{{ p.updated_at }}。距離為直線距離，實際步行會較遠。天氣：<a href="https://open-meteo.com/">Open-Meteo</a>。</p>
+</details>
 </section>
+</div>
 {% endblock %}
 {% block scripts %}
 <script src="{{ root }}{{ asset('static/favs.js') }}"></script>

@@ -85,7 +85,7 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     out = tmp_path / "public"
     bs.build(out)
     page = (out / "parks" / "nt-w10" / "index.html").read_text()
-    assert "application/ld+json" in page and "下雨可以玩嗎" in page
+    assert "application/ld+json" in page and "現在去適合嗎" in page and "帶孩子要知道的" in page
     ld = json.loads(page.split('<script type="application/ld+json">')[1].split("</script>")[0])
     assert ld["@type"] == "Playground" and ld["geo"]["latitude"]
     assert "GPTBot" in (out / "robots.txt").read_text()
@@ -112,7 +112,8 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     # Google Maps links are added by the site build: park JSON, region GeoJSON (popups) and the park page.
     assert full["parks"][0]["google_maps_url"].startswith("https://www.google.com/maps/search/")
     assert all(f["properties"]["gmaps"] for f in tp["features"])
-    assert "Google 地圖評論" in page
+    assert "google.com/maps/search/" in page and "google.com/maps/dir/" in page
+    assert all(f["properties"]["nav"] for f in tp["features"])
 
 
 def test_google_maps_link_uses_real_names_only():

@@ -59,7 +59,8 @@
       b.title = on ? "從我的最愛移除" : "加入我的最愛";
       b.firstChild.nodeValue = on ? "★" : "☆";
       var label = b.querySelector(".fav-label");
-      if (label) label.textContent = on ? "已加入我的最愛" : "加入我的最愛";
+      // A button can carry shorter labels (data-on / data-off), e.g. 收藏 / 已收藏 on park pages.
+      if (label) label.textContent = on ? (b.dataset.on || "已加入我的最愛") : (b.dataset.off || "加入我的最愛");
     });
   });
 })();

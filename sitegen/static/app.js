@@ -144,12 +144,31 @@
   }
 
   function popupHtml(f) {
-    var p = f.properties, v = shadeAt(f);
-    return Favs.button(p.id) + " <strong>" + esc(p.name) + "</strong><br>" +
-      (p.rain === true ? "☔ 下雨可玩<br>" : "") +
-      slotLabel(state.slot) + " 遮陰：" + (v === null ? "無日照" : Math.round(v * 100) + "%") +
-      '<br><a href="' + parkHref(p.id) + '">詳細資料 →</a>' +
-      (p.gmaps ? '　<a href="' + esc(p.gmaps) + '" target="_blank" rel="noopener">Google 評論 ↗</a>' : "");
+    // What a parent decides on at a glance: is it hot now, can we play in the rain, when is it
+    // shadiest, are parking / toilets / chargers close. Everything else is on the park page.
+    var p = f.properties, v = shadeAt(f), t = slotLabel(state.slot);
+    var now = taipeiNow(), today = state.date === now.y + "-" + String(now.m).padStart(2, "0") + "-" + String(now.d).padStart(2, "0");
+    var shade = v === null || v === undefined
+      ? '<span class="pp-pill night">' + t + " 沒有直射陽光</span>"
+      : '<span class="pp-pill ' + shadeClass(v) + '">' + t + " 遮陰 " + Math.round(v * 100) + "%</span>";
+    var rain = p.rain === true ? '<span class="pp-pill a">下雨可玩</span>'
+      : p.rain === "partial" ? '<span class="pp-pill">部分可躲雨</span>' : '<span class="pp-pill">下雨不適合</span>';
+    var best = (p.best || {})[String(month())];
+    var tile = function (icon, label, m) {
+      return '<div class="pp-tile"><span>' + icon + "</span>" + label + " <b>" + (m === null || m === undefined ? "—" : m + "m") + "</b></div>";
+    };
+    var charge = p.fast_nearest_m !== null ? tile("⚡", "快充", p.fast_nearest_m) : tile("🔌", "慢充", p.slow_nearest_m);
+    return '<div class="pp">' +
+      '<div class="pp-head"><div><div class="pp-name">' + esc(p.name) + '</div><div class="pp-sub">' + esc(p.district) +
+      (p.kind === "park" ? "・遊具待確認" : "") + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
+      '<div class="pp-pills">' + shade + rain + "</div>" +
+      '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
+      (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">沒有明顯遮陰時段</span>') + "</div>" +
+      '<div class="pp-grid">' + tile("🅿️", "停車", p.parking_nearest_m) + tile("🚻", "廁所", p.toilet_m) + charge + "</div>" +
+      '<div class="pp-btns"><a class="pp-btn primary" href="' + parkHref(p.id) + '">查看詳情</a>' +
+      (p.nav ? '<a class="pp-btn" href="' + esc(p.nav) + '" target="_blank" rel="noopener">導航</a>' : "") +
+      (p.gmaps ? '<a class="pp-btn" href="' + esc(p.gmaps) + '" target="_blank" rel="noopener">評論</a>' : "") +
+      "</div></div>";
   }
 
   function drawMarkers() {
@@ -168,7 +187,7 @@
         fillColor: css("--" + cls),
         fillOpacity: cls === "night" ? 0.5 : 0.95,
       });
-      m.bindPopup(function () { return popupHtml(f); });
+      m.bindPopup(function () { return popupHtml(f); }, { className: "park-pop", minWidth: 250, maxWidth: 280 });
       m.addTo(markerLayer);
       markers[p.id] = m;
     });

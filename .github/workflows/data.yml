@@ -28,6 +28,11 @@ jobs:
         run: python -m pipeline.extract_pbf || python -m pipeline.fetch_osm
       - name: Fetch city park registry
         run: python -m pipeline.fetch_city
+      - name: Fetch official EV chargers (TDX; skipped without a key)
+        env:
+          TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
+          TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
+        run: python -m pipeline.fetch_chargers
       - name: Build data
         run: python -m pipeline.build_data
       - name: Commit

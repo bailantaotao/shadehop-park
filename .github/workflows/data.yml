@@ -44,4 +44,9 @@ jobs:
             echo "::notice::Branch changed during the refresh; skipping this commit (the newer push refreshes data itself)."
             exit 0
           fi
-          git push origin "HEAD:${{ github.ref_name }}"
+          # GitHub occasionally applies a push but reports "cannot lock ref"; accept it when the
+          # branch now points at our commit.
+          git push origin "HEAD:${{ github.ref_name }}" || {
+            git fetch origin "${{ github.ref_name }}"
+            test "$(git rev-parse FETCH_HEAD)" = "$(git rev-parse HEAD)"
+          }

@@ -47,6 +47,8 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .banner:empty { display: none; }
 
 #map { height: 58vh; min-height: 340px; border-radius: 12px; border: 1px solid var(--line); margin: 12px 0; }
+/* The vector map's own paper colour while it loads, so it fades in instead of popping out of grey. */
+#map.leaflet-container { background: #f8f4f0; }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
 .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
 .dot.a { background: transparent; border: 3px solid var(--a); } .dot.hi { background: var(--hi); } .dot.mid { background: var(--mid); } .dot.lo { background: var(--lo); } .dot.night { background: var(--night); }

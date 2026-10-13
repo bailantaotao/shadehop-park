@@ -265,6 +265,8 @@ def build(out: Path = OUT) -> None:
     # GeoJSON / llms.txt with explicit types.
     (out / "_headers").write_text(
         "/api/*\n  Access-Control-Allow-Origin: *\n\n"
+        # Vendored libraries live in versioned folders, so browsers can keep them for good.
+        "/static/vendor/*\n  Cache-Control: public, max-age=31536000, immutable\n\n"
         "/openapi.json\n  Access-Control-Allow-Origin: *\n\n"
         "/api/*.geojson\n  Content-Type: application/geo+json; charset=utf-8\n\n"
         "/llms.txt\n  Content-Type: text/plain; charset=utf-8\n\n"

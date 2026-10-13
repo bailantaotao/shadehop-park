@@ -51,14 +51,16 @@
   // ------------------------------------------------------------ base map
   // OSM vector map (OpenFreeMap "Liberty") drawn by MapLibre inside Leaflet, simplified for this
   // map: no shop/bank/restaurant icons, no 3D buildings, Chinese-only labels. MapLibre needs
-  // WebGL; without it (or if anything fails to load) we fall back to OSM image tiles.
+  // WebGL; without it (or if anything fails to load) we fall back to OSM image tiles. Those come from
+  // the volunteer-run tile.openstreetmap.org, whose usage policy rules out busy sites relying on them,
+  // so phones that can draw the vector map never request them.
   var VECTOR_STYLE = "https://tiles.openfreemap.org/styles/liberty";
   var MAPLIBRE = "static/vendor/maplibre-gl-5.24.0/", BRIDGE = "static/vendor/maplibre-gl-leaflet-0.1.4/leaflet-maplibre-gl.js";
   var DROP_LAYERS = /^(poi_r\d+|building-3d|natural_earth)$/;  // keep poi_transit (MRT/rail stations)
   var OSM_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-  // The image map shows immediately; the vector map replaces it once it has drawn.
-  var rasterLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: OSM_ATTR }).addTo(map);
+  var rasterLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: OSM_ATTR });
+  function rasterBase() { if (!map.hasLayer(rasterLayer)) rasterLayer.addTo(map); }
   function baseNote(on) {
     var el = map.getContainer().querySelector(".map-loading");
     if (on && !el) { el = L.DomUtil.create("div", "map-loading", map.getContainer()); el.textContent = "地圖載入中…"; }
@@ -104,24 +106,27 @@
       fetch(VECTOR_STYLE).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }),
       loadScript(MAPLIBRE + "maplibre-gl.js").then(function () { return loadScript(BRIDGE); }),
     ]).then(function (res) {
+      // With preloading the files can arrive before the map has its first view; the MapLibre map is
+      // only created once Leaflet has one.
+      return new Promise(function (ok) { map.whenReady(function () { ok(res); }); });
+    }).then(function (res) {
       var gl = L.maplibreGL({
         style: simplifyStyle(res[0]),
         attribution: '<a href="https://openfreemap.org" target="_blank">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank">OpenMapTiles</a> ' + OSM_ATTR,
       }).addTo(map);
       var glMap = gl.getMaplibreMap();
-      var swapped = false;
-      function swap() {
-        if (swapped) return;
-        swapped = true;
-        map.removeLayer(rasterLayer);
-        baseNote(false);
-      }
+      var drawn = false;
       // "idle" = style, tiles and labels for the current view are drawn.
-      glMap.once("idle", swap);
-      setTimeout(function () { if (!swapped) baseNote(false); }, 15000);  // slow network: keep image map, drop the note
-    }).catch(function () { baseNote(false); });  // keep the image map
+      glMap.once("idle", function () {
+        drawn = true;
+        baseNote(false);
+        if (map.hasLayer(rasterLayer)) map.removeLayer(rasterLayer);
+      });
+      // Still blank after 15 s (very slow network or tile server down): show the image map meanwhile.
+      setTimeout(function () { if (!drawn) { rasterBase(); baseNote(false); } }, 15000);
+    }).catch(function () { rasterBase(); baseNote(false); });
   }
-  if (hasWebGL()) { baseNote(true); vectorBase(); }
+  if (hasWebGL()) { baseNote(true); vectorBase(); } else rasterBase();
   var shadowLayer = L.layerGroup().addTo(map);
   var markerLayer = L.layerGroup().addTo(map);
   var markers = {};

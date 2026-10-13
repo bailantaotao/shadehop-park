@@ -274,6 +274,7 @@
     loadRegionsInView();
     loadCasters();
     saveView();
+    countChargers();
     render();
     weatherIfMoved();
   });
@@ -341,7 +342,7 @@
   }
 
   // ------------------------------------------------------------- chargers
-  var chargerLayer = L.layerGroup().addTo(map), chargers = [];
+  var chargerLayer = L.layerGroup().addTo(map), chargers = [], chargersLoaded = false;
   var CHG = { fast: { icon: "⚡", cls: "fast" }, both: { icon: "⚡", cls: "both" }, slow: { icon: "🔌", cls: "slow" }, unknown: { icon: "?", cls: "unknown" } };
 
   function chargerShown(p) {
@@ -361,7 +362,23 @@
       '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>';
   }
 
+  // Show how many stations of each kind are in view, so a toggle never looks dead
+  // when the area simply has none.
+  function countChargers() {
+    var b = map.getBounds(), n = { fast: 0, slow: 0, unknown: 0 };
+    chargers.forEach(function (f) {
+      var p = f.properties, c = f.geometry.coordinates;
+      if (!b.contains([c[1], c[0]])) return;
+      if (p.speed === "both") { n.fast++; n.slow++; } else if (n[p.speed] !== undefined) n[p.speed]++;
+    });
+    document.querySelectorAll("[data-layer]").forEach(function (btn) {
+      var out = btn.querySelector(".n");
+      if (out) out.textContent = chargersLoaded ? "（畫面中 " + n[btn.dataset.layer] + "）" : "（載入中）";
+    });
+  }
+
   function drawChargers() {
+    countChargers();
     chargerLayer.clearLayers();
     chargers.forEach(function (f) {
       var p = f.properties, k = CHG[p.speed] || CHG.unknown;
@@ -390,6 +407,8 @@
     weather();
   });
   fetch("api/chargers.geojson").then(function (r) { return r.json(); }).then(function (gj) {
-    chargers = gj.features; drawChargers();
-  }).catch(function () {});
+    chargers = gj.features; chargersLoaded = true; drawChargers();
+  }).catch(function () {
+    document.querySelectorAll("[data-layer] .n").forEach(function (o) { o.textContent = "（暫時無法載入）"; });
+  });
 })();

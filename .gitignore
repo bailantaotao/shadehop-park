@@ -4,3 +4,5 @@ __pycache__/
 public/
 node_modules/
 .venv/
+# Raw OSM downloads are large (Taipei ~10 MB+) and refetched by CI on every refresh.
+data/raw/*.osm.json.gz

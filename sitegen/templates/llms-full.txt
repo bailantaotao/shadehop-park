@@ -1,4 +1,4 @@
-# ShadeHop 林口遮陽公園地圖 — 全部遊戲場
+# {{ SITE_NAME }}（{{ meta.coverage }}）— 全部遊戲場
 
 資料版本：{{ meta.generated_from_osm_base }}（OpenStreetMap）。遮陰為模型推估；距離為直線距離。說明見 {{ site_url }}/llms.txt
 {% for p in parks %}
@@ -6,6 +6,7 @@
 
 - 網址: {{ site_url }}/parks/{{ p.id }}/
 - 資料: {{ site_url }}/api/parks/{{ p.id }}.json
+- 地區: {{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}
 - 座標: {{ p.location.lat }}, {{ p.location.lng }}
 - 分級: {{ p.level }}（{{ p.level_label }}）
 - 下雨可玩: {{ RAIN_LABEL[p.rain_cover.value] }}（遮蔽比例 {{ (p.rain_cover.covered_ratio * 100) | round | int }}%，{{ METHOD_LABEL[p.rain_cover.method] }}，信心{{ CONF_LABEL[p.rain_cover.confidence] }}）

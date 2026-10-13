@@ -68,6 +68,7 @@ def _brief(p: dict, month: int, slot: int | None, origin: tuple[float, float] | 
     out = {
         "id": p["id"],
         "name": p["name"],
+        "region": p["region"],
         "url": f"{SITE_URL}/parks/{p['id']}/",
         "location": p["location"],
         "level": p["level"],
@@ -87,6 +88,7 @@ def _brief(p: dict, month: int, slot: int | None, origin: tuple[float, float] | 
 
 # ------------------------------------------------------------------- tools
 def search_parks(
+    region: str | None = None,
     lat: float | None = None,
     lng: float | None = None,
     radius_km: float = 5.0,
@@ -99,10 +101,11 @@ def search_parks(
     need_toilet: bool = False,
     limit: int = 10,
 ) -> dict:
-    """Search playgrounds in 新北市林口區 by shade, rain cover, parking and EV charging.
+    """Search playgrounds in 新北市林口區 and 臺北市 by shade, rain cover, parking and EV charging.
 
     Args:
-        lat, lng: Search origin (WGS84). Omit to search the whole district.
+        region: 'linkou' (新北市林口區) or 'taipei' (臺北市). Omit for all regions.
+        lat, lng: Search origin (WGS84). Omit to search the whole region.
         radius_km: Max straight-line distance from origin.
         when: ISO datetime (Asia/Taipei if no offset). Default: now. Used for shade_at_requested_time.
         need_rain_cover: Only playgrounds under a viaduct/roof (rain-proof, level A).
@@ -117,6 +120,8 @@ def search_parks(
     origin = (lat, lng) if lat is not None and lng is not None else None
     results = []
     for p in _parks():
+        if region and p["region"]["id"] != region:
+            continue
         if origin and _dist_km(lat, lng, p["location"]["lat"], p["location"]["lng"]) > radius_km:
             continue
         if need_rain_cover and p["rain_cover"]["value"] is not True:
@@ -204,7 +209,9 @@ def get_nearby_parking(park_id: str, realtime: bool = True) -> dict:
         return {"error": "not_found", "park_id": park_id}
     out = {"as_of": _as_of(), "park_id": park_id, "parking": p["parking"], "realtime": None}
     if realtime:
-        out["realtime"] = tdx_nearby(p["location"]["lat"], p["location"]["lng"])
+        rid = p["region"]["id"]
+        city = (load()["meta"].get("regions", {}).get(rid, {}).get("region") or {}).get("tdx_city", "NewTaipei")
+        out["realtime"] = tdx_nearby(p["location"]["lat"], p["location"]["lng"], city=city)
     return out
 
 
@@ -230,8 +237,8 @@ def _tdx_token() -> str | None:
     return _token["value"]
 
 
-def tdx_nearby(lat: float, lng: float, radius_m: int = 800) -> dict:
-    """Real-time off-street parking availability from TDX (New Taipei). Never raises."""
+def tdx_nearby(lat: float, lng: float, radius_m: int = 800, city: str = "NewTaipei") -> dict:
+    """Real-time off-street parking availability from TDX for a city (e.g. NewTaipei, Taipei). Never raises."""
     try:
         token = _tdx_token()
         if not token:
@@ -241,10 +248,10 @@ def tdx_nearby(lat: float, lng: float, radius_m: int = 800) -> dict:
         base = "https://tdx.transportdata.tw/api/basic/v1/Parking/OffStreet"
         h = {"Authorization": f"Bearer {token}"}
         q = {"$spatialFilter": f"nearby({lat},{lng},{radius_m})", "$format": "JSON"}
-        lots = requests.get(f"{base}/CarPark/City/NewTaipei", params=q, headers=h, timeout=20).json()
+        lots = requests.get(f"{base}/CarPark/City/{city}", params=q, headers=h, timeout=20).json()
         lots = lots.get("CarParks", lots) if isinstance(lots, dict) else lots
         ids = {l["CarParkID"]: l for l in lots}
-        avail = requests.get(f"{base}/ParkingAvailability/City/NewTaipei", params={"$format": "JSON"}, headers=h, timeout=30).json()
+        avail = requests.get(f"{base}/ParkingAvailability/City/{city}", params={"$format": "JSON"}, headers=h, timeout=30).json()
         update_time = avail.get("UpdateTime") if isinstance(avail, dict) else None
         rows = avail.get("ParkingAvailabilities", []) if isinstance(avail, dict) else avail
         out = []
@@ -271,9 +278,10 @@ def build_server():
 
     server = MCPServer(
         name="shadehop-park",
-        title="ShadeHop 林口遮陽公園",
+        title="ShadeHop 遮陽公園（林口・台北）",
         instructions=(
-            "Find shaded or rain-proof children's playgrounds in 新北市林口區 (Linkou, New Taipei), with nearby parking "
+            "Find shaded or rain-proof children's playgrounds in 新北市林口區 (Linkou, New Taipei; region='linkou') and "
+            "臺北市 (Taipei City; region='taipei'), with nearby parking "
             "and EV chargers (fast DC / slow AC). Always cite `as_of` and the park `url`. Shade values are model "
             "estimates; say so. If a field is null/unknown, say it is not recorded rather than guessing."
         ),

@@ -1,4 +1,4 @@
-# ShadeHop Park 遮陽公園地圖（林口區）
+# ShadeHop Park 遮陽公園地圖（新北市林口區、臺北市）
 
 幫帶小孩的爸媽找到「**現在去不會曬、下雨也能玩**」的遊戲場，並附上附近停車場與電動車充電站（**快充 / 慢充**）。
 
@@ -13,10 +13,15 @@
 
 ## 架構
 
+地區設定在 `pipeline/config.py` 的 `REGIONS`（目前 `linkou`、`taipei`）。
+
 ```
-pipeline/fetch_osm.py   Overpass API → data/raw/linkou.osm.json.gz
-pipeline/fetch_city.py  新北市公園名冊（開放資料，無座標）→ data/raw/linkou.city_parks.json，依名稱比對補官方名稱/地址
-pipeline/build_data.py  遮蔽判定、陰影時刻表、停車/充電配對 → data/parks/*.json, parks.json, parks.geojson, parks.csv, casters.geojson
+pipeline/fetch_osm.py   Overpass API（大範圍分塊抓）→ data/raw/<region>.osm.json.gz（不進 git，CI 每次重抓）
+pipeline/fetch_city.py  官方名冊 → data/raw/<region>.city_parks.json
+                          林口：新北市公園名冊（無座標，依名稱比對）
+                          臺北：臺北市兒童遊戲場名冊（含座標與遊具數量，依位置比對；OSM 沒有的也列入）
+pipeline/build_data.py  遮蔽判定、陰影時刻表、停車/充電配對 → data/parks/*.json, parks.json, parks.geojson, parks.csv,
+                          regions/<region>.geojson（地圖用，手機只載入正在看的地區）、casters/<x>_<y>.geojson（約 1 km 分塊的陰影物件）
 sitegen/build_site.py   靜態網站 → public/（地圖、每座公園一頁 + JSON-LD、llms.txt、sitemap、OpenAPI）
 mcp_server/server.py    MCP Server，讓 AI Agent 直接查詢
 ```
@@ -37,9 +42,9 @@ mcp_server/server.py    MCP Server，讓 AI Agent 直接查詢
 
 ```bash
 pip install -r requirements.txt
-python -m pipeline.fetch_osm      # 需要能連 Overpass API
-python -m pipeline.fetch_city     # 新北市公園名冊；抓不到時沿用舊檔
-python -m pipeline.build_data
+python -m pipeline.fetch_osm      # 全部地區；或 python -m pipeline.fetch_osm taipei。需要能連 Overpass API
+python -m pipeline.fetch_city     # 官方名冊；抓不到時沿用舊檔
+python -m pipeline.build_data     # 全部地區（需要每個地區的 raw 檔）
 python -m sitegen.build_site && python -m http.server -d public 8000
 python -m pytest -q
 ```
@@ -59,6 +64,6 @@ MCP Server（Claude Desktop / Claude Code 設定）：
 
 ## 資料正確性與限制
 
-- 來源：OpenStreetMap（ODbL）。遮陰為模型推估；建物無高度時以 9m 估計，每頁都會揭露有高度資料的比例。
+- 來源：OpenStreetMap（ODbL）；新北市、臺北市政府開放資料（政府資料開放授權條款第1版）。遮陰為模型推估；建物無高度時依同地區同類型建物保守估計（樣本不足時 9m），每頁都會揭露有高度資料的比例。
 - 未計入地形與雲量；距離是直線距離。
 - **資料有誤請直接修正 OSM**（每頁都有編輯連結），例如補 `covered=yes`、`building:levels`、充電站 `socket:*`，下次更新自動反映。

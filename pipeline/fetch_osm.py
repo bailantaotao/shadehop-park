@@ -1,6 +1,10 @@
-"""Download raw OpenStreetMap data for the region via the Overpass API.
+"""Download raw OpenStreetMap data for each region via the Overpass API.
 
-    python -m pipeline.fetch_osm            # writes data/raw/<region>.osm.json.gz
+    python -m pipeline.fetch_osm            # all regions -> data/raw/<region>.osm.json.gz
+    python -m pipeline.fetch_osm taipei     # one region
+
+Large regions are fetched in tiles (config `fetch_tiles`) so no single
+Overpass request is big enough to time out.
 """
 
 from __future__ import annotations
@@ -43,12 +47,26 @@ def overpass(query: str) -> dict:
     raise RuntimeError(f"all Overpass endpoints failed: {last}")
 
 
-def boundary_query() -> str:
-    r = config.REGION
+def boundary_query(region: dict) -> str:
     return f"""[out:json][timeout:120];
-area["name"="{r['osm_city_name']}"]["boundary"="administrative"]->.city;
-rel(area.city)["boundary"="administrative"]["name"="{r['osm_district_name']}"];
+{region['osm_boundary']};
 out geom;"""
+
+
+def districts_query(region: dict) -> str:
+    return f"""[out:json][timeout:120];
+{region['osm_boundary']}->.b;
+.b map_to_area->.r;
+{region['osm_districts']};
+out geom;"""
+
+
+def tiles(bbox: tuple[float, float, float, float], n: int):
+    s, w, north, e = bbox
+    dlat, dlng = (north - s) / n, (e - w) / n
+    for i in range(n):
+        for j in range(n):
+            yield s + i * dlat, w + j * dlng, s + (i + 1) * dlat, w + (j + 1) * dlng
 
 
 def features_query(s: float, w: float, n: float, e: float) -> str:
@@ -75,35 +93,54 @@ def features_query(s: float, w: float, n: float, e: float) -> str:
 out geom qt;"""
 
 
-def main() -> None:
+def fetch_region(region: dict) -> None:
     started = datetime.now(timezone.utc)
-    b = overpass(boundary_query())
+    b = overpass(boundary_query(region))
     rels = [el for el in b["elements"] if el["type"] == "relation"]
     if len(rels) != 1:
-        raise SystemExit(f"expected exactly one boundary relation, got {len(rels)}")
+        raise SystemExit(f"{region['id']}: expected exactly one boundary relation, got {len(rels)}")
     rel = rels[0]
+    districts = []
+    if region.get("osm_districts"):
+        districts = [el for el in overpass(districts_query(region))["elements"] if el["type"] == "relation"]
     bounds = rel["bounds"]
     lat0 = (bounds["minlat"] + bounds["maxlat"]) / 2
     dlat = config.BBOX_MARGIN_M / 111_320
     dlng = config.BBOX_MARGIN_M / (111_320 * math.cos(math.radians(lat0)))
     bbox = (bounds["minlat"] - dlat, bounds["minlon"] - dlng, bounds["maxlat"] + dlat, bounds["maxlon"] + dlng)
-    f = overpass(features_query(*bbox))
+    elements, seen, osm_base = [], set(), None
+    n = region.get("fetch_tiles", 1)
+    for k, tile in enumerate(tiles(bbox, n), 1):
+        f = overpass(features_query(*tile))
+        osm_base = max(filter(None, [osm_base, f.get("osm3s", {}).get("timestamp_osm_base")]), default=None)
+        for el in f["elements"]:
+            key = (el["type"], el["id"])
+            if key not in seen:
+                seen.add(key)
+                elements.append(el)
+        print(f"{region['id']}: tile {k}/{n * n}, {len(elements)} elements so far", file=sys.stderr)
     out = {
-        "region": config.REGION["id"],
+        "region": region["id"],
         "fetched_at": started.isoformat(timespec="seconds"),
-        "osm_base": f.get("osm3s", {}).get("timestamp_osm_base"),
+        "osm_base": osm_base,
         "license": "ODbL 1.0, © OpenStreetMap contributors",
         "boundary": rel,
+        "districts": districts,
         "bbox": bbox,
-        "elements": f["elements"],
+        "elements": sorted(elements, key=lambda el: (el["type"], el["id"])),
     }
     RAW_DIR.mkdir(parents=True, exist_ok=True)
-    path = RAW_DIR / f"{config.REGION['id']}.osm.json.gz"
+    path = RAW_DIR / f"{region['id']}.osm.json.gz"
     # mtime=0 keeps the gzip byte-identical when the data has not changed.
     with gzip.GzipFile(path, "wb", mtime=0) as fh:
         fh.write(json.dumps(out, ensure_ascii=False, sort_keys=True).encode())
     print(f"wrote {path} ({len(out['elements'])} elements, osm_base={out['osm_base']})")
 
 
+def main(argv: list[str]) -> None:
+    for rid in argv or list(config.REGIONS):
+        fetch_region(config.REGIONS[rid])
+
+
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

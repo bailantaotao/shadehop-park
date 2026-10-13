@@ -4,21 +4,48 @@ Every assumption that affects a published number lives here so it can be
 cited on the site and in llms.txt.
 """
 
-REGION = {
-    "id": "linkou",
-    "id_prefix": "lk",
-    "name": "林口區",
-    "city": "新北市",
-    "city_en": "New Taipei City",
-    "name_en": "Linkou District",
-    # Used only to locate the boundary relation; parks are filtered by the
-    # real boundary polygon returned from OSM.
-    "osm_city_name": "新北市",
-    "osm_district_name": "林口區",
-    "tdx_city": "NewTaipei",
+REGIONS = {
+    "linkou": {
+        "id": "linkou",
+        "id_prefix": "lk",
+        "name": "林口區",
+        "city": "新北市",
+        "city_en": "New Taipei City",
+        "name_en": "Linkou District",
+        "label": "林口",
+        # Overpass selector for the region's boundary relation; parks are
+        # filtered by the real boundary polygon returned from OSM.
+        "osm_boundary": 'area["name"="新北市"]["boundary"="administrative"]->.p;\nrel(area.p)["boundary"="administrative"]["name"="林口區"]',
+        # Sub-districts used to label each park (None: the region is one district).
+        "osm_districts": None,
+        "tdx_city": "NewTaipei",
+        # Official registry: names/addresses only, matched by park name.
+        "registry": "ntpc_parks",
+        # OSM rarely maps play equipment here, so list parks as unconfirmed candidates.
+        "park_candidates": True,
+        "fetch_tiles": 1,
+    },
+    "taipei": {
+        "id": "taipei",
+        "id_prefix": "tp",
+        "name": "臺北市",
+        "city": "臺北市",
+        "city_en": "Taipei City",
+        "name_en": "Taipei City",
+        "label": "台北市",
+        "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="臺北市"]',
+        "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="7"]',
+        "tdx_city": "Taipei",
+        # Official registry of every children's playground, with coordinates.
+        "registry": "taipei_playgrounds",
+        # The registry is complete, so parks without a playground are not listed.
+        "park_candidates": False,
+        "fetch_tiles": 3,
+    },
 }
+DEFAULT_REGION = "linkou"
 
-# Extra margin around the district bbox for things that can serve a park
+# Extra margin around the region bbox for things that can serve a park
 # near the edge (parking, chargers, buildings that cast shadows).
 BBOX_MARGIN_M = 1500
 
@@ -29,9 +56,15 @@ CHARGER_RADIUS_M = 2000
 CHARGER_MAX = 8
 AMENITY_RADIUS_M = 200
 SHADOW_SEARCH_RADIUS_M = 400
+# Shadow casters are published in tiles of this size (degrees, ~1 km) for the map.
+CASTER_TILE_DEG = 0.01
+# Max worker processes for the per-park shade computation.
+BUILD_WORKERS = 8
 
 # Geometry assumptions.
 PLAYGROUND_NODE_RADIUS_M = 12  # playgrounds mapped as a single point
+# ...minus building footprints, unless that leaves less than this (then keep the circle).
+MIN_ESTIMATED_ZONE_M2 = 60
 LEVEL_HEIGHT_M = 3.0  # per building:levels
 DEFAULT_BUILDING_HEIGHT_M = 9.0  # building with no height/levels tag
 # Untagged buildings of a type with >= this many tagged examples in the data
@@ -72,6 +105,10 @@ TZ_OFFSET_H = 8  # Asia/Taipei, no DST
 # Classification thresholds.
 COVERED_FULL_RATIO = 0.5  # >= this share under a roof/viaduct -> level A
 COVERED_PARTIAL_RATIO = 0.15
+# An official playground point this close to (or inside) an OSM playground is the same place.
+OFFICIAL_MATCH_M = 40
+# Leftover official points with the same name this close together are one play area.
+OFFICIAL_MERGE_M = 60
 NESTED_DUPLICATE_RATIO = 0.8  # an area this much inside a larger one of the same kind is a duplicate
 # A park with at least this much area under a viaduct (not pavilions) has a rain-proof play spot even if
 # the share of the whole park is small.

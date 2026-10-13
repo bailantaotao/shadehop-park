@@ -27,8 +27,10 @@ METHOD_LABEL = {
 }
 SHADE_TYPE_LABEL = {
     "under_viaduct": "高架道路/軌道下方", "roof": "屋頂/遮雨棚", "pavilion": "涼亭",
-    "shade_sail": "遮陽帆", "tree_canopy": "樹蔭", "building_shadow": "周邊建物陰影",
+    "shade_sail": "遮陽帆", "indoor": "室內場所", "tree_canopy": "樹蔭", "building_shadow": "周邊建物陰影",
 }
+OFFICIAL_METHOD_LABEL = {"name_match": "依名稱比對", "location_match": "依位置比對", "official_record": "OSM 尚未標示"}
+SITE_NAME = "遮陽公園地圖"
 SLOT_LABELS = [f"{6 + i // 2:02d}:{'30' if i % 2 else '00'}" for i in range(24)]
 
 
@@ -67,7 +69,7 @@ def park_jsonld(p: dict, meta: dict) -> dict:
         "address": {"@type": "PostalAddress", "addressRegion": p["region"]["city"], "addressLocality": p["region"]["district"], "addressCountry": "TW",
                     **({"streetAddress": addr} if (addr := p["address"] or (p.get("official") or {}).get("address")) else {})},
         "amenityFeature": feats,
-        "sameAs": p["osm"]["url"],
+        "sameAs": (p["osm"] or {}).get("url") or p["official"]["source"],
         "dateModified": p["updated_at"],
         "isPartOf": {"@type": "Dataset", "name": "ShadeHop 遮陽公園資料集", "url": f"{SITE_URL}/about/"},
     }
@@ -111,7 +113,7 @@ def openapi(meta: dict) -> dict:
         "info": {
             "title": "ShadeHop Park API",
             "version": "1.0.0",
-            "description": "林口區遮陽/避雨公園、附近停車場與電動車充電站（快充/慢充）。靜態 JSON，每筆事實都附 method/verified_at/confidence/source。",
+            "description": f"{meta['coverage']}遮陽/避雨公園、附近停車場與電動車充電站（快充/慢充）。靜態 JSON，每筆事實都附 method/verified_at/confidence/source。",
             "license": {"name": "ODbL-1.0", "url": "https://opendatacommons.org/licenses/odbl/1-0/"},
         },
         "servers": [{"url": SITE_URL}],
@@ -125,6 +127,12 @@ def openapi(meta: dict) -> dict:
                 "parameters": [{"name": "id", "in": "path", "required": True, "schema": {"type": "string", "example": "lk-w123456"}}],
                 "responses": {"200": {"description": "Park", "content": {"application/json": {"schema": {"$ref": f"{SITE_URL}/schema/park.schema.json"}}}},
                               "404": {"description": "Not found"}}}},
+            "/api/regions/index.json": {"get": {"operationId": "listRegions", "summary": "地區清單（id、名稱、範圍、公園數）",
+                                                "responses": {"200": {"description": "regions[]", "content": {"application/json": {}}}}}},
+            "/api/regions/{region}.geojson": {"get": {
+                "operationId": "listRegionParksGeoJSON", "summary": "單一地區的公園（GeoJSON 摘要）",
+                "parameters": [{"name": "region", "in": "path", "required": True, "schema": {"type": "string", "enum": meta["region_ids"]}}],
+                "responses": {"200": {"description": "FeatureCollection", "content": {"application/geo+json": {}}}}}},
             "/api/meta.json": {"get": {"operationId": "getMeta", "summary": "資料集版本、計數與模型假設",
                                        "responses": {"200": {"description": "meta", "content": {"application/json": {}}}}}},
         },
@@ -140,8 +148,12 @@ def build(out: Path = OUT) -> None:
     env = Environment(loader=FileSystemLoader(ROOT / "sitegen" / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["shade_class"] = shade_class
     env.filters["tojson_ld"] = lambda d: json.dumps(d, ensure_ascii=False, indent=1).replace("</", "<\\/")
+    regions = [meta["regions"][rid]["region"] for rid in meta["region_ids"]]
+    publishers = [r["city_registry"]["publisher"] for r in meta["regions"].values() if r.get("city_registry")]
     ctx = {
-        "site_url": SITE_URL, "meta": meta, "today": date.today().isoformat(),
+        "site_url": SITE_URL, "meta": meta, "today": date.today().isoformat(), "regions": regions,
+        "SITE_NAME": SITE_NAME, "COVERAGE_SHORT": "・".join(r["label"] for r in regions),
+        "REGISTRY_PUBLISHERS": "、".join(dict.fromkeys(publishers)) or "政府", "OFFICIAL_METHOD_LABEL": OFFICIAL_METHOD_LABEL,
         "SPEED_LABEL": SPEED_LABEL, "RAIN_LABEL": RAIN_LABEL, "CONF_LABEL": CONF_LABEL,
         "METHOD_LABEL": METHOD_LABEL, "SHADE_TYPE_LABEL": SHADE_TYPE_LABEL, "SLOT_LABELS": SLOT_LABELS,
     }
@@ -154,22 +166,23 @@ def build(out: Path = OUT) -> None:
     shutil.copy(DATA / "parks.geojson", out / "api" / "parks.geojson")
     shutil.copy(DATA / "meta.json", out / "api" / "meta.json")
     shutil.copy(DATA / "parks.csv", out / "api" / "parks.csv")
-    if (DATA / "casters.geojson").exists():
-        shutil.copy(DATA / "casters.geojson", out / "api" / "casters.geojson")
+    shutil.copytree(DATA / "regions", out / "api" / "regions")
+    if (DATA / "casters").exists():
+        shutil.copytree(DATA / "casters", out / "api" / "casters")
     for p in parks:
         shutil.copy(DATA / "parks" / f"{p['id']}.json", out / "api" / "parks" / f"{p['id']}.json")
 
     dataset_ld = {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "ShadeHop 遮陽公園資料集（林口區）",
-        "description": "新北市林口區兒童遊戲場的遮陽/避雨分級、逐月逐半小時遮陰推估、附近停車場與電動車充電站（快充/慢充）。",
+        "name": f"ShadeHop 遮陽公園資料集（{meta['coverage']}）",
+        "description": f"{meta['coverage']}兒童遊戲場的遮陽/避雨分級、逐月逐半小時遮陰推估、附近停車場與電動車充電站（快充/慢充）。",
         "url": f"{SITE_URL}/about/",
         "license": "https://opendatacommons.org/licenses/odbl/1-0/",
         "isAccessibleForFree": True,
         "dateModified": (meta.get("generated_from_osm_base") or "")[:10],
-        "spatialCoverage": {"@type": "Place", "name": "新北市林口區"},
-        "creditText": "© OpenStreetMap contributors",
+        "spatialCoverage": [{"@type": "Place", "name": r["city"] + (r["name"] if r["name"] != r["city"] else "")} for r in regions],
+        "creditText": "© OpenStreetMap contributors; " + "、".join(dict.fromkeys(publishers)) + "（政府資料開放授權條款）",
         "distribution": [
             {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": f"{SITE_URL}/api/parks.geojson"},
             {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE_URL}/api/parks.json"},

@@ -67,7 +67,7 @@ jobs:
         run: |
           sleep 15
           fail=0
-          for path in / /llms.txt /sitemap.xml /robots.txt /openapi.json /api/parks.geojson /about/; do
+          for path in / /llms.txt /sitemap.xml /robots.txt /openapi.json /api/parks.geojson /api/regions/index.json /api/casters/index.json /about/; do
             code=$(curl -s -o /tmp/body -w '%{http_code}' "$SITE_URL$path")
             echo "$code $SITE_URL$path"
             [ "$code" = 200 ] || fail=1

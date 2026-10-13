@@ -4,17 +4,31 @@ import pytest
 
 import mcp_server.server as srv
 import sitegen.build_site as bs
-from pipeline.build_data import Builder, write_outputs
+from pipeline import config
+from pipeline.build_data import Builder, combine_meta, write_outputs
 
-from .fixture import raw
+from .fixture import P, raw
+
+
+def taipei_registry():
+    lng, lat = P.lnglat(1500, 900)
+    return {"kind": "playgrounds", "fetched_at": "2026-10-13T00:00:00+00:00", "source": "https://data.gov.tw/dataset/136476",
+            "publisher": "臺北市政府工務局公園路燈工程管理處", "title": "臺北市公園設施資料（兒童遊戲場）", "license": "政府資料開放授權條款第1版",
+            "entries": [{"ref": "1500900", "name": "官方小公園", "district": "測試區", "address": None, "management": "測試所",
+                         "phone": None, "lat": lat, "lng": lng, "equipment": {"鞦韆": 2}}]}
 
 
 @pytest.fixture(scope="module")
 def dataset(tmp_path_factory):
+    """Two regions built from the same synthetic map: linkou (lk-*) and taipei (tp-*)."""
     d = tmp_path_factory.mktemp("data")
-    b = Builder(raw())
-    parks = b.build()
-    write_outputs(parks, b.meta(parks), d, casters=b.casters_geojson(parks))
+    parks, metas, casters = [], [], []
+    for b in (Builder(raw()), Builder(raw(), taipei_registry(), config.REGIONS["taipei"])):
+        mine = b.build()
+        parks += mine
+        metas.append(b.meta(mine))
+        casters += b.casters_geojson(mine)["features"]
+    write_outputs(parks, combine_meta(metas), d, casters=casters)
     return d
 
 
@@ -27,6 +41,8 @@ def loaded(dataset, monkeypatch):
 
 def test_search_rain_cover(loaded):
     r = srv.search_parks(need_rain_cover=True)
+    assert sorted(x["id"] for x in r["results"]) == ["lk-w10", "tp-w10"]
+    r = srv.search_parks(region="linkou", need_rain_cover=True)
     assert [x["id"] for x in r["results"]] == ["lk-w10"]
     assert r["as_of"] and r["disclaimer"]
 
@@ -40,7 +56,7 @@ def test_search_min_shade_uses_time(loaded):
 
 def test_search_by_distance_and_chargers(loaded):
     lat, lng = 25.07, 121.36
-    r = srv.search_parks(lat=lat, lng=lng, radius_km=0.2, need_fast_charger=True)
+    r = srv.search_parks(region="linkou", lat=lat, lng=lng, radius_km=0.2, need_fast_charger=True)
     assert [x["id"] for x in r["results"]] == ["lk-w10"]
     assert r["results"][0]["distance_km"] < 0.05
 
@@ -74,6 +90,14 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     assert "GPTBot" in (out / "robots.txt").read_text()
     assert "/parks/lk-w20/" in (out / "sitemap.xml").read_text()
     assert "快充" in (out / "llms-full.txt").read_text()
-    assert (out / "api" / "casters.geojson").exists()
+    tiles = json.loads((out / "api" / "casters" / "index.json").read_text())
+    assert tiles["tiles"] and all((out / "api" / "casters" / f"{k}.geojson").exists() for k in tiles["tiles"])
+    regions = json.loads((out / "api" / "regions" / "index.json").read_text())
+    assert [r["id"] for r in regions] == ["linkou", "taipei"]
+    tp = json.loads((out / "api" / "regions" / "taipei.geojson").read_text())
+    assert tp["features"] and all(f["id"].startswith("tp-") for f in tp["features"])
+    official = (out / "parks" / "tp-o1500900" / "index.html").read_text()
+    assert "官方小公園" in official and "鞦韆 2" in official and "OpenStreetMap 尚未標示" in official
+    assert "臺北市" in (out / "llms.txt").read_text() and "新北市林口區" in (out / "llms.txt").read_text()
     assert "Access-Control-Allow-Origin" in (out / "_headers").read_text()
     assert json.loads((out / "openapi.json").read_text())["openapi"].startswith("3.1")

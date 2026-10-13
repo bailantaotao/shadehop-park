@@ -6,6 +6,7 @@ import math
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 
+import numpy as np
 from shapely import STRtree
 from shapely.affinity import translate
 from shapely.geometry import MultiPoint, MultiPolygon, Polygon
@@ -68,14 +69,23 @@ class ShadeModel:
         return [self.casters[i] for i in self.tree.query(zone.buffer(radius))]
 
     @staticmethod
-    def ratio(zone, casters: list[Caster], alt: float, az: float) -> float:
+    def ratio(zone, casters: list[Caster], alt: float, az: float, prepared: list | None = None) -> float:
+        """Share of `zone` in shadow. `prepared` (from prepare()) skips per-call distance work."""
         if zone.area <= 0:
             return 0.0
+        prepared = prepared if prepared is not None else ShadeModel.prepare(zone, casters)
         k = 1.0 / math.tan(math.radians(alt))
+        ux, uy = -math.sin(math.radians(az)) * k, -math.cos(math.radians(az)) * k
+        zx0, zy0, zx1, zy1 = zone.bounds
         shadows = []
-        for c in casters:
-            # Cheap reject: the shadow cannot reach further than z1 * cot(alt).
-            if c.geom.distance(zone) > c.z1 * k:
+        for c, dist, (x0, y0, x1, y1) in prepared:
+            # Cheap rejects: the shadow cannot reach further than z1 * cot(alt), and it stays
+            # inside the caster's bounding box swept along the sun direction.
+            if dist > c.z1 * k:
+                continue
+            dx0, dy0, dx1, dy1 = ux * c.z0, uy * c.z0, ux * c.z1, uy * c.z1
+            if (x1 + max(dx0, dx1) < zx0 or x0 + min(dx0, dx1) > zx1
+                    or y1 + max(dy0, dy1) < zy0 or y0 + min(dy0, dy1) > zy1):
                 continue
             s = shadow(c, alt, az)
             if s is not None and s.intersects(zone):
@@ -83,6 +93,13 @@ class ShadeModel:
         if not shadows:
             return 0.0
         return min(1.0, unary_union(shadows).area / zone.area)
+
+    @staticmethod
+    def prepare(zone, casters: list[Caster]) -> list:
+        # GEOS can raise a spurious "invalid value" FP flag for a few real-world polygons;
+        # the distances are still correct (checked: no NaN), so silence just this call.
+        with np.errstate(invalid="ignore"):
+            return [(c, c.geom.distance(zone), c.geom.bounds) for c in casters]
 
 
 def slot_times(month: int, year: int = 2026):
@@ -96,6 +113,7 @@ def slot_times(month: int, year: int = 2026):
 def timetable(zone, casters: list[Caster], lat: float, lng: float) -> dict[str, list[float | None]]:
     """{"1": [ratio|None x 24], ..., "12": [...]}; None = sun below MIN_SUN_ALTITUDE_DEG."""
     out = {}
+    prepared = ShadeModel.prepare(zone, casters)
     for month in range(1, 13):
         row = []
         for _, t in slot_times(month):
@@ -103,7 +121,7 @@ def timetable(zone, casters: list[Caster], lat: float, lng: float) -> dict[str, 
             if alt < config.MIN_SUN_ALTITUDE_DEG:
                 row.append(None)
             else:
-                row.append(round(ShadeModel.ratio(zone, casters, alt, az), 2))
+                row.append(round(ShadeModel.ratio(zone, casters, alt, az, prepared), 2))
         out[str(month)] = row
     return out
 

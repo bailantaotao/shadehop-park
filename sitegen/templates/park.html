@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}{{ p.name }}｜{{ p.level_label }}｜林口遮陽公園地圖{% endblock %}
+{% block title %}{{ p.name }}｜{{ p.level_label }}｜{{ p.region.district }}｜{{ SITE_NAME }}{% endblock %}
 {% block description %}{{ description }}{% endblock %}
 {% block canonical %}{{ site_url }}/parks/{{ p.id }}/{% endblock %}
 {% block head %}
@@ -12,11 +12,14 @@
 <div class="badges">
   <span class="badge {{ p.level }}">{{ p.level_label }}</span>
   {% if p.park_name %}<span class="badge">位於 {{ p.park_name }}</span>{% endif %}
-  {% if not p.playground_mapped %}<span class="badge">遊戲設施未在 OSM 標示，待確認</span>{% endif %}
-  {% if p.geometry_estimated %}<span class="badge">範圍為估計（OSM 僅標示一點）</span>{% endif %}
+  <span class="badge">{{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}</span>
+  {% if p.indoor is sameas true %}<span class="badge">室內{% if p.playground.fee == "yes" %}・需付費{% endif %}</span>{% elif p.indoor == "possible" %}<span class="badge">位於建物輪廓內：可能是室內或社區中庭，待確認</span>{% endif %}
+  {% if p.kind == "park" %}<span class="badge">遊戲設施未在 OSM 標示，待確認</span>{% endif %}
+  {% if p.official %}<span class="badge">官方遊戲場/公園名冊有列</span>{% endif %}
+  {% if p.geometry_estimated %}<span class="badge">範圍為估計（只有一個座標點）</span>{% endif %}
 </div>
 <p>{{ description }}</p>
-{% if p.official %}<p class="small">新北市公園名冊：{{ p.official.name }}{% if p.official.address %}・{{ p.official.address }}{% endif %}{% if p.official.management %}・管理：{{ p.official.management }}{% if p.official.phone %} {{ p.official.phone }}{% endif %}{% endif %}（<a href="{{ p.official.source }}">政府開放資料</a>，依名稱比對）</p>{% endif %}
+{% if p.official %}<p class="small">官方名冊：{{ p.official.name }}{% if p.official.address %}・{{ p.official.address }}{% endif %}{% if p.official.management %}・管理：{{ p.official.management }}{% if p.official.phone %} {{ p.official.phone }}{% endif %}{% endif %}{% if p.official.equipment %}<br>遊具：{% for k, v in p.official.equipment | dictsort %}{{ k }} {{ v }}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}（<a href="{{ p.official.source }}">政府開放資料</a>，{{ OFFICIAL_METHOD_LABEL[p.official.method] }}{% if p.official.distance_m is not none %}，相距約 {{ p.official.distance_m }}m{% endif %}）</p>{% endif %}
 
 <section>
 <h2>下雨可以玩嗎？</h2>
@@ -102,7 +105,9 @@
 
 <section>
 <h2>資料來源與更正</h2>
-<p class="prov">OSM 物件：<a href="{{ p.osm.url }}">{{ p.osm.type }}/{{ p.osm.id }}</a>。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
+{% if p.osm %}<p class="prov">OSM 物件：<a href="{{ p.osm.url }}">{{ p.osm.type }}/{{ p.osm.id }}</a>。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
 資料有誤？直接在 <a href="https://www.openstreetmap.org/edit?{{ p.osm.type }}={{ p.osm.id }}">OpenStreetMap 上修正</a>（例如補上 covered=yes、building:levels、充電站 socket:*），下次更新會自動反映。</p>
+{% else %}<p class="prov">這座遊戲場只出現在官方名冊，OpenStreetMap 尚未標示，因此範圍以座標點周圍 {{ meta.assumptions.PLAYGROUND_NODE_RADIUS_M }}m 估計。機器可讀：<a href="{{ root }}api/parks/{{ p.id }}.json">JSON</a>。
+可以到 <a href="https://www.openstreetmap.org/#map=19/{{ p.location.lat }}/{{ p.location.lng }}">OpenStreetMap</a> 把它畫上去（leisure=playground），下次更新會自動改用實際範圍。</p>{% endif %}
 </section>
 {% endblock %}

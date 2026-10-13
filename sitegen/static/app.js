@@ -6,7 +6,9 @@
   var PARK_HREF = window.SHADEHOP_PARK_HREF || "parks/{id}/";
   function parkHref(id) { return PARK_HREF.replace("{id}", encodeURIComponent(id)); }
   var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false };
-  var state = { date: null, slot: 8, user: null, features: [], casters: null, playTimer: null };
+  var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], region: null };
+  // Shadow casters are split into ~1 km tiles; only tiles in view are downloaded.
+  var tiles = { index: null, deg: 0.01, data: {} };
 
   var $ = function (s) { return document.querySelector(s); };
   var css = function (name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); };
@@ -96,9 +98,20 @@
     return lo.concat(up);
   }
 
+  function visibleTiles() {
+    var b = map.getBounds().pad(0.3), d = tiles.deg, keys = [];
+    for (var x = Math.floor(b.getWest() / d); x <= Math.floor(b.getEast() / d); x++) {
+      for (var y = Math.floor(b.getSouth() / d); y <= Math.floor(b.getNorth() / d); y++) {
+        var k = x + "_" + y;
+        if (tiles.index && tiles.index[k]) keys.push(k);
+      }
+    }
+    return keys;
+  }
+
   function drawShadows() {
     shadowLayer.clearLayers();
-    if (!state.casters || map.getZoom() < SHADOW_MIN_ZOOM) return;
+    if (!tiles.index || map.getZoom() < SHADOW_MIN_ZOOM) return;
     var c = map.getCenter();
     var sun = sunPosition(slotDate(), c.lat, c.lng);
     if (sun.altitude <= 0) return;
@@ -107,7 +120,9 @@
     var mPerLng = 111320 * Math.cos(c.lat * Math.PI / 180), mPerLat = 110574;
     var view = map.getBounds().pad(0.3);
     var polys = [];
-    state.casters.features.forEach(function (f) {
+    var features = [];
+    visibleTiles().forEach(function (k) { if (Array.isArray(tiles.data[k])) features = features.concat(tiles.data[k]); });
+    features.forEach(function (f) {
       var ring = f.geometry.coordinates[0];
       var first = ring[0];
       if (!view.contains([first[1], first[0]])) return;
@@ -126,11 +141,25 @@
   }
 
   function loadCasters() {
-    if (state.casters !== null || map.getZoom() < SHADOW_MIN_ZOOM) return drawShadows();
-    state.casters = { features: [] };
-    fetch("api/casters.geojson").then(function (r) { return r.ok ? r.json() : { features: [] }; })
-      .then(function (gj) { state.casters = gj; drawShadows(); })
-      .catch(function () { state.casters = { features: [] }; });
+    if (map.getZoom() < SHADOW_MIN_ZOOM) return drawShadows();
+    if (tiles.index === null) {
+      tiles.index = false;  // loading
+      fetch("api/casters/index.json").then(function (r) { return r.json(); }).then(function (ix) {
+        tiles.deg = ix.tile_deg; tiles.index = {};
+        ix.tiles.forEach(function (k) { tiles.index[k] = true; });
+        loadCasters();
+      }).catch(function () { tiles.index = null; });
+      return;
+    }
+    if (!tiles.index) return;
+    visibleTiles().forEach(function (k) {
+      if (tiles.data[k] !== undefined) return;
+      tiles.data[k] = "loading";
+      fetch("api/casters/" + k + ".geojson").then(function (r) { return r.json(); })
+        .then(function (gj) { tiles.data[k] = gj.features; drawShadows(); })
+        .catch(function () { delete tiles.data[k]; });
+    });
+    drawShadows();
   }
 
   // ------------------------------------------------------------------ list
@@ -145,7 +174,7 @@
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">☔ 下雨可玩</span>', B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
     return '<article class="card"><h3><a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
-      '<div class="badges">' + levelBadge + (p.kind === "park" ? '<span class="badge">遊戲設施待確認</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
+      '<div class="badges">' + levelBadge + (p.kind === "park" ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +
       (best ? '<span>最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>本月沒有明顯遮陰時段</span>") +
@@ -166,11 +195,18 @@
     $("#list").innerHTML = fs.map(card).join("") || '<p class="muted">沒有符合條件的公園，試著取消一些篩選。</p>';
   }
 
+  // Coalesce redraws to one per animation frame, so dragging the time slider stays smooth on slow phones.
+  var pending = false;
   function render() {
     $("#slotOut").textContent = slotLabel(state.slot);
-    drawMarkers();
-    drawShadows();
-    drawList();
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(function () {
+      pending = false;
+      drawMarkers();
+      drawShadows();
+      drawList();
+    });
   }
 
   // -------------------------------------------------------------- controls
@@ -219,15 +255,21 @@
   map.on("moveend zoomend", loadCasters);
 
   // ---------------------------------------------------------------- weather
+  function regionCenter(r) { return [(r.bbox[1] + r.bbox[3]) / 2, (r.bbox[0] + r.bbox[2]) / 2]; }
+
   function weather() {
-    var url = "https://api.open-meteo.com/v1/forecast?latitude=25.08&longitude=121.38&current=precipitation&hourly=precipitation_probability,uv_index&forecast_hours=3&timezone=Asia%2FTaipei";
+    var r = state.region;
+    if (!r) return;
+    var c = regionCenter(r);
+    var url = "https://api.open-meteo.com/v1/forecast?latitude=" + c[0].toFixed(3) + "&longitude=" + c[1].toFixed(3) +
+      "&current=precipitation&hourly=precipitation_probability,uv_index&forecast_hours=3&timezone=Asia%2FTaipei";
     fetch(url).then(function (r) { return r.json(); }).then(function (w) {
       var rainNow = w.current && w.current.precipitation > 0;
       var prob = Math.max.apply(null, (w.hourly && w.hourly.precipitation_probability) || [0]);
       var uv = Math.max.apply(null, (w.hourly && w.hourly.uv_index) || [0]);
       var msg = "";
       if (rainNow || prob >= 60) {
-        msg = "☔ 林口" + (rainNow ? "現在正在下雨" : "未來 3 小時降雨機率 " + prob + "%") + "，已幫你開啟「下雨可玩」。";
+        msg = "☔ " + r.label + (rainNow ? "現在正在下雨" : "未來 3 小時降雨機率 " + prob + "%") + "，已幫你開啟「下雨可玩」。";
         filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
       } else if (uv >= 6) {
         msg = "☀️ 未來 3 小時紫外線指數最高 " + uv.toFixed(0) + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
@@ -237,16 +279,36 @@
     }).catch(function () {});
   }
 
+  // --------------------------------------------------------------- regions
+  function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function storeSet(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
+
+  function selectRegion(id, fit) {
+    var r = state.regions.find(function (x) { return x.id === id; }) || state.regions[0];
+    if (!r) return;
+    state.region = r;
+    document.querySelectorAll("[data-region]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.region === r.id)); });
+    if (location.hash !== "#" + r.id) history.replaceState(null, "", "#" + r.id);
+    storeSet("shadehop.region", r.id);
+    fetch("api/regions/" + r.id + ".geojson").then(function (res) { return res.json(); }).then(function (gj) {
+      if (state.region !== r) return;  // switched again meanwhile
+      state.features = gj.features;
+      if (fit !== false) map.fitBounds([[r.bbox[1], r.bbox[0]], [r.bbox[3], r.bbox[2]]]);
+      render();
+      weather();
+    });
+  }
+
+  document.querySelectorAll("[data-region]").forEach(function (b) {
+    b.addEventListener("click", function () { selectRegion(b.dataset.region); });
+  });
+
   // ------------------------------------------------------------------ init
   setNow();
-  fetch("api/parks.geojson").then(function (r) { return r.json(); }).then(function (gj) {
-    state.features = gj.features;
-    if (gj.features.length) {
-      map.fitBounds(L.geoJSON(gj).getBounds().pad(0.05));
-    } else {
-      map.setView([25.08, 121.38], 13);
-    }
-    render();
-    weather();
+  fetch("api/regions/index.json").then(function (r) { return r.json(); }).then(function (regions) {
+    state.regions = regions;
+    var want = location.hash.slice(1) || storeGet("shadehop.region");
+    if (!regions.some(function (x) { return x.id === want; })) want = regions[0] && regions[0].id;
+    selectRegion(want);
   });
 })();

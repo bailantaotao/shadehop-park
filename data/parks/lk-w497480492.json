@@ -49,6 +49,7 @@
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "lk-w497480492",
+ "indoor": false,
  "kind": "park",
  "level": "none",
  "level_label": "大多曝曬",
@@ -147,6 +148,7 @@
  ],
  "playground": {
   "equipment": [],
+  "fee": null,
   "max_age": null,
   "min_age": null,
   "opening_hours": null,
@@ -166,7 +168,8 @@
  },
  "region": {
   "city": "新北市",
-  "district": "林口區"
+  "district": "林口區",
+  "id": "linkou"
  },
  "shade_timetable": {
   "building_height_known_share": 0.0,

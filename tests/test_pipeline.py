@@ -4,11 +4,12 @@ import pytest
 from shapely.geometry import Polygon
 
 from pipeline.build_data import Builder, building_height, city_aliases, park_key, summary
+from pipeline import config
 from pipeline.chargers import classify, is_car_charger
 from pipeline.shade import Caster, ShadeModel, best_windows, shadow
 from pipeline.sun import sun_position
 
-from .fixture import raw
+from .fixture import P, raw
 
 TPE = timezone(timedelta(hours=8))
 
@@ -207,21 +208,116 @@ def test_city_aliases_include_bracketed_names():
     assert city_aliases("林口社區運動公園(小熊公園，公鄰23)") == {"社區公園", "小熊公園"}
 
 
+def registry(kind, entries):
+    return {"kind": kind, "fetched_at": "2026-10-13T00:00:00+00:00", "source": "https://data.example/x",
+            "publisher": "測試市政府", "title": "測試名冊", "license": "政府資料開放授權條款第1版", "entries": entries}
+
+
+def entry(ref, name, x=None, y=None, **kw):
+    lat = lng = None
+    if x is not None:
+        lng, lat = P.lnglat(x, y)
+    return {"ref": ref, "name": name, "district": None, "address": None, "management": None, "phone": None,
+            "lat": lat, "lng": lng, "equipment": None, **kw}
+
+
 def test_city_registry_match():
-    city = {
-        "fetched_at": "2026-10-13T00:00:00+00:00", "source": "https://data.ntpc.gov.tw/datasets/x",
-        "publisher": "新北市政府農業局", "license": "政府資料開放授權條款第1版",
-        "parks": [
-            {"seqno": "1", "name": "測試公園(公鄰1)", "address": "測試路1號", "management": "測試區公所"},
-            {"seqno": "2", "name": "高架公園(公5)", "address": " ", "management": "測試區公所"},
-            {"seqno": "3", "name": "不存在公園", "address": "某路"},
-        ],
-    }
+    city = registry("parks", [
+        entry("1", "測試公園(公鄰1)", address="測試路1號", management="測試區公所"),
+        entry("2", "高架公園(公5)", management="測試區公所"),
+        entry("3", "不存在公園", address="某路"),
+    ])
     b = Builder(raw(), city)
     parks = {p["osm"]["id"]: p for p in b.build()}
     assert parks[70]["official"]["name"] == "測試公園(公鄰1)" and parks[70]["official"]["address"] == "測試路1號"
+    assert parks[70]["official"]["method"] == "name_match"
     assert parks[10]["official"]["name"] == "高架公園(公5)"  # via the containing park's name
-    assert parks[10]["official"]["address"] is None
     assert parks[20]["official"] is None
     assert any(src["url"] == city["source"] for src in parks[70]["sources"])
     assert b.meta(list(parks.values()))["city_registry_not_in_osm"] == [{"name": "不存在公園", "address": "某路"}]
+
+
+def test_official_points_match_by_location_and_fill_gaps():
+    city = registry("playgrounds", [
+        entry("510050", "塔北遊戲場", 510, 50, equipment={"鞦韆": 2}),  # 20 m north of playground C
+        entry("1500900", "官方小公園", 1500, 900, district="測試區"),   # no OSM playground nearby
+        entry("9000900", "區外遊戲場", 9000, 900),                        # outside the boundary
+    ])
+    b = Builder(raw(), city, config.REGIONS["taipei"])
+    parks = {p["id"]: p for p in b.build()}
+    c = parks["tp-w20"]
+    assert c["official"]["method"] == "location_match" and c["official"]["distance_m"] == 20
+    assert c["official"]["equipment"] == {"鞦韆": 2} and c["official"]["name"] == "塔北遊戲場"
+    o = parks["tp-o1500900"]
+    assert o["official"]["method"] == "official_record" and o["osm"] is None
+    assert o["kind"] == "playground" and o["playground_mapped"] is False and o["name"] == "官方小公園"
+    assert o["geometry_estimated"] is True and o["region"]["id"] == "taipei"
+    assert "tp-o9000900" not in parks
+    assert "tp-w70" not in parks  # Taipei does not list park candidates
+    counts = b.meta(list(parks.values()))["counts"]
+    assert counts["matched_city_registry"] == 1 and counts["official_only"] == 1
+
+
+def test_official_records_match_schema():
+    import json
+    from pathlib import Path
+
+    jsonschema = pytest.importorskip("jsonschema")
+    schema = json.loads((Path(__file__).resolve().parent.parent / "schema" / "park.schema.json").read_text())
+    city = registry("playgrounds", [entry("510050", "塔北遊戲場", 510, 50), entry("1500900", "官方小公園", 1500, 900)])
+    for p in Builder(raw(), city, config.REGIONS["taipei"]).build():
+        jsonschema.validate(p, schema)
+
+
+def test_nearby_official_points_merge_instead_of_duplicating():
+    city = registry("playgrounds", [
+        entry("505020", "塔北遊戲場", 505, 20, equipment={"鞦韆": 2}),     # inside playground C
+        entry("515025", "塔北遊戲場", 515, 25, equipment={"鞦韆": 1, "沙坑": 1}),  # also inside C
+        entry("1500900", "官方小公園", 1500, 900, equipment={"搖搖樂": 1}),
+        entry("1520910", "官方小公園", 1520, 910, equipment={"搖搖樂": 2}),  # 22 m away, same name
+        entry("1800900", "官方小公園", 1800, 900),                          # 300 m away: separate play area
+    ])
+    parks = {p["id"]: p for p in Builder(raw(), city, config.REGIONS["taipei"]).build()}
+    c = parks["tp-w20"]["official"]
+    assert c["registry_points"] == 2 and c["equipment"] == {"鞦韆": 3, "沙坑": 1}
+    o = parks["tp-o1500900"]["official"]
+    assert o["registry_points"] == 2 and o["equipment"] == {"搖搖樂": 3}
+    assert "tp-o1520910" not in parks and "tp-o1800900" in parks
+
+
+def test_playground_inside_a_building():
+    from .fixture import node
+
+    data = raw()
+    data["elements"] += [
+        node(80, 480, -25, leisure="playground", name="室內親子館", indoor="yes", fee="yes"),  # inside tower 21
+        node(81, 545, -25, leisure="playground"),  # inside tower 21, untagged: indoor venue or courtyard?
+    ]
+    parks = {p["osm"]["id"]: p for p in Builder(data).build()}
+    tagged, untagged = parks[80], parks[81]
+    assert tagged["indoor"] is True and tagged["level"] == "A" and tagged["rain_cover"]["value"] is True
+    assert any(s["type"] == "indoor" for s in tagged["shade_types"]) and tagged["playground"]["fee"] == "yes"
+    assert untagged["indoor"] == "possible" and untagged["rain_cover"]["value"] is False
+    # The enclosing outline is not treated as casting shade on its own interior.
+    assert untagged["shade_timetable"]["slots"]["6"][12] == 0.0
+    assert parks[20]["indoor"] is False
+    jsonschema = pytest.importorskip("jsonschema")
+    import json
+    from pathlib import Path
+
+    schema = json.loads((Path(__file__).resolve().parent.parent / "schema" / "park.schema.json").read_text())
+    jsonschema.validate(tagged, schema)
+    jsonschema.validate(untagged, schema)
+
+
+def test_point_playground_zone_excludes_buildings():
+    from .fixture import node
+
+    data = raw()
+    data["elements"].append(node(82, 555, -15, leisure="playground"))  # 5 m east of tower 21's wall
+    p = {p["osm"]["id"]: p for p in Builder(data).build()}[82]
+    circle = 3.14159 * 12 ** 2
+    assert p["geometry_estimated"] and p["area_m2"] < circle * 0.85  # the part inside the tower is cut off
+    # June 12:15: the near-vertical sun is just west of south, so the 60 m tower casts only a ~5 m strip
+    # on the playground beside its east wall (the untrimmed circle would also count the tower itself).
+    assert p["shade_timetable"]["slots"]["6"][12] < 0.4

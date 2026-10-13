@@ -1,8 +1,11 @@
-# ShadeHop 林口遮陽公園地圖
+# {{ SITE_NAME }}（{{ meta.coverage }}）
 
-> 新北市林口區兒童遊戲場的遮陽/避雨資訊：哪些在高架或屋頂下（下雨可玩）、每個月每半小時被大樓陰影遮住多少、最遮陰的時段、附近停車場，以及電動車快充（DC）/慢充（AC）充電站。資料來自 OpenStreetMap（{{ meta.generated_from_osm_base }}），遮陰為模型推估。
+> {{ meta.coverage }}兒童遊戲場的遮陽/避雨資訊：哪些在高架或屋頂下（下雨可玩）、每個月每半小時被大樓陰影遮住多少、最遮陰的時段、附近停車場，以及電動車快充（DC）/慢充（AC）充電站。資料來自 OpenStreetMap（{{ meta.generated_from_osm_base }}），遮陰為模型推估。
 
-收錄 {{ meta.counts.parks }} 處（OSM 標示的遊戲場 {{ meta.counts.mapped_playgrounds }} 處；遊戲設施未標示、待確認的公園 {{ meta.counts.park_candidates }} 處，`kind: "park"`）：全天候遮蔽（A）{{ meta.counts.by_level.A }} 處、建物陰影遮陰（C）{{ meta.counts.by_level.C }} 處、部分遮陽/樹蔭（B）{{ meta.counts.by_level.B }} 處、大多曝曬 {{ meta.counts.by_level.none }} 處。
+收錄 {{ meta.counts.parks }} 處：全天候遮蔽（A）{{ meta.counts.by_level.A }} 處、建物陰影遮陰（C）{{ meta.counts.by_level.C }} 處、部分遮陽/樹蔭（B）{{ meta.counts.by_level.B }} 處、大多曝曬 {{ meta.counts.by_level.none }} 處。
+{% for rid in meta.region_ids %}{% set r = meta.regions[rid] %}
+- {{ r.region.city }}{% if r.region.name != r.region.city %}{{ r.region.name }}{% endif %}（`region.id: "{{ rid }}"`）：{{ r.counts.parks }} 處；OSM 標示的遊戲場 {{ r.counts.mapped_playgrounds }} 處{% if r.counts.official_only %}、只在官方名冊的遊戲場 {{ r.counts.official_only }} 處{% endif %}{% if r.counts.park_candidates %}、遊戲設施待確認的公園 {{ r.counts.park_candidates }} 處（`kind: "park"`）{% endif %}。OSM 版本 {{ r.generated_from_osm_base }}。{% if r.city_registry %}官方名冊：{{ r.city_registry.publisher }}「{{ r.city_registry.title }}」{{ r.city_registry.entries }} 筆。{% endif %}
+{%- endfor %}
 
 ## 如何正確使用這份資料
 
@@ -11,7 +14,8 @@
 - `shade_timetable.slots["<月份>"]`: 24 個值，對應 06:00、06:30 … 17:30 開始的半小時，數值為遊戲場被遮陰的比例 0–1；null=太陽未升起。
 - `best_shade_windows["<月份>"]`: 該月最長連續遮陰（≥60%）時段，例如 {"start":"15:00","end":"17:30"}；null=沒有明顯遮陰時段。
 - `chargers[].speed`: fast=DC 快充、slow=AC 慢充、both=兩者都有、unknown=OSM 未標示（不要猜）。
-- `official`: 新北市政府公園名冊（開放資料）中依名稱比對到的官方名稱、地址、管理單位；null=名冊中找不到對應。名冊有 {{ meta.counts.city_registry_parks }} 處，比對到 {{ meta.counts.matched_city_registry }} 處；`meta.city_registry_not_in_osm` 列出名冊有、但 OSM 未標示或未命名的公園。
+- `official`: 政府開放資料名冊中的對應項目；null=名冊中找不到。`method`: name_match=依名稱比對（新北市公園名冊，無座標）、location_match=官方座標距 OSM 遊戲場 `distance_m` 公尺內（臺北市兒童遊戲場名冊）、official_record=只出現在官方名冊、OSM 尚未標示（`osm` 為 null，範圍以座標點估計）。`official.equipment` 為官方遊具數量。`meta.regions.<id>.city_registry_not_in_osm` 列出名冊有、但 OSM 未標示或未命名的公園。
+- `region`: `id`（linkou / taipei）、`city`、`district`。
 - 距離（`distance_m`）是直線距離，不是步行距離。
 - 沒有資料不代表沒有設施；請照實說「資料中未標示」。
 

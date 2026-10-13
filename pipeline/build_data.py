@@ -9,7 +9,13 @@ import csv
 import gzip
 import io
 import json
+import math
+import multiprocessing
+import os
 import re
+import shutil
+import sys
+import time
 from pathlib import Path
 
 from shapely import STRtree
@@ -90,6 +96,9 @@ def bridge_width(tags: dict) -> float:
     return config.BRIDGE_WIDTH_BY_CLASS.get(tags.get("highway", ""), config.BRIDGE_WIDTH_FALLBACK)
 
 
+REGION_PREFIXES = sorted({r["name"].removesuffix("區").removesuffix("市") for r in config.REGIONS.values()} | {"台北"}, key=len, reverse=True)
+
+
 def park_key(name: str | None) -> str | None:
     """Comparable park name: no bracketed codes, spaces, region prefix or generic words.
 
@@ -99,7 +108,8 @@ def park_key(name: str | None) -> str | None:
     if not name:
         return None
     k = re.sub(r"[（(].*?[)）]|\s|遊戲場|運動", "", name)
-    k = k.removeprefix(config.REGION["name"].removesuffix("區"))
+    for prefix in REGION_PREFIXES:
+        k = k.removeprefix(prefix)
     return k if len(k) >= 3 and k != "公園" else None
 
 
@@ -117,15 +127,32 @@ def fact(value, method: str, verified_at: str, confidence: str, source: str, **e
     return d
 
 
+# Parks are independent, so build_one runs in forked worker processes that share the
+# already-indexed Builder (set just before forking).
+_WORKER = None
+
+
+def _build_worker(job: tuple[str, int]) -> dict | None:
+    pool, i = job
+    return _WORKER.build_one(*_WORKER._jobs[pool][i])
+
+
 class Builder:
-    def __init__(self, raw: dict, city: dict | None = None):
+    def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None):
         self.raw = raw
         self.city = city
+        self.region = region or config.REGIONS[raw.get("region") or config.DEFAULT_REGION]
         self.osm_date = (raw.get("osm_base") or raw["fetched_at"])[:10]
         self.boundary = element_geometry(raw["boundary"])
         c = self.boundary.centroid
         self.proj = LocalProjection(c.y, c.x)
         self.boundary_xy = self.proj.to_xy(self.boundary)
+        self.districts = []
+        for rel in raw.get("districts") or []:
+            g = element_geometry(rel)
+            if g is not None and (rel.get("tags") or {}).get("name"):
+                self.districts.append((rel["tags"]["name"], g))
+        self.city_unmatched: list[dict] = []
         self._index()
 
     # ---------------------------------------------------------------- indexing
@@ -238,6 +265,12 @@ class Builder:
                 return p
         return None
 
+    def _district(self, pt) -> str | None:
+        for name, g in self.districts:
+            if g.contains(pt):
+                return name
+        return None if self.districts else self.region["name"]
+
     def _nearest_street(self, zone) -> str | None:
         best = self._nearest(self.streets, zone, 150)
         return best[0][1]["tags"]["name"] if best else None
@@ -269,7 +302,10 @@ class Builder:
         return {"ratio": all_cover, "area_m2": int(round(area)), "by_kind": ratios, "refs": items, "tagged": tagged}
 
     def build_one(self, item: dict, kind: str = "playground") -> dict | None:
+        """One record from an OSM playground/park item, or from an official registry point
+        (item["official"] set, no OSM element)."""
         tags, el = item["tags"], item["el"]
+        entry = item.get("official")
         if tags.get("access", "") in EXCLUDED_ACCESS:
             return None
         center = item["geom"] if isinstance(item["geom"], Point) else item["geom"].representative_point()
@@ -290,7 +326,9 @@ class Builder:
         else:
             park = self._containing_park(center)
             park_name = park["tags"].get("name") if park else None
-            if tags.get("name"):
+            if entry:
+                name, name_source = entry["name"], "official"
+            elif tags.get("name"):
                 name, name_source = tags["name"], "osm_name"
             elif park_name:
                 name, name_source = f"{park_name} 遊戲場", "park_name"
@@ -298,13 +336,36 @@ class Builder:
                 street = self._nearest_street(zone)
                 name, name_source = (f"遊戲場（近{street}）", "nearest_street") if street else ("未命名遊戲場", "none")
 
-        src = osm_ref(el)["url"]
+        src = self.city["source"] if entry else osm_ref(el)["url"]
         d = self.osm_date
+
+        # --- indoor? A point/area inside a building outline is either an indoor venue
+        # (親子館, KidZania) or a courtyard of a complex mapped as one building, so only an
+        # explicit tag makes it indoor; otherwise it is "possible" and flagged for checking.
+        casters = self.shade.nearby(zone, config.SHADOW_SEARCH_RADIUS_M)
+        inside = zone.centroid
+        enclosing = [c for c in casters if c.kind == "building" and c.geom.contains(inside)]
+        if tags.get("indoor") == "yes" or tags.get("location") in ("indoor", "inside"):
+            indoor = True
+        else:
+            indoor = "possible" if enclosing else False
+        if indoor == "possible":
+            casters = [c for c in casters if c not in enclosing]  # its own outline is not a shadow
+        if estimated and not enclosing:
+            # A point playground is approximated by a circle; it cannot extend into buildings,
+            # and counting their footprints as "shade" would overstate it.
+            walls = [c.geom for c in casters if c.kind == "building" and c.geom.intersects(zone)]
+            if walls:
+                trimmed = zone.difference(unary_union(walls))
+                if trimmed.area >= config.MIN_ESTIMATED_ZONE_M2:
+                    zone = trimmed
 
         # --- rain / roof cover
         cover = self._cover(zone, tags)
         viaduct_area = cover["by_kind"].get("under_viaduct", 0) * zone.area
-        if cover["ratio"] >= config.COVERED_FULL_RATIO or viaduct_area >= config.COVERED_MIN_AREA_M2:
+        if indoor is True:
+            rain_value = True
+        elif cover["ratio"] >= config.COVERED_FULL_RATIO or viaduct_area >= config.COVERED_MIN_AREA_M2:
             rain_value = True
         elif cover["ratio"] >= config.COVERED_PARTIAL_RATIO:
             rain_value = "partial"
@@ -316,14 +377,16 @@ class Builder:
             covered_ratio=cover["ratio"],
             covered_area_m2=cover["area_m2"],
             note=(
+                "OSM 標示為室內場所；可能需購票或有開放時間，請先確認" if indoor is True else
                 (f"約 {cover['area_m2']} m² 在高架/屋頂下（佔 {int(cover['ratio'] * 100)}%）；"
                  "由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入")
-                if rain_value is not False else "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證"
+                if rain_value is not False else
+                "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認" if indoor == "possible" else
+                "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證"
             ),
         )
 
         # --- computed shade timetable
-        casters = self.shade.nearby(zone, config.SHADOW_SEARCH_RADIUS_M)
         buildings = [c for c in casters if c.kind == "building"]
         known_share = (sum(c.height_known for c in buildings) / len(buildings)) if buildings else 1.0
         table = timetable(zone, casters, center.y, center.x)
@@ -334,6 +397,8 @@ class Builder:
 
         # --- shade types
         shade_types = []
+        if indoor is True:
+            shade_types.append(fact(True, "osm", d, "medium", src, type="indoor", level="A", rain_proof=True))
         for cover_kind, ratio in sorted(cover["by_kind"].items()):
             shade_types.append(fact(True, "computed", d, "medium", src, type=cover_kind,
                                     level="A" if ratio >= config.COVERED_FULL_RATIO else "B",
@@ -431,17 +496,19 @@ class Builder:
 
         loc = self._latlng(item["geom"])
         return {
-            "id": f"{config.REGION['id_prefix']}-{el['type'][0]}{el['id']}",
+            "id": f"{self.region['id_prefix']}-{el['type'][0]}{el['id']}",
             "kind": kind,
-            "playground_mapped": kind == "playground",
+            "playground_mapped": kind == "playground" and not entry,
             "name": name,
             "name_source": name_source,
             "park_name": park_name,
-            "region": {"city": config.REGION["city"], "district": config.REGION["name"]},
+            "region": {"id": self.region["id"], "city": self.region["city"],
+                       "district": self._district(center) or (entry or {}).get("district") or self.region["name"]},
             "location": loc,
             "address": tags.get("addr:full") or (" ".join(filter(None, [tags.get("addr:street"), tags.get("addr:housenumber")])) or None),
-            "osm": osm_ref(el),
+            "osm": None if entry else osm_ref(el),
             "geometry_estimated": estimated,
+            "indoor": indoor,
             "area_m2": int(round(zone.area)),
             "level": level,
             "level_label": LEVEL_LABELS[level],
@@ -461,6 +528,7 @@ class Builder:
                 "max_age": tags.get("max_age"),
                 "wheelchair": tags.get("wheelchair"),
                 "opening_hours": tags.get("opening_hours"),
+                "fee": tags.get("fee"),
                 "equipment": sorted(k.split(":", 1)[1] for k, v in tags.items() if k.startswith("playground:") and v not in ("no", "0")),
             },
             "amenities": amenities,
@@ -473,79 +541,163 @@ class Builder:
             ],
         }
 
+    def _build_many(self, jobs: list[tuple[dict, str]]) -> list[dict | None]:
+        """build_one over (item, kind) jobs, in parallel when there are enough of them."""
+        global _WORKER
+        workers = min(os.cpu_count() or 1, config.BUILD_WORKERS)
+        if len(jobs) < 40 or workers < 2 or "fork" not in multiprocessing.get_all_start_methods():
+            return [self.build_one(item, kind) for item, kind in jobs]
+        self._jobs = {"jobs": jobs}
+        _WORKER = self
+        try:
+            with multiprocessing.get_context("fork").Pool(workers) as pool:
+                return pool.map(_build_worker, [("jobs", i) for i in range(len(jobs))], chunksize=4)
+        finally:
+            _WORKER, self._jobs = None, {}
+
     def build(self) -> list[dict]:
-        built = [(r, p["xy"]) for r, p in ((self.build_one(p), p) for p in self.playgrounds) if r]
-        # Most Taiwanese neighbourhood parks have play equipment that OSM does not map
-        # separately; list parks without a mapped playground as unconfirmed candidates.
-        pg_points = [p["geom"] if isinstance(p["geom"], Point) else p["geom"].representative_point() for p in self.playgrounds]
-        for park in self.parks:
-            if any(park["geom"].contains(pt) for pt in pg_points):
-                continue
-            r = self.build_one(park, kind="park")
-            if r:
-                built.append((r, park["xy"]))
-        records = [r for r, _ in built]
-        # Drop duplicates: a node mapped inside/next to an already-mapped area, or an area
-        # mostly inside a larger one of the same kind (e.g. the equipment patch of a playground).
-        areas = [self.proj.to_xy(Point(r["location"]["lng"], r["location"]["lat"])) for r in records]
-        keep = []
-        for i, r in enumerate(records):
-            if r["geometry_estimated"]:
-                dup = any(
-                    not o["geometry_estimated"] and areas[i].distance(areas[j]) < 25
-                    for j, o in enumerate(records) if j != i
-                )
-            else:
-                xy = built[i][1]
-                dup = any(
-                    not o["geometry_estimated"] and o["kind"] == r["kind"] and built[j][1].area > xy.area
-                    and built[j][1].intersection(xy).area >= config.NESTED_DUPLICATE_RATIO * xy.area
-                    for j, o in enumerate(records) if j != i
-                )
-            if dup:
-                continue
-            keep.append(r)
+        jobs = [(p, "playground") for p in self.playgrounds]
+        if self.region.get("park_candidates"):
+            # Most Taiwanese neighbourhood parks have play equipment that OSM does not map
+            # separately; list parks without a mapped playground as unconfirmed candidates.
+            pg_points = [p["geom"] if isinstance(p["geom"], Point) else p["geom"].representative_point() for p in self.playgrounds]
+            jobs += [(park, "park") for park in self.parks if not any(park["geom"].contains(pt) for pt in pg_points)]
+        built = [(r, item["xy"]) for r, (item, _) in zip(self._build_many(jobs), jobs) if r]
+        keep = self._dedupe(built)
+        if self.city and self.city.get("kind") == "playgrounds":
+            keep += self._match_official_points(keep)
+        else:
+            self._match_city(keep)
+        for r in keep:
+            r.pop("_zone", None)
         keep.sort(key=lambda r: r["id"])
-        self._match_city(keep)
         return keep
 
+    def _dedupe(self, built: list[tuple[dict, object]]) -> list[dict]:
+        """Drop duplicates: a node mapped inside/next to an already-mapped area, or an area
+        mostly inside a larger one of the same kind (e.g. the equipment patch of a playground)."""
+        records = [r for r, _ in built]
+        shapes = [xy for _, xy in built]
+        tree = STRtree(shapes)
+        keep = []
+        for i, r in enumerate(records):
+            xy = shapes[i]
+            near = [j for j in tree.query(xy.buffer(25)).tolist() if j != i and not records[j]["geometry_estimated"]]
+            if r["geometry_estimated"]:
+                dup = any(shapes[j].distance(xy) < 25 for j in near)
+            else:
+                dup = any(
+                    records[j]["kind"] == r["kind"] and shapes[j].area > xy.area
+                    and shapes[j].intersection(xy).area >= config.NESTED_DUPLICATE_RATIO * xy.area
+                    for j in near
+                )
+            if not dup:
+                r["_zone"] = xy if is_area(xy) else xy.buffer(config.PLAYGROUND_NODE_RADIUS_M)
+                keep.append(r)
+        return keep
+
+    def _official(self, entry: dict, method: str, distance_m: int | None = None, group: list[dict] | None = None) -> dict:
+        group = group or [entry]
+        equipment: dict[str, int] = {}
+        for e in group:
+            for k, v in (e.get("equipment") or {}).items():
+                equipment[k] = equipment.get(k, 0) + v
+        return {
+            "name": entry["name"],
+            "address": entry.get("address"),
+            "management": entry.get("management"),
+            "phone": entry.get("phone"),
+            "equipment": equipment or None,
+            "registry_points": len(group),
+            "method": method,
+            "distance_m": distance_m,
+            "verified_at": self.city["fetched_at"][:10],
+            "source": self.city["source"],
+        }
+
+    def _registry_source(self) -> dict:
+        return {"name": f"{self.city['publisher']}「{self.city['title']}」", "license": self.city["license"],
+                "url": self.city["source"], "as_of": self.city["fetched_at"]}
+
+    def _match_official_points(self, records: list[dict]) -> list[dict]:
+        """Registry with coordinates (Taipei). The registry often lists one play area as several
+        points a few metres apart, so: every official point within OFFICIAL_MATCH_M of an OSM
+        playground is attached to the nearest one (equipment summed); the remaining points are
+        grouped by name within OFFICIAL_MERGE_M and listed as their own records."""
+        for r in records:
+            r["official"] = None
+        pg = [r for r in records if r["kind"] == "playground"]
+        tree = STRtree([r["_zone"] for r in pg]) if pg else None
+        attached: dict[str, list[tuple[float, dict]]] = {}
+        leftovers = []
+        for e in self.city["entries"]:
+            pt = Point(e["lng"], e["lat"])
+            if not self.boundary.contains(pt):
+                continue
+            xy = self.proj.to_xy(pt)
+            best = None
+            if tree is not None:
+                for j in tree.query(xy.buffer(config.OFFICIAL_MATCH_M)).tolist():
+                    dist = pg[j]["_zone"].distance(xy)
+                    if dist <= config.OFFICIAL_MATCH_M and (best is None or dist < best[0]):
+                        best = (dist, pg[j])
+            if best is None:
+                leftovers.append((e, pt, xy))
+            else:
+                attached.setdefault(best[1]["id"], []).append((best[0], e))
+        by_id = {r["id"]: r for r in pg}
+        for rid, hits in attached.items():
+            hits.sort(key=lambda h: (h[0], h[1]["ref"]))
+            r = by_id[rid]
+            r["official"] = self._official(hits[0][1], "location_match", int(round(hits[0][0])), [e for _, e in hits])
+            r["sources"].append(self._registry_source())
+        # Group leftover points of the same park name that are close together.
+        groups: list[list[tuple[dict, Point, object]]] = []
+        for e, pt, xy in leftovers:
+            for g in groups:
+                if g[0][0]["name"] == e["name"] and any(xy.distance(o[2]) <= config.OFFICIAL_MERGE_M for o in g):
+                    g.append((e, pt, xy))
+                    break
+            else:
+                groups.append([(e, pt, xy)])
+        items = []
+        for g in groups:
+            e, pt, xy = g[0]  # registry order is by ref, so the id is stable
+            items.append({"el": {"type": "official", "id": e["ref"]}, "tags": {"leisure": "playground"},
+                          "geom": pt, "xy": xy, "official": e, "group": [o[0] for o in g]})
+        new = []
+        for item, r in zip(items, self._build_many([(it, "playground") for it in items])):
+            if r:
+                r["official"] = self._official(item["official"], "official_record", None, item["group"])
+                r["sources"].append(self._registry_source())
+                new.append(r)
+        return new
+
     def _match_city(self, records: list[dict]) -> None:
-        """Attach the city's official registry entry (name/address/office) by park name."""
-        self.city_unmatched = []
+        """Registry without coordinates (New Taipei): attach the official entry by park name."""
         for r in records:
             r["official"] = None
         if not self.city:
             return
+        entries = self.city["entries"]
         by_key: dict[str, list[dict]] = {}
-        for row in self.city["parks"]:
+        for row in entries:
             for k in city_aliases(row["name"]):
                 by_key.setdefault(k, []).append(row)
         matched = set()
         for r in records:
             keys = {park_key(r["park_name"]), park_key(r["name"] if r["name_source"] == "osm_name" else None)} - {None}
-            rows = {row["seqno"]: row for k in keys for row in by_key.get(k, [])}
+            rows = {row["ref"]: row for k in keys for row in by_key.get(k, [])}
             if len(rows) != 1:
                 continue  # no match, or ambiguous
             row = next(iter(rows.values()))
-            matched.add(row["seqno"])
-            r["official"] = {
-                "name": row["name"].strip(),
-                "address": (row.get("address") or "").strip() or None,
-                "management": row.get("management"),
-                "phone": row.get("localcallservice"),
-                "method": "name_match",
-                "verified_at": self.city["fetched_at"][:10],
-                "source": self.city["source"],
-            }
-            r["sources"].append({"name": self.city["publisher"] + " 新北市公園", "license": self.city["license"],
-                                 "url": self.city["source"], "as_of": self.city["fetched_at"]})
-        self.city_unmatched = [
-            {"name": row["name"].strip(), "address": (row.get("address") or "").strip() or None}
-            for row in self.city["parks"] if row["seqno"] not in matched
-        ]
+            matched.add(row["ref"])
+            r["official"] = self._official(row, "name_match")
+            r["sources"].append(self._registry_source())
+        self.city_unmatched = [{"name": row["name"], "address": row.get("address")} for row in entries if row["ref"] not in matched]
 
     def casters_geojson(self, parks: list[dict]) -> dict:
-        """Shade casters near any park, for drawing live shadows on the map."""
+        """Shade casters near any park, for drawing live shadows on the map (tiled by write_outputs)."""
         zones = unary_union([
             self.proj.to_xy(Point(p["location"]["lng"], p["location"]["lat"])).buffer(config.SHADOW_SEARCH_RADIUS_M)
             for p in parks
@@ -561,23 +713,30 @@ class Builder:
                         continue
                     feats.append({
                         "type": "Feature",
-                        "geometry": {"type": "Polygon", "coordinates": [[[round(x, 6), round(y, 6)] for x, y in poly.exterior.coords]]},
+                        "geometry": {"type": "Polygon", "coordinates": [[[round(x, 5), round(y, 5)] for x, y in poly.exterior.coords]]},
                         "properties": {"k": c.kind, "z0": round(c.z0, 1), "z1": round(c.z1, 1), "h": int(c.height_known)},
                     })
         return {"type": "FeatureCollection", "features": feats}
 
     def meta(self, parks: list[dict]) -> dict:
         levels = {k: sum(1 for p in parks if p["level"] == k) for k in LEVEL_LABELS}
+        registry = None
+        if self.city:
+            registry = {k: self.city.get(k) for k in ("title", "publisher", "source", "license", "fetched_at", "kind")}
+            registry["entries"] = len(self.city["entries"])
         return {
-            "region": config.REGION,
+            "region": {k: v for k, v in self.region.items() if not k.startswith("osm_")},
             "generated_from_osm_base": self.raw.get("osm_base"),
             "fetched_at": self.raw.get("fetched_at"),
+            "bbox": [round(v, 5) for v in self.boundary.bounds],
+            "city_registry": registry,
             "counts": {
                 "parks": len(parks),
-                "mapped_playgrounds": sum(1 for p in parks if p["kind"] == "playground"),
+                "mapped_playgrounds": sum(1 for p in parks if p["playground_mapped"]),
                 "park_candidates": sum(1 for p in parks if p["kind"] == "park"),
-                "city_registry_parks": len(self.city["parks"]) if self.city else None,
-                "matched_city_registry": sum(1 for p in parks if p.get("official")),
+                "city_registry_parks": len(self.city["entries"]) if self.city else None,
+                "matched_city_registry": sum(1 for p in parks if p.get("official") and p["official"]["method"] != "official_record"),
+                "official_only": sum(1 for p in parks if p.get("official") and p["official"]["method"] == "official_record"),
                 "by_level": levels,
                 "parking_lots_in_bbox": len(self.parking),
                 "chargers_in_bbox": len(self.chargers),
@@ -592,12 +751,12 @@ class Builder:
                     "TREE_DEFAULT_CROWN_M", "TREE_DEFAULT_HEIGHT_M", "COVERED_FULL_RATIO",
                     "COVERED_PARTIAL_RATIO", "SHADED_SLOT_RATIO", "LEVEL_C_MIN_DAYTIME_SHARE",
                     "PARKING_RADIUS_M", "CHARGER_RADIUS_M", "AMENITY_RADIUS_M",
-                    "MAX_LEVEL_HEIGHT_M", "TYPE_HEIGHT_MIN_SAMPLES",
+                    "MAX_LEVEL_HEIGHT_M", "TYPE_HEIGHT_MIN_SAMPLES", "OFFICIAL_MATCH_M", "OFFICIAL_MERGE_M",
                 )
             },
             "default_building_heights_by_type": self.default_heights,
             # Official parks with no matching OSM record: missing/unnamed in OSM, or not a playground site.
-            "city_registry_not_in_osm": getattr(self, "city_unmatched", []),
+            "city_registry_not_in_osm": self.city_unmatched,
             "level_labels": LEVEL_LABELS,
         }
 
@@ -607,6 +766,8 @@ def summary(p: dict) -> dict:
     return {
         "id": p["id"],
         "name": p["name"],
+        "region": p["region"]["id"],
+        "district": p["region"]["district"],
         "level": p["level"],
         "rain": p["rain_cover"]["value"],
         "covered_ratio": p["rain_cover"]["covered_ratio"],
@@ -617,65 +778,142 @@ def summary(p: dict) -> dict:
         "slow_nearest_m": p["charger_summary"]["nearest_slow_m"],
         "toilet": p["amenities"]["toilet"]["value"],
         "kind": p["kind"],
+        "indoor": p.get("indoor", False),
+        "official": bool(p.get("official")),
         "height_known": p["shade_timetable"]["building_height_known_share"],
         "timetable": p["shade_timetable"]["slots"],
         "best": p["best_shade_windows"],
     }
 
 
-def write_outputs(parks: list[dict], meta: dict, out: Path = DATA, casters: dict | None = None) -> None:
-    (out / "parks").mkdir(parents=True, exist_ok=True)
-    for old in (out / "parks").glob("*.json"):
-        old.unlink()
-    for p in parks:
-        (out / "parks" / f"{p['id']}.json").write_text(json.dumps(p, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
-    (out / "parks.json").write_text(json.dumps({"meta": meta, "parks": parks}, ensure_ascii=False, sort_keys=True) + "\n")
-    (out / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
-    gj = {
+def combine_meta(metas: list[dict]) -> dict:
+    """Dataset-wide meta: per-region details under `regions`, summed counts at the top."""
+    counts: dict = {}
+    for m in metas:
+        for k, v in m["counts"].items():
+            if isinstance(v, dict):
+                counts.setdefault(k, {})
+                for kk, vv in v.items():
+                    counts[k][kk] = counts[k].get(kk, 0) + vv
+            elif v is not None:
+                counts[k] = counts.get(k, 0) + v
+    bases = [m["generated_from_osm_base"] for m in metas if m["generated_from_osm_base"]]
+    first = metas[0]
+    return {
+        "regions": {m["region"]["id"]: {k: v for k, v in m.items() if k not in ("assumptions", "level_labels", "license")} for m in metas},
+        "region_ids": [m["region"]["id"] for m in metas],
+        # Oldest OSM snapshot among regions, so "as of" never overstates freshness.
+        "generated_from_osm_base": min(bases) if bases else None,
+        "fetched_at": min(m["fetched_at"] for m in metas if m["fetched_at"]) if any(m["fetched_at"] for m in metas) else None,
+        "counts": counts,
+        "coverage": "、".join(m["region"]["city"] + (m["region"]["name"] if m["region"]["name"] != m["region"]["city"] else "") for m in metas),
+        "license": first["license"],
+        "assumptions": first["assumptions"],
+        "level_labels": first["level_labels"],
+    }
+
+
+def caster_tiles(features: list[dict]) -> dict[str, list[dict]]:
+    """Group shadow casters into CASTER_TILE_DEG tiles keyed 'x_y' (by first vertex),
+    so the map loads only the tiles in view."""
+    tiles: dict[str, list[dict]] = {}
+    for f in features:
+        lng, lat = f["geometry"]["coordinates"][0][0]
+        key = f"{math.floor(lng / config.CASTER_TILE_DEG)}_{math.floor(lat / config.CASTER_TILE_DEG)}"
+        tiles.setdefault(key, []).append(f)
+    return tiles
+
+
+def _dump(path: Path, obj, pretty: bool = False) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if pretty:
+        path.write_text(json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
+    else:
+        path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n")
+
+
+def _feature_collection(parks: list[dict]) -> dict:
+    return {
         "type": "FeatureCollection",
         "features": [
             {"type": "Feature", "id": p["id"], "geometry": {"type": "Point", "coordinates": [p["location"]["lng"], p["location"]["lat"]]}, "properties": summary(p)}
             for p in parks
         ],
     }
-    (out / "parks.geojson").write_text(json.dumps(gj, ensure_ascii=False, sort_keys=True) + "\n")
+
+
+def write_outputs(parks: list[dict], meta: dict, out: Path = DATA, casters: list[dict] | dict | None = None) -> None:
+    if "regions" not in meta:  # a single region's meta
+        meta = combine_meta([meta])
+    (out / "parks").mkdir(parents=True, exist_ok=True)
+    for old in (out / "parks").glob("*.json"):
+        old.unlink()
+    for p in parks:
+        _dump(out / "parks" / f"{p['id']}.json", p, pretty=True)
+    _dump(out / "parks.json", {"meta": meta, "parks": parks})
+    _dump(out / "meta.json", meta, pretty=True)
+    _dump(out / "parks.geojson", _feature_collection(parks))
+    # Per-region map data, so a phone only downloads the region it is looking at.
+    shutil.rmtree(out / "regions", ignore_errors=True)
+    regions = []
+    for rid in meta["region_ids"]:
+        rm = meta["regions"][rid]
+        mine = [p for p in parks if p["region"]["id"] == rid]
+        _dump(out / "regions" / f"{rid}.geojson", _feature_collection(mine))
+        regions.append({"id": rid, "label": rm["region"]["label"], "city": rm["region"]["city"], "name": rm["region"]["name"],
+                        "parks": len(mine), "bbox": rm["bbox"]})
+    _dump(out / "regions" / "index.json", regions, pretty=True)
     if casters is not None:
-        (out / "casters.geojson").write_text(json.dumps(casters, separators=(",", ":"), sort_keys=True) + "\n")
+        features = casters["features"] if isinstance(casters, dict) else casters
+        shutil.rmtree(out / "casters", ignore_errors=True)
+        (out / "casters.geojson").unlink(missing_ok=True)
+        tiles = caster_tiles(features)
+        for key, feats in tiles.items():
+            _dump(out / "casters" / f"{key}.geojson", {"type": "FeatureCollection", "features": feats})
+        _dump(out / "casters" / "index.json", {"tile_deg": config.CASTER_TILE_DEG, "tiles": sorted(tiles)})
     buf = io.StringIO()
-    cols = ["id", "name", "lat", "lng", "level", "rain_cover", "covered_ratio", "daytime_shaded_share",
+    cols = ["id", "name", "city", "district", "lat", "lng", "level", "rain_cover", "covered_ratio", "daytime_shaded_share",
             "nearest_parking", "nearest_parking_m", "nearest_fast_charger_m", "nearest_slow_charger_m",
-            "toilet_within_200m", "osm_url", "updated_at"]
+            "toilet_within_200m", "official_name", "osm_url", "updated_at"]
     w = csv.writer(buf, lineterminator="\n")
     w.writerow(cols)
     for p in parks:
         w.writerow([
-            p["id"], p["name"], p["location"]["lat"], p["location"]["lng"], p["level"],
+            p["id"], p["name"], p["region"]["city"], p["region"]["district"], p["location"]["lat"], p["location"]["lng"], p["level"],
             p["rain_cover"]["value"], p["rain_cover"]["covered_ratio"], p["daytime_shaded_share"],
             p["parking"][0]["name"] if p["parking"] else "", p["parking"][0]["distance_m"] if p["parking"] else "",
             p["charger_summary"]["nearest_fast_m"] or "", p["charger_summary"]["nearest_slow_m"] or "",
-            p["amenities"]["toilet"]["value"] or "", p["osm"]["url"], p["updated_at"],
+            p["amenities"]["toilet"]["value"] or "", (p.get("official") or {}).get("name") or "",
+            (p["osm"] or {}).get("url") or "", p["updated_at"],
         ])
     (out / "parks.csv").write_text(buf.getvalue())
 
 
-def load_raw(path: Path | None = None) -> dict:
-    path = path or DATA / "raw" / f"{config.REGION['id']}.osm.json.gz"
+def load_raw(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -> dict:
+    path = path or DATA / "raw" / f"{region_id}.osm.json.gz"
     with gzip.open(path, "rt") as fh:
         return json.load(fh)
 
 
-def load_city(path: Path | None = None) -> dict | None:
-    path = path or DATA / "raw" / f"{config.REGION['id']}.city_parks.json"
+def load_city(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -> dict | None:
+    path = path or DATA / "raw" / f"{region_id}.city_parks.json"
     return json.loads(path.read_text()) if path.exists() else None
 
 
-def main() -> None:
-    b = Builder(load_raw(), load_city())
-    parks = b.build()
-    meta = b.meta(parks)
-    write_outputs(parks, meta, casters=b.casters_geojson(parks))
-    print(json.dumps(meta["counts"], ensure_ascii=False))
+def main(argv: list[str]) -> None:
+    region_ids = argv or list(config.REGIONS)
+    parks, metas, casters = [], [], []
+    for rid in region_ids:
+        t = time.time()
+        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid])
+        mine = b.build()
+        parks += mine
+        metas.append(b.meta(mine))
+        casters += b.casters_geojson(mine)["features"]
+        print(f"{rid}: {len(mine)} parks in {time.time() - t:.0f}s {json.dumps(metas[-1]['counts'], ensure_ascii=False)}", file=sys.stderr)
+    parks.sort(key=lambda r: r["id"])
+    write_outputs(parks, combine_meta(metas), casters=casters)
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

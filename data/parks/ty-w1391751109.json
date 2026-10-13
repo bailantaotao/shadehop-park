@@ -37,15 +37,54 @@
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": null,
+  "nearest_any_m": 467,
   "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 467,
   "radius_m": 500,
-  "slow": 0,
-  "total": 0,
+  "slow": 1,
+  "total": 1,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 467,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.950488,
+    "lng": 121.237512
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Times_桃園中壢國泰街停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "依場域公告為準",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD03351",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "ty-w1391751109",
@@ -582,6 +621,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

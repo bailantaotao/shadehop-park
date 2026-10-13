@@ -43,15 +43,168 @@
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": null,
+  "nearest_any_m": 324,
   "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 324,
   "radius_m": 500,
-  "slow": 0,
-  "total": 0,
+  "slow": 4,
+  "total": 4,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "一度10元",
+   "distance_m": 324,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.976683,
+    "lng": 121.304887
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "桃園桃合停車場",
+   "opening_hours": "24HR",
+   "operation_type": "公辦民營",
+   "operator": "日月亭股份有限公司桃園桃合社宅營業所",
+   "osm": null,
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "61375671-SB0470011",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "distance_m": 362,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.980112,
+    "lng": 121.310354
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "陽明公園停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "程豐資通",
+   "osm": null,
+   "parking_rate": "計時/每日/0.00元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "58430020-S330024",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度 /固定 /10元每度",
+   "distance_m": 469,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.98151,
+    "lng": 121.31165
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "金安泰桃園建國停車場",
+   "opening_hours": "每日/00:00 24:00",
+   "operation_type": "私有民營",
+   "operator": "阜爾運通股份有限公司",
+   "osm": null,
+   "parking_rate": "計時 /40元每小時 每日最高 /160元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "12681939-SIC0983",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "計度 /固定 /10元每度",
+   "distance_m": 469,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 24.98151,
+    "lng": 121.31165
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "城市車旅聖保祿新院區",
+   "opening_hours": "每日/00:00 24:00",
+   "operation_type": "公辦民營",
+   "operator": "阜爾運通股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每半時20元 每日最高300元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "12681939-SYA576",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "ty-w170181177",
@@ -588,6 +741,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

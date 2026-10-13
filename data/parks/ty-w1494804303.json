@@ -66,16 +66,145 @@
   }
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": null,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "fast": 1,
+  "nearest_any_m": 301,
+  "nearest_fast_m": 495,
+  "nearest_slow_m": 301,
   "radius_m": 500,
-  "slow": 0,
-  "total": 0,
+  "slow": 2,
+  "total": 3,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "distance_m": 301,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.055981,
+    "lng": 121.294644
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "五福地下停車場(蘆竹)",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "程豐資通",
+   "osm": null,
+   "parking_rate": "計時/每日/0.00元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "58430020-S338001",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "distance_m": 370,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 25.05778,
+    "lng": 121.29539
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "德國馬牌輪胎BestDrive - 弘旺輪胎",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "osm": null,
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S142db8ad-95f6-4022-80d5-3b7783a15661",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 8,
+   "charging_rate": "計分/0-60 kW  NT$5.00/分 60-100 kW NT$11.00/分 100-120 kW NT$17.00/分 超時佔用費（最高）NT$30.00/分鐘",
+   "distance_m": 495,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.05391,
+    "lng": 121.28791
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "桃園－台茂購物中心 (1F)",
+   "opening_hours": "週一至週四 11:00-22:00 週五 11:00-22:30 週六 10:30-22:30 週日（國定假日）10:30-22:00",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "osm": null,
+   "parking_rate": "計分/0-60 kW  NT$5.00/分 60-100 kW NT$11.00/分 100-120 kW NT$17.00/分 超時佔用費（最高）NT$30.00/分鐘",
+   "restriction": "本充電站限特斯拉車輛使用",
+   "sockets": [
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S9550",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "ty-w1494804303",
@@ -612,6 +741,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

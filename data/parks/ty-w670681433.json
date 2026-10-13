@@ -60,16 +60,61 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": 470,
-  "nearest_fast_m": null,
+  "fast": 1,
+  "nearest_any_m": 332,
+  "nearest_fast_m": 332,
   "nearest_slow_m": null,
   "radius_m": 500,
   "slow": 0,
-  "total": 1,
+  "total": 2,
   "unknown": 1
  },
  "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/10元每度",
+   "distance_m": 332,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.96186,
+    "lng": 121.25433
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Acon-eco桃園中油內壢站",
+   "opening_hours": "24小時",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": "以現場告示",
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "89132567-S0104",
+   "verified_at": "2026-10-13"
+  },
   {
    "access": null,
    "brand": "TES 電動機車 充電站",
@@ -557,6 +602,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

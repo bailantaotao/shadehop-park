@@ -109,15 +109,54 @@
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": null,
+  "nearest_any_m": 431,
   "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 431,
   "radius_m": 500,
-  "slow": 0,
-  "total": 0,
+  "slow": 1,
+  "total": 1,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "一度10元",
+   "distance_m": 431,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.976683,
+    "lng": 121.304887
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "桃園桃合停車場",
+   "opening_hours": "24HR",
+   "operation_type": "公辦民營",
+   "operator": "日月亭股份有限公司桃園桃合社宅營業所",
+   "osm": null,
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "61375671-SB0470011",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "ty-w437918652",
@@ -654,6 +693,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

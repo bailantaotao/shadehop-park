@@ -109,15 +109,54 @@
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": null,
+  "nearest_any_m": 84,
   "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 84,
   "radius_m": 500,
-  "slow": 0,
-  "total": 0,
+  "slow": 1,
+  "total": 1,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "1元 / 分",
+   "distance_m": 84,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 25.00833,
+    "lng": 121.31736
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "福元公園公有停車場",
+   "opening_hours": "24H",
+   "operation_type": "公辦民營",
+   "operator": "和潤電能股份有限公司",
+   "osm": null,
+   "parking_rate": "30",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90670753-Shfc_9",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.05,
  "geometry_estimated": false,
  "id": "ty-w1353627246",
@@ -654,6 +693,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

@@ -48,16 +48,286 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": 475,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "fast": 3,
+  "nearest_any_m": 3,
+  "nearest_fast_m": 3,
+  "nearest_slow_m": 3,
   "radius_m": 500,
-  "slow": 0,
-  "total": 1,
+  "slow": 7,
+  "total": 8,
   "unknown": 1
  },
  "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 29,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "distance_m": 3,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 24.991289,
+    "lng": 121.306294
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "南門公園地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "程豐資通",
+   "osm": null,
+   "parking_rate": "計時/每日/0.00元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 13,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "58430020-S330020",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 11,
+   "charging_rate": "1度10元",
+   "distance_m": 132,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1F",
+   "location": {
+    "lat": 24.993341,
+    "lng": 121.304563
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "桃園西門 充電站",
+   "opening_hours": "24時",
+   "operation_type": "公辦民營",
+   "operator": "日月亭股份有公司",
+   "osm": null,
+   "parking_rate": "40元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "42097879-SB0014",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 36,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "distance_m": 138,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 24.993384,
+    "lng": 121.30452
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "西門地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "程豐資通",
+   "osm": null,
+   "parking_rate": "計時/每日/0.00元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 11,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 11,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 14,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "58430020-S330021",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/00:00-24:00/每度8元",
+   "distance_m": 298,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.989494,
+    "lng": 121.308953
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "南華站停車場",
+   "opening_hours": "24小時/每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "承翊系統整合股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/平日/每小時40元,計時/假日/每小時50元(平日$20元/半小時，假日$25元/半小時)。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "50965513-SPCP3201001",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 26,
+   "charging_rate": "1度7元",
+   "distance_m": 456,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 24.992047,
+    "lng": 121.310755
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "文昌公園地下停車場",
+   "opening_hours": "24H",
+   "operation_type": "公辦民營",
+   "operator": "阜爾運通股份有限公司",
+   "osm": null,
+   "parking_rate": "一小時40元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 26,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "12681939-SPSS_YA256",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 24,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "distance_m": 465,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 24.992728,
+    "lng": 121.310614
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "文昌公園地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "程豐資通",
+   "osm": null,
+   "parking_rate": "計時/每日/0.00元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "58430020-S330013",
+   "verified_at": "2026-10-13"
+  },
   {
    "access": null,
    "brand": null,
@@ -85,6 +355,44 @@
    "speed_label": "未標示",
    "speed_source": null,
    "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 482,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.99622,
+    "lng": 121.30805
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "桃園民族站",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "寶盛國際股份有限公司",
+   "osm": null,
+   "parking_rate": "每1小時30元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "33029464-STY260001",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -623,6 +931,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

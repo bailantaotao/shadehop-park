@@ -30,8 +30,8 @@
    "C": 47,
    "none": 2509
   },
-  "chargers_in_bbox": 797,
-  "chargers_official": 720,
+  "chargers_in_bbox": 1169,
+  "chargers_official": 1092,
   "chargers_osm_only": 77,
   "city_registry_parks": 1209,
   "mapped_playgrounds": 718,
@@ -42,7 +42,7 @@
   "parks": 2707
  },
  "coverage": "新北市、臺北市、桃園市",
- "fetched_at": "2026-10-13T09:39:20+00:00",
+ "fetched_at": "2026-10-13T09:59:17+00:00",
  "generated_from_osm_base": "2026-10-12T20:21:35Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
@@ -66,7 +66,7 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-13T09:41:17+00:00",
+    "fetched_at": "2026-10-13T10:01:17+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
@@ -75,7 +75,7 @@
    },
    "city_registry": {
     "entries": 635,
-    "fetched_at": "2026-10-13T09:41:08+00:00",
+    "fetched_at": "2026-10-13T10:01:10+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "新北市政府農業局",
@@ -1266,7 +1266,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T09:39:20+00:00",
+   "fetched_at": "2026-10-13T09:59:17+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "新北市",
@@ -1294,7 +1294,7 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-13T09:41:17+00:00",
+    "fetched_at": "2026-10-13T10:01:17+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
@@ -1303,7 +1303,7 @@
    },
    "city_registry": {
     "entries": 520,
-    "fetched_at": "2026-10-13T09:41:12+00:00",
+    "fetched_at": "2026-10-13T10:01:12+00:00",
     "kind": "playgrounds",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "臺北市政府工務局公園路燈工程管理處",
@@ -1363,7 +1363,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T09:39:20+00:00",
+   "fetched_at": "2026-10-13T09:59:17+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "臺北市",
@@ -1386,10 +1386,18 @@
     121.47985,
     25.1227
    ],
-   "charger_source": null,
+   "charger_source": {
+    "attribution": "資料介接「交通部TDX平臺」",
+    "fetched_at": "2026-10-13T10:01:17+00:00",
+    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+    "publisher": "交通部",
+    "source": "https://data.gov.tw/dataset/170220",
+    "src_update_time": "2026-10-13T17:55:00+08:00",
+    "title": "充電站之基本資料"
+   },
    "city_registry": {
     "entries": 54,
-    "fetched_at": "2026-10-13T09:41:14+00:00",
+    "fetched_at": "2026-10-13T10:01:14+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "桃園市政府工務局",
@@ -1463,8 +1471,8 @@
      "C": 10,
      "none": 840
     },
-    "chargers_in_bbox": 31,
-    "chargers_official": 0,
+    "chargers_in_bbox": 403,
+    "chargers_official": 372,
     "chargers_osm_only": 31,
     "city_registry_parks": 54,
     "mapped_playgrounds": 141,
@@ -1499,7 +1507,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T09:39:20+00:00",
+   "fetched_at": "2026-10-13T09:59:17+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "桃園市",

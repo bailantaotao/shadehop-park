@@ -36,16 +36,169 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": null,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "fast": 1,
+  "nearest_any_m": 110,
+  "nearest_fast_m": 320,
+  "nearest_slow_m": 110,
   "radius_m": 500,
-  "slow": 0,
-  "total": 0,
+  "slow": 3,
+  "total": 4,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "distance_m": 110,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.909817,
+    "lng": 121.170249
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "三元停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "程豐資通",
+   "osm": null,
+   "parking_rate": "計時/每日/0.00元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "58430020-S326001",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "1度8元",
+   "distance_m": 319,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.91096,
+    "lng": 121.17552
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "東陽能源科技股份有限公司 PCAR楊梅萬福站停車場",
+   "opening_hours": "24H",
+   "operation_type": "私有民營",
+   "operator": "東陽能源科技股份有限公司",
+   "osm": null,
+   "parking_rate": "一小時20元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "24394433-Ssungreen_22",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "distance_m": 320,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.91087,
+    "lng": 121.16773
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "桃園－楊梅三元街",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "osm": null,
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-Sc7b7e95d-4f85-4ebb-a4c9-95dc7e03ef1e",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "固定費率(非尖峰費率)",
+   "distance_m": 456,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.907879,
+    "lng": 121.16752
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "楊梅愛買站 evbar",
+   "opening_hours": "星期一：06:00～22:30\n星期二：06:00～22:30\n星期三：06:00～22:30\n星期四：06:00～22:30\n星期五：06:00～22:30\n星期六：06:00～22:30\n星期日：06:00～22:30",
+   "operation_type": "私有民營",
+   "operator": "富鴻達國際事業有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30 元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "64912334-S250",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "ty-w456139102",
@@ -582,6 +735,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T17:55:00+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

@@ -11,3 +11,5 @@ data/raw/*.part
 # Local secrets (TDX API key etc.)
 .env
 .env.*
+# Shade timetable cache between builds (CI keeps it with actions/cache).
+.cache/

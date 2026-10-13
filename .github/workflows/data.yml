@@ -33,8 +33,23 @@ jobs:
           TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
           TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
         run: python -m pipeline.fetch_chargers
+      # Shade timetables from the previous run (see pipeline/shade_cache.py): unchanged parks are not
+      # recomputed. A fresh key every run saves the new cache; restore-keys picks the latest one.
+      - name: Restore shade cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/shade
+          key: shade-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            shade-${{ github.ref_name }}-
+            shade-
       - name: Build data
         run: python -m pipeline.build_data
+      - name: Save shade cache
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/shade
+          key: shade-${{ github.ref_name }}-${{ github.run_id }}
       - name: Commit
         run: |
           git config user.name "shadehop-bot"

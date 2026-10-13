@@ -109,3 +109,18 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     assert len(allp["parks"]) == len(list((dataset / "parks").glob("*.json")))
     assert all("shade_timetable" not in p and "level" in p for p in allp["parks"])
     assert "regions/taipei.json" in (out / "llms.txt").read_text()
+    # Google Maps links are added by the site build: park JSON, region GeoJSON (popups) and the park page.
+    assert full["parks"][0]["google_maps_url"].startswith("https://www.google.com/maps/search/")
+    assert all(f["properties"]["gmaps"] for f in tp["features"])
+    assert "Google 地圖評論" in page
+
+
+def test_google_maps_link_uses_real_names_only():
+    from urllib.parse import unquote
+
+    from sitegen.links import google_maps_url
+    parks = {p["osm"]["id"]: p for p in Builder(raw()).build()}
+    named = unquote(google_maps_url(parks[70]))  # OSM-named park
+    assert named.startswith("https://www.google.com/maps/search/?api=1&query=") and "測試公園" in named
+    p = dict(parks[30], name="遊戲場（近測試路）", name_source="nearest_street", park_name=None, official=None)
+    assert unquote(google_maps_url(p)).endswith(f"{p['location']['lat']},{p['location']['lng']}")

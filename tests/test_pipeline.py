@@ -422,12 +422,29 @@ def test_same_name_points_in_one_park_are_merged():
     assert len(found) == 1
 
 
-def test_google_maps_link_uses_real_names_only():
-    from urllib.parse import unquote
 
-    from pipeline.build_data import google_maps_url
-    parks = {p["osm"]["id"]: p for p in Builder(raw()).build()}
-    named = unquote(parks[70]["google_maps_url"])  # OSM-named park
-    assert named.startswith("https://www.google.com/maps/search/?api=1&query=") and "測試公園" in named
-    p = dict(parks[30], name="遊戲場（近測試路）", name_source="nearest_street", park_name=None, official=None)
-    assert unquote(google_maps_url(p)).endswith(f"{p['location']['lat']},{p['location']['lng']}")
+def test_shade_cache_reuses_identical_timetables(monkeypatch, tmp_path):
+    from pipeline import build_data, shade_cache
+
+    first = Builder(raw())
+    cold = first.build()
+    shade_cache.save("t", first.tt_used, tmp_path)
+
+    calls = []
+    monkeypatch.setattr(build_data, "timetable", lambda *a, **k: calls.append(1))
+    second = Builder(raw())
+    second.tt_cache = shade_cache.load("t", tmp_path)
+    warm = second.build()
+    assert calls == [] and warm == cold  # nothing recomputed, same output
+    assert "_tt_key" not in warm[0]
+
+
+def test_shade_cache_key_changes_with_buildings():
+    from shapely.geometry import box
+
+    from pipeline import shade_cache
+    zone = box(0, 0, 10, 10)
+    tower = Caster(box(20, 0, 30, 10), 0, 30, "building")
+    taller = Caster(box(20, 0, 30, 10), 0, 45, "building")
+    assert shade_cache.key(zone, [tower], 25.0, 121.0) != shade_cache.key(zone, [taller], 25.0, 121.0)
+    assert shade_cache.key(zone, [tower], 25.0, 121.0) == shade_cache.key(box(0, 0, 10, 10), [tower], 25.0, 121.0)

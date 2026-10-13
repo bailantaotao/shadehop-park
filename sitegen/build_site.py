@@ -14,6 +14,8 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from .links import google_maps_url
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "public"
@@ -154,6 +156,14 @@ def _write_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":"), sort_keys=True) + "\n")
 
 
+def _with_links(src: Path, dest: Path, links: dict[str, str]) -> None:
+    """Copy a park FeatureCollection, adding each park's Google Maps link as `gmaps` (map popups)."""
+    fc = json.loads(src.read_text())
+    for f in fc["features"]:
+        f["properties"]["gmaps"] = links.get(f["id"])
+    _write_json(dest, fc)
+
+
 def load_dataset(data: Path = DATA) -> tuple[dict, list[dict]]:
     """meta.json plus every data/parks/<id>.json, ordered by id."""
     meta = json.loads((data / "meta.json").read_text())
@@ -167,6 +177,10 @@ def slim(p: dict) -> dict:
 
 def build(out: Path = OUT) -> None:
     meta, parks = load_dataset(DATA)
+    # Display-only links are added here, not in the pipeline, so changing them needs no data rebuild.
+    for p in parks:
+        p["google_maps_url"] = google_maps_url(p)
+    links = {p["id"]: p["google_maps_url"] for p in parks}
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
@@ -193,16 +207,18 @@ def build(out: Path = OUT) -> None:
     (out / "api" / "parks").mkdir(parents=True)
     (out / "schema").mkdir()
     shutil.copy(ROOT / "schema" / "park.schema.json", out / "schema" / "park.schema.json")
-    shutil.copy(DATA / "parks.geojson", out / "api" / "parks.geojson")
+    _with_links(DATA / "parks.geojson", out / "api" / "parks.geojson", links)
     shutil.copy(DATA / "meta.json", out / "api" / "meta.json")
     shutil.copy(DATA / "parks.csv", out / "api" / "parks.csv")
     shutil.copytree(DATA / "regions", out / "api" / "regions")
+    for f in (out / "api" / "regions").glob("*.geojson"):
+        _with_links(f, f, links)
     if (DATA / "chargers.geojson").exists():
         shutil.copy(DATA / "chargers.geojson", out / "api" / "chargers.geojson")
     if (DATA / "casters").exists():
         shutil.copytree(DATA / "casters", out / "api" / "casters")
     for p in parks:
-        shutil.copy(DATA / "parks" / f"{p['id']}.json", out / "api" / "parks" / f"{p['id']}.json")
+        (out / "api" / "parks" / f"{p['id']}.json").write_text(json.dumps(p, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
     # Full data, one file per region (each stays far below Cloudflare's 25 MB per-file limit).
     for rid in meta["region_ids"]:
         mine = [p for p in parks if p["region"]["id"] == rid]

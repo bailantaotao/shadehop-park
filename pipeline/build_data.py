@@ -17,13 +17,12 @@ import shutil
 import sys
 import time
 from pathlib import Path
-from urllib.parse import quote
 
 from shapely import STRtree
 from shapely.geometry import Point
 from shapely.ops import unary_union
 
-from . import config
+from . import config, shade_cache
 from .chargers import classify, is_car_charger
 from .geo import LocalProjection, element_geometry, is_area
 from .shade import Caster, ShadeModel, best_windows, daytime_shaded_share, timetable
@@ -146,6 +145,9 @@ def _build_worker(job: tuple[str, int]) -> dict | None:
 class Builder:
     def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None, tdx: dict | None = None):
         self.raw = raw
+        # Shade timetables from the previous build, by fingerprint (see shade_cache); main() fills it.
+        self.tt_cache: dict = {}
+        self.tt_used: dict = {}  # the tables this build used, to save as the next cache
         self.city = city
         self.tdx = tdx
         self.region = region or config.REGIONS[raw.get("region") or config.DEFAULT_REGION]
@@ -476,7 +478,10 @@ class Builder:
         # --- computed shade timetable
         buildings = [c for c in casters if c.kind == "building"]
         known_share = (sum(c.height_known for c in buildings) / len(buildings)) if buildings else 1.0
-        table = timetable(zone, casters, center.y, center.x)
+        tt_key = shade_cache.key(zone, casters, center.y, center.x)
+        table = self.tt_cache.get(tt_key)
+        if table is None:
+            table = timetable(zone, casters, center.y, center.x)
         share = round(daytime_shaded_share(table), 2)
         tt_conf = "medium" if known_share >= 0.7 else "low"
 
@@ -588,6 +593,7 @@ class Builder:
             "shade_types": shade_types,
             "daytime_shaded_share": share,
             "best_shade_windows": best_windows(table),
+            "_tt_key": tt_key,
             "shade_timetable": fact(None, "computed", d, tt_conf, src,
                                     slot_start="06:00", slot_minutes=config.TIMETABLE_SLOT_MIN,
                                     building_height_known_share=round(known_share, 2),
@@ -636,6 +642,7 @@ class Builder:
             pg_points = [p["geom"] if isinstance(p["geom"], Point) else p["geom"].representative_point() for p in self.playgrounds]
             jobs += [(park, "park") for park in self.parks if not any(park["geom"].contains(pt) for pt in pg_points)]
         built = [(r, item["xy"]) for r, (item, _) in zip(self._build_many(jobs), jobs) if r]
+        self._keep_tables(r for r, _ in built)
         keep = self._merge_same_name(self._dedupe(built))
         if self.city and self.city.get("kind") == "playgrounds":
             keep += self._match_official_points(keep)
@@ -643,9 +650,17 @@ class Builder:
             self._match_city(keep)
         for r in keep:
             r.pop("_zone", None)
-            r["google_maps_url"] = google_maps_url(r)
+        self._keep_tables(keep)  # official-only points built after matching
         keep.sort(key=lambda r: r["id"])
         return keep
+
+    def _keep_tables(self, records) -> None:
+        """Move each record's timetable fingerprint into tt_used (the next build's cache), including
+        records later dropped as duplicates - the next build computes those again too."""
+        for r in records:
+            k = r.pop("_tt_key", None)
+            if k:
+                self.tt_used[k] = r["shade_timetable"]["slots"]
 
     def _dedupe(self, built: list[tuple[dict, object]]) -> list[dict]:
         """Drop duplicates: a node mapped inside/next to an already-mapped area, or an area
@@ -899,21 +914,6 @@ class Builder:
         }
 
 
-def google_maps_url(p: dict) -> str:
-    """A free Google Maps link (Maps URLs, no API key) where people can read the place's reviews.
-    Search by a real name plus city/district; for places we named after the nearest street, open
-    the coordinates instead so the search does not land on some other "公園"."""
-    official = (p.get("official") or {}).get("name")
-    name = official or (p["name"] if p["name_source"] in ("osm_name", "official") else p.get("park_name"))
-    name = re.sub(r"[（(][^）)]*[）)]", "", name or "").strip()  # registry codes like 中興公園(公十二)
-    if name:
-        district = p["region"]["district"] if p["region"]["district"] != p["region"]["city"] else ""
-        query = f"{name} {p['region']['city']}{district}"
-    else:
-        query = f"{p['location']['lat']},{p['location']['lng']}"
-    return "https://www.google.com/maps/search/?api=1&query=" + quote(query)
-
-
 def summary(p: dict) -> dict:
     """Flat properties for the map/GeoJSON."""
     return {
@@ -936,7 +936,6 @@ def summary(p: dict) -> dict:
         "height_known": p["shade_timetable"]["building_height_known_share"],
         "timetable": p["shade_timetable"]["slots"],
         "best": p["best_shade_windows"],
-        "gmaps": p.get("google_maps_url"),
     }
 
 
@@ -1071,7 +1070,11 @@ def main(argv: list[str]) -> None:
     for rid in region_ids:
         t = time.time()
         b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid))
+        b.tt_cache = shade_cache.load(rid)
         mine = b.build()
+        reused = len(b.tt_used.keys() & b.tt_cache.keys())
+        print(f"{rid}: shade timetables reused {reused}/{len(b.tt_used)} from cache", file=sys.stderr)
+        shade_cache.save(rid, b.tt_used)
         parks += mine
         metas.append(b.meta(mine))
         casters += b.casters_geojson(mine)["features"]

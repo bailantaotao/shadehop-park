@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}使用條款與隱私權｜{{ SITE_NAME }}{% endblock %}
+{% block description %}{{ SITE_NAME }}的免責聲明、隱私權說明與資料授權：不需註冊、不收集個人資料，遮陰與設施資訊僅供參考。{% endblock %}
+{% block canonical %}{{ site_url }}/terms/{% endblock %}
+{% block main %}
+<div class="park terms">
+<p class="small"><a href="{{ root }}">← 回地圖</a></p>
+<section class="pcard">
+<h1 class="pname">使用條款與隱私權</h1>
+<p class="muted small" style="margin:0">生效日期：{{ TERMS_DATE }}</p>
+<p>{{ SITE_NAME }}（ShadeHop）是一個免費的公益地圖，幫助家長找到遮陽、下雨也能玩的兒童遊戲場，以及附近的停車、公廁與充電站。使用本站即表示您同意以下內容。重點摘要：</p>
+<ul>
+<li>網站上的遮陰、設施與天氣資訊都是<b>參考用的推估</b>，出門前請以現場狀況為準。</li>
+<li>本站<b>不需要註冊，也不收集您的個人資料</b>；收藏與定位只在您的瀏覽器裡使用。</li>
+<li>網站資料可以自由使用，但需註明出處（詳見「資料授權」）。</li>
+</ul>
+</section>
+
+<section class="pcard" id="disclaimer">
+<h2 class="ptitle">一、免責聲明</h2>
+<ol>
+<li><b>遮陰與下雨能不能玩是推估值。</b>本站依 OpenStreetMap 的建物、高架與屋頂資料，加上太陽位置計算陰影，並非實地量測。建物高度不完整、樹木、臨時施工或新建築都可能讓實際情況不同。</li>
+<li><b>設施資訊可能有誤或已經過時。</b>遊戲場、公廁、停車場、便利商店、車站與充電站資料來自 OpenStreetMap 與政府開放資料，可能有缺漏、錯誤，或已經變動（例如遊具維修、公廁關閉、停車場改建、充電站停用）。開放時間、收費與車位請以現場或管理單位公告為準。</li>
+<li><b>距離是直線距離。</b>實際步行或開車距離通常更遠。</li>
+<li><b>天氣是預報。</b>降雨機率與紫外線指數來自中央氣象署的鄉鎮預報，可能與實際天氣不同。</li>
+<li><b>遊戲場的安全與管理由各管理單位負責。</b>本站不負責任何遊戲場、場所或設施的狀況與安全。請隨時留意孩子的安全，並注意防曬、補充水分。</li>
+<li><b>外部連結與服務。</b>「導航」「評論」會開啟 Google 地圖，其他連結可能前往第三方網站；這些網站的內容與隱私做法由各自負責。</li>
+<li>本站以「現況」免費提供，不保證資訊完整、正確或隨時可用。在法律允許的範圍內，對於因使用或無法使用本站資訊所產生的任何損失，本站不負賠償責任。</li>
+</ol>
+</section>
+
+<section class="pcard" id="privacy">
+<h2 class="ptitle">二、隱私權</h2>
+<p>本站沒有會員或登入功能，不會要求您提供姓名、電話、Email 等個人資料，也沒有使用廣告追蹤或網站分析工具。</p>
+<ul>
+<li><b>我的最愛：</b>只存在您這台裝置的瀏覽器裡（localStorage），不會上傳。清除瀏覽器資料就會刪除。</li>
+<li><b>定位：</b>按下定位按鈕時，瀏覽器會詢問是否允許。您的位置只用來把地圖移到您所在的地方，不會傳送給本站或任何第三方。</li>
+<li><b>天氣：</b>查詢天氣時，網頁只把公園所在的「縣市與行政區」（例如「臺北市文山區」）送到本站的伺服器，再由伺服器向中央氣象署查詢，不會送出座標或您的位置。</li>
+<li><b>Cookie：</b>本站不使用追蹤用的 Cookie。</li>
+</ul>
+<p>為了顯示網站，您的瀏覽器會連線到以下服務。和瀏覽任何網站一樣，它們會收到您的 IP 位址與瀏覽器資訊，並依各自的隱私權政策處理：</p>
+<ul>
+<li><b>Cloudflare</b>：本站的主機與網路服務（<a href="https://www.cloudflare.com/privacypolicy/">隱私權政策</a>）。</li>
+<li><b>OpenFreeMap</b>：地圖底圖；載入地圖圖資時會得知您正在看的地圖範圍（<a href="https://openfreemap.org/">網站</a>）。</li>
+<li><b>OpenStreetMap</b>：只有在您的裝置無法顯示向量地圖時，才會改向 OpenStreetMap 載入地圖圖片（<a href="https://osmfoundation.org/wiki/Privacy_Policy">隱私權政策</a>）。</li>
+<li><b>Google 地圖</b>：只有在您點選「導航」或「評論」時才會開啟（<a href="https://policies.google.com/privacy?hl=zh-TW">隱私權政策</a>）。</li>
+</ul>
+<p>如果未來新增會收集資料的功能（例如網站分析或回報表單），我們會先更新本頁並註明日期。</p>
+</section>
+
+<section class="pcard" id="license">
+<h2 class="ptitle">三、資料授權與出處</h2>
+<p>本站的公園資料（網頁內容、<a href="{{ root }}api/parks.json">JSON</a>、<a href="{{ root }}api/parks.geojson">GeoJSON</a>、<a href="{{ root }}api/parks.csv">CSV</a> 與 API）是由 OpenStreetMap 資料衍生，依 <a href="https://opendatacommons.org/licenses/odbl/1-0/">開放資料庫授權條款（ODbL 1.0）</a>釋出：您可以自由使用、修改與分享，但需註明「© OpenStreetMap 貢獻者、{{ SITE_NAME }}」，衍生的資料庫也需以相同授權釋出。</p>
+<p>本站使用的資料來源：</p>
+<ul>
+<li><b>OpenStreetMap</b>：© OpenStreetMap 貢獻者，<a href="https://www.openstreetmap.org/copyright">ODbL</a>。</li>
+<li><b>遊戲場與公園名冊</b>：{{ REGISTRY_PUBLISHERS }}，政府資料開放授權條款第1版。</li>
+<li><b>公廁</b>：環境部環境管理署「全國公廁建檔資料」，政府資料開放授權條款第1版。</li>
+<li><b>電動車充電站</b>：交通部「充電站之基本資料」，資料介接「<a href="https://tdx.transportdata.tw/">交通部TDX平臺</a>」。</li>
+<li><b>天氣</b>：中央氣象署鄉鎮天氣預報，政府資料開放授權條款第1版。</li>
+<li><b>地圖底圖</b>：<a href="https://openfreemap.org/">OpenFreeMap</a>、© <a href="https://www.openmaptiles.org/">OpenMapTiles</a>、© OpenStreetMap 貢獻者。</li>
+</ul>
+<p>使用本站 API 時，請合理控制請求頻率（例如快取下載的檔案），並註明出處。API 免費提供、不保證持續可用或格式不變。</p>
+</section>
+
+<section class="pcard" id="contact">
+<h2 class="ptitle">四、資料更正與聯絡</h2>
+<p>發現資料有誤？最快的方式是直接到 OpenStreetMap 修正（每座公園頁最下方「資料來源與回報錯誤」有連結），下次更新就會反映。其他問題或建議，歡迎到 <a href="https://github.com/bailantaotao/shadehop-park/issues">GitHub 回報</a>。</p>
+<p>本頁內容可能隨網站功能調整而更新，更新時會修改上方的生效日期。</p>
+</section>
+</div>
+{% endblock %}

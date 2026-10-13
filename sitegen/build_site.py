@@ -21,6 +21,8 @@ DATA = ROOT / "data"
 OUT = ROOT / "public"
 SITE_URL = (os.environ.get("SITE_URL") or "https://shadehop-park.pages.dev").rstrip("/")
 
+# Date of the current 使用條款與隱私權 text; change it whenever terms.html changes in substance.
+TERMS_DATE = "2026-10-14"
 SPEED_LABEL = {"fast": "快充", "slow": "慢充", "both": "快充+慢充", "unknown": "未標示"}
 RAIN_LABEL = {True: "可以（有遮蔽）", "partial": "部分區域有遮蔽", False: "不行（未發現遮蔽）"}
 CONF_LABEL = {"high": "高", "medium": "中", "low": "低"}
@@ -212,7 +214,7 @@ def build(out: Path = OUT) -> None:
         "site_url": SITE_URL, "meta": meta, "today": date.today().isoformat(), "regions": regions,
         "SITE_NAME": SITE_NAME, "COVERAGE_SHORT": "・".join(r["label"] for r in regions),
         "REGISTRY_PUBLISHERS": "、".join(dict.fromkeys(publishers)) or "政府", "OFFICIAL_METHOD_LABEL": OFFICIAL_METHOD_LABEL,
-        "SPEED_LABEL": SPEED_LABEL, "RAIN_LABEL": RAIN_LABEL, "SURFACE_LABEL": SURFACE_LABEL, "CONF_LABEL": CONF_LABEL,
+        "SPEED_LABEL": SPEED_LABEL, "TERMS_DATE": TERMS_DATE, "RAIN_LABEL": RAIN_LABEL, "SURFACE_LABEL": SURFACE_LABEL, "CONF_LABEL": CONF_LABEL,
         "METHOD_LABEL": METHOD_LABEL, "SHADE_TYPE_LABEL": SHADE_TYPE_LABEL, "SLOT_LABELS": SLOT_LABELS,
     }
 
@@ -267,6 +269,7 @@ def build(out: Path = OUT) -> None:
 
     render("index.html", "index.html", parks=parks, dataset_ld=dataset_ld)
     render("about.html", "about/index.html", dataset_ld=dataset_ld)
+    render("terms.html", "terms/index.html")
     for p in parks:
         render("park.html", f"parks/{p['id']}/index.html", p=p, ld=park_jsonld(p, meta), description=describe(p))
 
@@ -278,7 +281,7 @@ def build(out: Path = OUT) -> None:
         + "".join(f"User-agent: {a}\nAllow: /\n\n" for a in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-User", "Claude-SearchBot", "PerplexityBot", "Google-Extended", "Applebot-Extended"))
         + f"Sitemap: {SITE_URL}/sitemap.xml\n"
     )
-    urls = ["/", "/about/", "/llms.txt", "/llms-full.txt"] + [f"/parks/{p['id']}/" for p in parks]
+    urls = ["/", "/about/", "/terms/", "/llms.txt", "/llms-full.txt"] + [f"/parks/{p['id']}/" for p in parks]
     lastmod = (meta.get("generated_from_osm_base") or date.today().isoformat())[:10]
     (out / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

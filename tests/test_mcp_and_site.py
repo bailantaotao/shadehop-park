@@ -89,6 +89,9 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     ld = json.loads(page.split('<script type="application/ld+json">')[1].split("</script>")[0])
     assert ld["@type"] == "Playground" and ld["geo"]["latitude"]
     assert "GPTBot" in (out / "robots.txt").read_text()
+    terms = (out / "terms" / "index.html").read_text()
+    assert "免責聲明" in terms and "隱私權" in terms and "ODbL" in terms and "/terms/" in (out / "sitemap.xml").read_text()
+    assert "terms/" in page  # footer link on every page
     assert "/parks/nt-w20/" in (out / "sitemap.xml").read_text()
     assert "快充" in (out / "llms-full.txt").read_text()
     tiles = json.loads((out / "api" / "casters" / "index.json").read_text())

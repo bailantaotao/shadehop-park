@@ -4,6 +4,7 @@
 {% block head %}<script type="application/ld+json">{{ dataset_ld | tojson_ld | safe }}</script>{% endblock %}
 {% block main %}
 <h1 style="font-size:1.4rem">資料與方法</h1>
+<p class="small">網站資訊為參考用的推估，使用前請先看<a href="{{ root }}terms/">使用條款與隱私權</a>。</p>
 <p>本站收錄 {{ meta.coverage }}的兒童遊戲場，共 {{ meta.counts.parks }} 處。資料版本：OpenStreetMap {{ meta.generated_from_osm_base }}（各地區中最舊的一份）。</p>
 <table>
 <thead><tr><th>地區</th><th>OSM 遊戲場</th><th>只在官方名冊</th><th>待確認的公園</th><th>官方名冊</th><th>建物有高度資料</th></tr></thead>

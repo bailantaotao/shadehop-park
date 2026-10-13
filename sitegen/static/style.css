@@ -179,3 +179,7 @@ footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align:
 .pp-btns { display: flex; gap: 6px; }
 .pp-btn { flex: none; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--line); color: var(--text) !important; text-decoration: none; text-align: center; }
 .pp-btn.primary { flex: 1; background: var(--accent); border-color: var(--accent); color: var(--accent-ink) !important; }
+
+/* Terms page: tighter list indent on phones */
+.terms ol, .terms ul { padding-left: 1.3em; }
+.terms li { margin-bottom: 6px; }

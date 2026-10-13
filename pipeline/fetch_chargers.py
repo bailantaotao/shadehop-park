@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -60,11 +61,19 @@ def token(cid: str, secret: str) -> str:
     return r.json()["access_token"]
 
 
-def _get(path: str, tok: str) -> dict:
-    r = requests.get(f"{API}/{path}", params={"$format": "JSON"},
-                     headers={"Authorization": f"Bearer {tok}", "User-Agent": UA, "Accept-Encoding": "gzip"}, timeout=120)
-    r.raise_for_status()
-    return r.json()
+def _get(path: str, tok: str, tries: int = 3) -> dict:
+    """GET with a few retries: TDX rate-limits bursts (429) and has brief 5xx outages."""
+    for attempt in range(tries):
+        r = requests.get(f"{API}/{path}", params={"$format": "JSON"},
+                         headers={"Authorization": f"Bearer {tok}", "User-Agent": UA, "Accept-Encoding": "gzip"}, timeout=120)
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < tries - 1:
+            time.sleep(10 * (attempt + 1))
+            continue
+        if not r.ok:
+            print(f"TDX {path}: HTTP {r.status_code} {r.text[:200]!r}", file=sys.stderr)
+        r.raise_for_status()
+        return r.json()
+    raise AssertionError("unreachable")
 
 
 def _text(v) -> str | None:
@@ -109,7 +118,10 @@ def normalise(station: dict, operators: dict[str, str]) -> dict | None:
 
 
 def fetch_city(city: str, tok: str) -> tuple[list[dict], dict]:
-    ops = _get(f"Operator/City/{city}", tok)
+    try:  # operator names are a nicety; never lose the stations over them
+        ops = _get(f"Operator/City/{city}", tok)
+    except requests.RequestException:
+        ops = {}
     operators = {o.get("OperatorID"): _text(o.get("OperatorName")) for o in (ops.get("Operators") or [])}
     data = _get(f"Station/City/{city}", tok)
     stations = [s for s in (normalise(s, operators) for s in (data.get("Stations") or [])) if s]

@@ -477,7 +477,16 @@
 
   // ------------------------------------------------------------- chargers
   var chargerLayer = L.layerGroup().addTo(map), chargers = [], chargersLoaded = false;
-  var CHG = { fast: { icon: "⚡", cls: "fast" }, both: { icon: "⚡", cls: "both" }, slow: { icon: "🔌", cls: "slow" }, unknown: { icon: "?", cls: "unknown" } };
+  // Charger markers match the on-map toggle: fast = orange circle with a white bolt (also for
+  // sites with both), slow = a blue plug, unknown = small grey "?" circle.
+  var BOLT_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg>';
+  var PLUG_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="#fff" stroke-width="2.4" paint-order="stroke" stroke-linejoin="round" d="M16 7V3h-2v4h-4V3H8v4H6v7.5L9.5 18v3h5v-3l3.5-3.5V7z"/></svg>';
+  var CHG = {
+    fast: { cls: "fast", html: BOLT_SVG, size: 26 },
+    both: { cls: "fast", html: BOLT_SVG, size: 26 },
+    slow: { cls: "slow", html: PLUG_SVG, size: 26 },
+    unknown: { cls: "unknown", html: "?", size: 18 },
+  };
 
   function chargerPopup(f) {
     var p = f.properties;
@@ -526,7 +535,7 @@
       var title = p.name + "（" + (p.speed === "unknown" ? "未標示" : p.speed_label) + "）";
       var m = chargerMode === "icon"
         ? L.marker(ll, { pane: "chargers", title: title,
-            icon: L.divIcon({ className: "chg " + k.cls, html: k.icon, iconSize: [24, 24], iconAnchor: [12, 12] }) })
+            icon: L.divIcon({ className: "chg " + k.cls, html: k.html, iconSize: [k.size, k.size], iconAnchor: [k.size / 2, k.size / 2] }) })
         : L.circleMarker(ll, { pane: "chargers", radius: 3.5, weight: 1, color: "#fff",
             fillColor: DOT_COLOR[p.speed] || DOT_COLOR.unknown, fillOpacity: 0.9 });
       m.bindPopup(function () { return chargerPopup(f); }).addTo(chargerLayer);

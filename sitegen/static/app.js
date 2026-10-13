@@ -175,11 +175,49 @@
     return keys;
   }
 
+  // Before sunrise / after sunset there are no shadows to draw; without a cue the map would look
+  // sunny everywhere. Tint it and say when the sun rises or sets on that date at that place.
+  map.createPane("night").style.zIndex = 390;  // above base map, below shadows/markers
+  map.getPane("night").style.pointerEvents = "none";
+  var nightLayer = L.rectangle([[-85, -180], [85, 180]], { pane: "night", stroke: false, fillColor: "#0b1a33", fillOpacity: 0.28, interactive: false });
+
+  function sunTimes(c) {
+    // Minutes after local midnight when the sun crosses the horizon (refined to 1 minute).
+    var p = state.date.split("-").map(Number), up = null, down = null, prev = null;
+    function alt(min) { return sunPosition(new Date(Date.UTC(p[0], p[1] - 1, p[2], 0, min) - TZ * 3600000), c.lat, c.lng).altitude; }
+    for (var m = 3 * 60; m <= 21 * 60; m += 1) {
+      var a = alt(m);
+      // Published sunrise/sunset: upper limb on the horizon incl. refraction (centre at -0.833 deg).
+      if (prev !== null && prev <= -0.833 && a > -0.833 && up === null) up = m;
+      if (prev !== null && prev > -0.833 && a <= -0.833) down = m;
+      prev = a;
+    }
+    return { up: up, down: down };
+  }
+  function hhmm(m) { return String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0"); }
+
+  function drawNight(sun, c) {
+    var label = map.getContainer().querySelector(".map-night");
+    if (sun.altitude > 0) {
+      if (map.hasLayer(nightLayer)) map.removeLayer(nightLayer);
+      if (label) label.hidden = true;
+      return;
+    }
+    if (!map.hasLayer(nightLayer)) nightLayer.addTo(map);
+    if (!label) { label = L.DomUtil.create("div", "map-night", map.getContainer()); label.setAttribute("role", "status"); }
+    var t = sunTimes(c), evening = SLOT_START + state.slot * SLOT_MIN >= 12 * 60;
+    label.textContent = evening
+      ? "🌙 日落後，沒有直射陽光" + (t.down !== null ? "（這天日落約 " + hhmm(t.down) + "）" : "")
+      : "🌅 日出前，還沒有直射陽光" + (t.up !== null ? "（這天日出約 " + hhmm(t.up) + "）" : "");
+    label.hidden = false;
+  }
+
   function drawShadows() {
     shadowLayer.clearLayers();
-    if (!tiles.index || map.getZoom() < SHADOW_MIN_ZOOM) return;
     var c = map.getCenter();
     var sun = sunPosition(slotDate(), c.lat, c.lng);
+    drawNight(sun, c);
+    if (!tiles.index || map.getZoom() < SHADOW_MIN_ZOOM) return;
     if (sun.altitude <= 0) return;
     var k = 1 / Math.tan(sun.altitude * Math.PI / 180);
     var ux = -Math.sin(sun.azimuth * Math.PI / 180) * k, uy = -Math.cos(sun.azimuth * Math.PI / 180) * k;

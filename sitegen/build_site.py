@@ -5,6 +5,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import shutil
@@ -147,6 +148,12 @@ def build(out: Path = OUT) -> None:
     out.mkdir(parents=True)
     env = Environment(loader=FileSystemLoader(ROOT / "sitegen" / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["shade_class"] = shade_class
+    # Fingerprint static files (?v=<content hash>) so browsers never pair a new page with an old
+    # cached script or stylesheet - some mobile and in-app browsers keep stale copies.
+    def asset(path: str) -> str:
+        digest = hashlib.sha256((ROOT / "sitegen" / path).read_bytes()).hexdigest()[:10]
+        return f"{path}?v={digest}"
+    env.globals["asset"] = asset
     env.filters["tojson_ld"] = lambda d: json.dumps(d, ensure_ascii=False, indent=1).replace("</", "<\\/")
     regions = [meta["regions"][rid]["region"] for rid in meta["region_ids"]]
     publishers = [r["city_registry"]["publisher"] for r in meta["regions"].values() if r.get("city_registry")]

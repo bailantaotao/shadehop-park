@@ -645,9 +645,13 @@
     loadRegionsInView();
     weather();
   });
-  fetch("api/chargers.geojson").then(function (r) { return r.json(); }).then(function (gj) {
-    chargers = gj.features; chargersLoaded = true; drawChargers();
-  }).catch(function () {
+  fetch("api/chargers.geojson").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (gj) {
+    chargers = gj.features; chargersLoaded = true;
+    // The file can arrive before the regions list has given the map its first view; Leaflet
+    // cannot place markers until then.
+    map.whenReady(drawChargers);
+  }, function () {
+    // Only a failed download is reported as such (not a drawing error after it loaded).
     document.querySelectorAll("[data-layer] .n").forEach(function (o) { o.textContent = "!"; });
     mapToast("充電站資料暫時無法載入");
   });

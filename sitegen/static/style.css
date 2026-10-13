@@ -60,6 +60,9 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .list { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 6px; }
 .card h3 { margin: 0; font-size: 1rem; }
+.card[data-park] { cursor: pointer; }
+.card[data-park]:hover { border-color: var(--accent); }
+.card.selected { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }
 .badges { display: flex; gap: 6px; flex-wrap: wrap; }
 .badge { font-size: .78rem; padding: 2px 8px; border-radius: 999px; background: var(--chip); }
 .badge.A { background: var(--a); color: #fff; }

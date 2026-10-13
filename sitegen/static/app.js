@@ -184,7 +184,7 @@
     }).join("");
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">☔ 下雨可玩</span>', B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
-    return '<article class="card"><h3>' + Favs.button(p.id) + ' <a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
+    return '<article class="card' + (state.selected === p.id ? " selected" : "") + '" data-park="' + esc(p.id) + '"><h3>' + Favs.button(p.id) + ' <a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
       '<div class="badges">' + levelBadge + (p.kind === "park" ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +
@@ -265,14 +265,25 @@
       render();
     });
   });
+  // Show a park on the map: centre it, open its popup, mark its card, and bring the map into view.
+  function focusPark(id) {
+    var m = markers[id];
+    if (!m) return;
+    state.selected = id;
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 17));
+    m.openPopup();
+    var box = document.getElementById("map").getBoundingClientRect();
+    if (box.top < 0 || box.bottom > window.innerHeight) document.getElementById("map").scrollIntoView({ behavior: "smooth" });
+    render(true);
+  }
+
   $("#list").addEventListener("click", function (e) {
     var j = e.target.closest("[data-jump]"), f = e.target.closest("[data-focus]");
-    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; render(); window.scrollTo({ top: 0, behavior: "smooth" }); }
-    if (f && markers[f.dataset.focus]) {
-      var m = markers[f.dataset.focus];
-      map.setView(m.getLatLng(), 17); m.openPopup();
-      document.getElementById("map").scrollIntoView({ behavior: "smooth" });
-    }
+    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+    if (f) { focusPark(f.dataset.focus); return; }
+    // Anywhere else on a card (not its name link, star or other buttons) also shows it on the map.
+    var card = e.target.closest("[data-park]");
+    if (card && !e.target.closest("a, button, input")) focusPark(card.dataset.park);
   });
   map.on("moveend", function () {
     loadRegionsInView();

@@ -2,7 +2,7 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "NewTaipei",
  "count": null,
- "fetched_at": "2026-10-13T09:01:02+00:00",
+ "fetched_at": "2026-10-13T09:41:17+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "newtaipei",
@@ -1816,37 +1816,6 @@
    "spaces": 1
   },
   {
-   "charging_points": 2,
-   "charging_rate": "待填寫",
-   "connectors": [
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
-    },
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    }
-   ],
-   "description": "充電樁*2 位置B2 快充 一度10元",
-   "floors": "B2",
-   "id": "60199085-SA0638011",
-   "lat": 121.45438,
-   "lng": 25.0106,
-   "name": "板橋黃石市場停車場",
-   "operation_type": "公辦民營",
-   "operator": "板橋黃石市場停車場",
-   "operator_id": "60199085",
-   "parking_rate": "25元/半小時",
-   "restriction": "快充 一度10元",
-   "service_time": "每日/00:00-24:00",
-   "spaces": 2
-  },
-  {
    "charging_points": 1,
    "charging_rate": "慢充每度8元",
    "connectors": [
@@ -1920,31 +1889,6 @@
    "restriction": null,
    "service_time": "每日/00:00-24:00",
    "spaces": 1
-  },
-  {
-   "charging_points": 2,
-   "charging_rate": "1度8元",
-   "connectors": [
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    }
-   ],
-   "description": "充電車位2格，充電樁2座，位於車格4、車格5，",
-   "floors": "1F",
-   "id": "72828514-SA0160",
-   "lat": 121.471882,
-   "lng": 25.026708,
-   "name": "新北藝文停車場",
-   "operation_type": "公辦民營",
-   "operator": "俥亭停車事業股份有限公司板橋藝文營業所",
-   "operator_id": "72828514",
-   "parking_rate": "臨停1小時40元，平日12小時上限250元，假日無上限",
-   "restriction": null,
-   "service_time": "24小時",
-   "spaces": 2
   },
   {
    "charging_points": 2,

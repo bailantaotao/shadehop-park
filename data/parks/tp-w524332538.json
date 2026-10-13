@@ -109,15 +109,92 @@
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": null,
+  "nearest_any_m": 1865,
   "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 1865,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 0,
+  "slow": 2,
+  "total": 2,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 14,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1865,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1,B2",
+   "location": {
+    "lat": 25.11609,
+    "lng": 121.53644
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市立大學天母校區教學、行政科資大樓地下停車場",
+   "opening_hours": "每日00:00至24:00",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車事業股份有限公司臺北市立大學營業所",
+   "osm": null,
+   "parking_rate": "平日30元/每小時 12小時最高200元 假日50元/每小時 12小時最高350元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 14,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0709",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1940,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.11602,
+    "lng": 121.5356
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市立大學天母校區體育館平面停車場",
+   "opening_hours": "每日00:00至24:00",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車事業股份有限公司臺北市立大學營業所",
+   "osm": null,
+   "parking_rate": "平日30元/每小時 12小時最高200元 假日50元/每小時 12小時最高350元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0935",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.01,
  "geometry_estimated": false,
  "id": "tp-w524332538",
@@ -576,6 +653,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T03:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

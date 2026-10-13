@@ -108,16 +108,401 @@
   }
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": null,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "fast": 3,
+  "nearest_any_m": 65,
+  "nearest_fast_m": 639,
+  "nearest_slow_m": 65,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 0,
+  "slow": 54,
+  "total": 57,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 10,
+   "charging_rate": "計度/8元每度",
+   "distance_m": 65,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1,B2",
+   "location": {
+    "lat": 25.03068,
+    "lng": 121.56694
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "三張里地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "皇鋒通訊股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0505",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 9,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 198,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.03307,
+    "lng": 121.56647
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "信義廣場地下停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時50元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0334",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "充電費率每度 8 元",
+   "distance_m": 236,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.03262,
+    "lng": 121.56482
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "詮營信義101停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "立鉑國際股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/平日/60元每小時，每日最高/200元每日；計時/假日及定假日/60元每小時，每日最高/280元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1667",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 270,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.02885,
+    "lng": 121.5659
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市災害應變中心地下停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時30元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0567",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 410,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.03182,
+    "lng": 121.56256
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "信義國小地下停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時30元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0816",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計分/1 元每分",
+   "distance_m": 500,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.03568,
+    "lng": 121.56776
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "USPACE 宏泰A19購物中心停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/70元每小時，每日最高無上限",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0343",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "計分/1 元每分",
+   "distance_m": 570,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.03608,
+    "lng": 121.56869
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "USPACE交易二號停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/80元每小時，每日最高/380元 每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1054",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "計分/1.25 元每分",
+   "distance_m": 625,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.03557,
+    "lng": 121.56262
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "台北君悅酒店停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/70元每小時，每日最高無上限",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0022",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度 /固定 /12元 DC每度",
+   "distance_m": 639,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B4",
+   "location": {
+    "lat": 25.03693,
+    "lng": 121.56795
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "遠東百貨信義分公司",
+   "opening_hours": "週日-週四/11:00-21:30,週五-週六及例假日前一天/11:00-22:00",
+   "operation_type": "私有民營",
+   "operator": "遠傳電信股份有限公司",
+   "osm": null,
+   "parking_rate": "計時 /每日/100元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1238",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.06,
  "geometry_estimated": false,
  "id": "tp-w1344827829",
@@ -654,6 +1039,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T03:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

@@ -49,15 +49,60 @@
  },
  "charger_summary": {
   "fast": 1,
-  "nearest_any_m": 1057,
+  "nearest_any_m": 650,
   "nearest_fast_m": 1057,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 650,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 1,
+  "slow": 10,
+  "total": 11,
   "unknown": 0
  },
  "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 650,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 25.078752,
+    "lng": 121.389284
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北停三立體停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02939",
+   "verified_at": "2026-10-13"
+  },
   {
    "access": null,
    "brand": "U-Power 新北林口站",
@@ -80,10 +125,239 @@
     "url": "https://www.openstreetmap.org/node/10648160168"
    },
    "sockets": [],
+   "source": "osm",
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "output",
    "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1081,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.075,
+    "lng": 121.37942
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "林口世大運選手村社會住宅地下停車場C區",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "28652185-SLINKOU003",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度 /固定 /8.5元 AC 7kW每度",
+   "distance_m": 1217,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.066989,
+    "lng": 121.401286
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "國立臺灣師範大學林口校區資訊教學大樓地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "97179430-S215",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1222,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.07248,
+    "lng": 121.3776
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "林口世大運選手村社會住宅地下停車場D區",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "28652185-SLINKOU004",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1335,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.07539,
+    "lng": 121.37692
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "林口世大運選手村社會住宅地下停車場B區",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "28652185-SLINKOU002",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1538,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.07756,
+    "lng": 121.37561
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "林口世大運選手村社會住宅地下停車場A區",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "28652185-SLINKOU001",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 1648,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.07373,
+    "lng": 121.37344
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Acon-eco新北林口檔案館站",
+   "opening_hours": "24小時",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "89132567-S0128",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -635,7 +909,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T05:08:55+00:00",
+   "as_of": "2026-10-13T12:35:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-13T05:54:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

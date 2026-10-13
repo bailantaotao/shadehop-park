@@ -102,13 +102,13 @@
   }
  },
  "charger_summary": {
-  "fast": 2,
+  "fast": 4,
   "nearest_any_m": 264,
   "nearest_fast_m": 264,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 286,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 2,
+  "slow": 35,
+  "total": 38,
   "unknown": 0
  },
  "chargers": [
@@ -142,10 +142,139 @@
      "type": "type1_combo"
     }
    ],
+   "source": "osm",
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
    "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/尖峰/09:00-23:59/5.51 元每度, 計度/尖峰/06:00-11:00/5.42 元每度, 計度/尖峰/14:00-23:59/5.42 元每度, 計度/離峰/23:59-09:00/3.46 元每度, 計度/離峰/23:59-06:00/3.39 元每度, 計度/離峰/11:00-14:00/3.39 元每度, 計度/半尖峰/09:00-23:59/4.14 元每度, 計度/半尖峰/06:00-11:00/4.06 元每度, 計度/半尖峰/14:00-23:59/4.06 元每度,",
+   "distance_m": 286,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.06105,
+    "lng": 121.59348
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "潭美停車場",
+   "opening_hours": "星期一：00:00～23:59星期二：00:00～23:59星期三：00:00～23:59星期四：00:00～23:59星期五：00:00～23:59星期六：00:00～23:59星期日：00:00～23:59",
+   "operation_type": "私有民營",
+   "operator": "拓鑫能源股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/40 元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1795",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計分/1.25 元每分",
+   "distance_m": 294,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.06209,
+    "lng": 121.58762
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "便利停車場潭美站",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/50元每小時，每日最高/300元 每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1121",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 823,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.06865,
+    "lng": 121.59237
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "石潭平面停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時30元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0279",
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -169,10 +298,125 @@
     "url": "https://www.openstreetmap.org/way/1185424104"
    },
    "sockets": [],
+   "source": "osm",
    "speed": "fast",
    "speed_label": "快充 (DC)（依站名判斷）",
    "speed_source": "name",
    "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "● 計度 / 固定 / 6 元每度",
+   "distance_m": 861,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.06884,
+    "lng": 121.58803
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市內湖區新湖國民小學活動中心地下停車場",
+   "opening_hours": "本場為月租場，未開放臨時停車。",
+   "operation_type": "公辦公營",
+   "operator": "臺北市內湖區新湖國民小學",
+   "osm": null,
+   "parking_rate": "本場為月租場，未開放臨時停車。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1773",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "免費",
+   "distance_m": 878,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.06921,
+    "lng": 121.58901
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "內湖區行政中心停車場",
+   "opening_hours": "地上1層:平日/08:30-17:30,18:00-07:30，例假日不開放，地下1層:平日/18:00-08:00，選舉期間、特殊活動不開放",
+   "operation_type": "公辦公營",
+   "operator": "亟泰工程技術顧問有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0184",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計時/每日/5元每0.5時",
+   "distance_m": 914,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 25.05329,
+    "lng": 121.59294
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "玉成國小地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "寶盛國際股份有限公司",
+   "osm": null,
+   "parking_rate": "每0.5小時10元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0722",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -748,7 +992,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T05:08:57+00:00",
+   "as_of": "2026-10-13T03:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-13T05:54:13+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

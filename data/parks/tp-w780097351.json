@@ -96,16 +96,328 @@
   }
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": null,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "fast": 2,
+  "nearest_any_m": 59,
+  "nearest_fast_m": 608,
+  "nearest_slow_m": 59,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 0,
+  "slow": 29,
+  "total": 31,
   "unknown": 0
  },
- "chargers": [],
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/12 元每度",
+   "distance_m": 59,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.0965,
+    "lng": 121.52257
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "華榮社宅場",
+   "opening_hours": "7x24 小時",
+   "operation_type": "公辦民營",
+   "operator": "裕電俥電股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/150 元每小時;計次/每日/400 元每次",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1809",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "每度電費：8元",
+   "distance_m": 375,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.09942,
+    "lng": 121.52195
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "文昌國小地下停車場",
+   "opening_hours": "24小時",
+   "operation_type": "公辦公營",
+   "operator": "日月亭股份有限公司",
+   "osm": null,
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0359",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計度/固定/8 元每度",
+   "distance_m": 379,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.09583,
+    "lng": 121.51837
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市立天文科學教育館地下及戶外平面停車場",
+   "opening_hours": "週二~周日 07:30~18:00",
+   "operation_type": "公辦公營",
+   "operator": "臺北市立天文科學教育館",
+   "osm": null,
+   "parking_rate": "計時/每日/30 元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0101",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "免費",
+   "distance_m": 424,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.09283,
+    "lng": 121.51976
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市士林區行政中心地下停車場",
+   "opening_hours": "平日/20:00-08:00,六日及國定假日都不開放",
+   "operation_type": "公辦公營",
+   "operator": "亟泰工程技術顧問有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0183",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "待確認",
+   "distance_m": 571,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.09407,
+    "lng": 121.51687
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "士林高商停車場",
+   "opening_hours": "平日/22:30-07:00, 假日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "岳鼎股份有限公司",
+   "osm": null,
+   "parking_rate": "季租4,000元；年租16,000元。租借場地如有停車需求，30元/時。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1180",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/5元每度",
+   "distance_m": 582,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.09216,
+    "lng": 121.52637
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "嘟嘟房捷運士林站停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "中興電工機械股份有限公司",
+   "osm": null,
+   "parking_rate": "每1小時0元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0140",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "計度/離峰/6.5元每度，計度/尖峰/13.5元每度",
+   "distance_m": 608,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.09327,
+    "lng": 121.52761
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "USPACE福林第二停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "特爾電力股份有限公司",
+   "osm": null,
+   "parking_rate": "電動汽車充電不收停車費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0514",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計分/1.25 元每分",
+   "distance_m": 609,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.09278,
+    "lng": 121.52729
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "USPACE 福林第一停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/平日/50元每小時，每日最高/280元 每日；計時/假日/70元每小時，每日最高無上限",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0040",
+   "verified_at": "2026-10-13"
+  }
+ ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "tp-w780097351",
@@ -657,7 +969,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T05:08:57+00:00",
+   "as_of": "2026-10-13T03:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-13T05:54:13+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -90,42 +90,378 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 0,
-  "nearest_any_m": 1958,
-  "nearest_fast_m": null,
-  "nearest_slow_m": null,
+  "fast": 1,
+  "nearest_any_m": 327,
+  "nearest_fast_m": 1350,
+  "nearest_slow_m": 327,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 1,
+  "slow": 26,
+  "total": 28,
   "unknown": 1
  },
  "chargers": [
   {
    "access": null,
-   "brand": "BMW",
-   "capacity": null,
-   "distance_m": 1958,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/8元每度",
+   "distance_m": 327,
    "distance_method": "straight_line",
    "fee": null,
+   "floors": "B2",
    "location": {
-    "lat": 25.021987,
-    "lng": 121.5491
+    "lat": 25.00602,
+    "lng": 121.55845
    },
    "max_kw": null,
-   "method": "osm",
-   "name": "BMW",
-   "opening_hours": null,
-   "operator": "BMW",
-   "osm": {
-    "id": 4837986425,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4837986425"
+   "method": "official_data",
+   "name": "辛亥國小地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "皇鋒通訊股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/08:00-18:00/20元每小時,計時/每日/18:00-08:00/10元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0128",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "依現場公告",
+   "distance_m": 481,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 25.00089,
+    "lng": 121.55479
    },
-   "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
-   "speed_source": null,
-   "verified_at": "2026-10-12"
+   "max_kw": null,
+   "method": "official_data",
+   "name": "興隆A區社會住宅地下停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "遠創智慧股份有限公司",
+   "osm": null,
+   "parking_rate": "依現場公告",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1807",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/尖峰/09:00-23:59/10.00 元每度, 計度/尖峰/06:00-11:00/10.00 元每度, 計度/尖峰/14:00-23:59/10.00 元每度, 計度/離峰/23:59-09:00/8.00 元每度,計度/離峰/23:59-06:00/8.00 元每度, 計度/離峰/11:00-14:00/8.00 元每度, 計度/半尖峰/09:00-23:59/8.00 元每度, 計度/半尖峰/06:00-11:00/8.00 元每度, 計度/半尖峰/14:00-23:59/8.00 元每",
+   "distance_m": 528,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "3",
+   "location": {
+    "lat": 25.00162,
+    "lng": 121.55181
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "驛林交通股份有限公司興隆站",
+   "opening_hours": "星期一：00:00～23:59星期二：00:00～23:59星期三：00:00～23:59星期四：00:00～23:59星期五：00:00～23:59星期六：00:00～23:59星期日：00:00～23:59",
+   "operation_type": "公辦民營",
+   "operator": "驛林交通股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0153",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 593,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.00301,
+    "lng": 121.56068
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "萬芳八號公園停車場",
+   "opening_hours": "周一至周六/09:00~17:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時50元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0479",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 7,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 635,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.00071,
+    "lng": 121.55136
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "興隆公園地下停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時20元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0715",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計度/固定/7元每度",
+   "distance_m": 652,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 24.99985,
+    "lng": 121.55798
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "萬芳醫院附設停車場",
+   "opening_hours": "每 日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "台灣國際開發事業有限公司萬芳停車場",
+   "osm": null,
+   "parking_rate": "計時/每日/40 元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0270",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "慢充每度8元",
+   "distance_m": 859,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.00027,
+    "lng": 121.54869
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "168停車聯盟-興岩社福大樓",
+   "opening_hours": "24H",
+   "operation_type": "公辦民營",
+   "operator": "助安企業有限公司興岩地下停車場",
+   "osm": null,
+   "parking_rate": "60/1H",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1650",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 973,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B3",
+   "location": {
+    "lat": 25.01377,
+    "lng": 121.55293
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "助安企業有限公司懷愛館地下停車場",
+   "opening_hours": "7x24 小時",
+   "operation_type": "公辦民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/50元/每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0255",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/離峰/6.5元每度，計度/尖峰/13.5元每度",
+   "distance_m": 1350,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.0159,
+    "lng": 121.54873
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "辛亥水安停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "特爾電力股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/20元每半小時，計月/每月/3500元每月",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "TPE1593",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -664,6 +1000,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T03:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

@@ -66,16 +66,61 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 1,
-  "nearest_any_m": 633,
-  "nearest_fast_m": 633,
-  "nearest_slow_m": 1080,
+  "fast": 6,
+  "nearest_any_m": 334,
+  "nearest_fast_m": 334,
+  "nearest_slow_m": 681,
   "radius_m": 2000,
-  "slow": 1,
-  "total": 3,
+  "slow": 11,
+  "total": 18,
   "unknown": 1
  },
  "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/10元每度",
+   "distance_m": 334,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.07032,
+    "lng": 121.3569
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Acon-eco新北全聯林口文化北站",
+   "opening_hours": "24小時",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/平日/50元/每小時, 計時/假日/100元/每小時",
+   "restriction": "以現場告示",
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "89132567-S0149",
+   "verified_at": "2026-10-13"
+  },
   {
    "access": null,
    "brand": "BEGIN",
@@ -98,6 +143,7 @@
     "url": "https://www.openstreetmap.org/node/10649123371"
    },
    "sockets": [],
+   "source": "osm",
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
@@ -140,6 +186,7 @@
      "type": "type2_combo"
     }
    ],
+   "source": "osm",
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
@@ -147,30 +194,221 @@
   },
   {
    "access": null,
-   "brand": "EValue",
-   "capacity": null,
-   "distance_m": 1080,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/尖峰/09:00-23:59/8.00 元每度, 計度/尖峰/06:00-11:00/8.00 元每度, 計度/尖峰/14:00-23:59/8.00 元每度, 計度/離峰/23:59-09:00/4.90 元每度, 計度/離峰/23:59-06:00/4.90 元每度, 計度/離峰/11:00-14:00/4.90 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度",
+   "distance_m": 681,
    "distance_method": "straight_line",
-   "fee": "yes",
+   "fee": null,
+   "floors": "1",
    "location": {
-    "lat": 25.07114,
-    "lng": 121.365178
+    "lat": 25.066227,
+    "lng": 121.356286
    },
-   "max_kw": 7.0,
-   "method": "osm",
-   "name": "EValue 三井林口",
-   "opening_hours": null,
-   "operator": "EValue",
-   "osm": {
-    "id": 10649110861,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10649110861"
-   },
-   "sockets": [],
+   "max_kw": null,
+   "method": "official_data",
+   "name": "AVIS中古車林口A9店 evbar",
+   "opening_hours": "7x24 小時",
+   "operation_type": "私有民營",
+   "operator": "安維斯汽車租賃股份有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
    "speed": "slow",
    "speed_label": "慢充 (AC)",
-   "speed_source": "output",
-   "verified_at": "2026-10-12"
+   "speed_source": "official",
+   "tdx_id": "53799460-S294",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "distance_m": 914,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 25.06651,
+    "lng": 121.36089
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北－林口亞昕福朋喜來登酒店",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "osm": null,
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S554815bb-24da-4ed1-8e6d-5aeb04c584c6",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計時/每1分鐘0.93元",
+   "distance_m": 921,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 25.066492,
+    "lng": 121.360965
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "林口亞昕福朋喜來登酒店",
+   "opening_hours": "每日/00:00~23:59",
+   "operation_type": "私有民營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/40 元每小時每日最高/400元每日, 月租/每月/3000元每月",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "85051710-S471",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "計度/浮動/8元每度",
+   "distance_m": 926,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 25.06623,
+    "lng": 121.36076
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北－林口亞昕福朋喜來登酒店",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/40元每小時/每日最高/400元每日",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S32202",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 18,
+   "charging_rate": "計度/固定/8.8元每度",
+   "distance_m": 947,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "3F",
+   "location": {
+    "lat": 25.071507,
+    "lng": 121.363891
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "MITSUI OUTLET PARK 林口Ⅰ館",
+   "opening_hours": "平日 /11:00-22:00, 平日 /11:00-23:59, 假日 /11:00-22:00",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "依現場為準",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 9,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02391",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -631,6 +869,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T12:35:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

@@ -60,16 +60,182 @@
   "9": null
  },
  "charger_summary": {
-  "fast": 2,
-  "nearest_any_m": 785,
-  "nearest_fast_m": 1189,
-  "nearest_slow_m": 785,
+  "fast": 7,
+  "nearest_any_m": 400,
+  "nearest_fast_m": 466,
+  "nearest_slow_m": 400,
   "radius_m": 2000,
-  "slow": 1,
-  "total": 5,
+  "slow": 15,
+  "total": 24,
   "unknown": 2
  },
  "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 400,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.0698,
+    "lng": 121.37252
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Acon-eco新北林口忠孝站",
+   "opening_hours": "24小時",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/20元/每小時",
+   "restriction": "以現場告示",
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "89132567-S0113",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/10元每度",
+   "distance_m": 401,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.068695,
+    "lng": 121.367874
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "麗林國小停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "檸檬動能股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/開放日/40元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90016138-SF001",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/尖峰/15:00-20:59（星期一到星期五）/ 13.9元每度,計度/離峰/其他時段/ 7.5元每度",
+   "distance_m": 466,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.06919,
+    "lng": 121.367495
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "全聯林口公園站",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "綠樹科技股份有限公司",
+   "osm": null,
+   "parking_rate": "全聯購物金額不限，免費停車30分，滿300元免費一小時，最高折抵一小時",
+   "restriction": "本充電站限會員使用",
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "83039115-S0003",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 23,
+   "charging_rate": "計度/固定/8.8元每度",
+   "distance_m": 653,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "4F, B1",
+   "location": {
+    "lat": 25.067742,
+    "lng": 121.36461
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "MITSUI OUTLET PARK 林口Ⅱ館",
+   "opening_hours": "每日/11:00-22:00",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "⚠️停車優惠僅限於MITSUI OUTLET PARK 林口當日消費之發票，為利於優惠折抵，請牢記車牌號碼。 1.每消費滿1,000元可折停車1小時，依此類推，請於消費同時，告知車牌號碼進行停車優惠折抵。 2.持永豐三井OUTLET聯名卡可於自動繳費機過卡，即享2小時停車優惠，每日每卡每車僅限優惠乙次。 3.憑威秀影城當日購買之票根，於繳費機掃描QR CODE，即享3小時停車優惠，每日每車限抵扣乙次。 4.以上3項優惠可合併使用，每車每日最高折抵5小時。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 12,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02763",
+   "verified_at": "2026-10-13"
+  },
   {
    "access": null,
    "brand": "EValue",
@@ -92,6 +258,7 @@
     "url": "https://www.openstreetmap.org/node/10649110861"
    },
    "sockets": [],
+   "source": "osm",
    "speed": "slow",
    "speed_label": "慢充 (AC)",
    "speed_source": "output",
@@ -99,126 +266,124 @@
   },
   {
    "access": null,
-   "brand": "TAIL 特爾電力",
-   "capacity": 8,
-   "distance_m": 1189,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 846,
    "distance_method": "straight_line",
-   "fee": "yes",
+   "fee": null,
+   "floors": "B1",
    "location": {
-    "lat": 25.068907,
-    "lng": 121.359449
+    "lat": 25.07373,
+    "lng": 121.37344
    },
    "max_kw": null,
-   "method": "osm",
-   "name": "TAIL 特爾電力",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 13651716778,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/13651716778"
+   "method": "official_data",
+   "name": "Acon-eco新北林口檔案館站",
+   "opening_hours": "24小時",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "89132567-S0128",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/固定/5元每度",
+   "distance_m": 847,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.07375,
+    "lng": 121.36884
    },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "林口昕境廣場站",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦民營",
+   "operator": "寶盛國際股份有限公司",
+   "osm": null,
+   "parking_rate": "平日：$20/H，假日：$40/H",
+   "restriction": null,
    "sockets": [
     {
      "count": 1,
-     "current": "DC",
-     "label": "CCS1",
+     "current": "AC",
+     "label": "Type 1 (J1772)",
      "output_kw": null,
-     "type": "type1_combo"
-    },
-    {
-     "count": 1,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
+     "type": "type1"
     }
    ],
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "sockets",
-   "verified_at": "2026-10-12"
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "28371994-STP5180001",
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
-   "brand": "BEGIN",
-   "capacity": null,
-   "distance_m": 1403,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "location": {
-    "lat": 25.066955,
-    "lng": 121.356997
-   },
-   "max_kw": null,
-   "method": "osm",
-   "name": "BEGIN 林口惠民站",
-   "opening_hours": null,
-   "operator": "BEGIN",
-   "osm": {
-    "id": 10649123371,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10649123371"
-   },
-   "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
-   "speed_source": null,
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "brand": "U-Power 新北林口站",
-   "capacity": null,
-   "distance_m": 1472,
+   "brand": null,
+   "capacity": 18,
+   "charging_rate": "計度/固定/8.8元每度",
+   "distance_m": 909,
    "distance_method": "straight_line",
    "fee": null,
+   "floors": "3F",
    "location": {
-    "lat": 25.076712,
-    "lng": 121.380438
-   },
-   "max_kw": 360.0,
-   "method": "osm",
-   "name": "U-Power 新北林口站",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 10648160168,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10648160168"
-   },
-   "sockets": [],
-   "speed": "fast",
-   "speed_label": "快充 (DC)",
-   "speed_source": "output",
-   "verified_at": "2026-10-12"
-  },
-  {
-   "access": null,
-   "brand": "EVOASIS",
-   "capacity": 8,
-   "distance_m": 1725,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "location": {
-    "lat": 25.050686,
-    "lng": 121.372513
+    "lat": 25.071507,
+    "lng": 121.363891
    },
    "max_kw": null,
-   "method": "osm",
-   "name": "EVOASIS",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1547383478,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1547383478"
-   },
-   "sockets": [],
-   "speed": "unknown",
-   "speed_label": "未標示",
-   "speed_source": null,
-   "verified_at": "2026-10-12"
+   "method": "official_data",
+   "name": "MITSUI OUTLET PARK 林口Ⅰ館",
+   "opening_hours": "平日 /11:00-22:00, 平日 /11:00-23:59, 假日 /11:00-22:00",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "依現場為準",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 9,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02391",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -770,7 +935,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T05:08:55+00:00",
+   "as_of": "2026-10-13T12:35:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-13T05:54:10+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

@@ -108,16 +108,175 @@
   }
  },
  "charger_summary": {
-  "fast": 1,
-  "nearest_any_m": 571,
+  "fast": 2,
+  "nearest_any_m": 286,
   "nearest_fast_m": 571,
-  "nearest_slow_m": null,
+  "nearest_slow_m": 286,
   "radius_m": 2000,
-  "slow": 0,
-  "total": 1,
+  "slow": 70,
+  "total": 72,
   "unknown": 0
  },
  "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "計度/尖峰/16:00-22:00/7.00 元每度, 計度/半尖峰/09:00-16:00/7.00 元每度, 計度/半尖峰/22:00-23:59/7.00 元每度, 計度/半尖峰/06:00-11:00/7.00 元每度, 計度/半尖峰/14:00-23:59/7.00 元每度, 計度/離峰/23:59-09:00/7.00 元每度, 計度/離峰/23:59-06:00/7.00 元每度, 計度/離峰/11:00-14:00/7.00 元每度, 計度/離峰/23:59-09:00/7.00 元每度,",
+   "distance_m": 286,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B3",
+   "location": {
+    "lat": 25.06479,
+    "lng": 121.51621
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市大同運動中心地下平面停車場",
+   "opening_hours": "星期一：00:00～23:59\n星期二：00:00～23:59\n星期三：00:00～23:59\n星期四：00:00～23:59\n星期五：00:00～23:59\n星期六：00:00～23:59\n星期日：00:00～23:59",
+   "operation_type": "公辦民營",
+   "operator": "舞動陽光股份有限公司大同分公司",
+   "osm": null,
+   "parking_rate": "計時/每日/40 元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0721",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 8,
+   "charging_rate": "AC/計度/一般/ 8.000元每度",
+   "distance_m": 398,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.06044,
+    "lng": 121.52018
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "成淵高中地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "40元/9:00~21:00，30元/21:00~9:00",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0156",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "免費",
+   "distance_m": 406,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.06632,
+    "lng": 121.51578
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "臺北市大同區行政中心地下停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "亟泰工程技術顧問有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0182",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計分/5元每30分(充電)，10元每30分(佔位未充電)",
+   "distance_m": 554,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.06892,
+    "lng": 121.52041
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "花博公園圓山地下停車場",
+   "opening_hours": "7x24 小時",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車事業股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/40元每小時(0800-2200)，20元每小時(2200-0800)",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0007",
+   "verified_at": "2026-10-13"
+  },
   {
    "access": "yes",
    "brand": "Tesla Supercharger",
@@ -155,10 +314,139 @@
      "type": "tesla_supercharger"
     }
    ],
+   "source": "osm",
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
    "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 1,
+   "charging_rate": "慢充每度8元",
+   "distance_m": 582,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.06905,
+    "lng": 121.51717
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "168停車聯盟-大龍場",
+   "opening_hours": "24H",
+   "operation_type": "公辦民營",
+   "operator": "應安有限公司",
+   "osm": null,
+   "parking_rate": "50/1H",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0896",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 633,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.06801,
+    "lng": 121.52364
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "中山北路3段55巷平面停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時40元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0123",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "計度/每度8.00元",
+   "distance_m": 773,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.05926,
+    "lng": 121.52483
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "永盛公園地下停車場",
+   "opening_hours": "每日/00:00~24:00",
+   "operation_type": "公辦公營",
+   "operator": "源點科技股份有限公司",
+   "osm": null,
+   "parking_rate": "每小時50元",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0425",
+   "verified_at": "2026-10-13"
   }
  ],
  "daytime_shaded_share": 0.17,
@@ -697,6 +985,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T03:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
   }
  ],
  "updated_at": "2026-10-12"

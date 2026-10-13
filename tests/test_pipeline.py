@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 import pytest
 from shapely.geometry import Polygon
 
-from pipeline.build_data import Builder, building_height, summary
+from pipeline.build_data import Builder, building_height, city_aliases, park_key, summary
 from pipeline.chargers import classify, is_car_charger
 from pipeline.shade import Caster, ShadeModel, best_windows, shadow
 from pipeline.sun import sun_position
@@ -189,3 +189,39 @@ def test_scooter_swap_is_not_a_car_charger():
     assert not is_car_charger({"name": "GoStation"})
     assert not is_car_charger({"brand": "Gogoro"})
     assert is_car_charger({"brand": "EVOASIS"})
+
+
+@pytest.mark.parametrize("name,key", [
+    ("扶輪公園(公13)", "扶輪公園"),
+    ("林口扶輪公園", "扶輪公園"),
+    ("足夢運動公園 遊戲場", "足夢公園"),
+    ("足夢公園(文小18)", "足夢公園"),
+    ("林口運動公園", None),  # nothing distinctive left
+    (None, None),
+])
+def test_park_key(name, key):
+    assert park_key(name) == key
+
+
+def test_city_aliases_include_bracketed_names():
+    assert city_aliases("林口社區運動公園(小熊公園，公鄰23)") == {"社區公園", "小熊公園"}
+
+
+def test_city_registry_match():
+    city = {
+        "fetched_at": "2026-10-13T00:00:00+00:00", "source": "https://data.ntpc.gov.tw/datasets/x",
+        "publisher": "新北市政府農業局", "license": "政府資料開放授權條款第1版",
+        "parks": [
+            {"seqno": "1", "name": "測試公園(公鄰1)", "address": "測試路1號", "management": "測試區公所"},
+            {"seqno": "2", "name": "高架公園(公5)", "address": " ", "management": "測試區公所"},
+            {"seqno": "3", "name": "不存在公園", "address": "某路"},
+        ],
+    }
+    b = Builder(raw(), city)
+    parks = {p["osm"]["id"]: p for p in b.build()}
+    assert parks[70]["official"]["name"] == "測試公園(公鄰1)" and parks[70]["official"]["address"] == "測試路1號"
+    assert parks[10]["official"]["name"] == "高架公園(公5)"  # via the containing park's name
+    assert parks[10]["official"]["address"] is None
+    assert parks[20]["official"] is None
+    assert any(src["url"] == city["source"] for src in parks[70]["sources"])
+    assert b.meta(list(parks.values()))["city_registry_not_in_osm"] == [{"name": "不存在公園", "address": "某路"}]

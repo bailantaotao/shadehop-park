@@ -65,7 +65,7 @@ def park_jsonld(p: dict, meta: dict) -> dict:
         "description": describe(p),
         "geo": {"@type": "GeoCoordinates", "latitude": p["location"]["lat"], "longitude": p["location"]["lng"]},
         "address": {"@type": "PostalAddress", "addressRegion": p["region"]["city"], "addressLocality": p["region"]["district"], "addressCountry": "TW",
-                    **({"streetAddress": p["address"]} if p["address"] else {})},
+                    **({"streetAddress": addr} if (addr := p["address"] or (p.get("official") or {}).get("address")) else {})},
         "amenityFeature": feats,
         "sameAs": p["osm"]["url"],
         "dateModified": p["updated_at"],

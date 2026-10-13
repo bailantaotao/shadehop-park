@@ -16,6 +16,7 @@
   {% if p.geometry_estimated %}<span class="badge">範圍為估計（OSM 僅標示一點）</span>{% endif %}
 </div>
 <p>{{ description }}</p>
+{% if p.official %}<p class="small">新北市公園名冊：{{ p.official.name }}{% if p.official.address %}・{{ p.official.address }}{% endif %}{% if p.official.management %}・管理：{{ p.official.management }}{% if p.official.phone %} {{ p.official.phone }}{% endif %}{% endif %}（<a href="{{ p.official.source }}">政府開放資料</a>，依名稱比對）</p>{% endif %}
 
 <section>
 <h2>下雨可以玩嗎？</h2>
@@ -49,8 +50,8 @@
 </table>
 </div>
 <p class="legend" style="margin-top:6px"><span><span class="dot hi"></span>≥60%</span><span><span class="dot mid"></span>30–60%</span><span><span class="dot lo"></span>&lt;30%</span><span><span class="dot night"></span>無日照</span></p>
-{% if p.shade_timetable.building_height_known_share < 0.3 %}<p class="banner">⚠️ 周邊建物只有 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘以 9m 估計，大樓陰影可能被<strong>低估</strong>。</p>{% endif %}
-<p class="prov">方法：{{ METHOD_LABEL[p.shade_timetable.method] }}；信心：{{ CONF_LABEL[p.shade_timetable.confidence] }}。周邊 {{ p.shade_timetable.buildings_considered }} 棟建物中 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘以 9m 估計。{{ p.shade_timetable.note }}</p>
+{% if p.shade_timetable.building_height_known_share < 0.3 %}<p class="banner">⚠️ 周邊建物只有 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘依同類型建物的保守高度估計，大樓陰影可能被<strong>低估</strong>。</p>{% endif %}
+<p class="prov">方法：{{ METHOD_LABEL[p.shade_timetable.method] }}；信心：{{ CONF_LABEL[p.shade_timetable.confidence] }}。周邊 {{ p.shade_timetable.buildings_considered }} 棟建物中 {{ (p.shade_timetable.building_height_known_share * 100) | round | int }}% 有高度資料，其餘依同類型建物的保守高度估計（無樣本時以 9m 計）。{{ p.shade_timetable.note }}</p>
 </section>
 
 <section>

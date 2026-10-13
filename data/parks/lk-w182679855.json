@@ -230,6 +230,15 @@
  },
  "name": "林口扶輪公園",
  "name_source": "osm_name",
+ "official": {
+  "address": "文化二路與忠孝路口",
+  "management": "林口區公所",
+  "method": "name_match",
+  "name": "扶輪公園(公13)",
+  "phone": "(02)26033111",
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-13"
+ },
  "osm": {
   "id": 182679855,
   "type": "way",
@@ -763,6 +772,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T03:22:26+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局 新北市公園",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
  "updated_at": "2026-10-12"

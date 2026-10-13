@@ -15,6 +15,7 @@
 
 ```
 pipeline/fetch_osm.py   Overpass API → data/raw/linkou.osm.json.gz
+pipeline/fetch_city.py  新北市公園名冊（開放資料，無座標）→ data/raw/linkou.city_parks.json，依名稱比對補官方名稱/地址
 pipeline/build_data.py  遮蔽判定、陰影時刻表、停車/充電配對 → data/parks/*.json, parks.json, parks.geojson, parks.csv, casters.geojson
 sitegen/build_site.py   靜態網站 → public/（地圖、每座公園一頁 + JSON-LD、llms.txt、sitemap、OpenAPI）
 mcp_server/server.py    MCP Server，讓 AI Agent 直接查詢
@@ -37,6 +38,7 @@ mcp_server/server.py    MCP Server，讓 AI Agent 直接查詢
 ```bash
 pip install -r requirements.txt
 python -m pipeline.fetch_osm      # 需要能連 Overpass API
+python -m pipeline.fetch_city     # 新北市公園名冊；抓不到時沿用舊檔
 python -m pipeline.build_data
 python -m sitegen.build_site && python -m http.server -d public 8000
 python -m pytest -q

@@ -18,6 +18,56 @@
   "VIADUCT_DECK_BOTTOM_M": 8.0,
   "VIADUCT_DECK_TOP_M": 10.0
  },
+ "city_registry_not_in_osm": [
+  {
+   "address": "公園路192號(新北市立圖書館林口分館)旁",
+   "name": "林口社區運動公園(小熊公園，公鄰23)"
+  },
+  {
+   "address": "仁愛路一段211巷111號對面(文小18旁)",
+   "name": "仁愛公園(公鄰35)"
+  },
+  {
+   "address": "中山路與橫窠雅路口(銅雕公園)",
+   "name": "銅雕公園(公鄰45)"
+  },
+  {
+   "address": "興林一街109巷(高地仰哲社區對面)",
+   "name": "興林公園"
+  },
+  {
+   "address": "忠孝路與公園路口",
+   "name": "仁愛籃球場(廣一)"
+  },
+  {
+   "address": "忠孝路與忠孝路542巷口",
+   "name": "麗園籃球場(廣二)"
+  },
+  {
+   "address": "忠孝路與忠孝路622巷口",
+   "name": "東勢籃球場(廣三)"
+  },
+  {
+   "address": "興林路、興林一街及興林路151巷之間",
+   "name": "市17跳跳糖兒童遊戲場(市17)"
+  },
+  {
+   "address": "竹林路與竹林路412巷路口附近",
+   "name": "727地號公園"
+  },
+  {
+   "address": "文化二路二段、中華一路及文化三路二段交接(林口國民運動中心旁)",
+   "name": "櫻花公園"
+  },
+  {
+   "address": "新北市林口區吉祥路",
+   "name": "吉祥影視公園"
+  },
+  {
+   "address": "中正路與信義路交叉口",
+   "name": "公鄰28公園"
+  }
+ ],
  "counts": {
   "buildings_in_bbox": 5863,
   "buildings_with_height": 412,
@@ -28,7 +78,9 @@
    "none": 52
   },
   "chargers_in_bbox": 6,
+  "city_registry_parks": 40,
   "mapped_playgrounds": 7,
+  "matched_city_registry": 28,
   "park_candidates": 46,
   "parking_lots_in_bbox": 246,
   "parks": 53

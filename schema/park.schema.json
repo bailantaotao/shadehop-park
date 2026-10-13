@@ -15,6 +15,20 @@
     "region": { "type": "object", "properties": { "city": { "type": "string" }, "district": { "type": "string" } } },
     "location": { "$ref": "#/$defs/LatLng" },
     "address": { "type": ["string", "null"] },
+    "official": {
+      "type": ["object", "null"],
+      "description": "Matching entry in the city's official park registry (New Taipei open data), matched by park name. null when not matched.",
+      "required": ["name", "method", "verified_at", "source"],
+      "properties": {
+        "name": { "type": "string" },
+        "address": { "type": ["string", "null"] },
+        "management": { "type": ["string", "null"] },
+        "phone": { "type": ["string", "null"] },
+        "method": { "const": "name_match" },
+        "verified_at": { "type": "string" },
+        "source": { "type": "string" }
+      }
+    },
     "osm": { "$ref": "#/$defs/OsmRef" },
     "geometry_estimated": { "type": "boolean", "description": "True when OSM maps the playground as a point; area is approximated by a circle." },
     "area_m2": { "type": "integer" },

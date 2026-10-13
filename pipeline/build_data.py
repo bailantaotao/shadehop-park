@@ -90,6 +90,27 @@ def bridge_width(tags: dict) -> float:
     return config.BRIDGE_WIDTH_BY_CLASS.get(tags.get("highway", ""), config.BRIDGE_WIDTH_FALLBACK)
 
 
+def park_key(name: str | None) -> str | None:
+    """Comparable park name: no bracketed codes, spaces, region prefix or generic words.
+
+    '扶輪公園(公13)', '林口扶輪公園' -> '扶輪公園'; '足夢運動公園 遊戲場' -> '足夢公園'.
+    Names that reduce to nothing distinctive (e.g. '林口運動公園' -> '公園') return None.
+    """
+    if not name:
+        return None
+    k = re.sub(r"[（(].*?[)）]|\s|遊戲場|運動", "", name)
+    k = k.removeprefix(config.REGION["name"].removesuffix("區"))
+    return k if len(k) >= 3 and k != "公園" else None
+
+
+def city_aliases(name: str) -> set[str]:
+    """Keys for a registry name, including aliases in brackets: '林口社區運動公園(小熊公園，公鄰23)' -> 小熊公園."""
+    keys = {park_key(name)}
+    for inner in re.findall(r"[（(](.*?)[)）]", name):
+        keys |= {park_key(part) for part in re.split(r"[，,、]", inner) if part.endswith("公園")}
+    return {k for k in keys if k}
+
+
 def fact(value, method: str, verified_at: str, confidence: str, source: str, **extra) -> dict:
     d = {"value": value, "method": method, "verified_at": verified_at, "confidence": confidence, "source": source}
     d.update(extra)
@@ -97,8 +118,9 @@ def fact(value, method: str, verified_at: str, confidence: str, source: str, **e
 
 
 class Builder:
-    def __init__(self, raw: dict):
+    def __init__(self, raw: dict, city: dict | None = None):
         self.raw = raw
+        self.city = city
         self.osm_date = (raw.get("osm_base") or raw["fetched_at"])[:10]
         self.boundary = element_geometry(raw["boundary"])
         c = self.boundary.centroid
@@ -484,7 +506,43 @@ class Builder:
                 continue
             keep.append(r)
         keep.sort(key=lambda r: r["id"])
+        self._match_city(keep)
         return keep
+
+    def _match_city(self, records: list[dict]) -> None:
+        """Attach the city's official registry entry (name/address/office) by park name."""
+        self.city_unmatched = []
+        for r in records:
+            r["official"] = None
+        if not self.city:
+            return
+        by_key: dict[str, list[dict]] = {}
+        for row in self.city["parks"]:
+            for k in city_aliases(row["name"]):
+                by_key.setdefault(k, []).append(row)
+        matched = set()
+        for r in records:
+            keys = {park_key(r["park_name"]), park_key(r["name"] if r["name_source"] == "osm_name" else None)} - {None}
+            rows = {row["seqno"]: row for k in keys for row in by_key.get(k, [])}
+            if len(rows) != 1:
+                continue  # no match, or ambiguous
+            row = next(iter(rows.values()))
+            matched.add(row["seqno"])
+            r["official"] = {
+                "name": row["name"].strip(),
+                "address": (row.get("address") or "").strip() or None,
+                "management": row.get("management"),
+                "phone": row.get("localcallservice"),
+                "method": "name_match",
+                "verified_at": self.city["fetched_at"][:10],
+                "source": self.city["source"],
+            }
+            r["sources"].append({"name": self.city["publisher"] + " 新北市公園", "license": self.city["license"],
+                                 "url": self.city["source"], "as_of": self.city["fetched_at"]})
+        self.city_unmatched = [
+            {"name": row["name"].strip(), "address": (row.get("address") or "").strip() or None}
+            for row in self.city["parks"] if row["seqno"] not in matched
+        ]
 
     def casters_geojson(self, parks: list[dict]) -> dict:
         """Shade casters near any park, for drawing live shadows on the map."""
@@ -518,6 +576,8 @@ class Builder:
                 "parks": len(parks),
                 "mapped_playgrounds": sum(1 for p in parks if p["kind"] == "playground"),
                 "park_candidates": sum(1 for p in parks if p["kind"] == "park"),
+                "city_registry_parks": len(self.city["parks"]) if self.city else None,
+                "matched_city_registry": sum(1 for p in parks if p.get("official")),
                 "by_level": levels,
                 "parking_lots_in_bbox": len(self.parking),
                 "chargers_in_bbox": len(self.chargers),
@@ -536,6 +596,8 @@ class Builder:
                 )
             },
             "default_building_heights_by_type": self.default_heights,
+            # Official parks with no matching OSM record: missing/unnamed in OSM, or not a playground site.
+            "city_registry_not_in_osm": getattr(self, "city_unmatched", []),
             "level_labels": LEVEL_LABELS,
         }
 
@@ -602,8 +664,13 @@ def load_raw(path: Path | None = None) -> dict:
         return json.load(fh)
 
 
+def load_city(path: Path | None = None) -> dict | None:
+    path = path or DATA / "raw" / f"{config.REGION['id']}.city_parks.json"
+    return json.loads(path.read_text()) if path.exists() else None
+
+
 def main() -> None:
-    b = Builder(load_raw())
+    b = Builder(load_raw(), load_city())
     parks = b.build()
     meta = b.meta(parks)
     write_outputs(parks, meta, casters=b.casters_geojson(parks))

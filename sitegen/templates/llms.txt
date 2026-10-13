@@ -11,6 +11,7 @@
 - `shade_timetable.slots["<月份>"]`: 24 個值，對應 06:00、06:30 … 17:30 開始的半小時，數值為遊戲場被遮陰的比例 0–1；null=太陽未升起。
 - `best_shade_windows["<月份>"]`: 該月最長連續遮陰（≥60%）時段，例如 {"start":"15:00","end":"17:30"}；null=沒有明顯遮陰時段。
 - `chargers[].speed`: fast=DC 快充、slow=AC 慢充、both=兩者都有、unknown=OSM 未標示（不要猜）。
+- `official`: 新北市政府公園名冊（開放資料）中依名稱比對到的官方名稱、地址、管理單位；null=名冊中找不到對應。名冊有 {{ meta.counts.city_registry_parks }} 處，比對到 {{ meta.counts.matched_city_registry }} 處；`meta.city_registry_not_in_osm` 列出名冊有、但 OSM 未標示或未命名的公園。
 - 距離（`distance_m`）是直線距離，不是步行距離。
 - 沒有資料不代表沒有設施；請照實說「資料中未標示」。
 

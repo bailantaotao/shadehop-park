@@ -1,0 +1,8411 @@
+{
+ "attribution": "資料介接「交通部TDX平臺」",
+ "city": "NewTaipei",
+ "count": null,
+ "fetched_at": "2026-10-13T09:01:02+00:00",
+ "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+ "publisher": "交通部",
+ "region": "newtaipei",
+ "source": "https://data.gov.tw/dataset/170220",
+ "src_update_time": "2026-10-13T16:35:36+08:00",
+ "stations": [
+  {
+   "charging_points": 2,
+   "charging_rate": "1度10元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "無",
+   "floors": "1",
+   "id": "12681939-SPSS_YA41001",
+   "lat": 25.080024,
+   "lng": 121.497697,
+   "name": "城市車旅三重元信(三重元信2)",
+   "operation_type": "私有民營",
+   "operator": "阜爾運通股份有限公司",
+   "operator_id": "12681939",
+   "parking_rate": "一小時60元",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 2
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "一度8.5元",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "無",
+   "floors": "1F",
+   "id": "12681939-Shfc_17",
+   "lat": 25.06538,
+   "lng": 121.65527,
+   "name": "上嘉管理顧問有限公司汐科營業所",
+   "operation_type": "公辦民營",
+   "operator": "阜爾運通股份有限公司",
+   "operator_id": "12681939",
+   "parking_rate": "每小時60元",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "1度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "J1772*2",
+   "floors": "1F",
+   "id": "24394433-Ssungreen_20",
+   "lat": 25.00546,
+   "lng": 121.44753,
+   "name": "ECAR-台灣藝術大學站",
+   "operation_type": "私有民營",
+   "operator": "東陽能源科技股份有限公司",
+   "operator_id": "24394433",
+   "parking_rate": "一小時30元",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計分/0.9元每分",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座，J1772*1，位於平面停車場1F、 1號停車格 ，為交流充電規格。",
+   "floors": "1",
+   "id": "28007736-S049",
+   "lat": 25.095211,
+   "lng": 121.448458,
+   "name": "五股運動中心",
+   "operation_type": "公辦民營",
+   "operator": "皇鋒通訊股份有限公司",
+   "operator_id": "28007736",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": "使用APP確認按壓開始充電功能鈕後再插上充電槍",
+   "service_time": "每日 /00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計分/0.9元每分",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座，J1772*1，位於停車場B1地下室、 3號停車格 ，為交流充電規格。",
+   "floors": "1",
+   "id": "28007736-S051",
+   "lat": 25.09152,
+   "lng": 121.461997,
+   "name": "蘆洲運動中心",
+   "operation_type": "公辦民營",
+   "operator": "皇鋒通訊股份有限公司",
+   "operator_id": "28007736",
+   "parking_rate": "計時/每日/30元每小時",
+   "restriction": "使用APP確認按壓開始充電功能鈕後再插上充電槍",
+   "service_time": "每日 /00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/10元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座，J1772*1，Type2*1，位於停車場B1地下室、 1，2號停車格 ，為交流充電規格。",
+   "floors": "B1",
+   "id": "28007736-S099",
+   "lat": 25.049789,
+   "lng": 121.476569,
+   "name": "三重五谷好室A",
+   "operation_type": "公辦民營",
+   "operator": "皇鋒通訊股份有限公司",
+   "operator_id": "28007736",
+   "parking_rate": "計時/每日/40元每小時",
+   "restriction": "使用APP確認按壓開始充電功能鈕後再插上充電槍",
+   "service_time": "每日 /00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/10元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位4格，充電樁4座，J1772*2，Type2*2，位於停車場B2地下室、 220-223號停車格 ，為交流充電規格。",
+   "floors": "B2",
+   "id": "28007736-S111",
+   "lat": 25.005816,
+   "lng": 121.484358,
+   "name": "全球中和",
+   "operation_type": "私有民營",
+   "operator": "皇鋒通訊股份有限公司",
+   "operator_id": "28007736",
+   "parking_rate": "計時/每日/40元每小時",
+   "restriction": "使用APP確認按壓開始充電功能鈕後再插上充電槍",
+   "service_time": "每日 /00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計分/1.17元每分",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座，J1772*1，位於停車場B1地下室22號停車格 ，為交流充電規格。",
+   "floors": "B1",
+   "id": "28007736-S146",
+   "lat": 25.035572,
+   "lng": 121.444687,
+   "name": "鳳凰花園停車場",
+   "operation_type": "私有民營",
+   "operator": "皇鋒通訊股份有限公司",
+   "operator_id": "28007736",
+   "parking_rate": "計時/平日/70元每小時/每日最高/300元每日,計時/假日/100元每小時/每日最高/450元每日",
+   "restriction": "使用APP確認按壓開始充電功能鈕後再插上充電槍",
+   "service_time": "每日 /00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/10.50元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "B1",
+   "id": "28114216-S124",
+   "lat": 24.985983,
+   "lng": 121.457179,
+   "name": "土城國民運動中心",
+   "operation_type": "公辦民營",
+   "operator": "創玖科技股份有限公司",
+   "operator_id": "28114216",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/06:00-22:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/10.50元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "B2",
+   "id": "28114216-S184",
+   "lat": 25.054918,
+   "lng": 121.488196,
+   "name": "三重國民運動中心",
+   "operation_type": "公辦民營",
+   "operator": "創玖科技股份有限公司",
+   "operator_id": "28114216",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座",
+   "floors": "B1",
+   "id": "28371994-STP4370001",
+   "lat": 25.08145,
+   "lng": 121.4708,
+   "name": "蘆洲功學社站",
+   "operation_type": "公辦民營",
+   "operator": "寶盛國際股份有限公司",
+   "operator_id": "28371994",
+   "parking_rate": "汽車：$40/H；機車：$20/H",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座",
+   "floors": "B1",
+   "id": "28371994-STP5180001",
+   "lat": 25.07375,
+   "lng": 121.36884,
+   "name": "林口昕境廣場站",
+   "operation_type": "公辦民營",
+   "operator": "寶盛國際股份有限公司",
+   "operator_id": "28371994",
+   "parking_rate": "平日：$20/H，假日：$40/H",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座",
+   "floors": "B1",
+   "id": "28371994-STP5380001",
+   "lat": 25.01954,
+   "lng": 121.47909,
+   "name": "板橋三民站",
+   "operation_type": "公辦民營",
+   "operator": "寶盛國際股份有限公司",
+   "operator_id": "28371994",
+   "parking_rate": "$50/H．當日當次最高上限$300",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 12,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 12,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位12格，充電樁12座",
+   "floors": "1F",
+   "id": "28371994-STP7630001",
+   "lat": 25.17477,
+   "lng": 121.43273,
+   "name": "捷運淡水站",
+   "operation_type": "公辦民營",
+   "operator": "寶盛國際股份有限公司",
+   "operator_id": "28371994",
+   "parking_rate": "汽車：平日：06~00-$15/0.5H,00~06-$10/0.5H，假日：10~00-$30/0.5H,00~10-$10/0.5H；機車：$30/次(隔日另計,以2:00為跨日基準)",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 12
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "B1",
+   "id": "28371994-STP7650001",
+   "lat": 25.00021,
+   "lng": 121.49175,
+   "name": "中和映象太和站",
+   "operation_type": "公辦民營",
+   "operator": "寶盛國際股份有限公司",
+   "operator_id": "28371994",
+   "parking_rate": "汽車：$50/H,當日當次最高上限$300；機車：當日當次最高上限$50",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/9元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "B2",
+   "id": "28652185-SBQTS0001",
+   "lat": 25.01549,
+   "lng": 121.46419,
+   "name": "板橋車站地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/平日：00:00-24:00 40元/時,計時/假日：00:00-24:00 40元/時,平日、假日最高上限300元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/0元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度0元，充電插頭J1772，充電格位數1充電車位1格，充電樁1座，位於1F樓層之1停車格為慢速充電規格。",
+   "floors": "1",
+   "id": "28652185-SJIA001",
+   "lat": 25.013104,
+   "lng": 121.460858,
+   "name": "捷運江子翠站",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "每小時0元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度8元，充電插頭J-1772，充電車位7格，充電樁7座，位於B1樓層之228~234停車格皆為慢速充電規格。",
+   "floors": "B1",
+   "id": "28652185-SLINKOU001",
+   "lat": 25.07756,
+   "lng": 121.37561,
+   "name": "林口世大運選手村社會住宅地下停車場A區",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 7
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "每日充電費率每度8元，充電插頭J-1772，充電車位6格，充電樁6座，位於B1樓層之187~192停車格，皆為慢速充電規格。",
+   "floors": "B1",
+   "id": "28652185-SLINKOU002",
+   "lat": 25.07539,
+   "lng": 121.37692,
+   "name": "林口世大運選手村社會住宅地下停車場B區",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度8元，充電插頭J-1772，充電車位7格，充電樁7座，位於B1樓層層之116~118、195~198停車格皆為慢速充電規格。",
+   "floors": "B1",
+   "id": "28652185-SLINKOU003",
+   "lat": 25.075,
+   "lng": 121.37942,
+   "name": "林口世大運選手村社會住宅地下停車場C區",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 7
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度8元，充電插頭J-1772，充電車位8格，充電樁8座，位於B1樓層層之274、277~283停車格，皆為慢速充電規格。",
+   "floors": "B1",
+   "id": "28652185-SLINKOU004",
+   "lat": 25.07248,
+   "lng": 121.3776,
+   "name": "林口世大運選手村社會住宅地下停車場D區",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/每日/30元每小時/每日最高/150元每日",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 8
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "1",
+   "id": "28652185-SMRTDP0001",
+   "lat": 24.9589,
+   "lng": 121.41981,
+   "name": "捷運頂埔站轉乘停車場",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/平日：06:00-24:00 20元/時,00:00-06:00 10元/時,計時/假日：06:00-24:00 20元/時,00:00-06:00 10元/時,平日、假日最高上限200元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位5格，充電樁5座",
+   "floors": "1",
+   "id": "28652185-SMRTHL0001",
+   "lat": 25.02275,
+   "lng": 121.4131,
+   "name": "捷運迴龍站轉乘停車場",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/平日：06:00-24:00 30元/時,00:00-06:00 10元/時,計時/假日：06:00-24:00 30元/時,00:00-06:00 10元/時,平日、假日最高上限150元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "B1",
+   "id": "28652185-SMRTHS0001",
+   "lat": 24.98715,
+   "lng": 121.44919,
+   "name": "捷運海山站轉乘停車場",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/平日：06:00-22:00 40元/時,22:00-06:00 20元/時,計時/假日：06:00-22:00 40元/時,22:00-06:00 20元/時,平日最高上限180元,假日最高上限200元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位5格，充電樁5座",
+   "floors": "1",
+   "id": "28652185-SMRTYN0001",
+   "lat": 24.96566,
+   "lng": 121.43628,
+   "name": "捷運永寧站轉乘停車場",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/平日：06:00-24:00 20元/時,00:00-06:00 10元/時,計時/假日：06:00-24:00 20元/時,00:00-06:00 10元/時,平日、假日最高上限200元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 14,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位14格，充電樁14座",
+   "floors": "B1",
+   "id": "28652185-SXZPEP0001",
+   "lat": 25.042396,
+   "lng": 121.44779,
+   "name": "新莊體育園區停車場",
+   "operation_type": "公辦民營",
+   "operator": "正好停股份有限公司",
+   "operator_id": "28652185",
+   "parking_rate": "計時/平日/30元每小時/每日最高/180元,計時/假日/30元每小時/每日",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 14
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位6格，充電樁6座",
+   "floors": "1F",
+   "id": "33029464-STP6640001",
+   "lat": 25.15475,
+   "lng": 121.45903,
+   "name": "捷運紅樹林站",
+   "operation_type": "公辦民營",
+   "operator": "中興電工機械股份有限公司",
+   "operator_id": "33029464",
+   "parking_rate": "00:00-06:00：$5/0.5H，當日無上限；06:00-00:00：$10/0.5H，當日無上限",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/5元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座",
+   "floors": "B1",
+   "id": "33029464-STP6820001",
+   "lat": 25.09157,
+   "lng": 121.46446,
+   "name": "捷運蘆洲站",
+   "operation_type": "公辦民營",
+   "operator": "中興電工機械股份有限公司",
+   "operator_id": "33029464",
+   "parking_rate": "06:00-22:00：$30/0.5H，當日無上限；22:00-06:00：$35/0.5H，當日無上限",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/不分時段固定每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座(J1772 TYPE1)，位於B1樓層之52、53停車格，皆為慢速充電規格",
+   "floors": "B1",
+   "id": "34104124-S01",
+   "lat": 25.01547,
+   "lng": 121.51171,
+   "name": "THPS",
+   "operation_type": "公辦公營",
+   "operator": "新北市永和區頂溪國民小學",
+   "operator_id": "34104124",
+   "parking_rate": "校內停車場，無開放臨停，限月租戶使用。",
+   "restriction": null,
+   "service_time": "計度/不分時段固定每度8元",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/尖峰/09:00-23:59/8.00 元每度, 計度/尖峰/06:00-11:00/8.00 元每度, 計度/尖峰/14:00-23:59/8.00 元每度, 計度/離峰/23:59-09:00/6.00 元每度, 計度/離峰/23:59-06:00/6.00 元每度, 計度/離峰/11:00-14:00/6.00 元每度, 計度/半尖峰/09:00-23:59/6.00 元每度, 計度/半尖峰/06:00-11:00/6.00 元每度, 計度/半尖峰/14:00-23:59/6.00 元每度, 計度/離峰/23:59-09:00/6.00 元每度, 計度/離峰/23:59-06:00/6.00 元每度, 計度/離峰/11:00-14:00/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：計時/每日/20 元每小時。充電樁數目：1，J1772數量：1",
+   "floors": null,
+   "id": "34176631-S179",
+   "lat": 25.027915,
+   "lng": 121.466557,
+   "name": "新北市立江翠國民中學 evbar",
+   "operation_type": "公辦公營",
+   "operator": "新北市立江翠國民中學",
+   "operator_id": "34176631",
+   "parking_rate": "計時/每日/20 元每小時",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/尖峰/09:00-23:59/10.00 元每度, 計度/尖峰/06:00-11:00/10.00 元每度, 計度/尖峰/14:00-23:59/10.00 元每度, 計度/離峰/23:59-09:00/8.00 元每度, 計度/離峰/23:59-06:00/8.00 元每度, 計度/離峰/11:00-14:00/8.00 元每度, 計度/離峰/00:00-23:59/8.00 元每度, 計度/離峰/00:00-23:59/8.00 元每度, 計度/離峰/00:00-23:59/8.00 元每度, 計度/離峰/00:00-23:59/8.00 元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "7x24 小時。停車費率：計時/每日/40 元每小時。充電樁數目：2，J1772數量：1，Type2數量：1",
+   "floors": null,
+   "id": "34220432-S238",
+   "lat": 25.090016,
+   "lng": 121.463262,
+   "name": "蘆洲區忠義國小地下停車場 evbar",
+   "operation_type": "公辦民營",
+   "operator": "文強交通有限公司",
+   "operator_id": "34220432",
+   "parking_rate": "計時/每日/40 元每小時",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格",
+   "floors": "B1",
+   "id": "37759379-SB0021",
+   "lat": 25.06577,
+   "lng": 121.64068,
+   "name": "忠厚地下停車場",
+   "operation_type": "公辦公營",
+   "operator": "日月亭股份有限公司 忠厚營業所",
+   "operator_id": "37759379",
+   "parking_rate": "平日/日間收費20/1小時(08:00-22:00)夜間收費10/1小時(22:00-0800)假日日間收費30/1小時(08:00-22:00)假日夜間收費10/1小時(22:00-0800)",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "慢充每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電車位5格，Type2*3 ，Type1*2",
+   "floors": "B1",
+   "id": "41127410-Seyxjot_1",
+   "lat": 25.05619,
+   "lng": 121.44385,
+   "name": "行政院新莊聯合辦公大樓停車場",
+   "operation_type": "公辦公營",
+   "operator": "行政院新莊聯合辦公大樓管理小組",
+   "operator_id": "41127410",
+   "parking_rate": "一小時30元",
+   "restriction": null,
+   "service_time": "07:00-20:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數3",
+   "floors": "1F",
+   "id": "42861108-S01342a10-aa64-4f90-ae30-1b8d7d3fcc86",
+   "lat": 24.87175,
+   "lng": 121.54757,
+   "name": "璞石麗緻溫泉會館",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計分/0-60kW/5 元每分,計分/60-100kW/11 元每分,計分/100-180kW/17 元每分,計分/180-250kW/28 元每分",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電格位數4",
+   "floors": "B2",
+   "id": "42861108-S09bf3b8f-8fe9-44d3-be15-2a0cf5891db6",
+   "lat": 24.9852,
+   "lng": 121.54005,
+   "name": "新北－新店",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "免費",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電車位6格",
+   "floors": "B3",
+   "id": "42861108-S17090",
+   "lat": 24.97891,
+   "lng": 121.44507,
+   "name": "新北－土城日月光廣場(B3)",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "計時停車: 每小時30元。  半小時內離場: 不計費。  平日消費優惠: 不限金額消費可享當日3小時免費停車。",
+   "restriction": null,
+   "service_time": "每日上午7點到晚上12點",
+   "spaces": 6
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/浮動/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "位於林口福朋喜來登地下停車場",
+   "floors": "B2",
+   "id": "42861108-S32202",
+   "lat": 25.06623,
+   "lng": 121.36076,
+   "name": "新北－林口亞昕福朋喜來登酒店",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "計時/每日/40元每小時/每日最高/400元每日",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計分/0-60kW/5 元每分,計分/60-100kW/11 元每分,計分/100-180kW/17 元每分,計分/180-250kW/28 元每分",
+   "connectors": [
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電格位數8",
+   "floors": "6",
+   "id": "42861108-S543408c0-ad77-4f2c-af34-6bbbf4175c31",
+   "lat": 25.00622,
+   "lng": 121.47482,
+   "name": "新北－中和環球購物中心",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數4",
+   "floors": "B2",
+   "id": "42861108-S554815bb-24da-4ed1-8e6d-5aeb04c584c6",
+   "lat": 25.06651,
+   "lng": 121.36089,
+   "name": "新北－林口亞昕福朋喜來登酒店",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數2",
+   "floors": "1F",
+   "id": "42861108-S5a4c664d-b9f1-4b87-b33a-51295d34979a",
+   "lat": 25.04855,
+   "lng": 121.47212,
+   "name": "美麗人生產後護理之家",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數6",
+   "floors": "G",
+   "id": "42861108-S5f440307-00e3-4c34-a2a1-f66f48123618",
+   "lat": 25.07139,
+   "lng": 121.47518,
+   "name": "新北－三重愛買",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "每日/09:00-22:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數4",
+   "floors": "1F",
+   "id": "42861108-S663cbaf2-0ad2-43cf-89de-d05bfe391308",
+   "lat": 25.08317,
+   "lng": 121.47478,
+   "name": "168parking 蘆洲三民停車場",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 9,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數9",
+   "floors": "1F",
+   "id": "42861108-S6b706da3-fa15-4a3c-8d93-320a5c21af23",
+   "lat": 25.00622,
+   "lng": 121.47482,
+   "name": "新北 - 中和環球購物中心",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數3",
+   "floors": "1F",
+   "id": "42861108-S7cb16f34-2913-4db7-bc2f-a6ba16f52005",
+   "lat": 25.27652,
+   "lng": 121.60162,
+   "name": "新北 - 黃金海岸高爾夫球場",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數4",
+   "floors": "1F",
+   "id": "42861108-S852a2236-52bc-4366-aa9e-1552330789ac",
+   "lat": 25.0715,
+   "lng": 121.4763,
+   "name": "新北－三重愛買",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數3",
+   "floors": "1F",
+   "id": "42861108-S90b04491-49d2-4010-b5f5-30dd08d88254",
+   "lat": 25.06606,
+   "lng": 121.36144,
+   "name": "林口A9環球購物中心",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數10",
+   "floors": "B1",
+   "id": "42861108-S945a1b98-3f8d-4da2-8de2-928295b1378d",
+   "lat": 25.17628,
+   "lng": 121.42868,
+   "name": "新北－滬尾藝文休閒園區",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 10
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數9",
+   "floors": "1F",
+   "id": "42861108-S9e864926-d6fd-4100-929e-27498da60fb2",
+   "lat": 24.94085,
+   "lng": 121.37291,
+   "name": "新北－三峽",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數4",
+   "floors": "B3",
+   "id": "42861108-Sbe38b430-6d41-40e7-bc9d-d0f913b1f36a",
+   "lat": 24.97961,
+   "lng": 121.44455,
+   "name": "新北－土城日月光廣場",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "每日/07:00-23:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數9",
+   "floors": "B1",
+   "id": "42861108-Sd70033ee-9101-425a-adb5-919c788f5dbc",
+   "lat": 25.07461,
+   "lng": 121.63807,
+   "name": "新北－汐止日月光家飾館",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "每日/08:00-20:00",
+   "spaces": 9
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電格位數4",
+   "floors": "1F",
+   "id": "42861108-Se3f94cf3-0acd-4ed4-a383-7d095af4e934",
+   "lat": 25.15936,
+   "lng": 121.42962,
+   "name": "新北 - 八里福朋喜來登酒店",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數6",
+   "floors": "1F",
+   "id": "42861108-Sf90c9fd9-843b-4573-bba4-96b5740c6ab9",
+   "lat": 25.05149,
+   "lng": 121.44638,
+   "name": "新北－新莊",
+   "operation_type": "私有民營",
+   "operator": "台灣特斯拉汽車有限公司",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "固定費率(非尖峰費率)",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：免費。充電樁數目：1，J1772數量：1",
+   "floors": "1",
+   "id": "46037888-S122",
+   "lat": 24.978583,
+   "lng": 121.439139,
+   "name": "全尚誠陽車業 evbar",
+   "operation_type": "私有民營",
+   "operator": "全尚國際有限公司",
+   "operator_id": "46037888",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "固定費率(非尖峰費率)",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：免費。充電樁數目：1，J1772數量：1",
+   "floors": "1",
+   "id": "46037888-S59",
+   "lat": 24.926633,
+   "lng": 121.366925,
+   "name": "全尚大同路充電站 evbar",
+   "operation_type": "私有民營",
+   "operator": "全尚國際有限公司",
+   "operator_id": "46037888",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "固定費率(非尖峰費率)",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：免費。充電樁數目：1，J1772數量：1",
+   "floors": "1",
+   "id": "46037888-S60",
+   "lat": 24.943475,
+   "lng": 121.372871,
+   "name": "全尚國際二街充電站 evbar",
+   "operation_type": "私有民營",
+   "operator": "全尚國際有限公司",
+   "operator_id": "46037888",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "固定費率(非尖峰費率)",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：計時/每日/10 元每小時。充電樁數目：1，J1772數量：1",
+   "floors": "1",
+   "id": "46037888-S64",
+   "lat": 24.945775,
+   "lng": 121.380843,
+   "name": "全尚學成路充電站 evbar",
+   "operation_type": "私有民營",
+   "operator": "全尚國際有限公司",
+   "operator_id": "46037888",
+   "parking_rate": "計時/每日/10 元每小時",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "固定費率(非尖峰費率)",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：計時/每日/60 元每小時。充電樁數目：1，J1772數量：1",
+   "floors": "1",
+   "id": "46037888-S65",
+   "lat": 24.932735,
+   "lng": 121.555377,
+   "name": "全尚粗坑里辦事處充電站 evbar",
+   "operation_type": "私有民營",
+   "operator": "全尚國際有限公司",
+   "operator_id": "46037888",
+   "parking_rate": "計時/每日/60 元每小時",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/00:00-24:00/每度7元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "慢充，充電格位數2，需使用車車電充APP",
+   "floors": "1",
+   "id": "50965513-SPDP3104001",
+   "lat": 25.00673,
+   "lng": 121.48475,
+   "name": "立言停車場",
+   "operation_type": "私有民營",
+   "operator": "承翊系統整合股份有限公司",
+   "operator_id": "50965513",
+   "parking_rate": "計時/平日/08:00-20:00/每小時40元/每日最高200元,計時/平日/20:00-08:00/每小時10元/每日最高200元,計時/假日/08:00-20:00/每小時20元/每日最高200元,計時/假日/20:00-08:00/每小時10元/每日最高200元",
+   "restriction": null,
+   "service_time": "24小時/每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/10元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "陶博館館後停車場",
+   "floors": "1",
+   "id": "52693448-S0010",
+   "lat": 24.94852,
+   "lng": 121.3508,
+   "name": "陽明鶯歌陶瓷博物館",
+   "operation_type": "公辦民營",
+   "operator": "遠創智慧",
+   "operator_id": "52693448",
+   "parking_rate": null,
+   "restriction": null,
+   "service_time": null,
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率AC每度8元。充電插頭J-1772。充電格位數1",
+   "floors": "1",
+   "id": "53703514-S1101",
+   "lat": 24.97239,
+   "lng": 121.44294,
+   "name": "新北市土城區公所",
+   "operation_type": "公辦公營",
+   "operator": "裕電俥電股份有限公司",
+   "operator_id": "53703514",
+   "parking_rate": "計時/每日/30元每小時",
+   "restriction": "本充電站限會員使用",
+   "service_time": "7*24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計分/1元每分",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率AC每分1元。充電插頭J-1772。充電格位數2",
+   "floors": "1",
+   "id": "53703514-S2209",
+   "lat": 25.160655,
+   "lng": 121.429683,
+   "name": "YES八里永續環境教育中心",
+   "operation_type": "公辦公營",
+   "operator": "裕電俥電股份有限公司",
+   "operator_id": "53703514",
+   "parking_rate": "計時/每日/40元每小時",
+   "restriction": "本充電站限會員使用",
+   "service_time": "7*24 小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "免費",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率免費。充電插頭J-1772。充電格位數1",
+   "floors": "1",
+   "id": "53703514-S2375",
+   "lat": 25.18714,
+   "lng": 121.44393,
+   "name": "新北市淡水區公所",
+   "operation_type": "公辦公營",
+   "operator": "裕電俥電股份有限公司",
+   "operator_id": "53703514",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": "本充電站限會員使用",
+   "service_time": "每日 /07:00~21:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/尖峰/09:00-23:59/8.00 元每度, 計度/尖峰/06:00-11:00/8.00 元每度, 計度/尖峰/14:00-23:59/8.00 元每度, 計度/離峰/23:59-09:00/4.90 元每度, 計度/離峰/23:59-06:00/4.90 元每度, 計度/離峰/11:00-14:00/4.90 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.00 元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：免費。充電樁數目：2，J1772數量：2",
+   "floors": "1",
+   "id": "53799460-S294",
+   "lat": 25.066227,
+   "lng": 121.356286,
+   "name": "AVIS中古車林口A9店 evbar",
+   "operation_type": "私有民營",
+   "operator": "安維斯汽車租賃股份有限公司",
+   "operator_id": "53799460",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "60元每小時",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "Noodoe EV 提供最以待客為中心的 EV 充電解決方案。不適用環島充電網會員免費充電方案",
+   "floors": "B1",
+   "id": "54363149-Ss1n0",
+   "lat": 25.02681,
+   "lng": 121.46351,
+   "name": "新埔國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "拓廣科技股份有限公司",
+   "operator_id": "54363149",
+   "parking_rate": "30元每小時",
+   "restriction": null,
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度固定/7.5元每度",
+   "connectors": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位數-10位(1~10號)、充電樁數目-10隻、充電槍規格及數量-J1772/10隻、充電停車位費率-每小時40元，最高上限200元、充電費率-7.5/度、充電服務時間-24th、充電樁位於之樓層-B1樓層",
+   "floors": "B1",
+   "id": "54710871-S0001",
+   "lat": 25.0584,
+   "lng": 121.4593,
+   "name": "宏匯思源公共停車場",
+   "operation_type": "公辦民營",
+   "operator": "宏匯思源股份有限公司",
+   "operator_id": "54710871",
+   "parking_rate": "計時/每日/40元每小時/每日最高200元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 10
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/尖峰/09:00-23:59/8.90 元每度, 計度/尖峰/06:00-11:00/8.90 元每度, 計度/尖峰/14:00-23:59/8.90 元每度, 計度/離峰/23:59-09:00/5.90 元每度, 計度/離峰/23:59-06:00/5.90 元每度, 計度/離峰/11:00-14:00/5.90 元每度, 計度/半尖峰/09:00-23:59/5.90 元每度, 計度/半尖峰/06:00-11:00/5.90 元每度, 計度/半尖峰/14:00-23:59/5.90 元每度, 計度/離峰/23:59-09:00/5.90 元每度, 計度/離峰/23:59-06:00/5.90 元每度, 計度/離峰/11:00-14:00/5.90 元每度, 計度/離峰/00:00-23:59/5.90 元每度, 計度/離峰/00:00-23:59/5.90 元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "7x24 小時。停車費率：免費。充電樁數目：1，CCS1數量：1，CCS2數量：1",
+   "floors": "1",
+   "id": "54991324-S62",
+   "lat": 25.056951,
+   "lng": 121.459531,
+   "name": "新莊思源快充站 evbar",
+   "operation_type": "私有民營",
+   "operator": "三啟科技股份有限公司",
+   "operator_id": "54991324",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "待填寫",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電樁*2 位置B2 快充 一度10元",
+   "floors": "B2",
+   "id": "60199085-SA0638011",
+   "lat": 121.45438,
+   "lng": 25.0106,
+   "name": "板橋黃石市場停車場",
+   "operation_type": "公辦民營",
+   "operator": "板橋黃石市場停車場",
+   "operator_id": "60199085",
+   "parking_rate": "25元/半小時",
+   "restriction": "快充 一度10元",
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "慢充每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "無",
+   "floors": "1F",
+   "id": "60219358-S168_8",
+   "lat": 25.17505,
+   "lng": 121.43208,
+   "name": "及泰企業有限公司紅毛城停車場",
+   "operation_type": "公辦民營",
+   "operator": "及泰企業有限公司紅毛城停車場",
+   "operator_id": "60219358",
+   "parking_rate": "30",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "免費",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "臨時停車場",
+   "floors": "1",
+   "id": "60225577-SA0694011",
+   "lat": 25.13457,
+   "lng": 121.80509,
+   "name": "俥亭停車事業瑞芳八斗子營業所",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車事業股份有限公司瑞芳八斗子營業所",
+   "operator_id": "60225577",
+   "parking_rate": "不分平假日每小時20元",
+   "restriction": null,
+   "service_time": "24小時營業",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/10 元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度10 元，充電插頭 J-1772，充電格位數1",
+   "floors": "1",
+   "id": "70553757-S0001",
+   "lat": 25.05196,
+   "lng": 121.46359,
+   "name": "頭前平面停車場充電站",
+   "operation_type": "公辦民營",
+   "operator": "好停企業有限公司",
+   "operator_id": "70553757",
+   "parking_rate": "計時/30 元每小時/12小時上限150元/24小時上限300元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "1度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位2格，充電樁2座，位於車格4、車格5，",
+   "floors": "1F",
+   "id": "72828514-SA0160",
+   "lat": 121.471882,
+   "lng": 25.026708,
+   "name": "新北藝文停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車事業股份有限公司板橋藝文營業所",
+   "operator_id": "72828514",
+   "parking_rate": "臨停1小時40元，平日12小時上限250元，假日無上限",
+   "restriction": null,
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "一度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "一度8元",
+   "floors": "B1",
+   "id": "72828824-SA0159",
+   "lat": 25.047439,
+   "lng": 121.444234,
+   "name": "新莊文化藝術中心地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "新莊文化藝術中心地下停車場",
+   "operator_id": "72828824",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "00-24",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "慢充每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位*2 , J1772*2",
+   "floors": "1F",
+   "id": "80390037-S168_7",
+   "lat": 24.95204,
+   "lng": 121.55448,
+   "name": "根基國際有限公司青潭國民小學停車場",
+   "operation_type": "公辦民營",
+   "operator": "根基國際有限公司青潭國民小學停車場",
+   "operator_id": "80390037",
+   "parking_rate": "30",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 2
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "每度8元",
+   "connectors": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "J1772*10",
+   "floors": "B2",
+   "id": "82317673-Sgowin_4",
+   "lat": 25.000974,
+   "lng": 121.51157,
+   "name": "國雲公寓大廈管理維護股份有限公司中安場",
+   "operation_type": "公辦民營",
+   "operator": "國雲公寓大廈管理維護股份有限公司中安場",
+   "operator_id": "82317673",
+   "parking_rate": "【臨停平日30元/H(週一至週四08:00~22:00週五08:00~17:00止)當日特定時段最高上限200元；假日40元/H、無上限】；",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 10
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/尖峰/15:00-20:59（星期一到星期五）/ 13.9元每度,計度/離峰/其他時段/ 7.5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "CCS1 x 1, CCS2 x 1",
+   "floors": "1F",
+   "id": "83039115-S0002",
+   "lat": 25.079921,
+   "lng": 121.498561,
+   "name": "全聯三重仁義站",
+   "operation_type": "私有民營",
+   "operator": "綠樹科技股份有限公司",
+   "operator_id": "83039115",
+   "parking_rate": "全聯購物金額不限，免費停車30分，滿300元免費一小時，最高折抵一小時",
+   "restriction": "本充電站限會員使用",
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/尖峰/15:00-20:59（星期一到星期五）/ 13.9元每度,計度/離峰/其他時段/ 7.5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "CCS1 x 1, CCS2 x 1",
+   "floors": "B1",
+   "id": "83039115-S0003",
+   "lat": 25.06919,
+   "lng": 121.367495,
+   "name": "全聯林口公園站",
+   "operation_type": "私有民營",
+   "operator": "綠樹科技股份有限公司",
+   "operator_id": "83039115",
+   "parking_rate": "全聯購物金額不限，免費停車30分，滿300元免費一小時，最高折抵一小時",
+   "restriction": "本充電站限會員使用",
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "8元/度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度8元。充電插頭J-1772。充電格位數2",
+   "floors": "1",
+   "id": "83284334-S00001",
+   "lat": 25.06329,
+   "lng": 121.457105,
+   "name": "充電飽_新北產業園區服務中心站",
+   "operation_type": "公辦民營",
+   "operator": "鳴日科技股份有限公司",
+   "operator_id": "83284334",
+   "parking_rate": "計時/30元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計分/1元每分",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每分鐘1元。充電插頭Type1、Type2。充電格位數2。",
+   "floors": "1",
+   "id": "85017137-SNWT0001",
+   "lat": 25.1722,
+   "lng": 121.44903,
+   "name": "雲樁科技鄧公國小站",
+   "operation_type": "公辦公營",
+   "operator": "雲樁科技股份有限公司",
+   "operator_id": "85017137",
+   "parking_rate": "計時/假日/50元每小時",
+   "restriction": null,
+   "service_time": "假日/08:00-23:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計時/每1分鐘0.93元",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "全天候開放，可持悠遊卡進場，依場域規定繳費，緩衝時間15分鐘&nbsp;",
+   "floors": "B2",
+   "id": "85051710-S471",
+   "lat": 25.066492,
+   "lng": 121.360965,
+   "name": "林口亞昕福朋喜來登酒店",
+   "operation_type": "私有民營",
+   "operator": "源點科技股份有限公司",
+   "operator_id": "85051710",
+   "parking_rate": "計時/每日/40 元每小時每日最高/400元每日, 月租/每月/3000元每月",
+   "restriction": null,
+   "service_time": "每日/00:00~23:59",
+   "spaces": 6
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "○星晴電價(非夏季):週一至週五21:00〜隔日14:59、週六00:00〜06:59,每度6.5元○尖峰費率(非夏季):週一至週五15:00〜20:59,每度14.9元<br>○假日費費率(週六週日與國定假日):假日首日00:00〜06:59,適用星晴電價,其餘採假日費率每度8.4元計算<br>○車廠優惠費率方案與上述優惠共享&nbsp;<br><br>「啟動前請確認車輛已到位並完成插槍。若因誤觸啟動導致非本人車輛充電，相關扣費恕不退還。」&nbsp;",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "○本站訂閱用戶享充電優惠：平日離峰、假日全時段皆適用-○適用星晴費率，採時間電價計費-全天候開放，停車費依場域規定繳費，夜間12點之後，請告知校門警衛入校目的為充電，校內心湖會館有廁所-〇平日 12-15 時 / 21-23 時，同規格滿位時充電上限為 85%。",
+   "floors": "1F",
+   "id": "85051710-S639",
+   "lat": 24.939676,
+   "lng": 121.367965,
+   "name": "國立臺北大學",
+   "operation_type": "私有民營",
+   "operator": "源點科技股份有限公司",
+   "operator_id": "85051710",
+   "parking_rate": "計時/平日/20 元每小時, 計時/假日/40元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00~23:59",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "9:00-24:00  8元/度,24:00-09:00 5元/度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "J1772*2",
+   "floors": "1F",
+   "id": "86711789-Sgowin_1",
+   "lat": 25.0076,
+   "lng": 121.45876,
+   "name": "國雲停車-府中汽車停車場",
+   "operation_type": "公辦民營",
+   "operator": "國雲公寓大廈管理維護股份有限公司",
+   "operator_id": "86711789",
+   "parking_rate": "平日60元/時；假日100元/時",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "慢充每度8元",
+   "connectors": [
+    {
+     "count": 8,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "無",
+   "floors": "1F",
+   "id": "87545768-S168_11",
+   "lat": 25.02783,
+   "lng": 121.45558,
+   "name": "江翠停五平面停車場",
+   "operation_type": "公辦民營",
+   "operator": null,
+   "operator_id": "87545768",
+   "parking_rate": "30",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "慢充每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "無",
+   "floors": "1F",
+   "id": "87545768-S168_26",
+   "lat": 25.02846,
+   "lng": 121.45659,
+   "name": "市立殯儀館停車場",
+   "operation_type": "公辦民營",
+   "operator": null,
+   "operator_id": "87545768",
+   "parking_rate": "30",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "慢充每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "無",
+   "floors": "1F",
+   "id": "87545789-S168_13",
+   "lat": 24.94835,
+   "lng": 121.40795,
+   "name": "新北市立殯儀館三峽火化立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "新北市立殯儀館三峽火化立體停車場",
+   "operator_id": "87545789",
+   "parking_rate": "30",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 每日/30元/每小時",
+   "floors": "1",
+   "id": "89132567-S0067",
+   "lat": 24.98047,
+   "lng": 121.52584,
+   "name": "Acon-eco新北新店央北站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數2格，停車費率 每日/20元/每小時",
+   "floors": "1",
+   "id": "89132567-S0069",
+   "lat": 25.05921,
+   "lng": 121.45338,
+   "name": "Acon-eco新北新莊昌平站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/20元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 8,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數7格，停車費率 每日/30元/每小時",
+   "floors": "B1",
+   "id": "89132567-S0080",
+   "lat": 24.98141,
+   "lng": 121.52598,
+   "name": "Acon-eco新北新店央北青年社宅站",
+   "operation_type": "公辦民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數5格，停車費率 每日/30元/每小時",
+   "floors": "B1",
+   "id": "89132567-S0081",
+   "lat": 24.98165,
+   "lng": 121.44782,
+   "name": "Acon-eco新北土城員和青年社宅站",
+   "operation_type": "公辦民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 國定例假日/50元/每小時",
+   "floors": "1",
+   "id": "89132567-S0084",
+   "lat": 25.17312,
+   "lng": 121.44089,
+   "name": "Acon-eco新北淡水國小站",
+   "operation_type": "公辦民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/國定例假日/50元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "國定例假日/07:00-22:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數2格，停車費率 每日/30元/每小時",
+   "floors": "1",
+   "id": "89132567-S0105",
+   "lat": 25.0563,
+   "lng": 121.45893,
+   "name": "Acon-eco新北新莊副都84站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數6格，停車費率 每日/30元/每小時",
+   "floors": "B1",
+   "id": "89132567-S0109",
+   "lat": 25.00342,
+   "lng": 121.524995,
+   "name": "Acon-eco新北永和運動中心站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 每日/20元/每小時",
+   "floors": "1",
+   "id": "89132567-S0110",
+   "lat": 25.14989,
+   "lng": 121.39069,
+   "name": "Acon-eco新北台北港站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/20元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 每日/20元/每小時",
+   "floors": "1",
+   "id": "89132567-S0113",
+   "lat": 25.0698,
+   "lng": 121.37252,
+   "name": "Acon-eco新北林口忠孝站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/20元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 每日/50元/每小時",
+   "floors": "1",
+   "id": "89132567-S0121",
+   "lat": 25.05978,
+   "lng": 121.63856,
+   "name": "Acon-eco新北汐止同興停車場站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/50元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 每日/30元/每小時",
+   "floors": "1",
+   "id": "89132567-S0122",
+   "lat": 24.99012,
+   "lng": 121.42455,
+   "name": "Acon-eco新北樹林區公所站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數5格，停車費率 每日/30元/每小時",
+   "floors": "B1",
+   "id": "89132567-S0128",
+   "lat": 25.07373,
+   "lng": 121.37344,
+   "name": "Acon-eco新北林口檔案館站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數5格，停車費率 每日/100元/每次",
+   "floors": "1",
+   "id": "89132567-S0134",
+   "lat": 25.2515,
+   "lng": 121.47035,
+   "name": "Acon-eco新北三芝淺水灣站",
+   "operation_type": "公辦民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計次/每日/100元/每次",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數2格，停車費率 平日/60元/每次, 停車費率 假日/120元/每次",
+   "floors": "1",
+   "id": "89132567-S0135",
+   "lat": 25.2392,
+   "lng": 121.63303,
+   "name": "Acon-eco新北金山中角灣站",
+   "operation_type": "公辦民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計次/平日/60元/每次, 計次/假日/120元/每次",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 每日/70元/每小時",
+   "floors": "1",
+   "id": "89132567-S0148",
+   "lat": 24.9831,
+   "lng": 121.5343,
+   "name": "Acon-eco新北新店民權中正站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/70元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/10元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "充電格數2格，停車費率 平日/50元/每小時, 停車費率 假日/100元/每小時，消費折抵1h",
+   "floors": "1",
+   "id": "89132567-S0149",
+   "lat": 25.07032,
+   "lng": 121.3569,
+   "name": "Acon-eco新北全聯林口文化北站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/平日/50元/每小時, 計時/假日/100元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數1格，停車費率 平日/30元/每小時, 停車費率 假日/40元/每小時",
+   "floors": "1",
+   "id": "89132567-S0153",
+   "lat": 25.03128,
+   "lng": 121.41581,
+   "name": "Acon-eco新北新莊生命紀念館站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/平日/30元/每小時, 計時/假日/40元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數2格，停車費率 每日/20元/每小時，營業時間 : 平日17:30-22:30 ; 例假日07:30-22:30",
+   "floors": "1",
+   "id": "89132567-S0155",
+   "lat": 24.995,
+   "lng": 121.52104,
+   "name": "Acon-eco新北中和秀山國小站",
+   "operation_type": "公辦公營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/20元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "平日/17:30-22:30, 例假日/07:30-22:30",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電格數2格，停車費率 每日/30元/每小時，營運時間08:00-24:00",
+   "floors": "B1",
+   "id": "89132567-S0158",
+   "lat": 25.05793,
+   "lng": 121.62656,
+   "name": "Acon-eco新北雍和台北園區站",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "每日/08:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/平日/00:00-23:59/8元每度，計度/假日/00:00-23:59/9元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位 3 格，充電樁 3 座，J1772 * 3",
+   "floors": "B1",
+   "id": "90016138-S643927b1",
+   "lat": 25.09043,
+   "lng": 121.38115,
+   "name": "林口展悅CEO豪辦站",
+   "operation_type": "私有民營",
+   "operator": "檸檬動能股份有限公司",
+   "operator_id": "90016138",
+   "parking_rate": "20元/每小時(4/1號後調整為30元/每小時)，半小時內不計費，超過半小時未滿一小時以一小時計費",
+   "restriction": null,
+   "service_time": "每日/07:00-23:00",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/10元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位 2 格，充電樁 2 座，J1772*2，位於地下停車場：46、47停車格",
+   "floors": "B1",
+   "id": "90016138-SF001",
+   "lat": 25.068695,
+   "lng": 121.367874,
+   "name": "麗林國小停車場",
+   "operation_type": "公辦民營",
+   "operator": "檸檬動能股份有限公司",
+   "operator_id": "90016138",
+   "parking_rate": "計時/開放日/40元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/9 元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "服務時間：平日 /07:00-19:00 / 停車費率：免費 / 充電費率：計度/固定/9 元每度",
+   "floors": "B1",
+   "id": "90148497-S1046",
+   "lat": 25.047103,
+   "lng": 121.618677,
+   "name": "白雲國民小學",
+   "operation_type": "公辦民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "平日 /07:00-19:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "$9/kWh",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "服務時間：週一~週日 00:00~23:59 / 停車費率：$3,100/月 / 充電費率：$9/kWh",
+   "floors": "B1",
+   "id": "90148497-S1171",
+   "lat": 24.987066,
+   "lng": 121.50968,
+   "name": "興南國民小學",
+   "operation_type": "公辦公營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "$3,100/月",
+   "restriction": null,
+   "service_time": "週一~週日 00:00~23:59",
+   "spaces": 1
+  },
+  {
+   "charging_points": 16,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "服務時間：24小時開放。 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "1",
+   "id": "90148497-S1215",
+   "lat": 25.062755,
+   "lng": 121.650582,
+   "name": "星舟x城市車旅_汐止遠雄iFG",
+   "operation_type": "私有民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放。",
+   "spaces": 18
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "服務時間：24小時開放。 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "B1",
+   "id": "90148497-S1240",
+   "lat": 25.044641,
+   "lng": 121.46805,
+   "name": "星舟x城市車旅_三重冠德心天匯",
+   "operation_type": "私有民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放。",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "服務時間：24小時開放。 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "B1",
+   "id": "90148497-S1252",
+   "lat": 24.9583,
+   "lng": 121.415189,
+   "name": "全聯土城中州店",
+   "operation_type": "公辦民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放。",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/尖峰/16:00-22:00/13.50 元每度, 計度/尖峰/15:00-21:00/13.50 元每度, 計度/離峰/23:59-16:00/6.00 元每度, 計度/離峰/22:00-23:59/6.00 元每度, 計度/離峰/23:59-15:00/6.00 元每度, 計度/離峰/21:00-23:59/6.00 元每度, 計度/離峰/00:00-23:59/6.50 元每度, 計度/離峰/00:00-23:59/6.50 元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "7x24 小時。停車費率：免費。充電樁數目：4，CCS1數量：2，CCS2數量：2，J1772數量：2",
+   "floors": "1",
+   "id": "90444103-S53",
+   "lat": 24.979648,
+   "lng": 121.449766,
+   "name": "淞和快充 土城站 evbar",
+   "operation_type": "私有民營",
+   "operator": "淞和工程企業有限公司",
+   "operator_id": "90444103",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24 小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/7.8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每度7.8元，充電插頭 J-1772，充電格位數2",
+   "floors": "B1",
+   "id": "90482725-S0080",
+   "lat": 25.16881,
+   "lng": 121.44864,
+   "name": "學府停車場",
+   "operation_type": "私有民營",
+   "operator": "立鉑國際股份有限公司",
+   "operator_id": "90482725",
+   "parking_rate": "計時/平日/25元每半小時/假日/45元每半小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "快充/計度/固定/8.0元每度，慢充/計分/1元每分",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "位於板橋遠百中山店停車場B2",
+   "floors": "B3",
+   "id": "90505425-S58665",
+   "lat": 25.01065,
+   "lng": 121.46436,
+   "name": "板橋遠百中山店",
+   "operation_type": "私有民營",
+   "operator": "特爾電力股份有限公司",
+   "operator_id": "90505425",
+   "parking_rate": "計時/每日/60元每小時，停車折抵優惠訊息請依照現場說明",
+   "restriction": null,
+   "service_time": "每日/11:00-22:00",
+   "spaces": 8
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計分/1元每分",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率固定費率，採1元/分鐘。充電插頭J1772、充電插頭TYPE2。充電格位數7。",
+   "floors": "B2",
+   "id": "90505425-SNWT0001",
+   "lat": 25.011946,
+   "lng": 121.462694,
+   "name": "TAIL 板橋凱撒慢充站",
+   "operation_type": "私有民營",
+   "operator": "特爾電力股份有限公司",
+   "operator_id": "90505425",
+   "parking_rate": "計時/每日/40元每小時，計月/每月/5000元每月",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 7
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/10元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:免費 費率:計度/固定/10元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SACSD00069",
+   "lat": 25.056557,
+   "lng": 121.496443,
+   "name": "新北市三重區三光國民小學",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8.9元每度浮動費率,,計度/離峰/00:00-11:00/8.4元每度,計度/一般/*11:01-23:59/9.8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CHAdeMO",
+     "type": "chademo"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:1. 停車費每小時30元，半小時內離場不計費，離館前請持停車幣至繳費機過卡。  2.平日於日月光廣場不限金額消費，享當日3小時免費停車。  3.憑日月光廣場會員卡不分平假日，免費停車1小時，請持停車幣於日月光廣場營業時間內至1F服務台進行折抵。  4.日月光廣場會員卡為免費申辦，請於日月光廣場營業時間持身份證件至1F服務台辦理。 費率:計度/固定/8.9元每度浮動費率,,計度/離峰/00:00-11:00/8.4元每度,計度/一般/*11:01-23:59/9.8元每度 樓層:B3",
+   "floors": "B3",
+   "id": "90807408-SCSD00058",
+   "lat": 24.978658,
+   "lng": 121.44507,
+   "name": "新北土城日月光廣場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "1. 停車費每小時30元，半小時內離場不計費，離館前請持停車幣至繳費機過卡。  2.平日於日月光廣場不限金額消費，享當日3小時免費停車。  3.憑日月光廣場會員卡不分平假日，免費停車1小時，請持停車幣於日月光廣場營業時間內至1F服務台進行折抵。  4.日月光廣場會員卡為免費申辦，請於日月光廣場營業時間持身份證件至1F服務台辦理。",
+   "restriction": null,
+   "service_time": "每日/07:00-23:59",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:50元/小時 (依現場為準) 費率:計度/固定/8元每度 樓層:B5",
+   "floors": "B5",
+   "id": "90807408-SCSD00077",
+   "lat": 25.007919,
+   "lng": 121.507555,
+   "name": "新北永和比漾廣場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "50元/小時 (依現場為準)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 20,
+   "charging_rate": "計度/固定/8.8元每度",
+   "connectors": [
+    {
+     "count": 9,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:18 充電樁數量:20 停車費:依現場為準 費率:計度/固定/8.8元每度 樓層:3F",
+   "floors": "3F",
+   "id": "90807408-SCSD02391",
+   "lat": 25.071507,
+   "lng": 121.363891,
+   "name": "MITSUI OUTLET PARK 林口Ⅰ館",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "依現場為準",
+   "restriction": null,
+   "service_time": "平日 /11:00-22:00, 平日 /11:00-23:59, 假日 /11:00-22:00",
+   "spaces": 18
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/7元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:免費 費率:計度/固定/7元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02473",
+   "lat": 24.985659,
+   "lng": 121.536759,
+   "name": "新北新店台北慈濟醫院",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/7.5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/7.5元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02634",
+   "lat": 25.086989,
+   "lng": 121.380713,
+   "name": "新北市林口國民運動中心",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "每日/06:00-22:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02635",
+   "lat": 24.959752,
+   "lng": 121.51074,
+   "name": "新北市青少年圖書館",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/7.5元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:7 停車費:40元/時 費率:計度/固定/7.5元每度 樓層:4F",
+   "floors": "4F",
+   "id": "90807408-SCSD02645",
+   "lat": 25.057376,
+   "lng": 121.459033,
+   "name": "宏匯思源i-Tower大樓",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02685",
+   "lat": 24.935345,
+   "lng": 121.370433,
+   "name": "新北三峽公有市場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "免費",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:免費 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02686",
+   "lat": 25.003116,
+   "lng": 121.474213,
+   "name": "新北民享公有市場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02687",
+   "lat": 25.056068,
+   "lng": 121.433439,
+   "name": "新北泰山公有市場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:30元/小時 費率:計度/固定/8元每度 樓層:3F",
+   "floors": "3F",
+   "id": "90807408-SCSD02693",
+   "lat": 25.050109,
+   "lng": 121.460467,
+   "name": "新北捷運幸福站立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 23,
+   "charging_rate": "計度/固定/8.8元每度",
+   "connectors": [
+    {
+     "count": 12,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:23 充電樁數量:23 停車費:⚠️停車優惠僅限於MITSUI OUTLET PARK 林口當日消費之發票，為利於優惠折抵，請牢記車牌號碼。 1.每消費滿1,000元可折停車1小時，依此類推，請於消費同時，告知車牌號碼進行停車優惠折抵。 2.持永豐三井OUTLET聯名卡可於自動繳費機過卡，即享2小時停車優惠，每日每卡每車僅限優惠乙次。 3.憑威秀影城當日購買之票根，於繳費機掃描QR CODE，即享3小時停車優惠，每日每車限抵扣乙次。 4.以上3項優惠可合併使用，每車每日最高折抵5小時。 費率:計度/固定/8.8元每度 樓層:4F, B1",
+   "floors": "4F, B1",
+   "id": "90807408-SCSD02763",
+   "lat": 25.067742,
+   "lng": 121.36461,
+   "name": "MITSUI OUTLET PARK 林口Ⅱ館",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "⚠️停車優惠僅限於MITSUI OUTLET PARK 林口當日消費之發票，為利於優惠折抵，請牢記車牌號碼。 1.每消費滿1,000元可折停車1小時，依此類推，請於消費同時，告知車牌號碼進行停車優惠折抵。 2.持永豐三井OUTLET聯名卡可於自動繳費機過卡，即享2小時停車優惠，每日每卡每車僅限優惠乙次。 3.憑威秀影城當日購買之票根，於繳費機掃描QR CODE，即享3小時停車優惠，每日每車限抵扣乙次。 4.以上3項優惠可合併使用，每車每日最高折抵5小時。",
+   "restriction": null,
+   "service_time": "每日/11:00-22:00",
+   "spaces": 23
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02779",
+   "lat": 25.077617,
+   "lng": 121.479728,
+   "name": "新北永福國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:20元/小時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02780",
+   "lat": 25.074325,
+   "lng": 121.49847,
+   "name": "新北龍門公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02781",
+   "lat": 25.064761,
+   "lng": 121.479652,
+   "name": "新北二重國中地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02782",
+   "lat": 25.071788,
+   "lng": 121.490182,
+   "name": "新北厚德國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02783",
+   "lat": 25.080731,
+   "lng": 121.496408,
+   "name": "新北五常地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02787",
+   "lat": 25.063818,
+   "lng": 121.484092,
+   "name": "新北聯邦公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02788",
+   "lat": 25.068702,
+   "lng": 121.497753,
+   "name": "新北正義公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02789",
+   "lat": 25.078727,
+   "lng": 121.490593,
+   "name": "新北溪美立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 11,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:11 充電樁數量:11 停車費:20元/小時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02790",
+   "lat": 25.146544,
+   "lng": 121.400127,
+   "name": "新北八里區第一立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 11
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:平日20元/小時，假日30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02791",
+   "lat": 25.083255,
+   "lng": 121.43953,
+   "name": "新北五股區工商路立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/小時，假日30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:8 停車費:30元/時 費率:計度/固定/8元每度 樓層:3F",
+   "floors": "3F",
+   "id": "90807408-SCSD02792",
+   "lat": 25.064006,
+   "lng": 121.657151,
+   "name": "新北智興立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:8 充電樁數量:8 停車費:20元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02793",
+   "lat": 25.062149,
+   "lng": 121.434631,
+   "name": "新北楓樹腳公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 11,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:11 停車費:20元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02794",
+   "lat": 25.050096,
+   "lng": 121.427472,
+   "name": "新北義學立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02802",
+   "lat": 25.053703,
+   "lng": 121.925193,
+   "name": "新北澳底公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:5 停車費:40元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02803",
+   "lat": 24.93458,
+   "lng": 121.370076,
+   "name": "新北三峽國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "40元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 11,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:11 停車費:20元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02804",
+   "lat": 24.983809,
+   "lng": 121.458552,
+   "name": "新北金城立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02809",
+   "lat": 25.070902,
+   "lng": 121.490718,
+   "name": "新北三張公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:6 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:1F, B1",
+   "floors": "1F, B1",
+   "id": "90807408-SCSD02810",
+   "lat": 25.060173,
+   "lng": 121.499305,
+   "name": "新北光興國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:5 停車費:20元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02811",
+   "lat": 25.084461,
+   "lng": 121.489026,
+   "name": "新北碧華國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 11,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:11 充電樁數量:11 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02812",
+   "lat": 25.072308,
+   "lng": 121.500557,
+   "name": "新北光榮國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 11
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02813",
+   "lat": 25.050496,
+   "lng": 121.47428,
+   "name": "新北興穀國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:30元/小時 費率:計度/固定/8元每度 樓層:1F, B1",
+   "floors": "1F, B1",
+   "id": "90807408-SCSD02814",
+   "lat": 25.172644,
+   "lng": 121.439186,
+   "name": "新北市三民立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:9 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02815",
+   "lat": 25.178233,
+   "lng": 121.443584,
+   "name": "新北市水碓立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:50元/小時 費率:計度/固定/8元每度 樓層:2F, 3F",
+   "floors": "2F, 3F",
+   "id": "90807408-SCSD02816",
+   "lat": 25.137999,
+   "lng": 121.461791,
+   "name": "新北市民生立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "50元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02817",
+   "lat": 24.991795,
+   "lng": 121.421553,
+   "name": "新北長壽公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:9 停車費:30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02878",
+   "lat": 24.987509,
+   "lng": 121.469296,
+   "name": "新北延吉立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02879",
+   "lat": 24.971019,
+   "lng": 121.537333,
+   "name": "新北三民地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02880",
+   "lat": 24.98447,
+   "lng": 121.44684,
+   "name": "新北裕生立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02881",
+   "lat": 24.9881,
+   "lng": 121.451282,
+   "name": "新北學成公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02882",
+   "lat": 24.978827,
+   "lng": 121.442969,
+   "name": "新北員和公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02883",
+   "lat": 24.979579,
+   "lng": 121.546333,
+   "name": "新北綠湖公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:平日20元/小時，假日30元/小時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02884",
+   "lat": 25.108253,
+   "lng": 121.809347,
+   "name": "新北市瑞芳區立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/小時，假日30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:5 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02885",
+   "lat": 25.084184,
+   "lng": 121.469937,
+   "name": "新北市蘆洲國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:9 充電樁數量:9 停車費:平日20元/小時，假日30元/小時 費率:計度/固定/8元每度 樓層:1F, B1",
+   "floors": "1F, B1",
+   "id": "90807408-SCSD02886",
+   "lat": 25.086046,
+   "lng": 121.476735,
+   "name": "新北市鷺江立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/小時，假日30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02887",
+   "lat": 25.084956,
+   "lng": 121.458132,
+   "name": "新北市成功地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02888",
+   "lat": 25.079636,
+   "lng": 121.476246,
+   "name": "新北市溪墘地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:9 充電樁數量:9 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02889",
+   "lat": 25.0908,
+   "lng": 121.471447,
+   "name": "新北市仁愛立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:10 充電樁數量:10 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02890",
+   "lat": 25.070585,
+   "lng": 121.482649,
+   "name": "新北三重商工地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 10
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:5 停車費:10元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02891",
+   "lat": 25.254658,
+   "lng": 121.503153,
+   "name": "新北市中正停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "10元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B3",
+   "floors": "B3",
+   "id": "90807408-SCSD02892",
+   "lat": 25.026071,
+   "lng": 121.424011,
+   "name": "新北市後港公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:5 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02893",
+   "lat": 25.055071,
+   "lng": 121.458088,
+   "name": "新北市頭前國中地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02894",
+   "lat": 25.022126,
+   "lng": 121.428446,
+   "name": "新北市民安國民小學地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:6 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02895",
+   "lat": 25.064597,
+   "lng": 121.495244,
+   "name": "新北正義國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:5 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02896",
+   "lat": 25.033357,
+   "lng": 121.473845,
+   "name": "新北江翠國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02897",
+   "lat": 25.016363,
+   "lng": 121.465581,
+   "name": "新北特專三臨時平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:8 充電樁數量:8 停車費:30元/小時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02898",
+   "lat": 25.026576,
+   "lng": 121.462579,
+   "name": "新北新埔國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 15,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:12 充電樁數量:15 停車費:30元/小時 費率:計度/固定/8元每度免費 樓層:B1, 1F",
+   "floors": "B1, 1F",
+   "id": "90807408-SCSD02899",
+   "lat": 24.992314,
+   "lng": 121.490762,
+   "name": "新北錦和運動公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 12
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度免費 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02900",
+   "lat": 25.021436,
+   "lng": 121.475172,
+   "name": "新北華翠橋下平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:4 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02901",
+   "lat": 25.0035,
+   "lng": 121.44456,
+   "name": "新北臺北紙廠停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度免費 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02902",
+   "lat": 24.996101,
+   "lng": 121.449706,
+   "name": "新北華東平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02903",
+   "lat": 25.033765,
+   "lng": 121.468691,
+   "name": "新北江翠102平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:3 停車費:20元/時 費率:計度/固定/8元每度免費 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02904",
+   "lat": 25.044281,
+   "lng": 121.4423,
+   "name": "新北台65高架橋下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:6 停車費:20元/時 費率:計度/固定/8元每度免費 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02905",
+   "lat": 24.957872,
+   "lng": 121.414198,
+   "name": "新北中洲平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02906",
+   "lat": 24.986957,
+   "lng": 121.464622,
+   "name": "新北永豐平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:20元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02907",
+   "lat": 24.983668,
+   "lng": 121.466671,
+   "name": "新北明德平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02908",
+   "lat": 24.988019,
+   "lng": 121.49054,
+   "name": "新北圓通平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:30元/時(7~22時)，10元/時(22~7時) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02909",
+   "lat": 24.973327,
+   "lng": 121.519233,
+   "name": "新北安和公園臨時平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時(7~22時)，10元/時(22~7時)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:平日20元/時，假日40元/時 費率:計度/固定/8元每度免費 樓層:1F, 平面(北側), 平面(南側)",
+   "floors": "1F, 平面(北側), 平面(南側)",
+   "id": "90807408-SCSD02910",
+   "lat": 24.954557,
+   "lng": 121.358002,
+   "name": "新北三鶯轉運站平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02911",
+   "lat": 25.027882,
+   "lng": 121.468499,
+   "name": "新北江翠國中游泳池共構地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:10 充電樁數量:10 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1, B2",
+   "floors": "B1, B2",
+   "id": "90807408-SCSD02912",
+   "lat": 25.02563,
+   "lng": 121.463891,
+   "name": "新北四維公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 10
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:10 充電樁數量:10 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02913",
+   "lat": 25.02822,
+   "lng": 121.480036,
+   "name": "新北音樂公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 10
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02914",
+   "lat": 25.090338,
+   "lng": 121.460765,
+   "name": "新北市立鷺江國民中學地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02915",
+   "lat": 25.034264,
+   "lng": 121.451316,
+   "name": "新北市新莊國中運動場地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:10元/時 費率:計度/固定/8元每度 樓層:2F",
+   "floors": "2F",
+   "id": "90807408-SCSD02916",
+   "lat": 25.259009,
+   "lng": 121.500262,
+   "name": "新北市中山停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "10元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02917",
+   "lat": 25.066316,
+   "lng": 121.475227,
+   "name": "新北二重公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:8 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02918",
+   "lat": 24.977152,
+   "lng": 121.547288,
+   "name": "新北中興低碳立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:平日20元/時，假日40元/時 費率:計度/固定/8元每度 樓層:1F, B1",
+   "floors": "1F, B1",
+   "id": "90807408-SCSD02919",
+   "lat": 25.001815,
+   "lng": 121.615591,
+   "name": "新北兒童遊戲場地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02920",
+   "lat": 24.974231,
+   "lng": 121.534123,
+   "name": "新北新店高中地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02921",
+   "lat": 25.012013,
+   "lng": 121.456409,
+   "name": "新北板橋國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02922",
+   "lat": 24.999861,
+   "lng": 121.463728,
+   "name": "新北重慶公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 17,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 8,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 9,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:17 充電樁數量:17 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02923",
+   "lat": 25.014099,
+   "lng": 121.465669,
+   "name": "新北市民廣場地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 17
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02924",
+   "lat": 25.025236,
+   "lng": 121.454335,
+   "name": "新北板橋國民中學地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:40元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02925",
+   "lat": 25.013311,
+   "lng": 121.475675,
+   "name": "新北民生公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:2F",
+   "floors": "2F",
+   "id": "90807408-SCSD02926",
+   "lat": 25.011991,
+   "lng": 121.460475,
+   "name": "新北民權立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:30元/時 費率:計度/固定/8元每度 樓層:4F",
+   "floors": "4F",
+   "id": "90807408-SCSD02927",
+   "lat": 25.010301,
+   "lng": 121.458657,
+   "name": "新北府後立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:5 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02928",
+   "lat": 25.001393,
+   "lng": 121.455095,
+   "name": "新北市立圖書館地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:5 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02930",
+   "lat": 25.012112,
+   "lng": 121.458289,
+   "name": "新北板橋高中地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:5 停車費:20元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02931",
+   "lat": 25.001169,
+   "lng": 121.448553,
+   "name": "新北中山國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:10 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02932",
+   "lat": 25.004151,
+   "lng": 121.462235,
+   "name": "新北忠孝國民中學地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02933",
+   "lat": 24.993075,
+   "lng": 121.465551,
+   "name": "新北五權公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:4 停車費:20元/時 費率:計度/固定/8元每度 樓層:1F, B1",
+   "floors": "1F, B1",
+   "id": "90807408-SCSD02934",
+   "lat": 24.935442,
+   "lng": 121.71046,
+   "name": "新北水柳腳立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 12,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:12 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02935",
+   "lat": 24.998571,
+   "lng": 121.499909,
+   "name": "新北中和國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:5 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02936",
+   "lat": 25.001583,
+   "lng": 121.483546,
+   "name": "新北民樂立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:B1, B2",
+   "floors": "B1, B2",
+   "id": "90807408-SCSD02937",
+   "lat": 24.990792,
+   "lng": 121.502334,
+   "name": "新北中和地政事務所及稅捐稽徵處",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:9 充電樁數量:9 停車費:30元/時 費率:計度/固定/8元每度 樓層:2F",
+   "floors": "2F",
+   "id": "90807408-SCSD02938",
+   "lat": 25.061005,
+   "lng": 121.489604,
+   "name": "新北中山立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02939",
+   "lat": 25.078752,
+   "lng": 121.389284,
+   "name": "新北停三立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:平日20元/時，假日30元/時 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02940",
+   "lat": 25.065977,
+   "lng": 121.361835,
+   "name": "新北林口公車轉運站平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:20元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02941",
+   "lat": 24.98315,
+   "lng": 121.444762,
+   "name": "新北中央公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02942",
+   "lat": 25.084557,
+   "lng": 121.458347,
+   "name": "新北市永康公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02943",
+   "lat": 25.220227,
+   "lng": 121.641663,
+   "name": "新北市金山立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 13,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:13 充電樁數量:13 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02944",
+   "lat": 25.042413,
+   "lng": 121.447791,
+   "name": "新北市新莊運動公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 13
+  },
+  {
+   "charging_points": 13,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:13 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02945",
+   "lat": 25.010088,
+   "lng": 121.506209,
+   "name": "新北仁愛公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02946",
+   "lat": 25.00182,
+   "lng": 121.517269,
+   "name": "新北永和國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 15,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 8,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:15 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02947",
+   "lat": 24.998833,
+   "lng": 121.520332,
+   "name": "新北秀朗國民小學地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 11,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:11 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02948",
+   "lat": 25.004688,
+   "lng": 121.522887,
+   "name": "新北福和國中地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 13,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:13 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02949",
+   "lat": 25.013837,
+   "lng": 121.519858,
+   "name": "新北網溪國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02950",
+   "lat": 24.977241,
+   "lng": 121.538394,
+   "name": "新北大豐地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:30元(7時~22時)，10元(22時~7時) 費率:計度/固定/8元每度 樓層:4F",
+   "floors": "4F",
+   "id": "90807408-SCSD02951",
+   "lat": 24.962686,
+   "lng": 121.512632,
+   "name": "新北安康立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元(7時~22時)，10元(22時~7時)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02952",
+   "lat": 24.96888,
+   "lng": 121.542031,
+   "name": "新北北新地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:10 停車費:30元/小時 費率:計度/固定/8元每度 樓層:1F, 1F",
+   "floors": "1F, 1F",
+   "id": "90807408-SCSD02953",
+   "lat": 24.974504,
+   "lng": 121.545719,
+   "name": "新北寶橋立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/8元每度 樓層:2F露天",
+   "floors": "2F露天",
+   "id": "90807408-SCSD02954",
+   "lat": 24.990625,
+   "lng": 121.419697,
+   "name": "新北第七立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:5 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02955",
+   "lat": 24.996278,
+   "lng": 121.428787,
+   "name": "新北樹林藝文綜合行政大樓地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:4 充電樁數量:4 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02956",
+   "lat": 24.989919,
+   "lng": 121.513114,
+   "name": "新北景新立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 4
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:8 停車費:室內:平日60元/次，假日30元/小時；路邊:平日60元/次，假日90元/次 費率:計度/固定/8元每度 樓層:2F",
+   "floors": "2F",
+   "id": "90807408-SCSD02957",
+   "lat": 24.865513,
+   "lng": 121.551642,
+   "name": "新北烏來立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "室內:平日60元/次，假日30元/小時；路邊:平日60元/次，假日90元/次",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度免費",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:6 停車費:平日20元/時，假日30元/時 費率:計度/固定/8元每度免費 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02958",
+   "lat": 25.026614,
+   "lng": 121.481012,
+   "name": "新北萬板高架橋下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:8 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02959",
+   "lat": 24.999167,
+   "lng": 121.468304,
+   "name": "新北民德立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02960",
+   "lat": 25.003547,
+   "lng": 121.47562,
+   "name": "新北民享公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:8 充電樁數量:8 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02961",
+   "lat": 24.995689,
+   "lng": 121.523581,
+   "name": "新北秀山公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02962",
+   "lat": 25.004855,
+   "lng": 121.502912,
+   "name": "新北佳和公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:5 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD02965",
+   "lat": 24.983839,
+   "lng": 121.448808,
+   "name": "新北高工地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02966",
+   "lat": 25.057609,
+   "lng": 121.483176,
+   "name": "新北重陽公園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:5 充電樁數量:9 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD02967",
+   "lat": 25.015622,
+   "lng": 121.510753,
+   "name": "新北頂溪國小地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 5
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:30元(20時~0時)，20元(0時~20時) 費率:計度/固定/8元每度 樓層:1F平面",
+   "floors": "1F平面",
+   "id": "90807408-SCSD02968",
+   "lat": 25.044616,
+   "lng": 121.453007,
+   "name": "新北中港平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元(20時~0時)，20元(0時~20時)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:平日20元/時，假日40元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02969",
+   "lat": 24.95554,
+   "lng": 121.342511,
+   "name": "新北公八公園平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 20,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:20 充電樁數量:20 停車費:20元/時，當日上限250元 費率:計度/固定/8元每度 樓層:4B2, 5B2, B2",
+   "floors": "4B2, 5B2, B2",
+   "id": "90807408-SCSD03173",
+   "lat": 24.938824,
+   "lng": 121.364274,
+   "name": "歐特儀_三峽台北大學運動場停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時，當日上限250元",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 20
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03192",
+   "lat": 25.009854,
+   "lng": 121.469913,
+   "name": "力揚_板橋體育場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:免費 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03203",
+   "lat": 25.189988,
+   "lng": 121.440729,
+   "name": "新北建昇淡水行政中心",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:平日15元/30分鐘(當日最高上限120元)，假日25元/30分鐘(當日最高上限200元)；館內消費不限金額，停車費比照平日收費(唯無最高收費上限) 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03220",
+   "lat": 25.056796,
+   "lng": 121.44742,
+   "name": "新北國家電影及視聽文化中心",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日15元/30分鐘(當日最高上限120元)，假日25元/30分鐘(當日最高上限200元)；館內消費不限金額，停車費比照平日收費(唯無最高收費上限)",
+   "restriction": null,
+   "service_time": "每日/07:00-23:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:8 充電樁數量:8 停車費:40元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD03230",
+   "lat": 25.063823,
+   "lng": 121.458322,
+   "name": "新北晶冠廣場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:9 充電樁數量:9 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03245",
+   "lat": 25.064646,
+   "lng": 121.448482,
+   "name": "新北工商展覽中心",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:平日20元/時，假日30元/時(24小時內最高收費200元) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03253",
+   "lat": 25.058943,
+   "lng": 121.482223,
+   "name": "歐特儀_新北文中小平面停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日20元/時，假日30元/時(24小時內最高收費200元)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:7 充電樁數量:7 停車費:平日30元/時，假日40元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03263",
+   "lat": 25.049805,
+   "lng": 121.475523,
+   "name": "新北興穀國小操場地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日30元/時，假日40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 7
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:每次50元( 平日)、每次90元( 國定例假日) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03300",
+   "lat": 25.156903,
+   "lng": 121.435243,
+   "name": "新北渡船頭平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "每次50元( 平日)、每次90元( 國定例假日)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:每小時30元(平日每12小時最高收費150元/國定例假日為180元，超過12小時、離場再停或跨日均重新計費) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03390",
+   "lat": 24.966195,
+   "lng": 121.432805,
+   "name": "新北大安平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "每小時30元(平日每12小時最高收費150元/國定例假日為180元，超過12小時、離場再停或跨日均重新計費)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:每小時30元( 平日)、每小時40元( 國定例假日) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03435",
+   "lat": 25.021883,
+   "lng": 121.452453,
+   "name": "新北永翠路平面停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "每小時30元( 平日)、每小時40元( 國定例假日)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:每小時30元 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03447",
+   "lat": 25.070577,
+   "lng": 121.504032,
+   "name": "新北環河快速高架橋(一)停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "每小時30元",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:40元/時，當日最高上限180元 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03463",
+   "lat": 24.98942,
+   "lng": 121.5341,
+   "name": "易亭_新北新店中正停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "40元/時，當日最高上限180元",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:6 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD03467",
+   "lat": 25.039745,
+   "lng": 121.447089,
+   "name": "新北市新莊國民運動中心",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD03484",
+   "lat": 25.037414,
+   "lng": 121.457871,
+   "name": "新北新莊農會_信用部",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:30元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD03505",
+   "lat": 25.084479,
+   "lng": 121.481917,
+   "name": "力揚_新北蘆洲重陽大樓停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 13,
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度,計度/固定/7.8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:13 充電樁數量:13 停車費:免費 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度,計度/固定/7.8元每度 樓層:6F",
+   "floors": "6F",
+   "id": "90807408-SCSD03510",
+   "lat": 25.047953,
+   "lng": 121.415115,
+   "name": "新北南亞科技研發大樓停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 13
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:20元/時 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03511",
+   "lat": 25.057323,
+   "lng": 121.491589,
+   "name": "新北光明公有市場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度,計度/固定/7元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:6 充電樁數量:8 停車費:40元/時 費率:計度/固定/8元每度,計度/固定/7元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03541",
+   "lat": 24.998502,
+   "lng": 121.495317,
+   "name": "力揚_新北中和安邦青年社會住宅",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "40元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:60元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03546",
+   "lat": 25.06716,
+   "lng": 121.487611,
+   "name": "中華民國全國漁會三重示範魚市場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "60元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:8 充電樁數量:8 停車費:20元/時 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03547",
+   "lat": 25.154312,
+   "lng": 121.406811,
+   "name": "新北市八里區行政中心",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:1 停車費:平日:80元/次；假日:100元/次 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD03554",
+   "lat": 25.223718,
+   "lng": 121.637678,
+   "name": "力揚_新北金山老街文化一路停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "平日:80元/次；假日:100元/次",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:30元/時(停車未滿15分鐘免費) 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03556",
+   "lat": 25.017909,
+   "lng": 121.46937,
+   "name": "叭叭房_新北新板傑仕堡C停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "30元/時(停車未滿15分鐘免費)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:依場域公告為準 費率:計度/固定/8元每度 樓層:B1",
+   "floors": "B1",
+   "id": "90807408-SCSD03564",
+   "lat": 25.186346,
+   "lng": 121.430976,
+   "name": "Times_新北淡水四季之旅停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "依場域公告為準",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:依現場公告費率 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD03590",
+   "lat": 25.075122,
+   "lng": 121.371856,
+   "name": "Times_新北林口福樺中央大樓停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "依現場公告費率",
+   "restriction": null,
+   "service_time": "平日 /00:00-23:59, 平日 /00:00-00:00, 假日 /00:00-23:59",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位 6 格,充電樁 6 座,位於B3樓層之 196、197、198、223、224、225 停車格,皆為慢速充電規格。",
+   "floors": "B3",
+   "id": "91887251-SA040601",
+   "lat": 24.993173,
+   "lng": 121.494006,
+   "name": "雙和醫院停車場",
+   "operation_type": "私有民營",
+   "operator": "俥亭停車事業股份有限公司雙和醫院營業所",
+   "operator_id": "91887251",
+   "parking_rate": "計時:40 元/每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度:  8元/每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位 6 格,充電樁 6 座, 台達電AC充電樁,位於 1 樓之 57、58、59、60、61、62 停車格, 皆為慢充",
+   "floors": "1F",
+   "id": "91903689-SA040701",
+   "lat": 24.991234,
+   "lng": 121.49418,
+   "name": "雙和醫院二停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車事業股份有限公司雙和醫院二營業所",
+   "operator_id": "91903689",
+   "parking_rate": "計時: 40元/小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/10 元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，J1772*1",
+   "floors": "B2",
+   "id": "93519232-S0010",
+   "lat": 25.007714,
+   "lng": 121.459698,
+   "name": "板橋中山停車場",
+   "operation_type": "私有民營",
+   "operator": "區快充科技股份有限公司",
+   "operator_id": "93519232",
+   "parking_rate": "計時/平日/60 元每小時、假日/70 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "週日/固定/7.0000元(每度),週一/固定/7.0000元(每度),週二/固定/7.0000元(每度),週三/固定/7.0000元(每度),週四/固定/7.0000元(每度),週五/固定/7.0000元(每度),週六/固定/7.0000元(每度)",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": null,
+   "floors": "B1",
+   "id": "94128120-S0004120",
+   "lat": 25.005071,
+   "lng": 121.477212,
+   "name": "DARA-聯通雙和慈濟站",
+   "operation_type": "私有民營",
+   "operator": "達拉電能",
+   "operator_id": "94128120",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "週日/固定/12.5000元(每度),週一/固定/12.5000元(每度),週二/固定/12.5000元(每度),週三/固定/12.5000元(每度),週四/固定/12.5000元(每度),週五/固定/12.5000元(每度),週六/固定/12.5000元(每度)",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": null,
+   "floors": "B3,B4",
+   "id": "94128120-S0004121",
+   "lat": 25.05929,
+   "lng": 121.449249,
+   "name": "DARA-宏匯廣場站",
+   "operation_type": "私有民營",
+   "operator": "達拉電能",
+   "operator_id": "94128120",
+   "parking_rate": "計時/每日40 元每小時",
+   "restriction": null,
+   "service_time": "平日/11:00-23:00,假日/11:00-23:00",
+   "spaces": 16
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計分/1 元每分",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每分鐘 1 元。充電插頭 J-1772。充電格位數量 6",
+   "floors": "6",
+   "id": "94175832-SUCB0078G002",
+   "lat": 25.001714,
+   "lng": 121.496062,
+   "name": "24TPS 永固便利停（南山威力站）",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/40 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計分/1.25 元每分",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每分鐘 1.25 元。充電插頭 J-1772。充電格位數量 6",
+   "floors": "B3",
+   "id": "94175832-SUCB0233G002",
+   "lat": 25.00361,
+   "lng": 121.499242,
+   "name": "大潤發中和店",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/50 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/07:30-23:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "計度/8 元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每度 8 元。充電插頭 J-1772/TYPE2。充電格位數量 14",
+   "floors": "B1",
+   "id": "94175832-SUCF0233F039",
+   "lat": 25.001721,
+   "lng": 121.492404,
+   "name": "好市多中和店B1充電站",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/100 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/10:00-21:30",
+   "spaces": 14
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "計度/8 元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每度 8 元。充電插頭 J-1772/TYPE2。充電格位數量 14",
+   "floors": "4",
+   "id": "94175832-SUCF0259F040",
+   "lat": 25.027198,
+   "lng": 121.434101,
+   "name": "好市多新莊店4F充電站",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/100 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/10:00-21:30",
+   "spaces": 14
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "計度/8 元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每度 8 元。充電插頭 J-1772/TYPE2。充電格位數量 14",
+   "floors": "B1",
+   "id": "94175832-SUCF0279F048",
+   "lat": 25.056227,
+   "lng": 121.633561,
+   "name": "好市多汐止店B1充電站",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/100 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/10:00-21:30",
+   "spaces": 14
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計分/1.25 元每分",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每分鐘 1.25 元。充電插頭 J-1772/TYPE2。充電格位數量 2",
+   "floors": "B2",
+   "id": "94175832-SUCG0015G001",
+   "lat": 25.057334,
+   "lng": 121.446813,
+   "name": "新莊典華B2充電站",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/60 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計分/1.25 元每分",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每分鐘 1.25 元。充電插頭 J-1772/TYPE2。充電格位數量 5",
+   "floors": "B1",
+   "id": "94175832-SUCG0178G001",
+   "lat": 25.022937,
+   "lng": 121.457739,
+   "name": "新北市板橋國民運動中心B1充電站",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/30 元每小時",
+   "restriction": null,
+   "service_time": "每日/06:00-22:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "立體式，小型車計時20元，小型車月租2500元",
+   "floors": "B1",
+   "id": "94273051-S2gpG2Tp",
+   "lat": 25.064318,
+   "lng": 121.65862,
+   "name": "汐止區公所",
+   "operation_type": "公辦民營",
+   "operator": "超馳電力系統有限公司",
+   "operator_id": "94273051",
+   "parking_rate": "計時/每日/20元每小時，月租2500元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 3
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "立體式，小型車計時20元，小型車月租1200元",
+   "floors": "B1",
+   "id": "94273051-S6Zq8qOU",
+   "lat": 25.177982,
+   "lng": 121.68948,
+   "name": "萬里區公所",
+   "operation_type": "公辦公營",
+   "operator": "超馳電力系統有限公司",
+   "operator_id": "94273051",
+   "parking_rate": "計時/20元每小時",
+   "restriction": null,
+   "service_time": "月租24小時、臨停上班日上午8時~下午5時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "服務時間：24小時開放 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "1",
+   "id": "95081039-S1229",
+   "lat": 25.061811,
+   "lng": 121.460584,
+   "name": "桃園捷運-A3新北產業園區站",
+   "operation_type": "公辦民營",
+   "operator": null,
+   "operator_id": "95081039",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度 /固定 /12元 DC每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有2樁 30kW 充電樁",
+   "floors": "B1",
+   "id": "97179430-S161",
+   "lat": 24.9957,
+   "lng": 121.454143,
+   "name": "亞東科技大學地下停車場",
+   "operation_type": "私有民營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/30元每小時, 計時/每日/10元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度 /固定 /12元 DC每度,計度 /固定 /8.5元 AC每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有6樁 30kW 充電樁；2樁 7kW充電樁。",
+   "floors": "B4",
+   "id": "97179430-S162",
+   "lat": 25.014509,
+   "lng": 121.467434,
+   "name": "板橋大遠百",
+   "operation_type": "私有民營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/60元每小時",
+   "restriction": null,
+   "service_time": "每日/11:00-22:00",
+   "spaces": 8
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度 /固定 /8.5元 AC 7kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有1樁7kW充電樁",
+   "floors": "B1",
+   "id": "97179430-S215",
+   "lat": 25.066989,
+   "lng": 121.401286,
+   "name": "國立臺灣師範大學林口校區資訊教學大樓地下停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 1
+  }
+ ],
+ "title": "充電站之基本資料",
+ "update_time": "2026-10-13T16:35:41+08:00"
+}

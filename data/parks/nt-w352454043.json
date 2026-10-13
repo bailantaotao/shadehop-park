@@ -1,0 +1,832 @@
+{
+ "address": null,
+ "amenities": {
+  "drinking_water": {
+   "confidence": "medium",
+   "distance_m": 42,
+   "method": "osm",
+   "source": "https://www.openstreetmap.org/way/352454043",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 0,
+   "method": "osm",
+   "note": null,
+   "source": "https://www.openstreetmap.org/way/352454043",
+   "value": true,
+   "verified_at": "2026-10-12"
+  }
+ },
+ "area_m2": 392094,
+ "best_shade_windows": {
+  "1": null,
+  "10": null,
+  "11": null,
+  "12": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": null,
+  "6": null,
+  "7": null,
+  "8": null,
+  "9": null
+ },
+ "charger_summary": {
+  "fast": 0,
+  "nearest_any_m": 234,
+  "nearest_fast_m": null,
+  "nearest_slow_m": 234,
+  "radius_m": 500,
+  "slow": 3,
+  "total": 3,
+  "unknown": 0
+ },
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 5,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 234,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.015622,
+    "lng": 121.510753
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北頂溪國小地下停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02967",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/不分時段固定每度8元",
+   "distance_m": 283,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.01547,
+    "lng": 121.51171
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "THPS",
+   "opening_hours": "計度/不分時段固定每度8元",
+   "operation_type": "公辦公營",
+   "operator": "新北市永和區頂溪國民小學",
+   "osm": null,
+   "parking_rate": "校內停車場，無開放臨停，限月租戶使用。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "34104124-S01",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 393,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.010088,
+    "lng": 121.506209
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北仁愛公園地下停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02945",
+   "verified_at": "2026-10-13"
+  }
+ ],
+ "daytime_shaded_share": 0.0,
+ "geometry_estimated": false,
+ "id": "nt-w352454043",
+ "indoor": false,
+ "kind": "park",
+ "level": "A",
+ "level_label": "全天候遮蔽（下雨可玩）",
+ "location": {
+  "lat": 25.014485,
+  "lng": 121.504626
+ },
+ "name": "永和綠寶石河濱公園",
+ "name_source": "osm_name",
+ "official": null,
+ "osm": {
+  "id": 352454043,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/352454043"
+ },
+ "park_name": "永和綠寶石河濱公園",
+ "parking": [
+  {
+   "access": "yes",
+   "capacity": 787,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 0,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.01577,
+    "lng": 121.506452
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "新店溪綠寶石停車場",
+   "opening_hours": "24/7",
+   "operator": null,
+   "osm": {
+    "id": 1194914948,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1194914948"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": "yes",
+   "capacity": 442,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 79,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.017564,
+    "lng": 121.518289
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "綠光河岸停車場",
+   "opening_hours": "24/7",
+   "operator": null,
+   "osm": {
+    "id": 1194888161,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1194888161"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": 38,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 109,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.01233,
+    "lng": 121.505071
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "智驛保生公有停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 601524131,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/601524131"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 179,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.008949,
+    "lng": 121.501955
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "永權保順場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1245839115,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1245839115"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": 17,
+   "capacity_disabled": "1",
+   "capacity_parent": null,
+   "distance_m": 188,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.02125,
+    "lng": 121.506994
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1239123884,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1239123884"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 196,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.020516,
+    "lng": 121.505949
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 229774713,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/229774713"
+   },
+   "verified_at": "2026-10-12"
+  }
+ ],
+ "playground": {
+  "equipment": [],
+  "fee": null,
+  "max_age": null,
+  "min_age": null,
+  "opening_hours": null,
+  "surface": null,
+  "wheelchair": null
+ },
+ "playground_mapped": false,
+ "rain_cover": {
+  "confidence": "medium",
+  "covered_area_m2": 3835,
+  "covered_ratio": 0.01,
+  "method": "computed",
+  "note": "約 3835 m² 在高架/屋頂下（佔 1%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
+  "source": "https://www.openstreetmap.org/way/352454043",
+  "value": true,
+  "verified_at": "2026-10-12"
+ },
+ "region": {
+  "city": "新北市",
+  "district": "永和區",
+  "id": "newtaipei"
+ },
+ "shade_timetable": {
+  "building_height_known_share": 0.45,
+  "buildings_considered": 2014,
+  "confidence": "low",
+  "method": "computed",
+  "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
+  "slot_minutes": 30,
+  "slot_start": "06:00",
+  "slots": {
+   "1": [
+    null,
+    null,
+    0.25,
+    0.17,
+    0.14,
+    0.1,
+    0.09,
+    0.07,
+    0.06,
+    0.05,
+    0.04,
+    0.03,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.03,
+    null,
+    null
+   ],
+   "10": [
+    0.29,
+    0.17,
+    0.12,
+    0.09,
+    0.08,
+    0.06,
+    0.05,
+    0.04,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    null,
+    null
+   ],
+   "11": [
+    null,
+    0.24,
+    0.17,
+    0.13,
+    0.1,
+    0.08,
+    0.07,
+    0.06,
+    0.05,
+    0.04,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.04,
+    null,
+    null
+   ],
+   "12": [
+    null,
+    null,
+    0.21,
+    0.17,
+    0.13,
+    0.1,
+    0.09,
+    0.07,
+    0.06,
+    0.05,
+    0.04,
+    0.03,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.03,
+    0.05,
+    null,
+    null
+   ],
+   "2": [
+    null,
+    null,
+    0.18,
+    0.14,
+    0.11,
+    0.09,
+    0.07,
+    0.05,
+    0.04,
+    0.04,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    null
+   ],
+   "3": [
+    null,
+    0.18,
+    0.13,
+    0.09,
+    0.08,
+    0.06,
+    0.04,
+    0.03,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.08
+   ],
+   "4": [
+    0.15,
+    0.1,
+    0.08,
+    0.06,
+    0.04,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02
+   ],
+   "5": [
+    0.09,
+    0.07,
+    0.05,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01
+   ],
+   "6": [
+    0.07,
+    0.05,
+    0.03,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01
+   ],
+   "7": [
+    0.08,
+    0.06,
+    0.04,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01
+   ],
+   "8": [
+    0.13,
+    0.08,
+    0.07,
+    0.05,
+    0.03,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01
+   ],
+   "9": [
+    0.18,
+    0.12,
+    0.09,
+    0.07,
+    0.05,
+    0.04,
+    0.03,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    null
+   ]
+  },
+  "source": "https://www.openstreetmap.org/way/352454043",
+  "value": null,
+  "verified_at": "2026-10-12"
+ },
+ "shade_types": [
+  {
+   "confidence": "medium",
+   "covered_ratio": 0.0,
+   "level": "B",
+   "method": "computed",
+   "osm": [
+    {
+     "id": 1465503947,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1465503947"
+    }
+   ],
+   "rain_proof": true,
+   "source": "https://www.openstreetmap.org/way/352454043",
+   "type": "roof",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  {
+   "confidence": "medium",
+   "covered_ratio": 0.01,
+   "level": "B",
+   "method": "computed",
+   "osm": [
+    {
+     "id": 696346871,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/696346871"
+    },
+    {
+     "id": 266502404,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/266502404"
+    },
+    {
+     "id": 262192953,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/262192953"
+    },
+    {
+     "id": 29563995,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/29563995"
+    },
+    {
+     "id": 1103224263,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1103224263"
+    },
+    {
+     "id": 1213996835,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1213996835"
+    },
+    {
+     "id": 911137597,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/911137597"
+    },
+    {
+     "id": 911132814,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/911132814"
+    },
+    {
+     "id": 1213996834,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1213996834"
+    },
+    {
+     "id": 1103487998,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1103487998"
+    },
+    {
+     "id": 1103487996,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1103487996"
+    },
+    {
+     "id": 1224930334,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1224930334"
+    },
+    {
+     "id": 1263032336,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1263032336"
+    }
+   ],
+   "rain_proof": true,
+   "source": "https://www.openstreetmap.org/way/352454043",
+   "type": "under_viaduct",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  {
+   "confidence": "low",
+   "level": "B",
+   "method": "osm",
+   "note": "樹冠大小未知時以直徑 6m 估計；落葉季節遮蔭會變少",
+   "rain_proof": false,
+   "source": "https://www.openstreetmap.org/way/352454043",
+   "trees": 2,
+   "type": "tree_canopy",
+   "value": true,
+   "verified_at": "2026-10-12"
+  }
+ ],
+ "sources": [
+  {
+   "as_of": "2026-10-12T20:21:35Z",
+   "license": "ODbL 1.0",
+   "name": "OpenStreetMap",
+   "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T16:35:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  }
+ ],
+ "updated_at": "2026-10-12"
+}

@@ -22,27 +22,27 @@
   "VIADUCT_DECK_TOP_M": 10.0
  },
  "counts": {
-  "buildings_in_bbox": 112770,
-  "buildings_with_height": 34939,
+  "buildings_in_bbox": 362541,
+  "buildings_with_height": 87226,
   "by_level": {
-   "A": 9,
-   "B": 28,
-   "C": 19,
-   "none": 652
+   "A": 83,
+   "B": 68,
+   "C": 47,
+   "none": 2509
   },
-  "chargers_in_bbox": 483,
-  "chargers_official": 461,
-  "chargers_osm_only": 22,
-  "city_registry_parks": 560,
-  "mapped_playgrounds": 366,
-  "matched_city_registry": 182,
+  "chargers_in_bbox": 799,
+  "chargers_official": 722,
+  "chargers_osm_only": 77,
+  "city_registry_parks": 1209,
+  "mapped_playgrounds": 718,
+  "matched_city_registry": 586,
   "official_only": 296,
-  "park_candidates": 46,
-  "parking_lots_in_bbox": 2792,
-  "parks": 708
+  "park_candidates": 1670,
+  "parking_lots_in_bbox": 11372,
+  "parks": 2707
  },
- "coverage": "新北市林口區、臺北市",
- "fetched_at": "2026-10-13T08:40:39+00:00",
+ "coverage": "新北市、臺北市、桃園市",
+ "fetched_at": "2026-10-13T08:59:02+00:00",
  "generated_from_osm_base": "2026-10-12T20:21:35Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
@@ -52,20 +52,21 @@
  },
  "license": "Data © OpenStreetMap contributors, ODbL 1.0. Derived shade values are estimates.",
  "region_ids": [
-  "linkou",
-  "taipei"
+  "newtaipei",
+  "taipei",
+  "taoyuan"
  ],
  "regions": {
-  "linkou": {
+  "newtaipei": {
    "bbox": [
     121.28263,
-    25.0625,
-    121.41503,
-    25.13692
+    24.67316,
+    122.00708,
+    25.29967
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-13T08:42:12+00:00",
+    "fetched_at": "2026-10-13T09:01:02+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
@@ -73,8 +74,8 @@
     "title": "充電站之基本資料"
    },
    "city_registry": {
-    "entries": 40,
-    "fetched_at": "2026-10-13T08:42:08+00:00",
+    "entries": 635,
+    "fetched_at": "2026-10-13T09:00:57+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "新北市政府農業局",
@@ -82,6 +83,466 @@
     "title": "新北市公園"
    },
    "city_registry_not_in_osm": [
+    {
+     "address": "商港段25號地號商港路(中山路二段500巷底)",
+     "name": "商港路旁綠地(兒九)"
+    },
+    {
+     "address": "台北港段121號地號 八里大道與商港一路",
+     "name": "八里區行政大樓(公博二)"
+    },
+    {
+     "address": "台北港段274號地號八里大道與中山路二段",
+     "name": "頂罟活動中心綠地(公博三)"
+    },
+    {
+     "address": "訊塘段39號地號訊塘一路與訊塘二路(廖添丁廟旁)",
+     "name": "訊塘廣場(廣場用地)"
+    },
+    {
+     "address": "新北市八里區中山路二段500巷與商港一路交叉街口",
+     "name": "商港一路綠地(兒九)"
+    },
+    {
+     "address": "台北港段123號地號 八里大道與商港三路",
+     "name": "公博一公園"
+    },
+    {
+     "address": "長勤街上",
+     "name": "兒二公園"
+    },
+    {
+     "address": "公正街上",
+     "name": "兒一公園"
+    },
+    {
+     "address": "重新路五段254-1號重新橋下",
+     "name": "重新公園(公四十二)"
+    },
+    {
+     "address": "正義南路、同安東街交叉口",
+     "name": "公36同安公園"
+    },
+    {
+     "address": "文化南路、福德南路交叉口",
+     "name": "公35同安公園"
+    },
+    {
+     "address": "長元街65巷16弄16號對面",
+     "name": "開元公園(公三十)"
+    },
+    {
+     "address": "忠孝路一段、大智街口",
+     "name": "小永德公園"
+    },
+    {
+     "address": "忠孝路一段21巷",
+     "name": "厚德公園(公十九)"
+    },
+    {
+     "address": "忠孝路2段35號",
+     "name": "和平公園(公廿三、廿四)"
+    },
+    {
+     "address": "六張街78號前",
+     "name": "六張公園(公七)"
+    },
+    {
+     "address": "五華街與集賢路口",
+     "name": "集賢環保公園"
+    },
+    {
+     "address": "自強路四段",
+     "name": "廣一公園"
+    },
+    {
+     "address": "自強路四段",
+     "name": "廣二公園"
+    },
+    {
+     "address": "疏洪東路榖保家商後側",
+     "name": "大有公園(綠十三)"
+    },
+    {
+     "address": "金華街同仁宮對面",
+     "name": "同仁公園(兒十四)"
+    },
+    {
+     "address": "環河北路、環河南路、福德南路(台北橋至忠孝橋之間)",
+     "name": "港墘公園"
+    },
+    {
+     "address": "中正北路315巷6弄68號旁",
+     "name": "新北綠家園(永德段914)"
+    },
+    {
+     "address": "開元街1號",
+     "name": "開元公園(公三十)"
+    },
+    {
+     "address": "介壽路、中正路口",
+     "name": "三角圓環公園"
+    },
+    {
+     "address": "白雞路醒心橋旁",
+     "name": "醒心公園"
+    },
+    {
+     "address": "成福路成福國小對面",
+     "name": "成福河濱公園"
+    },
+    {
+     "address": "礁溪里中華路、光明路間",
+     "name": "礁溪人行廣場"
+    },
+    {
+     "address": "鳶峰路",
+     "name": "鳶山運動公園"
+    },
+    {
+     "address": "橫溪路120巷內",
+     "name": "橫溪簡易公園"
+    },
+    {
+     "address": "中園街185號對面",
+     "name": "大埔里運動公園"
+    },
+    {
+     "address": "溪東路218巷口",
+     "name": "溪東社區公園"
+    },
+    {
+     "address": "國光街38巷、三樹路1巷交叉口",
+     "name": "太空公園(公十三)"
+    },
+    {
+     "address": "清水路延吉街交叉口",
+     "name": "清水社區公園"
+    },
+    {
+     "address": "民族路22巷5號旁",
+     "name": "沛陂公園"
+    },
+    {
+     "address": "溪頭路81號旁",
+     "name": "祖田兒童遊戲公園"
+    },
+    {
+     "address": "頂埔祖師廟後方",
+     "name": "頂埔永福公園"
+    },
+    {
+     "address": "永寧路底",
+     "name": "原住民生態公園"
+    },
+    {
+     "address": "永豐路255巷",
+     "name": "廷寮山林公園"
+    },
+    {
+     "address": "金城路一段127巷",
+     "name": "仁德公園"
+    },
+    {
+     "address": "靈恩寺旁",
+     "name": "明德公園"
+    },
+    {
+     "address": "青雲路183巷2號旁",
+     "name": "雲溪廣場(廣五)"
+    },
+    {
+     "address": "延和路12巷",
+     "name": "延和廣場"
+    },
+    {
+     "address": "延壽路75巷27弄旁",
+     "name": "延壽親子廣場"
+    },
+    {
+     "address": "青雲、明德路交叉口",
+     "name": "青山廣場(廣三)"
+    },
+    {
+     "address": "清水路235巷",
+     "name": "立雲廣場"
+    },
+    {
+     "address": "家樂福後方",
+     "name": "青雲廣場(廣六)"
+    },
+    {
+     "address": "金城路二段242巷內",
+     "name": "柑林廣場(廣七)"
+    },
+    {
+     "address": "明德段314、315地號",
+     "name": "南區B公園(公九)"
+    },
+    {
+     "address": "龍山二街與學士路口",
+     "name": "明德社區公園(公兒18)"
+    },
+    {
+     "address": "龍山二街與學士路口",
+     "name": "南區E公園(公7)"
+    },
+    {
+     "address": "龍山二街與學府路二段路口",
+     "name": "紫藤廊道(南區D公園)公兒16、綠6"
+    },
+    {
+     "address": "學士路至學海街",
+     "name": "紫藤廊道(南區D公園)公兒17"
+    },
+    {
+     "address": "龍山一街與學事路口",
+     "name": "南區E公園(公兒22)"
+    },
+    {
+     "address": "金城路二段土城醫院對面",
+     "name": "南區E公園(綠三)"
+    },
+    {
+     "address": "清水路旁",
+     "name": "綠5"
+    },
+    {
+     "address": "青仁路與青隆街口",
+     "name": "南區B公園(公兒19)"
+    },
+    {
+     "address": "青和街與明德一段口",
+     "name": "南區a公園(公兒20)"
+    },
+    {
+     "address": "中央路4段67巷及高速公路路口",
+     "name": "運公二公園(公四)"
+    },
+    {
+     "address": "中央路4段87巷",
+     "name": "運公一公園(公六)"
+    },
+    {
+     "address": "中央路4段67巷",
+     "name": "運公一公園(綠一)"
+    },
+    {
+     "address": "中央路4段67巷",
+     "name": "運公一公園(綠二)"
+    },
+    {
+     "address": "中央路4段67巷",
+     "name": "運公一公園(綠三)"
+    },
+    {
+     "address": "236新北市土城區員安路",
+     "name": "頂埔公一公園(公1)"
+    },
+    {
+     "address": "華福街、和平街口",
+     "name": "華福公園(公廿一)"
+    },
+    {
+     "address": "中安街、永貞路、安樂路及安平路間",
+     "name": "中和公園(公四)"
+    },
+    {
+     "address": "板南路(南山路及中興街間)",
+     "name": "金山板南公園"
+    },
+    {
+     "address": "橋和路、福祥路口",
+     "name": "泰隆公園"
+    },
+    {
+     "address": "興南路2段79巷內",
+     "name": "華新人行廣場"
+    },
+    {
+     "address": "勝利路至水源路127巷間水利地",
+     "name": "瓦窯溝沿線綠帶"
+    },
+    {
+     "address": "中山路二段174巷至莊敬橋間綠帶",
+     "name": "廟仔尾溝加蓋綠帶"
+    },
+    {
+     "address": "南山路到興南路二段74巷間綠帶",
+     "name": "南山溝加蓋綠帶"
+    },
+    {
+     "address": "連勝街至中正路間綠帶",
+     "name": "圓通綠廊"
+    },
+    {
+     "address": "中山路二段322巷內簡易公園",
+     "name": "中和大排旁簡易公園"
+    },
+    {
+     "address": "興南路二段261巷口",
+     "name": "興南路二段261巷口綠帶"
+    },
+    {
+     "address": "華中橋下",
+     "name": "華中橋四面邊坡綠帶"
+    },
+    {
+     "address": "板南路中正路口",
+     "name": "板南抽水站旁綠帶"
+    },
+    {
+     "address": "中原街旁",
+     "name": "花曆公園(公一)"
+    },
+    {
+     "address": "環河西路三段近永福宮",
+     "name": "樟樹公園(公二)"
+    },
+    {
+     "address": "中原東街與中原六街之間",
+     "name": "綠之公園(公六)"
+    },
+    {
+     "address": "三段中原街與中原二街之間",
+     "name": "水之公園(公七)"
+    },
+    {
+     "address": "水碓二路接外寮路",
+     "name": "水碓景觀公園"
+    },
+    {
+     "address": "中興路4段48巷19號對面",
+     "name": "二支郵局對面公園(兒六)"
+    },
+    {
+     "address": "明德路12巷.自強路87巷",
+     "name": "朝陽公園"
+    },
+    {
+     "address": "蓬萊路6巷.成泰路2段235巷交叉處",
+     "name": "德音兒童休憩公園(兒七)"
+    },
+    {
+     "address": "成泰路1段189巷底",
+     "name": "自然湧泉公園"
+    },
+    {
+     "address": "新五路與中興路交岔口",
+     "name": "新五公園(兒八)"
+    },
+    {
+     "address": "成泰路二段195巷口.五洲橋旁",
+     "name": "綠六綠地"
+    },
+    {
+     "address": "成泰路四段成州派出所旁",
+     "name": "成德人行廣場"
+    },
+    {
+     "address": "御史路35巷底",
+     "name": "御史路體育公園"
+    },
+    {
+     "address": "自強街6巷至8巷間",
+     "name": "大新社區公園"
+    },
+    {
+     "address": "中興街68巷5弄",
+     "name": "中興社區公園"
+    },
+    {
+     "address": "民族街43巷",
+     "name": "民族街43巷公園"
+    },
+    {
+     "address": "永和路2段340號旁",
+     "name": "中正橋頭小公園"
+    },
+    {
+     "address": "永和路2段393號旁",
+     "name": "中正派出所邊小公園"
+    },
+    {
+     "address": "民治街60號對面(民治市場瓦窯溝旁)",
+     "name": "民治街早市公園"
+    },
+    {
+     "address": "雙和街37巷與中和路305巷交叉口",
+     "name": "雙和里社區公園"
+    },
+    {
+     "address": "竹林路91巷",
+     "name": "竹林路91巷公園"
+    },
+    {
+     "address": "永和路二段286巷底",
+     "name": "復興社區公園"
+    },
+    {
+     "address": "保平路177巷",
+     "name": "水源社區公園"
+    },
+    {
+     "address": "民有街25巷",
+     "name": "民族社區公園"
+    },
+    {
+     "address": "中興街10巷31號旁",
+     "name": "正興公園"
+    },
+    {
+     "address": "豫溪街57巷10弄11號右側（美聯社對面）",
+     "name": "永興公園"
+    },
+    {
+     "address": "永和國小旁（中正路281號旁）",
+     "name": "永和國小旁綠美化據點"
+    },
+    {
+     "address": "永貞路287巷2弄底",
+     "name": "水源段綠地(水源段717-1地號)"
+    },
+    {
+     "address": "中正路465巷",
+     "name": "秀朗廣場"
+    },
+    {
+     "address": "民享街23巷",
+     "name": "民享街黃昏市場公園"
+    },
+    {
+     "address": "新北市石門區中山路62之7號對面",
+     "name": "幸福小公園"
+    },
+    {
+     "address": "新北市石門區尖鹿里中山路70之5號前",
+     "name": "福安公園"
+    },
+    {
+     "address": "新北市石門區茂林里坪林20號前",
+     "name": "魔法廣場"
+    },
+    {
+     "address": "福德一路86巷",
+     "name": "康福公園"
+    },
+    {
+     "address": "伯爵五代自由女神旁",
+     "name": "湖興公園"
+    },
+    {
+     "address": "湖前街31巷、康寧街459巷",
+     "name": "新金龍公園"
+    },
+    {
+     "address": "樟樹一路145巷",
+     "name": "厚德綠地(公兒三)"
+    },
+    {
+     "address": "汐止車站小廣場",
+     "name": "汐止車站小廣場"
+    },
     {
      "address": "公園路192號(新北市立圖書館林口分館)旁",
      "name": "林口社區運動公園(小熊公園，公鄰23)"
@@ -129,45 +590,696 @@
     {
      "address": "中正路與信義路交叉口",
      "name": "公鄰28公園"
+    },
+    {
+     "address": "南雅西路二段301巷41弄(國光國小後面)",
+     "name": "環河公園"
+    },
+    {
+     "address": "僑中一街124巷底(四汴頭抽水站旁)",
+     "name": "華中公園"
+    },
+    {
+     "address": "溪崑二街113號",
+     "name": "溪州公園"
+    },
+    {
+     "address": "大觀路2段力行一巷",
+     "name": "親民公園"
+    },
+    {
+     "address": "僑中二街12巷旁",
+     "name": "大觀公園"
+    },
+    {
+     "address": "文化路與民權路交叉口",
+     "name": "萬坪公園"
+    },
+    {
+     "address": "文化路與新府路交叉口",
+     "name": "站前廣場公園"
+    },
+    {
+     "address": "文化路2段",
+     "name": "仁化綠地"
+    },
+    {
+     "address": "幸福路70巷底",
+     "name": "幸福綠地公園"
+    },
+    {
+     "address": "萬安街53巷底",
+     "name": "江子翠抽水站簡易公園"
+    },
+    {
+     "address": "東門街2巷36號旁",
+     "name": "府中綠地"
+    },
+    {
+     "address": "民享街116巷3號旁",
+     "name": "海山綠地"
+    },
+    {
+     "address": "湳子一橋旁",
+     "name": "湳仔綠地"
+    },
+    {
+     "address": "溪頭街與華江一路間",
+     "name": "溪頭公園"
+    },
+    {
+     "address": "華江一路與華江二路交叉口",
+     "name": "華江123木頭園"
+    },
+    {
+     "address": "新海路與溪頭街交叉口",
+     "name": "望月公園"
+    },
+    {
+     "address": "華東路(遠揚加州社區對面)",
+     "name": "公九公園(浮洲都市計畫區)"
+    },
+    {
+     "address": "僑中二街118號前",
+     "name": "馥華公園"
+    },
+    {
+     "address": "新北市板橋區民權路117號",
+     "name": "板橋第二運動場區三角公園"
+    },
+    {
+     "address": "新北市板橋區民權路117號",
+     "name": "板橋第二運動場區社後公園"
+    },
+    {
+     "address": "新北市板橋區民權路117號",
+     "name": "板橋第二運動場區板信公園"
+    },
+    {
+     "address": "中正路與新海橋交叉口左側26公尺",
+     "name": "綠二綠地"
+    },
+    {
+     "address": "中正路與新海橋入口處左側１８公尺",
+     "name": "綠三綠地"
+    },
+    {
+     "address": "中正路與新月一街交叉口左前方41公尺",
+     "name": "綠四綠地"
+    },
+    {
+     "address": "新北市板橋區西門街69號(接雲寺前)",
+     "name": "柏壽公園"
+    },
+    {
+     "address": "大觀路1段38巷口",
+     "name": "馥華園美捐贈公園"
+    },
+    {
+     "address": "大華街182巷5號對面",
+     "name": "大華街廣場"
+    },
+    {
+     "address": "板橋區館前東路156巷前",
+     "name": "民族公園"
+    },
+    {
+     "address": "豐漁里民生路172-1號",
+     "name": "豐漁里公園"
+    },
+    {
+     "address": "中山路與環金路口",
+     "name": "飛撲綠地"
+    },
+    {
+     "address": "新北市金山區三民街與八德街交叉處",
+     "name": "流蘇公園"
+    },
+    {
+     "address": "明志路一段352巷底",
+     "name": "文史影像公園"
+    },
+    {
+     "address": "忠孝街19巷3弄旁河堤邊",
+     "name": "山腳公園"
+    },
+    {
+     "address": "和平街底",
+     "name": "楓樹河濱公園"
+    },
+    {
+     "address": "明志路2段文程路口",
+     "name": "文程廣場"
+    },
+    {
+     "address": "泰林路2段542巷進入大窠溪旁",
+     "name": "黎明步道花園（綠地）"
+    },
+    {
+     "address": "新北市泰山區南林路底",
+     "name": "南林生態公園"
+    },
+    {
+     "address": "新北市泰山區公園路36號",
+     "name": "泰山體育園區"
+    },
+    {
+     "address": "新北市烏來區西羅岸段 911地號",
+     "name": "烏來原住民主題公園(公三)"
+    },
+    {
+     "address": "淡水區中正路298號(淡水藝術工坊)對面",
+     "name": "觀潮廣場"
+    },
+    {
+     "address": "中山北路一段(水碓派出所與新春街口間)",
+     "name": "中山北路一段帶狀公園"
+    },
+    {
+     "address": "中正東路(竿蓁一街與平遠街間)",
+     "name": "安伯樂公園"
+    },
+    {
+     "address": "中山北路一段(新春街口對面)",
+     "name": "文中八運動園區"
+    },
+    {
+     "address": "中正路一段蘇府王爺廟右側",
+     "name": "油車1公園"
+    },
+    {
+     "address": "淡海路25巷旁",
+     "name": "油車2公園"
+    },
+    {
+     "address": "沙崙路、淡海路口至沙崙路216巷",
+     "name": "油車3公園"
+    },
+    {
+     "address": "沙崙路社福大樓左側空地",
+     "name": "油車4公園"
+    },
+    {
+     "address": "沙崙路與淡海路交接路口（淡水都市計畫(市五用地)）",
+     "name": "大庄1公園"
+    },
+    {
+     "address": "新生街30巷64號前、65號後(含建設街一巷一號前)",
+     "name": "協元1公園"
+    },
+    {
+     "address": "重建街1巷1弄旁空地",
+     "name": "協元2公園"
+    },
+    {
+     "address": "原德路73巷27號旁",
+     "name": "中興公園"
+    },
+    {
+     "address": "中正路274號旁",
+     "name": "藝術穿堂"
+    },
+    {
+     "address": "中山北路二段381巷內",
+     "name": "公8公園"
+    },
+    {
+     "address": "中正路260號旁",
+     "name": "木下淨涯週邊開放空間"
+    },
+    {
+     "address": "竿蓁里中正東路一段3巷底",
+     "name": "運動公園"
+    },
+    {
+     "address": "中正路1段22巷內。",
+     "name": "滬尾砲臺公園"
+    },
+    {
+     "address": "新市五路2段。(鄰旁太子廟與崁頂社區)",
+     "name": "公22公園"
+    },
+    {
+     "address": "新市五路2段和後州路一段和新市3路。",
+     "name": "公23公園"
+    },
+    {
+     "address": "淡水區中正路路口(捷運站往中正路方向)",
+     "name": "淡水老街廣場"
+    },
+    {
+     "address": "沙崙路和濱海路2段交叉口。",
+     "name": "公7公園"
+    },
+    {
+     "address": "新北市淡水區中正路1段6巷旁",
+     "name": "忠烈祠前綠地"
+    },
+    {
+     "address": "淡水區沙崙路一段與濱海路二段路口",
+     "name": "公7公園(公七)"
+    },
+    {
+     "address": "平埔街14號前15公尺",
+     "name": "深坑兒童遊戲場(兒一)"
+    },
+    {
+     "address": "北深路3段158巷內",
+     "name": "萬福公園"
+    },
+    {
+     "address": "北深路三段155巷內",
+     "name": "帝品苑旁兒童遊戲場(兒二)"
+    },
+    {
+     "address": "中央八街底",
+     "name": "中央八街底公園"
+    },
+    {
+     "address": "中正路惠國市場對面",
+     "name": "五峰公園"
+    },
+    {
+     "address": "北新路一段92號",
+     "name": "馬公公園(公十)"
+    },
+    {
+     "address": "安和路2段163號旁",
+     "name": "安和景觀公園"
+    },
+    {
+     "address": "民族路105號大豐國小對面",
+     "name": "小金門公園"
+    },
+    {
+     "address": "北新路一段351號旁",
+     "name": "北新藝術廣場"
+    },
+    {
+     "address": "北宜路2段64號邊",
+     "name": "青潭河濱公園"
+    },
+    {
+     "address": "自強路166號前",
+     "name": "屈尺景觀公園"
+    },
+    {
+     "address": "安民街26號",
+     "name": "安民街26號兩側綠地"
+    },
+    {
+     "address": "安成街5號旁",
+     "name": "安成公園"
+    },
+    {
+     "address": "安德街60巷",
+     "name": "安德街60巷綠地"
+    },
+    {
+     "address": "安民街179號旁",
+     "name": "安民街179號旁公園"
+    },
+    {
+     "address": "安民街80號(永豐圳兩側)",
+     "name": "碧安公園"
+    },
+    {
+     "address": "安民街78巷底",
+     "name": "碧安2號公園"
+    },
+    {
+     "address": "新烏路3段(南崁溪旁)",
+     "name": "龜山河濱公園"
+    },
+    {
+     "address": "新店區央北一路南側綠帶",
+     "name": "中央鄰里公園(鄰公兒)"
+    },
+    {
+     "address": "龍安路丹鳳國中對面",
+     "name": "龍鳳公園(公2(西)、公17(東))"
+    },
+    {
+     "address": "中正路929巷23號對面",
+     "name": "龍福公園(公兒一(龍壽迴龍都市計畫))"
+    },
+    {
+     "address": "瓊泰路瓊泰橋旁",
+     "name": "瓊泰公園(公16)"
+    },
+    {
+     "address": "四維路福營行政中心旁",
+     "name": "福營休閒廣場"
+    },
+    {
+     "address": "新樹路647號對面",
+     "name": "新樹公園(公兒五(樹林(三多里地區)都市計畫))"
+    },
+    {
+     "address": "中正路輔仁大學對面",
+     "name": "福營綠廊"
+    },
+    {
+     "address": "壽山路115號斜對面",
+     "name": "水源地"
+    },
+    {
+     "address": "壽山路61號對面",
+     "name": "青年公園(公20、公14(林口特定區計畫))"
+    },
+    {
+     "address": "博愛路與長青街口",
+     "name": "長青公園"
+    },
+    {
+     "address": "中正路84號對面",
+     "name": "新莊公園(公7)"
+    },
+    {
+     "address": "環河路新海橋下",
+     "name": "榮和公園"
+    },
+    {
+     "address": "碧江街76號前",
+     "name": "興漢公園"
+    },
+    {
+     "address": "後港一路49巷底",
+     "name": "後德公園"
+    },
+    {
+     "address": "瓊林南路301巷內",
+     "name": "萬善公園"
+    },
+    {
+     "address": "富貴路、福壽街口",
+     "name": "昌平公園(公兒一(副都心中心地區))"
+    },
+    {
+     "address": "頭前路、頭成街口",
+     "name": "頭前運動公園(公18 &國中7 /公二&文中(頭前重劃區))"
+    },
+    {
+     "address": "中環路(特二號高架橋下)",
+     "name": "新泰籃球場"
+    },
+    {
+     "address": "福美街、福德三街口",
+     "name": "福基公園(公一(頭前重劃區))"
+    },
+    {
+     "address": "頭成街/思源路128巷",
+     "name": "化成公園(兒二(頭前重劃區))"
+    },
+    {
+     "address": "台65橋下",
+     "name": "瓊林公園"
+    },
+    {
+     "address": "新莊區新北大道五工六路口",
+     "name": "愛鳥公園(公22(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "五工六路、福慧路口東北",
+     "name": "福智1號廣場(公23(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "新北大道三段、五工六路口東北",
+     "name": "福智公園(公24(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "新知三路、新知六路、新知八路、福慧路間",
+     "name": "福慧都會公園(公25(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "新知一路、新知二路口東北",
+     "name": "福聚公園(公26(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "新知一路、福慧路口西北",
+     "name": "福祿2號公園(公28(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "化成路、福慧路口西北",
+     "name": "福祿3號公園(公29(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "化成路、福慧路口東北",
+     "name": "福祿4號公園(公30(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "化成路、福慧路口東南",
+     "name": "福祿5號公園(公31(產業專用區及其周邊地區))"
+    },
+    {
+     "address": "新莊區中華路二段與富貴路交叉口",
+     "name": "塭仔底濕地公園"
+    },
+    {
+     "address": "新北市新莊區和興街66號",
+     "name": "新莊體育園區"
+    },
+    {
+     "address": "明燈路1段175號對面",
+     "name": "瑞芳公園"
+    },
+    {
+     "address": "瑞竹路91號旁",
+     "name": "四腳亭公園"
+    },
+    {
+     "address": "明燈路三段25號旁",
+     "name": "區民廣場"
+    },
+    {
+     "address": "濱二路71-1號旁",
+     "name": "濱二路公園"
+    },
+    {
+     "address": "中山路266號旁",
+     "name": "安德公園"
+    },
+    {
+     "address": "逢甲路225號斜對面",
+     "name": "龍山里休閒廣場(瑞芳都市計畫)"
+    },
+    {
+     "address": "新柑橋右側橋台附近",
+     "name": "瑞芳區立棒球場"
+    },
+    {
+     "address": "瑞芳區員山子路、蛇子形路、明燈路一段45巷路口",
+     "name": "瑞芳運動公園"
+    },
+    {
+     "address": "北28線1km旁",
+     "name": "中福觀光公園"
+    },
+    {
+     "address": "瑪鍊路60-1號對面",
+     "name": "瑪鋉公園(公兒一)"
+    },
+    {
+     "address": "新北市萬里區獅頭路",
+     "name": "瑪鋉運動公園"
+    },
+    {
+     "address": "新北市萬里區獅頭路15-8號(周邊)",
+     "name": "萬里幸福廣場"
+    },
+    {
+     "address": "新北市萬里區港東路1-5號旁",
+     "name": "野柳兒童遊戲場"
+    },
+    {
+     "address": "保安市場旁(保安街一段)",
+     "name": "民生公園"
+    },
+    {
+     "address": "佳園路三段、學府路口",
+     "name": "萬坪公園（景觀休憩公園）"
+    },
+    {
+     "address": "大雅路學勤路口",
+     "name": "森林公園(兒二)"
+    },
+    {
+     "address": "後站街",
+     "name": "樹林後站廣場"
+    },
+    {
+     "address": "中山路三段、佳園路一段口",
+     "name": "山佳車站廣場"
+    },
+    {
+     "address": "千歲街中正陸橋下（中正路21-1號對面）",
+     "name": "中正陸橋下廣場"
+    },
+    {
+     "address": "新北市樹林區水源街81號",
+     "name": "樹林體育園區(公21)"
+    },
+    {
+     "address": "泰昌街13號",
+     "name": "雙溪公園"
+    },
+    {
+     "address": "三貂里牡丹派出所旁，尪子崙坑路",
+     "name": "三貂運動公園"
+    },
+    {
+     "address": "永樂街27巷與31巷間",
+     "name": "大地兒童公園(兒十一)"
+    },
+    {
+     "address": "水湳街76號旁",
+     "name": "仁愛公園(公十五)"
+    },
+    {
+     "address": "光華路73巷26號",
+     "name": "中路兒童公園(兒八)"
+    },
+    {
+     "address": "永平街1號",
+     "name": "永平廣場(廣一)"
+    },
+    {
+     "address": "水湳街76號",
+     "name": "仁愛廣場(人廣一)"
+    },
+    {
+     "address": "民族路33巷",
+     "name": "鷺江廣場(人廣二)"
+    },
+    {
+     "address": "中央路與中央路9巷、37巷、74巷交叉口",
+     "name": "中山廣場(人廣三)"
+    },
+    {
+     "address": "中山一、二路交叉路口",
+     "name": "三角綠地"
+    },
+    {
+     "address": "蘆洲區三民路95號對面(蘆洲區公所對面)",
+     "name": "蘆洲公園(公一)"
+    },
+    {
+     "address": "蘆洲區永樂街27巷與永樂街交叉口",
+     "name": "大地兒童公園(兒十一)"
+    },
+    {
+     "address": "蘆洲區光華路87巷底",
+     "name": "中路兒童公園(兒八)"
+    },
+    {
+     "address": "蘆洲區復興路258巷及民族路236巷交界處",
+     "name": "兒五樓厝公園(兒五)"
+    },
+    {
+     "address": "蘆洲區三民路26巷40號旁",
+     "name": "九三親子公園(公十)"
+    },
+    {
+     "address": "蘆洲區信義路與民生街交叉口",
+     "name": "兒九公園(兒九)"
+    },
+    {
+     "address": "蘆洲區仁愛街77巷底",
+     "name": "兒一環保公園(兒一)"
+    },
+    {
+     "address": "永明街與國華路口",
+     "name": "地標公園(公七)"
+    },
+    {
+     "address": "尖山路166巷旁",
+     "name": "尖二公園(公兒二)"
+    },
+    {
+     "address": "新北市鶯歌區鶯桃路182巷96弄",
+     "name": "昌福公園(公兒一)"
+    },
+    {
+     "address": "新北市鶯歌區公園街11號",
+     "name": "公兒五公園(公兒五)"
+    },
+    {
+     "address": "鶯歌區館前路250號",
+     "name": "鶯歌國民運動中心"
+    },
+    {
+     "address": "新北市平溪區十分街66巷1號",
+     "name": "十分公園"
     }
    ],
    "counts": {
-    "buildings_in_bbox": 5863,
-    "buildings_with_height": 412,
+    "buildings_in_bbox": 157468,
+    "buildings_with_height": 40611,
     "by_level": {
-     "A": 0,
-     "B": 1,
-     "C": 0,
-     "none": 52
+     "A": 54,
+     "B": 22,
+     "C": 18,
+     "none": 1069
     },
-    "chargers_in_bbox": 29,
-    "chargers_official": 23,
-    "chargers_osm_only": 6,
-    "city_registry_parks": 40,
-    "mapped_playgrounds": 7,
-    "matched_city_registry": 28,
+    "chargers_in_bbox": 314,
+    "chargers_official": 284,
+    "chargers_osm_only": 30,
+    "city_registry_parks": 635,
+    "mapped_playgrounds": 218,
+    "matched_city_registry": 379,
     "official_only": 0,
-    "park_candidates": 46,
-    "parking_lots_in_bbox": 246,
-    "parks": 53
+    "park_candidates": 945,
+    "parking_lots_in_bbox": 4917,
+    "parks": 1163
    },
    "default_building_heights_by_type": {
-    "apartments": 24.0,
+    "apartments": 15.0,
+    "bungalow": 9.0,
+    "church": 9.0,
+    "college": 9.0,
+    "commercial": 13.0,
+    "construction": 30.0,
+    "detached": 9.0,
+    "dormitory": 9.0,
+    "government": 9.0,
+    "greenhouse": 9.0,
+    "hospital": 9.0,
+    "hotel": 18.0,
+    "house": 9.0,
+    "industrial": 9.0,
+    "kindergarten": 9.0,
+    "office": 12.0,
+    "outbuilding": 9.0,
+    "parking": 9.0,
+    "public": 9.0,
     "residential": 9.0,
+    "retail": 9.0,
     "school": 9.0,
+    "service": 9.0,
+    "shed": 9.0,
+    "temple": 9.0,
+    "terrace": 9.0,
+    "toilets": 9.0,
+    "train_station": 9.0,
+    "transportation": 9.0,
+    "university": 9.0,
+    "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T08:40:39+00:00",
+   "fetched_at": "2026-10-13T08:59:02+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "新北市",
     "city_en": "New Taipei City",
-    "fetch_tiles": 1,
-    "id": "linkou",
-    "id_prefix": "lk",
-    "label": "林口",
-    "name": "林口區",
-    "name_en": "Linkou District",
+    "fetch_tiles": 4,
+    "former_prefixes": [
+     "lk"
+    ],
+    "id": "newtaipei",
+    "id_prefix": "nt",
+    "label": "新北市",
+    "name": "新北市",
+    "name_en": "New Taipei City",
     "park_candidates": true,
     "registry": "ntpc_parks",
     "tdx_city": "NewTaipei"
@@ -182,7 +1294,7 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-13T08:42:12+00:00",
+    "fetched_at": "2026-10-13T09:01:02+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
@@ -191,7 +1303,7 @@
    },
    "city_registry": {
     "entries": 520,
-    "fetched_at": "2026-10-13T08:42:10+00:00",
+    "fetched_at": "2026-10-13T09:00:58+00:00",
     "kind": "playgrounds",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "臺北市政府工務局公園路燈工程管理處",
@@ -251,7 +1363,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-13T08:40:39+00:00",
+   "fetched_at": "2026-10-13T08:59:02+00:00",
    "generated_from_osm_base": "2026-10-12T20:21:35Z",
    "region": {
     "city": "臺北市",
@@ -265,6 +1377,142 @@
     "park_candidates": false,
     "registry": "taipei_playgrounds",
     "tdx_city": "Taipei"
+   }
+  },
+  "taoyuan": {
+   "bbox": [
+    120.98581,
+    24.58645,
+    121.47985,
+    25.1227
+   ],
+   "charger_source": null,
+   "city_registry": {
+    "entries": 54,
+    "fetched_at": "2026-10-13T09:01:00+00:00",
+    "kind": "parks",
+    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+    "publisher": "桃園市政府工務局",
+    "source": "https://data.gov.tw/dataset/148726",
+    "title": "桃園市公園（特色遊戲場、埤塘公園）"
+   },
+   "city_registry_not_in_osm": [
+    {
+     "address": "桃園市中壢區環中東路中原大學旁",
+     "name": "中原生態埤塘"
+    },
+    {
+     "address": "桃園市中壢區榮民南路與同慶路口",
+     "name": "士校生態埤塘公園"
+    },
+    {
+     "address": "中壢區中原路58號",
+     "name": "老街溪河川教育中心園區"
+    },
+    {
+     "address": "中壢區致善路二段與領航北路三段交界",
+     "name": "青埔公四公園"
+    },
+    {
+     "address": "桃園市中壢區高鐵南路二段與文德路口",
+     "name": "高鐵青塘園"
+    },
+    {
+     "address": "桃園市八德區興豐路1315號",
+     "name": "八德埤塘生態公園"
+    },
+    {
+     "address": "桃園市八德區霄裡里浮覓街185巷(霄裡池)",
+     "name": "霄裡大池"
+    },
+    {
+     "address": "桃園市大園區大仁路100號",
+     "name": "臺灣橫山書法藝術公園"
+    },
+    {
+     "address": "桃園市平鎮區復旦路二段66號",
+     "name": "1895乙未保台紀念公園"
+    },
+    {
+     "address": "桃園市平鎮區快速路二段305號",
+     "name": "66快速道路橋下"
+    },
+    {
+     "address": "桃園區國道二號高架橋下",
+     "name": "冒險公園"
+    },
+    {
+     "address": "桃園區漢中街、南豐二街口",
+     "name": "玉山公園"
+    },
+    {
+     "address": "桃園市蘆竹區南崁路一段112 號（台茂購物中心旁）",
+     "name": "台茂公園兒童遊戲場"
+    },
+    {
+     "address": "觀音區忠孝路底",
+     "name": "台61橋下"
+    }
+   ],
+   "counts": {
+    "buildings_in_bbox": 98166,
+    "buildings_with_height": 12088,
+    "by_level": {
+     "A": 20,
+     "B": 19,
+     "C": 10,
+     "none": 840
+    },
+    "chargers_in_bbox": 31,
+    "chargers_official": 0,
+    "chargers_osm_only": 31,
+    "city_registry_parks": 54,
+    "mapped_playgrounds": 141,
+    "matched_city_registry": 53,
+    "official_only": 0,
+    "park_candidates": 725,
+    "parking_lots_in_bbox": 3909,
+    "parks": 889
+   },
+   "default_building_heights_by_type": {
+    "apartments": 21.0,
+    "commercial": 12.0,
+    "construction": 30.0,
+    "dormitory": 9.0,
+    "government": 9.0,
+    "hospital": 18.0,
+    "hotel": 15.0,
+    "house": 9.0,
+    "industrial": 9.0,
+    "kindergarten": 9.0,
+    "office": 9.0,
+    "public": 9.0,
+    "residential": 9.0,
+    "retail": 9.0,
+    "school": 9.0,
+    "service": 9.0,
+    "temple": 9.0,
+    "terrace": 9.0,
+    "toilets": 9.0,
+    "train_station": 9.0,
+    "university": 9.0,
+    "warehouse": 9.0,
+    "yes": 9.0
+   },
+   "fetched_at": "2026-10-13T08:59:02+00:00",
+   "generated_from_osm_base": "2026-10-12T20:21:35Z",
+   "region": {
+    "city": "桃園市",
+    "city_en": "Taoyuan City",
+    "fetch_tiles": 4,
+    "id": "taoyuan",
+    "id_prefix": "ty",
+    "label": "桃園市",
+    "name": "桃園市",
+    "name_en": "Taoyuan City",
+    "park_candidates": true,
+    "registry": "taoyuan_parks",
+    "tdx_city": "Taoyuan"
    }
   }
  }

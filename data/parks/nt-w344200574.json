@@ -1,0 +1,975 @@
+{
+ "address": null,
+ "amenities": {
+  "drinking_water": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "source": "https://www.openstreetmap.org/way/344200574",
+   "value": null,
+   "verified_at": "2026-10-12"
+  },
+  "toilet": {
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 0,
+   "method": "osm",
+   "note": null,
+   "source": "https://www.openstreetmap.org/way/344200574",
+   "value": true,
+   "verified_at": "2026-10-12"
+  }
+ },
+ "area_m2": 512292,
+ "best_shade_windows": {
+  "1": null,
+  "10": null,
+  "11": null,
+  "12": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": null,
+  "6": null,
+  "7": null,
+  "8": null,
+  "9": null
+ },
+ "charger_summary": {
+  "fast": 1,
+  "nearest_any_m": 199,
+  "nearest_fast_m": 297,
+  "nearest_slow_m": 199,
+  "radius_m": 500,
+  "slow": 4,
+  "total": 4,
+  "unknown": 0
+ },
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 199,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 25.033765,
+    "lng": 121.468691
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北江翠102平面停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02903",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/固定/8元每度免費",
+   "distance_m": 297,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 25.026614,
+    "lng": 121.481012
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北萬板高架橋下停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "平日20元/時，假日30元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02958",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 10,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 333,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.02822,
+    "lng": 121.480036
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北音樂公園地下停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "30元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02913",
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "distance_m": 422,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B1",
+   "location": {
+    "lat": 25.033357,
+    "lng": 121.473845
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新北江翠國小地下停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "30元/小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD02896",
+   "verified_at": "2026-10-13"
+  }
+ ],
+ "daytime_shaded_share": 0.0,
+ "geometry_estimated": false,
+ "id": "nt-w344200574",
+ "indoor": "possible",
+ "kind": "park",
+ "level": "A",
+ "level_label": "全天候遮蔽（下雨可玩）",
+ "location": {
+  "lat": 25.033846,
+  "lng": 121.463437
+ },
+ "name": "江子翠河口景觀河濱公園",
+ "name_source": "osm_name",
+ "official": null,
+ "osm": {
+  "id": 344200574,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/344200574"
+ },
+ "park_name": "江子翠河口景觀河濱公園",
+ "parking": [
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 0,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.028721,
+    "lng": 121.483646
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 284005426,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/284005426"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 0,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.029436,
+    "lng": 121.483408
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 284005427,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/284005427"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 0,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.034963,
+    "lng": 121.482029
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 284005431,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/284005431"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 44,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.037048,
+    "lng": 121.477581
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1454059234,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1454059234"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 44,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.034234,
+    "lng": 121.467013
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1432512643,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1432512643"
+   },
+   "verified_at": "2026-10-12"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 99,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.026579,
+    "lng": 121.483464
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "華翠橋下A區停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 317594677,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/317594677"
+   },
+   "verified_at": "2026-10-12"
+  }
+ ],
+ "playground": {
+  "equipment": [],
+  "fee": null,
+  "max_age": null,
+  "min_age": null,
+  "opening_hours": null,
+  "surface": null,
+  "wheelchair": null
+ },
+ "playground_mapped": false,
+ "rain_cover": {
+  "confidence": "medium",
+  "covered_area_m2": 30075,
+  "covered_ratio": 0.06,
+  "method": "computed",
+  "note": "約 30075 m² 在高架/屋頂下（佔 6%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
+  "source": "https://www.openstreetmap.org/way/344200574",
+  "value": true,
+  "verified_at": "2026-10-12"
+ },
+ "region": {
+  "city": "新北市",
+  "district": "板橋區",
+  "id": "newtaipei"
+ },
+ "shade_timetable": {
+  "building_height_known_share": 0.53,
+  "buildings_considered": 839,
+  "confidence": "low",
+  "method": "computed",
+  "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
+  "slot_minutes": 30,
+  "slot_start": "06:00",
+  "slots": {
+   "1": [
+    null,
+    null,
+    0.49,
+    0.33,
+    0.22,
+    0.16,
+    0.12,
+    0.1,
+    0.09,
+    0.08,
+    0.08,
+    0.08,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.16,
+    0.19,
+    0.28,
+    null,
+    null
+   ],
+   "10": [
+    0.49,
+    0.28,
+    0.17,
+    0.12,
+    0.1,
+    0.08,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.07,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.2,
+    null,
+    null
+   ],
+   "11": [
+    null,
+    0.47,
+    0.31,
+    0.2,
+    0.14,
+    0.11,
+    0.1,
+    0.09,
+    0.08,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.14,
+    0.17,
+    0.22,
+    0.39,
+    null,
+    null
+   ],
+   "12": [
+    null,
+    null,
+    0.45,
+    0.3,
+    0.2,
+    0.15,
+    0.12,
+    0.1,
+    0.09,
+    0.09,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.15,
+    0.19,
+    0.26,
+    0.52,
+    null,
+    null
+   ],
+   "2": [
+    null,
+    null,
+    0.36,
+    0.21,
+    0.15,
+    0.11,
+    0.09,
+    0.08,
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.15,
+    0.17,
+    0.23,
+    null
+   ],
+   "3": [
+    null,
+    0.28,
+    0.15,
+    0.11,
+    0.09,
+    0.08,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.15,
+    0.18,
+    0.29
+   ],
+   "4": [
+    0.13,
+    0.09,
+    0.08,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.14,
+    0.16,
+    0.2
+   ],
+   "5": [
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.15,
+    0.17
+   ],
+   "6": [
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.14,
+    0.16
+   ],
+   "7": [
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.1,
+    0.11,
+    0.12,
+    0.14,
+    0.16
+   ],
+   "8": [
+    0.09,
+    0.08,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.15,
+    0.18
+   ],
+   "9": [
+    0.24,
+    0.14,
+    0.1,
+    0.08,
+    0.07,
+    0.07,
+    0.07,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.06,
+    0.07,
+    0.07,
+    0.08,
+    0.08,
+    0.09,
+    0.09,
+    0.1,
+    0.11,
+    0.13,
+    0.15,
+    0.18,
+    null
+   ]
+  },
+  "source": "https://www.openstreetmap.org/way/344200574",
+  "value": null,
+  "verified_at": "2026-10-12"
+ },
+ "shade_types": [
+  {
+   "confidence": "medium",
+   "covered_ratio": 0.06,
+   "level": "B",
+   "method": "computed",
+   "osm": [
+    {
+     "id": 136988443,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/136988443"
+    },
+    {
+     "id": 194431415,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/194431415"
+    },
+    {
+     "id": 266521878,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/266521878"
+    },
+    {
+     "id": 251880143,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/251880143"
+    },
+    {
+     "id": 266521395,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/266521395"
+    },
+    {
+     "id": 266521396,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/266521396"
+    },
+    {
+     "id": 136988457,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/136988457"
+    },
+    {
+     "id": 696105928,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/696105928"
+    },
+    {
+     "id": 770953635,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/770953635"
+    },
+    {
+     "id": 266521394,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/266521394"
+    },
+    {
+     "id": 111808414,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/111808414"
+    },
+    {
+     "id": 290627082,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/290627082"
+    },
+    {
+     "id": 52798095,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/52798095"
+    },
+    {
+     "id": 326969453,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/326969453"
+    },
+    {
+     "id": 301740134,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/301740134"
+    },
+    {
+     "id": 136988451,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/136988451"
+    },
+    {
+     "id": 1010223591,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1010223591"
+    },
+    {
+     "id": 1010223590,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1010223590"
+    },
+    {
+     "id": 136988454,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/136988454"
+    },
+    {
+     "id": 1209715154,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1209715154"
+    },
+    {
+     "id": 1209715155,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1209715155"
+    },
+    {
+     "id": 770953634,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/770953634"
+    },
+    {
+     "id": 713597845,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/713597845"
+    },
+    {
+     "id": 136988446,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/136988446"
+    },
+    {
+     "id": 136988445,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/136988445"
+    },
+    {
+     "id": 194431417,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/194431417"
+    },
+    {
+     "id": 41113198,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/41113198"
+    },
+    {
+     "id": 194431419,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/194431419"
+    },
+    {
+     "id": 1105570416,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1105570416"
+    },
+    {
+     "id": 1282846073,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1282846073"
+    },
+    {
+     "id": 663747207,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/663747207"
+    },
+    {
+     "id": 663747205,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/663747205"
+    }
+   ],
+   "rain_proof": true,
+   "source": "https://www.openstreetmap.org/way/344200574",
+   "type": "under_viaduct",
+   "value": true,
+   "verified_at": "2026-10-12"
+  },
+  {
+   "confidence": "low",
+   "level": "B",
+   "method": "osm",
+   "note": "樹冠大小未知時以直徑 6m 估計；落葉季節遮蔭會變少",
+   "rain_proof": false,
+   "source": "https://www.openstreetmap.org/way/344200574",
+   "trees": 9,
+   "type": "tree_canopy",
+   "value": true,
+   "verified_at": "2026-10-12"
+  }
+ ],
+ "sources": [
+  {
+   "as_of": "2026-10-12T20:21:35Z",
+   "license": "ODbL 1.0",
+   "name": "OpenStreetMap",
+   "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-13T16:35:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  }
+ ],
+ "updated_at": "2026-10-12"
+}

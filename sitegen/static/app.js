@@ -202,7 +202,12 @@
       polys.push(hull(pts).map(function (q) { return [q[1], q[0]]; }));
     });
     if (polys.length) {
-      L.polygon(polys, { stroke: false, fillColor: "#1e283c", fillOpacity: 0.32, interactive: false }).addTo(shadowLayer);
+      // One multipolygon (each shadow its own polygon, not a hole of the first) filled with the
+      // non-zero rule: hulls all wind the same way, so overlapping shadows render as their union
+      // with one even shade instead of punching holes (even-odd) or stacking opacity.
+      L.polygon(polys.map(function (ring) { return [ring]; }), {
+        stroke: false, fillColor: "#1e283c", fillOpacity: 0.32, fillRule: "nonzero", interactive: false,
+      }).addTo(shadowLayer);
     }
   }
 

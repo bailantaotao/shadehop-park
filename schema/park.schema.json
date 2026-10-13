@@ -133,6 +133,7 @@
         "nearest_any_m": { "type": ["integer", "null"] }
       }
     },
+    "google_maps_url": { "type": "string", "format": "uri", "description": "Free Google Maps search link (Maps URLs) where people can read the place's Google reviews: by name + district, or by coordinates when the place has no real name." },
     "updated_at": { "type": "string", "format": "date" },
     "sources": { "type": "array" }
   },

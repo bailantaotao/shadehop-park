@@ -12,6 +12,7 @@
 <div class="actions" id="parkActions" hidden>
   <button type="button" class="chip fav" data-fav="{{ p.id }}" aria-pressed="false" title="加入我的最愛">☆<span class="fav-label">加入我的最愛</span></button>
   <button type="button" class="chip" id="copyLink" data-url="{{ site_url }}/parks/{{ p.id }}/">🔗 複製連結</button>
+  {% if p.google_maps_url %}<a class="chip" href="{{ p.google_maps_url }}" target="_blank" rel="noopener">⭐ Google 地圖評論 ↗</a>{% endif %}
   <button type="button" class="chip" id="shareLink" data-text="{{ p.name }}：{{ p.level_label }}" hidden>📤 分享…</button>
   <span class="small muted" id="copyStatus" role="status" aria-live="polite"></span>
 </div>

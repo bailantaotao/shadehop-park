@@ -148,7 +148,8 @@
     return Favs.button(p.id) + " <strong>" + esc(p.name) + "</strong><br>" +
       (p.rain === true ? "☔ 下雨可玩<br>" : "") +
       slotLabel(state.slot) + " 遮陰：" + (v === null ? "無日照" : Math.round(v * 100) + "%") +
-      '<br><a href="' + parkHref(p.id) + '">詳細資料 →</a>';
+      '<br><a href="' + parkHref(p.id) + '">詳細資料 →</a>' +
+      (p.gmaps ? '　<a href="' + esc(p.gmaps) + '" target="_blank" rel="noopener">Google 評論 ↗</a>' : "");
   }
 
   function drawMarkers() {

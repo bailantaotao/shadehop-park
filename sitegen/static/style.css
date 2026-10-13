@@ -41,6 +41,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .timebar input[type=date] { font: inherit; padding: 4px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--text); }
 .chips { display: flex; gap: 8px; flex-wrap: wrap; }
 .chip { border: 1px solid var(--line); background: var(--chip); color: var(--text); border-radius: 999px; padding: 5px 12px; font: inherit; font-size: .9rem; cursor: pointer; }
+a.chip { text-decoration: none; display: inline-block; }
 .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 button.link { background: none; border: 0; color: var(--accent); font: inherit; cursor: pointer; padding: 0; text-decoration: underline; }
 .banner { border-radius: 10px; padding: 8px 12px; background: var(--chip); font-size: .92rem; }

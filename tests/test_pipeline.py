@@ -420,3 +420,14 @@ def test_same_name_points_in_one_park_are_merged():
     ]
     found = [p for p in Builder(data).build() if p["name"].startswith("社區公園")]
     assert len(found) == 1
+
+
+def test_google_maps_link_uses_real_names_only():
+    from urllib.parse import unquote
+
+    from pipeline.build_data import google_maps_url
+    parks = {p["osm"]["id"]: p for p in Builder(raw()).build()}
+    named = unquote(parks[70]["google_maps_url"])  # OSM-named park
+    assert named.startswith("https://www.google.com/maps/search/?api=1&query=") and "測試公園" in named
+    p = dict(parks[30], name="遊戲場（近測試路）", name_source="nearest_street", park_name=None, official=None)
+    assert unquote(google_maps_url(p)).endswith(f"{p['location']['lat']},{p['location']['lng']}")

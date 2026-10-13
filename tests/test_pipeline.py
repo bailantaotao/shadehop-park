@@ -339,3 +339,39 @@ def test_stale_overpass_data_is_rejected():
     assert stale("2026-05-06T03:25:00Z", now)
     assert not stale("2026-10-12T20:21:35Z", now)
     assert not stale(None, now)
+
+
+def test_official_tdx_chargers_merge_with_osm():
+    def st(sid, x, y, *currents):
+        lng, lat = P.lnglat(x, y)
+        return {"id": sid, "name": f"官方站{sid}", "operator": "測試電能", "lat": lat, "lng": lng, "spaces": 4,
+                "connectors": [{"type": "type2" if c == "AC" else "type2_combo", "label": c, "current": c, "count": 2} for c in currents],
+                "service_time": "每日/00:00-24:00", "charging_rate": "計度/5元每度", "parking_rate": None, "floors": None,
+                "restriction": None, "operation_type": "公辦民營"}
+    tdx = {"fetched_at": "2026-10-13T00:00:00+00:00", "src_update_time": "2026-10-13T03:55:36+08:00",
+           "source": "https://data.gov.tw/dataset/170220", "publisher": "交通部", "title": "充電站之基本資料",
+           "license": "政府資料開放授權條款第1版", "attribution": "資料介接「交通部TDX平臺」",
+           "stations": [st("A", 105, 0, "AC"),      # same spot as OSM slow charger 50 -> replaces it
+                        st("B", 310, 0, "AC"),      # next to OSM fast charger 51, but AC only -> both kept
+                        st("C", 600, 0, "DC")]}
+    b = Builder(raw(), tdx=tdx)
+    parks = {p["osm"]["id"]: p for p in b.build()}
+    p = parks[10]
+    names = [c["name"] for c in p["chargers"]]
+    assert "官方站A" in names and "官方站B" in names and "官方站C" in names
+    assert not any(c["source"] == "osm" and c["speed"] == "slow" for c in p["chargers"])  # OSM 50 merged away
+    assert any(c["source"] == "osm" and c["speed"] == "fast" for c in p["chargers"])       # OSM 51 kept
+    a = next(c for c in p["chargers"] if c["name"] == "官方站A")
+    assert a["speed"] == "slow" and a["speed_source"] == "official" and a["osm"] is None and a["charging_rate"] == "計度/5元每度"
+    cs = p["charger_summary"]
+    assert cs["total"] == 4 and cs["fast"] == 2 and cs["slow"] == 2
+    assert any("交通部TDX平臺" in s["name"] for s in p["sources"])
+    feats = b.chargers_geojson()
+    assert {f["properties"]["source"] for f in feats} == {"osm", "tdx"} and len(feats) == 4
+    assert b.meta(list(parks.values()))["counts"]["chargers_official"] == 3
+    jsonschema = pytest.importorskip("jsonschema")
+    import json
+    from pathlib import Path
+
+    schema = json.loads((Path(__file__).resolve().parent.parent / "schema" / "park.schema.json").read_text())
+    jsonschema.validate(p, schema)

@@ -13,7 +13,7 @@
 - `rain_cover.value`: true=下雨可玩（≥{{ (meta.assumptions.COVERED_FULL_RATIO * 100) | int }}% 面積在高架/屋頂下），"partial"=部分，false=未發現遮蔽。
 - `shade_timetable.slots["<月份>"]`: 24 個值，對應 06:00、06:30 … 17:30 開始的半小時，數值為遊戲場被遮陰的比例 0–1；null=太陽未升起。
 - `best_shade_windows["<月份>"]`: 該月最長連續遮陰（≥60%）時段，例如 {"start":"15:00","end":"17:30"}；null=沒有明顯遮陰時段。
-- `chargers[].speed`: fast=DC 快充、slow=AC 慢充、both=兩者都有、unknown=OSM 未標示（不要猜）。
+- `chargers[].speed`: fast=DC 快充、slow=AC 慢充、both=兩者都有、unknown=未標示（不要猜）。`chargers[].source`: tdx=交通部「充電站之基本資料」（資料介接「交通部TDX平臺」，快慢依官方充電槍 AC/DC 標示）、osm=OpenStreetMap。引用充電站資料時請註明「資料介接『交通部TDX平臺』」。
 - `official`: 政府開放資料名冊中的對應項目；null=名冊中找不到。`method`: name_match=依名稱比對（新北市公園名冊，無座標）、location_match=官方座標距 OSM 遊戲場 `distance_m` 公尺內（臺北市兒童遊戲場名冊）、official_record=只出現在官方名冊、OSM 尚未標示（`osm` 為 null，範圍以座標點估計）。`official.equipment` 為官方遊具數量。`meta.regions.<id>.city_registry_not_in_osm` 列出名冊有、但 OSM 未標示或未命名的公園。
 - `region`: `id`（linkou / taipei）、`city`、`district`。
 - 距離（`distance_m`）是直線距離，不是步行距離。

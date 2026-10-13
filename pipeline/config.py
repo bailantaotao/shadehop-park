@@ -62,6 +62,8 @@ PARKING_RADIUS_M = 800
 PARKING_MAX = 6
 CHARGER_RADIUS_M = 2000
 CHARGER_MAX = 8
+# An OSM charger this close to an official (TDX) station is the same station.
+CHARGER_MERGE_M = 40
 AMENITY_RADIUS_M = 200
 SHADOW_SEARCH_RADIUS_M = 400
 # Shadow casters are published in tiles of this size (degrees, ~1 km) for the map.

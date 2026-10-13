@@ -138,9 +138,10 @@ def _build_worker(job: tuple[str, int]) -> dict | None:
 
 
 class Builder:
-    def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None):
+    def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None, tdx: dict | None = None):
         self.raw = raw
         self.city = city
+        self.tdx = tdx
         self.region = region or config.REGIONS[raw.get("region") or config.DEFAULT_REGION]
         self.osm_date = (raw.get("osm_base") or raw["fetched_at"])[:10]
         self.boundary = element_geometry(raw["boundary"])
@@ -241,9 +242,85 @@ class Builder:
             if "highway" in tags and tags.get("name") and not is_area(geom):
                 self.streets.append(item)
 
+        for c in self.chargers:
+            c["charger"] = self._osm_charger(c)
+        self._merge_tdx_chargers()
         self.shade = ShadeModel(self.casters)
         self.cover_tree = STRtree([c["geom"] for c in self.covers]) if self.covers else None
         self.tree_tree = STRtree(self.trees_xy) if self.trees_xy else None
+
+    # ---------------------------------------------------------------- chargers
+    def _osm_charger(self, item: dict) -> dict:
+        t = item["tags"]
+        return {
+            "name": t.get("name") or t.get("brand") or t.get("operator") or "充電站",
+            "operator": t.get("operator"),
+            "brand": t.get("brand") or t.get("network"),
+            **classify(t),
+            "capacity": int(t["capacity"]) if t.get("capacity", "").isdigit() else None,
+            "fee": t.get("fee"),
+            "opening_hours": t.get("opening_hours"),
+            "access": t.get("access"),
+            "location": self._latlng(item["geom"]),
+            "osm": osm_ref(item["el"]),
+            "source": "osm",
+            "verified_at": self.osm_date,
+            "method": "osm",
+        }
+
+    def _tdx_charger(self, st: dict) -> dict:
+        sockets = [{"type": c["type"], "label": c["label"], "current": c["current"], "count": c["count"], "output_kw": None}
+                   for c in st["connectors"]]
+        dc = any(c["current"] == "DC" for c in sockets)
+        ac = any(c["current"] == "AC" for c in sockets)
+        speed = "both" if dc and ac else "fast" if dc else "slow" if ac else "unknown"
+        return {
+            "name": st["name"],
+            "operator": st.get("operator"),
+            "brand": None,
+            "speed": speed,
+            "speed_label": {"fast": "快充 (DC)", "slow": "慢充 (AC)", "both": "快充 + 慢充", "unknown": "未標示"}[speed],
+            "speed_source": "official" if speed != "unknown" else None,
+            "sockets": sockets,
+            "max_kw": None,
+            "capacity": st.get("spaces"),
+            "fee": None,
+            "opening_hours": st.get("service_time"),
+            "access": None,
+            "charging_rate": st.get("charging_rate"),
+            "parking_rate": st.get("parking_rate"),
+            "floors": st.get("floors"),
+            "restriction": st.get("restriction"),
+            "operation_type": st.get("operation_type"),
+            "location": {"lat": st["lat"], "lng": st["lng"]},
+            "osm": None,
+            "tdx_id": st["id"],
+            "source": "tdx",
+            "verified_at": (self.tdx.get("src_update_time") or self.tdx["fetched_at"])[:10],
+            "method": "official_data",
+        }
+
+    def _merge_tdx_chargers(self) -> None:
+        """Official TDX stations replace OSM chargers at the same spot (within CHARGER_MERGE_M),
+        except an OSM fast charger next to a TDX site without DC (e.g. a Supercharger beside a
+        car park with AC posts) - those are different stations."""
+        if not self.tdx:
+            return
+        items = []
+        for st in self.tdx["stations"]:
+            pt = Point(st["lng"], st["lat"])
+            item = {"el": {"type": "tdx", "id": st["id"]}, "tags": {}, "geom": pt, "xy": self.proj.to_xy(pt)}
+            item["charger"] = self._tdx_charger(st)
+            items.append(item)
+        keep = []
+        for c in self.chargers:
+            near = [t for t in items if t["xy"].distance(c["xy"]) <= config.CHARGER_MERGE_M]
+            osm_fast = c["charger"]["speed"] in ("fast", "both")
+            if near and not (osm_fast and not any(t["charger"]["speed"] in ("fast", "both") for t in near)):
+                continue  # same station; the official record wins
+            keep.append(c)
+        self.osm_chargers_merged = len(self.chargers) - len(keep)
+        self.chargers = keep + items
 
     # ---------------------------------------------------------------- helpers
     def _nearest(self, items: list[dict], zone, radius: float) -> list[tuple[float, dict]]:
@@ -252,7 +329,7 @@ class Builder:
             d = it["xy"].distance(zone)
             if d <= radius:
                 out.append((d, it))
-        out.sort(key=lambda t: (t[0], t[1]["el"]["id"]))
+        out.sort(key=lambda t: (t[0], str(t[1]["el"]["id"])))
         return out
 
     def _latlng(self, geom) -> dict:
@@ -446,25 +523,9 @@ class Builder:
 
         # --- EV chargers
         chargers = []
-        for dist, c in self._nearest(self.chargers, zone, config.CHARGER_RADIUS_M)[: config.CHARGER_MAX * 3]:
-            t = c["tags"]
-            info = classify(t)
-            chargers.append({
-                "name": t.get("name") or t.get("brand") or t.get("operator") or "充電站",
-                "operator": t.get("operator"),
-                "brand": t.get("brand") or t.get("network"),
-                **info,
-                "capacity": int(t["capacity"]) if t.get("capacity", "").isdigit() else None,
-                "fee": t.get("fee"),
-                "opening_hours": t.get("opening_hours"),
-                "access": t.get("access"),
-                "distance_m": int(round(dist)),
-                "distance_method": "straight_line",
-                "location": self._latlng(c["geom"]),
-                "osm": osm_ref(c["el"]),
-                "verified_at": d,
-                "method": "osm",
-            })
+        # Every charger within the radius (not a capped few), so the summary counts are right.
+        for dist, c in self._nearest(self.chargers, zone, config.CHARGER_RADIUS_M):
+            chargers.append({**c["charger"], "distance_m": int(round(dist)), "distance_method": "straight_line"})
         fast = [c for c in chargers if c["speed"] in ("fast", "both")]
         slow = [c for c in chargers if c["speed"] in ("slow", "both")]
         charger_summary = {
@@ -481,6 +542,7 @@ class Builder:
         shown = chargers[: config.CHARGER_MAX]
         if fast and fast[0] not in shown:
             shown.append(fast[0])
+        tdx_used = any(c["source"] == "tdx" for c in shown)
 
         # --- nearby amenities
         toilets = self._nearest(self.toilets, zone, config.AMENITY_RADIUS_M)
@@ -538,7 +600,8 @@ class Builder:
             "updated_at": d,
             "sources": [
                 {"name": "OpenStreetMap", "license": "ODbL 1.0", "url": "https://www.openstreetmap.org/copyright", "as_of": self.raw.get("osm_base")},
-            ],
+            ] + ([{"name": f"{self.tdx['attribution']}：{self.tdx['publisher']}「{self.tdx['title']}」", "license": self.tdx["license"],
+                   "url": self.tdx["source"], "as_of": self.tdx.get("src_update_time") or self.tdx["fetched_at"]}] if tdx_used else []),
         }
 
     def _build_many(self, jobs: list[tuple[dict, str]]) -> list[dict | None]:
@@ -697,24 +760,25 @@ class Builder:
         self.city_unmatched = [{"name": row["name"], "address": row.get("address")} for row in entries if row["ref"] not in matched]
 
     def chargers_geojson(self) -> list[dict]:
-        """Every car charger in the region's bbox, for the map's charger layer."""
+        """Every car charger in the region's bbox (OSM + official TDX), for the map's charger layer."""
         feats = []
         for c in self.chargers:
-            t = c["tags"]
-            info = classify(t)
-            loc = self._latlng(c["geom"])
+            r = c["charger"]
+            fid = f"t{r['tdx_id']}" if r["source"] == "tdx" else f"{c['el']['type'][0]}{c['el']['id']}"
             feats.append({
                 "type": "Feature",
-                "id": f"{c['el']['type'][0]}{c['el']['id']}",
-                "geometry": {"type": "Point", "coordinates": [loc["lng"], loc["lat"]]},
+                "id": fid,
+                "geometry": {"type": "Point", "coordinates": [r["location"]["lng"], r["location"]["lat"]]},
                 "properties": {
-                    "name": t.get("name") or t.get("brand") or t.get("operator") or "充電站",
-                    "operator": t.get("operator") or t.get("brand") or t.get("network"),
-                    "speed": info["speed"], "speed_label": info["speed_label"], "speed_source": info["speed_source"],
-                    "max_kw": info["max_kw"],
-                    "sockets": [f"{s['label']}×{s['count']}" + (f" {s['output_kw']:g}kW" if s["output_kw"] else "") for s in info["sockets"]],
-                    "capacity": int(t["capacity"]) if t.get("capacity", "").isdigit() else None, "fee": t.get("fee"), "opening_hours": t.get("opening_hours"),
-                    "access": t.get("access"), "osm": osm_ref(c["el"])["url"], "region": self.region["id"],
+                    "name": r["name"], "operator": r["operator"] or r["brand"],
+                    "speed": r["speed"], "speed_label": r["speed_label"], "speed_source": r["speed_source"],
+                    "max_kw": r["max_kw"],
+                    "sockets": [f"{x['label']}" + (f" {x['current']}" if x.get("current") else "") + f"×{x['count']}"
+                                + (f" {x['output_kw']:g}kW" if x.get("output_kw") else "") for x in r["sockets"]],
+                    "capacity": r["capacity"], "fee": r["fee"], "opening_hours": r["opening_hours"], "access": r["access"],
+                    "charging_rate": r.get("charging_rate"), "parking_rate": r.get("parking_rate"),
+                    "floors": r.get("floors"), "restriction": r.get("restriction"),
+                    "source": r["source"], "osm": (r["osm"] or {}).get("url"), "region": self.region["id"],
                 },
             })
         return feats
@@ -743,6 +807,9 @@ class Builder:
 
     def meta(self, parks: list[dict]) -> dict:
         levels = {k: sum(1 for p in parks if p["level"] == k) for k in LEVEL_LABELS}
+        charger_source = None
+        if self.tdx:
+            charger_source = {k: self.tdx.get(k) for k in ("title", "publisher", "source", "license", "attribution", "fetched_at", "src_update_time")}
         registry = None
         if self.city:
             registry = {k: self.city.get(k) for k in ("title", "publisher", "source", "license", "fetched_at", "kind")}
@@ -753,6 +820,7 @@ class Builder:
             "fetched_at": self.raw.get("fetched_at"),
             "bbox": [round(v, 5) for v in self.boundary.bounds],
             "city_registry": registry,
+            "charger_source": charger_source,
             "counts": {
                 "parks": len(parks),
                 "mapped_playgrounds": sum(1 for p in parks if p["playground_mapped"]),
@@ -763,6 +831,8 @@ class Builder:
                 "by_level": levels,
                 "parking_lots_in_bbox": len(self.parking),
                 "chargers_in_bbox": len(self.chargers),
+                "chargers_official": sum(1 for c in self.chargers if c["charger"]["source"] == "tdx"),
+                "chargers_osm_only": sum(1 for c in self.chargers if c["charger"]["source"] == "osm"),
                 "buildings_in_bbox": sum(1 for c in self.casters if c.kind == "building"),
                 "buildings_with_height": sum(1 for c in self.casters if c.kind == "building" and c.height_known),
             },
@@ -774,7 +844,7 @@ class Builder:
                     "TREE_DEFAULT_CROWN_M", "TREE_DEFAULT_HEIGHT_M", "COVERED_FULL_RATIO",
                     "COVERED_PARTIAL_RATIO", "SHADED_SLOT_RATIO", "LEVEL_C_MIN_DAYTIME_SHARE",
                     "PARKING_RADIUS_M", "CHARGER_RADIUS_M", "AMENITY_RADIUS_M",
-                    "MAX_LEVEL_HEIGHT_M", "TYPE_HEIGHT_MIN_SAMPLES", "OFFICIAL_MATCH_M", "OFFICIAL_MERGE_M",
+                    "MAX_LEVEL_HEIGHT_M", "TYPE_HEIGHT_MIN_SAMPLES", "OFFICIAL_MATCH_M", "OFFICIAL_MERGE_M", "CHARGER_MERGE_M",
                 )
             },
             "default_building_heights_by_type": self.default_heights,
@@ -927,12 +997,17 @@ def load_city(region_id: str = config.DEFAULT_REGION, path: Path | None = None) 
     return json.loads(path.read_text()) if path.exists() else None
 
 
+def load_tdx(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -> dict | None:
+    path = path or DATA / "raw" / f"{region_id}.tdx_chargers.json"
+    return json.loads(path.read_text()) if path.exists() else None
+
+
 def main(argv: list[str]) -> None:
     region_ids = argv or list(config.REGIONS)
     parks, metas, casters, chargers = [], [], [], []
     for rid in region_ids:
         t = time.time()
-        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid])
+        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid))
         mine = b.build()
         parks += mine
         metas.append(b.meta(mine))

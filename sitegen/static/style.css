@@ -114,3 +114,7 @@ footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align:
 .map-toast { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 1000; max-width: 90%;
   background: rgba(30,30,30,.88); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: .88rem; text-align: center; }
 .map-toast[hidden] { display: none; }
+
+/* TDX attribution: the logo has dark text, so give it a light backing in dark mode too. */
+.tdx-logo img, .tdx-credit img { background: #fff; border-radius: 4px; padding: 2px 4px; vertical-align: middle; }
+.tdx-logo { margin-left: 4px; }

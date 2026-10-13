@@ -375,16 +375,23 @@
     return layers[p.speed] || false;
   }
 
-  function chargerPopup(p) {
+  function chargerPopup(f) {
+    var p = f.properties;
     var note = p.speed_source === "brand" ? "（依營運商判斷）" : p.speed_source === "name" ? "（依站名判斷）" : "";
     return "<strong>" + esc(p.name) + "</strong><br>" +
       (p.speed === "unknown" ? "快慢充：OSM 未標示" : esc(p.speed_label.replace(/（.*）$/, "")) + note) +
       (p.max_kw ? "，最高 " + p.max_kw + " kW" : "") + "<br>" +
       (p.sockets.length ? "插頭：" + esc(p.sockets.join("、")) + "<br>" : "") +
-      (p.capacity ? "車位：" + p.capacity + "<br>" : "") +
+      (p.capacity ? "充電車位：" + p.capacity + "<br>" : "") +
+      (p.charging_rate ? "充電費率：" + esc(p.charging_rate) + "<br>" : "") +
+      (p.parking_rate ? "停車費率：" + esc(p.parking_rate) + "<br>" : "") +
       (p.opening_hours ? "時間：" + esc(p.opening_hours) + "<br>" : "") +
+      (p.floors ? "樓層：" + esc(p.floors) + "<br>" : "") +
+      (p.restriction ? "限制：" + esc(p.restriction) + "<br>" : "") +
       (p.operator ? "營運：" + esc(p.operator) + "<br>" : "") +
-      '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>';
+      '<a href="https://www.google.com/maps/dir/?api=1&destination=' + f.geometry.coordinates[1] + "," + f.geometry.coordinates[0] + '" rel="noopener" target="_blank">導航</a> · ' +
+      (p.source === "tdx" ? '<span class="small">資料介接「交通部TDX平臺」</span>'
+        : '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>');
   }
 
   // Show how many stations of each kind are in view, so a toggle never looks dead
@@ -413,7 +420,7 @@
         pane: "chargers",
         title: p.name + "（" + (p.speed === "unknown" ? "未標示" : p.speed_label) + "）",
         icon: L.divIcon({ className: "chg " + k.cls, html: k.icon, iconSize: [24, 24], iconAnchor: [12, 12] }),
-      }).bindPopup(function () { return chargerPopup(p); }).addTo(chargerLayer);
+      }).bindPopup(function () { return chargerPopup(f); }).addTo(chargerLayer);
     });
   }
 

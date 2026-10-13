@@ -179,7 +179,7 @@
         "operator": { "type": ["string", "null"] },
         "speed": { "enum": ["fast", "slow", "both", "unknown"], "description": "fast = DC (CCS/CHAdeMO/Supercharger), slow = AC (Type 1/Type 2), unknown = not tagged." },
         "speed_label": { "type": "string" },
-        "speed_source": { "enum": ["sockets", "output", "brand", "name", null], "description": "Evidence for speed: socket tags, tagged power, a DC-only operator, or the station name saying 快充/超充." },
+        "speed_source": { "enum": ["sockets", "output", "brand", "name", "official", null], "description": "Evidence for speed: socket tags, tagged power, a DC-only operator, or the station name saying 快充/超充." },
         "max_kw": { "type": ["number", "null"] },
         "sockets": {
           "type": "array",
@@ -190,7 +190,11 @@
         },
         "distance_m": { "type": "integer" },
         "location": { "$ref": "#/$defs/LatLng" },
-        "osm": { "$ref": "#/$defs/OsmRef" }
+        "osm": { "oneOf": [{ "$ref": "#/$defs/OsmRef" }, { "type": "null" }], "description": "null for stations known only from official TDX data." },
+        "source": { "enum": ["osm", "tdx"], "description": "osm = OpenStreetMap; tdx = 交通部「充電站之基本資料」via TDX (資料介接「交通部TDX平臺」)." },
+        "charging_rate": { "type": ["string", "null"] },
+        "parking_rate": { "type": ["string", "null"] },
+        "tdx_id": { "type": ["string", "null"] }
       }
     }
   }

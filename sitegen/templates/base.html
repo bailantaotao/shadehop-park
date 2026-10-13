@@ -21,7 +21,7 @@
 {% block main %}{% endblock %}
 </main>
 <footer>
-  地圖與資料 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 貢獻者（ODbL）；遊戲場名冊來自{{ REGISTRY_PUBLISHERS }}開放資料。遮陰為模型推估，出門前請以現場為準。
+  地圖與資料 © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 貢獻者（ODbL）；遊戲場名冊來自{{ REGISTRY_PUBLISHERS }}開放資料；充電站資料介接「<a href="https://tdx.transportdata.tw/">交通部TDX平臺</a>」<a href="https://tdx.transportdata.tw/" class="tdx-logo"><img src="{{ root }}static/tdxlogo.png" alt="TDX 運輸資料流通服務" width="92" height="17"></a>。遮陰為模型推估，出門前請以現場為準。
   資料版本 {{ (meta.generated_from_osm_base or '')[:10] }}。
 </footer>
 {% block scripts %}{% endblock %}

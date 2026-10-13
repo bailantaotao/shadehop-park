@@ -85,18 +85,18 @@
 <p>{{ p.charger_summary.radius_m }}m 內：快充 {{ p.charger_summary.fast }} 站、慢充 {{ p.charger_summary.slow }} 站{% if p.charger_summary.unknown %}、未標示類型 {{ p.charger_summary.unknown }} 站{% endif %}。</p>
 {% if p.chargers %}
 <div class="tablewrap"><table>
-<thead><tr><th>充電站</th><th>類型</th><th>插頭</th><th>最大功率</th><th>直線距離</th></tr></thead>
+<thead><tr><th>充電站</th><th>類型</th><th>插頭</th><th>費率／時間</th><th>直線距離</th></tr></thead>
 <tbody>
 {% for c in p.chargers %}<tr>
 <td><a href="https://www.google.com/maps/dir/?api=1&destination={{ c.location.lat }},{{ c.location.lng }}">{{ c.name }}</a>{% if c.operator and c.operator != c.name %}<br><span class="small muted">{{ c.operator }}</span>{% endif %}{% if c.access == 'customers' %} <span class="badge">限顧客</span>{% endif %}</td>
-<td>{{ c.speed_label }}</td>
+<td>{{ c.speed_label }}{% if c.capacity %}<br><span class="small muted">{{ c.capacity }} 格</span>{% endif %}</td>
 <td>{% for s in c.sockets %}{{ s.label }}{% if s.count > 1 %} ×{{ s.count }}{% endif %}{% if not loop.last %}、{% endif %}{% else %}<span class="muted">未標示</span>{% endfor %}</td>
-<td>{{ (c.max_kw | round(1) ~ ' kW') if c.max_kw else '—' }}</td>
+<td>{% if c.charging_rate %}{{ c.charging_rate }}{% elif c.max_kw %}最高 {{ c.max_kw | round(1) }} kW{% else %}—{% endif %}{% if c.opening_hours %}<br><span class="small muted">{{ c.opening_hours }}</span>{% endif %}</td>
 <td>{{ c.distance_m }} m</td>
 </tr>{% endfor %}
 </tbody></table></div>
 {% endif %}
-<p class="prov">來源：OpenStreetMap 的 socket:* 標記；DC 插頭（CCS1/CCS2/CHAdeMO/Supercharger）歸為快充，AC 插頭（Type 1/Type 2）歸為慢充，無標記者不猜測。資料日期 {{ p.updated_at }}。</p>
+<p class="prov">來源：交通部「充電站之基本資料」（資料介接「交通部TDX平臺」，每座站的充電槍標示 AC/DC），以及 OpenStreetMap 的 socket:* 標記（DC 插頭歸為快充、AC 插頭歸為慢充，無標記者不猜測）。同一地點兩邊都有時以交通部資料為準。</p>
 </section>
 
 <section>

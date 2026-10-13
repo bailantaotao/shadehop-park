@@ -33,6 +33,10 @@ jobs:
           TDX_CLIENT_ID: ${{ secrets.TDX_CLIENT_ID }}
           TDX_CLIENT_SECRET: ${{ secrets.TDX_CLIENT_SECRET }}
         run: python -m pipeline.fetch_chargers
+      - name: Fetch public toilets (環境部; skipped without a key)
+        env:
+          MOENV_API_KEY: ${{ secrets.MOENV_API_KEY }}
+        run: python -m pipeline.fetch_toilets
       # Shade timetables from the previous run (see pipeline/shade_cache.py): unchanged parks are not
       # recomputed. A fresh key every run saves the new cache; restore-keys picks the latest one.
       - name: Restore shade cache

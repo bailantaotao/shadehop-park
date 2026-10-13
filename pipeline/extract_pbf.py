@@ -36,7 +36,7 @@ from .geo import element_geometry
 
 GEOFABRIK_URL = "https://download.geofabrik.de/asia/taiwan-latest.osm.pbf"
 DEFAULT_PBF = RAW_DIR / "taiwan-latest.osm.pbf"
-FEATURE_KEYS = ("leisure", "bridge", "man_made", "amenity", "building", "covered", "natural", "highway")
+FEATURE_KEYS = ("leisure", "bridge", "man_made", "amenity", "building", "covered", "natural", "highway", "shop", "railway")
 SERVICE_AMENITIES = {"parking", "charging_station", "toilets", "drinking_water", "shelter"}
 
 
@@ -45,6 +45,8 @@ def wanted(kind: str, tags: dict) -> bool:
     if tags.get("leisure") in ("playground", "park"):
         return True
     if tags.get("amenity") in SERVICE_AMENITIES:
+        return True
+    if tags.get("shop") == "convenience" or tags.get("railway") == "station":
         return True
     if "covered" in tags and "leisure" in tags:
         return True

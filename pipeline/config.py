@@ -24,6 +24,7 @@ REGIONS = {
         "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "新北市"},
         "osm_district_level": "7",
         "tdx_city": "NewTaipei",
+        "moenv_county": "65000",  # 環境部公廁資料的縣市代碼
         # Official registry: names/addresses only, matched by park name (and district).
         "registry": "ntpc_parks",
         # OSM rarely maps play equipment here, so list parks as unconfirmed candidates.
@@ -43,6 +44,7 @@ REGIONS = {
         "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "臺北市"},
         "osm_district_level": "7",
         "tdx_city": "Taipei",
+        "moenv_county": "63000",  # 環境部公廁資料的縣市代碼
         # Official registry of every children's playground, with coordinates.
         "registry": "taipei_playgrounds",
         # The registry is complete, so parks without a playground are not listed.
@@ -62,6 +64,7 @@ REGIONS = {
         "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "桃園市"},
         "osm_district_level": "7",
         "tdx_city": "Taoyuan",
+        "moenv_county": "68000",  # 環境部公廁資料的縣市代碼
         # Official lists (featured playgrounds, pond parks): names/addresses/facilities, no coordinates.
         "registry": "taoyuan_parks",
         "park_candidates": True,
@@ -85,6 +88,11 @@ CHARGER_MAX = 8
 # An OSM charger this close to an official (TDX) station is the same station.
 CHARGER_MERGE_M = 40
 AMENITY_RADIUS_M = 200
+TOILET_RADIUS_M = 300  # 環境部 + OSM toilets; parents will walk a little further for a clean one
+CONVENIENCE_RADIUS_M = 500
+STATION_RADIUS_M = 1500
+# An official toilet this close to an OSM one is the same place (official details win).
+TOILET_MERGE_M = 30
 SHADOW_SEARCH_RADIUS_M = 400
 # Shadow casters are published in tiles of this size (degrees, ~1 km) for the map.
 CASTER_TILE_DEG = 0.01

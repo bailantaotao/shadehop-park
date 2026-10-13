@@ -101,6 +101,8 @@ def features_query(s: float, w: float, n: float, e: float) -> str:
   nwr["amenity"="charging_station"]{bb};
   nwr["amenity"="toilets"]{bb};
   nwr["amenity"="drinking_water"]{bb};
+  nwr["shop"="convenience"]{bb};
+  nwr["railway"="station"]{bb};
   node["natural"="tree"]{bb};
   way["highway"]["name"]{bb};
 );

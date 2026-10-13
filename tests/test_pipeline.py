@@ -448,3 +448,25 @@ def test_shade_cache_key_changes_with_buildings():
     taller = Caster(box(20, 0, 30, 10), 0, 45, "building")
     assert shade_cache.key(zone, [tower], 25.0, 121.0) != shade_cache.key(zone, [taller], 25.0, 121.0)
     assert shade_cache.key(zone, [tower], 25.0, 121.0) == shade_cache.key(box(0, 0, 10, 10), [tower], 25.0, 121.0)
+
+
+def test_nearby_toilets_shops_and_stations():
+    # Playground 10 is at the origin; OSM already has a toilet node 30 m east (fixture node 60).
+    from .fixture import node
+    data = raw()
+    data["elements"] += [
+        node(95, 150, 0, shop="convenience", brand="7-ELEVEN", name="測試門市"),
+        node(96, 900, 0, railway="station", station="subway", name="測試"),
+    ]
+    lat0, lng0 = P.lnglat(32, 0)[1], P.lnglat(32, 0)[0]  # same spot as the OSM toilet: one place
+    lat1, lng1 = P.lnglat(250, 0)[1], P.lnglat(250, 0)[0]
+    toilets = {"source": "https://data.gov.tw/dataset/30794", "sites": [
+        {"name": "高架公園", "lat": lat0, "lng": lng0, "types": ["男廁所", "女廁所"], "diaper": 0, "category": "公園", "address": None, "grade": "特優級"},
+        {"name": "測試百貨", "lat": lat1, "lng": lng1, "types": ["親子廁所"], "diaper": 2, "category": "商業營業場所", "address": None, "grade": "特優級"},
+    ]}
+    p = {x["osm"]["id"]: x for x in Builder(data, toilets=toilets).build()}[10]
+    a = p["amenities"]
+    assert a["toilet"]["method"] == "official_data" and a["toilet"]["name"] == "高架公園"
+    assert a["toilet"]["family"]["name"] == "測試百貨" and a["toilet"]["family"]["family_room"] is True
+    assert a["convenience_store"]["name"] == "7-ELEVEN 測試門市" and 130 < a["convenience_store"]["distance_m"] < 150
+    assert a["station"]["name"] == "捷運測試站"

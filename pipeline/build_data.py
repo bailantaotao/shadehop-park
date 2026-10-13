@@ -143,8 +143,10 @@ def _build_worker(job: tuple[str, int]) -> dict | None:
 
 
 class Builder:
-    def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None, tdx: dict | None = None):
+    def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None, tdx: dict | None = None,
+                 toilets: dict | None = None):
         self.raw = raw
+        self.moenv_toilets = toilets  # 環境部公廁 (fetch_toilets), merged with OSM toilets
         # Shade timetables from the previous build, by fingerprint (see shade_cache); main() fills it.
         self.tt_cache: dict = {}
         self.tt_used: dict = {}  # the tables this build used, to save as the next cache
@@ -188,6 +190,8 @@ class Builder:
         self.default_heights = self._default_heights()
         self.playgrounds, self.parks, self.casters, self.covers = [], [], [], []
         self.parking, self.chargers, self.toilets, self.water, self.streets = [], [], [], [], []
+        self.convenience, self.stations = [], []
+        self._indexes: dict[int, STRtree] = {}
         self.trees_xy = []
         seen = set()
         for el in self.raw["elements"]:
@@ -247,12 +251,17 @@ class Builder:
                 self.toilets.append(item)
             if tags.get("amenity") == "drinking_water":
                 self.water.append(item)
+            if tags.get("shop") == "convenience" and access not in EXCLUDED_ACCESS:
+                self.convenience.append(item)
+            if tags.get("railway") == "station" and tags.get("name") and el["type"] in ("node", "way"):
+                self.stations.append(item)
             if "highway" in tags and tags.get("name") and not is_area(geom):
                 self.streets.append(item)
 
         for c in self.chargers:
             c["charger"] = self._osm_charger(c)
         self._merge_tdx_chargers()
+        self._merge_official_toilets()
         self.shade = ShadeModel(self.casters)
         self.cover_tree = STRtree([c["geom"] for c in self.covers]) if self.covers else None
         self.tree_tree = STRtree(self.trees_xy) if self.trees_xy else None
@@ -330,10 +339,52 @@ class Builder:
         self.osm_chargers_merged = len(self.chargers) - len(keep)
         self.chargers = keep + items
 
+    def _toilet_fact(self, toilets: list, d: str, src: str) -> dict:
+        """Nearest toilet, and the nearest family one (親子廁所 or a diaper table) when the nearest has neither."""
+        def info(t):
+            o = t[1].get("official")
+            if o:
+                return {"distance_m": int(round(t[0])), "name": o["name"], "family_room": "親子廁所" in o["types"],
+                        "changing_table": o["diaper"] > 0, "accessible": "無障礙廁所" in o["types"], "category": o["category"]}
+            tg = t[1]["tags"]
+            return {"distance_m": int(round(t[0])), "name": tg.get("name"), "family_room": None,
+                    "changing_table": tg.get("changing_table") == "yes" or None, "accessible": tg.get("wheelchair") == "yes" or None,
+                    "category": None}
+        if not toilets:
+            return fact(None, "osm", d, "low", src, distance_m=None, changing_table=None,
+                        note=f"{config.TOILET_RADIUS_M}m 內沒有登記或標示的公廁；不代表沒有")
+        near = info(toilets[0])
+        family = next((info(t) for t in toilets if t[1].get("official") and
+                       ("親子廁所" in t[1]["official"]["types"] or t[1]["official"]["diaper"] > 0)), None)
+        official = toilets[0][1].get("official")
+        out = fact(True, "official_data" if official else "osm", d, "high" if official else "medium",
+                   self.moenv_toilets["source"] if official else osm_ref(toilets[0][1]["el"])["url"], **near)
+        # Only point to another place when the nearest toilet itself has no family room or diaper table.
+        near_is_family = near["family_room"] or near["changing_table"]
+        out["family"] = family if family and not near_is_family and family["distance_m"] != near["distance_m"] else None
+        return out
+
+    def _merge_official_toilets(self) -> None:
+        """環境部 toilet sites, plus OSM toilets that are not the same place (within TOILET_MERGE_M)."""
+        if not self.moenv_toilets:
+            return
+        items = []
+        for st in self.moenv_toilets["sites"]:
+            pt = Point(st["lng"], st["lat"])
+            items.append({"el": {"type": "moenv", "id": f"{st['lat']},{st['lng']}"}, "tags": {"name": st["name"]},
+                          "geom": pt, "xy": self.proj.to_xy(pt), "official": st})
+        keep = [t for t in self.toilets if not any(o["xy"].distance(t["xy"]) <= config.TOILET_MERGE_M for o in items)]
+        self.toilets = keep + items
+
     # ---------------------------------------------------------------- helpers
     def _nearest(self, items: list[dict], zone, radius: float) -> list[tuple[float, dict]]:
+        # Spatial index per list (built once, before workers fork), so thousands of toilets and shops stay fast.
+        tree = self._indexes.get(id(items))
+        if tree is None and len(items) > 50:
+            tree = self._indexes[id(items)] = STRtree([it["xy"] for it in items])
+        candidates = items if tree is None else [items[i] for i in tree.query(zone.buffer(radius))]
         out = []
-        for it in items:
+        for it in candidates:
             d = it["xy"].distance(zone)
             if d <= radius:
                 out.append((d, it))
@@ -560,15 +611,22 @@ class Builder:
         tdx_used = any(c["source"] == "tdx" for c in shown)
 
         # --- nearby amenities
-        toilets = self._nearest(self.toilets, zone, config.AMENITY_RADIUS_M)
+        toilets = self._nearest(self.toilets, zone, config.TOILET_RADIUS_M)
         water = self._nearest(self.water, zone, config.AMENITY_RADIUS_M)
+        shops = self._nearest(self.convenience, zone, config.CONVENIENCE_RADIUS_M)
+        stations = self._nearest(self.stations, zone, config.STATION_RADIUS_M)
         amenities = {
-            "toilet": fact(bool(toilets) or None, "osm", d, "medium" if toilets else "low", src,
-                           distance_m=int(round(toilets[0][0])) if toilets else None,
-                           changing_table=any(t[1]["tags"].get("changing_table") == "yes" for t in toilets) or None,
-                           note=None if toilets else f"OSM 在 {config.AMENITY_RADIUS_M}m 內未標示公廁；不代表沒有"),
+            "toilet": self._toilet_fact(toilets, d, src),
             "drinking_water": fact(bool(water) or None, "osm", d, "medium" if water else "low", src,
                                    distance_m=int(round(water[0][0])) if water else None),
+            "convenience_store": fact(bool(shops) or None, "osm", d, "medium" if shops else "low",
+                                      osm_ref(shops[0][1]["el"])["url"] if shops else src,
+                                      distance_m=int(round(shops[0][0])) if shops else None,
+                                      name=_shop_name(shops[0][1]["tags"]) if shops else None),
+            "station": fact(bool(stations) or None, "osm", d, "medium" if stations else "low",
+                            osm_ref(stations[0][1]["el"])["url"] if stations else src,
+                            distance_m=int(round(stations[0][0])) if stations else None,
+                            name=_station_name(stations[0][1]["tags"]) if stations else None),
         }
 
         loc = self._latlng(item["geom"])
@@ -892,6 +950,9 @@ class Builder:
                 "parking_lots_in_bbox": len(self.parking),
                 "chargers_in_bbox": len(self.chargers),
                 "chargers_official": sum(1 for c in self.chargers if c["charger"]["source"] == "tdx"),
+                "toilets_official": len(self.moenv_toilets["sites"]) if self.moenv_toilets else 0,
+                "convenience_stores": len(self.convenience),
+                "stations": len(self.stations),
                 "chargers_osm_only": sum(1 for c in self.chargers if c["charger"]["source"] == "osm"),
                 "buildings_in_bbox": sum(1 for c in self.casters if c.kind == "building"),
                 "buildings_with_height": sum(1 for c in self.casters if c.kind == "building" and c.height_known),
@@ -903,7 +964,7 @@ class Builder:
                     "VIADUCT_DECK_BOTTOM_M", "VIADUCT_DECK_TOP_M", "ROOF_HEIGHT_M",
                     "TREE_DEFAULT_CROWN_M", "TREE_DEFAULT_HEIGHT_M", "COVERED_FULL_RATIO",
                     "COVERED_PARTIAL_RATIO", "SHADED_SLOT_RATIO", "LEVEL_C_MIN_DAYTIME_SHARE",
-                    "PARKING_RADIUS_M", "CHARGER_RADIUS_M", "AMENITY_RADIUS_M",
+                    "PARKING_RADIUS_M", "CHARGER_RADIUS_M", "AMENITY_RADIUS_M", "TOILET_RADIUS_M", "CONVENIENCE_RADIUS_M", "STATION_RADIUS_M",
                     "MAX_LEVEL_HEIGHT_M", "TYPE_HEIGHT_MIN_SAMPLES", "OFFICIAL_MATCH_M", "OFFICIAL_MERGE_M", "CHARGER_MERGE_M",
                 )
             },
@@ -912,6 +973,21 @@ class Builder:
             "city_registry_not_in_osm": self.city_unmatched,
             "level_labels": LEVEL_LABELS,
         }
+
+
+def _shop_name(tags: dict) -> str:
+    """'7-ELEVEN 木柵門市' etc.; brand alone when the branch is not named."""
+    name, brand = tags.get("name"), tags.get("brand")
+    if name and brand and brand.lower() not in name.lower():
+        return f"{brand} {name}"
+    return name or brand or "便利商店"
+
+
+def _station_name(tags: dict) -> str:
+    name = tags["name"]
+    if tags.get("station") == "subway" and not name.startswith("捷運"):
+        return f"捷運{name}" if name.endswith("站") else f"捷運{name}站"
+    return name if name.endswith("站") else f"{name}站"
 
 
 def summary(p: dict) -> dict:
@@ -1059,6 +1135,11 @@ def load_city(region_id: str = config.DEFAULT_REGION, path: Path | None = None) 
     return json.loads(path.read_text()) if path.exists() else None
 
 
+def load_toilets(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -> dict | None:
+    path = path or DATA / "raw" / f"{region_id}.toilets.json"
+    return json.loads(path.read_text()) if path.exists() else None
+
+
 def load_tdx(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -> dict | None:
     path = path or DATA / "raw" / f"{region_id}.tdx_chargers.json"
     return json.loads(path.read_text()) if path.exists() else None
@@ -1069,7 +1150,7 @@ def main(argv: list[str]) -> None:
     parks, metas, casters, chargers = [], [], [], []
     for rid in region_ids:
         t = time.time()
-        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid))
+        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid), load_toilets(rid))
         b.tt_cache = shade_cache.load(rid)
         mine = b.build()
         reused = len(b.tt_used.keys() & b.tt_cache.keys())

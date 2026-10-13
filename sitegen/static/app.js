@@ -143,6 +143,23 @@
     return true;
   }
 
+  // Longest run of >= 60% shade between 08:00 and 17:00 (early-morning shade is not worth planning around).
+  function bestDaytime(row) {
+    var best = null, start = null, FIRST = 4, LAST = 22;  // slot 4 = 08:00, slot 22 = 17:00
+    for (var i = FIRST; i <= LAST; i++) {
+      var ok = i < LAST && row[i] !== null && row[i] !== undefined && row[i] >= 0.6;
+      if (ok && start === null) start = i;
+      if (!ok && start !== null) {
+        if (!best || i - start > best.n) best = { from: start, n: i - start };
+        start = null;
+      }
+    }
+    if (!best) return null;
+    var lab = function (k) { var m = 360 + k * 30; return Math.floor(m / 60) + ":" + (m % 60 ? "30" : "00"); };
+    var vals = row.slice(best.from, best.from + best.n);
+    return { start: lab(best.from), end: lab(best.from + best.n), mean: vals.reduce(function (a, b) { return a + b; }, 0) / vals.length };
+  }
+
   function popupHtml(f) {
     // What a parent decides on at a glance: is it hot now, can we play in the rain, when is it
     // shadiest, are parking / toilets / chargers close. Everything else is on the park page.
@@ -153,18 +170,19 @@
       : '<span class="pp-pill ' + shadeClass(v) + '">' + t + " 遮陰 " + Math.round(v * 100) + "%</span>";
     var rain = p.rain === true ? '<span class="pp-pill a">下雨可玩</span>'
       : p.rain === "partial" ? '<span class="pp-pill">部分可躲雨</span>' : '<span class="pp-pill">下雨不適合</span>';
-    var best = (p.best || {})[String(month())];
+    var best = bestDaytime((p.timetable || {})[String(month())] || []);
     var tile = function (icon, label, m) {
-      return '<div class="pp-tile"><span>' + icon + "</span>" + label + " <b>" + (m === null || m === undefined ? "—" : m + "m") + "</b></div>";
+      return '<div class="pp-tile"><span>' + icon + "</span>" + label + "<b>" + (m === null || m === undefined ? "—" : m + "m") + "</b></div>";
     };
-    var charge = p.fast_nearest_m !== null ? tile("⚡", "快充", p.fast_nearest_m) : tile("🔌", "慢充", p.slow_nearest_m);
+    var charge = p.fast_nearest_m !== null && p.fast_nearest_m !== undefined ? tile("⚡", "快充", p.fast_nearest_m) : tile("🔌", "慢充", p.slow_nearest_m);
     return '<div class="pp">' +
       '<div class="pp-head"><div><div class="pp-name">' + esc(p.name) + '</div><div class="pp-sub">' + esc(p.district) +
       (p.kind === "park" ? "・遊具待確認" : "") + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
       '<div class="pp-pills">' + shade + rain + "</div>" +
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
-      (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">沒有明顯遮陰時段</span>') + "</div>" +
-      '<div class="pp-grid">' + tile("🅿️", "停車", p.parking_nearest_m) + tile("🚻", "廁所", p.toilet_m) + charge + "</div>" +
+      (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">白天沒有明顯遮陰，避開中午</span>') + "</div>" +
+      '<div class="pp-grid">' + tile("🅿️", "停車", p.parking_nearest_m) + tile("🚻", "廁所", p.toilet_m) +
+      tile("🏪", "超商", p.shop_m) + charge + "</div>" +
       '<div class="pp-btns"><a class="pp-btn primary" href="' + parkHref(p.id) + '">查看詳情</a>' +
       (p.nav ? '<a class="pp-btn" href="' + esc(p.nav) + '" target="_blank" rel="noopener">導航</a>' : "") +
       (p.gmaps ? '<a class="pp-btn" href="' + esc(p.gmaps) + '" target="_blank" rel="noopener">評論</a>' : "") +

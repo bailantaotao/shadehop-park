@@ -55,6 +55,23 @@
   var row = park.slots[month] || [];
   var idx = Math.floor((now.getHours() * 60 + now.getMinutes() - SLOT_START) / SLOT_MIN);
 
+  // Longest run of >= 60% shade between 08:00 and 17:00 (early-morning shade is not worth planning around).
+  function bestDaytime(row) {
+    var best = null, start = null, FIRST = 4, LAST = 22;  // slot 4 = 08:00, slot 22 = 17:00
+    for (var i = FIRST; i <= LAST; i++) {
+      var ok = i < LAST && row[i] !== null && row[i] !== undefined && row[i] >= 0.6;
+      if (ok && start === null) start = i;
+      if (!ok && start !== null) {
+        if (!best || i - start > best.n) best = { from: start, n: i - start };
+        start = null;
+      }
+    }
+    if (!best) return null;
+    var lab = function (k) { var m = 360 + k * 30; return Math.floor(m / 60) + ":" + (m % 60 ? "30" : "00"); };
+    var vals = row.slice(best.from, best.from + best.n);
+    return { start: lab(best.from), end: lab(best.from + best.n), mean: vals.reduce(function (a, b) { return a + b; }, 0) / vals.length };
+  }
+
   function cls(v) { return v === null || v === undefined ? "night" : v >= 0.6 ? "hi" : v >= 0.3 ? "mid" : "lo"; }
   function setStat(id, value, kind) {
     var el = document.getElementById(id);
@@ -75,10 +92,10 @@
     return '<span class="' + cls(x) + (i === idx ? " cur" : "") + '" title="' + label + '"></span>';
   }).join("");
 
-  var best = park.best[month];
+  var best = bestDaytime(row);
   document.getElementById("bestToday").innerHTML = best
-    ? "最陰涼：<b>" + best.start + "–" + best.end + "</b>（平均遮陰 " + Math.round(best.mean * 100) + "%）"
-    : "最陰涼：<span class=\"muted\">這個月沒有明顯的遮陰時段，建議避開中午</span>";
+    ? "白天最陰涼：<b>" + best.start + "–" + best.end + "</b>（平均遮陰 " + Math.round(best.mean * 100) + "%）"
+    : "白天最陰涼：<span class=\"muted\">8–17 點沒有明顯的遮陰時段，建議避開中午、多帶帽子</span>";
 
   // Rain chance and UV for the next 3 hours at this park (Open-Meteo, free, no key).
   var url = "https://api.open-meteo.com/v1/forecast?latitude=" + park.lat.toFixed(3) + "&longitude=" + park.lng.toFixed(3) +

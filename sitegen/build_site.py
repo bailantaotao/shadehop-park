@@ -187,9 +187,12 @@ def build(out: Path = OUT) -> None:
     for p in parks:
         p["google_maps_url"] = google_maps_url(p)
         p["directions_url"] = directions_url(p)
-    # Extra map-popup fields: links, and the nearest toilet's distance (the popup shows it).
+    # Extra map-popup fields: links, and the nearest toilet / convenience store (the popup shows them).
+    def near(p: dict, key: str):
+        a = p["amenities"].get(key) or {}
+        return a.get("distance_m") if a.get("value") else None
     links = {p["id"]: {"gmaps": p["google_maps_url"], "nav": p["directions_url"],
-                       "toilet_m": p["amenities"]["toilet"]["distance_m"] if p["amenities"]["toilet"]["value"] else None}
+                       "toilet_m": near(p, "toilet"), "shop_m": near(p, "convenience_store")}
              for p in parks}
     if out.exists():
         shutil.rmtree(out)

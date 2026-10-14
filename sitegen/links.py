@@ -26,3 +26,11 @@ def directions_url(p: dict) -> str:
     """Google Maps directions to the play area itself (free Maps URL; the coordinates are more exact
     than a name search, which would route to the park's entrance or centre)."""
     return f"https://www.google.com/maps/dir/?api=1&destination={p['location']['lat']},{p['location']['lng']}"
+
+
+def place_url(loc: dict | None) -> str | None:
+    """Google Maps pin at a nearby toilet, shop or station (coordinates: the name alone can match a
+    different branch of the same chain)."""
+    if not loc:
+        return None
+    return f"https://www.google.com/maps/search/?api=1&query={loc['lat']},{loc['lng']}"

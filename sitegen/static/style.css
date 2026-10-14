@@ -195,3 +195,11 @@ footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align:
 .search-results[hidden] { display: none; }
 .search-results li { padding: 9px 12px; cursor: pointer; }
 .search-results li[tabindex]:hover, .search-results li:focus { background: var(--chip); outline: none; }
+
+/* Playground reports */
+.report-equip { border: 0; padding: 0; margin: 12px 0 0; }
+.report-equip legend { padding: 0; margin-bottom: 6px; }
+.report-equip .tag { cursor: pointer; padding: 4px 10px; }
+.report-equip .tag input { margin: 0 2px 0 0; vertical-align: -1px; }
+.pbtn[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, var(--surface)); }
+.pbtn:disabled { opacity: .5; cursor: default; }

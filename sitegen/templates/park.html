@@ -24,7 +24,7 @@
   </div>
   <p class="small muted" id="copyStatus" role="status" aria-live="polite" style="margin:6px 0 0"></p>
   {% if p.indoor is sameas true or p.indoor == "possible" or p.kind == "park" %}
-  <p class="pnote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。{% endif %}</p>
+  <p class="pnote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。去過的話<a href="#report">告訴我們</a>。{% endif %}</p>
   {% endif %}
 </section>
 
@@ -70,6 +70,32 @@
   </ul>
   {% endif %}
   <p class="prov" style="margin-top:8px">公廁：環境部「全國公廁建檔資料」與 OpenStreetMap；便利商店、車站：OpenStreetMap。距離為直線距離。</p>
+</section>
+
+{# 3b. Parents report whether there is a playground (our D1 store + an optional public OSM note) #}
+<section class="pcard" id="report" data-park="{{ p.id }}" data-lat="{{ p.location.lat }}" data-lng="{{ p.location.lng }}"
+         data-name="{{ p.name }}" data-url="{{ site_url }}/parks/{{ p.id }}/" data-sitekey="{{ TURNSTILE_SITE_KEY }}">
+  <h2 class="ptitle">這裡有遊戲場嗎？</h2>
+  <p class="small" id="reportTally" style="margin:0 0 10px">{% if p.kind == "park" %}地圖上還沒有標示這裡的遊具。你去過的話，告訴其他家長吧！{% else %}遊戲場拆了或找不到？也可以告訴我們。{% endif %}</p>
+  {% if TURNSTILE_SITE_KEY %}
+  <form id="reportForm" novalidate>
+    <div class="pbtns" style="grid-template-columns:1fr 1fr;margin-top:0">
+      <button type="button" class="pbtn" data-verdict="yes" aria-pressed="false">👍 有遊戲場</button>
+      <button type="button" class="pbtn" data-verdict="no" aria-pressed="false">👎 沒有遊戲場</button>
+    </div>
+    <fieldset id="reportEquip" class="report-equip" hidden>
+      <legend class="small muted">看到哪些遊具？（可複選）</legend>
+      {% for e in REPORT_EQUIPMENT %}<label class="tag"><input type="checkbox" value="{{ e }}"> {{ e }}</label>{% endfor %}
+      <label class="small" style="display:block;margin-top:8px"><input type="checkbox" id="reportOsm" checked> 同時在 OpenStreetMap 留公開附註，請志工把遊戲場畫上地圖</label>
+    </fieldset>
+    <div id="turnstile" style="margin-top:10px"></div>
+    <button type="submit" class="pbtn primary" id="reportSend" style="margin-top:10px;width:100%" disabled>送出回報</button>
+    <p class="small muted" id="reportStatus" role="status" aria-live="polite" style="margin:8px 0 0"></p>
+  </form>
+  <p class="prov">回報會公開顯示人數，不會顯示你是誰；詳見<a href="{{ root }}terms/#privacy">隱私權</a>。</p>
+  {% else %}
+  <p class="small muted" style="margin:0">回報功能即將開放。</p>
+  {% endif %}
 </section>
 
 {# 4. Getting there #}
@@ -138,4 +164,5 @@
 {% block scripts %}
 <script src="{{ root }}{{ asset('static/favs.js') }}"></script>
 <script src="{{ root }}{{ asset('static/park.js') }}"></script>
+{% if TURNSTILE_SITE_KEY %}<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=shadehopTurnstile" async defer></script>{% endif %}
 {% endblock %}

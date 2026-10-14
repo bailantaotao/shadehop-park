@@ -20,9 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "public"
 SITE_URL = (os.environ.get("SITE_URL") or "https://shadehop-park.pages.dev").rstrip("/")
+# Public Cloudflare Turnstile key for the "is there a playground?" reports; without it the form is hidden.
+TURNSTILE_SITE_KEY = os.environ.get("TURNSTILE_SITE_KEY", "")
+REPORT_EQUIPMENT = ["溜滑梯", "鞦韆", "攀爬架", "沙坑", "搖搖馬", "翹翹板", "戲水區", "體健設施", "其他"]
 
 # Date of the current 使用條款與隱私權 text; change it whenever terms.html changes in substance.
-TERMS_DATE = "2026-10-14"
+TERMS_DATE = "2026-10-15"
 SPEED_LABEL = {"fast": "快充", "slow": "慢充", "both": "快充+慢充", "unknown": "未標示"}
 RAIN_LABEL = {True: "可以（有遮蔽）", "partial": "部分區域有遮蔽", False: "不行（未發現遮蔽）"}
 CONF_LABEL = {"high": "高", "medium": "中", "low": "低"}
@@ -214,7 +217,8 @@ def build(out: Path = OUT) -> None:
         "site_url": SITE_URL, "meta": meta, "today": date.today().isoformat(), "regions": regions,
         "SITE_NAME": SITE_NAME, "COVERAGE_SHORT": "・".join(r["label"] for r in regions),
         "REGISTRY_PUBLISHERS": "、".join(dict.fromkeys(publishers)) or "政府", "OFFICIAL_METHOD_LABEL": OFFICIAL_METHOD_LABEL,
-        "SPEED_LABEL": SPEED_LABEL, "TERMS_DATE": TERMS_DATE, "RAIN_LABEL": RAIN_LABEL, "SURFACE_LABEL": SURFACE_LABEL, "CONF_LABEL": CONF_LABEL,
+        "SPEED_LABEL": SPEED_LABEL, "TERMS_DATE": TERMS_DATE,
+        "TURNSTILE_SITE_KEY": TURNSTILE_SITE_KEY, "REPORT_EQUIPMENT": REPORT_EQUIPMENT, "RAIN_LABEL": RAIN_LABEL, "SURFACE_LABEL": SURFACE_LABEL, "CONF_LABEL": CONF_LABEL,
         "METHOD_LABEL": METHOD_LABEL, "SHADE_TYPE_LABEL": SHADE_TYPE_LABEL, "SLOT_LABELS": SLOT_LABELS,
     }
 
@@ -310,8 +314,8 @@ def build(out: Path = OUT) -> None:
     })
     static_hash = hashlib.sha256(b"".join(f.read_bytes() for f in sorted((ROOT / "sitegen" / "static").rglob("*")) if f.is_file())).hexdigest()[:12]
     (out / "sw.js").write_text((ROOT / "sitegen" / "static" / "sw.js").read_text().replace("__VERSION__", static_hash))
-    # Only /api/weather runs a Pages Function (functions/api/weather.js); everything else stays static.
-    _write_json(out / "_routes.json", {"version": 1, "include": ["/api/weather"], "exclude": []})
+    # Only /api/weather and /api/reports run Pages Functions (functions/api/); everything else stays static.
+    _write_json(out / "_routes.json", {"version": 1, "include": ["/api/weather", "/api/reports"], "exclude": []})
     (out / "_headers").write_text(
         "/api/*\n  Access-Control-Allow-Origin: *\n\n"
         # Vendored libraries live in versioned folders, so browsers can keep them for good.

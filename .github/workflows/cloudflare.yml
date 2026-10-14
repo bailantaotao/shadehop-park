@@ -49,6 +49,7 @@ jobs:
           python -m sitegen.build_site
         env:
           SITE_URL: ${{ vars.SITE_URL || format('https://{0}.pages.dev', vars.CF_PAGES_PROJECT || 'shadehop-park') }}
+          TURNSTILE_SITE_KEY: ${{ vars.TURNSTILE_SITE_KEY }}
       - name: Create Pages project if missing
         if: steps.creds.outputs.ok == 'true'
         run: |
@@ -57,13 +58,18 @@ jobs:
           else
             npx --yes "$WRANGLER" pages project create "$PROJECT" --production-branch "$BRANCH"
           fi
-      - name: Pass the weather key to Pages Functions
+      - name: Pass secrets to Pages Functions (weather key, report Turnstile secret and salt)
         if: steps.creds.outputs.ok == 'true'
         env:
           CWA_API_KEY: ${{ secrets.CWA_API_KEY }}
+          TURNSTILE_SECRET: ${{ secrets.TURNSTILE_SECRET }}
+          REPORT_SALT: ${{ secrets.REPORT_SALT }}
         run: |
-          if [ -z "$CWA_API_KEY" ]; then echo "::warning::CWA_API_KEY not set; /api/weather will answer 503"; exit 0; fi
-          printf '%s' "$CWA_API_KEY" | npx --yes "$WRANGLER" pages secret put CWA_API_KEY --project-name "$PROJECT"
+          for name in CWA_API_KEY TURNSTILE_SECRET REPORT_SALT; do
+            value="${!name}"
+            if [ -z "$value" ]; then echo "::warning::$name not set; the Pages Function that needs it answers 503"; continue; fi
+            printf '%s' "$value" | npx --yes "$WRANGLER" pages secret put "$name" --project-name "$PROJECT"
+          done
       - name: Deploy
         if: steps.creds.outputs.ok == 'true'
         run: npx --yes "$WRANGLER" pages deploy public --project-name "$PROJECT" --branch "$BRANCH" --commit-dirty=true

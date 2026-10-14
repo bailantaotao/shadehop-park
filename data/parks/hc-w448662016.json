@@ -189,14 +189,14 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "97179430-S205",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-15"
   }
  ],
  "daytime_shaded_share": 0.18,
  "geometry_estimated": false,
  "id": "hc-w448662016",
  "indoor": false,
- "kind": "park",
+ "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
@@ -205,7 +205,20 @@
  },
  "name": "綠光公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": null,
+  "distance_m": null,
+  "equipment": null,
+  "facilities": "大型地景磨石子滑梯1座、溜索1座、鳥巢盪鞦韆1座、平衡木吊橋1座",
+  "features": null,
+  "management": "新竹市政府養護工程處",
+  "method": "name_match",
+  "name": "綠光公園",
+  "phone": null,
+  "registry_points": 1,
+  "source": "https://data.gov.tw/dataset/132713",
+  "verified_at": "2026-10-14"
+ },
  "osm": {
   "id": 448662016,
   "type": "way",
@@ -730,10 +743,16 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T22:35:36+08:00",
+   "as_of": "2026-10-15T01:15:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-14T17:21:37+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新竹市政府養護工程處「新竹市兒童遊戲場清冊」",
+   "url": "https://data.gov.tw/dataset/132713"
   }
  ],
  "updated_at": "2026-10-13"

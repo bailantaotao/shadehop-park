@@ -142,7 +142,20 @@
  },
  "name": "三民公園 遊戲場",
  "name_source": "park_name",
- "official": null,
+ "official": {
+  "address": null,
+  "distance_m": null,
+  "equipment": null,
+  "facilities": "複合式溜滑梯1組、磨石子溜滑梯1座、小型盪鞦韆1座、輪胎式座椅盪鞦韆1座",
+  "features": null,
+  "management": "新竹市政府養護工程處",
+  "method": "name_match",
+  "name": "三民公園",
+  "phone": null,
+  "registry_points": 1,
+  "source": "https://data.gov.tw/dataset/132713",
+  "verified_at": "2026-10-14"
+ },
  "osm": {
   "id": 1186481188,
   "type": "way",
@@ -665,6 +678,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-14T17:21:37+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新竹市政府養護工程處「新竹市兒童遊戲場清冊」",
+   "url": "https://data.gov.tw/dataset/132713"
   }
  ],
  "updated_at": "2026-10-13"

@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Hsinchu",
  "count": null,
- "fetched_at": "2026-10-14T15:16:59+00:00",
+ "fetched_at": "2026-10-14T17:25:19+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucity",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-14T22:35:36+08:00",
+ "src_update_time": "2026-10-15T01:15:00+08:00",
  "stations": [
   {
    "charging_points": 1,
@@ -1079,14 +1079,14 @@
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "CCS1",
+     "type": "type1_combo"
     },
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "本站目前共有1樁180kW充電樁以及1樁120kW充電樁",
@@ -2046,5 +2046,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-14T22:35:36+08:00"
+ "update_time": "2026-10-15T01:15:36+08:00"
 }

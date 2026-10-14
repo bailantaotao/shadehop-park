@@ -36,19 +36,19 @@
   "chargers_in_bbox": 1321,
   "chargers_official": 1225,
   "chargers_osm_only": 96,
-  "city_registry_parks": 1209,
+  "city_registry_parks": 1324,
   "convenience_stores": 15113,
   "mapped_playgrounds": 774,
-  "matched_city_registry": 571,
+  "matched_city_registry": 637,
   "official_only": 297,
-  "park_candidates": 2169,
+  "park_candidates": 2125,
   "parking_lots_in_bbox": 14480,
   "parks": 3263,
   "stations": 522,
   "toilets_official": 5704
  },
  "coverage": "新北市、臺北市、桃園市、新竹市、新竹縣",
- "fetched_at": "2026-10-14T15:13:47+00:00",
+ "fetched_at": "2026-10-14T17:22:35+00:00",
  "generated_from_osm_base": "2026-10-13T20:21:31Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
@@ -74,15 +74,252 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T15:16:59+00:00",
+    "fetched_at": "2026-10-14T17:25:19+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-14T22:35:36+08:00",
+    "src_update_time": "2026-10-15T01:15:00+08:00",
     "title": "充電站之基本資料"
    },
-   "city_registry": null,
-   "city_registry_not_in_osm": [],
+   "city_registry": {
+    "entries": 115,
+    "fetched_at": "2026-10-14T17:21:37+00:00",
+    "kind": "parks",
+    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+    "publisher": "新竹市政府養護工程處",
+    "source": "https://data.gov.tw/dataset/132713",
+    "title": "新竹市兒童遊戲場清冊"
+   },
+   "city_registry_not_in_osm": [
+    {
+     "address": null,
+     "name": "北新公園"
+    },
+    {
+     "address": null,
+     "name": "南勢重劃公園"
+    },
+    {
+     "address": null,
+     "name": "古賢公園"
+    },
+    {
+     "address": null,
+     "name": "台溪公園"
+    },
+    {
+     "address": null,
+     "name": "吉羊公園"
+    },
+    {
+     "address": null,
+     "name": "客雅體健公園"
+    },
+    {
+     "address": null,
+     "name": "成功路小公園"
+    },
+    {
+     "address": null,
+     "name": "新竹左岸"
+    },
+    {
+     "address": null,
+     "name": "武陵櫻花公園"
+    },
+    {
+     "address": null,
+     "name": "湳雅河濱公園"
+    },
+    {
+     "address": null,
+     "name": "福林重劃公園"
+    },
+    {
+     "address": null,
+     "name": "親水公園"
+    },
+    {
+     "address": null,
+     "name": "金雅重劃區兒1"
+    },
+    {
+     "address": null,
+     "name": "金雅重劃區兒2"
+    },
+    {
+     "address": null,
+     "name": "金雅重劃區滯洪池1"
+    },
+    {
+     "address": null,
+     "name": "三民路園道"
+    },
+    {
+     "address": null,
+     "name": "光復文化公園"
+    },
+    {
+     "address": null,
+     "name": "十八尖山森林公園"
+    },
+    {
+     "address": null,
+     "name": "取水口公園"
+    },
+    {
+     "address": null,
+     "name": "天坡府媽祖廟旁公園"
+    },
+    {
+     "address": null,
+     "name": "文化公園"
+    },
+    {
+     "address": null,
+     "name": "新竹公園"
+    },
+    {
+     "address": null,
+     "name": "新竹大砂坑公園"
+    },
+    {
+     "address": null,
+     "name": "新興公園"
+    },
+    {
+     "address": null,
+     "name": "東山濕地生態教學公園"
+    },
+    {
+     "address": null,
+     "name": "楓香大道"
+    },
+    {
+     "address": null,
+     "name": "火車站前廣場"
+    },
+    {
+     "address": null,
+     "name": "科園里兒童公園"
+    },
+    {
+     "address": null,
+     "name": "科園里愛民公園"
+    },
+    {
+     "address": null,
+     "name": "經國路園道"
+    },
+    {
+     "address": null,
+     "name": "綠水里市有公園"
+    },
+    {
+     "address": null,
+     "name": "金山六街旁公園"
+    },
+    {
+     "address": null,
+     "name": "金山東街旁公園"
+    },
+    {
+     "address": null,
+     "name": "金山櫻花公園"
+    },
+    {
+     "address": null,
+     "name": "長青公園"
+    },
+    {
+     "address": null,
+     "name": "關東里公兒四公園"
+    },
+    {
+     "address": null,
+     "name": "集福公園"
+    },
+    {
+     "address": null,
+     "name": "青草湖風景區"
+    },
+    {
+     "address": null,
+     "name": "高峰公25公園"
+    },
+    {
+     "address": null,
+     "name": "高峰植物園"
+    },
+    {
+     "address": null,
+     "name": "高翠公園"
+    },
+    {
+     "address": null,
+     "name": "中埔兒三綠地"
+    },
+    {
+     "address": null,
+     "name": "二二八紀念公園"
+    },
+    {
+     "address": null,
+     "name": "南十八尖山"
+    },
+    {
+     "address": null,
+     "name": "南港賞鳥公園"
+    },
+    {
+     "address": null,
+     "name": "埔前公園"
+    },
+    {
+     "address": null,
+     "name": "海山運動公園"
+    },
+    {
+     "address": null,
+     "name": "浸水富麗公園"
+    },
+    {
+     "address": null,
+     "name": "港南小公園"
+    },
+    {
+     "address": null,
+     "name": "港南運河公園"
+    },
+    {
+     "address": null,
+     "name": "看海公園"
+    },
+    {
+     "address": null,
+     "name": "羌仔埔綠地"
+    },
+    {
+     "address": null,
+     "name": "華北景觀公園"
+    },
+    {
+     "address": null,
+     "name": "長興公園"
+    },
+    {
+     "address": null,
+     "name": "香山公園"
+    },
+    {
+     "address": null,
+     "name": "鹽水圖書館旁公園"
+    },
+    {
+     "address": null,
+     "name": "鹽水小公園"
+    }
+   ],
    "counts": {
     "buildings_in_bbox": 12486,
     "buildings_with_height": 1548,
@@ -95,12 +332,12 @@
     "chargers_in_bbox": 74,
     "chargers_official": 67,
     "chargers_osm_only": 7,
-    "city_registry_parks": null,
+    "city_registry_parks": 115,
     "convenience_stores": 635,
     "mapped_playgrounds": 59,
-    "matched_city_registry": 0,
+    "matched_city_registry": 66,
     "official_only": 0,
-    "park_candidates": 212,
+    "park_candidates": 168,
     "parking_lots_in_bbox": 969,
     "parks": 271,
     "stations": 12,
@@ -117,7 +354,7 @@
     "university": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T15:13:47+00:00",
+   "fetched_at": "2026-10-14T17:22:35+00:00",
    "generated_from_osm_base": "2026-10-13T20:21:31Z",
    "region": {
     "city": "新竹市",
@@ -143,11 +380,11 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T15:16:59+00:00",
+    "fetched_at": "2026-10-14T17:25:19+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-14T20:35:36+08:00",
+    "src_update_time": "2026-10-15T00:55:36+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": null,
@@ -190,7 +427,7 @@
     "university": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T15:13:47+00:00",
+   "fetched_at": "2026-10-14T17:22:35+00:00",
    "generated_from_osm_base": "2026-10-13T20:21:31Z",
    "region": {
     "city": "新竹縣",
@@ -215,16 +452,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T15:16:59+00:00",
+    "fetched_at": "2026-10-14T17:25:19+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-14T22:15:36+08:00",
+    "src_update_time": "2026-10-15T00:55:37+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 635,
-    "fetched_at": "2026-10-14T15:15:54+00:00",
+    "fetched_at": "2026-10-14T17:24:13+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "新北市政府農業局",
@@ -1418,7 +1655,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T15:13:47+00:00",
+   "fetched_at": "2026-10-14T17:22:35+00:00",
    "generated_from_osm_base": "2026-10-13T20:21:31Z",
    "region": {
     "city": "新北市",
@@ -1447,16 +1684,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T15:16:59+00:00",
+    "fetched_at": "2026-10-14T17:25:19+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-14T12:00:00+08:00",
+    "src_update_time": "2026-10-14T23:55:29+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 520,
-    "fetched_at": "2026-10-14T15:15:56+00:00",
+    "fetched_at": "2026-10-14T17:24:15+00:00",
     "kind": "playgrounds",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "臺北市政府工務局公園路燈工程管理處",
@@ -1519,7 +1756,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T15:13:47+00:00",
+   "fetched_at": "2026-10-14T17:22:35+00:00",
    "generated_from_osm_base": "2026-10-13T20:21:31Z",
    "region": {
     "city": "臺北市",
@@ -1545,16 +1782,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T15:16:59+00:00",
+    "fetched_at": "2026-10-14T17:25:19+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-14T22:55:36+08:00",
+    "src_update_time": "2026-10-15T01:15:36+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 54,
-    "fetched_at": "2026-10-14T15:15:57+00:00",
+    "fetched_at": "2026-10-14T17:24:16+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "桃園市政府工務局",
@@ -1667,7 +1904,7 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T15:13:47+00:00",
+   "fetched_at": "2026-10-14T17:22:35+00:00",
    "generated_from_osm_base": "2026-10-13T20:21:31Z",
    "region": {
     "city": "桃園市",

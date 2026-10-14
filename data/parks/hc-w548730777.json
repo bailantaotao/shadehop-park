@@ -157,7 +157,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "97179430-S207",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-15"
   },
   {
    "access": null,
@@ -209,14 +209,14 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "97179430-S131",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-15"
   }
  ],
  "daytime_shaded_share": 0.0,
  "geometry_estimated": false,
  "id": "hc-w548730777",
  "indoor": false,
- "kind": "park",
+ "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
@@ -225,7 +225,20 @@
  },
  "name": "福林公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": null,
+  "distance_m": null,
+  "equipment": null,
+  "facilities": "組合遊具組溜滑梯1組、搖搖馬4組",
+  "features": null,
+  "management": "新竹市政府養護工程處",
+  "method": "name_match",
+  "name": "福林公園",
+  "phone": null,
+  "registry_points": 1,
+  "source": "https://data.gov.tw/dataset/132713",
+  "verified_at": "2026-10-14"
+ },
  "osm": {
   "id": 548730777,
   "type": "way",
@@ -750,10 +763,16 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T22:35:36+08:00",
+   "as_of": "2026-10-15T01:15:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-14T17:21:37+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新竹市政府養護工程處「新竹市兒童遊戲場清冊」",
+   "url": "https://data.gov.tw/dataset/132713"
   }
  ],
  "updated_at": "2026-10-13"

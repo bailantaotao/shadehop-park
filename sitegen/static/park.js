@@ -134,8 +134,34 @@
     if (s.no) parts.push("👎 " + s.no + " 位回報沒有");
     tally.textContent = parts.join("；");
   }
+  // Same rule as the map: two or more parents, and more of them say yes than no (or the reverse).
+  var MIN_REPORTS = 2;
+  function showConsensus(s) {
+    if (!s) return;
+    var note = document.getElementById("parkNote"), item = document.getElementById("reportedEquip");
+    if (s.yes >= MIN_REPORTS && s.yes > s.no) {
+      if (note) note.textContent = s.yes + " 位家長回報這裡有遊戲場（地圖資料還沒標示，請以現場為準）。";
+      var eq = Object.keys(s.equipment || {}).filter(function (k) { return k !== "其他"; })
+        .sort(function (a, b) { return s.equipment[b] - s.equipment[a]; });
+      if (item && eq.length) {
+        var box = item.lastElementChild;
+        box.textContent = "家長回報的遊具：";
+        eq.forEach(function (k) {
+          var tag = document.createElement("span");
+          tag.className = "tag";
+          tag.textContent = k + (s.equipment[k] > 1 ? " " + s.equipment[k] : "");
+          box.appendChild(tag);
+        });
+        item.hidden = false;
+        var empty = document.getElementById("infoEmpty");
+        if (empty) empty.hidden = true;
+      }
+    } else if (s.no >= MIN_REPORTS && s.no > s.yes && note) {
+      note.textContent = s.no + " 位家長回報這裡沒有遊戲場。";
+    }
+  }
   fetch(root + "api/reports").then(function (r) { return r.ok ? r.json() : {}; })
-    .then(function (all) { showTally(all[parkId]); }).catch(function () {});
+    .then(function (all) { showTally(all[parkId]); showConsensus(all[parkId]); }).catch(function () {});
 
   var form = document.getElementById("reportForm");
   if (!form) return;

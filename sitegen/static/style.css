@@ -192,6 +192,7 @@ footer p { margin: 0 0 4px; }
 .pstat.night, .pp-pill.night { background: var(--chip); opacity: 1; }  /* not the faded map "night" dot */
 .plist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .plist li { display: flex; gap: 8px; align-items: flex-start; }
+.plist li[hidden] { display: none; }
 .pico { width: 1.4em; flex: none; text-align: center; }
 .tag { display: inline-block; font-size: .82rem; padding: 1px 8px; margin: 2px 4px 2px 0; border-radius: 999px; background: var(--chip); }
 .pmore { margin-top: 10px; }

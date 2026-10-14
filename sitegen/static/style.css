@@ -252,7 +252,9 @@ footer p { margin: 0 0 4px; }
 .pstat.lo, .pp-pill.lo { background: color-mix(in srgb, var(--lo) 18%, var(--surface)); }
 .pstat.night, .pp-pill.night { background: var(--chip); opacity: 1; }
 .pstat.weak, .pp-pill.weak, .badge.v-weak { background: color-mix(in srgb, var(--weak) 22%, var(--surface)); }
-.dot.weak { background: var(--weak); }  /* not the faded map "night" dot */
+.dot.weak, .timeline span.weak { background: var(--weak); }
+.pp-alt { font-size: 13px; margin: -2px 0 8px; display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.pp-alt .i { color: var(--accent); }  /* not the faded map "night" dot */
 .plist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .plist li { display: flex; gap: 8px; align-items: flex-start; }
 .plist li[hidden] { display: none; }

@@ -183,6 +183,26 @@
              mean: vals.reduce(function (a, b) { return a + b; }, 0) / vals.length };
   }
 
+  // For a 太曬 park: the nearest confirmed playground within 1.5 km that is shaded (or rain-proof) at
+  // the selected time, and the first half-hour later today (08-17) when this park itself is shaded.
+  function sunnyAlternatives(f) {
+    var alt = null, altD = 1500;
+    state.features.forEach(function (g) {
+      if (g === f || unsure(g.properties)) return;
+      var vg = shadeAt(g);
+      if (!(g.properties.rain === true || (vg !== null && vg !== undefined && vg >= 0.6))) return;
+      var d = distM(f.geometry.coordinates, g.geometry.coordinates);
+      if (d < altD) { altD = d; alt = g; }
+    });
+    var row = f.properties.timetable[String(month())] || [], later = -1;
+    for (var i = Math.max(state.slot + 1, 4); i < 22 && later < 0; i++) if (row[i] !== null && row[i] >= 0.6) later = i;
+    var out = "";
+    if (later >= 0) out += '<div class="pp-alt">' + I("sun") + slotLabel(later) + ' 後這裡會變陰涼 <button type="button" class="link" data-jump="' + later + '">跳到 ' + slotLabel(later) + "</button></div>";
+    if (alt) out += '<div class="pp-alt">' + I("trees") + '附近較陰涼：<button type="button" class="link" data-goto="' + esc(alt.properties.id) + '">' +
+      esc(alt.properties.name) + "</button> " + Math.round(altD) + "m</div>";
+    return out;
+  }
+
   function popupHtml(f) {
     // What a parent decides on at a glance: is it hot now, can we play in the rain, when is it
     // shadiest, are parking / toilets / chargers close. Everything else is on the park page.
@@ -206,6 +226,7 @@
       '<div class="pp-pills">' + shade + rain + "</div>" +
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
       (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">8–17 點沒有明顯遮陰時段，避開中午</span>') + "</div>" +
+      (vd.cls === "lo" ? sunnyAlternatives(f) : "") +
       '<div class="pp-grid">' + tile(I("parking"), "停車", p.parking_nearest_m, p.parking_url) + tile(I("toilet"), "廁所", p.toilet_m, p.toilet_url) +
       tile(I("store"), "超商", p.shop_m, p.shop_url) + charge + "</div>" +
       '<div class="pp-btns"><a class="pp-btn primary" href="' + parkHref(p.id) + '">查看詳情</a>' +
@@ -217,9 +238,10 @@
   // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right), and never
   // wider than the map: on a 375px phone 280px plus that padding would push the close button off.
   function popupOptions() {
-    var w = map.getSize().x, narrow = w < 420, max = Math.min(280, w - (narrow ? 64 : 100));
+    // The popup box is about 31px wider than its content; 56px on the left clears the zoom/locate buttons.
+    var w = map.getSize().x, max = Math.min(280, w - 100);
     return { className: "park-pop", minWidth: Math.min(240, max), maxWidth: max,
-      autoPanPaddingTopLeft: L.point(narrow ? 8 : 52, 70), autoPanPaddingBottomRight: L.point(8, 24) };
+      autoPanPaddingTopLeft: L.point(56, 70), autoPanPaddingBottomRight: L.point(8, 24) };
   }
 
   function drawMarkers() {
@@ -375,7 +397,8 @@
     var p = f.properties, v = shadeAt(f), row = p.timetable[String(month())] || [];
     var best = bestDaytime(row);
     var cells = row.map(function (x, i) {
-      return '<span class="' + shadeClass(x) + (i === state.slot ? " cur" : "") + '" title="' + slotLabel(i) + " " + (x === null ? "無日照" : Math.round(x * 100) + "%") + '"></span>';
+      var vx = window.ShadeHopVerdict(x, i);
+      return '<span class="' + vx.cls + (i === state.slot ? " cur" : "") + '" title="' + slotLabel(i) + " " + vx.text + '"></span>';
     }).join("");
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">' + I("umbrella") + "下雨可玩</span>", B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
@@ -408,7 +431,7 @@
       return rb - ra || cb - ca || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
     $("#count").textContent = filters.fav ? "我的最愛（" + fs.length + "）"
-      : "這個範圍有 " + fs.length + " 座公園（" + state.date.slice(5).replace("-", "/") + " " + slotLabel(state.slot) + "）";
+      : (fs.length ? "這個範圍有 " + fs.length + " 座公園" : "這個範圍沒有符合的公園") + "（" + state.date.slice(5).replace("-", "/") + " " + slotLabel(state.slot) + "）";
     var html = fs.slice(0, LIST_MAX).map(card).join("");
     if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
     if (!fs.length && filters.fav) {
@@ -677,8 +700,12 @@
     var m = markers[id];
     if (!m) return;
     state.selected = id;
-    map.setView(m.getLatLng(), Math.max(map.getZoom(), 17));
-    m.openPopup();
+    // Open the popup once the map has stopped moving: Leaflet skips its auto-pan during a zoom
+    // animation, which left the popup under the zoom/locate buttons on phones.
+    var open = function () { if (markers[id]) markers[id].openPopup(); };
+    var z = Math.max(map.getZoom(), 17), ll = m.getLatLng();
+    if (map.getZoom() === z && map.getCenter().distanceTo(ll) < 1) open();
+    else { map.once("moveend", open); map.setView(ll, z); }
     var box = document.getElementById("map").getBoundingClientRect();
     if (box.top < 0 || box.bottom > window.innerHeight) document.getElementById("map").scrollIntoView({ behavior: "smooth" });
     render(true);
@@ -793,6 +820,14 @@
 
   // Leaflet popups stop click propagation, so stars inside them need their own handler.
   map.on("popupopen", function (e) {
+    e.popup.getElement().querySelectorAll("[data-goto]").forEach(function (b) {
+      b.addEventListener("click", function (ev) { ev.preventDefault(); focusPark(b.dataset.goto); });
+    });
+    e.popup.getElement().querySelectorAll("[data-jump]").forEach(function (b) {
+      b.addEventListener("click", function (ev) {
+        ev.preventDefault(); state.slot = Number(b.dataset.jump); $("#slot").value = state.slot; nowNote(""); render();
+      });
+    });
     e.popup.getElement().querySelectorAll("[data-fav]").forEach(function (b) {
       b.addEventListener("click", function (ev) { ev.preventDefault(); Favs.toggle(b.dataset.fav); });
     });

@@ -39,6 +39,7 @@
   <p class="small muted tl-cap">今天的遮陰（06:00–18:00，每半小時）</p>
   <div class="timeline" id="todayBar" role="img" aria-label="今天每半小時的遮陰"></div>
   <div class="tl-axis"><span>6</span><span>9</span><span>12</span><span>15</span><span>18</span></div>
+  <p class="legend mt-4" aria-hidden="true"><span><span class="dot hi"></span>適合</span><span><span class="dot mid"></span>還可以</span><span><span class="dot lo"></span>太曬</span><span><span class="dot weak"></span>陽光弱（8 點前、17 點後）</span></p>
   <p class="mt-10" id="bestToday">最陰涼：<span class="muted">—</span></p>
   <p class="mt-4">下雨：<b>{{ {True: "有遮蔽，下雨可玩", "partial": "部分區域可躲雨", False: "沒有遮蔽處"}[p.rain_cover.value] }}</b></p>
   <p class="small muted mt-8" id="nowNote">遮陰是依建物、高架與太陽位置推算的估計值。</p>

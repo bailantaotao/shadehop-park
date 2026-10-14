@@ -16,6 +16,8 @@ const DATASETS = {
   "臺北市": ["F-D0047-061", "F-D0047-063"],
   "新北市": ["F-D0047-069", "F-D0047-071"],
   "桃園市": ["F-D0047-005", "F-D0047-007"],
+  "新竹縣": ["F-D0047-009", "F-D0047-011"],
+  "新竹市": ["F-D0047-053", "F-D0047-055"],
 };
 const API = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/";
 const CACHE_S = 1800;

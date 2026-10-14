@@ -70,6 +70,44 @@ REGIONS = {
         "park_candidates": True,
         "fetch_tiles": 4,
     },
+    "hsinchucity": {
+        "id": "hsinchucity",
+        "id_prefix": "hc",
+        "name": "新竹市",
+        "city": "新竹市",
+        "city_en": "Hsinchu City",
+        "name_en": "Hsinchu City",
+        "label": "新竹市",
+        "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="新竹市"]',
+        "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="7"]',
+        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "新竹市"},
+        "osm_district_level": "7",
+        "tdx_city": "Hsinchu",
+        "moenv_county": "10018",  # 環境部公廁資料的縣市代碼
+        # Official playground list: names, districts and equipment, no coordinates.
+        "registry": "hsinchu_playgrounds",
+        "park_candidates": True,
+        "fetch_tiles": 2,
+    },
+    "hsinchucounty": {
+        "id": "hsinchucounty",
+        "id_prefix": "hcy",
+        "name": "新竹縣",
+        "city": "新竹縣",
+        "city_en": "Hsinchu County",
+        "name_en": "Hsinchu County",
+        "label": "新竹縣",
+        "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="新竹縣"]',
+        # Townships (鄉鎮市) are admin_level 8 in OSM here, not 7 as in the special municipalities.
+        "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="8"]',
+        "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "新竹縣"},
+        "osm_district_level": "8",
+        "tdx_city": "HsinchuCounty",
+        "moenv_county": "10004",  # 環境部公廁資料的縣市代碼
+        # No official playground list found on data.gov.tw: OSM only.
+        "park_candidates": True,
+        "fetch_tiles": 4,
+    },
 }
 DEFAULT_REGION = "newtaipei"
 

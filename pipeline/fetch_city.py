@@ -18,8 +18,10 @@ import io
 import json
 import re
 import sys
+import tempfile
 from datetime import datetime, timezone
 from functools import lru_cache
+from pathlib import Path
 
 import requests
 
@@ -174,7 +176,51 @@ def taoyuan_parks(region: dict) -> dict:
     }
 
 
-FETCHERS = {"ntpc_parks": ntpc_parks, "taipei_playgrounds": taipei_playgrounds, "taoyuan_parks": taoyuan_parks}
+HSINCHU_PLAYGROUNDS_URL = "https://odws.hccg.gov.tw/001/Upload/25/opendataback/9059/571/b02a5f4e-09d4-4b98-bdca-3b47f4ecf7ad.json"
+# odws.hccg.gov.tw does not send its intermediate certificate; add it to certifi's roots (still verified).
+TWCA_INTERMEDIATE = Path(__file__).parent / "certs" / "twca_ssl_2023.pem"
+
+
+@lru_cache(maxsize=1)
+def _ca_bundle_with_twca() -> str:
+    import certifi
+
+    path = Path(tempfile.gettempdir()) / "shadehop-ca-bundle.pem"
+    path.write_text(Path(certifi.where()).read_text() + "\n" + TWCA_INTERMEDIATE.read_text())
+    return str(path)
+
+
+def hsinchu_playgrounds(region: dict) -> dict:
+    r = requests.get(HSINCHU_PLAYGROUNDS_URL, headers={"User-Agent": UA}, timeout=60, verify=_ca_bundle_with_twca())
+    r.raise_for_status()
+    entries: dict[str, dict] = {}
+    for row in json.loads(r.content.decode("utf-8-sig")):
+        name = (row.get("公園") or "").strip()
+        if not name:
+            continue
+        district = (row.get("行政區") or "").strip().removesuffix("公所") or None  # one row says 香山區公所
+        facilities = (row.get("設施內容") or "").strip()
+        has_equipment = bool(facilities) and facilities != "無"
+        ref = f"{district}/{name}"
+        e = entries.setdefault(ref, {
+            "ref": ref, "name": name, "district": district, "address": None,
+            "management": "新竹市政府養護工程處", "phone": None, "lat": None, "lng": None, "equipment": None,
+            "facilities": None, "features": None, "playground": False,
+        })
+        if has_equipment:
+            e["facilities"] = "、".join(x for x in (e["facilities"], facilities) if x)
+            e["playground"] = True
+    return {
+        "kind": "parks",
+        "source": "https://data.gov.tw/dataset/132713",
+        "publisher": "新竹市政府養護工程處",
+        "title": "新竹市兒童遊戲場清冊",
+        "entries": sorted(entries.values(), key=lambda e: e["ref"]),
+    }
+
+
+FETCHERS = {"ntpc_parks": ntpc_parks, "taipei_playgrounds": taipei_playgrounds, "taoyuan_parks": taoyuan_parks,
+            "hsinchu_playgrounds": hsinchu_playgrounds}
 
 
 def fetch_region(region: dict) -> None:

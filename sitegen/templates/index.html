@@ -10,6 +10,11 @@
 {% endblock %}
 {% block main %}
 <div class="controls" aria-label="篩選">
+  <div class="search" role="search">
+    <input type="search" id="search" placeholder="搜尋公園名稱或行政區，例如：木柵、林口" autocomplete="off"
+           aria-label="搜尋公園" aria-controls="searchResults" aria-expanded="false">
+    <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+  </div>
   <div class="timebar">
     <label for="date">日期</label>
     <input type="date" id="date">
@@ -21,6 +26,7 @@
   </div>
   <div class="chips" role="group" aria-label="條件">
     <button class="chip" data-filter="fav" aria-pressed="false">⭐ 我的最愛</button>
+    <button class="chip" data-filter="confirmed" aria-pressed="false" title="隱藏遊具還沒確認的公園">🛝 確定有遊戲場</button>
     <button class="chip" data-filter="rain" aria-pressed="false">☔ 下雨可玩</button>
     <button class="chip" data-filter="shade" aria-pressed="false">🌳 此時段有遮陰</button>
     <button class="chip" data-filter="parking" aria-pressed="false">🅿️ 停車 ≤ 300m</button>
@@ -38,6 +44,7 @@
   <span><span class="dot mid"></span>30–60%</span>
   <span><span class="dot lo"></span>&lt; 30%</span>
   <span><span class="dot night"></span>日出前/日落後</span>
+  <span><span class="dot unconfirmed"></span>小淡點：公園，遊具待確認</span>
   <span><span class="dot shadow"></span>此時建物陰影（放大地圖後顯示）</span>
   <span><span class="chg fast inline"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg></span>快充站（DC，含快慢充都有）</span>
   <span><span class="chg slow inline"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="#fff" stroke-width="2.4" paint-order="stroke" stroke-linejoin="round" d="M16 7V3h-2v4h-4V3H8v4H6v7.5L9.5 18v3h5v-3l3.5-3.5V7z"/></svg></span>慢充站（AC）</span>
@@ -45,7 +52,13 @@
   <span>（地圖右上角 ⚡ 按鈕可開關充電站）</span>
 </div>
 
-<h2 id="count" style="margin-top:18px">公園</h2>
+<div class="listbar">
+  <h2 id="count">公園</h2>
+  <div class="chips" role="group" aria-label="排序">
+    <button class="chip" data-sort="shade" aria-pressed="true">遮陰優先</button>
+    <button class="chip" data-sort="near" aria-pressed="false">📍 離我最近</button>
+  </div>
+</div>
 <div class="list" id="list"></div>
 
 <noscript>

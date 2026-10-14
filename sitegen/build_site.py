@@ -295,6 +295,21 @@ def build(out: Path = OUT) -> None:
         f"/parks/{old}-* /parks/{new}-:splat 301\n/api/parks/{old}-* /api/parks/{new}-:splat 301\n" for old, new in moves))
     # Cloudflare Pages headers: let browser-based agents fetch the JSON, and serve
     # GeoJSON / llms.txt with explicit types.
+    # Installable web app: manifest at the root, service worker at the root (so its scope is the
+    # whole site), its cache name tied to the static files so a deploy replaces old copies.
+    _write_json(out / "manifest.webmanifest", {
+        "name": SITE_NAME, "short_name": "遮陽公園", "lang": "zh-Hant-TW",
+        "description": "找遮陽、下雨也能玩的兒童遊戲場，附近停車、公廁與充電站。",
+        "start_url": "./", "scope": "./", "display": "standalone",
+        "background_color": "#f7f7f4", "theme_color": "#1f6f5c",
+        "icons": [
+            {"src": "static/icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+            {"src": "static/icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+            {"src": "static/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"},
+        ],
+    })
+    static_hash = hashlib.sha256(b"".join(f.read_bytes() for f in sorted((ROOT / "sitegen" / "static").rglob("*")) if f.is_file())).hexdigest()[:12]
+    (out / "sw.js").write_text((ROOT / "sitegen" / "static" / "sw.js").read_text().replace("__VERSION__", static_hash))
     # Only /api/weather runs a Pages Function (functions/api/weather.js); everything else stays static.
     _write_json(out / "_routes.json", {"version": 1, "include": ["/api/weather"], "exclude": []})
     (out / "_headers").write_text(
@@ -303,6 +318,8 @@ def build(out: Path = OUT) -> None:
         "/static/vendor/*\n  Cache-Control: public, max-age=31536000, immutable\n\n"
         "/openapi.json\n  Access-Control-Allow-Origin: *\n\n"
         "/api/*.geojson\n  Content-Type: application/geo+json; charset=utf-8\n\n"
+        "/sw.js\n  Cache-Control: no-cache\n\n"
+        "/manifest.webmanifest\n  Content-Type: application/manifest+json; charset=utf-8\n\n"
         "/llms.txt\n  Content-Type: text/plain; charset=utf-8\n\n"
         "/llms-full.txt\n  Content-Type: text/plain; charset=utf-8\n"
     )

@@ -92,7 +92,8 @@ table.heat th { padding: 2px 4px; color: var(--muted); font-weight: 500; }
 section { margin: 22px 0; }
 h2 { font-size: 1.1rem; }
 .prov { font-size: .82rem; color: var(--muted); }
-footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align: center; }
+footer { padding: 20px 16px 28px; color: var(--muted); font-size: .78rem; line-height: 1.6; text-align: center; }
+footer p { margin: 0 0 4px; }
 /* Phones: the map comes first - compact header and controls, one swipeable row of filters, a taller map. */
 @media (max-width: 600px) {
   header.top { padding: 8px 12px; gap: 8px; align-items: center; flex-wrap: nowrap; }

@@ -175,7 +175,8 @@
     if (!best) return null;
     var lab = function (k) { var m = 360 + k * 30; return Math.floor(m / 60) + ":" + (m % 60 ? "30" : "00"); };
     var vals = row.slice(best.from, best.from + best.n);
-    return { start: lab(best.from), end: lab(best.from + best.n), mean: vals.reduce(function (a, b) { return a + b; }, 0) / vals.length };
+    return { start: lab(best.from), end: lab(best.from + best.n), start_slot: best.from,
+             mean: vals.reduce(function (a, b) { return a + b; }, 0) / vals.length };
   }
 
   function popupHtml(f) {
@@ -359,7 +360,7 @@
 
   function card(f) {
     var p = f.properties, v = shadeAt(f), row = p.timetable[String(month())] || [];
-    var best = p.best && p.best[String(month())];
+    var best = bestDaytime(row);
     var cells = row.map(function (x, i) {
       return '<span class="' + shadeClass(x) + (i === state.slot ? " cur" : "") + '" title="' + slotLabel(i) + " " + (x === null ? "無日照" : Math.round(x * 100) + "%") + '"></span>';
     }).join("");
@@ -369,7 +370,7 @@
       '<div class="badges">' + levelBadge + (reportNote(p) ? '<span class="badge">' + reportNote(p).slice(1) + "</span>" : unsure(p) ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +
-      (best ? '<span>最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>本月沒有明顯遮陰時段</span>") +
+      (best ? '<span>白天最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>白天沒有明顯遮陰時段</span>") +
       "<span>🅿️ " + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : "800m 內未標示停車場") + "</span>" +
       "<span>⚡ 快充 " + (p.fast_nearest_m !== null ? p.fast_nearest_m + "m" : CHARGER_R + "m 內無") + " · 🔌 慢充 " + (p.slow_nearest_m !== null ? p.slow_nearest_m + "m" : CHARGER_R + "m 內無") + "</span>" +
       '<span class="small">' + dist.replace(/^ · /, "") + "</span>" +
@@ -392,8 +393,7 @@
       // Rain-proof first, then confirmed playgrounds before parks whose equipment is unsure, then shade now.
       return rb - ra || cb - ca || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
-    $("#count").textContent = (filters.fav ? "我的最愛（" : "地圖範圍內的公園（") + fs.length + "）· " + month() + " 月 " + slotLabel(state.slot) +
-      (near ? " · 離你最近的在前面" : "");
+    $("#count").textContent = filters.fav ? "我的最愛（" + fs.length + "）" : "這個範圍有 " + fs.length + " 座公園";
     var html = fs.slice(0, LIST_MAX).map(card).join("");
     if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
     if (!fs.length && filters.fav) {

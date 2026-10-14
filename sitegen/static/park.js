@@ -119,7 +119,8 @@
   "use strict";
   var box = document.getElementById("report");
   if (!box) return;
-  var parkId = box.dataset.park, tally = document.getElementById("reportTally");
+  var parkId = box.dataset.park, tally = document.getElementById("reportTally"), I = window.ShadeHopIcon;
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   var root = (document.querySelector('link[rel="manifest"]') || {}).getAttribute
     ? document.querySelector('link[rel="manifest"]').getAttribute("href").replace("manifest.webmanifest", "") : "/";
 
@@ -129,10 +130,10 @@
     if (s.yes) {
       var eq = Object.keys(s.equipment || {}).sort(function (a, b) { return s.equipment[b] - s.equipment[a]; })
         .map(function (k) { return k + " " + s.equipment[k]; });
-      parts.push("👍 " + s.yes + " 位家長回報有遊戲場" + (eq.length ? "（" + eq.join("、") + "）" : ""));
+      parts.push(I("thumb-up") + esc(s.yes + " 位家長回報有遊戲場" + (eq.length ? "（" + eq.join("、") + "）" : "")));
     }
-    if (s.no) parts.push("👎 " + s.no + " 位回報沒有");
-    tally.textContent = parts.join("；");
+    if (s.no) parts.push(I("thumb-down") + esc(s.no + " 位回報沒有"));
+    tally.innerHTML = parts.join("；");
   }
   // Same rule as the map: two or more parents, and more of them say yes than no (or the reverse).
   var MIN_REPORTS = 2;

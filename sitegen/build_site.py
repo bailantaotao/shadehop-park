@@ -12,7 +12,8 @@ import shutil
 from datetime import date
 from pathlib import Path
 
-from jinja2 import Environment, FileSystemLoader, select_autoescape
+from jinja2 import Environment, FileSystemLoader, pass_context, select_autoescape
+from markupsafe import Markup
 
 from .links import directions_url, google_maps_url, place_url
 
@@ -223,6 +224,13 @@ def build(out: Path = OUT) -> None:
         digest = hashlib.sha256((ROOT / "sitegen" / path).read_bytes()).hexdigest()[:10]
         return f"{path}?v={digest}"
     env.globals["asset"] = asset
+
+    # One icon family (Tabler, static/icons.svg) instead of emoji, which differ per phone.
+    @pass_context
+    def icon(ctx, name: str, cls: str = "") -> Markup:
+        href = f"{ctx['root']}{asset('static/icons.svg')}#{name}"
+        return Markup(f'<svg class="i{" " + cls if cls else ""}" aria-hidden="true"><use href="{href}"></use></svg>')
+    env.globals["icon"] = icon
     env.filters["tojson_ld"] = lambda d: json.dumps(d, ensure_ascii=False, indent=1).replace("</", "<\\/")
     regions = [meta["regions"][rid]["region"] for rid in meta["region_ids"]]
     publishers = [r["city_registry"]["publisher"] for r in meta["regions"].values() if r.get("city_registry")]

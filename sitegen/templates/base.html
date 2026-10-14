@@ -13,12 +13,13 @@
 <link rel="icon" href="{{ root }}static/icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ root }}static/icons/apple-touch-icon.png">
 <meta name="theme-color" content="#1f6f5c">
+<meta name="shadehop-icons" content="{{ root }}{{ asset('static/icons.svg') }}">
 <meta name="apple-mobile-web-app-title" content="遮陽公園">
 {% block head %}{% endblock %}
 </head>
 <body>
 <header class="top">
-  <h1><a href="{{ root }}" style="color:inherit;text-decoration:none">☂️ {{ SITE_NAME }}</a></h1>
+  <h1><a href="{{ root }}" class="brand">{{ icon("umbrella", "brand-mark") }}{{ SITE_NAME }}</a></h1>
   <span class="muted small subtitle">ShadeHop · {{ COVERAGE_SHORT }}</span>
   <nav><a href="{{ root }}">地圖</a><a href="{{ root }}about/">資料與方法</a><a href="{{ root }}llms.txt">llms.txt</a></nav>
 </header>

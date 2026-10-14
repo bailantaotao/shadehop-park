@@ -22,17 +22,17 @@
     <input type="range" id="slot" min="0" max="23" step="1" value="8" aria-describedby="slotOut">
     <output id="slotOut" for="slot">10:00</output>
     <button class="chip" id="nowBtn" type="button">現在</button>
-    <button class="chip" id="playBtn" type="button" aria-pressed="false" aria-label="播放一天">▶<span class="lbl"> 播放一天</span></button>
+    <button class="chip" id="playBtn" type="button" aria-pressed="false" aria-label="播放一天">{{ icon("play") }}<span class="lbl">播放一天</span></button>
   </div>
   <div class="chips filters" role="group" aria-label="條件">
-    <button class="chip" data-filter="fav" aria-pressed="false">⭐ 我的最愛</button>
-    <button class="chip" data-filter="confirmed" aria-pressed="false" title="隱藏遊具還沒確認的公園">🛝 確定有遊戲場</button>
-    <button class="chip" data-filter="rain" aria-pressed="false">☔ 下雨可玩</button>
-    <button class="chip" data-filter="shade" aria-pressed="false">🌳 此時段有遮陰</button>
-    <button class="chip" data-filter="parking" aria-pressed="false">🅿️ 停車 ≤ 300m</button>
-    <button class="chip" data-filter="fast" aria-pressed="false">⚡ {{ meta.assumptions.CHARGER_RADIUS_M }}m 內有快充</button>
-    <button class="chip" data-filter="slow" aria-pressed="false">🔌 {{ meta.assumptions.CHARGER_RADIUS_M }}m 內有慢充</button>
-    <button class="chip" data-filter="toilet" aria-pressed="false">🚻 附近有廁所</button>
+    <button class="chip" data-filter="fav" aria-pressed="false">{{ icon("star") }}我的最愛</button>
+    <button class="chip" data-filter="confirmed" aria-pressed="false" title="隱藏遊具還沒確認的公園">{{ icon("kid") }}確定有遊戲場</button>
+    <button class="chip" data-filter="rain" aria-pressed="false">{{ icon("umbrella") }}下雨可玩</button>
+    <button class="chip" data-filter="shade" aria-pressed="false">{{ icon("trees") }}此時段有遮陰</button>
+    <button class="chip" data-filter="parking" aria-pressed="false">{{ icon("parking") }}停車 ≤ 300m</button>
+    <button class="chip" data-filter="fast" aria-pressed="false">{{ icon("bolt") }}{{ meta.assumptions.CHARGER_RADIUS_M }}m 內有快充</button>
+    <button class="chip" data-filter="slow" aria-pressed="false">{{ icon("plug") }}{{ meta.assumptions.CHARGER_RADIUS_M }}m 內有慢充</button>
+    <button class="chip" data-filter="toilet" aria-pressed="false">{{ icon("toilet") }}附近有廁所</button>
   </div>
   <div class="banner" id="weather" role="status"></div>
 </div>
@@ -49,14 +49,14 @@
   <span><span class="chg fast inline"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg></span>快充站（DC，含快慢充都有）</span>
   <span><span class="chg slow inline"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="#fff" stroke-width="2.4" paint-order="stroke" stroke-linejoin="round" d="M16 7V3h-2v4h-4V3H8v4H6v7.5L9.5 18v3h5v-3l3.5-3.5V7z"/></svg></span>慢充站（AC）</span>
     <span><span class="chg unknown inline">?</span>未標示快慢</span>
-  <span>（地圖右上角 ⚡ 按鈕可開關充電站）</span>
+  <span>（地圖右上角的充電按鈕可開關充電站）</span>
 </div>
 
 <div class="listbar">
   <h2 id="count">公園</h2>
   <div class="chips" role="group" aria-label="排序">
     <button class="chip" data-sort="shade" aria-pressed="true">遮陰優先</button>
-    <button class="chip" data-sort="near" aria-pressed="false">📍 離我最近</button>
+    <button class="chip" data-sort="near" aria-pressed="false">{{ icon("pin") }}離我最近</button>
   </div>
 </div>
 <div class="list" id="list"></div>

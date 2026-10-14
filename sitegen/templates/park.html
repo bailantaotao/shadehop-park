@@ -18,8 +18,8 @@
   <p class="muted small" style="margin:0">{{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}{% if addr %}・{{ addr }}{% endif %}{% if p.park_name and p.park_name not in p.name %}・位於{{ p.park_name }}{% endif %}</p>
   <div class="pbtns">
     <a class="pbtn primary" href="{{ p.directions_url }}" target="_blank" rel="noopener">導航</a>
-    <a class="pbtn" href="{{ p.google_maps_url }}" target="_blank" rel="noopener" title="Google 地圖上的評論">評論 ↗</a>
-    <button type="button" class="pbtn fav" data-fav="{{ p.id }}" data-on="已收藏" data-off="收藏" aria-pressed="false" title="加入我的最愛">☆<span class="fav-label">收藏</span></button>
+    <a class="pbtn" href="{{ p.google_maps_url }}" target="_blank" rel="noopener" title="Google 地圖上的評論">評論{{ icon("external") }}</a>
+    <button type="button" class="pbtn fav" data-fav="{{ p.id }}" data-on="已收藏" data-off="收藏" aria-pressed="false" title="加入我的最愛">{{ icon("star", "off") }}{{ icon("star-on", "on") }}<span class="fav-label">收藏</span></button>
     <button type="button" class="pbtn" id="shareLink" data-url="{{ site_url }}/parks/{{ p.id }}/" data-text="{{ p.name }}：{{ p.level_label }}">分享</button>
   </div>
   <p class="small muted" id="copyStatus" role="status" aria-live="polite" style="margin:6px 0 0"></p>
@@ -50,12 +50,12 @@
 <section class="pcard">
   <h2 class="ptitle">附近有什麼</h2>
   <ul class="plist">
-  {% if t.value %}<li><span class="pico">🚻</span><span>公廁 {{ t.distance_m }}m{% if t.name %}・{% if t.location %}<a href="{{ t.location | place_url }}" target="_blank" rel="noopener">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}{% elif t.location %}・<a href="{{ t.location | place_url }}" target="_blank" rel="noopener">地圖</a>{% endif %}{% if t.family_room %} <span class="tag">親子廁所</span>{% endif %}{% if t.changing_table %} <span class="tag">尿布台</span>{% endif %}{% if t.accessible %} <span class="tag">無障礙</span>{% endif %}</span></li>
-  {% else %}<li class="muted"><span class="pico">🚻</span>{{ meta.assumptions.TOILET_RADIUS_M }}m 內沒有登記的公廁</li>{% endif %}
-  {% if fam %}<li><span class="pico">👶</span><span>{{ "親子廁所" if fam.family_room else "尿布台" }} {{ fam.distance_m }}m・{% if fam.location %}<a href="{{ fam.location | place_url }}" target="_blank" rel="noopener">{{ fam.name }}</a>{% else %}{{ fam.name }}{% endif %}</span></li>{% endif %}
-  {% if cv and cv.value %}<li><span class="pico">🏪</span><span>{% if cv.location %}<a href="{{ cv.location | place_url }}" target="_blank" rel="noopener">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %} {{ cv.distance_m }}m</span></li>{% endif %}
-  {% if st and st.value %}<li><span class="pico">🚉</span><span>{% if st.location %}<a href="{{ st.location | place_url }}" target="_blank" rel="noopener">{{ st.name }}</a>{% else %}{{ st.name }}{% endif %} {{ st.distance_m }}m</span></li>{% endif %}
-  {% if w.value %}<li><span class="pico">🚰</span><span>{% if w.location %}<a href="{{ w.location | place_url }}" target="_blank" rel="noopener">飲水機</a>{% else %}飲水機{% endif %} {{ w.distance_m }}m</span></li>{% endif %}
+  {% if t.value %}<li><span class="pico">{{ icon("toilet") }}</span><span>公廁 {{ t.distance_m }}m{% if t.name %}・{% if t.location %}<a href="{{ t.location | place_url }}" target="_blank" rel="noopener">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}{% elif t.location %}・<a href="{{ t.location | place_url }}" target="_blank" rel="noopener">地圖</a>{% endif %}{% if t.family_room %} <span class="tag">親子廁所</span>{% endif %}{% if t.changing_table %} <span class="tag">尿布台</span>{% endif %}{% if t.accessible %} <span class="tag">無障礙</span>{% endif %}</span></li>
+  {% else %}<li class="muted"><span class="pico">{{ icon("toilet") }}</span>{{ meta.assumptions.TOILET_RADIUS_M }}m 內沒有登記的公廁</li>{% endif %}
+  {% if fam %}<li><span class="pico">{{ icon("stroller") }}</span><span>{{ "親子廁所" if fam.family_room else "尿布台" }} {{ fam.distance_m }}m・{% if fam.location %}<a href="{{ fam.location | place_url }}" target="_blank" rel="noopener">{{ fam.name }}</a>{% else %}{{ fam.name }}{% endif %}</span></li>{% endif %}
+  {% if cv and cv.value %}<li><span class="pico">{{ icon("store") }}</span><span>{% if cv.location %}<a href="{{ cv.location | place_url }}" target="_blank" rel="noopener">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %} {{ cv.distance_m }}m</span></li>{% endif %}
+  {% if st and st.value %}<li><span class="pico">{{ icon("train") }}</span><span>{% if st.location %}<a href="{{ st.location | place_url }}" target="_blank" rel="noopener">{{ st.name }}</a>{% else %}{{ st.name }}{% endif %} {{ st.distance_m }}m</span></li>{% endif %}
+  {% if w.value %}<li><span class="pico">{{ icon("droplet") }}</span><span>{% if w.location %}<a href="{{ w.location | place_url }}" target="_blank" rel="noopener">飲水機</a>{% else %}飲水機{% endif %} {{ w.distance_m }}m</span></li>{% endif %}
   </ul>
   <p class="prov" style="margin-top:8px">公廁：環境部「全國公廁建檔資料」與 OpenStreetMap；便利商店、車站：OpenStreetMap。距離為直線距離。</p>
 </section>
@@ -66,14 +66,14 @@
 <section class="pcard" id="parkInfo">
   <h2 class="ptitle">遊戲場資訊</h2>
   <ul class="plist">
-  {% if p.official and p.official.equipment %}<li><span class="pico">🛝</span><span>遊具：{% for k, v in p.official.equipment | dictsort %}<span class="tag">{{ k }}{% if v > 1 %} {{ v }}{% endif %}</span>{% endfor %}</span></li>
-  {% elif pg.equipment %}<li><span class="pico">🛝</span><span>遊具：{% for e in pg.equipment %}<span class="tag">{{ e }}</span>{% endfor %}</span></li>{% endif %}
-  <li id="reportedEquip" hidden><span class="pico">👨‍👩‍👧</span><span></span></li>
-  {% if p.official and p.official.facilities %}<li><span class="pico">🏞️</span>設施：{{ p.official.facilities }}</li>{% endif %}
-  {% if pg.surface %}<li><span class="pico">🟫</span>地面：{{ SURFACE_LABEL.get(pg.surface, pg.surface) }}{% if pg.surface in ("rubber", "tartan", "artificial_turf") %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
-  {% if ages %}<li><span class="pico">👶</span>適合年齡：{% if pg.min_age %}{{ pg.min_age }} 歲{% endif %}–{% if pg.max_age %}{{ pg.max_age }} 歲{% endif %}</li>{% endif %}
-  {% if not known %}<li class="muted" id="infoEmpty"><span class="pico">🛝</span><span>還沒有遊具資料。去過的話<a href="#report">告訴我們</a>有哪些遊具。</span></li>{% endif %}
-  {% if p.official and p.official.management %}<li><span class="pico">🏛️</span><span>管理單位：{{ p.official.management }}{% if p.official.phone %} <a href="tel:{{ p.official.phone | replace('(', '') | replace(')', '') | replace(' ', '') }}">{{ p.official.phone }}</a>{% endif %}</span></li>{% endif %}
+  {% if p.official and p.official.equipment %}<li><span class="pico">{{ icon("kid") }}</span><span>遊具：{% for k, v in p.official.equipment | dictsort %}<span class="tag">{{ k }}{% if v > 1 %} {{ v }}{% endif %}</span>{% endfor %}</span></li>
+  {% elif pg.equipment %}<li><span class="pico">{{ icon("kid") }}</span><span>遊具：{% for e in pg.equipment %}<span class="tag">{{ e }}</span>{% endfor %}</span></li>{% endif %}
+  <li id="reportedEquip" hidden><span class="pico">{{ icon("users") }}</span><span></span></li>
+  {% if p.official and p.official.facilities %}<li><span class="pico">{{ icon("info") }}</span>設施：{{ p.official.facilities }}</li>{% endif %}
+  {% if pg.surface %}<li><span class="pico">{{ icon("texture") }}</span>地面：{{ SURFACE_LABEL.get(pg.surface, pg.surface) }}{% if pg.surface in ("rubber", "tartan", "artificial_turf") %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
+  {% if ages %}<li><span class="pico">{{ icon("age") }}</span>適合年齡：{% if pg.min_age %}{{ pg.min_age }} 歲{% endif %}–{% if pg.max_age %}{{ pg.max_age }} 歲{% endif %}</li>{% endif %}
+  {% if not known %}<li class="muted" id="infoEmpty"><span class="pico">{{ icon("kid") }}</span><span>還沒有遊具資料。去過的話<a href="#report">告訴我們</a>有哪些遊具。</span></li>{% endif %}
+  {% if p.official and p.official.management %}<li><span class="pico">{{ icon("bank") }}</span><span>管理單位：{{ p.official.management }}{% if p.official.phone %} <a href="tel:{{ p.official.phone | replace('(', '') | replace(')', '') | replace(' ', '') }}">{{ p.official.phone }}</a>{% endif %}</span></li>{% endif %}
   </ul>
 </section>
 
@@ -85,8 +85,8 @@
   {% if TURNSTILE_SITE_KEY %}
   <form id="reportForm" novalidate>
     <div class="pbtns" style="grid-template-columns:1fr 1fr;margin-top:0">
-      <button type="button" class="pbtn" data-verdict="yes" aria-pressed="false">👍 有遊戲場</button>
-      <button type="button" class="pbtn" data-verdict="no" aria-pressed="false">👎 沒有遊戲場</button>
+      <button type="button" class="pbtn" data-verdict="yes" aria-pressed="false">{{ icon("thumb-up") }}有遊戲場</button>
+      <button type="button" class="pbtn" data-verdict="no" aria-pressed="false">{{ icon("thumb-down") }}沒有遊戲場</button>
     </div>
     <fieldset id="reportEquip" class="report-equip" hidden>
       <legend class="small muted">看到哪些遊具？（可複選）</legend>
@@ -107,10 +107,10 @@
 <section class="pcard">
   <h2 class="ptitle">停車與充電</h2>
   <ul class="plist">
-  {% for q in p.parking[:3] %}<li><span class="pico">🅿️</span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}" target="_blank" rel="noopener">{{ q.name }}</a> {{ q.distance_m }}m{% if q.fee in ("yes", "no") %}・{{ {'yes':'收費','no':'免費'}[q.fee] }}{% endif %}{% if q.capacity %}・{{ q.capacity }} 格{% endif %}{% if q.capacity_parent %}{% if q.capacity_parent is string and q.capacity_parent.isdigit() %}（親子 {{ q.capacity_parent }} 格）{% elif q.capacity_parent != "no" %}・有親子車位{% endif %}{% endif %}{% if q.maxheight_m %}・限高 {{ q.maxheight_m }}m{% endif %}{% if q.access == 'customers' %}・限顧客{% endif %}</span></li>
-  {% else %}<li class="muted"><span class="pico">🅿️</span>{{ meta.assumptions.PARKING_RADIUS_M }}m 內沒有標示停車場</li>{% endfor %}
+  {% for q in p.parking[:3] %}<li><span class="pico">{{ icon("parking") }}</span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}" target="_blank" rel="noopener">{{ q.name }}</a> {{ q.distance_m }}m{% if q.fee in ("yes", "no") %}・{{ {'yes':'收費','no':'免費'}[q.fee] }}{% endif %}{% if q.capacity %}・{{ q.capacity }} 格{% endif %}{% if q.capacity_parent %}{% if q.capacity_parent is string and q.capacity_parent.isdigit() %}（親子 {{ q.capacity_parent }} 格）{% elif q.capacity_parent != "no" %}・有親子車位{% endif %}{% endif %}{% if q.maxheight_m %}・限高 {{ q.maxheight_m }}m{% endif %}{% if q.access == 'customers' %}・限顧客{% endif %}</span></li>
+  {% else %}<li class="muted"><span class="pico">{{ icon("parking") }}</span>{{ meta.assumptions.PARKING_RADIUS_M }}m 內沒有標示停車場</li>{% endfor %}
   {% set cs = p.charger_summary %}
-  <li><span class="pico">⚡</span>{% if cs.total %}{% if cs.nearest_fast_m is not none %}快充 {{ cs.nearest_fast_m }}m{% else %}{{ cs.radius_m }}m 內沒有快充{% endif %}・{% if cs.nearest_slow_m is not none %}慢充 {{ cs.nearest_slow_m }}m{% else %}沒有慢充{% endif %}{% else %}{{ cs.radius_m }}m 內沒有充電站{% endif %}</li>
+  <li><span class="pico">{{ icon("bolt") }}</span>{% if cs.total %}{% if cs.nearest_fast_m is not none %}快充 {{ cs.nearest_fast_m }}m{% else %}{{ cs.radius_m }}m 內沒有快充{% endif %}・{% if cs.nearest_slow_m is not none %}慢充 {{ cs.nearest_slow_m }}m{% else %}沒有慢充{% endif %}{% else %}{{ cs.radius_m }}m 內沒有充電站{% endif %}</li>
   </ul>
   {% if p.chargers %}
   <details class="pmore"><summary>{{ cs.radius_m }}m 內的 {{ cs.total }} 個充電站</summary>

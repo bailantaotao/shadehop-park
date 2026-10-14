@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 89,
+   "location": {
+    "lat": 25.044391,
+    "lng": 121.5436
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/6354698715",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 72,
+   "location": {
+    "lat": 25.044095,
+    "lng": 121.542486
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1535748860",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 238,
+   "location": {
+    "lat": 25.041541,
+    "lng": 121.543771
+   },
    "method": "osm",
    "name": "捷運忠孝復興站",
    "source": "https://www.openstreetmap.org/node/3497302605",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 277,
     "family_room": true,
+    "location": {
+     "lat": 25.041778,
+     "lng": 121.544984
+    },
     "name": "捷運忠孝復興站板南線"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.041432,
+    "lng": 121.542666
+   },
    "method": "official_data",
    "name": "新光三越百貨台北忠孝分公司二館2F",
    "source": "https://data.gov.tw/dataset/30794",

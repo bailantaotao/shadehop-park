@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 230,
+   "location": {
+    "lat": 24.825843,
+    "lng": 120.956699
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/1871016672",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/948420886",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1369,
+   "location": {
+    "lat": 24.835232,
+    "lng": 120.948171
+   },
    "method": "osm",
    "name": "佑聖宫站",
    "source": "https://www.openstreetmap.org/node/12446786913",

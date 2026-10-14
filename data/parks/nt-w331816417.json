@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 130,
+   "location": {
+    "lat": 24.980772,
+    "lng": 121.419087
+   },
    "method": "osm",
    "name": "今冠超市",
    "source": "https://www.openstreetmap.org/node/10925718680",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 93,
+   "location": {
+    "lat": 24.98259,
+    "lng": 121.417956
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/331816417",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1026,
+   "location": {
+    "lat": 24.980368,
+    "lng": 121.408387
+   },
    "method": "osm",
    "name": "南樹林站",
    "source": "https://www.openstreetmap.org/node/2437055060",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 262,
     "family_room": false,
+    "location": {
+     "lat": 24.983646,
+     "lng": 121.420222
+    },
     "name": "大同公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.982602,
+    "lng": 121.41795
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3685902926",

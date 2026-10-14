@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 57,
+   "location": {
+    "lat": 24.875954,
+    "lng": 120.996664
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4367773961",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/254298495",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 787,
+   "location": {
+    "lat": 24.869277,
+    "lng": 120.996534
+   },
    "method": "osm",
    "name": "新豐站",
    "source": "https://www.openstreetmap.org/node/418760215",
@@ -35,6 +44,10 @@
    "distance_m": 281,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.878971,
+    "lng": 120.997748
+   },
    "method": "official_data",
    "name": "新豐鄉員山綜合活動中心",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/996551300",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/996551300",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/996551300",
@@ -35,6 +38,10 @@
    "distance_m": 190,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.93613,
+    "lng": 121.188335
+   },
    "method": "official_data",
    "name": "平鎮運動公園",
    "source": "https://data.gov.tw/dataset/30794",

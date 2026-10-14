@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 329,
+   "location": {
+    "lat": 25.041485,
+    "lng": 121.587901
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2619659223",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/202941690",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 875,
+   "location": {
+    "lat": 25.05049,
+    "lng": 121.593316
+   },
    "method": "osm",
    "name": "捷運昆陽站",
    "source": "https://www.openstreetmap.org/node/3639530947",
@@ -35,6 +44,10 @@
    "distance_m": 123,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.041754,
+    "lng": 121.591156
+   },
    "method": "official_data",
    "name": "南港公園景觀公廁",
    "source": "https://data.gov.tw/dataset/30794",

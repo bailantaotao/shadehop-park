@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 64,
+   "location": {
+    "lat": 24.986194,
+    "lng": 121.414221
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8044396409",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/598329249",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 936,
+   "location": {
+    "lat": 24.980368,
+    "lng": 121.408387
+   },
    "method": "osm",
    "name": "南樹林站",
    "source": "https://www.openstreetmap.org/node/2437055060",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 192,
     "family_room": true,
+    "location": {
+     "lat": 24.984971,
+     "lng": 121.414475
+    },
     "name": "東昇公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.985944,
+    "lng": 121.414475
+   },
    "method": "official_data",
    "name": "全家便利商店樹林大安門市",
    "source": "https://data.gov.tw/dataset/30794",

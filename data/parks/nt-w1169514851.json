@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 231,
+   "location": {
+    "lat": 25.176153,
+    "lng": 121.687866
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4524864105",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1169514851",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1169514851",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 188,
     "family_room": false,
+    "location": {
+     "lat": 25.179207,
+     "lng": 121.690596
+    },
     "name": "萬里圖書館4F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.178474,
+    "lng": 121.690888
+   },
    "method": "official_data",
    "name": "萬里里辦公處",
    "source": "https://data.gov.tw/dataset/30794",
@@ -672,7 +686,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

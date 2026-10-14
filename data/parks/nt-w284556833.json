@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 222,
+   "location": {
+    "lat": 25.108648,
+    "lng": 121.857355
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7136029992",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 151,
+   "location": {
+    "lat": 25.109186,
+    "lng": 121.857742
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/284556833",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/284556833",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.111014,
+    "lng": 121.858476
+   },
    "method": "official_data",
    "name": "國際終戰和平紀念園區",
    "source": "https://data.gov.tw/dataset/30794",

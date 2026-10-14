@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1047762312",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1047762312",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1047762312",
@@ -35,6 +38,10 @@
    "distance_m": 179,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.884635,
+    "lng": 121.273811
+   },
    "method": "official_data",
    "name": "大溪區-法鼓山齋明寺",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 77,
+   "location": {
+    "lat": 24.976317,
+    "lng": 121.44447
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9854624349",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/985486953",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 410,
+   "location": {
+    "lat": 24.973182,
+    "lng": 121.444391
+   },
    "method": "osm",
    "name": "捷運土城站",
    "source": "https://www.openstreetmap.org/node/373399553",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 216,
     "family_room": false,
+    "location": {
+     "lat": 24.978843,
+     "lng": 121.442969
+    },
     "name": "員和公園地下停車場B1"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.978142,
+    "lng": 121.442719
+   },
    "method": "official_data",
    "name": "員林市民活動中心1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -904,7 +921,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

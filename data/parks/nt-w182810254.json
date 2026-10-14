@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 25.012184,
+    "lng": 121.462216
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8784649263",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 141,
+   "location": {
+    "lat": 25.014085,
+    "lng": 121.463395
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/182810254",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 133,
+   "location": {
+    "lat": 25.014499,
+    "lng": 121.462992
+   },
    "method": "osm",
    "name": "捷運板橋站",
    "source": "https://www.openstreetmap.org/node/3639530948",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 2,
     "family_room": false,
+    "location": {
+     "lat": 25.012426,
+     "lng": 121.460769
+    },
     "name": "萬坪公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.012316,
+    "lng": 121.461175
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3576345967",
@@ -1039,7 +1059,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

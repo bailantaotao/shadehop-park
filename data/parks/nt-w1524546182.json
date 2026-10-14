@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 152,
+   "location": {
+    "lat": 24.946493,
+    "lng": 121.495443
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2386663232",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1524546182",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 495,
+   "location": {
+    "lat": 24.95092,
+    "lng": 121.49406
+   },
    "method": "osm",
    "name": "玫瑰中國城站",
    "source": "https://www.openstreetmap.org/node/8041597970",
@@ -35,6 +44,10 @@
    "distance_m": 98,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.946216,
+    "lng": 121.497397
+   },
    "method": "official_data",
    "name": "吉祥里活動中心",
    "source": "https://data.gov.tw/dataset/30794",

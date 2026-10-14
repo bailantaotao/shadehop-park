@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 187,
+   "location": {
+    "lat": 24.86532,
+    "lng": 120.985042
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7924924419",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/998996543",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1395,
+   "location": {
+    "lat": 24.869277,
+    "lng": 120.996534
+   },
    "method": "osm",
    "name": "新豐站",
    "source": "https://www.openstreetmap.org/node/418760215",
@@ -35,6 +44,10 @@
    "distance_m": 257,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.868244,
+    "lng": 120.983009
+   },
    "method": "official_data",
    "name": "新豐鄉天德堂",
    "source": "https://data.gov.tw/dataset/30794",

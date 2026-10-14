@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 143,
+   "location": {
+    "lat": 25.004592,
+    "lng": 121.536641
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2162387238",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 35,
+   "location": {
+    "lat": 25.005532,
+    "lng": 121.536274
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 514,
+   "location": {
+    "lat": 25.001903,
+    "lng": 121.539023
+   },
    "method": "osm",
    "name": "捷運萬隆站",
    "source": "https://www.openstreetmap.org/node/3530915062",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 218,
     "family_room": false,
+    "location": {
+     "lat": 25.003893,
+     "lng": 121.536554
+    },
     "name": "臺北市立圖書館景美分館2F"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.007566,
+    "lng": 121.536938
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4057044841",
@@ -775,7 +795,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

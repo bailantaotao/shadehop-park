@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/368387583",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/368387583",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1473,
+   "location": {
+    "lat": 24.787232,
+    "lng": 120.92822
+   },
    "method": "osm",
    "name": "三姓橋站",
    "source": "https://www.openstreetmap.org/node/4450762389",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.79609,
+    "lng": 120.91666
+   },
    "method": "official_data",
    "name": "水資源公園",
    "source": "https://data.gov.tw/dataset/30794",

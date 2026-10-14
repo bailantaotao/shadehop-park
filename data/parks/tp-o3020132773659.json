@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 50,
+   "location": {
+    "lat": 25.070627,
+    "lng": 121.51605
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/5851985001",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 1,
+   "location": {
+    "lat": 25.070371,
+    "lng": 121.515609
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 465,
+   "location": {
+    "lat": 25.071417,
+    "lng": 121.520136
+   },
    "method": "osm",
    "name": "捷運圓山站",
    "source": "https://www.openstreetmap.org/node/3495094874",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 278,
     "family_room": true,
+    "location": {
+     "lat": 25.072816,
+     "lng": 121.516176
+    },
     "name": "孔廟"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.069964,
+    "lng": 121.515455
+   },
    "method": "official_data",
    "name": "大同8號",
    "source": "https://data.gov.tw/dataset/30794",
@@ -908,7 +928,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

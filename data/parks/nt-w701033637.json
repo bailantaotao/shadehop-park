@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/701033637",
@@ -13,6 +14,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 21,
+   "location": {
+    "lat": 25.129468,
+    "lng": 121.418171
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/701033637",
    "value": true,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/701033637",
@@ -35,6 +41,10 @@
    "distance_m": 33,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.129472,
+    "lng": 121.418055
+   },
    "method": "official_data",
    "name": "觀音山遊客中心",
    "source": "https://data.gov.tw/dataset/30794",

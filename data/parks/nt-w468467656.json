@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 297,
+   "location": {
+    "lat": 25.002644,
+    "lng": 121.492814
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3540983599",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/468467656",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 484,
+   "location": {
+    "lat": 25.002317,
+    "lng": 121.49585
+   },
    "method": "osm",
    "name": "捷運中和站",
    "source": "https://www.openstreetmap.org/node/5444300912",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 228,
     "family_room": false,
+    "location": {
+     "lat": 25.002217,
+     "lng": 121.491978
+    },
     "name": "COSTCO中和店B1"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.000397,
+    "lng": 121.49216
+   },
    "method": "official_data",
    "name": "台亞中和建康加油站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -829,7 +846,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

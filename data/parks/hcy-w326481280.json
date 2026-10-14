@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 166,
+   "location": {
+    "lat": 24.827463,
+    "lng": 121.080585
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4370580495",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/326481280",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/326481280",
@@ -35,6 +41,10 @@
    "distance_m": 231,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.828135,
+    "lng": 121.078715
+   },
    "method": "official_data",
    "name": "全家新埔長茂門市",
    "source": "https://data.gov.tw/dataset/30794",

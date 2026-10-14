@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 107,
+   "location": {
+    "lat": 25.048884,
+    "lng": 121.588307
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4374084079",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 154,
+   "location": {
+    "lat": 25.047548,
+    "lng": 121.586987
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 631,
+   "location": {
+    "lat": 25.05049,
+    "lng": 121.593316
+   },
    "method": "osm",
    "name": "捷運昆陽站",
    "source": "https://www.openstreetmap.org/node/3639530947",
@@ -35,6 +47,10 @@
    "distance_m": 152,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.047561,
+    "lng": 121.586997
+   },
    "method": "official_data",
    "name": "臺北市立圖書館龍華民眾閱覽室",
    "source": "https://data.gov.tw/dataset/30794",
@@ -768,7 +784,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

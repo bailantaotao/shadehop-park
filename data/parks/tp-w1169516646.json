@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 123,
+   "location": {
+    "lat": 25.077163,
+    "lng": 121.58438
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13413775752",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 138,
+   "location": {
+    "lat": 25.078349,
+    "lng": 121.584465
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1169516646",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 123,
+   "location": {
+    "lat": 25.078556,
+    "lng": 121.584942
+   },
    "method": "osm",
    "name": "捷運文德站",
    "source": "https://www.openstreetmap.org/node/3501186375",
@@ -35,6 +47,10 @@
    "distance_m": 122,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.078322,
+    "lng": 121.58465
+   },
    "method": "official_data",
    "name": "捷運文德站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -704,7 +720,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 42,
+   "location": {
+    "lat": 25.025109,
+    "lng": 121.531555
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5109347817",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 25.024623,
+    "lng": 121.531626
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 540,
+   "location": {
+    "lat": 25.020669,
+    "lng": 121.528208
+   },
    "method": "osm",
    "name": "捷運台電大樓站",
    "source": "https://www.openstreetmap.org/node/253559357",
@@ -35,6 +47,10 @@
    "distance_m": 233,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.026631,
+    "lng": 121.530514
+   },
    "method": "official_data",
    "name": "和平東路派出所",
    "source": "https://data.gov.tw/dataset/30794",
@@ -793,7 +809,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

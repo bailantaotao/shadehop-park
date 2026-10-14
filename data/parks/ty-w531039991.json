@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/531039991",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/531039991",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/531039991",
@@ -35,6 +38,10 @@
    "distance_m": 38,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.839514,
+    "lng": 121.183735
+   },
    "method": "official_data",
    "name": "龍潭區渴望會館商店街(A區)B1",
    "source": "https://data.gov.tw/dataset/30794",

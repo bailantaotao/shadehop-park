@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 78,
+   "location": {
+    "lat": 25.138934,
+    "lng": 121.499405
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4836651121",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/376032068",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 514,
+   "location": {
+    "lat": 25.136964,
+    "lng": 121.503169
+   },
    "method": "osm",
    "name": "捷運新北投站",
    "source": "https://www.openstreetmap.org/node/269820830",
@@ -35,6 +44,10 @@
    "distance_m": 236,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.139735,
+    "lng": 121.501191
+   },
    "method": "official_data",
    "name": "三軍總醫院中和街門診部1F",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 295,
+   "location": {
+    "lat": 24.768942,
+    "lng": 120.97726
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4845036332",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/302192519",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/302192519",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 26,
     "family_room": false,
+    "location": {
+     "lat": 24.77222,
+     "lng": 120.97141
+    },
     "name": "新竹市消防教育訓練基地"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.771523,
+    "lng": 120.974424
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1073133281",

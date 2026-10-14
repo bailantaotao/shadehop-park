@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 196,
+   "location": {
+    "lat": 25.042027,
+    "lng": 121.568582
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4328118623",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 66,
+   "location": {
+    "lat": 25.042229,
+    "lng": 121.569959
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1390296809",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 451,
+   "location": {
+    "lat": 25.041128,
+    "lng": 121.5661
+   },
    "method": "osm",
    "name": "捷運市政府站",
    "source": "https://www.openstreetmap.org/node/3512275767",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 250,
     "family_room": false,
+    "location": {
+     "lat": 25.03993,
+     "lng": 121.572256
+    },
     "name": "捷運廣慈奉天宮站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.0439,
+    "lng": 121.570985
+   },
    "method": "official_data",
    "name": "信義14號",
    "source": "https://data.gov.tw/dataset/30794",

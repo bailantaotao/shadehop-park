@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 189,
+   "location": {
+    "lat": 24.982179,
+    "lng": 121.460469
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423767489",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 165,
+   "location": {
+    "lat": 24.983544,
+    "lng": 121.461384
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/590402583",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1406,
+   "location": {
+    "lat": 24.985318,
+    "lng": 121.448786
+   },
    "method": "osm",
    "name": "捷運海山站",
    "source": "https://www.openstreetmap.org/node/3639530951",
@@ -35,6 +47,10 @@
    "distance_m": 111,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.982626,
+    "lng": 121.461282
+   },
    "method": "official_data",
    "name": "永豐市民活動中心1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -775,13 +791,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

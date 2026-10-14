@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 42,
+   "location": {
+    "lat": 25.080062,
+    "lng": 121.285986
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5824069902",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1054198538",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 96,
+   "location": {
+    "lat": 25.080806,
+    "lng": 121.284778
+   },
    "method": "osm",
    "name": "捷運山鼻站",
    "source": "https://www.openstreetmap.org/node/4450092074",
@@ -35,6 +44,10 @@
    "distance_m": 90,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.080766,
+    "lng": 121.28504
+   },
    "method": "official_data",
    "name": "桃園捷運-A10山鼻站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -128,7 +141,7 @@
    "name": "廣停一停車場(蘆竹)_配合太陽能車棚施工停用至12月底",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -173,7 +186,7 @@
    "name": "廣停二停車場(蘆竹)_配合太陽能車棚施工停用至12月底",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -706,7 +719,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

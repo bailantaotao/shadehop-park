@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 78,
+   "location": {
+    "lat": 24.8189,
+    "lng": 120.924848
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7930454520",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/948420919",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/948420919",
@@ -35,6 +41,10 @@
    "distance_m": 86,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.81895,
+    "lng": 120.92495
+   },
    "method": "official_data",
    "name": "7-11便利商店-海天門市",
    "source": "https://data.gov.tw/dataset/30794",

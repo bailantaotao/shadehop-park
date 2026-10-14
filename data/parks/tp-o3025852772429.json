@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 44,
+   "location": {
+    "lat": 25.059324,
+    "lng": 121.521713
+   },
    "method": "osm",
    "name": "維康醫療用品(北馬院外店)",
    "source": "https://www.openstreetmap.org/node/5110488715",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 9,
+   "location": {
+    "lat": 25.0592,
+    "lng": 121.521004
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 163,
+   "location": {
+    "lat": 25.057632,
+    "lng": 121.520699
+   },
    "method": "osm",
    "name": "捷運雙連站",
    "source": "https://www.openstreetmap.org/node/3495094872",
@@ -35,6 +47,10 @@
    "distance_m": 128,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.058883,
+    "lng": 121.522558
+   },
    "method": "official_data",
    "name": "馬偕紀念醫院平安樓四樓",
    "source": "https://data.gov.tw/dataset/30794",
@@ -824,7 +840,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

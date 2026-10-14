@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 15,
+   "location": {
+    "lat": 25.063836,
+    "lng": 121.465061
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423799009",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/686621026",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 616,
+   "location": {
+    "lat": 25.061269,
+    "lng": 121.459809
+   },
    "method": "osm",
    "name": "捷運新北產業園區站",
    "source": "https://www.openstreetmap.org/node/2083320848",

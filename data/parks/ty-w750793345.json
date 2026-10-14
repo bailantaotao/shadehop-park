@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 165,
+   "location": {
+    "lat": 24.957016,
+    "lng": 121.161098
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/1404222410",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/750793345",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/750793345",
@@ -35,6 +41,10 @@
    "distance_m": 173,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.957109,
+    "lng": 121.161088
+   },
    "method": "official_data",
    "name": "全家便利商店新屋富榮店",
    "source": "https://data.gov.tw/dataset/30794",

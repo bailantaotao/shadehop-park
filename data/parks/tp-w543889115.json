@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 132,
+   "location": {
+    "lat": 24.983919,
+    "lng": 121.558652
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9401545421",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 70,
+   "location": {
+    "lat": 24.982301,
+    "lng": 121.558107
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/543889115",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/543889115",
@@ -35,6 +44,10 @@
    "distance_m": 125,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.982147,
+    "lng": 121.556604
+   },
    "method": "official_data",
    "name": "景美女中地下停車場B1",
    "source": "https://data.gov.tw/dataset/30794",

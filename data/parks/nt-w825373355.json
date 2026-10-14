@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 99,
+   "location": {
+    "lat": 25.131659,
+    "lng": 121.451293
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/7936800877",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/825373355",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1115,
+   "location": {
+    "lat": 25.136973,
+    "lng": 121.45951
+   },
    "method": "osm",
    "name": "捷運竹圍站",
    "source": "https://www.openstreetmap.org/node/3495094886",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 110,
     "family_room": false,
+    "location": {
+     "lat": 25.131947,
+     "lng": 121.450926
+    },
     "name": "八里區龍源里銀髮俱樂部"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.13117,
+    "lng": 121.450737
+   },
    "method": "official_data",
    "name": "統一超商八里浩瀚門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -634,7 +651,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

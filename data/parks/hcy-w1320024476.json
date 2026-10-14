@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 113,
+   "location": {
+    "lat": 24.805062,
+    "lng": 121.031474
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9969417623",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1320024476",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 696,
+   "location": {
+    "lat": 24.807126,
+    "lng": 121.039414
+   },
    "method": "osm",
    "name": "六家站",
    "source": "https://www.openstreetmap.org/node/3560261986",

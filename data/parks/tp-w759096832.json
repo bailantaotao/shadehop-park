@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 136,
+   "location": {
+    "lat": 25.002312,
+    "lng": 121.539057
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3620127274",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 51,
+   "location": {
+    "lat": 25.004095,
+    "lng": 121.538951
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/759096832",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 181,
+   "location": {
+    "lat": 25.001903,
+    "lng": 121.539023
+   },
    "method": "osm",
    "name": "捷運萬隆站",
    "source": "https://www.openstreetmap.org/node/3530915062",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 109,
     "family_room": false,
+    "location": {
+     "lat": 25.004465,
+     "lng": 121.539591
+    },
     "name": "臺北花木市場地下停車場"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.003863,
+    "lng": 121.538605
+   },
    "method": "official_data",
    "name": "萬盛派出所",
    "source": "https://data.gov.tw/dataset/30794",

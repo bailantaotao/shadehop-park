@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 303,
+   "location": {
+    "lat": 24.98093,
+    "lng": 121.424446
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2168079106",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/443159372",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1299,
+   "location": {
+    "lat": 24.991216,
+    "lng": 121.424535
+   },
    "method": "osm",
    "name": "樹林站",
    "source": "https://www.openstreetmap.org/node/4802842931",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 231,
     "family_room": true,
+    "location": {
+     "lat": 24.98189,
+     "lng": 121.427166
+    },
     "name": "樹林體育園區 A"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.979819,
+    "lng": 121.427423
+   },
    "method": "official_data",
    "name": "樹林體育園區 3號",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 12,
+   "location": {
+    "lat": 25.096565,
+    "lng": 121.514701
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5949987494",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 131,
+   "location": {
+    "lat": 25.097021,
+    "lng": 121.5158
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/529298447",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1063,
+   "location": {
+    "lat": 25.103003,
+    "lng": 121.52252
+   },
    "method": "osm",
    "name": "捷運芝山站",
    "source": "https://www.openstreetmap.org/node/3495094877",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 195,
     "family_room": true,
+    "location": {
+     "lat": 25.09625,
+     "lng": 121.516481
+    },
     "name": "國立臺灣科學教育館B1西"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.096834,
+    "lng": 121.514169
+   },
    "method": "official_data",
    "name": "臺北市立兒童新樂園1F20號停車場",
    "source": "https://data.gov.tw/dataset/30794",

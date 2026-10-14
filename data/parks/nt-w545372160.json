@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 177,
+   "location": {
+    "lat": 25.003281,
+    "lng": 121.616689
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9291822164",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 107,
+   "location": {
+    "lat": 25.002555,
+    "lng": 121.615958
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/545372160",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/545372160",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 90,
     "family_room": false,
+    "location": {
+     "lat": 25.001176,
+     "lng": 121.615641
+    },
     "name": "深坑地下停車場B1"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.001735,
+    "lng": 121.616032
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/12410974801",
@@ -731,7 +748,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

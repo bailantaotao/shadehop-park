@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 165,
+   "location": {
+    "lat": 24.823701,
+    "lng": 121.014259
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7924924416",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/444098365",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/444098365",
@@ -39,9 +45,17 @@
     "changing_table": false,
     "distance_m": 186,
     "family_room": true,
+    "location": {
+     "lat": 24.824897,
+     "lng": 121.014716
+    },
     "name": "新竹縣政府稅務局1F(右側)"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.824259,
+    "lng": 121.014935
+   },
    "method": "official_data",
    "name": "台灣中油府前加油站",
    "source": "https://data.gov.tw/dataset/30794",

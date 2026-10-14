@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 30,
+   "location": {
+    "lat": 25.045003,
+    "lng": 121.580825
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4850880822",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 157,
+   "location": {
+    "lat": 25.04528,
+    "lng": 121.582872
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 111,
+   "location": {
+    "lat": 25.044741,
+    "lng": 121.582322
+   },
    "method": "osm",
    "name": "捷運後山埤站",
    "source": "https://www.openstreetmap.org/node/3639530944",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 175,
     "family_room": true,
+    "location": {
+     "lat": 25.045261,
+     "lng": 121.583053
+    },
     "name": "捷運後山埤站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.044042,
+    "lng": 121.581616
+   },
    "method": "official_data",
    "name": "石二鍋捷運後山碑店",
    "source": "https://data.gov.tw/dataset/30794",
@@ -852,7 +872,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

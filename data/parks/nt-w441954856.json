@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 96,
+   "location": {
+    "lat": 25.012157,
+    "lng": 121.424148
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4426737575",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/441954856",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/441954856",
@@ -35,6 +41,10 @@
    "distance_m": 100,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.013269,
+    "lng": 121.424009
+   },
    "method": "official_data",
    "name": "台亞俊英加油站",
    "source": "https://data.gov.tw/dataset/30794",

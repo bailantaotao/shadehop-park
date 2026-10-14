@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 10,
+   "location": {
+    "lat": 24.828561,
+    "lng": 121.02974
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/way/1308944610",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1275499690",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1275499690",
@@ -35,6 +41,10 @@
    "distance_m": 230,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.829266,
+    "lng": 121.02769
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1074392967",

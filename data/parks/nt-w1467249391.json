@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 263,
+   "location": {
+    "lat": 25.007782,
+    "lng": 121.525797
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/6499848132",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1467249391",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1035,
+   "location": {
+    "lat": 25.014917,
+    "lng": 121.534264
+   },
    "method": "osm",
    "name": "捷運公館站",
    "source": "https://www.openstreetmap.org/node/3530915063",
@@ -35,6 +44,10 @@
    "distance_m": 72,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.007855,
+    "lng": 121.528718
+   },
    "method": "official_data",
    "name": "永福橋旁自來水水管橋下公廁",
    "source": "https://data.gov.tw/dataset/30794",

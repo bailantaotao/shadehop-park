@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/387672118",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/387672118",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/387672118",
@@ -35,6 +38,10 @@
    "distance_m": 96,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.027431,
+    "lng": 121.831947
+   },
    "method": "official_data",
    "name": "上林橋河濱公園",
    "source": "https://data.gov.tw/dataset/30794",

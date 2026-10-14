@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 267,
+   "location": {
+    "lat": 24.835406,
+    "lng": 121.246211
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9671363014",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/46671481",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/46671481",
@@ -35,6 +41,10 @@
    "distance_m": 32,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.835103,
+    "lng": 121.241645
+   },
    "method": "official_data",
    "name": "龍潭區經濟部水利署北區水資源局佳安里大草坪",
    "source": "https://data.gov.tw/dataset/30794",

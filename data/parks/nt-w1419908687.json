@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 86,
+   "location": {
+    "lat": 25.064038,
+    "lng": 121.428601
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/1781298222",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1419908687",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1419908687",
@@ -35,6 +41,10 @@
    "distance_m": 112,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.063822,
+    "lng": 121.428456
+   },
    "method": "official_data",
    "name": "7-11泰山新陽光門市-混合廁所所",
    "source": "https://data.gov.tw/dataset/30794",

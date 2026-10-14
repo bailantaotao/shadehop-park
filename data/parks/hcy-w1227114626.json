@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 110,
+   "location": {
+    "lat": 24.833408,
+    "lng": 121.017195
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3302544232",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1227114626",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 922,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 297,
     "family_room": false,
+    "location": {
+     "lat": 24.833845,
+     "lng": 121.013015
+    },
     "name": "竹北市仁義公有零售市場"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.833173,
+    "lng": 121.01566
+   },
    "method": "official_data",
    "name": "竹北市豆子埔公園",
    "source": "https://data.gov.tw/dataset/30794",

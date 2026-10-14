@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 299,
+   "location": {
+    "lat": 24.795798,
+    "lng": 121.174489
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9726443928",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/929535673",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/929535673",
@@ -35,6 +41,10 @@
    "distance_m": 160,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.791684,
+    "lng": 121.172583
+   },
    "method": "official_data",
    "name": "關西鎮衛生所1F",
    "source": "https://data.gov.tw/dataset/30794",

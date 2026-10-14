@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 7,
+   "location": {
+    "lat": 24.803024,
+    "lng": 120.969951
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4551198570",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/286595014",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 232,
+   "location": {
+    "lat": 24.801403,
+    "lng": 120.971678
+   },
    "method": "osm",
    "name": "新竹站",
    "source": "https://www.openstreetmap.org/node/3372916575",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 151,
     "family_room": false,
+    "location": {
+     "lat": 24.80481,
+     "lng": 120.96921
+    },
     "name": "新竹市東門公有零售市場1樓"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.80221,
+    "lng": 120.96968
+   },
    "method": "official_data",
    "name": "南門綜合醫院1樓",
    "source": "https://data.gov.tw/dataset/30794",
@@ -989,7 +1006,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

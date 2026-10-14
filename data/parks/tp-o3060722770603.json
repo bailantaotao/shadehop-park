@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 38,
+   "location": {
+    "lat": 25.042939,
+    "lng": 121.555893
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/2376980931",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 25.042602,
+    "lng": 121.555743
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 204,
+   "location": {
+    "lat": 25.041342,
+    "lng": 121.557392
+   },
    "method": "osm",
    "name": "捷運國父紀念館站",
    "source": "https://www.openstreetmap.org/node/3639530942",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 261,
     "family_room": false,
+    "location": {
+     "lat": 25.043917,
+     "lng": 121.557931
+    },
     "name": "松山文化創意園區1號倉庫"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.042992,
+    "lng": 121.556495
+   },
    "method": "official_data",
    "name": "秀傳醫院",
    "source": "https://data.gov.tw/dataset/30794",
@@ -983,7 +1003,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

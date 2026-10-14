@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 68,
+   "location": {
+    "lat": 25.049601,
+    "lng": 121.300862
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9404006232",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/13805208",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/13805208",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 205,
     "family_room": false,
+    "location": {
+     "lat": 25.050876,
+     "lng": 121.297681
+    },
     "name": "南崁兒童藝術村"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.049989,
+    "lng": 121.299796
+   },
    "method": "official_data",
    "name": "南崁吉林公園",
    "source": "https://data.gov.tw/dataset/30794",

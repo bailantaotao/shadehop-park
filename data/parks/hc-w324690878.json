@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/324690878",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/324690878",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/324690878",
@@ -39,9 +42,17 @@
     "changing_table": true,
     "distance_m": 24,
     "family_room": false,
+    "location": {
+     "lat": 24.833442,
+     "lng": 120.915806
+    },
     "name": "海天一線(下)"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.833019,
+    "lng": 120.916056
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1229242328",

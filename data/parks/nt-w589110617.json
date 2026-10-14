@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 243,
+   "location": {
+    "lat": 25.291866,
+    "lng": 121.567898
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5535370459",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/589110617",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/589110617",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 171,
     "family_room": false,
+    "location": {
+     "lat": 25.291248,
+     "lng": 121.567631
+    },
     "name": "石門區公所1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.290864,
+    "lng": 121.567373
+   },
    "method": "official_data",
    "name": "石門分駐所1F",
    "source": "https://data.gov.tw/dataset/30794",

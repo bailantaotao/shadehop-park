@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 25.027745,
+    "lng": 121.511462
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/11082701290",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/313772216",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 828,
+   "location": {
+    "lat": 25.035901,
+    "lng": 121.510806
+   },
    "method": "osm",
    "name": "捷運小南門站",
    "source": "https://www.openstreetmap.org/node/3812564399",
@@ -35,6 +44,10 @@
    "distance_m": 130,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.028086,
+    "lng": 121.512369
+   },
    "method": "official_data",
    "name": "中正11號",
    "source": "https://data.gov.tw/dataset/30794",

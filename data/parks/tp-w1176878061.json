@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1176878061",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1176878061",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1176878061",
@@ -35,6 +38,10 @@
    "distance_m": 15,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.100173,
+    "lng": 121.50653
+   },
    "method": "official_data",
    "name": "洲美公園",
    "source": "https://data.gov.tw/dataset/30794",

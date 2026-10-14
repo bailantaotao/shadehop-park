@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 99,
+   "location": {
+    "lat": 25.067026,
+    "lng": 121.624935
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/903726656",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/317037392",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1252,
+   "location": {
+    "lat": 25.059946,
+    "lng": 121.615897
+   },
    "method": "osm",
    "name": "捷運南港軟體園區站",
    "source": "https://www.openstreetmap.org/node/3501186379",

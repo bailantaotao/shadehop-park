@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 139,
+   "location": {
+    "lat": 24.954473,
+    "lng": 121.207617
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6842590221",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 16,
+   "location": {
+    "lat": 24.955922,
+    "lng": 121.208426
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/362705778",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1149,
+   "location": {
+    "lat": 24.958581,
+    "lng": 121.219371
+   },
    "method": "osm",
    "name": "捷運老街溪站",
    "source": "https://www.openstreetmap.org/node/4653215487",
@@ -35,6 +47,10 @@
    "distance_m": 87,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.955006,
+    "lng": 121.208685
+   },
    "method": "official_data",
    "name": "平鎮區婦幼活動中心1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -886,7 +902,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

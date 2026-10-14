@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 61,
+   "location": {
+    "lat": 24.796215,
+    "lng": 121.002208
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2625226995",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/545004237",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 858,
+   "location": {
+    "lat": 24.806617,
+    "lng": 121.00341
+   },
    "method": "osm",
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
@@ -35,6 +44,10 @@
    "distance_m": 52,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.79715,
+    "lng": 121.00292
+   },
    "method": "official_data",
    "name": "新竹市立馬偕兒童醫院2樓健兒門診區",
    "source": "https://data.gov.tw/dataset/30794",

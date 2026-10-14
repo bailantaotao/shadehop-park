@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 56,
+   "location": {
+    "lat": 25.052746,
+    "lng": 121.528696
+   },
    "method": "osm",
    "name": "松林商店",
    "source": "https://www.openstreetmap.org/node/4928425280",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 418,
+   "location": {
+    "lat": 25.052014,
+    "lng": 121.533036
+   },
    "method": "osm",
    "name": "捷運松江南京站",
    "source": "https://www.openstreetmap.org/node/1493007755",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 197,
     "family_room": false,
+    "location": {
+     "lat": 25.053073,
+     "lng": 121.52694
+    },
     "name": "林森公園康樂區民活動中心"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.052336,
+    "lng": 121.528423
+   },
    "method": "official_data",
    "name": "西堤牛排台北南京東店",
    "source": "https://data.gov.tw/dataset/30794",
@@ -895,7 +912,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

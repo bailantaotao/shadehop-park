@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 97,
+   "location": {
+    "lat": 25.034538,
+    "lng": 121.527777
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3307942127",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 105,
+   "location": {
+    "lat": 25.033918,
+    "lng": 121.528384
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/7071606829",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 116,
+   "location": {
+    "lat": 25.033842,
+    "lng": 121.529258
+   },
    "method": "osm",
    "name": "捷運東門站",
    "source": "https://www.openstreetmap.org/node/1940469232",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 141,
     "family_room": true,
+    "location": {
+     "lat": 25.033601,
+     "lng": 121.529269
+    },
     "name": "捷運東門站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.034526,
+    "lng": 121.527801
+   },
    "method": "official_data",
    "name": "統一超商臺北市臨沂門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -700,7 +720,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

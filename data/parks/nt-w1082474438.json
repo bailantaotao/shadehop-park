@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 104,
+   "location": {
+    "lat": 25.127607,
+    "lng": 121.817104
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/5531069108",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1082474438",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1082474438",
@@ -35,6 +41,10 @@
    "distance_m": 144,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.130072,
+    "lng": 121.818129
+   },
    "method": "official_data",
    "name": "深澳里市民活動中心",
    "source": "https://data.gov.tw/dataset/30794",

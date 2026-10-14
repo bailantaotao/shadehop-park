@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 116,
+   "location": {
+    "lat": 25.001209,
+    "lng": 121.550268
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4200643986",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 25.000656,
+    "lng": 121.551274
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1106802681",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 748,
+   "location": {
+    "lat": 24.999431,
+    "lng": 121.558138
+   },
    "method": "osm",
    "name": "捷運萬芳醫院站",
    "source": "https://www.openstreetmap.org/node/689354512",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 87,
     "family_room": false,
+    "location": {
+     "lat": 25.00071,
+     "lng": 121.551439
+    },
     "name": "興隆公園地下停車場"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.000414,
+    "lng": 121.551429
+   },
    "method": "official_data",
    "name": "興隆公園",
    "source": "https://data.gov.tw/dataset/30794",

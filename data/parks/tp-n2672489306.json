@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 110,
+   "location": {
+    "lat": 25.035823,
+    "lng": 121.578565
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2672864421",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 157,
+   "location": {
+    "lat": 25.033987,
+    "lng": 121.580495
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/2672489306",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 351,
+   "location": {
+    "lat": 25.037468,
+    "lng": 121.582311
+   },
    "method": "osm",
    "name": "捷運廣慈/奉天宮站",
    "source": "https://www.openstreetmap.org/node/4498833449",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 224,
     "family_room": true,
+    "location": {
+     "lat": 25.033315,
+     "lng": 121.580481
+    },
     "name": "永春陂濕地公園多功能室旁"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.034048,
+    "lng": 121.580523
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/14191866809",
@@ -831,7 +851,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

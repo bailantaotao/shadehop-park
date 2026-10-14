@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 270,
+   "location": {
+    "lat": 24.880441,
+    "lng": 121.212011
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6839408338",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/986892133",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/986892133",
@@ -35,6 +41,10 @@
    "distance_m": 220,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.878715,
+    "lng": 121.21017
+   },
    "method": "official_data",
    "name": "龍潭區百年社區交誼廳",
    "source": "https://data.gov.tw/dataset/30794",

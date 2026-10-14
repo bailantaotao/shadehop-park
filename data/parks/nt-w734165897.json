@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 193,
+   "location": {
+    "lat": 25.043665,
+    "lng": 121.425135
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118239054",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 194,
+   "location": {
+    "lat": 25.045378,
+    "lng": 121.420708
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/734165897",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1237,
+   "location": {
+    "lat": 25.033345,
+    "lng": 121.422963
+   },
    "method": "osm",
    "name": "捷運泰山貴和站",
    "source": "https://www.openstreetmap.org/node/4653351598",
@@ -35,6 +47,10 @@
    "distance_m": 73,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.043819,
+    "lng": 121.423312
+   },
    "method": "official_data",
    "name": "財團法人新北市泰山巌",
    "source": "https://data.gov.tw/dataset/30794",
@@ -649,7 +665,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

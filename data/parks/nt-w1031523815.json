@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1031523815",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1031523815",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1031523815",
@@ -35,6 +38,10 @@
    "distance_m": 13,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.004373,
+    "lng": 121.407886
+   },
    "method": "official_data",
    "name": "鎮福宮",
    "source": "https://data.gov.tw/dataset/30794",

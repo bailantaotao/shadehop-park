@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 42,
+   "location": {
+    "lat": 24.79234,
+    "lng": 121.176793
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6277683885",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1003857989",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1003857989",
@@ -35,6 +41,10 @@
    "distance_m": 99,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.79242,
+    "lng": 121.17581
+   },
    "method": "official_data",
    "name": "關西鎮公所1F",
    "source": "https://data.gov.tw/dataset/30794",

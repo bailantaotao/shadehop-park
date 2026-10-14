@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 120,
+   "location": {
+    "lat": 25.033733,
+    "lng": 121.536666
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7384220349",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 8,
+   "location": {
+    "lat": 25.032738,
+    "lng": 121.536303
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/16771220",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 133,
+   "location": {
+    "lat": 25.033562,
+    "lng": 121.535279
+   },
    "method": "osm",
    "name": "捷運大安森林公園站",
    "source": "https://www.openstreetmap.org/node/3494960749",
@@ -35,6 +47,10 @@
    "distance_m": 66,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.032292,
+    "lng": 121.537036
+   },
    "method": "official_data",
    "name": "大安森林公園6號建國南路",
    "source": "https://data.gov.tw/dataset/30794",
@@ -879,7 +895,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

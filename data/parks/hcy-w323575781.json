@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 27,
+   "location": {
+    "lat": 24.820988,
+    "lng": 121.009951
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/12119593789",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323575781",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323575781",
@@ -35,6 +41,10 @@
    "distance_m": 197,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.822407,
+    "lng": 121.010614
+   },
    "method": "official_data",
    "name": "竹北市福興公園",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 143,
+   "location": {
+    "lat": 24.929778,
+    "lng": 121.375447
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/13823733216",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/294668069",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 808,
+   "location": {
+    "lat": 24.938923,
+    "lng": 121.376449
+   },
    "method": "osm",
    "name": "捷運三峽站",
    "source": "https://www.openstreetmap.org/node/13976613665",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 128,
     "family_room": false,
+    "location": {
+     "lat": 24.930879,
+     "lng": 121.377854
+    },
     "name": "中油三峽加油站"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.930548,
+    "lng": 121.375235
+   },
    "method": "official_data",
    "name": "新北市政府警察局三峽分局1F",
    "source": "https://data.gov.tw/dataset/30794",

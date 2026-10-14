@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 29,
+   "location": {
+    "lat": 25.033607,
+    "lng": 121.379592
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118206969",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/540855823",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 912,
+   "location": {
+    "lat": 25.041332,
+    "lng": 121.385408
+   },
    "method": "osm",
    "name": "捷運體育大學站",
    "source": "https://www.openstreetmap.org/node/4653352242",
@@ -35,6 +44,10 @@
    "distance_m": 267,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.035123,
+    "lng": 121.38226
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/540379973",

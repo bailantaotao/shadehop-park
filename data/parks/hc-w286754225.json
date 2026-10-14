@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 10,
+   "location": {
+    "lat": 24.800826,
+    "lng": 120.967358
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3479266836",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/286754225",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 412,
+   "location": {
+    "lat": 24.801403,
+    "lng": 120.971678
+   },
    "method": "osm",
    "name": "新竹站",
    "source": "https://www.openstreetmap.org/node/3372916575",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 270,
     "family_room": true,
+    "location": {
+     "lat": 24.80218,
+     "lng": 120.96521
+    },
     "name": "大遠百威秀影城"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.80086,
+    "lng": 120.96736
+   },
    "method": "official_data",
    "name": "7-11便利商店-俊友",
    "source": "https://data.gov.tw/dataset/30794",
@@ -807,7 +824,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

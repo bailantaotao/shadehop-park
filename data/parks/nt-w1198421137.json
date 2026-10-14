@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 45,
+   "location": {
+    "lat": 25.001153,
+    "lng": 121.526925
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9377991077",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1198421137",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1149,
+   "location": {
+    "lat": 24.990331,
+    "lng": 121.524901
+   },
    "method": "osm",
    "name": "捷運秀朗橋站",
    "source": "https://www.openstreetmap.org/node/2083320436",
@@ -35,6 +44,10 @@
    "distance_m": 162,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.999331,
+    "lng": 121.525633
+   },
    "method": "official_data",
    "name": "麥當勞永和得和店2F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -717,7 +730,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

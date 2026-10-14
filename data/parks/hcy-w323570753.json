@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 174,
+   "location": {
+    "lat": 24.838555,
+    "lng": 121.000793
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3303551508",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323570753",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 662,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 209,
     "family_room": false,
+    "location": {
+     "lat": 24.839646,
+     "lng": 121.00408
+    },
     "name": "竹北市公所1F"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.838123,
+    "lng": 121.002713
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3353781542",

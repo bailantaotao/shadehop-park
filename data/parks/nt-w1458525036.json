@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 353,
+   "location": {
+    "lat": 25.191342,
+    "lng": 121.427676
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423767496",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1458525036",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 241,
+   "location": {
+    "lat": 25.191161,
+    "lng": 121.426285
+   },
    "method": "osm",
    "name": "臺北海洋大學站",
    "source": "https://www.openstreetmap.org/node/4014856069",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 120,
+   "location": {
+    "lat": 25.034306,
+    "lng": 121.434432
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3703245296",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 80,
+   "location": {
+    "lat": 25.033529,
+    "lng": 121.433363
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/414366386",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 265,
+   "location": {
+    "lat": 25.032722,
+    "lng": 121.435275
+   },
    "method": "osm",
    "name": "捷運輔大站",
    "source": "https://www.openstreetmap.org/node/3812564424",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 95,
     "family_room": false,
+    "location": {
+     "lat": 25.035196,
+     "lng": 121.432019
+    },
     "name": "台北捷運新莊區段(輔大站)B1站外"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.034439,
+    "lng": 121.432753
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/13366676215",

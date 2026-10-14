@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 247,
+   "location": {
+    "lat": 25.159592,
+    "lng": 121.419309
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423767479",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1101759171",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1101759171",
@@ -35,6 +41,10 @@
    "distance_m": 107,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.15842,
+    "lng": 121.41871
+   },
    "method": "official_data",
    "name": "南山公園",
    "source": "https://data.gov.tw/dataset/30794",

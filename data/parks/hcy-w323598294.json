@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 17,
+   "location": {
+    "lat": 24.823464,
+    "lng": 121.028057
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9515432903",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323598294",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323598294",
@@ -35,6 +41,10 @@
    "distance_m": 180,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.821923,
+    "lng": 121.028103
+   },
    "method": "official_data",
    "name": "新竹喜來登大飯店3F(宴會廳)",
    "source": "https://data.gov.tw/dataset/30794",

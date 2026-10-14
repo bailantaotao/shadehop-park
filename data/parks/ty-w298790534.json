@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 398,
+   "location": {
+    "lat": 24.817916,
+    "lng": 121.351157
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6275650886",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 193,
+   "location": {
+    "lat": 24.816325,
+    "lng": 121.349086
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/298790534",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/298790534",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 45,
     "family_room": false,
+    "location": {
+     "lat": 24.814018,
+     "lng": 121.351225
+    },
     "name": "角板山天幕廣場"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.814684,
+    "lng": 121.349195
+   },
    "method": "official_data",
    "name": "上台地停車場",
    "source": "https://data.gov.tw/dataset/30794",

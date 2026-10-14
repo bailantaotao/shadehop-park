@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 118,
+   "location": {
+    "lat": 24.869728,
+    "lng": 121.034372
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3303558763",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/947708648",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/947708648",
@@ -35,6 +41,10 @@
    "distance_m": 116,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.869153,
+    "lng": 121.034572
+   },
    "method": "official_data",
    "name": "湖口鄉德厚宮",
    "source": "https://data.gov.tw/dataset/30794",

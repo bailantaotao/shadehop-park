@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 91,
+   "location": {
+    "lat": 24.833371,
+    "lng": 121.006331
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3303552640",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/152927876",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 794,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -35,6 +44,10 @@
    "distance_m": 68,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.832049,
+    "lng": 121.006851
+   },
    "method": "official_data",
    "name": "竹北市衛生所2F",
    "source": "https://data.gov.tw/dataset/30794",

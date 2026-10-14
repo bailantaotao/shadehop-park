@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/281240297",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/281240297",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 848,
+   "location": {
+    "lat": 25.049857,
+    "lng": 121.797478
+   },
    "method": "osm",
    "name": "大華站",
    "source": "https://www.openstreetmap.org/node/4131992947",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 98,
     "family_room": false,
+    "location": {
+     "lat": 25.04773,
+     "lng": 121.788129
+    },
     "name": "十分瀑布公園觀景台"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.048629,
+    "lng": 121.787243
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1382589527",
@@ -650,7 +664,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 83,
+   "location": {
+    "lat": 25.089616,
+    "lng": 121.51585
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5949987493",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1347999064",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1162,
+   "location": {
+    "lat": 25.084291,
+    "lng": 121.524981
+   },
    "method": "osm",
    "name": "捷運劍潭站",
    "source": "https://www.openstreetmap.org/node/3495094875",
@@ -35,6 +44,10 @@
    "distance_m": 44,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.090132,
+    "lng": 121.514766
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4923287437",

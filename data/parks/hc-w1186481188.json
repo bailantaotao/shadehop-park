@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 168,
+   "location": {
+    "lat": 24.809859,
+    "lng": 120.980171
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2630768222",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1186481188",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 414,
+   "location": {
+    "lat": 24.80863,
+    "lng": 120.98379
+   },
    "method": "osm",
    "name": "北新竹站",
    "source": "https://www.openstreetmap.org/node/1543862087",
@@ -35,6 +44,10 @@
    "distance_m": 45,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.81104,
+    "lng": 120.98047
+   },
    "method": "official_data",
    "name": "三民公園",
    "source": "https://data.gov.tw/dataset/30794",

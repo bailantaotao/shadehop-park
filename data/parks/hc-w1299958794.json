@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 20,
+   "location": {
+    "lat": 24.79685,
+    "lng": 120.999685
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7661083666",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1299958794",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1160,
+   "location": {
+    "lat": 24.806617,
+    "lng": 121.00341
+   },
    "method": "osm",
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
@@ -35,6 +44,10 @@
    "distance_m": 154,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.79542,
+    "lng": 120.99841
+   },
    "method": "official_data",
    "name": "清大候車亭",
    "source": "https://data.gov.tw/dataset/30794",

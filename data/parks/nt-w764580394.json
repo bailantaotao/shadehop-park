@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 277,
+   "location": {
+    "lat": 25.236252,
+    "lng": 121.456392
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/832893996",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/764580394",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/764580394",
@@ -35,6 +41,10 @@
    "distance_m": 294,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.23673,
+    "lng": 121.458487
+   },
    "method": "official_data",
    "name": "屯山里辦公室",
    "source": "https://data.gov.tw/dataset/30794",

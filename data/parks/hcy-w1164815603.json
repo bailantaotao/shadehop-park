@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 51,
+   "location": {
+    "lat": 24.817161,
+    "lng": 121.020094
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1308750675",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1164815603",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1164815603",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 266,
     "family_room": true,
+    "location": {
+     "lat": 24.82013,
+     "lng": 121.019357
+    },
     "name": "新竹縣體育館2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.819983,
+    "lng": 121.019622
+   },
    "method": "official_data",
    "name": "新竹縣體育館1F(右側)",
    "source": "https://data.gov.tw/dataset/30794",

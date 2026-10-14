@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 313,
+   "location": {
+    "lat": 24.988233,
+    "lng": 121.018598
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6898027606",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 63,
+   "location": {
+    "lat": 24.989196,
+    "lng": 121.016296
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/693464627",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/693464627",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.99016,
+    "lng": 121.016109
+   },
    "method": "official_data",
    "name": "永安海螺文化體驗園區室外",
    "source": "https://data.gov.tw/dataset/30794",

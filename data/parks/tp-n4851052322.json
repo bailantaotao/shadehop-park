@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 18,
+   "location": {
+    "lat": 25.056039,
+    "lng": 121.524788
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5110489302",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/4851052322",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 407,
+   "location": {
+    "lat": 25.057632,
+    "lng": 121.520699
+   },
    "method": "osm",
    "name": "捷運雙連站",
    "source": "https://www.openstreetmap.org/node/3495094872",
@@ -35,6 +44,10 @@
    "distance_m": 238,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.054131,
+    "lng": 121.52556
+   },
    "method": "official_data",
    "name": "欣欣百貨2F",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 13,
+   "location": {
+    "lat": 25.049784,
+    "lng": 121.443136
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/13633266394",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/960132203",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 475,
+   "location": {
+    "lat": 25.053265,
+    "lng": 121.439552
+   },
    "method": "osm",
    "name": "捷運泰山站",
    "source": "https://www.openstreetmap.org/node/4653215488",
@@ -35,6 +44,10 @@
    "distance_m": 92,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.049553,
+    "lng": 121.44495
+   },
    "method": "official_data",
    "name": "摩斯漢堡新莊中平店B1",
    "source": "https://data.gov.tw/dataset/30794",
@@ -756,7 +769,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 74,
+   "location": {
+    "lat": 25.054988,
+    "lng": 121.518431
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2651256514",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 162,
+   "location": {
+    "lat": 25.052963,
+    "lng": 121.519413
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/852670782",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 237,
+   "location": {
+    "lat": 25.052626,
+    "lng": 121.520391
+   },
    "method": "osm",
    "name": "捷運中山站",
    "source": "https://www.openstreetmap.org/node/3495094871",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 182,
     "family_room": true,
+    "location": {
+     "lat": 25.05274,
+     "lng": 121.519069
+    },
     "name": "中山地下街M13"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.054168,
+    "lng": 121.518608
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/10591608906",
@@ -960,7 +980,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

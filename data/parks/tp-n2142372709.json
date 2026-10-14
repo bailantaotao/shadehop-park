@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 48,
+   "location": {
+    "lat": 25.039843,
+    "lng": 121.578696
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9880178109",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 60,
+   "location": {
+    "lat": 25.038714,
+    "lng": 121.579014
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/2142372709",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 358,
+   "location": {
+    "lat": 25.040876,
+    "lng": 121.575705
+   },
    "method": "osm",
    "name": "捷運永春站",
    "source": "https://www.openstreetmap.org/node/3639530949",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 299,
     "family_room": false,
+    "location": {
+     "lat": 25.041049,
+     "lng": 121.57651
+    },
     "name": "捷運永春站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.039809,
+    "lng": 121.577556
+   },
    "method": "official_data",
    "name": "台灣中油松山路加油站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -975,7 +995,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

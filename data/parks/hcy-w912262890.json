@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 176,
+   "location": {
+    "lat": 24.776314,
+    "lng": 121.076222
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1062232636",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/912262890",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/912262890",
@@ -35,6 +41,10 @@
    "distance_m": 57,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.777493,
+    "lng": 121.074738
+   },
    "method": "official_data",
    "name": "芎林鄉公所1F",
    "source": "https://data.gov.tw/dataset/30794",

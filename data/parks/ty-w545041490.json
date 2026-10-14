@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 152,
+   "location": {
+    "lat": 25.00889,
+    "lng": 121.213249
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10594438709",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/545041490",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 268,
+   "location": {
+    "lat": 25.013025,
+    "lng": 121.214828
+   },
    "method": "osm",
    "name": "桃園站",
    "source": "https://www.openstreetmap.org/node/6073153485",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 299,
     "family_room": true,
+    "location": {
+     "lat": 25.014201,
+     "lng": 121.213496
+    },
     "name": "華泰名品城〈二期〉1H"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.012807,
+    "lng": 121.214676
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/591520604",
@@ -972,7 +989,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

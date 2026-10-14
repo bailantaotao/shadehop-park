@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 261,
+   "location": {
+    "lat": 25.081651,
+    "lng": 121.58855
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9651233119",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 10,
+   "location": {
+    "lat": 25.082067,
+    "lng": 121.585784
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/236376070",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 406,
+   "location": {
+    "lat": 25.078556,
+    "lng": 121.584942
+   },
    "method": "osm",
    "name": "捷運文德站",
    "source": "https://www.openstreetmap.org/node/3501186375",
@@ -35,6 +47,10 @@
    "distance_m": 9,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.082478,
+    "lng": 121.585852
+   },
    "method": "official_data",
    "name": "碧湖公園兒童遊戲場旁景觀公",
    "source": "https://data.gov.tw/dataset/30794",
@@ -678,7 +694,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 185,
+   "location": {
+    "lat": 24.792017,
+    "lng": 120.927481
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7930454518",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1466909111",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 590,
+   "location": {
+    "lat": 24.787232,
+    "lng": 120.92822
+   },
    "method": "osm",
    "name": "三姓橋站",
    "source": "https://www.openstreetmap.org/node/4450762389",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 184,
+   "location": {
+    "lat": 25.051699,
+    "lng": 121.367687
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8305912212",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1050239012",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1208,
+   "location": {
+    "lat": 25.060474,
+    "lng": 121.370796
+   },
    "method": "osm",
    "name": "捷運長庚醫院站",
    "source": "https://www.openstreetmap.org/node/4653352241",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 22,
+   "location": {
+    "lat": 24.939752,
+    "lng": 121.214245
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6839264757",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/202815176",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 374,
+   "location": {
+    "lat": 24.942908,
+    "lng": 121.214543
+   },
    "method": "osm",
    "name": "平鎮站",
    "source": "https://www.openstreetmap.org/node/14244739700",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 224,
     "family_room": false,
+    "location": {
+     "lat": 24.940504,
+     "lng": 121.216503
+    },
     "name": "思夢樂平鎮店"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.940087,
+    "lng": 121.214531
+   },
    "method": "official_data",
    "name": "平鎮區地政事務所B1",
    "source": "https://data.gov.tw/dataset/30794",

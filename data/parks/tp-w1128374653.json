@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 48,
+   "location": {
+    "lat": 25.052492,
+    "lng": 121.546471
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4031297507",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 41,
+   "location": {
+    "lat": 25.05324,
+    "lng": 121.54617
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1128374653",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 282,
+   "location": {
+    "lat": 25.051836,
+    "lng": 121.543965
+   },
    "method": "osm",
    "name": "捷運南京復興站",
    "source": "https://www.openstreetmap.org/node/3497302606",
@@ -35,6 +47,10 @@
    "distance_m": 135,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.053842,
+    "lng": 121.547693
+   },
    "method": "official_data",
    "name": "行天宮附設玄空圖書館2F",
    "source": "https://data.gov.tw/dataset/30794",

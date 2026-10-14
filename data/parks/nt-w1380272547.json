@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1380272547",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1380272547",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1380272547",
@@ -35,6 +38,10 @@
    "distance_m": 170,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.1114,
+    "lng": 121.854
+   },
    "method": "official_data",
    "name": "金泉寺",
    "source": "https://data.gov.tw/dataset/30794",

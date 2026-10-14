@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 279,
+   "location": {
+    "lat": 25.181202,
+    "lng": 121.421468
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2956818633",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/293011334",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 551,
+   "location": {
+    "lat": 25.182005,
+    "lng": 121.418612
+   },
    "method": "osm",
    "name": "淡水漁人碼頭站",
    "source": "https://www.openstreetmap.org/node/8043755931",
@@ -35,6 +44,10 @@
    "distance_m": 179,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.180983,
+    "lng": 121.423024
+   },
    "method": "official_data",
    "name": "油車里活動中心",
    "source": "https://data.gov.tw/dataset/30794",

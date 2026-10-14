@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 223,
+   "location": {
+    "lat": 25.028426,
+    "lng": 121.457658
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3563069819",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344200572",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 817,
+   "location": {
+    "lat": 25.036333,
+    "lng": 121.453359
+   },
    "method": "osm",
    "name": "捷運新莊站",
    "source": "https://www.openstreetmap.org/node/3812564402",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 277,
     "family_room": false,
+    "location": {
+     "lat": 25.02551,
+     "lng": 121.45499
+    },
     "name": "玫瑰公園(近綠堤街)"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.027988,
+    "lng": 121.453853
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/8224169534",
@@ -792,7 +809,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

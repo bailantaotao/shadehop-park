@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 16,
+   "location": {
+    "lat": 25.02926,
+    "lng": 121.542034
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9362998874",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 352,
+   "location": {
+    "lat": 25.026101,
+    "lng": 121.54346
+   },
    "method": "osm",
    "name": "捷運科技大樓站",
    "source": "https://www.openstreetmap.org/node/3497302604",
@@ -35,6 +44,10 @@
    "distance_m": 173,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.028117,
+    "lng": 121.54093
+   },
    "method": "official_data",
    "name": "公有安東市場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -871,7 +884,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

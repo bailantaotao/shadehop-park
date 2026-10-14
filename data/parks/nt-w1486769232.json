@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1486769232",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1486769232",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 684,
+   "location": {
+    "lat": 25.015692,
+    "lng": 121.944576
+   },
    "method": "osm",
    "name": "福隆站",
    "source": "https://www.openstreetmap.org/node/289339351",
@@ -35,6 +41,10 @@
    "distance_m": 86,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.01922,
+    "lng": 121.94907
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/700995986",

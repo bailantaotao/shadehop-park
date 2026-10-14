@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 38,
+   "location": {
+    "lat": 24.951759,
+    "lng": 121.3238
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118207006",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/437908567",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1287,
+   "location": {
+    "lat": 24.960765,
+    "lng": 121.334502
+   },
    "method": "osm",
    "name": "捷運永吉公園站",
    "source": "https://www.openstreetmap.org/node/4990733838",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.952371,
+    "lng": 121.323757
+   },
    "method": "official_data",
    "name": "八德區大發休閒公園",
    "source": "https://data.gov.tw/dataset/30794",

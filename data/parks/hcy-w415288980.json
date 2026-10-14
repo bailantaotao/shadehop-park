@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/415288980",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/415288980",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/415288980",
@@ -35,6 +38,10 @@
    "distance_m": 57,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.759556,
+    "lng": 121.03731
+   },
    "method": "official_data",
    "name": "竹東鎮福龍宮",
    "source": "https://data.gov.tw/dataset/30794",

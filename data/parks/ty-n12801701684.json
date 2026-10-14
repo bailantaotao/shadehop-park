@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 455,
+   "location": {
+    "lat": 24.969915,
+    "lng": 121.323531
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/5040151918",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/12801701684",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1106,
+   "location": {
+    "lat": 24.966771,
+    "lng": 121.329867
+   },
    "method": "osm",
    "name": "捷運鶯桃福德站",
    "source": "https://www.openstreetmap.org/node/4990733837",
@@ -35,6 +44,10 @@
    "distance_m": 105,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.969621,
+    "lng": 121.319887
+   },
    "method": "official_data",
    "name": "八德區廣行宮",
    "source": "https://data.gov.tw/dataset/30794",

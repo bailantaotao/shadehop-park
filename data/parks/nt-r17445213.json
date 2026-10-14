@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 57,
+   "location": {
+    "lat": 25.067084,
+    "lng": 121.432314
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118239052",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/17445213",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/17445213",
@@ -35,6 +41,10 @@
    "distance_m": 187,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.068826,
+    "lng": 121.431488
+   },
    "method": "official_data",
    "name": "福德里民眾集會所",
    "source": "https://data.gov.tw/dataset/30794",

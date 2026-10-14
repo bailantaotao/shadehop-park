@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 35,
+   "location": {
+    "lat": 25.073896,
+    "lng": 121.519341
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13551381070",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/11183243034",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 255,
+   "location": {
+    "lat": 25.071417,
+    "lng": 121.520136
+   },
    "method": "osm",
    "name": "捷運圓山站",
    "source": "https://www.openstreetmap.org/node/3495094874",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 260,
     "family_room": true,
+    "location": {
+     "lat": 25.071363,
+     "lng": 121.520119
+    },
     "name": "捷運圓山站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.072561,
+    "lng": 121.518576
+   },
    "method": "official_data",
    "name": "統一超商臺北市德倫門市",
    "source": "https://data.gov.tw/dataset/30794",

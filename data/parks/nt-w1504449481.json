@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 184,
+   "location": {
+    "lat": 25.124031,
+    "lng": 121.914149
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10802153990",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1504449481",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1504449481",
@@ -35,6 +41,10 @@
    "distance_m": 61,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.124018,
+    "lng": 121.912853
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/8608952334",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 113,
+   "location": {
+    "lat": 25.048778,
+    "lng": 121.525434
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/6881370461",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 29,
+   "location": {
+    "lat": 25.047707,
+    "lng": 121.526377
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/11311415382",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 410,
+   "location": {
+    "lat": 25.044762,
+    "lng": 121.523423
+   },
    "method": "osm",
    "name": "捷運善導寺站",
    "source": "https://www.openstreetmap.org/node/3578751641",
@@ -35,6 +47,10 @@
    "distance_m": 30,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.047671,
+    "lng": 121.52557
+   },
    "method": "official_data",
    "name": "市民大道地下停車場林金段林森忠孝3號出口B1",
    "source": "https://data.gov.tw/dataset/30794",
@@ -928,7 +944,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

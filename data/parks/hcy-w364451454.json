@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 32,
+   "location": {
+    "lat": 24.700601,
+    "lng": 121.057065
+   },
    "method": "osm",
    "name": "OK超商 Family Mart 全家便利商店",
    "source": "https://www.openstreetmap.org/node/1516350096",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/364451454",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/364451454",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 191,
     "family_room": true,
+    "location": {
+     "lat": 24.699035,
+     "lng": 121.056588
+    },
     "name": "北埔老街(商圈內)-親子廁所(100)"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.700156,
+    "lng": 121.058235
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4552018133",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 171,
+   "location": {
+    "lat": 25.173043,
+    "lng": 121.438598
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/2941394402",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 150,
+   "location": {
+    "lat": 25.172272,
+    "lng": 121.437537
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/289682008",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1078,
+   "location": {
+    "lat": 25.167783,
+    "lng": 121.445574
+   },
    "method": "osm",
    "name": "捷運淡水站",
    "source": "https://www.openstreetmap.org/node/3495094888",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 132,
     "family_room": false,
+    "location": {
+     "lat": 25.172786,
+     "lng": 121.437973
+    },
     "name": "新北市立圖書館淡水分館5F"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.174543,
+    "lng": 121.436308
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/301423039",
@@ -815,7 +835,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 266,
+   "location": {
+    "lat": 24.875979,
+    "lng": 120.996793
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7922528398",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/254298499",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 985,
+   "location": {
+    "lat": 24.869277,
+    "lng": 120.996534
+   },
    "method": "osm",
    "name": "新豐站",
    "source": "https://www.openstreetmap.org/node/418760215",
@@ -35,6 +44,10 @@
    "distance_m": 6,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.878971,
+    "lng": 120.997748
+   },
    "method": "official_data",
    "name": "新豐鄉員山綜合活動中心",
    "source": "https://data.gov.tw/dataset/30794",

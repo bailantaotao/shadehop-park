@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 264,
+   "location": {
+    "lat": 25.018667,
+    "lng": 121.259653
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4569954003",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/535857993",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/535857993",
@@ -35,6 +41,10 @@
    "distance_m": 252,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.014284,
+    "lng": 121.262019
+   },
    "method": "official_data",
    "name": "桃園市立圖書館大竹分館2F",
    "source": "https://data.gov.tw/dataset/30794",

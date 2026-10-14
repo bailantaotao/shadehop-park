@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 96,
+   "location": {
+    "lat": 25.051561,
+    "lng": 121.36376
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6154687164",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/615933028",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1313,
+   "location": {
+    "lat": 25.060474,
+    "lng": 121.370796
+   },
    "method": "osm",
    "name": "捷運長庚醫院站",
    "source": "https://www.openstreetmap.org/node/4653352241",

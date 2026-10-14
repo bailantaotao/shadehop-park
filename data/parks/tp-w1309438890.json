@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 422,
+   "location": {
+    "lat": 25.070238,
+    "lng": 121.592752
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/2003857653",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1309438890",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1065,
+   "location": {
+    "lat": 25.072639,
+    "lng": 121.607363
+   },
    "method": "osm",
    "name": "捷運葫洲站",
    "source": "https://www.openstreetmap.org/node/3501186377",
@@ -35,6 +44,10 @@
    "distance_m": 296,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.067637,
+    "lng": 121.596695
+   },
    "method": "official_data",
    "name": "臺北市網球中心2樓",
    "source": "https://data.gov.tw/dataset/30794",

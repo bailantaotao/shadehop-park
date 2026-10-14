@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 130,
+   "location": {
+    "lat": 25.00143,
+    "lng": 121.55337
+   },
    "method": "osm",
    "name": "義美食品",
    "source": "https://www.openstreetmap.org/node/3667683650",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1106802689",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 450,
+   "location": {
+    "lat": 25.005481,
+    "lng": 121.55706
+   },
    "method": "osm",
    "name": "捷運辛亥站",
    "source": "https://www.openstreetmap.org/node/689295008",
@@ -35,6 +44,10 @@
    "distance_m": 145,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.000879,
+    "lng": 121.55394
+   },
    "method": "official_data",
    "name": "福華加油站",
    "source": "https://data.gov.tw/dataset/30794",

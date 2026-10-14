@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 126,
+   "location": {
+    "lat": 24.768942,
+    "lng": 120.97726
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4845036332",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 19,
+   "location": {
+    "lat": 24.774257,
+    "lng": 120.969835
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/160953408",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/160953408",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 20,
     "family_room": false,
+    "location": {
+     "lat": 24.77431,
+     "lng": 120.96979
+    },
     "name": "青草湖風景區"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.77545,
+    "lng": 120.97328
+   },
    "method": "official_data",
    "name": "青草湖風景區環湖道路旁",
    "source": "https://data.gov.tw/dataset/30794",

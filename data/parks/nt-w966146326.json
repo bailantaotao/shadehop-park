@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/966146326",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/966146326",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/966146326",
@@ -35,6 +38,10 @@
    "distance_m": 131,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.112232,
+    "lng": 121.919347
+   },
    "method": "official_data",
    "name": "龍洞社區停車場",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 100,
+   "location": {
+    "lat": 25.090629,
+    "lng": 121.505167
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9414479543",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 9,
+   "location": {
+    "lat": 25.091185,
+    "lng": 121.506003
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://data.gov.tw/dataset/136476",
@@ -35,6 +44,10 @@
    "distance_m": 18,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.091128,
+    "lng": 121.505876
+   },
    "method": "official_data",
    "name": "社子公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -780,7 +793,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

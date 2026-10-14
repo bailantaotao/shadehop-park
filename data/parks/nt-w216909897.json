@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 62,
+   "location": {
+    "lat": 25.011158,
+    "lng": 121.44698
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/10823001121",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/216909897",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 731,
+   "location": {
+    "lat": 25.004192,
+    "lng": 121.444762
+   },
    "method": "osm",
    "name": "浮洲站",
    "source": "https://www.openstreetmap.org/node/1320065245",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 208,
     "family_room": false,
+    "location": {
+     "lat": 25.012509,
+     "lng": 121.445853
+    },
     "name": "華中公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.010612,
+    "lng": 121.44642
+   },
    "method": "osm",
    "name": "新大觀公園無障礙廁所",
    "source": "https://www.openstreetmap.org/node/10074080690",

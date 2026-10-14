@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 129,
+   "location": {
+    "lat": 24.768416,
+    "lng": 120.988105
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/318824930",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1562646241",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1562646241",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 269,
     "family_room": true,
+    "location": {
+     "lat": 24.765525,
+     "lng": 120.991274
+    },
     "name": "寶山鄉公所2F"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.765411,
+    "lng": 120.990128
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3836723263",

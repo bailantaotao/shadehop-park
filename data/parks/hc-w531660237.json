@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 24.789279,
+    "lng": 120.997131
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/588277337",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 31,
+   "location": {
+    "lat": 24.789794,
+    "lng": 120.996952
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/531660237",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/531660237",
@@ -35,6 +44,10 @@
    "distance_m": 22,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.789244,
+    "lng": 120.997501
+   },
    "method": "osm",
    "name": "廁所",
    "source": "https://www.openstreetmap.org/way/588300046",

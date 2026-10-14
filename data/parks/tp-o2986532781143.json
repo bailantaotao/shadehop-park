@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 223,
+   "location": {
+    "lat": 25.137871,
+    "lng": 121.484874
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3820884926",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 290,
+   "location": {
+    "lat": 25.13749,
+    "lng": 121.485498
+   },
    "method": "osm",
    "name": "捷運復興崗站",
    "source": "https://www.openstreetmap.org/node/3495094883",
@@ -35,6 +44,10 @@
    "distance_m": 277,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.13768,
+    "lng": 121.485395
+   },
    "method": "official_data",
    "name": "捷運復興崗站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -540,7 +553,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

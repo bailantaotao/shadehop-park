@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 125,
+   "location": {
+    "lat": 24.975576,
+    "lng": 121.298959
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/5257229303",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/6075092246",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/6075092246",
@@ -35,6 +41,10 @@
    "distance_m": 126,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.975662,
+    "lng": 121.299033
+   },
    "method": "official_data",
    "name": "八德區萊爾富超商德利店",
    "source": "https://data.gov.tw/dataset/30794",

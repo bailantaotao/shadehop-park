@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 99,
+   "location": {
+    "lat": 25.13019,
+    "lng": 121.392109
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/270291782",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/270286960",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/270286960",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 247,
     "family_room": false,
+    "location": {
+     "lat": 25.12754,
+     "lng": 121.390636
+    },
     "name": "八里區長坑里銀髮俱樂部"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.129022,
+    "lng": 121.392115
+   },
    "method": "official_data",
    "name": "統一超商八里長坑門市",
    "source": "https://data.gov.tw/dataset/30794",

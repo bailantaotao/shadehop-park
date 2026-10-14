@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 103,
+   "location": {
+    "lat": 24.990303,
+    "lng": 121.540963
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2399354917",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 181,
+   "location": {
+    "lat": 24.989902,
+    "lng": 121.542132
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/325015197",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 354,
+   "location": {
+    "lat": 24.992712,
+    "lng": 121.540706
+   },
    "method": "osm",
    "name": "捷運景美站",
    "source": "https://www.openstreetmap.org/node/3530915061",
@@ -35,6 +47,10 @@
    "distance_m": 81,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.988516,
+    "lng": 121.540302
+   },
    "method": "official_data",
    "name": "景美國小地下停車場B1",
    "source": "https://data.gov.tw/dataset/30794",

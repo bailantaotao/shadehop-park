@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/841232261",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/841232261",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 691,
+   "location": {
+    "lat": 24.93899,
+    "lng": 121.367158
+   },
    "method": "osm",
    "name": "捷運臺北大學站",
    "source": "https://www.openstreetmap.org/node/4990733842",
@@ -35,6 +41,10 @@
    "distance_m": 287,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.942622,
+    "lng": 121.366216
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/7093253849",

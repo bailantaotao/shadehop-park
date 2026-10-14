@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 210,
+   "location": {
+    "lat": 24.729745,
+    "lng": 121.09184
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3249128843",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/544102098",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1094,
+   "location": {
+    "lat": 24.738321,
+    "lng": 121.094903
+   },
    "method": "osm",
    "name": "竹東站",
    "source": "https://www.openstreetmap.org/node/1374041041",

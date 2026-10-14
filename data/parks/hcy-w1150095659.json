@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 200,
+   "location": {
+    "lat": 24.841761,
+    "lng": 120.955869
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/way/1157124440",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1150095659",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 701,
+   "location": {
+    "lat": 24.835232,
+    "lng": 120.948171
+   },
    "method": "osm",
    "name": "佑聖宫站",
    "source": "https://www.openstreetmap.org/node/12446786913",
@@ -35,6 +44,10 @@
    "distance_m": 181,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.841931,
+    "lng": 120.951662
+   },
    "method": "official_data",
    "name": "新竹肉品市場股份有限公司",
    "source": "https://data.gov.tw/dataset/30794",

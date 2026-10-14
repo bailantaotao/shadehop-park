@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/324690877",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/324690877",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/324690877",
@@ -39,9 +42,17 @@
     "changing_table": true,
     "distance_m": 208,
     "family_room": true,
+    "location": {
+     "lat": 24.83421,
+     "lng": 120.91636
+    },
     "name": "新竹巿環境保護局1樓"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.837368,
+    "lng": 120.918481
+   },
    "method": "official_data",
    "name": "(幸福沙灣)看海公園(下)",
    "source": "https://data.gov.tw/dataset/30794",

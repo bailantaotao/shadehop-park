@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 154,
+   "location": {
+    "lat": 24.899512,
+    "lng": 120.987205
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/971966033",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/504389552",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/504389552",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.899837,
+    "lng": 120.990044
+   },
    "method": "official_data",
    "name": "新豐鄉野戰公園",
    "source": "https://data.gov.tw/dataset/30794",

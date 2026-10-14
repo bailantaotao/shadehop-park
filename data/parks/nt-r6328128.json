@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/6328128",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/6328128",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/6328128",
@@ -35,6 +38,10 @@
    "distance_m": 229,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.073393,
+    "lng": 121.427035
+   },
    "method": "official_data",
    "name": "水碓觀景公園",
    "source": "https://data.gov.tw/dataset/30794",

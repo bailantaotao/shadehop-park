@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 131,
+   "location": {
+    "lat": 24.823373,
+    "lng": 121.028292
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/12121483379",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323413323",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323413323",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.821954,
+    "lng": 121.029155
+   },
    "method": "official_data",
    "name": "竹北市兒七宗教公園",
    "source": "https://data.gov.tw/dataset/30794",

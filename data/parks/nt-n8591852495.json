@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 356,
+   "location": {
+    "lat": 25.057735,
+    "lng": 121.430693
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7796926781",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 125,
+   "location": {
+    "lat": 25.057191,
+    "lng": 121.42836
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/8591852495",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1334,
+   "location": {
+    "lat": 25.053265,
+    "lng": 121.439552
+   },
    "method": "osm",
    "name": "捷運泰山站",
    "source": "https://www.openstreetmap.org/node/4653215488",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 300,
     "family_room": true,
+    "location": {
+     "lat": 25.054983,
+     "lng": 121.428349
+    },
     "name": "泰山區綜合運動場"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.057561,
+    "lng": 121.426908
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3439423191",
@@ -626,7 +646,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

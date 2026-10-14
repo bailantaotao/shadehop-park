@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 92,
+   "location": {
+    "lat": 24.790759,
+    "lng": 120.926089
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7930454522",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/556634522",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 328,
+   "location": {
+    "lat": 24.787232,
+    "lng": 120.92822
+   },
    "method": "osm",
    "name": "三姓橋站",
    "source": "https://www.openstreetmap.org/node/4450762389",
@@ -35,6 +44,10 @@
    "distance_m": 208,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.78796,
+    "lng": 120.92732
+   },
    "method": "official_data",
    "name": "台灣中油香山加油站",
    "source": "https://data.gov.tw/dataset/30794",

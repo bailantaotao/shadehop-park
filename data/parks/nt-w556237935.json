@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 447,
+   "location": {
+    "lat": 25.041438,
+    "lng": 121.621316
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/1681475965",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/556237935",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1252,
+   "location": {
+    "lat": 25.054569,
+    "lng": 121.617219
+   },
    "method": "osm",
    "name": "捷運南港展覽館站",
    "source": "https://www.openstreetmap.org/node/1945578205",

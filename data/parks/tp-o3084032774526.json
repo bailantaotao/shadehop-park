@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 57,
+   "location": {
+    "lat": 25.078463,
+    "lng": 121.578857
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3742377373",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 180,
+   "location": {
+    "lat": 25.078824,
+    "lng": 121.577379
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 439,
+   "location": {
+    "lat": 25.080073,
+    "lng": 121.575203
+   },
    "method": "osm",
    "name": "捷運港墘站",
    "source": "https://www.openstreetmap.org/node/3501186374",
@@ -35,6 +47,10 @@
    "distance_m": 95,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.077572,
+    "lng": 121.577939
+   },
    "method": "official_data",
    "name": "樂家康內湖江南店",
    "source": "https://data.gov.tw/dataset/30794",
@@ -775,7 +791,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

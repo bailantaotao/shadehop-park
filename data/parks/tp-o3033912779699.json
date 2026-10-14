@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 256,
+   "location": {
+    "lat": 25.123164,
+    "lng": 121.531474
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118095198",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 68,
+   "location": {
+    "lat": 25.125454,
+    "lng": 121.529403
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://data.gov.tw/dataset/136476",
@@ -39,9 +48,17 @@
     "changing_table": false,
     "distance_m": 163,
     "family_room": true,
+    "location": {
+     "lat": 25.126029,
+     "lng": 121.530472
+    },
     "name": "天母公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.125925,
+    "lng": 121.530032
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4244705086",
@@ -697,7 +714,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

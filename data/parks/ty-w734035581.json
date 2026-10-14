@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 102,
+   "location": {
+    "lat": 24.962192,
+    "lng": 121.158536
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13304782545",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/734035581",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/734035581",
@@ -35,6 +41,10 @@
    "distance_m": 182,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.962624,
+    "lng": 121.156064
+   },
    "method": "official_data",
    "name": "新屋台灣中油富源加油站",
    "source": "https://data.gov.tw/dataset/30794",

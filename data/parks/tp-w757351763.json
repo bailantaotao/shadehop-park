@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 100,
+   "location": {
+    "lat": 25.002837,
+    "lng": 121.551363
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4200643987",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 42,
+   "location": {
+    "lat": 25.002312,
+    "lng": 121.55131
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/757351763",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 713,
+   "location": {
+    "lat": 25.005481,
+    "lng": 121.55706
+   },
    "method": "osm",
    "name": "捷運辛亥站",
    "source": "https://www.openstreetmap.org/node/689295008",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 41,
     "family_room": true,
+    "location": {
+     "lat": 25.00157,
+     "lng": 121.551407
+    },
     "name": "文山社福中心"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.001533,
+    "lng": 121.55119
+   },
    "method": "official_data",
    "name": "興隆派出所",
    "source": "https://data.gov.tw/dataset/30794",

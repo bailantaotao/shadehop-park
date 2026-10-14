@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 66,
+   "location": {
+    "lat": 25.203296,
+    "lng": 121.685039
+   },
    "method": "osm",
    "name": "便利商店",
    "source": "https://www.openstreetmap.org/node/13591941811",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1380315387",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1380315387",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 298,
     "family_room": false,
+    "location": {
+     "lat": 25.204111,
+     "lng": 121.687804
+    },
     "name": "薆悅酒店野柳渡假館-1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.203461,
+    "lng": 121.685664
+   },
    "method": "official_data",
    "name": "野柳活動中心",
    "source": "https://data.gov.tw/dataset/30794",

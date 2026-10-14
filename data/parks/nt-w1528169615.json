@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 214,
+   "location": {
+    "lat": 24.930066,
+    "lng": 121.379861
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4689831231",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1528169615",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 818,
+   "location": {
+    "lat": 24.938923,
+    "lng": 121.376449
+   },
    "method": "osm",
    "name": "捷運三峽站",
    "source": "https://www.openstreetmap.org/node/13976613665",
@@ -35,6 +44,10 @@
    "distance_m": 156,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.930879,
+    "lng": 121.377854
+   },
    "method": "official_data",
    "name": "中油三峽加油站",
    "source": "https://data.gov.tw/dataset/30794",

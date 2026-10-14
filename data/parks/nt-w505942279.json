@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/505942279",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/505942279",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/505942279",
@@ -39,9 +42,17 @@
     "changing_table": true,
     "distance_m": 114,
     "family_room": false,
+    "location": {
+     "lat": 25.163689,
+     "lng": 121.412551
+    },
     "name": "八里文化公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.16574,
+    "lng": 121.412572
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/12040069847",

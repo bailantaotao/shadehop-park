@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 11,
+   "location": {
+    "lat": 24.866039,
+    "lng": 121.023066
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7916358901",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/372813238",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/372813238",
@@ -35,6 +41,10 @@
    "distance_m": 164,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.866059,
+    "lng": 121.026017
+   },
    "method": "official_data",
    "name": "湖口鄉老人文康活動中心",
    "source": "https://data.gov.tw/dataset/30794",

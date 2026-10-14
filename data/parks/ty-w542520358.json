@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 77,
+   "location": {
+    "lat": 24.900137,
+    "lng": 121.20827
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9498454951",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/542520358",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/542520358",
@@ -35,6 +41,10 @@
    "distance_m": 297,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.900495,
+    "lng": 121.210734
+   },
    "method": "official_data",
    "name": "麥當勞平鎮中豐店(1F)",
    "source": "https://data.gov.tw/dataset/30794",

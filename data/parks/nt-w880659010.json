@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 122,
+   "location": {
+    "lat": 24.969655,
+    "lng": 121.333226
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/13273357029",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/880659010",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 425,
+   "location": {
+    "lat": 24.966771,
+    "lng": 121.329867
+   },
    "method": "osm",
    "name": "捷運鶯桃福德站",
    "source": "https://www.openstreetmap.org/node/4990733837",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.9707,
+    "lng": 121.3317
+   },
    "method": "official_data",
    "name": "逗逗龍公園",
    "source": "https://data.gov.tw/dataset/30794",

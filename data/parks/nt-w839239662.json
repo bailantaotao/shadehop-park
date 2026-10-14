@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 136,
+   "location": {
+    "lat": 24.956774,
+    "lng": 121.445722
+   },
    "method": "osm",
    "name": "OK便利商店",
    "source": "https://www.openstreetmap.org/node/11801322061",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/839239662",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1139,
+   "location": {
+    "lat": 24.966872,
+    "lng": 121.43627
+   },
    "method": "osm",
    "name": "捷運永寧站",
    "source": "https://www.openstreetmap.org/node/373399546",
@@ -35,6 +44,10 @@
    "distance_m": 27,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.957331,
+    "lng": 121.444727
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/13299292221",
@@ -541,7 +554,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

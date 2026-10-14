@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 74,
+   "location": {
+    "lat": 25.048288,
+    "lng": 121.553963
+   },
    "method": "osm",
    "name": "萊爾福",
    "source": "https://www.openstreetmap.org/node/3727152546",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 17,
+   "location": {
+    "lat": 25.0479,
+    "lng": 121.55351
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 481,
+   "location": {
+    "lat": 25.051686,
+    "lng": 121.551499
+   },
    "method": "osm",
    "name": "捷運台北小巨蛋站",
    "source": "https://www.openstreetmap.org/node/3812564397",
@@ -35,6 +47,10 @@
    "distance_m": 45,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.04806,
+    "lng": 121.553821
+   },
    "method": "official_data",
    "name": "拿坡里八德店",
    "source": "https://data.gov.tw/dataset/30794",
@@ -1015,7 +1031,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

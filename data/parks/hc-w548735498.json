@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 124,
+   "location": {
+    "lat": 24.816099,
+    "lng": 120.958409
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7922528405",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/548735498",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/548735498",
@@ -35,6 +41,10 @@
    "distance_m": 258,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.81822,
+    "lng": 120.95559
+   },
    "method": "official_data",
    "name": "台灣中油永富加盟站",
    "source": "https://data.gov.tw/dataset/30794",

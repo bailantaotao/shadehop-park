@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 85,
+   "location": {
+    "lat": 24.775043,
+    "lng": 120.966864
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/way/319112450",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 55,
+   "location": {
+    "lat": 24.774257,
+    "lng": 120.969835
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/302192523",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/302192523",
@@ -35,6 +44,10 @@
    "distance_m": 48,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.77431,
+    "lng": 120.96979
+   },
    "method": "official_data",
    "name": "青草湖風景區",
    "source": "https://data.gov.tw/dataset/30794",

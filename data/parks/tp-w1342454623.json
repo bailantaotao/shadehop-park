@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 81,
+   "location": {
+    "lat": 25.109099,
+    "lng": 121.518885
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3744240092",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 88,
+   "location": {
+    "lat": 25.109317,
+    "lng": 121.519024
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1342454623",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 152,
+   "location": {
+    "lat": 25.109859,
+    "lng": 121.518769
+   },
    "method": "osm",
    "name": "捷運明德站",
    "source": "https://www.openstreetmap.org/node/3495094878",
@@ -35,6 +47,10 @@
    "distance_m": 77,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.109286,
+    "lng": 121.519155
+   },
    "method": "official_data",
    "name": "捷運明德站",
    "source": "https://data.gov.tw/dataset/30794",

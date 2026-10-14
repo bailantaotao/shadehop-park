@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 29,
+   "location": {
+    "lat": 24.987614,
+    "lng": 121.550326
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2526130503",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/536308771",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1034,
+   "location": {
+    "lat": 24.982817,
+    "lng": 121.541645
+   },
    "method": "osm",
    "name": "捷運大坪林站",
    "source": "https://www.openstreetmap.org/node/11556627094",
@@ -35,6 +44,10 @@
    "distance_m": 43,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.987491,
+    "lng": 121.550176
+   },
    "method": "official_data",
    "name": "麥當勞台北考試院店",
    "source": "https://data.gov.tw/dataset/30794",

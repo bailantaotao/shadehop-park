@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 14,
+   "location": {
+    "lat": 25.068371,
+    "lng": 121.663015
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4742571025",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 90,
+   "location": {
+    "lat": 25.068197,
+    "lng": 121.661725
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/547143620",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 226,
+   "location": {
+    "lat": 25.067421,
+    "lng": 121.660685
+   },
    "method": "osm",
    "name": "汐止站",
    "source": "https://www.openstreetmap.org/node/289281848",
@@ -35,6 +47,10 @@
    "distance_m": 82,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.068316,
+    "lng": 121.661735
+   },
    "method": "official_data",
    "name": "汐止火車站2F北側",
    "source": "https://data.gov.tw/dataset/30794",

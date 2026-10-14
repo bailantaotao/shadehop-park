@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 319,
+   "location": {
+    "lat": 25.18278,
+    "lng": 121.422894
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2956818833",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/909703742",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 360,
+   "location": {
+    "lat": 25.182005,
+    "lng": 121.418612
+   },
    "method": "osm",
    "name": "淡水漁人碼頭站",
    "source": "https://www.openstreetmap.org/node/8043755931",
@@ -35,6 +44,10 @@
    "distance_m": 72,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.18457,
+    "lng": 121.419753
+   },
    "method": "official_data",
    "name": "淡水保安廟",
    "source": "https://data.gov.tw/dataset/30794",

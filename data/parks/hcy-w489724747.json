@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 56,
+   "location": {
+    "lat": 24.836113,
+    "lng": 121.00847
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7925061865",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/489724747",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 388,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -35,6 +44,10 @@
    "distance_m": 26,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.835602,
+    "lng": 121.009118
+   },
    "method": "official_data",
    "name": "竹北市立圖書館",
    "source": "https://data.gov.tw/dataset/30794",

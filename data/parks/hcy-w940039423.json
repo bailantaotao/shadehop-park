@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/940039423",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/940039423",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/940039423",
@@ -35,6 +38,10 @@
    "distance_m": 40,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.838192,
+    "lng": 121.049809
+   },
    "method": "official_data",
    "name": "新埔劉氏雙堂屋",
    "source": "https://data.gov.tw/dataset/30794",

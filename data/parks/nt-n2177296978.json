@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 114,
+   "location": {
+    "lat": 24.952441,
+    "lng": 121.499656
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/6632506732",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/2177296978",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 246,
+   "location": {
+    "lat": 24.953693,
+    "lng": 121.499369
+   },
    "method": "osm",
    "name": "台北小城站",
    "source": "https://www.openstreetmap.org/node/8041597969",
@@ -35,6 +44,10 @@
    "distance_m": 58,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.951828,
+    "lng": 121.499709
+   },
    "method": "official_data",
    "name": "小城活動中心",
    "source": "https://data.gov.tw/dataset/30794",

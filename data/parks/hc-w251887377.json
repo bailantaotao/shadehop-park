@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 206,
+   "location": {
+    "lat": 24.801457,
+    "lng": 121.004384
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/7922528434",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/251887377",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 671,
+   "location": {
+    "lat": 24.806617,
+    "lng": 121.00341
+   },
    "method": "osm",
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 201,
     "family_room": false,
+    "location": {
+     "lat": 24.79715,
+     "lng": 121.00292
+    },
     "name": "新竹市立馬偕兒童醫院2樓健兒門診區"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.80109,
+    "lng": 121.00245
+   },
    "method": "official_data",
    "name": "台灣中油公道五加盟站",
    "source": "https://data.gov.tw/dataset/30794",

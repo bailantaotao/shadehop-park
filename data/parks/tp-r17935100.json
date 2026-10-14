@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 172,
+   "location": {
+    "lat": 25.045428,
+    "lng": 121.525474
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2347623403",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 107,
+   "location": {
+    "lat": 25.047707,
+    "lng": 121.526377
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/17935100",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 384,
+   "location": {
+    "lat": 25.044762,
+    "lng": 121.523423
+   },
    "method": "osm",
    "name": "捷運善導寺站",
    "source": "https://www.openstreetmap.org/node/3578751641",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 151,
     "family_room": true,
+    "location": {
+     "lat": 25.047671,
+     "lng": 121.52557
+    },
     "name": "市民大道地下停車場林金段林森忠孝3號出口B1"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.045965,
+    "lng": 121.527081
+   },
    "method": "official_data",
    "name": "中央藝文公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -851,7 +871,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

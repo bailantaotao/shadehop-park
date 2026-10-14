@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 111,
+   "location": {
+    "lat": 24.817268,
+    "lng": 121.017567
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/12119783674",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323598303",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323598303",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 139,
     "family_room": false,
+    "location": {
+     "lat": 24.817925,
+     "lng": 121.012999
+    },
     "name": "竹北市公24嘉德公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.818794,
+    "lng": 121.013359
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/492346305",

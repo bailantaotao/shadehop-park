@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 21,
+   "location": {
+    "lat": 25.199899,
+    "lng": 121.430427
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/9441727903",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1456620788",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 409,
+   "location": {
+    "lat": 25.20095,
+    "lng": 121.434621
+   },
    "method": "osm",
    "name": "崁頂站",
    "source": "https://www.openstreetmap.org/node/6155745370",
@@ -35,6 +44,10 @@
    "distance_m": 204,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.200062,
+    "lng": 121.428495
+   },
    "method": "official_data",
    "name": "公二十三號公園",
    "source": "https://data.gov.tw/dataset/30794",

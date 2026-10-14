@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 439,
+   "location": {
+    "lat": 25.020353,
+    "lng": 121.495878
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272806",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 73,
+   "location": {
+    "lat": 25.01722,
+    "lng": 121.493007
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1239529513",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1330,
+   "location": {
+    "lat": 25.008178,
+    "lng": 121.484274
+   },
    "method": "osm",
    "name": "捷運中原站",
    "source": "https://www.openstreetmap.org/node/2083320640",
@@ -35,6 +47,10 @@
    "distance_m": 39,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.017288,
+    "lng": 121.492396
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/11515227990",

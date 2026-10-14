@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 281,
+   "location": {
+    "lat": 24.799818,
+    "lng": 121.191427
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/11038731902",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 121,
+   "location": {
+    "lat": 24.801066,
+    "lng": 121.192266
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1171964735",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1171964735",
@@ -35,6 +44,10 @@
    "distance_m": 34,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.801461,
+    "lng": 121.193302
+   },
    "method": "official_data",
    "name": "高速公路關西服務區-2號",
    "source": "https://data.gov.tw/dataset/30794",

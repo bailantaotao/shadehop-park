@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 29,
+   "location": {
+    "lat": 25.016278,
+    "lng": 121.532436
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/2473808597",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 25.016197,
+    "lng": 121.532059
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 256,
+   "location": {
+    "lat": 25.014917,
+    "lng": 121.534264
+   },
    "method": "osm",
    "name": "捷運公館站",
    "source": "https://www.openstreetmap.org/node/3530915063",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 158,
     "family_room": false,
+    "location": {
+     "lat": 25.014717,
+     "lng": 121.532306
+    },
     "name": "自來水園區山區"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.015118,
+    "lng": 121.53209
+   },
    "method": "official_data",
    "name": "思源街派出所",
    "source": "https://data.gov.tw/dataset/30794",
@@ -933,7 +953,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

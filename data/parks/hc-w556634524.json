@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 46,
+   "location": {
+    "lat": 24.790948,
+    "lng": 120.923539
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/7922528460",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/556634524",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 601,
+   "location": {
+    "lat": 24.787232,
+    "lng": 120.92822
+   },
    "method": "osm",
    "name": "三姓橋站",
    "source": "https://www.openstreetmap.org/node/4450762389",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 113,
+   "location": {
+    "lat": 24.994131,
+    "lng": 121.52006
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7728628172",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1076454388",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 320,
+   "location": {
+    "lat": 24.99215,
+    "lng": 121.516173
+   },
    "method": "osm",
    "name": "捷運景平站",
    "source": "https://www.openstreetmap.org/node/2866571176",
@@ -35,6 +44,10 @@
    "distance_m": 176,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.992479,
+    "lng": 121.519412
+   },
    "method": "official_data",
    "name": "秀水里辦公處1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -663,7 +676,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

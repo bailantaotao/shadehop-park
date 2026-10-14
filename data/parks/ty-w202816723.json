@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 14,
+   "location": {
+    "lat": 24.958088,
+    "lng": 121.23049
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/9411693021",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/202816723",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 640,
+   "location": {
+    "lat": 24.953317,
+    "lng": 121.22616
+   },
    "method": "osm",
    "name": "中壢站",
    "source": "https://www.openstreetmap.org/node/247059970",
@@ -35,6 +44,10 @@
    "distance_m": 220,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.958414,
+    "lng": 121.227495
+   },
    "method": "official_data",
    "name": "中壢藝術館2F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -1025,7 +1038,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

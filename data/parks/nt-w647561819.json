@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/647561819",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/647561819",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 758,
+   "location": {
+    "lat": 25.087019,
+    "lng": 121.827214
+   },
    "method": "osm",
    "name": "猴硐站",
    "source": "https://www.openstreetmap.org/node/289131479",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 171,
     "family_room": false,
+    "location": {
+     "lat": 25.0822,
+     "lng": 121.82457
+    },
     "name": "猴硐煤礦園區烘沙室"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.080489,
+    "lng": 121.824533
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/2076157607",

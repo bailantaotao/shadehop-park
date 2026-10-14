@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 49,
+   "location": {
+    "lat": 25.02159,
+    "lng": 121.415885
+   },
    "method": "osm",
    "name": "家樂福超市",
    "source": "https://www.openstreetmap.org/way/444660074",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 88,
+   "location": {
+    "lat": 25.021946,
+    "lng": 121.417702
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1505511558",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 464,
+   "location": {
+    "lat": 25.022079,
+    "lng": 121.411902
+   },
    "method": "osm",
    "name": "捷運迴龍站",
    "source": "https://www.openstreetmap.org/node/3812564425",
@@ -35,6 +47,10 @@
    "distance_m": 2,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.021763,
+    "lng": 121.416464
+   },
    "method": "official_data",
    "name": "龍鳳公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -717,7 +733,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

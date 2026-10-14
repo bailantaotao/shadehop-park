@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 109,
+   "location": {
+    "lat": 25.015441,
+    "lng": 121.414324
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4153900274",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/443627003",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 646,
+   "location": {
+    "lat": 25.022079,
+    "lng": 121.411902
+   },
    "method": "osm",
    "name": "捷運迴龍站",
    "source": "https://www.openstreetmap.org/node/3812564425",
@@ -35,6 +44,10 @@
    "distance_m": 277,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.019031,
+    "lng": 121.41337
+   },
    "method": "official_data",
    "name": "三龍公廁",
    "source": "https://data.gov.tw/dataset/30794",

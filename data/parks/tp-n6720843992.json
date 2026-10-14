@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 91,
+   "location": {
+    "lat": 25.021891,
+    "lng": 121.526435
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2386218386",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 115,
+   "location": {
+    "lat": 25.02308,
+    "lng": 121.528293
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/6720843992",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 215,
+   "location": {
+    "lat": 25.020669,
+    "lng": 121.528208
+   },
    "method": "osm",
    "name": "捷運台電大樓站",
    "source": "https://www.openstreetmap.org/node/253559357",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 299,
     "family_room": true,
+    "location": {
+     "lat": 25.020202,
+     "lng": 121.525448
+    },
     "name": "臺北市客家文化主題公園美食體驗坊1樓"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.021077,
+    "lng": 121.527751
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1540007768",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 137,
+   "location": {
+    "lat": 24.837416,
+    "lng": 120.94242
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7922528407",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/948420888",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 152,
+   "location": {
+    "lat": 24.837388,
+    "lng": 120.944477
+   },
    "method": "osm",
    "name": "槺榔驛站",
    "source": "https://www.openstreetmap.org/node/10752371756",
@@ -35,6 +44,10 @@
    "distance_m": 137,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.83749,
+    "lng": 120.94256
+   },
    "method": "official_data",
    "name": "7-11便利商店-南寮東大",
    "source": "https://data.gov.tw/dataset/30794",

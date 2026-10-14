@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 216,
+   "location": {
+    "lat": 25.083571,
+    "lng": 121.303462
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/11233396044",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 24,
+   "location": {
+    "lat": 25.082635,
+    "lng": 121.305534
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/548729448",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/548729448",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.082027,
+    "lng": 121.306714
+   },
    "method": "official_data",
    "name": "蘆竹區外社社區發展協會",
    "source": "https://data.gov.tw/dataset/30794",

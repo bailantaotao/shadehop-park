@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 216,
+   "location": {
+    "lat": 24.826325,
+    "lng": 121.017483
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/12121483356",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323405060",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323405060",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 269,
     "family_room": true,
+    "location": {
+     "lat": 24.820611,
+     "lng": 121.02177
+    },
     "name": "竹北國民運動中心2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.823798,
+    "lng": 121.019036
+   },
    "method": "official_data",
    "name": "新竹縣第二運動場",
    "source": "https://data.gov.tw/dataset/30794",

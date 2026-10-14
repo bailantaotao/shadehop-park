@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 135,
+   "location": {
+    "lat": 24.765358,
+    "lng": 120.990606
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/1705886440",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/721089136",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/721089136",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 154,
     "family_room": true,
+    "location": {
+     "lat": 24.765525,
+     "lng": 120.991274
+    },
     "name": "寶山鄉公所2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.765518,
+    "lng": 120.991005
+   },
    "method": "official_data",
    "name": "寶山鄉公所1F",
    "source": "https://data.gov.tw/dataset/30794",

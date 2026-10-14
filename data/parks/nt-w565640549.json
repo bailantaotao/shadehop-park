@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 42,
+   "location": {
+    "lat": 25.080078,
+    "lng": 121.674339
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/2560872866",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/565640549",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 648,
+   "location": {
+    "lat": 25.077905,
+    "lng": 121.667631
+   },
    "method": "osm",
    "name": "五堵站",
    "source": "https://www.openstreetmap.org/node/289131922",
@@ -35,6 +44,10 @@
    "distance_m": 30,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.079086,
+    "lng": 121.673851
+   },
    "method": "official_data",
    "name": "保長市民活動中心",
    "source": "https://data.gov.tw/dataset/30794",
@@ -525,7 +538,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

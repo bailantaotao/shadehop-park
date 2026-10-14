@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import os
 import shutil
 from datetime import date
@@ -183,6 +184,40 @@ def load_dataset(data: Path = DATA) -> tuple[dict, list[dict]]:
     return meta, parks
 
 
+SHADIER_RADIUS_M = 1500
+SHADIER_MAX = 3
+
+
+def shadier_nearby(parks: list[dict]) -> dict[str, list[dict]]:
+    """For mostly sunny parks: up to three playgrounds within 1.5 km that have real shade or rain cover
+    (level A/B/C), nearest first. A grid of ~2 km cells keeps this fast for thousands of parks."""
+    cell = 0.02
+    good = [q for q in parks if q["level"] in ("A", "B", "C") and q["kind"] == "playground"]
+    grid: dict[tuple[int, int], list[dict]] = {}
+    for q in good:
+        grid.setdefault((int(q["location"]["lat"] // cell), int(q["location"]["lng"] // cell)), []).append(q)
+    month = str(date.today().month)
+    out = {}
+    for p in parks:
+        if p["level"] != "none":
+            continue
+        la, ln = p["location"]["lat"], p["location"]["lng"]
+        cy, cx = int(la // cell), int(ln // cell)
+        near = []
+        for dy in (-1, 0, 1):
+            for dx in (-1, 0, 1):
+                for q in grid.get((cy + dy, cx + dx), []):
+                    d = math.hypot((q["location"]["lat"] - la) * 111_320, (q["location"]["lng"] - ln) * 111_320 * math.cos(math.radians(la)))
+                    if d <= SHADIER_RADIUS_M:
+                        near.append((d, q))
+        near.sort(key=lambda t: t[0])
+        if near:
+            out[p["id"]] = [{"id": q["id"], "name": q["name"], "distance_m": int(round(d)), "level_label": q["level_label"],
+                             "best": (lambda w: f"{w['start']}–{w['end']}" if w and "08:00" <= w["start"] < "17:00" else None)(q["best_shade_windows"].get(month))}
+                            for d, q in near[:SHADIER_MAX]]
+    return out
+
+
 def slim(p: dict) -> dict:
     return {k: v for k, v in p.items() if k not in SLIM_DROP}
 
@@ -295,8 +330,10 @@ def build(out: Path = OUT) -> None:
     render("index.html", "index.html", parks=parks, dataset_ld=dataset_ld)
     render("about.html", "about/index.html", dataset_ld=dataset_ld)
     render("terms.html", "terms/index.html")
+    shadier = shadier_nearby(parks)
     for p in parks:
-        render("park.html", f"parks/{p['id']}/index.html", p=p, ld=park_jsonld(p, meta), description=describe(p))
+        render("park.html", f"parks/{p['id']}/index.html", p=p, ld=park_jsonld(p, meta), description=describe(p),
+               shadier=shadier.get(p["id"], []))
 
     (out / "llms.txt").write_text(env.get_template("llms.txt").render(**ctx, parks=parks))
     (out / "llms-full.txt").write_text(env.get_template("llms-full.txt").render(**ctx, parks=parks, describe=describe))

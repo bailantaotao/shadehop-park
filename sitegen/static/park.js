@@ -80,12 +80,16 @@
   }
 
   var v = idx >= 0 && idx < row.length ? row[idx] : null;
+  // Evening: the useful answer is tomorrow's best time, so the hint below switches to tomorrow.
+  var evening = idx >= row.length || (v === null && idx >= 12);
   if (v === null) {
-    setStat("nowShade", idx < 0 ? "日出前" : "已日落", "night");
-    document.getElementById("nowNote").textContent = "現在沒有直射陽光，不用擔心曬。遮陰是依建物、高架與太陽位置推算的估計值。";
+    setStat("nowShade", idx < 12 ? "日出前" : "已日落", "night");
+    document.getElementById("nowNote").textContent = (evening ? "天黑了，可以看看明天幾點去比較陰涼。" : "太陽還沒出來，可以看看今天幾點去比較陰涼。") +
+      "遮陰是依建物、高架與太陽位置推算的估計值。";
   } else {
-    // The answer in words first; the percentage is the evidence.
-    setStat("nowShade", { hi: "適合", mid: "還可以", lo: "太曬" }[cls(v)], cls(v));
+    // The answer in words first (same wording as the map); the percentage is the evidence.
+    var vd = window.ShadeHopVerdict(v, idx);
+    setStat("nowShade", vd.word, vd.cls);
     document.querySelector("#nowShade span").textContent = "遮陰 " + Math.round(v * 100) + "%";
   }
 
@@ -94,10 +98,12 @@
     return '<span class="' + cls(x) + (i === idx ? " cur" : "") + '" title="' + label + '"></span>';
   }).join("");
 
-  var best = bestDaytime(row);
+  // After sunset, plan tomorrow (next month's row on the last day of a month).
+  var day = evening ? new Date(now.getTime() + 86400000) : now;
+  var best = bestDaytime(park.slots[String(day.getMonth() + 1)] || row), when = evening ? "明天" : "今天";
   document.getElementById("bestToday").innerHTML = best
-    ? "白天最陰涼：<b>" + best.start + "–" + best.end + "</b>（平均遮陰 " + Math.round(best.mean * 100) + "%）"
-    : "白天最陰涼：<span class=\"muted\">8–17 點沒有明顯的遮陰時段，建議避開中午、多帶帽子</span>";
+    ? when + "最陰涼：<b>" + best.start + "–" + best.end + "</b>（平均遮陰 " + Math.round(best.mean * 100) + "%）"
+    : when + "最陰涼：<span class=\"muted\">8–17 點沒有明顯的遮陰時段，建議避開中午、多帶帽子</span>";
 
   // Rain chance (next 3 hours) and today's UV for this park's district, from 中央氣象署.
   var ctl = window.AbortController ? new AbortController() : null;

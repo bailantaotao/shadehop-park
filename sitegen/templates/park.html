@@ -37,13 +37,24 @@
     <div class="pstat" id="nowUv"><b>—</b><span>今天紫外線</span></div>
   </div>
   <p class="small muted tl-cap">今天的遮陰（06:00–18:00，每半小時）</p>
-  <div class="timeline" id="todayBar" aria-label="今天每半小時的遮陰"></div>
+  <div class="timeline" id="todayBar" role="img" aria-label="今天每半小時的遮陰"></div>
   <div class="tl-axis"><span>6</span><span>9</span><span>12</span><span>15</span><span>18</span></div>
   <p class="mt-10" id="bestToday">最陰涼：<span class="muted">—</span></p>
   <p class="mt-4">下雨：<b>{{ {True: "有遮蔽，下雨可玩", "partial": "部分區域可躲雨", False: "沒有遮蔽處"}[p.rain_cover.value] }}</b></p>
   <p class="small muted mt-8" id="nowNote">遮陰是依建物、高架與太陽位置推算的估計值。</p>
   <script type="application/json" id="parkData">{{ {"slots": p.shade_timetable.slots, "weather": root ~ "api/weather?city=" ~ (p.region.city | urlencode) ~ "&district=" ~ (p.region.district | urlencode)} | tojson }}</script>
 </section>
+
+{# 2b. A sunny park: point to shadier playgrounds close by (computed at build time) #}
+{% if shadier %}
+<section class="pcard">
+  <h2 class="ptitle">附近比較陰涼的遊戲場</h2>
+  <ul class="plist">
+  {% for q in shadier %}<li><span class="pico">{{ icon("trees") }}</span><span><a href="{{ root }}parks/{{ q.id }}/">{{ q.name }}</a> {{ q.distance_m }}m・{{ q.level_label }}{% if q.best %}・最陰涼 {{ q.best }}{% endif %}</span></li>{% endfor %}
+  </ul>
+  <p class="prov mt-8">依本月的遮陰推估挑選；距離為直線距離。</p>
+</section>
+{% endif %}
 
 {# 3. What is nearby: toilets (環境部 + OSM), convenience store, station #}
 {% set fam = t.family %}{% set cv = p.amenities.convenience_store %}{% set st = p.amenities.station %}
@@ -77,6 +88,25 @@
   </ul>
 </section>
 
+{# 4. Getting there #}
+<section class="pcard">
+  <h2 class="ptitle">停車與充電</h2>
+  <ul class="plist">
+  {% for q in p.parking[:3] %}<li><span class="pico">{{ icon("parking") }}</span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}" target="_blank" rel="noopener">{{ q.name }}</a> {{ q.distance_m }}m{% if q.fee in ("yes", "no") %}・{{ {'yes':'收費','no':'免費'}[q.fee] }}{% endif %}{% if q.capacity %}・{{ q.capacity }} 格{% endif %}{% if q.capacity_parent %}{% if q.capacity_parent is string and q.capacity_parent.isdigit() %}（親子 {{ q.capacity_parent }} 格）{% elif q.capacity_parent != "no" %}・有親子車位{% endif %}{% endif %}{% if q.maxheight_m %}・限高 {{ q.maxheight_m }}m{% endif %}{% if q.access == 'customers' %}・限顧客{% endif %}</span></li>
+  {% else %}<li class="muted"><span class="pico">{{ icon("parking") }}</span>{{ meta.assumptions.PARKING_RADIUS_M }}m 內沒有標示停車場</li>{% endfor %}
+  {% set cs = p.charger_summary %}
+  <li><span class="pico">{{ icon("bolt") }}</span>{% if cs.total %}{% if cs.nearest_fast_m is not none %}快充 {{ cs.nearest_fast_m }}m{% else %}{{ cs.radius_m }}m 內沒有快充{% endif %}・{% if cs.nearest_slow_m is not none %}慢充 {{ cs.nearest_slow_m }}m{% else %}沒有慢充{% endif %}{% else %}{{ cs.radius_m }}m 內沒有充電站{% endif %}</li>
+  </ul>
+  {% if p.chargers %}
+  <details class="pmore"><summary>{{ cs.radius_m }}m 內的 {{ cs.total }} 個充電站</summary>
+  <ul class="plist">
+  {% for c in p.chargers %}<li><span class="chg inline {{ {'fast':'fast','both':'fast','slow':'slow'}.get(c.speed, 'unknown') }}"></span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ c.location.lat }},{{ c.location.lng }}" target="_blank" rel="noopener">{{ c.name }}</a> {{ c.distance_m }}m・{{ c.speed_label }}{% if c.sockets %}・{% for s in c.sockets %}{{ s.label }}{% if s.count > 1 %}×{{ s.count }}{% endif %}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}{% if c.charging_rate %}<br><span class="small muted">{{ c.charging_rate }}</span>{% endif %}{% if c.access == 'customers' %}・限顧客{% endif %}</span></li>{% endfor %}
+  </ul>
+  <p class="prov">來源：交通部「充電站之基本資料」（資料介接「交通部TDX平臺」）與 OpenStreetMap；同一地點兩邊都有時以交通部資料為準。距離為直線距離。</p>
+  </details>
+  {% endif %}
+</section>
+
 {# 3b. Parents report whether there is a playground (our D1 store + an optional public OSM note) #}
 <section class="pcard" id="report" data-park="{{ p.id }}" data-lat="{{ p.location.lat }}" data-lng="{{ p.location.lng }}"
          data-name="{{ p.name }}" data-url="{{ site_url }}/parks/{{ p.id }}/" data-sitekey="{{ TURNSTILE_SITE_KEY }}">
@@ -100,25 +130,6 @@
   <p class="prov">回報會公開顯示人數，不會顯示你是誰；詳見<a href="{{ root }}terms/#privacy">隱私權</a>。</p>
   {% else %}
   <p class="small muted m0">回報功能即將開放。</p>
-  {% endif %}
-</section>
-
-{# 4. Getting there #}
-<section class="pcard">
-  <h2 class="ptitle">停車與充電</h2>
-  <ul class="plist">
-  {% for q in p.parking[:3] %}<li><span class="pico">{{ icon("parking") }}</span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ q.location.lat }},{{ q.location.lng }}" target="_blank" rel="noopener">{{ q.name }}</a> {{ q.distance_m }}m{% if q.fee in ("yes", "no") %}・{{ {'yes':'收費','no':'免費'}[q.fee] }}{% endif %}{% if q.capacity %}・{{ q.capacity }} 格{% endif %}{% if q.capacity_parent %}{% if q.capacity_parent is string and q.capacity_parent.isdigit() %}（親子 {{ q.capacity_parent }} 格）{% elif q.capacity_parent != "no" %}・有親子車位{% endif %}{% endif %}{% if q.maxheight_m %}・限高 {{ q.maxheight_m }}m{% endif %}{% if q.access == 'customers' %}・限顧客{% endif %}</span></li>
-  {% else %}<li class="muted"><span class="pico">{{ icon("parking") }}</span>{{ meta.assumptions.PARKING_RADIUS_M }}m 內沒有標示停車場</li>{% endfor %}
-  {% set cs = p.charger_summary %}
-  <li><span class="pico">{{ icon("bolt") }}</span>{% if cs.total %}{% if cs.nearest_fast_m is not none %}快充 {{ cs.nearest_fast_m }}m{% else %}{{ cs.radius_m }}m 內沒有快充{% endif %}・{% if cs.nearest_slow_m is not none %}慢充 {{ cs.nearest_slow_m }}m{% else %}沒有慢充{% endif %}{% else %}{{ cs.radius_m }}m 內沒有充電站{% endif %}</li>
-  </ul>
-  {% if p.chargers %}
-  <details class="pmore"><summary>{{ cs.radius_m }}m 內的 {{ cs.total }} 個充電站</summary>
-  <ul class="plist">
-  {% for c in p.chargers %}<li><span class="chg inline {{ {'fast':'fast','both':'fast','slow':'slow'}.get(c.speed, 'unknown') }}"></span><span><a href="https://www.google.com/maps/dir/?api=1&destination={{ c.location.lat }},{{ c.location.lng }}" target="_blank" rel="noopener">{{ c.name }}</a> {{ c.distance_m }}m・{{ c.speed_label }}{% if c.sockets %}・{% for s in c.sockets %}{{ s.label }}{% if s.count > 1 %}×{{ s.count }}{% endif %}{% if not loop.last %}、{% endif %}{% endfor %}{% endif %}{% if c.charging_rate %}<br><span class="small muted">{{ c.charging_rate }}</span>{% endif %}{% if c.access == 'customers' %}・限顧客{% endif %}</span></li>{% endfor %}
-  </ul>
-  <p class="prov">來源：交通部「充電站之基本資料」（資料介接「交通部TDX平臺」）與 OpenStreetMap；同一地點兩邊都有時以交通部資料為準。距離為直線距離。</p>
-  </details>
   {% endif %}
 </section>
 

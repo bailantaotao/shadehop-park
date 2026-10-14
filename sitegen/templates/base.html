@@ -21,7 +21,7 @@
 <header class="top">
   <h1><a href="{{ root }}" class="brand">{{ icon("umbrella", "brand-mark") }}{{ SITE_NAME }}</a></h1>
   <span class="muted small subtitle">ShadeHop · {{ COVERAGE_SHORT }}</span>
-  <nav><a href="{{ root }}">地圖</a><a href="{{ root }}about/">資料與方法</a><a href="{{ root }}llms.txt">llms.txt</a></nav>
+  <nav><a href="{{ root }}">地圖</a><a href="{{ root }}about/">資料與方法</a></nav>
 </header>
 <main>
 {% block main %}{% endblock %}
@@ -31,7 +31,7 @@
      TDX's required wording and logo must stay. #}
   <p>遮陰是模型推估，出門前請以現場為準。</p>
   <p>資料：© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 貢獻者（ODbL）・新北、台北、桃園、新竹市政府、環境部、中央氣象署開放資料・資料介接「<a href="https://tdx.transportdata.tw/">交通部TDX平臺</a>」<a href="https://tdx.transportdata.tw/" class="tdx-logo"><img src="{{ root }}static/tdxlogo.png" alt="TDX 運輸資料流通服務" width="92" height="17"></a></p>
-  <p><a href="{{ root }}about/">資料與方法</a> · <a href="{{ root }}terms/">使用條款與隱私權</a> · 資料版本 {{ (meta.generated_from_osm_base or '')[:10] }}</p>
+  <p><a href="{{ root }}about/">資料與方法</a> · <a href="{{ root }}terms/">使用條款與隱私權</a> · <a href="{{ root }}llms.txt">給 AI 的資料說明（llms.txt）</a> · 資料版本 {{ (meta.generated_from_osm_base or '')[:10] }}</p>
 </footer>
 {% block scripts %}{% endblock %}
 <script>if ("serviceWorker" in navigator) window.addEventListener("load", function () { navigator.serviceWorker.register("{{ root }}sw.js").catch(function () {}); });</script>

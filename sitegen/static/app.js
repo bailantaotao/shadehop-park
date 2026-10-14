@@ -8,10 +8,11 @@
   var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false, fav: false, confirmed: false };
   var Favs = window.ShadeHopFavs, I = window.ShadeHopIcon;
   var LIST_MAX = 60;
-  var CHARGER_R = window.SHADEHOP_CHARGER_RADIUS_M || 500;
+  var CHARGER_R = window.SHADEHOP_CHARGER_RADIUS_M || 500, PARKING_R = window.SHADEHOP_PARKING_RADIUS_M || 800;
   // Parks load per region as the map view reaches it; nobody has to pick a region first.
   var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {}, sort: "shade" };
-  var chargersOn = true;  // one on-map toggle for all chargers
+  // Chargers are off until asked for (the map is about shade); the choice is remembered.
+  var chargersOn = storeGet("shadehop.chargers") === "1";
   // Shadow casters are split into ~1 km tiles; only tiles in view are downloaded.
   var tiles = { index: null, deg: 0.01, data: {} };
 
@@ -38,6 +39,12 @@
     return row ? row[state.slot] : null;
   }
   function shadeClass(v) { return v === null || v === undefined ? "night" : v >= 0.6 ? "hi" : v >= 0.3 ? "mid" : "lo"; }
+  // The answer a parent wants, in words (colour alone fails colour-blind users and bright sun).
+  var VERDICT = { hi: "適合", mid: "還可以", lo: "太曬", night: "沒有直射陽光" };
+  function verdict(v) {
+    var c = shadeClass(v);
+    return c === "night" ? VERDICT.night : VERDICT[c] + "（遮陰 " + Math.round(v * 100) + "%）";
+  }
   function distM(a, b) {
     var r = Math.PI / 180, dl = (b[0] - a[0]) * r, dp = (b[1] - a[1]) * r;
     var h = Math.sin(dp / 2) ** 2 + Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(dl / 2) ** 2;
@@ -46,7 +53,8 @@
 
   // ------------------------------------------------------------------ map
   // Canvas draws hundreds of markers much faster than SVG on old phones.
-  var map = L.map("map", { zoomControl: true, preferCanvas: true });
+  // tolerance widens every marker's tap area by 12px (a 10px dot becomes a ~44px target).
+  var map = L.map("map", { zoomControl: true, preferCanvas: true, renderer: L.canvas({ tolerance: 12 }) });
   map.createPane("chargers").style.zIndex = 650;
   // ------------------------------------------------------------ base map
   // OSM vector map (OpenFreeMap "Liberty") drawn by MapLibre inside Leaflet, simplified for this
@@ -184,9 +192,7 @@
     // shadiest, are parking / toilets / chargers close. Everything else is on the park page.
     var p = f.properties, v = shadeAt(f), t = slotLabel(state.slot);
     var now = taipeiNow(), today = state.date === now.y + "-" + String(now.m).padStart(2, "0") + "-" + String(now.d).padStart(2, "0");
-    var shade = v === null || v === undefined
-      ? '<span class="pp-pill night">' + t + " 沒有直射陽光</span>"
-      : '<span class="pp-pill ' + shadeClass(v) + '">' + t + " 遮陰 " + Math.round(v * 100) + "%</span>";
+    var shade = '<span class="pp-pill ' + shadeClass(v) + '">' + t + " " + verdict(v) + "</span>";
     var rain = p.rain === true ? '<span class="pp-pill a">下雨可玩</span>'
       : p.rain === "partial" ? '<span class="pp-pill">部分可躲雨</span>' : '<span class="pp-pill">下雨不適合</span>';
     var best = bestDaytime((p.timetable || {})[String(month())] || []);
@@ -203,7 +209,7 @@
       (reportNote(p) || (unsure(p) ? "・遊具待確認" : "")) + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
       '<div class="pp-pills">' + shade + rain + "</div>" +
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
-      (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">白天沒有明顯遮陰，避開中午</span>') + "</div>" +
+      (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">8–17 點沒有明顯遮陰時段，避開中午</span>') + "</div>" +
       '<div class="pp-grid">' + tile(I("parking"), "停車", p.parking_nearest_m, p.parking_url) + tile(I("toilet"), "廁所", p.toilet_m, p.toilet_url) +
       tile(I("store"), "超商", p.shop_m, p.shop_url) + charge + "</div>" +
       '<div class="pp-btns"><a class="pp-btn primary" href="' + parkHref(p.id) + '">查看詳情</a>' +
@@ -226,7 +232,7 @@
     ordered.forEach(function (f) {
       var p = f.properties, cls = shadeClass(shadeAt(f)), faint = unsure(p) && p.rain !== true;
       var m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
-        radius: p.rain === true ? 10 : faint ? 5.5 : 8,
+        radius: p.rain === true ? 12 : faint ? 6.5 : 10,
         color: p.rain === true ? css("--a") : css("--surface"),
         weight: p.rain === true ? 4 : faint ? 1 : 2,
         fillColor: css("--" + cls),
@@ -371,11 +377,12 @@
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">' + I("umbrella") + "下雨可玩</span>", B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
     return '<article class="card' + (state.selected === p.id ? " selected" : "") + '" data-park="' + esc(p.id) + '"><h3>' + Favs.button(p.id) + ' <a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
-      '<div class="badges">' + levelBadge + (reportNote(p) ? '<span class="badge">' + reportNote(p).slice(1) + "</span>" : unsure(p) ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
-      '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
+      '<div class="badges">' + levelBadge + (reportNote(p) ? '<span class="badge">' + reportNote(p).slice(1) + "</span>" : unsure(p) ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge v-' + shadeClass(v) + '">' + slotLabel(state.slot) + " " + verdict(v) + "</span></div>" +
+      '<div class="timeline" role="img" aria-label="' + esc(state.date.slice(5).replace("-", "/") + " 遮陰：" + (best ? "最陰涼 " + best.start + "–" + best.end : "8–17 點沒有明顯遮陰時段")) + '">' + cells +
+      '</div><div class="tl-axis" aria-hidden="true"><span>6</span><span>9</span><span>12</span><span>15</span><span>18</span></div>' +
       '<div class="facts">' +
-      (best ? '<span>白天最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>白天沒有明顯遮陰時段</span>") +
-      "<span>" + I("parking") + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : "800m 內未標示停車場") + "</span>" +
+      (best ? '<span>最陰涼：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>8–17 點沒有明顯遮陰時段</span>") +
+      "<span>" + I("parking") + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : PARKING_R + "m 內未標示停車場") + "</span>" +
       "<span>" + I("bolt") + "快充 " + (p.fast_nearest_m !== null ? p.fast_nearest_m + "m" : CHARGER_R + "m 內無") + " · " + I("plug") + "慢充 " + (p.slow_nearest_m !== null ? p.slow_nearest_m + "m" : CHARGER_R + "m 內無") + "</span>" +
       '<span class="small">' + dist.replace(/^ · /, "") + "</span>" +
       '</div><button class="link" data-focus="' + esc(p.id) + '">在地圖上看</button></article>';
@@ -397,17 +404,63 @@
       // Rain-proof first, then confirmed playgrounds before parks whose equipment is unsure, then shade now.
       return rb - ra || cb - ca || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
-    $("#count").textContent = filters.fav ? "我的最愛（" + fs.length + "）" : "這個範圍有 " + fs.length + " 座公園";
+    $("#count").textContent = filters.fav ? "我的最愛（" + fs.length + "）"
+      : "這個範圍有 " + fs.length + " 座公園（" + state.date.slice(5).replace("-", "/") + " " + slotLabel(state.slot) + "）";
     var html = fs.slice(0, LIST_MAX).map(card).join("");
     if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
     if (!fs.length && filters.fav) {
       html = '<p class="muted">還沒有收藏的公園。點公園名稱旁的星號就能加入；收藏只存在這個瀏覽器裡，不需要登入。</p>';
     } else if (!fs.length) {
       var covered = state.regions.some(function (r) { return regionInView(r); });
-      html = '<p class="muted">' + (covered ? "這個範圍沒有符合條件的公園，試著移動地圖或取消一些篩選。"
-        : "這個範圍還沒有資料。目前收錄：" + state.regions.map(function (r) { return r.city + (r.name !== r.city ? r.name : ""); }).join("、") + "。") + "</p>";
+      html = covered ? emptyHelp()
+        : '<p class="muted">這個範圍還沒有資料。目前收錄：' + state.regions.map(function (r) { return r.city + (r.name !== r.city ? r.name : ""); }).join("、") + "。</p>";
     }
     $("#list").innerHTML = html;
+  }
+
+  // No park in view matches: say which filters are on (each removable), when shade comes back, and
+  // the nearest match outside the view.
+  var FILTER_LABEL = { rain: "下雨可玩", shade: "此時段有遮陰", confirmed: "確定有遊戲場", fav: "我的最愛", parking: "停車 ≤ 300m",
+    fast: CHARGER_R + "m 內有快充", slow: CHARGER_R + "m 內有慢充", toilet: "附近有廁所" };
+  function emptyHelp() {
+    var on = Object.keys(filters).filter(function (k) { return filters[k]; });
+    var out = '<div class="empty"><p><b>這個範圍沒有符合條件的公園。</b></p>';
+    if (on.length) {
+      out += '<p class="empty-filters">目前條件：' + on.map(function (k) {
+        return '<button type="button" class="chip on" data-clear="' + k + '" aria-label="取消「' + FILTER_LABEL[k] + '」">' + FILTER_LABEL[k] + " ✕</button>";
+      }).join("") + (on.length > 1 ? '<button type="button" class="link" data-clear="all">全部取消</button>' : "") + "</p>";
+    }
+    if (filters.shade) {
+      // Later today: the first slot where some park in view has shade (with the other filters kept).
+      var keep = state.slot;
+      for (var i = state.slot + 1; i < SLOTS; i++) {
+        state.slot = i;
+        var n = state.features.filter(function (f) { return inView(f) && passes(f); }).length;
+        if (n) { out += '<p>' + slotLabel(i) + " 起有 " + n + ' 座有遮陰。<button type="button" class="link" data-jump="' + i + '">跳到 ' + slotLabel(i) + "</button></p>"; break; }
+      }
+      state.slot = keep;
+    }
+    var c = map.getCenter(), best = null, bestD = Infinity;
+    state.features.forEach(function (f) {
+      if (!passes(f)) return;
+      var d = distM([c.lng, c.lat], f.geometry.coordinates);
+      if (d < bestD) { bestD = d; best = f; }
+    });
+    if (best) {
+      out += '<p>畫面外最近的：<button type="button" class="link" data-goto="' + esc(best.properties.id) + '">' +
+        esc(best.properties.name) + "（" + (bestD / 1000).toFixed(1) + " km）</button></p>";
+    }
+    return out + "</div>";
+  }
+  function clearFilter(k) {
+    Object.keys(filters).forEach(function (x) {
+      if (k !== "all" && x !== k) return;
+      filters[x] = false;
+      var b = document.querySelector('[data-filter="' + x + '"]');
+      if (b) b.setAttribute("aria-pressed", "false");
+    });
+    syncMore();
+    render();
   }
 
   // Coalesce redraws to one per animation frame, so dragging the time slider stays smooth on slow phones.
@@ -433,10 +486,17 @@
     state.slot = Math.max(0, Math.min(SLOTS - 1, Math.floor((t.min - SLOT_START) / SLOT_MIN)));
     $("#date").value = state.date;
     $("#slot").value = state.slot;
+    var early = t.min < SLOT_START, late = t.min >= SLOT_START + SLOTS * SLOT_MIN;
+    nowNote(early || late ? "現在 " + hhmm(t.min) + (early ? "，天還沒亮，先顯示早上 " : "，太陽快下山了，顯示 ") + slotLabel(state.slot) : "");
+  }
+  function nowNote(text) {
+    var el = $("#slotNote");
+    el.textContent = text;
+    el.hidden = !text;
   }
 
-  $("#slot").addEventListener("input", function (e) { state.slot = Number(e.target.value); render(); });
-  $("#date").addEventListener("change", function (e) { if (e.target.value) { state.date = e.target.value; render(); } });
+  $("#slot").addEventListener("input", function (e) { state.slot = Number(e.target.value); nowNote(""); render(); });
+  $("#date").addEventListener("change", function (e) { if (e.target.value) { state.date = e.target.value; nowNote(""); render(); } });
   $("#nowBtn").addEventListener("click", function () { setNow(); render(); });
   $("#playBtn").addEventListener("click", function (e) {
     var btn = e.currentTarget;
@@ -451,8 +511,21 @@
       var k = b.dataset.filter; filters[k] = !filters[k];
       b.setAttribute("aria-pressed", String(filters[k]));
       if (k === "fav" && filters[k]) loadAllRegions();  // favourites can be in any region
+      if ((k === "fast" || k === "slow") && filters[k] && !chargersOn) setChargers(true);  // show what the filter is about
+      syncMore();
       render();
     });
+  });
+  // Secondary filters live behind "更多條件"; the button counts the ones that are on while hidden.
+  var moreBtn = $("#moreBtn"), moreBox = $("#moreFilters");
+  function syncMore() {
+    var n = moreBox.querySelectorAll('[aria-pressed="true"]').length;
+    moreBtn.querySelector(".n").textContent = n ? "（" + n + "）" : "";
+  }
+  moreBtn.addEventListener("click", function () {
+    var open = moreBtn.getAttribute("aria-expanded") !== "true";
+    moreBtn.setAttribute("aria-expanded", String(open));
+    moreBox.hidden = !open;
   });
   function setSort(mode) {
     state.sort = mode;
@@ -577,8 +650,13 @@
   }
 
   $("#list").addEventListener("click", function (e) {
+    var clr = e.target.closest("[data-clear]"), go = e.target.closest("[data-goto]");
+    if (clr) { clearFilter(clr.dataset.clear); return; }
+    if (go) { var g = state.features.find(function (x) { return x.properties.id === go.dataset.goto; });
+      if (g) { map.setView([g.geometry.coordinates[1], g.geometry.coordinates[0]], 16); setTimeout(function () { focusPark(go.dataset.goto); }, 400); }
+      return; }
     var j = e.target.closest("[data-jump]"), f = e.target.closest("[data-focus]");
-    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     if (f) { focusPark(f.dataset.focus); return; }
     // Anywhere else on a card (not its name link, star or other buttons) also shows it on the map.
     var card = e.target.closest("[data-park]");
@@ -619,18 +697,26 @@
     weatherAt = map.getCenter();
     fetch("api/weather?city=" + encodeURIComponent(where.city) + "&district=" + encodeURIComponent(where.district))
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (w) {
-        var rainy = w.pop !== null && w.pop >= 60, msg = "", ico = "";
+        var rainy = w.pop !== null && w.pop >= 60, msg = "", ico = "", undo = "";
         if (rainy) {
           ico = "rain"; msg = where.district + "未來 3 小時降雨機率 " + w.pop + "%" + (w.weather ? "（" + w.weather + "）" : "") + "，已幫你開啟「下雨可玩」。";
-          filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
+          if (!filters.rain) {
+            filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
+            undo = '<button type="button" class="link" data-clear="rain">不用，顯示全部</button>';
+          }
         } else if (w.uv !== null && w.uv >= 6) {
           ico = "sun"; msg = where.district + "今天紫外線指數 " + w.uv + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
         }
-        $("#weather").innerHTML = msg ? I(ico) + esc(msg + "（天氣：中央氣象署）") : "";
+        $("#weather").innerHTML = msg ? I(ico) + esc(msg + "（天氣：中央氣象署）") + (undo ? " " + undo : "") : "";
         render();
       }).catch(function () {});
   }
 
+
+  $("#weather").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-clear]");
+    if (b) { clearFilter(b.dataset.clear); b.remove(); }
+  });
 
   // ------------------------------------------------------- regions & view
   function storeGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -812,7 +898,7 @@
   map.addControl(new LocateControl());
 
   // One charger toggle on the map (like an EV map app), with the number of stations in view.
-  var BOLT = '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg>';
+  var BOLT = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg>';
   var ChargerControl = L.Control.extend({
     options: { position: "topright" },
     onAdd: function () {
@@ -821,16 +907,32 @@
       b.type = "button"; b.setAttribute("aria-label", "地圖上顯示充電站");
       b.setAttribute("aria-pressed", String(chargersOn));
       b.innerHTML = BOLT + '<span class="n"></span>';
-      L.DomEvent.on(b, "click", function () {
-        chargersOn = !chargersOn;
-        b.setAttribute("aria-pressed", String(chargersOn));
-        drawChargers();
-      });
+      L.DomEvent.on(b, "click", function () { setChargers(!chargersOn); });
       L.DomEvent.disableClickPropagation(box);
       return box;
     },
   });
   map.addControl(new ChargerControl());
+  function setChargers(on) {
+    chargersOn = on;
+    storeSet("shadehop.chargers", on ? "1" : "0");
+    var b = document.querySelector(".chg-btn");
+    if (b) b.setAttribute("aria-pressed", String(on));
+    drawChargers();
+  }
+
+  // Colour key on the map itself (the full legend sits below the map, folded).
+  var KeyControl = L.Control.extend({
+    options: { position: "bottomleft" },
+    onAdd: function () {
+      var box = L.DomUtil.create("div", "map-key");
+      box.innerHTML = '<span><i class="dot hi"></i>適合</span><span><i class="dot mid"></i>還可以</span><span><i class="dot lo"></i>太曬</span>' +
+        '<span><i class="dot a"></i>下雨可玩</span>';
+      box.setAttribute("aria-hidden", "true");  // the same words are in the list cards and popups
+      return box;
+    },
+  });
+  map.addControl(new KeyControl());
 
   // ------------------------------------------------------------------ init
   setNow();

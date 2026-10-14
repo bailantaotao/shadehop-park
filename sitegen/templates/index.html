@@ -14,8 +14,10 @@
     <input type="search" id="search" placeholder="搜尋公園或地區（例：新竹）" autocomplete="off"
            aria-label="搜尋公園" aria-controls="searchResults" aria-expanded="false">
     <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+    <button class="filter-btn" id="filterBtn" type="button" aria-controls="sheetFilters" aria-expanded="false">{{ icon("filters") }}篩選<span class="n"></span></button>
   </div>
   <div class="timebar">
+    <button class="chip date-btn" id="dateBtn" type="button" aria-label="選擇日期">今天</button>
     <label for="date" class="tlabel">日期</label>
     <input type="date" id="date">
     <label for="slot" class="tlabel">時間</label>
@@ -40,6 +42,19 @@
 </div>
 
 <div id="map" role="region" aria-label="地圖"></div>
+
+{# On phones this is a bottom sheet over a full-screen map (app.js); on wider screens it is the page below the map. #}
+<section class="sheet" id="sheet" aria-label="公園清單">
+<div class="sheet-head" id="sheetHead">
+  <button type="button" class="sheet-handle" id="sheetHandle" aria-controls="sheetBody" aria-label="展開清單"></button>
+  <div class="sheet-summary" id="sheetSummary" role="status" aria-live="polite">地圖載入中…</div>
+  <div class="sheet-key" aria-hidden="true"><i class="dot hi"></i>適合<i class="dot mid"></i>還可以<i class="dot lo"></i>太曬<i class="dot weak"></i>陽光弱</div>
+</div>
+<div class="sheet-body" id="sheetBody">
+<div class="sheet-filters" id="sheetFilters" hidden>
+  <div class="sheet-filters-head"><b>篩選條件</b><button type="button" class="link" id="filtersDone">完成</button></div>
+</div>
+<div class="sheet-park" id="sheetPark" hidden></div>
 <details class="legend-box">
   <summary>圖例與說明</summary>
   <div class="legend">
@@ -75,6 +90,8 @@
 </ul>
 </section>
 </noscript>
+</div>
+</section>
 {% endblock %}
 {% block scripts %}
 <script src="{{ root }}static/vendor/leaflet-1.9.4/leaflet.js"></script>

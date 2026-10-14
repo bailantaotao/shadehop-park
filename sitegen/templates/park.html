@@ -24,7 +24,7 @@
   </div>
   <p class="small muted" id="copyStatus" role="status" aria-live="polite" style="margin:6px 0 0"></p>
   {% if p.indoor is sameas true or p.indoor == "possible" or p.kind == "park" %}
-  <p class="pnote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。去過的話<a href="#report">告訴我們</a>。{% endif %}</p>
+  <p class="pnote" id="parkNote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。去過的話<a href="#report">告訴我們</a>。{% endif %}</p>
   {% endif %}
 </section>
 
@@ -45,7 +45,7 @@
   <script type="application/json" id="parkData">{{ {"slots": p.shade_timetable.slots, "weather": root ~ "api/weather?city=" ~ (p.region.city | urlencode) ~ "&district=" ~ (p.region.district | urlencode)} | tojson }}</script>
 </section>
 
-{# 3. What is nearby: toilets (環境部 + OSM), convenience store, station, then park facts when known #}
+{# 3. What is nearby: toilets (環境部 + OSM), convenience store, station #}
 {% set fam = t.family %}{% set cv = p.amenities.convenience_store %}{% set st = p.amenities.station %}
 <section class="pcard">
   <h2 class="ptitle">附近有什麼</h2>
@@ -57,19 +57,24 @@
   {% if st and st.value %}<li><span class="pico">🚉</span><span>{% if st.location %}<a href="{{ st.location | place_url }}" target="_blank" rel="noopener">{{ st.name }}</a>{% else %}{{ st.name }}{% endif %} {{ st.distance_m }}m</span></li>{% endif %}
   {% if w.value %}<li><span class="pico">🚰</span><span>{% if w.location %}<a href="{{ w.location | place_url }}" target="_blank" rel="noopener">飲水機</a>{% else %}飲水機{% endif %} {{ w.distance_m }}m</span></li>{% endif %}
   </ul>
-  {% set facts = namespace(n=0) %}
-  {% if p.official and p.official.equipment %}{% set facts.n = facts.n + 1 %}{% endif %}{% if pg.equipment or pg.surface or pg.min_age or pg.max_age or (p.official and (p.official.facilities or p.official.management)) %}{% set facts.n = facts.n + 1 %}{% endif %}
-  {% if facts.n %}
-  <ul class="plist" style="margin-top:10px;padding-top:10px;border-top:1px solid var(--line)">
+  <p class="prov" style="margin-top:8px">公廁：環境部「全國公廁建檔資料」與 OpenStreetMap；便利商店、車站：OpenStreetMap。距離為直線距離。</p>
+</section>
+
+{# 3a. The playground itself: equipment (official list, OSM, or parents' reports filled in by park.js) and who runs it #}
+{% set ages = (pg.min_age or pg.max_age) and not (pg.min_age in ("0", 0, None) and pg.max_age in ("99", "100", 99, 100, None)) %}
+{% set known = (p.official and (p.official.equipment or p.official.facilities)) or pg.equipment or pg.surface or ages %}
+<section class="pcard" id="parkInfo">
+  <h2 class="ptitle">遊戲場資訊</h2>
+  <ul class="plist">
   {% if p.official and p.official.equipment %}<li><span class="pico">🛝</span><span>遊具：{% for k, v in p.official.equipment | dictsort %}<span class="tag">{{ k }}{% if v > 1 %} {{ v }}{% endif %}</span>{% endfor %}</span></li>
   {% elif pg.equipment %}<li><span class="pico">🛝</span><span>遊具：{% for e in pg.equipment %}<span class="tag">{{ e }}</span>{% endfor %}</span></li>{% endif %}
+  <li id="reportedEquip" hidden><span class="pico">👨‍👩‍👧</span><span></span></li>
   {% if p.official and p.official.facilities %}<li><span class="pico">🏞️</span>設施：{{ p.official.facilities }}</li>{% endif %}
   {% if pg.surface %}<li><span class="pico">🟫</span>地面：{{ SURFACE_LABEL.get(pg.surface, pg.surface) }}{% if pg.surface in ("rubber", "tartan", "artificial_turf") %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
-  {% if pg.min_age or pg.max_age %}<li><span class="pico">👶</span>適合年齡：{% if pg.min_age %}{{ pg.min_age }} 歲{% endif %}–{% if pg.max_age %}{{ pg.max_age }} 歲{% endif %}</li>{% endif %}
-  {% if p.official and p.official.management %}<li><span class="pico">📞</span>{{ p.official.management }}{% if p.official.phone %} <a href="tel:{{ p.official.phone | replace('(', '') | replace(')', '') | replace(' ', '') }}">{{ p.official.phone }}</a>{% endif %}</li>{% endif %}
+  {% if ages %}<li><span class="pico">👶</span>適合年齡：{% if pg.min_age %}{{ pg.min_age }} 歲{% endif %}–{% if pg.max_age %}{{ pg.max_age }} 歲{% endif %}</li>{% endif %}
+  {% if not known %}<li class="muted" id="infoEmpty"><span class="pico">🛝</span><span>還沒有遊具資料。去過的話<a href="#report">告訴我們</a>有哪些遊具。</span></li>{% endif %}
+  {% if p.official and p.official.management %}<li><span class="pico">🏛️</span><span>管理單位：{{ p.official.management }}{% if p.official.phone %} <a href="tel:{{ p.official.phone | replace('(', '') | replace(')', '') | replace(' ', '') }}">{{ p.official.phone }}</a>{% endif %}</span></li>{% endif %}
   </ul>
-  {% endif %}
-  <p class="prov" style="margin-top:8px">公廁：環境部「全國公廁建檔資料」與 OpenStreetMap；便利商店、車站：OpenStreetMap。距離為直線距離。</p>
 </section>
 
 {# 3b. Parents report whether there is a playground (our D1 store + an optional public OSM note) #}

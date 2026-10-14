@@ -6,7 +6,7 @@
   var PARK_HREF = window.SHADEHOP_PARK_HREF || "parks/{id}/";
   function parkHref(id) { return PARK_HREF.replace("{id}", encodeURIComponent(id)); }
   var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false, fav: false, confirmed: false };
-  var Favs = window.ShadeHopFavs;
+  var Favs = window.ShadeHopFavs, I = window.ShadeHopIcon;
   var LIST_MAX = 60;
   var CHARGER_R = window.SHADEHOP_CHARGER_RADIUS_M || 500;
   // Parks load per region as the map view reaches it; nobody has to pick a region first.
@@ -197,15 +197,15 @@
         ? '<a class="pp-tile" href="' + esc(url) + '" target="_blank" rel="noopener" title="在 Google 地圖查看' + label + '">' + inner + "</a>"
         : '<div class="pp-tile">' + inner + "</div>";
     };
-    var charge = p.fast_nearest_m !== null && p.fast_nearest_m !== undefined ? tile("⚡", "快充", p.fast_nearest_m, p.charger_url) : tile("🔌", "慢充", p.slow_nearest_m, p.charger_url);
+    var charge = p.fast_nearest_m !== null && p.fast_nearest_m !== undefined ? tile(I("bolt"), "快充", p.fast_nearest_m, p.charger_url) : tile(I("plug"), "慢充", p.slow_nearest_m, p.charger_url);
     return '<div class="pp">' +
       '<div class="pp-head"><div><div class="pp-name">' + esc(p.name) + '</div><div class="pp-sub">' + esc(p.district) +
       (reportNote(p) || (unsure(p) ? "・遊具待確認" : "")) + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
       '<div class="pp-pills">' + shade + rain + "</div>" +
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
       (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">白天沒有明顯遮陰，避開中午</span>') + "</div>" +
-      '<div class="pp-grid">' + tile("🅿️", "停車", p.parking_nearest_m, p.parking_url) + tile("🚻", "廁所", p.toilet_m, p.toilet_url) +
-      tile("🏪", "超商", p.shop_m, p.shop_url) + charge + "</div>" +
+      '<div class="pp-grid">' + tile(I("parking"), "停車", p.parking_nearest_m, p.parking_url) + tile(I("toilet"), "廁所", p.toilet_m, p.toilet_url) +
+      tile(I("store"), "超商", p.shop_m, p.shop_url) + charge + "</div>" +
       '<div class="pp-btns"><a class="pp-btn primary" href="' + parkHref(p.id) + '">查看詳情</a>' +
       (p.nav ? '<a class="pp-btn" href="' + esc(p.nav) + '" target="_blank" rel="noopener">導航</a>' : "") +
       (p.gmaps ? '<a class="pp-btn" href="' + esc(p.gmaps) + '" target="_blank" rel="noopener">評論</a>' : "") +
@@ -294,9 +294,9 @@
     if (!map.hasLayer(nightLayer)) nightLayer.addTo(map);
     if (!label) { label = L.DomUtil.create("div", "map-night", map.getContainer()); label.setAttribute("role", "status"); }
     var t = sunTimes(c), evening = SLOT_START + state.slot * SLOT_MIN >= 12 * 60;
-    label.textContent = evening
-      ? "🌙 日落後，沒有直射陽光" + (t.down !== null ? "（這天日落約 " + hhmm(t.down) + "）" : "")
-      : "🌅 日出前，還沒有直射陽光" + (t.up !== null ? "（這天日出約 " + hhmm(t.up) + "）" : "");
+    label.innerHTML = evening
+      ? I("moon") + "日落後，沒有直射陽光" + (t.down !== null ? "（這天日落約 " + hhmm(t.down) + "）" : "")
+      : I("sunrise") + "日出前，還沒有直射陽光" + (t.up !== null ? "（這天日出約 " + hhmm(t.up) + "）" : "");
     label.hidden = false;
   }
 
@@ -369,14 +369,14 @@
       return '<span class="' + shadeClass(x) + (i === state.slot ? " cur" : "") + '" title="' + slotLabel(i) + " " + (x === null ? "無日照" : Math.round(x * 100) + "%") + '"></span>';
     }).join("");
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
-    var levelBadge = { A: '<span class="badge A">☔ 下雨可玩</span>', B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
+    var levelBadge = { A: '<span class="badge A">' + I("umbrella") + "下雨可玩</span>", B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
     return '<article class="card' + (state.selected === p.id ? " selected" : "") + '" data-park="' + esc(p.id) + '"><h3>' + Favs.button(p.id) + ' <a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
       '<div class="badges">' + levelBadge + (reportNote(p) ? '<span class="badge">' + reportNote(p).slice(1) + "</span>" : unsure(p) ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +
       (best ? '<span>白天最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>白天沒有明顯遮陰時段</span>") +
-      "<span>🅿️ " + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : "800m 內未標示停車場") + "</span>" +
-      "<span>⚡ 快充 " + (p.fast_nearest_m !== null ? p.fast_nearest_m + "m" : CHARGER_R + "m 內無") + " · 🔌 慢充 " + (p.slow_nearest_m !== null ? p.slow_nearest_m + "m" : CHARGER_R + "m 內無") + "</span>" +
+      "<span>" + I("parking") + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : "800m 內未標示停車場") + "</span>" +
+      "<span>" + I("bolt") + "快充 " + (p.fast_nearest_m !== null ? p.fast_nearest_m + "m" : CHARGER_R + "m 內無") + " · " + I("plug") + "慢充 " + (p.slow_nearest_m !== null ? p.slow_nearest_m + "m" : CHARGER_R + "m 內無") + "</span>" +
       '<span class="small">' + dist.replace(/^ · /, "") + "</span>" +
       '</div><button class="link" data-focus="' + esc(p.id) + '">在地圖上看</button></article>';
   }
@@ -401,7 +401,7 @@
     var html = fs.slice(0, LIST_MAX).map(card).join("");
     if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
     if (!fs.length && filters.fav) {
-      html = '<p class="muted">還沒有收藏的公園。點公園名稱旁的 ☆ 就能加入；收藏只存在這個瀏覽器裡，不需要登入。</p>';
+      html = '<p class="muted">還沒有收藏的公園。點公園名稱旁的星號就能加入；收藏只存在這個瀏覽器裡，不需要登入。</p>';
     } else if (!fs.length) {
       var covered = state.regions.some(function (r) { return regionInView(r); });
       html = '<p class="muted">' + (covered ? "這個範圍沒有符合條件的公園，試著移動地圖或取消一些篩選。"
@@ -440,8 +440,8 @@
   $("#nowBtn").addEventListener("click", function () { setNow(); render(); });
   $("#playBtn").addEventListener("click", function (e) {
     var btn = e.currentTarget;
-    if (state.playTimer) { clearInterval(state.playTimer); state.playTimer = null; btn.setAttribute("aria-pressed", "false"); btn.innerHTML = '▶<span class="lbl"> 播放一天</span>'; return; }
-    btn.setAttribute("aria-pressed", "true"); btn.innerHTML = '⏸<span class="lbl"> 暫停</span>';
+    if (state.playTimer) { clearInterval(state.playTimer); state.playTimer = null; btn.setAttribute("aria-pressed", "false"); btn.innerHTML = I("play") + '<span class="lbl">播放一天</span>'; return; }
+    btn.setAttribute("aria-pressed", "true"); btn.innerHTML = I("pause") + '<span class="lbl">暫停</span>';
     state.playTimer = setInterval(function () {
       state.slot = (state.slot + 1) % SLOTS; $("#slot").value = state.slot; render();
     }, 700);
@@ -490,12 +490,12 @@
     });
     // A city name ('新竹') jumps to the whole region; its districts rarely contain it.
     var html = state.regions.filter(function (r) { return norm(r.city).indexOf(q) >= 0 || norm(r.label).indexOf(q) >= 0; }).map(function (r) {
-      return '<li role="option" tabindex="-1" data-region="' + esc(r.id) + '">📍 前往 ' + esc(r.city) +
+      return '<li role="option" tabindex="-1" data-region="' + esc(r.id) + '">' + I("pin") + "前往 " + esc(r.city) +
         ' <span class="muted">（' + r.parks + " 處）</span></li>";
     }).join("");
     html += Object.keys(districts).slice(0, 2).map(function (k) {
       var d = districts[k], r = state.regions.find(function (x) { return x.id === d.region; });
-      return '<li role="option" tabindex="-1" data-district="' + esc(k) + '">📍 前往 ' + esc((r ? r.city : "") + d.district) +
+      return '<li role="option" tabindex="-1" data-district="' + esc(k) + '">' + I("pin") + "前往 " + esc((r ? r.city : "") + d.district) +
         ' <span class="muted">（' + d.fs.length + " 處）</span></li>";
     }).join("");
     // Several play areas of one park share its name: list the park once.
@@ -619,14 +619,14 @@
     weatherAt = map.getCenter();
     fetch("api/weather?city=" + encodeURIComponent(where.city) + "&district=" + encodeURIComponent(where.district))
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (w) {
-        var rainy = w.pop !== null && w.pop >= 60, msg = "";
+        var rainy = w.pop !== null && w.pop >= 60, msg = "", ico = "";
         if (rainy) {
-          msg = "☔ " + where.district + "未來 3 小時降雨機率 " + w.pop + "%" + (w.weather ? "（" + w.weather + "）" : "") + "，已幫你開啟「下雨可玩」。";
+          ico = "rain"; msg = where.district + "未來 3 小時降雨機率 " + w.pop + "%" + (w.weather ? "（" + w.weather + "）" : "") + "，已幫你開啟「下雨可玩」。";
           filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
         } else if (w.uv !== null && w.uv >= 6) {
-          msg = "☀️ " + where.district + "今天紫外線指數 " + w.uv + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
+          ico = "sun"; msg = where.district + "今天紫外線指數 " + w.uv + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
         }
-        $("#weather").textContent = msg ? msg + "（天氣：中央氣象署）" : "";
+        $("#weather").innerHTML = msg ? I(ico) + esc(msg + "（天氣：中央氣象署）") : "";
         render();
       }).catch(function () {});
   }

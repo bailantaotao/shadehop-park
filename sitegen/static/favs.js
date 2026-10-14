@@ -26,6 +26,14 @@
     document.dispatchEvent(new CustomEvent("shadehop:favs"));
   }
 
+  // Icons for script-built HTML (map popups, cards): the same sprite the templates use.
+  var iconMeta = document.querySelector('meta[name="shadehop-icons"]');
+  var ICONS = iconMeta ? iconMeta.getAttribute("content") : "";
+  window.ShadeHopIcon = function (name, cls) {
+    return '<svg class="i' + (cls ? " " + cls : "") + '" aria-hidden="true"><use href="' + ICONS + "#" + name + '"></use></svg>';
+  };
+  var STAR = window.ShadeHopIcon("star", "off") + window.ShadeHopIcon("star-on", "on");
+
   window.ShadeHopFavs = {
     list: read,
     has: function (id) { return read().indexOf(id) >= 0; },
@@ -39,7 +47,7 @@
     button: function (id, withLabel) {
       var on = read().indexOf(id) >= 0;
       return '<button type="button" class="fav" data-fav="' + id + '" aria-pressed="' + on + '" title="' +
-        (on ? "從我的最愛移除" : "加入我的最愛") + '">' + (on ? "★" : "☆") +
+        (on ? "從我的最愛移除" : "加入我的最愛") + '">' + STAR +
         (withLabel ? '<span class="fav-label">' + (on ? "已加入我的最愛" : "加入我的最愛") + "</span>" : "") + "</button>";
     },
   };
@@ -57,7 +65,6 @@
       var on = window.ShadeHopFavs.has(b.dataset.fav);
       b.setAttribute("aria-pressed", String(on));
       b.title = on ? "從我的最愛移除" : "加入我的最愛";
-      b.firstChild.nodeValue = on ? "★" : "☆";
       var label = b.querySelector(".fav-label");
       // A button can carry shorter labels (data-on / data-off), e.g. 收藏 / 已收藏 on park pages.
       if (label) label.textContent = on ? (b.dataset.on || "已加入我的最愛") : (b.dataset.off || "加入我的最愛");

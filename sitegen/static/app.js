@@ -463,7 +463,7 @@
     });
   });
   // ---------------------------------------------------------------- search
-  // By park name or district, across all regions (they load on the first keystroke).
+  // By city, park name or district, across all regions (they load on the first keystroke).
   var searchQ = "", searchEl = $("#search"), resultsEl = $("#searchResults");
   function norm(t) { return String(t || "").replace(/臺/g, "台").replace(/\s+/g, "").toLowerCase(); }
   function runSearch() {
@@ -484,7 +484,12 @@
         unsure(a.properties) - unsure(b.properties) ||                             // confirmed playgrounds first
         an.length - bn.length;
     });
-    var html = Object.keys(districts).slice(0, 2).map(function (k) {
+    // A city name ('新竹') jumps to the whole region; its districts rarely contain it.
+    var html = state.regions.filter(function (r) { return norm(r.city).indexOf(q) >= 0 || norm(r.label).indexOf(q) >= 0; }).map(function (r) {
+      return '<li role="option" tabindex="-1" data-region="' + esc(r.id) + '">📍 前往 ' + esc(r.city) +
+        ' <span class="muted">（' + r.parks + " 處）</span></li>";
+    }).join("");
+    html += Object.keys(districts).slice(0, 2).map(function (k) {
       var d = districts[k], r = state.regions.find(function (x) { return x.id === d.region; });
       return '<li role="option" tabindex="-1" data-district="' + esc(k) + '">📍 前往 ' + esc((r ? r.city : "") + d.district) +
         ' <span class="muted">（' + d.fs.length + " 處）</span></li>";
@@ -517,6 +522,10 @@
         map.setView([f.geometry.coordinates[1], f.geometry.coordinates[0]], 17);
         if (markers[li.dataset.id]) focusPark(li.dataset.id);
       }
+    } else if (li.dataset.region) {
+      var r = state.regions.find(function (x) { return x.id === li.dataset.region; });
+      if (r) map.fitBounds(regionBounds(r));
+      document.getElementById("map").scrollIntoView({ behavior: "smooth" });
     } else if (li.dataset.district || li.dataset.group) {
       var fs = li.dataset.group ? resultsEl._groups[Number(li.dataset.group)] : resultsEl._districts[li.dataset.district].fs;
       map.fitBounds(L.latLngBounds(fs.map(function (f) { return [f.geometry.coordinates[1], f.geometry.coordinates[0]]; })).pad(0.2), { maxZoom: 17 });

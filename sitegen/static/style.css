@@ -313,3 +313,73 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
 #reportTally .i { color: var(--accent); margin-right: .25em; }
 .pbtn[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, var(--surface)); }
 .pbtn:disabled { opacity: .5; cursor: default; }
+
+/* ---------------------------------------------------------------- phone app layout
+   Wider screens: the sheet is just the page below the map, and the phone-only controls are hidden.
+   Phones (<= 600px): a full-screen map, controls floating on top, and a bottom sheet with three
+   heights (peek / half / full) holding the answer, the tapped park, the list and the filters. */
+.filter-btn, .date-btn, .sheet-head, .sheet-filters, .sheet-park { display: none; }
+@media (max-width: 600px) {
+  html, body { height: 100%; overflow: hidden; overscroll-behavior: none; }
+  header.top { position: fixed; top: 0; left: 0; right: 0; z-index: 1200; }
+  main { padding: 0; }
+  #map { position: fixed; top: var(--head-h, 44px); left: 0; right: 0; bottom: var(--peek, 72px);
+    height: auto; min-height: 0; margin: 0; border: 0; border-radius: 0; }
+  .leaflet-container:focus-visible { border-radius: 0; }
+
+  /* Floating controls: search + 篩選, then one time row. */
+  .controls { position: fixed; z-index: 1100; top: calc(var(--head-h, 44px) + 6px); left: 8px; right: 8px;
+    padding: 6px; gap: 6px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
+  .search { display: flex; gap: 6px; }
+  .search input { flex: 1; min-width: 0; min-height: 44px; }
+  .filter-btn { display: inline-flex; align-items: center; gap: 4px; flex: none; min-height: 44px; padding: 0 12px;
+    border: 1px solid var(--line); border-radius: 10px; background: var(--chip); color: var(--text); font: inherit; font-size: .9rem; cursor: pointer; }
+  .filter-btn[aria-expanded="true"] { border-color: var(--accent); }
+  .timebar { flex-wrap: nowrap; gap: 6px; }
+  .timebar input[type=date] { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+  .timebar .date-btn { display: inline-flex; order: 0; }
+  .timebar output { order: 1; }
+  .timebar input[type=range] { order: 2; flex: 1 1 auto; min-width: 70px; }
+  .timebar #playBtn { order: 3; }
+  .timebar #nowBtn { order: 4; }
+  .timebar .chip { min-height: 44px; padding: 0 10px; }
+  .chip.more { display: none; }
+
+  /* Map controls clear the floating panel; the on-map key and empty note move into the sheet head. */
+  #map .leaflet-top { top: calc(var(--ctl-h, 110px) + 8px); }  /* leaflet.css loads after this file */
+  .map-key, .map-empty, .map-note { display: none; }  /* the sheet head says these */
+
+  /* The sheet */
+  .sheet { position: fixed; z-index: 1050; left: 0; right: 0; bottom: 0; top: calc(var(--head-h, 44px) + var(--ctl-h, 110px) + 14px);
+    margin: 0; background: var(--surface); border-radius: 16px 16px 0 0; box-shadow: 0 -2px 14px rgba(0,0,0,.18);
+    display: flex; flex-direction: column; transform: translateY(100%); transition: transform .22s cubic-bezier(.2, .8, .2, 1);
+    padding-bottom: env(safe-area-inset-bottom); }
+  .sheet.dragging { transition: none; }
+  .sheet-head { display: block; padding: 6px 14px 10px; touch-action: none; cursor: grab; flex: none; }
+  .sheet-handle { display: block; width: 100%; height: 22px; margin: 0; padding: 0; border: 0; background: none; cursor: grab; position: relative; }
+  .sheet-handle::before { content: ""; position: absolute; left: 50%; top: 8px; width: 40px; height: 5px; margin-left: -20px; border-radius: 3px; background: var(--line); }
+  .sheet-summary { font-size: .95rem; line-height: 1.45; }
+  .sheet-summary .link { font-size: inherit; }
+  .sheet-key { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 4px; margin-top: 4px; font-size: .75rem; color: var(--muted); }
+  .sheet-key .dot { margin: 0 2px 0 8px; } .sheet-key .dot:first-child { margin-left: 0; }
+  .sheet-head .banner { margin-top: 6px; }
+  .sheet-body { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 0 12px 16px; -webkit-overflow-scrolling: touch; }
+  .sheet[data-state="peek"] .sheet-body { visibility: hidden; }
+  .sheet-filters:not([hidden]) { display: block; margin-bottom: 12px; }
+  .sheet-filters-head { display: flex; justify-content: space-between; align-items: center; margin: 2px 0 10px; }
+  .sheet-filters .chips.filters, .sheet-filters #moreFilters { flex-wrap: wrap; overflow: visible; margin: 0 0 8px; padding: 0; }
+  .sheet-filters .chip { min-height: 44px; }
+  .sheet-park:not([hidden]) { display: block; position: relative; padding: 4px 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+  .sheet-close { position: absolute; top: 0; right: -4px; width: 44px; height: 44px; border: 0; background: none; color: var(--muted); font-size: 1.1rem; cursor: pointer; }
+  .sheet-park .pp-head { padding-right: 40px; }
+  .sheet-park .pp-name { font-size: 17px; }
+  .sheet-park .pp-pill { font-size: 13px; padding: 3px 10px; }
+  .sheet-park .pp-best, .sheet-park .pp-alt { font-size: 14px; }
+  .sheet-park .pp-tile { padding: 8px 2px; font-size: 12.5px; }
+  .sheet-park .pp-tile b { font-size: 14px; }
+  .sheet-park .pp-btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; }
+  .sheet-body .listbar { margin-top: 4px; }
+  .sheet-body footer { padding: 16px 4px 8px; }
+  .legend-box { margin-top: 0; }
+}
+@media (max-width: 600px) and (prefers-reduced-motion: reduce) { .sheet { transition: none; } }

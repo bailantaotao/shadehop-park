@@ -17,6 +17,8 @@
   var tiles = { index: null, deg: 0.01, data: {} };
 
   var $ = function (s) { return document.querySelector(s); };
+  // Phones get a full-screen map with a bottom sheet (summary, list, filters, the tapped park).
+  var phone = window.matchMedia("(max-width: 600px)");
   var css = function (name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); };
 
   function slotLabel(i) {
@@ -265,11 +267,16 @@
         fillOpacity: faint ? 0.45 : cls === "night" ? 0.5 : 0.95,
       });
       // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
-      m.bindPopup(function () { return popupHtml(f); }, popupOptions());
+      if (phone.matches) m.on("click", function () { showPark(f); });
+      else m.bindPopup(function () { return popupHtml(f); }, popupOptions());
       m.addTo(markerLayer);
       markers[p.id] = m;
     });
     if (open && markers[open]) markers[open].openPopup();
+    if (phone.matches && state.selected && !$("#sheetPark").hidden) {
+      var sel = state.features.find(function (x) { return x.properties.id === state.selected; });
+      if (sel) $("#sheetParkBody").innerHTML = popupHtml(sel);  // the selected time changed
+    }
   }
 
   // ---------------------------------------------------------- live shadows
@@ -442,6 +449,7 @@
         : '<p class="muted">這個範圍還沒有資料。目前收錄：' + state.regions.map(function (r) { return r.city + (r.name !== r.city ? r.name : ""); }).join("、") + "。</p>";
     }
     $("#list").innerHTML = html;
+    updateSummary(fs);
     var anyFilter = Object.keys(filters).some(function (k) { return filters[k] && k !== "fav"; });
     mapEmpty(!fs.length && anyFilter && !filters.fav && state.regions.some(function (r) { return regionInView(r); }));
   }
@@ -522,6 +530,7 @@
   var pending = null;
   function render(viewOnly) {
     $("#slotOut").textContent = slotLabel(state.slot);
+    if (state.date) dateLabel();
     var full = !viewOnly || pending === "full";
     if (pending) { pending = full ? "full" : "view"; return; }
     pending = full ? "full" : "view";
@@ -542,8 +551,12 @@
     $("#slot").value = state.slot;
     var early = t.min < SLOT_START, late = t.min >= SLOT_START + SLOTS * SLOT_MIN;
     nowNote(early || late ? "現在 " + hhmm(t.min) + (early ? "，天還沒亮，先顯示早上 " : "，太陽快下山了，顯示 ") + slotLabel(state.slot) : "");
+    atNow = !(early || late);
   }
+  var atNow = true, noteText = "";
   function nowNote(text) {
+    noteText = text;
+    if (!text) atNow = false;  // any manual time change leaves "now"
     var el = map.getContainer().querySelector(".map-note");
     if (!el && !text) return;
     if (!el) { el = L.DomUtil.create("div", "map-note", map.getContainer()); el.setAttribute("role", "status"); }
@@ -577,6 +590,8 @@
   function syncMore() {
     var n = moreBox.querySelectorAll('[aria-pressed="true"]').length;
     moreBtn.querySelector(".n").textContent = n ? "（" + n + "）" : "";
+    var all = Object.keys(filters).filter(function (k) { return filters[k] && k !== "fav"; }).length;
+    $("#filterBtn .n").textContent = all ? "（" + all + "）" : "";
   }
   moreBtn.addEventListener("click", function () {
     var open = moreBtn.getAttribute("aria-expanded") !== "true";
@@ -700,6 +715,11 @@
     var m = markers[id];
     if (!m) return;
     state.selected = id;
+    if (phone.matches) {
+      map.setView(m.getLatLng(), Math.max(map.getZoom(), 17));
+      showPark(state.features.find(function (x) { return x.properties.id === id; }));
+      return;
+    }
     // Open the popup once the map has stopped moving: Leaflet skips its auto-pan during a zoom
     // animation, which left the popup under the zoom/locate buttons on phones.
     var open = function () { if (markers[id]) markers[id].openPopup(); };
@@ -1011,8 +1031,189 @@
   });
   map.addControl(new KeyControl());
 
+  // ----------------------------------------------------------- phone sheet
+  // Three heights: peek (one-line answer), half (the tapped park or the first cards), full (list or
+  // filters). Drag the head, or tap it to step up; positions are set as a translateY.
+  var sheet = $("#sheet"), sheetHead = $("#sheetHead"), sheetBody = $("#sheetBody"), sheetPark = $("#sheetPark");
+  sheetPark.innerHTML = '<button type="button" class="sheet-close" aria-label="關閉這座公園">✕</button><div id="sheetParkBody"></div>';
+  var sheetState = "peek";
+  function sheetMetrics() {
+    var full = sheet.offsetHeight, peek = sheetHead.offsetHeight;
+    return { full: full, peek: peek, half: Math.min(full, Math.max(peek + 160, Math.round(window.innerHeight * 0.48))) };
+  }
+  function sheetOffset(st) {
+    var m = sheetMetrics();
+    return m.full - (st === "full" ? m.full : st === "half" ? m.half : m.peek);
+  }
+  function setSheet(st) {
+    sheetState = st;
+    if (!phone.matches) { sheet.style.transform = ""; return; }
+    sheet.style.transform = "translateY(" + sheetOffset(st) + "px)";
+    sheet.dataset.state = st;
+    $("#sheetHandle").setAttribute("aria-label", st === "full" ? "收起清單" : "展開清單");
+    $("#sheetHandle").setAttribute("aria-expanded", String(st !== "peek"));
+    document.documentElement.style.setProperty("--peek", sheetMetrics().peek + "px");
+  }
+  var drag = null;
+  sheetHead.addEventListener("pointerdown", function (e) {
+    if (!phone.matches || e.target.closest("button:not(.sheet-handle), a")) return;
+    drag = { y: e.clientY, from: sheetOffset(sheetState), moved: false, id: e.pointerId };
+    sheet.classList.add("dragging");
+  });
+  window.addEventListener("pointermove", function (e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    var dy = e.clientY - drag.y;
+    if (Math.abs(dy) > 6) drag.moved = true;
+    if (!drag.moved) return;
+    var m = sheetMetrics(), y = Math.max(0, Math.min(m.full - m.peek, drag.from + dy));
+    sheet.style.transform = "translateY(" + y + "px)";
+  });
+  window.addEventListener("pointerup", function (e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    sheet.classList.remove("dragging");
+    var d = drag; drag = null;
+    if (!d.moved) { setSheet(sheetState === "peek" ? "half" : sheetState === "half" ? "full" : "peek"); return; }
+    var y = new DOMMatrix(getComputedStyle(sheet).transform).m42;
+    var best = ["peek", "half", "full"].reduce(function (a, b) {
+      return Math.abs(sheetOffset(b) - y) < Math.abs(sheetOffset(a) - y) ? b : a;
+    });
+    setSheet(best);
+  });
+  $("#sheetHandle").addEventListener("keydown", function (e) {
+    if (e.key === "ArrowUp") { e.preventDefault(); setSheet(sheetState === "peek" ? "half" : "full"); }
+    if (e.key === "ArrowDown") { e.preventDefault(); setSheet(sheetState === "full" ? "half" : "peek"); }
+  });
+  $("#sheetHandle").addEventListener("click", function (e) {
+    if (e.detail === 0) setSheet(sheetState === "peek" ? "half" : sheetState === "half" ? "full" : "peek");  // keyboard
+  });
+
+  function showPark(f) {
+    if (!f) return;
+    state.selected = f.properties.id;
+    $("#sheetParkBody").innerHTML = popupHtml(f);
+    sheetPark.hidden = false;
+    closeFilters();
+    sheetBody.scrollTop = 0;
+    setSheet("half");
+    // Keep the park in the strip of map between the floating controls and the half sheet.
+    var ll = L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]);
+    var top = $(".controls").offsetHeight + 8, bottom = window.innerHeight - sheetMetrics().half - map.getContainer().getBoundingClientRect().top;
+    var y = map.latLngToContainerPoint(ll).y, want = (top + bottom) / 2;
+    if (y < top + 20 || y > bottom - 20) map.panBy([0, y - want]);
+    render(true);
+  }
+  sheetPark.addEventListener("click", function (e) {
+    if (e.target.closest(".sheet-close")) { sheetPark.hidden = true; state.selected = null; setSheet("peek"); render(true); return; }
+    var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]");
+    if (go) { e.preventDefault(); focusPark(go.dataset.goto); }
+    if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); }
+  });
+
+  function openFilters() {
+    $("#sheetFilters").hidden = false; sheetPark.hidden = true;
+    $("#filterBtn").setAttribute("aria-expanded", "true");
+    sheetBody.scrollTop = 0; setSheet("full");
+  }
+  function closeFilters() {
+    $("#sheetFilters").hidden = true;
+    $("#filterBtn").setAttribute("aria-expanded", "false");
+  }
+  $("#filterBtn").addEventListener("click", function () {
+    if ($("#sheetFilters").hidden) openFilters(); else { closeFilters(); setSheet("half"); }
+  });
+  $("#filtersDone").addEventListener("click", function () { closeFilters(); setSheet("peek"); });
+
+  // The one-line answer in the sheet head: how many parks in view suit the selected time, or why none.
+  function updateSummary(fs) {
+    var el = $("#sheetSummary");
+    if (!state.features.length) { el.textContent = "地圖載入中…"; return; }
+    var covered = state.regions.some(function (r) { return regionInView(r); });
+    if (!covered) { el.textContent = "這個範圍還沒有資料"; return; }
+    var when = atNow ? "現在" : slotLabel(state.slot) + " ";
+    var on = Object.keys(filters).some(function (k) { return filters[k]; });
+    if (!fs.length) {
+      var next = filters.shade ? nextShadeSlot() : -1;
+      el.innerHTML = "<b>沒有符合的公園</b>" + (next >= 0 ? '・<button type="button" class="link" data-jump="' + next + '">' + slotLabel(next) + " 起有遮陰</button>" : "") +
+        (on ? '・<button type="button" class="link" data-clear="all">取消篩選</button>' : "");
+      return;
+    }
+    var cls = window.ShadeHopVerdict(0, state.slot).cls;
+    var prefix = noteText ? esc(noteText) + "<br>" : "";
+    if (cls === "weak" || state.features.length && fs.every(function (f) { var v = shadeAt(f); return v === null || v === undefined; })) {
+      el.innerHTML = prefix + "<b>" + when + "太陽很低，不太曬</b>・畫面中 " + fs.length + " 座公園";
+      return;
+    }
+    var good = fs.filter(function (f) { return verdict(shadeAt(f)).cls === "hi" || f.properties.rain === true && verdict(shadeAt(f)).cls !== "lo"; });
+    if (good.length) {
+      var ref = state.user || [map.getCenter().lng, map.getCenter().lat];
+      good.sort(function (a, b) { return distM(ref, a.geometry.coordinates) - distM(ref, b.geometry.coordinates); });
+      var g = good[0], d = distM(ref, g.geometry.coordinates);
+      el.innerHTML = prefix + "<b>" + when + "有 " + good.length + " 座適合</b>・" + (state.user ? "離你最近 " : "最近：") +
+        '<button type="button" class="link" data-goto="' + esc(g.properties.id) + '">' + esc(g.properties.name) + "</button>" +
+        (state.user ? " " + (d < 1000 ? Math.round(d) + "m" : (d / 1000).toFixed(1) + " km") : "");
+      return;
+    }
+    var keep = state.slot, later = -1, n = 0;
+    for (var i = Math.max(state.slot + 1, 4); i < 22 && later < 0; i++) {
+      state.slot = i;
+      n = state.features.filter(function (f) { return inView(f) && passes(f) && verdict(shadeAt(f)).cls === "hi"; }).length;
+      if (n) later = i;
+    }
+    state.slot = keep;
+    el.innerHTML = prefix + "<b>" + when + "畫面中沒有適合的公園</b>" +
+      (later >= 0 ? '・<button type="button" class="link" data-jump="' + later + '">' + slotLabel(later) + " 起有 " + n + " 座</button>" : "・拉開清單看看遮陰最多的");
+  }
+  sheetHead.addEventListener("click", function (e) {
+    var c = e.target.closest("[data-clear]"), j = e.target.closest("[data-jump]"), go = e.target.closest("[data-goto]");
+    if (c) clearFilter(c.dataset.clear);
+    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); }
+    if (go) focusPark(go.dataset.goto);
+  });
+
+  // Date button (phones): 今天 / 明天 / M/D, opening the native date picker.
+  function dateLabel() {
+    var t = taipeiNow(), today = new Date(Date.UTC(t.y, t.m - 1, t.d)), p = state.date.split("-").map(Number);
+    var diff = Math.round((Date.UTC(p[0], p[1] - 1, p[2]) - today) / 86400000);
+    $("#dateBtn").textContent = diff === 0 ? "今天" : diff === 1 ? "明天" : p[1] + "/" + p[2];
+  }
+  $("#dateBtn").addEventListener("click", function () {
+    var d = $("#date");
+    try { d.showPicker(); } catch (e) { d.focus(); d.click(); }
+  });
+
+  // Move the filters, weather line and footer into the sheet on phones, and back on wider screens.
+  var moved = [["#sheetFilters", ".chips.filters", true], ["#sheetFilters", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
+  var homes = moved.map(function (x) { var el = $(x[1]); var mark = document.createComment("home"); el.parentNode.insertBefore(mark, el); return { el: el, mark: mark, to: x[0] }; });
+  function layoutForWidth() {
+    homes.forEach(function (h) {
+      if (phone.matches) $(h.to).appendChild(h.el);
+      else h.mark.parentNode.insertBefore(h.el, h.mark.nextSibling);
+    });
+    $("#moreFilters").hidden = phone.matches ? false : $("#moreBtn").getAttribute("aria-expanded") !== "true";
+    if (!phone.matches) { closeFilters(); sheetPark.hidden = true; }
+    syncOffsets();
+    drawMarkers();
+    setSheet(phone.matches ? sheetState : "peek");
+    map.invalidateSize();
+  }
+  function syncOffsets() {
+    var root = document.documentElement.style;
+    root.setProperty("--head-h", document.querySelector("header.top").offsetHeight + "px");
+    root.setProperty("--ctl-h", $(".controls").offsetHeight + "px");
+    if (phone.matches) setSheet(sheetState);
+  }
+  // Space for the floating controls above the map's own buttons (they grow when search results open, etc.).
+  if (window.ResizeObserver) {
+    new ResizeObserver(syncOffsets).observe($(".controls"));
+    // The head grows with the summary text and weather line; keep the peek height and map in step.
+    new ResizeObserver(function () { if (phone.matches) setSheet(sheetState); }).observe(sheetHead);
+  }
+  phone.addEventListener ? phone.addEventListener("change", layoutForWidth) : phone.addListener(layoutForWidth);
+  window.addEventListener("resize", function () { if (phone.matches) setSheet(sheetState); });
+
   // ------------------------------------------------------------------ init
   setNow();
+  layoutForWidth();
   fetch("api/regions/index.json").then(function (r) { return r.json(); }).then(function (regions) {
     state.regions = regions;
     initialView();  // fires moveend -> loads the regions in view

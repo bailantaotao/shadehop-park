@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, timedelta, timezone
 
 import pytest
@@ -470,3 +471,28 @@ def test_nearby_toilets_shops_and_stations():
     assert a["toilet"]["family"]["name"] == "測試百貨" and a["toilet"]["family"]["family_room"] is True
     assert a["convenience_store"]["name"] == "7-ELEVEN 測試門市" and 130 < a["convenience_store"]["distance_m"] < 150
     assert a["station"]["name"] == "捷運測試站"
+
+
+def test_hsinchu_registry_normalised(monkeypatch):
+    from pipeline import fetch_city
+
+    rows = [
+        {"編號": "1", "公園": "吉羊公園", "行政區": "北區", "設施內容": "組合遊具組溜滑梯1組"},
+        {"編號": "2", "公園": "吉羊公園", "行政區": "北區", "設施內容": "搖搖馬2組"},
+        {"編號": "3", "公園": "南寮環保公園", "行政區": "北區", "設施內容": "無"},
+        {"編號": "4", "公園": "香山公園", "行政區": "香山區公所", "設施內容": "鞦韆1組"},
+    ]
+
+    class Resp:
+        content = json.dumps(rows, ensure_ascii=False).encode("utf-8-sig")
+        def raise_for_status(self):
+            pass
+
+    seen = {}
+    monkeypatch.setattr(fetch_city.requests, "get", lambda url, **kw: seen.update(kw) or Resp())
+    out = fetch_city.hsinchu_playgrounds({})
+    by = {e["ref"]: e for e in out["entries"]}
+    assert by["北區/吉羊公園"]["facilities"] == "組合遊具組溜滑梯1組、搖搖馬2組" and by["北區/吉羊公園"]["playground"]
+    assert not by["北區/南寮環保公園"]["playground"] and by["北區/南寮環保公園"]["facilities"] is None
+    assert "香山區/香山公園" in by
+    assert seen["verify"].endswith(".pem")  # certificate check stays on

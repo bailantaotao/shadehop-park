@@ -107,10 +107,10 @@ def search_parks(
     need_toilet: bool = False,
     limit: int = 10,
 ) -> dict:
-    """Search playgrounds in 新北市, 臺北市 and 桃園市 by shade, rain cover, parking and EV charging.
+    """Search playgrounds in 新北市, 臺北市, 桃園市, 新竹市 and 新竹縣 by shade, rain cover, parking and EV charging.
 
     Args:
-        region: 'newtaipei' (新北市), 'taipei' (臺北市) or 'taoyuan' (桃園市). Omit for all regions.
+        region: 'newtaipei' (新北市), 'taipei' (臺北市), 'taoyuan' (桃園市), 'hsinchucity' (新竹市) or 'hsinchucounty' (新竹縣). Omit for all regions.
         lat, lng: Search origin (WGS84). Omit to search the whole region.
         radius_km: Max straight-line distance from origin.
         when: ISO datetime (Asia/Taipei if no offset). Default: now. Used for shade_at_requested_time.
@@ -284,10 +284,11 @@ def build_server():
 
     server = MCPServer(
         name="shadehop-park",
-        title="ShadeHop 遮陽公園（新北・台北・桃園）",
+        title="ShadeHop 遮陽公園（新北・台北・桃園・新竹）",
         instructions=(
-            "Find shaded or rain-proof children's playgrounds in 新北市 (New Taipei; region='newtaipei'), 桃園市 (Taoyuan; region='taoyuan') and "
-            "臺北市 (Taipei City; region='taipei'), with nearby parking "
+            "Find shaded or rain-proof children's playgrounds in 新北市 (New Taipei; region='newtaipei'), 桃園市 (Taoyuan; region='taoyuan'), "
+            "臺北市 (Taipei City; region='taipei'), 新竹市 (Hsinchu City; region='hsinchucity') and "
+            "新竹縣 (Hsinchu County; region='hsinchucounty'), with nearby parking "
             "and EV chargers (fast DC / slow AC). Always cite `as_of` and the park `url`. Shade values are model "
             "estimates; say so. If a field is null/unknown, say it is not recorded rather than guessing."
         ),

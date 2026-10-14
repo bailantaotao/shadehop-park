@@ -92,6 +92,14 @@ def test_site_build(dataset, tmp_path, monkeypatch):
     terms = (out / "terms" / "index.html").read_text()
     assert "免責聲明" in terms and "隱私權" in terms and "ODbL" in terms and "/terms/" in (out / "sitemap.xml").read_text()
     assert "terms/" in page  # footer link on every page
+    # Parents' reports: without a Turnstile key the form stays hidden; the Function route is allowed.
+    assert "這裡有遊戲場嗎" in page and "回報功能即將開放" in page and 'id="reportForm"' not in page
+    assert "/api/reports" in (out / "_routes.json").read_text()
+    monkeypatch.setattr(bs, "TURNSTILE_SITE_KEY", "1x00000000000000000000AA")
+    out2 = tmp_path / "public2"
+    bs.build(out2)
+    page2 = (out2 / "parks" / "nt-w10" / "index.html").read_text()
+    assert 'id="reportForm"' in page2 and "challenges.cloudflare.com/turnstile" in page2 and "溜滑梯" in page2
     assert "/parks/nt-w20/" in (out / "sitemap.xml").read_text()
     assert "快充" in (out / "llms-full.txt").read_text()
     tiles = json.loads((out / "api" / "casters" / "index.json").read_text())

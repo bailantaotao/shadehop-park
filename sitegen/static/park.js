@@ -112,3 +112,102 @@
     setStat("nowRain", "暫無", ""); setStat("nowUv", "暫無", "");
   });
 })();
+
+/* "Is there a playground here?" - parents' reports. Saved by our /api/reports (counts show at once)
+   and, if the parent agrees, sent to OpenStreetMap as a public note so volunteers can map it. */
+(function () {
+  "use strict";
+  var box = document.getElementById("report");
+  if (!box) return;
+  var parkId = box.dataset.park, tally = document.getElementById("reportTally");
+  var root = (document.querySelector('link[rel="manifest"]') || {}).getAttribute
+    ? document.querySelector('link[rel="manifest"]').getAttribute("href").replace("manifest.webmanifest", "") : "/";
+
+  function showTally(s) {
+    if (!s || (!s.yes && !s.no)) return;
+    var parts = [];
+    if (s.yes) {
+      var eq = Object.keys(s.equipment || {}).sort(function (a, b) { return s.equipment[b] - s.equipment[a]; })
+        .map(function (k) { return k + " " + s.equipment[k]; });
+      parts.push("👍 " + s.yes + " 位家長回報有遊戲場" + (eq.length ? "（" + eq.join("、") + "）" : ""));
+    }
+    if (s.no) parts.push("👎 " + s.no + " 位回報沒有");
+    tally.textContent = parts.join("；");
+  }
+  fetch(root + "api/reports").then(function (r) { return r.ok ? r.json() : {}; })
+    .then(function (all) { showTally(all[parkId]); }).catch(function () {});
+
+  var form = document.getElementById("reportForm");
+  if (!form) return;
+  var verdict = null, token = null, sending = false;
+  var equip = document.getElementById("reportEquip"), send = document.getElementById("reportSend");
+  var status = document.getElementById("reportStatus"), osm = document.getElementById("reportOsm");
+  function update() { send.disabled = sending || !verdict || !token; }
+
+  form.querySelectorAll("[data-verdict]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      verdict = b.dataset.verdict;
+      form.querySelectorAll("[data-verdict]").forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+      equip.hidden = verdict !== "yes";
+      if (!token) status.textContent = "正在確認你不是機器人…";
+      update();
+    });
+  });
+
+  // Cloudflare Turnstile (loaded with render=explicit; calls this when ready).
+  window.shadehopTurnstile = function () {
+    window.turnstile.render("#turnstile", {
+      sitekey: box.dataset.sitekey, language: "zh-tw", appearance: "interaction-only",
+      callback: function (t) { token = t; if (status.textContent.indexOf("機器人") >= 0) status.textContent = ""; update(); },
+      "expired-callback": function () { token = null; update(); },
+      "error-callback": function () { status.textContent = "人機驗證載入失敗，請重新整理頁面"; },
+    });
+  };
+
+  function osmNote(items) {
+    var text = "ShadeHop 家長回報：這裡有兒童遊戲場" + (items.length ? "（遊具：" + items.join("、") + "）" : "") + "。\n" +
+      "公園：" + box.dataset.name + "\n" + box.dataset.url + "\n" +
+      "（使用者在 ShadeHop 遮陽公園地圖送出；請志工確認後以 leisure=playground 標示。）";
+    if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {  // never leave test notes on the real map
+      console.info("[dev] OSM note not sent:", text);
+      return Promise.resolve(null);
+    }
+    var body = new URLSearchParams({ lat: box.dataset.lat, lon: box.dataset.lng, text: text });
+    return fetch("https://api.openstreetmap.org/api/0.6/notes.json", { method: "POST", body: body })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (n) { return n && n.properties ? n.properties.id : null; })
+      .catch(function () { return null; });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (send.disabled) return;
+    var items = [].map.call(equip.querySelectorAll("input[type=checkbox][value]:checked"), function (c) { return c.value; });
+    sending = true; update(); status.textContent = "送出中…";
+    fetch(root + "api/reports", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ park_id: parkId, verdict: verdict, equipment: items, token: token }),
+    }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); }).then(function (res) {
+      if (!res.ok) throw new Error(res.j.error || "送出失敗");
+      showTally({ yes: res.j.yes, no: res.j.no, equipment: {} });
+      var done = "謝謝你！回報已經送出，其他家長馬上就看得到。";
+      if (verdict === "yes" && osm && osm.checked) {
+        status.textContent = done + " 正在通知 OpenStreetMap 志工…";
+        return osmNote(items).then(function (id) {
+          status.innerHTML = done + (id ? ' 已在 OpenStreetMap 留下<a href="https://www.openstreetmap.org/note/' + id + '" target="_blank" rel="noopener">附註 #' + id + "</a>，志工確認後會畫上地圖。" : "");
+        });
+      }
+      status.textContent = done;
+    }).catch(function (err) {
+      status.textContent = err.message || "送出失敗，請稍後再試";
+      sending = false;
+      if (window.turnstile) { window.turnstile.reset("#turnstile"); token = null; }
+      update();
+      return;
+    }).then(function () {
+      if (status.textContent.indexOf("謝謝") === 0 || status.innerHTML.indexOf("謝謝") === 0) {
+        form.querySelectorAll("button, input").forEach(function (x) { x.disabled = true; });
+      }
+    });
+  });
+})();

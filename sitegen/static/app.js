@@ -131,6 +131,23 @@
   var markerLayer = L.layerGroup().addTo(map);
   var markers = {};
 
+  // Parents' reports (/api/reports): a park counts as a playground once at least two report one and
+  // they outnumber the "no"s; a playground counts as gone once two report none and outnumber the "yes"es.
+  var reports = {};
+  function unsure(p) {
+    var r = reports[p.id];
+    if (r && r.no >= 2 && r.no > r.yes) return true;
+    if (p.kind !== "park") return false;
+    return !(r && r.yes >= 2 && r.yes > r.no);
+  }
+  function reportNote(p) {
+    var r = reports[p.id];
+    if (!r) return "";
+    if (r.yes >= 2 && r.yes > r.no) return "・" + r.yes + " 位家長回報有遊戲場";
+    if (r.no >= 2 && r.no > r.yes) return "・" + r.no + " 位家長回報沒有遊戲場";
+    return "";
+  }
+
   function passes(f) {
     var p = f.properties;
     if (filters.rain && p.rain !== true) return false;
@@ -140,7 +157,7 @@
     if (filters.slow && p.slow_nearest_m === null) return false;
     if (filters.toilet && !p.toilet) return false;
     if (filters.fav && !Favs.has(p.id)) return false;
-    if (filters.confirmed && p.kind === "park") return false;  // parks whose play equipment is unconfirmed
+    if (filters.confirmed && unsure(p)) return false;  // play equipment unconfirmed (or reported gone)
     return true;
   }
 
@@ -178,7 +195,7 @@
     var charge = p.fast_nearest_m !== null && p.fast_nearest_m !== undefined ? tile("⚡", "快充", p.fast_nearest_m) : tile("🔌", "慢充", p.slow_nearest_m);
     return '<div class="pp">' +
       '<div class="pp-head"><div><div class="pp-name">' + esc(p.name) + '</div><div class="pp-sub">' + esc(p.district) +
-      (p.kind === "park" ? "・遊具待確認" : "") + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
+      (reportNote(p) || (unsure(p) ? "・遊具待確認" : "")) + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
       '<div class="pp-pills">' + shade + rain + "</div>" +
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
       (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">白天沒有明顯遮陰，避開中午</span>') + "</div>" +
@@ -199,16 +216,16 @@
     // Parks with unconfirmed play equipment are small and faint, and drawn first so confirmed
     // playgrounds sit on top of them.
     var ordered = state.features.filter(passes).sort(function (a, b) {
-      return (a.properties.kind === "park" ? 0 : 1) - (b.properties.kind === "park" ? 0 : 1);
+      return (unsure(a.properties) ? 0 : 1) - (unsure(b.properties) ? 0 : 1);
     });
     ordered.forEach(function (f) {
-      var p = f.properties, cls = shadeClass(shadeAt(f)), unsure = p.kind === "park" && p.rain !== true;
+      var p = f.properties, cls = shadeClass(shadeAt(f)), faint = unsure(p) && p.rain !== true;
       var m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
-        radius: p.rain === true ? 10 : unsure ? 5.5 : 8,
+        radius: p.rain === true ? 10 : faint ? 5.5 : 8,
         color: p.rain === true ? css("--a") : css("--surface"),
-        weight: p.rain === true ? 4 : unsure ? 1 : 2,
+        weight: p.rain === true ? 4 : faint ? 1 : 2,
         fillColor: css("--" + cls),
-        fillOpacity: unsure ? 0.45 : cls === "night" ? 0.5 : 0.95,
+        fillOpacity: faint ? 0.45 : cls === "night" ? 0.5 : 0.95,
       });
       m.bindPopup(function () { return popupHtml(f); }, { className: "park-pop", minWidth: 250, maxWidth: 280 });
       m.addTo(markerLayer);
@@ -347,7 +364,7 @@
     var dist = state.user ? " · 距離你 " + (distM(state.user, f.geometry.coordinates) / 1000).toFixed(1) + " km" : "";
     var levelBadge = { A: '<span class="badge A">☔ 下雨可玩</span>', B: '<span class="badge">部分遮陽/樹蔭</span>', C: '<span class="badge">大樓陰影</span>', none: '<span class="badge">大多曝曬</span>' }[p.level];
     return '<article class="card' + (state.selected === p.id ? " selected" : "") + '" data-park="' + esc(p.id) + '"><h3>' + Favs.button(p.id) + ' <a href="' + parkHref(p.id) + '">' + esc(p.name) + "</a></h3>" +
-      '<div class="badges">' + levelBadge + (p.kind === "park" ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
+      '<div class="badges">' + levelBadge + (reportNote(p) ? '<span class="badge">' + reportNote(p).slice(1) + "</span>" : unsure(p) ? '<span class="badge">遊戲設施待確認</span>' : "") + (p.indoor === true ? '<span class="badge">室內</span>' : p.indoor === "possible" ? '<span class="badge">可能室內/中庭</span>' : "") + '<span class="badge">' + slotLabel(state.slot) + " 遮陰 " + (v === null ? "—" : Math.round(v * 100) + "%") + "</span></div>" +
       '<div class="timeline" aria-label="' + month() + ' 月遮陰時間軸">' + cells + '</div><div class="tl-axis"><span>06</span><span>12</span><span>18</span></div>' +
       '<div class="facts">' +
       (best ? '<span>最遮陰：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>本月沒有明顯遮陰時段</span>") +
@@ -369,7 +386,7 @@
     fs.sort(function (a, b) {
       if (near) return distM(state.user, a.geometry.coordinates) - distM(state.user, b.geometry.coordinates);
       var ra = a.properties.rain === true ? 1 : 0, rb = b.properties.rain === true ? 1 : 0;
-      var ca = a.properties.kind === "park" ? 0 : 1, cb = b.properties.kind === "park" ? 0 : 1;
+      var ca = unsure(a.properties) ? 0 : 1, cb = unsure(b.properties) ? 0 : 1;
       // Rain-proof first, then confirmed playgrounds before parks whose equipment is unsure, then shade now.
       return rb - ra || cb - ca || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
@@ -462,7 +479,7 @@
     hits.sort(function (a, b) {
       var an = norm(a.properties.name), bn = norm(b.properties.name);
       return (bn.indexOf(q) === 0) - (an.indexOf(q) === 0) ||                       // name starts with the query
-        (a.properties.kind === "park") - (b.properties.kind === "park") ||        // confirmed playgrounds first
+        unsure(a.properties) - unsure(b.properties) ||                             // confirmed playgrounds first
         an.length - bn.length;
     });
     var html = Object.keys(districts).slice(0, 2).map(function (k) {
@@ -480,7 +497,7 @@
     html += groups.slice(0, 8).map(function (g, i) {
       var p = g[0].properties;
       return '<li role="option" tabindex="-1" ' + (g.length > 1 ? 'data-group="' + i + '"' : 'data-id="' + esc(p.id) + '"') + ">" + esc(p.name) +
-        ' <span class="muted">' + esc(p.district) + (g.length > 1 ? "・" + g.length + " 處遊戲場" : p.kind === "park" ? "・遊具待確認" : "") + "</span></li>";
+        ' <span class="muted">' + esc(p.district) + (g.length > 1 ? "・" + g.length + " 處遊戲場" : unsure(p) ? "・遊具待確認" : "") + "</span></li>";
     }).join("");
     resultsEl._groups = groups;
     if (!html) html = '<li class="muted">' + (Object.keys(state.loaded).length < state.regions.length ? "搜尋中…" : "找不到符合的公園") + "</li>";
@@ -808,6 +825,10 @@
     loadRegionsInView();
     weather();
   });
+  fetch("api/reports").then(function (r) { return r.ok ? r.json() : {}; }).then(function (all) {
+    reports = all || {};
+    render();
+  }).catch(function () {});
   fetch("api/chargers.geojson").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (gj) {
     chargers = gj.features; chargersLoaded = true;
     // The file can arrive before the regions list has given the map its first view; Leaflet

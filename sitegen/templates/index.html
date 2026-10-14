@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block body_class %}page-map{% endblock %}
 {% block head %}
 <link rel="stylesheet" href="{{ root }}static/vendor/leaflet-1.9.4/leaflet.css">
 {# Start fetching the vector base map right away so the map is drawn as soon as possible (app.js uses these). #}

@@ -320,9 +320,10 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
    heights (peek / half / full) holding the answer, the tapped park, the list and the filters. */
 .filter-btn, .date-btn, .sheet-head, .sheet-filters, .sheet-park { display: none; }
 @media (max-width: 600px) {
-  html, body { height: 100%; overflow: hidden; overscroll-behavior: none; }
-  header.top { position: fixed; top: 0; left: 0; right: 0; z-index: 1200; }
-  main { padding: 0; }
+  /* Only the map page is an app screen; park, about and terms pages scroll normally. */
+  body.page-map { height: 100%; overflow: hidden; overscroll-behavior: none; }
+  body.page-map header.top { position: fixed; top: 0; left: 0; right: 0; z-index: 1200; }
+  body.page-map main { padding: 0; }
   #map { position: fixed; top: var(--head-h, 44px); left: 0; right: 0; bottom: var(--peek, 72px);
     height: auto; min-height: 0; margin: 0; border: 0; border-radius: 0; }
   .leaflet-container:focus-visible { border-radius: 0; }

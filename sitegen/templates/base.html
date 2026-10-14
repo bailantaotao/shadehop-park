@@ -17,7 +17,7 @@
 <meta name="apple-mobile-web-app-title" content="遮陽公園">
 {% block head %}{% endblock %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
 <header class="top">
   <h1><a href="{{ root }}" class="brand">{{ icon("umbrella", "brand-mark") }}{{ SITE_NAME }}</a></h1>
   <span class="muted small subtitle">ShadeHop · {{ COVERAGE_SHORT }}</span>

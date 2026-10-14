@@ -1,0 +1,794 @@
+{
+ "address": null,
+ "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 50,
+   "method": "osm",
+   "name": "OK便利商店",
+   "source": "https://www.openstreetmap.org/node/14272450015",
+   "value": true,
+   "verified_at": "2026-10-13"
+  },
+  "drinking_water": {
+   "confidence": "medium",
+   "distance_m": 0,
+   "method": "osm",
+   "source": "https://www.openstreetmap.org/way/220025982",
+   "value": true,
+   "verified_at": "2026-10-13"
+  },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 1171,
+   "method": "osm",
+   "name": "新竹站",
+   "source": "https://www.openstreetmap.org/node/3372916575",
+   "value": true,
+   "verified_at": "2026-10-13"
+  },
+  "toilet": {
+   "accessible": true,
+   "category": null,
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 0,
+   "family": null,
+   "family_room": null,
+   "method": "osm",
+   "name": "十八尖山第二號公廁",
+   "source": "https://www.openstreetmap.org/way/221997550",
+   "value": true,
+   "verified_at": "2026-10-13"
+  }
+ },
+ "area_m2": 534960,
+ "best_shade_windows": {
+  "1": null,
+  "10": null,
+  "11": null,
+  "12": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": null,
+  "6": null,
+  "7": null,
+  "8": null,
+  "9": null
+ },
+ "charger_summary": {
+  "fast": 1,
+  "nearest_any_m": 110,
+  "nearest_fast_m": 110,
+  "nearest_slow_m": null,
+  "radius_m": 500,
+  "slow": 0,
+  "total": 1,
+  "unknown": 0
+ },
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 4,
+   "charging_rate": "計度 /固定 /12元 DC 30kW每度,計度 /固定 /14元 DC 180kW每度",
+   "distance_m": 110,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.796472,
+    "lng": 120.987472
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新竹市_十八尖山停車場",
+   "opening_hours": "每日/08:00-22:00",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "osm": null,
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "97179430-S186",
+   "verified_at": "2026-10-14"
+  }
+ ],
+ "daytime_shaded_share": 0.0,
+ "geometry_estimated": false,
+ "id": "hc-w220025982",
+ "indoor": false,
+ "kind": "park",
+ "level": "none",
+ "level_label": "大多曝曬",
+ "location": {
+  "lat": 24.792099,
+  "lng": 120.98292
+ },
+ "name": "十八尖山公園",
+ "name_source": "osm_name",
+ "official": null,
+ "osm": {
+  "id": 220025982,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/220025982"
+ },
+ "park_name": "十八尖山公園",
+ "parking": [
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 0,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.792764,
+    "lng": 120.981542
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 257131841,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/257131841"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": "yes",
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 0,
+   "distance_method": "straight_line",
+   "fee": "no",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.795231,
+    "lng": 120.98689
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "十八尖山博愛街停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 297344562,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/297344562"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 1,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 24.78871,
+    "lng": 120.982519
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "十八尖山、高峰植物園大客車停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 257146091,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/257146091"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": 20,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 10,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.79208,
+    "lng": 120.976815
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "建華國中後方停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 325737086,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/325737086"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 90,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.796691,
+    "lng": 120.98755
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 257146098,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/257146098"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 92,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.787825,
+    "lng": 120.982998
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "高峰植物園停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1481651873,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1481651873"
+   },
+   "verified_at": "2026-10-13"
+  }
+ ],
+ "playground": {
+  "equipment": [],
+  "fee": null,
+  "max_age": null,
+  "min_age": null,
+  "opening_hours": null,
+  "surface": null,
+  "wheelchair": null
+ },
+ "playground_mapped": false,
+ "rain_cover": {
+  "confidence": "low",
+  "covered_area_m2": 666,
+  "covered_ratio": 0.0,
+  "method": "computed",
+  "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
+  "source": "https://www.openstreetmap.org/way/220025982",
+  "value": false,
+  "verified_at": "2026-10-13"
+ },
+ "region": {
+  "city": "新竹市",
+  "district": "東區",
+  "id": "hsinchucity"
+ },
+ "shade_timetable": {
+  "building_height_known_share": 0.16,
+  "buildings_considered": 402,
+  "confidence": "low",
+  "method": "computed",
+  "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
+  "slot_minutes": 30,
+  "slot_start": "06:00",
+  "slots": {
+   "1": [
+    null,
+    null,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.03,
+    null,
+    null
+   ],
+   "10": [
+    0.06,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.03,
+    null,
+    null
+   ],
+   "11": [
+    null,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.02,
+    0.05,
+    null,
+    null
+   ],
+   "12": [
+    null,
+    null,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.02,
+    0.05,
+    null,
+    null
+   ],
+   "2": [
+    null,
+    null,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.04,
+    null
+   ],
+   "3": [
+    null,
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.03,
+    0.1
+   ],
+   "4": [
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.03,
+    0.06
+   ],
+   "5": [
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.05
+   ],
+   "6": [
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.03
+   ],
+   "7": [
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.03
+   ],
+   "8": [
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.04
+   ],
+   "9": [
+    0.02,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
+    0.02,
+    0.04,
+    null
+   ]
+  },
+  "source": "https://www.openstreetmap.org/way/220025982",
+  "value": null,
+  "verified_at": "2026-10-13"
+ },
+ "shade_types": [
+  {
+   "confidence": "medium",
+   "covered_ratio": 0.0,
+   "level": "B",
+   "method": "computed",
+   "osm": [
+    {
+     "id": 14266986849,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/14266986849"
+    },
+    {
+     "id": 5841784050,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/5841784050"
+    },
+    {
+     "id": 5841729213,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/5841729213"
+    }
+   ],
+   "rain_proof": true,
+   "source": "https://www.openstreetmap.org/way/220025982",
+   "type": "pavilion",
+   "value": true,
+   "verified_at": "2026-10-13"
+  },
+  {
+   "confidence": "medium",
+   "covered_ratio": 0.0,
+   "level": "B",
+   "method": "computed",
+   "osm": [
+    {
+     "id": 9952433209,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/9952433209"
+    },
+    {
+     "id": 9863309393,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/9863309393"
+    },
+    {
+     "id": 2269953423,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2269953423"
+    },
+    {
+     "id": 2148550468,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2148550468"
+    },
+    {
+     "id": 3089175017,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/3089175017"
+    },
+    {
+     "id": 5841784065,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/5841784065"
+    },
+    {
+     "id": 2269953427,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2269953427"
+    },
+    {
+     "id": 2308379552,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2308379552"
+    },
+    {
+     "id": 3043276535,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/3043276535"
+    },
+    {
+     "id": 5841989667,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/5841989667"
+    },
+    {
+     "id": 3089179635,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/3089179635"
+    },
+    {
+     "id": 5841784075,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/5841784075"
+    },
+    {
+     "id": 9864198917,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/9864198917"
+    },
+    {
+     "id": 3089179177,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/3089179177"
+    },
+    {
+     "id": 618056566,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/618056566"
+    },
+    {
+     "id": 2269953424,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2269953424"
+    },
+    {
+     "id": 2148550467,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2148550467"
+    },
+    {
+     "id": 618056569,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/618056569"
+    }
+   ],
+   "rain_proof": true,
+   "source": "https://www.openstreetmap.org/way/220025982",
+   "type": "roof",
+   "value": true,
+   "verified_at": "2026-10-13"
+  }
+ ],
+ "sources": [
+  {
+   "as_of": "2026-10-13T20:21:31Z",
+   "license": "ODbL 1.0",
+   "name": "OpenStreetMap",
+   "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-14T21:55:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  }
+ ],
+ "updated_at": "2026-10-13"
+}

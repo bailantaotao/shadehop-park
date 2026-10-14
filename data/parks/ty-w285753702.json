@@ -8,7 +8,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4217227372",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/285753702",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "桃園站",
    "source": "https://www.openstreetmap.org/node/246416407",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": true,
@@ -39,7 +39,7 @@
    "name": "桃園敏盛綜合醫院(三民院區)東區1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 4480,
@@ -176,7 +176,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "33029464-STY260001",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -228,7 +228,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "58430020-S330021",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -266,7 +266,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42097879-SB0014",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -294,7 +294,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/148726",
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-14"
  },
  "osm": {
   "id": 285753702,
@@ -327,7 +327,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1255792516"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -353,7 +353,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1047350116"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -379,7 +379,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12387944837"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -405,7 +405,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1189791234"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -431,7 +431,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/409274648"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -457,7 +457,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/549283651"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -478,7 +478,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/285753702",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "桃園市",
@@ -809,28 +809,28 @@
   },
   "source": "https://www.openstreetmap.org/way/285753702",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T22:55:36+08:00",
+   "as_of": "2026-10-14T21:55:41+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T15:56:58+00:00",
+   "as_of": "2026-10-14T14:05:44+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

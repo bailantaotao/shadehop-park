@@ -8,7 +8,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2285210350",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/311768060",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運中和站",
    "source": "https://www.openstreetmap.org/node/5444300912",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": false,
@@ -46,7 +46,7 @@
    "name": "中和區公所2F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 1640,
@@ -154,7 +154,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02935",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -206,7 +206,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03541",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -254,7 +254,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311573882"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -280,7 +280,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3172604471"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -306,7 +306,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1416712237"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -332,7 +332,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3450014417"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -358,7 +358,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1060247645"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311768100"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -405,7 +405,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/311768060",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "新北市",
@@ -736,7 +736,7 @@
   },
   "source": "https://www.openstreetmap.org/way/311768060",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [
   {
@@ -749,22 +749,22 @@
    "trees": 1,
    "type": "tree_canopy",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T23:15:37+08:00",
+   "as_of": "2026-10-14T21:55:41+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

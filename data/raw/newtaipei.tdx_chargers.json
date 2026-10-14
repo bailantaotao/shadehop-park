@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "NewTaipei",
  "count": null,
- "fetched_at": "2026-10-13T15:57:00+00:00",
+ "fetched_at": "2026-10-14T14:06:46+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "newtaipei",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-13T23:15:37+08:00",
+ "src_update_time": "2026-10-14T21:55:41+08:00",
  "stations": [
   {
    "charging_points": 2,
@@ -920,14 +920,14 @@
     {
      "count": 4,
      "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "CCS2",
+     "type": "type2_combo"
     },
     {
      "count": 4,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數4",
@@ -1069,14 +1069,14 @@
     {
      "count": 1,
      "current": "AC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "Type 2",
+     "type": "type2"
     },
     {
      "count": 1,
      "current": "AC",
-     "label": "Type 2",
-     "type": "type2"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數2",
@@ -1342,14 +1342,14 @@
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     },
     {
      "count": 2,
      "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數4",
@@ -3797,7 +3797,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:5 充電樁數量:8 停車費:30元/時 費率:計度/固定/8元每度 樓層:3F",
+   "description": "停車位:8 充電樁數量:8 停車費:30元/時 費率:計度/固定/8元每度 樓層:3F",
    "floors": "3F",
    "id": "90807408-SCSD02792",
    "lat": 25.064006,
@@ -3809,7 +3809,7 @@
    "parking_rate": "30元/時",
    "restriction": null,
    "service_time": "7x24小時",
-   "spaces": 5
+   "spaces": 8
   },
   {
    "charging_points": 8,
@@ -5271,7 +5271,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:1 充電樁數量:2 停車費:30元/時(7~22時)，10元/時(22~7時) 費率:計度/固定/8元每度 樓層:1F",
+   "description": "停車位:2 充電樁數量:2 停車費:30元/時(7~22時)，10元/時(22~7時) 費率:計度/固定/8元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD02909",
    "lat": 24.973327,
@@ -5283,7 +5283,7 @@
    "parking_rate": "30元/時(7~22時)，10元/時(22~7時)",
    "restriction": null,
    "service_time": "7x24小時",
-   "spaces": 1
+   "spaces": 2
   },
   {
    "charging_points": 4,
@@ -8351,5 +8351,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-13T23:35:36+08:00"
+ "update_time": "2026-10-14T21:55:50+08:00"
 }

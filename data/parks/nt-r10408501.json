@@ -8,7 +8,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3100254535",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/10408501",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運小碧潭站",
    "source": "https://www.openstreetmap.org/node/3800658231",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": true,
@@ -46,7 +46,7 @@
    "name": "新店高中停車場B1",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 18156,
@@ -165,7 +165,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "89132567-S0067",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -203,7 +203,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "89132567-S0080",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -248,7 +248,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02920",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -296,7 +296,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/371456962"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -322,7 +322,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/686428843"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -348,7 +348,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064570573"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -374,7 +374,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064570014"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -400,7 +400,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/383637293"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -426,7 +426,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/773820285"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -447,7 +447,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/relation/10408501",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "新北市",
@@ -778,22 +778,22 @@
   },
   "source": "https://www.openstreetmap.org/relation/10408501",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T23:15:37+08:00",
+   "as_of": "2026-10-14T21:55:41+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

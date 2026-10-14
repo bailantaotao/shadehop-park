@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Taoyuan",
  "count": null,
- "fetched_at": "2026-10-13T15:57:00+00:00",
+ "fetched_at": "2026-10-14T14:06:46+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "taoyuan",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-13T22:55:36+08:00",
+ "src_update_time": "2026-10-14T21:55:41+08:00",
  "stations": [
   {
    "charging_points": 25,
@@ -1357,7 +1357,7 @@
    "lng": 121.29539,
    "name": "德國馬牌輪胎BestDrive - 弘旺輪胎",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1388,7 +1388,7 @@
    "lng": 121.30689,
    "name": "7-11森豪門市",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1419,7 +1419,7 @@
    "lng": 121.30687,
    "name": "桃園－八德",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1431,6 +1431,12 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
      "count": 4,
      "current": "DC",
      "label": "CCS2",
@@ -1441,12 +1447,6 @@
      "current": "DC",
      "label": "Tesla TPC",
      "type": "tesla_tpc"
-    },
-    {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 2",
-     "type": "type2"
     }
    ],
    "description": "充電格位數11",
@@ -1456,7 +1456,7 @@
    "lng": 121.36015,
    "name": "桃園－龜山",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1487,7 +1487,7 @@
    "lng": 121.22888,
    "name": "賓利精緻酒店",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1518,7 +1518,7 @@
    "lng": 121.23065,
    "name": "桃園－龍潭三林全聯",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1549,7 +1549,7 @@
    "lng": 121.2018,
    "name": "桃園－青埔環球購物中心",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1580,7 +1580,7 @@
    "lng": 121.28716,
    "name": "桃園－桃園中山路",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1592,16 +1592,16 @@
    "charging_rate": "費用詳情請查詢TESLA站點",
    "connectors": [
     {
-     "count": 4,
-     "current": "AC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
-    },
-    {
      "count": 3,
      "current": "AC",
      "label": "Type 2",
      "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數7",
@@ -1611,7 +1611,7 @@
    "lng": 121.30621,
    "name": "I DO頂級會館",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1642,7 +1642,7 @@
    "lng": 121.20667,
    "name": "桃園－平鎮",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1673,7 +1673,7 @@
    "lng": 121.22117,
    "name": "A21環北站停車場",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1704,7 +1704,7 @@
    "lng": 121.28791,
    "name": "桃園－台茂購物中心 (1F)",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "計分/0-60 kW  NT$5.00/分 60-100 kW NT$11.00/分 100-120 kW NT$17.00/分 超時佔用費（最高）NT$30.00/分鐘",
    "restriction": "本充電站限特斯拉車輛使用",
@@ -1729,7 +1729,7 @@
    "lng": 121.16773,
    "name": "桃園－楊梅三元街",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1754,7 +1754,7 @@
    "lng": 121.2018,
    "name": "桃園 - 環球購物中心A19",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1766,16 +1766,16 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
-     "count": 2,
-     "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
-    },
-    {
      "count": 3,
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數5",
@@ -1785,7 +1785,7 @@
    "lng": 121.31051,
    "name": "桃園－大業",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1816,7 +1816,7 @@
    "lng": 121.28762,
    "name": "桃園－台茂購物中心",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1847,7 +1847,7 @@
    "lng": 121.3968,
    "name": "雲山房",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1878,7 +1878,7 @@
    "lng": 121.16746,
    "name": "桃園－楊梅郭元益",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -1909,7 +1909,7 @@
    "lng": 121.37005,
    "name": "桃園A8環球購物中心",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "operator_id": "42861108",
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -5660,6 +5660,81 @@
    "restriction": null,
    "service_time": "24HR",
    "spaces": 5
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "每度10元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電",
+   "floors": "1F",
+   "id": "61411037-SA0767011",
+   "lat": 25.052017,
+   "lng": 121.14383,
+   "name": "觀音停十三",
+   "operation_type": "公辦民營",
+   "operator": "觀音停十三",
+   "operator_id": "61411037",
+   "parking_rate": "每小時20元",
+   "restriction": null,
+   "service_time": "每日00:00~24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "每度$10元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電",
+   "floors": "1F",
+   "id": "61411043-SA0768011",
+   "lat": 25.049794,
+   "lng": 121.141971,
+   "name": "觀音停十四",
+   "operation_type": "公辦民營",
+   "operator": "觀音停十四",
+   "operator_id": "61411043",
+   "parking_rate": "每小時$20",
+   "restriction": null,
+   "service_time": "每日",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "每度$10元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電",
+   "floors": "1F",
+   "id": "61411064-SA0766011",
+   "lat": 25.051895,
+   "lng": 121.13799,
+   "name": "觀音停十二",
+   "operation_type": "公辦民營",
+   "operator": "觀音停十二",
+   "operator_id": "61411064",
+   "parking_rate": "每小時$20",
+   "restriction": null,
+   "service_time": "00~23:59",
+   "spaces": 1
   },
   {
    "charging_points": 2,
@@ -10463,5 +10538,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-13T23:35:36+08:00"
+ "update_time": "2026-10-14T21:55:51+08:00"
 }

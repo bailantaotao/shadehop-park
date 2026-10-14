@@ -8,7 +8,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4835959028",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/893358834",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運三重站",
    "source": "https://www.openstreetmap.org/node/3812564389",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": null,
@@ -39,7 +39,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8303105466",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 6037,
@@ -185,7 +185,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/951756106"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -211,7 +211,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9928927288"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -237,7 +237,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9928927292"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -263,7 +263,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9928927293"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -289,7 +289,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9928724106"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -315,7 +315,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9928927301"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -336,7 +336,7 @@
   "note": "約 4533 m² 在高架/屋頂下（佔 75%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/893358834",
   "value": true,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "新北市",
@@ -667,7 +667,7 @@
   },
   "source": "https://www.openstreetmap.org/way/893358834",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [
   {
@@ -692,6 +692,11 @@
      "url": "https://www.openstreetmap.org/way/137195204"
     },
     {
+     "id": 60787927,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/60787927"
+    },
+    {
      "id": 770953633,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/770953633"
@@ -707,11 +712,6 @@
      "url": "https://www.openstreetmap.org/way/316665573"
     },
     {
-     "id": 60787927,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/60787927"
-    },
-    {
      "id": 316665577,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/316665577"
@@ -721,7 +721,7 @@
    "source": "https://www.openstreetmap.org/way/893358834",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "confidence": "medium",
@@ -732,16 +732,16 @@
    "source": "https://www.openstreetmap.org/way/893358834",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

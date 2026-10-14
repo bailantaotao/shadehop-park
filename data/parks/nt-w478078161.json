@@ -8,7 +8,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423799009",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/478078161",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運新北產業園區站",
    "source": "https://www.openstreetmap.org/node/2083320848",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": true,
@@ -46,7 +46,7 @@
    "name": "台亞新莊化成加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 13188,
@@ -124,7 +124,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "95081039-S1229",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -169,7 +169,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03230",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -217,7 +217,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1472943153"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -243,7 +243,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1344469785"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -269,7 +269,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13514372102"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "yes",
@@ -295,7 +295,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/686873107"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -321,7 +321,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9948657543"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -347,7 +347,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/551198203"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -368,7 +368,7 @@
   "note": "約 2577 m² 在高架/屋頂下（佔 20%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/478078161",
   "value": "partial",
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "新北市",
@@ -699,7 +699,7 @@
   },
   "source": "https://www.openstreetmap.org/way/478078161",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [
   {
@@ -723,22 +723,22 @@
    "source": "https://www.openstreetmap.org/way/478078161",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T23:15:37+08:00",
+   "as_of": "2026-10-14T21:55:41+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

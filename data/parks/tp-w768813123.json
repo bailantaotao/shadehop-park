@@ -8,7 +8,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/736470051",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/768813123",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運公館站",
    "source": "https://www.openstreetmap.org/node/3530915063",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": null,
@@ -39,7 +39,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/14222273699",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 91,
@@ -190,7 +190,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "TPE0646",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -235,7 +235,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0762",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.96,
@@ -283,7 +283,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1226116238"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -309,7 +309,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1226120164"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -335,7 +335,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/302084384"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -361,7 +361,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12255465357"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -387,7 +387,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/957165119"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "permissive",
@@ -413,7 +413,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1226576400"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -434,7 +434,7 @@
   "note": "約 90 m² 在高架/屋頂下（佔 99%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/768813123",
   "value": true,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "臺北市",
@@ -765,7 +765,7 @@
   },
   "source": "https://www.openstreetmap.org/way/768813123",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [
   {
@@ -789,7 +789,7 @@
    "source": "https://www.openstreetmap.org/way/768813123",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "confidence": "medium",
@@ -800,22 +800,22 @@
    "source": "https://www.openstreetmap.org/way/768813123",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T12:00:00+08:00",
+   "as_of": "2026-10-14T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

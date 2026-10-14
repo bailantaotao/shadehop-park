@@ -8,7 +8,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423767479",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/9932328",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "low",
@@ -25,7 +25,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/relation/9932328",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": false,
@@ -39,7 +39,7 @@
    "name": "北河公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 5631,
@@ -111,7 +111,7 @@
   "phone": "(02)26102621",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-14"
  },
  "osm": {
   "id": 9932328,
@@ -144,7 +144,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1101759172"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -170,7 +170,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812276"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -196,7 +196,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714659305"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -222,7 +222,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812261"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -248,7 +248,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12040069816"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -274,7 +274,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/769979067"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -295,7 +295,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/relation/9932328",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "新北市",
@@ -626,22 +626,22 @@
   },
   "source": "https://www.openstreetmap.org/relation/9932328",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T15:56:54+00:00",
+   "as_of": "2026-10-14T14:05:40+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

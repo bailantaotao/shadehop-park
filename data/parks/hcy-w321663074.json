@@ -1,0 +1,1106 @@
+{
+ "address": null,
+ "amenities": {
+  "convenience_store": {
+   "confidence": "medium",
+   "distance_m": 25,
+   "method": "osm",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/12121527816",
+   "value": true,
+   "verified_at": "2026-10-13"
+  },
+  "drinking_water": {
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "source": "https://www.openstreetmap.org/way/321663074",
+   "value": null,
+   "verified_at": "2026-10-13"
+  },
+  "station": {
+   "confidence": "medium",
+   "distance_m": 415,
+   "method": "osm",
+   "name": "六家站",
+   "source": "https://www.openstreetmap.org/node/3560261986",
+   "value": true,
+   "verified_at": "2026-10-13"
+  },
+  "toilet": {
+   "accessible": null,
+   "category": null,
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 0,
+   "family": {
+    "accessible": false,
+    "category": "公園",
+    "changing_table": true,
+    "distance_m": 24,
+    "family_room": false,
+    "name": "竹北市公一水圳森林公園"
+   },
+   "family_room": null,
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1021559608",
+   "value": true,
+   "verified_at": "2026-10-13"
+  }
+ },
+ "area_m2": 34366,
+ "best_shade_windows": {
+  "1": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.71,
+   "start": "15:30",
+   "start_slot": 19
+  },
+  "10": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.64,
+   "start": "16:00",
+   "start_slot": 20
+  },
+  "11": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.79,
+   "start": "15:30",
+   "start_slot": 19
+  },
+  "12": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.82,
+   "start": "15:30",
+   "start_slot": 19
+  },
+  "2": {
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 0.72,
+   "start": "16:30",
+   "start_slot": 21
+  },
+  "3": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.79,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "4": {
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.87,
+   "start": "06:00",
+   "start_slot": 0
+  },
+  "5": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.64,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "6": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.63,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "7": {
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.63,
+   "start": "06:00",
+   "start_slot": 0
+  },
+  "8": {
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.8,
+   "start": "06:00",
+   "start_slot": 0
+  },
+  "9": {
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.86,
+   "start": "06:00",
+   "start_slot": 0
+  }
+ },
+ "charger_summary": {
+  "fast": 6,
+  "nearest_any_m": 71,
+  "nearest_fast_m": 71,
+  "nearest_slow_m": 71,
+  "radius_m": 500,
+  "slow": 6,
+  "total": 9,
+  "unknown": 0
+ },
+ "chargers": [
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 12,
+   "charging_rate": "計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "distance_m": 71,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.810793,
+    "lng": 121.036593
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新竹高鐵特區停九停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 8,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD03035",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 8,
+   "charging_rate": "計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "distance_m": 82,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.808356,
+    "lng": 121.035259
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "新竹高鐵特區停六停車場",
+   "opening_hours": "7x24小時",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "免費",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "90807408-SCSD03034",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 14,
+   "charging_rate": "充電費率依系統公告為準。",
+   "distance_m": 91,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.810294,
+    "lng": 121.032909
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "星舟x城市車旅_竹北P5(高鐵停二)",
+   "opening_hours": "24小時營業",
+   "operation_type": "公辦民營",
+   "operator": "星舟快充",
+   "osm": null,
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "90148497-S1180",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "distance_m": 176,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.8074,
+    "lng": 121.03628
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Hsinchu, Zhubei - Harrods",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "osm": null,
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S2b99e24a-2ae5-4298-a907-ad3d1ed2b2f7",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 6,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "distance_m": 176,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.8074,
+    "lng": 121.03628
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "竹北哈洛德",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "osm": null,
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S6937fe7d-a089-4cb8-a163-c6f089ca1042",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 14,
+   "charging_rate": "充電費率依系統公告為準。",
+   "distance_m": 203,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.812888,
+    "lng": 121.034047
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "星舟x城市車旅_竹北P6(高鐵停一)",
+   "opening_hours": "24小時營業",
+   "operation_type": "公辦民營",
+   "operator": "星舟快充",
+   "osm": null,
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "fast",
+   "speed_label": "快充 (DC)",
+   "speed_source": "official",
+   "tdx_id": "90148497-S1178",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "費用詳情請查詢TESLA站點",
+   "distance_m": 237,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1F",
+   "location": {
+    "lat": 24.80919,
+    "lng": 121.03155
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "普拉伯義大利坊-竹北文興店",
+   "opening_hours": "7x24小時",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "osm": null,
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "42861108-S1555c0dc-9a16-4e93-9591-5bdb29a41d61",
+   "verified_at": "2026-10-14"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 8,
+   "charging_rate": "計度/固定/8 元每度, 計度/固定/9 元每度",
+   "distance_m": 240,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 24.80685,
+    "lng": 121.03646
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "Acon-eco竹北文興站",
+   "opening_hours": "24小時",
+   "operation_type": "私有民營",
+   "operator": "連展電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/30 元每小時",
+   "restriction": "依現場告示",
+   "sockets": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "output_kw": null,
+     "type": "type1_combo"
+    }
+   ],
+   "source": "tdx",
+   "speed": "both",
+   "speed_label": "快充 + 慢充",
+   "speed_source": "official",
+   "tdx_id": "89132567-S0060",
+   "verified_at": "2026-10-14"
+  }
+ ],
+ "daytime_shaded_share": 0.02,
+ "geometry_estimated": false,
+ "id": "hcy-w321663074",
+ "indoor": false,
+ "kind": "park",
+ "level": "none",
+ "level_label": "大多曝曬",
+ "location": {
+  "lat": 24.810056,
+  "lng": 121.035086
+ },
+ "name": "水圳森林公園",
+ "name_source": "osm_name",
+ "official": null,
+ "osm": {
+  "id": 321663074,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/321663074"
+ },
+ "park_name": "水圳森林公園",
+ "parking": [
+  {
+   "access": null,
+   "capacity": 50,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 31,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.810176,
+    "lng": 121.032887
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "嘉豐南路公有停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 321663132,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/321663132"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 54,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 24.810755,
+    "lng": 121.036569
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 975948023,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/975948023"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": 165,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 80,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.811338,
+    "lng": 121.036386
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "光明六路公有停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 242376515,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/242376515"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": 150,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 81,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.808212,
+    "lng": 121.034842
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "文興路公有停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 323598319,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/323598319"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": null,
+   "capacity": 28,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 125,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.80913,
+    "lng": 121.032715
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "博客藏壽司竹北停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1183614664,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1183614664"
+   },
+   "verified_at": "2026-10-13"
+  },
+  {
+   "access": "yes",
+   "capacity": 65,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 175,
+   "distance_method": "straight_line",
+   "fee": "yes",
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.812966,
+    "lng": 121.033913
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "復興一街公有停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 244130196,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/244130196"
+   },
+   "verified_at": "2026-10-13"
+  }
+ ],
+ "playground": {
+  "equipment": [],
+  "fee": null,
+  "max_age": null,
+  "min_age": null,
+  "opening_hours": null,
+  "surface": null,
+  "wheelchair": null
+ },
+ "playground_mapped": false,
+ "rain_cover": {
+  "confidence": "low",
+  "covered_area_m2": 112,
+  "covered_ratio": 0.0,
+  "method": "computed",
+  "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
+  "source": "https://www.openstreetmap.org/way/321663074",
+  "value": false,
+  "verified_at": "2026-10-13"
+ },
+ "region": {
+  "city": "新竹縣",
+  "district": "竹北市",
+  "id": "hsinchucounty"
+ },
+ "shade_timetable": {
+  "building_height_known_share": 0.59,
+  "buildings_considered": 242,
+  "confidence": "low",
+  "method": "computed",
+  "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
+  "slot_minutes": 30,
+  "slot_start": "06:00",
+  "slots": {
+   "1": [
+    null,
+    null,
+    0.08,
+    0.06,
+    0.05,
+    0.05,
+    0.04,
+    0.05,
+    0.06,
+    0.08,
+    0.09,
+    0.11,
+    0.14,
+    0.16,
+    0.2,
+    0.23,
+    0.29,
+    0.37,
+    0.48,
+    0.62,
+    0.74,
+    0.77,
+    null,
+    null
+   ],
+   "10": [
+    0.44,
+    0.11,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.05,
+    0.07,
+    0.1,
+    0.12,
+    0.16,
+    0.2,
+    0.26,
+    0.35,
+    0.47,
+    0.61,
+    0.66,
+    null,
+    null
+   ],
+   "11": [
+    null,
+    0.07,
+    0.06,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.05,
+    0.06,
+    0.07,
+    0.09,
+    0.11,
+    0.14,
+    0.17,
+    0.2,
+    0.25,
+    0.32,
+    0.41,
+    0.53,
+    0.71,
+    0.73,
+    0.94,
+    null,
+    null
+   ],
+   "12": [
+    null,
+    null,
+    0.07,
+    0.07,
+    0.06,
+    0.05,
+    0.05,
+    0.07,
+    0.09,
+    0.1,
+    0.12,
+    0.14,
+    0.17,
+    0.2,
+    0.24,
+    0.28,
+    0.36,
+    0.46,
+    0.59,
+    0.74,
+    0.76,
+    0.96,
+    null,
+    null
+   ],
+   "2": [
+    null,
+    null,
+    0.07,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.06,
+    0.08,
+    0.1,
+    0.12,
+    0.15,
+    0.2,
+    0.25,
+    0.32,
+    0.42,
+    0.56,
+    0.69,
+    0.75,
+    null
+   ],
+   "3": [
+    null,
+    0.53,
+    0.08,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.06,
+    0.09,
+    0.12,
+    0.15,
+    0.21,
+    0.29,
+    0.39,
+    0.5,
+    0.57,
+    0.79
+   ],
+   "4": [
+    0.87,
+    0.33,
+    0.07,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.05,
+    0.07,
+    0.11,
+    0.18,
+    0.28,
+    0.4,
+    0.52,
+    0.68
+   ],
+   "5": [
+    0.6,
+    0.21,
+    0.06,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.07,
+    0.12,
+    0.2,
+    0.31,
+    0.46,
+    0.64
+   ],
+   "6": [
+    0.53,
+    0.2,
+    0.06,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.04,
+    0.07,
+    0.11,
+    0.17,
+    0.26,
+    0.39,
+    0.63
+   ],
+   "7": [
+    0.63,
+    0.26,
+    0.07,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.04,
+    0.06,
+    0.1,
+    0.16,
+    0.25,
+    0.38,
+    0.6
+   ],
+   "8": [
+    0.8,
+    0.33,
+    0.08,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.08,
+    0.13,
+    0.22,
+    0.34,
+    0.46,
+    0.61
+   ],
+   "9": [
+    0.86,
+    0.26,
+    0.06,
+    0.05,
+    0.05,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.03,
+    0.04,
+    0.06,
+    0.09,
+    0.13,
+    0.19,
+    0.27,
+    0.38,
+    0.49,
+    0.56,
+    null
+   ]
+  },
+  "source": "https://www.openstreetmap.org/way/321663074",
+  "value": null,
+  "verified_at": "2026-10-13"
+ },
+ "shade_types": [
+  {
+   "confidence": "medium",
+   "covered_ratio": 0.0,
+   "level": "B",
+   "method": "computed",
+   "osm": [
+    {
+     "id": 362493734,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/362493734"
+    },
+    {
+     "id": 1021559607,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1021559607"
+    },
+    {
+     "id": 362493735,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/362493735"
+    }
+   ],
+   "rain_proof": true,
+   "source": "https://www.openstreetmap.org/way/321663074",
+   "type": "roof",
+   "value": true,
+   "verified_at": "2026-10-13"
+  }
+ ],
+ "sources": [
+  {
+   "as_of": "2026-10-13T20:21:31Z",
+   "license": "ODbL 1.0",
+   "name": "OpenStreetMap",
+   "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-14T20:35:36+08:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
+   "url": "https://data.gov.tw/dataset/170220"
+  }
+ ],
+ "updated_at": "2026-10-13"
+}

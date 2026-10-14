@@ -8,7 +8,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4361705408",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1552906771",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運山鼻站",
    "source": "https://www.openstreetmap.org/node/4450092074",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": null,
@@ -39,7 +39,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/424286923",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 631945,
@@ -113,7 +113,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/14134584483"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -139,7 +139,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/424082690"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -165,7 +165,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/424082691"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -191,7 +191,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/464257187"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -217,7 +217,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/438425545"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -238,7 +238,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1552906771",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "桃園市",
@@ -569,7 +569,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1552906771",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [
   {
@@ -579,9 +579,14 @@
    "method": "computed",
    "osm": [
     {
-     "id": 424286917,
+     "id": 424286934,
      "type": "way",
-     "url": "https://www.openstreetmap.org/way/424286917"
+     "url": "https://www.openstreetmap.org/way/424286934"
+    },
+    {
+     "id": 424286936,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/424286936"
     },
     {
      "id": 4237349124,
@@ -594,14 +599,9 @@
      "url": "https://www.openstreetmap.org/way/424286939"
     },
     {
-     "id": 424286934,
+     "id": 424286917,
      "type": "way",
-     "url": "https://www.openstreetmap.org/way/424286934"
-    },
-    {
-     "id": 424286936,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/424286936"
+     "url": "https://www.openstreetmap.org/way/424286917"
     },
     {
      "id": 424286922,
@@ -613,16 +613,16 @@
    "source": "https://www.openstreetmap.org/way/1552906771",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

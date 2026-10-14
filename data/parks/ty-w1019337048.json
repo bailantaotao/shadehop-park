@@ -8,7 +8,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/615736716",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1019337048",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "low",
@@ -25,7 +25,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1019337048",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": true,
@@ -46,7 +46,7 @@
    "name": "敏盛綜合醫院(經國院區)7F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 1219,
@@ -183,7 +183,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "12681939-SYA223",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -221,7 +221,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "86122122-S246",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -266,7 +266,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "85051710-S341",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -286,24 +286,24 @@
    "name": "I DO頂級會館",
    "opening_hours": "7x24小時",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "osm": null,
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
    "sockets": [
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Tesla TPC",
-     "output_kw": null,
-     "type": "tesla_tpc"
-    },
     {
      "count": 3,
      "current": "AC",
      "label": "Type 2",
      "output_kw": null,
      "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
     }
    ],
    "source": "tdx",
@@ -311,7 +311,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S81b83ac5-9d12-4ba0-8b1f-5d96917b0d08",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -356,7 +356,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "58430020-SPXMART002",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -376,24 +376,24 @@
    "name": "桃園－大業",
    "opening_hours": "7x24小時",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "osm": null,
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
    "sockets": [
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "Tesla TPC",
-     "output_kw": null,
-     "type": "tesla_tpc"
-    },
     {
      "count": 3,
      "current": "DC",
      "label": "CCS2",
      "output_kw": null,
      "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "output_kw": null,
+     "type": "tesla_tpc"
     }
    ],
    "source": "tdx",
@@ -401,7 +401,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "42861108-Scdec705b-4545-4398-a4ea-6f533c0979f2",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -439,7 +439,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "93519232-S0006",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.31,
@@ -487,7 +487,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019337051"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -513,7 +513,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1027025953"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -539,7 +539,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/6175957"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -565,7 +565,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1287326422"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": "customers",
@@ -591,7 +591,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1283618088"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -617,7 +617,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1562597605"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -638,7 +638,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1019337048",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "桃園市",
@@ -969,22 +969,22 @@
   },
   "source": "https://www.openstreetmap.org/way/1019337048",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T22:55:36+08:00",
+   "as_of": "2026-10-14T21:55:41+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

@@ -8,7 +8,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4464801391",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "medium",
@@ -25,7 +25,7 @@
    "name": "捷運大直站",
    "source": "https://www.openstreetmap.org/node/1681745146",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": null,
@@ -39,7 +39,7 @@
    "name": "流動廁所",
    "source": "https://www.openstreetmap.org/node/3558046001",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 452,
@@ -183,7 +183,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0997",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.03,
@@ -213,7 +213,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-14"
  },
  "osm": null,
  "park_name": "中428公園",
@@ -242,7 +242,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780959"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -268,7 +268,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/607939915"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -294,7 +294,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/607939914"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -320,7 +320,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1720009153"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -346,7 +346,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1071347086"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -372,7 +372,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/607939913"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -393,7 +393,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "臺北市",
@@ -724,28 +724,28 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T12:00:00+08:00",
+   "as_of": "2026-10-14T12:00:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-13T15:56:56+00:00",
+   "as_of": "2026-10-14T14:05:42+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

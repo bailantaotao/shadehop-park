@@ -1,0 +1,2124 @@
+{
+ "attribution": "資料介接「交通部TDX平臺」",
+ "city": "Hsinchu",
+ "count": null,
+ "fetched_at": "2026-10-14T14:06:46+00:00",
+ "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+ "publisher": "交通部",
+ "region": "hsinchucity",
+ "source": "https://data.gov.tw/dataset/170220",
+ "src_update_time": "2026-10-14T21:55:36+08:00",
+ "stations": [
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位1格，充電樁1座，J1772*1，位於平面停車場充電停車格 ，為交流充電規格。",
+   "floors": "1",
+   "id": "28007736-S072",
+   "lat": 24.778928,
+   "lng": 120.985094,
+   "name": "豐義高翠路停車場",
+   "operation_type": "公辦民營",
+   "operator": "皇鋒通訊股份有限公司",
+   "operator_id": "28007736",
+   "parking_rate": "計時/每日/30元每小時",
+   "restriction": "使用APP確認按壓開始充電功能鈕後再插上充電槍",
+   "service_time": "每日 /00:00-24:00",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "慢充每度8元。",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電車位*1 J1772*1",
+   "floors": "1",
+   "id": "39981419-Sgowin_5",
+   "lat": 24.806653,
+   "lng": 120.965578,
+   "name": "國雲公寓大廈管理維護股份有限公司城隍場",
+   "operation_type": "私有民營",
+   "operator": "國雲公寓大廈管理維護股份有限公司城隍場",
+   "operator_id": "39981419",
+   "parking_rate": "【臨停100元/H無上限】",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 1
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電格位數5",
+   "floors": "1F",
+   "id": "42861108-S9df3838e-d934-45ad-b366-3a62060fc784",
+   "lat": 24.81881,
+   "lng": 120.97,
+   "name": "新竹－湳雅大全聯",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "每日/07:00-23:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電格位數6",
+   "floors": "1F",
+   "id": "42861108-Sb26d25e3-12f5-49d2-94b6-baf2206b6ad1",
+   "lat": 24.8415,
+   "lng": 120.92904,
+   "name": "新竹 - 北區聖軍路",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數6",
+   "floors": "4",
+   "id": "42861108-Sc6ad7826-4e8c-4ffd-ab8a-6aaab12776ed",
+   "lat": 24.81946,
+   "lng": 120.96942,
+   "name": "新竹－湳雅大魯閣廣場",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計分/0-60kW/5 元每分,計分/60-100kW/11 元每分,計分/100-180kW/17 元每分,計分/180-250kW/28 元每分",
+   "connectors": [
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    }
+   ],
+   "description": "充電格位數8",
+   "floors": "1F",
+   "id": "42861108-Sdf72215f-42ec-4d91-84f0-a14df1ef6aba",
+   "lat": 24.77965,
+   "lng": 121.00528,
+   "name": "新竹－科學園區",
+   "operation_type": "私有民營",
+   "operator": "特斯拉",
+   "operator_id": "42861108",
+   "parking_rate": "費用詳情請查詢TESLA站點",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 8
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "固定。每度8元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供慢充兩柱",
+   "floors": "B1",
+   "id": "50696139-SA012001",
+   "lat": 24.807121,
+   "lng": 120.970235,
+   "name": "俥亭停車新竹府後地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車新竹府後地下停車場",
+   "operator_id": "50696139",
+   "parking_rate": "每小時20元",
+   "restriction": "僅提供慢充",
+   "service_time": "每日24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "1度7元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供慢充1柱",
+   "floors": "B1",
+   "id": "50696320-SA0125",
+   "lat": 24.803802,
+   "lng": 120.943096,
+   "name": "俥亭新竹牛埔",
+   "operation_type": "公辦民營",
+   "operator": "俥亭牛埔地下",
+   "operator_id": "50696320",
+   "parking_rate": "$20/H",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "1度8元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供慢充充電格1格",
+   "floors": "B1",
+   "id": "50696460-SA0124",
+   "lat": 24.816674,
+   "lng": 120.97035,
+   "name": "俥亭停車北區行政大樓地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車北區行政大樓地下停車場",
+   "operator_id": "50696460",
+   "parking_rate": "$20/H",
+   "restriction": null,
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "1度8元",
+   "connectors": [
+    {
+     "count": 9,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供充電車服務(慢充)",
+   "floors": "B1",
+   "id": "50727800-SA013001",
+   "lat": 24.780005,
+   "lng": 121.002413,
+   "name": "俥亭竹科研發二路停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車竹科研發二路停車場",
+   "operator_id": "50727800",
+   "parking_rate": "$30/H，當日無上限",
+   "restriction": null,
+   "service_time": "充電24小時服務。現場服務人員08:00-24:00",
+   "spaces": 9
+  },
+  {
+   "charging_points": 11,
+   "charging_rate": "計度/1度8元",
+   "connectors": [
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供充電樁(慢充)服務",
+   "floors": "B1",
+   "id": "50728553-SA013002",
+   "lat": 24.784465,
+   "lng": 120.989984,
+   "name": "竹科興業二",
+   "operation_type": "公辦民營",
+   "operator": "竹科興業",
+   "operator_id": "50728553",
+   "parking_rate": "$30/H，當日無上限",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 11
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "每度8元",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "僅提供慢充4柱",
+   "floors": "1F",
+   "id": "60091985-SA0563011",
+   "lat": 24.781665,
+   "lng": 121.005917,
+   "name": "俥亭竹科管理局",
+   "operation_type": "公辦民營",
+   "operator": "俥亭竹科管理局行政大樓附屬停車場",
+   "operator_id": "60091985",
+   "parking_rate": "每小時20元",
+   "restriction": null,
+   "service_time": "24H",
+   "spaces": 4
+  },
+  {
+   "charging_points": 18,
+   "charging_rate": "每度8元",
+   "connectors": [
+    {
+     "count": 18,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "共18座充電樁(靠近臨停出口)，會彈性調整成油車用格，均為慢充。以每度8元計價。充電費用沒有現金支付。",
+   "floors": "1F",
+   "id": "82280774-SA020101",
+   "lat": 24.774679,
+   "lng": 121.018895,
+   "name": "俥亭矽導竹科研發中心立體停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車矽導竹科研發中心停車場",
+   "operator_id": "82280774",
+   "parking_rate": "平假日30元/每小時",
+   "restriction": "充電需加入會員",
+   "service_time": "24小時",
+   "spaces": 18
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "1度8元",
+   "connectors": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供電動車充電服務(慢充)",
+   "floors": "2F",
+   "id": "82280789-SA020001",
+   "lat": 24.776045,
+   "lng": 121.023887,
+   "name": "俥亭停車竹科篤行停車場",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車竹科篤行停車場",
+   "operator_id": "82280789",
+   "parking_rate": "$30/H",
+   "restriction": null,
+   "service_time": "24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/9元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電格數2格，停車費率 每日/30元/每小時，營運時間07:00至23:00",
+   "floors": "1",
+   "id": "89132567-S0137",
+   "lat": 24.79395,
+   "lng": 120.96511,
+   "name": "Acon-eco新竹清華大學南大校區站",
+   "operation_type": "公辦公營",
+   "operator": "連展電能科技股份有限公司",
+   "operator_id": "89132567",
+   "parking_rate": "計時/每日/30元/每小時",
+   "restriction": "以現場告示",
+   "service_time": "每日/07:00–23:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "服務時間：24小時營業 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "B1",
+   "id": "90148497-S1217",
+   "lat": 24.791958,
+   "lng": 121.013548,
+   "name": "星舟x城市車旅_迪卡儂新竹店",
+   "operation_type": "私有民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時營業",
+   "spaces": 4
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "服務時間：24小時營業 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "1",
+   "id": "90148497-S1261",
+   "lat": 24.843995,
+   "lng": 120.999094,
+   "name": "星舟x城市車旅_竹北P21(新社停車場)",
+   "operation_type": "公辦民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時營業",
+   "spaces": 8
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8.0元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "位於新竹大遠百停車場B3",
+   "floors": "B3",
+   "id": "90505425-S58246",
+   "lat": 24.80185,
+   "lng": 120.96423,
+   "name": "新竹大遠百快充站",
+   "operation_type": "私有民營",
+   "operator": "特爾電力股份有限公司",
+   "operator_id": "90505425",
+   "parking_rate": "計時/平日/30元每小時，計時/假日/60元每小時，停車折抵優惠訊息請依照現場說明",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 8,
+   "charging_rate": "計度/00:00-23:59/8元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "充電車位12格，充電樁8座，CCS1、CCS2、TPC，位於平面停車位車格",
+   "floors": "平面",
+   "id": "90505425-SCD42",
+   "lat": 24.79068,
+   "lng": 121.00373,
+   "name": "中油光明複合充電站",
+   "operation_type": "公辦公營",
+   "operator": "特爾電力股份有限公司",
+   "operator_id": "90505425",
+   "parking_rate": "計時/25元每小時/每日最高/150元每日",
+   "restriction": null,
+   "service_time": "計度/00:00-23:59/8元每度",
+   "spaces": 12
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:Free (依現場為準) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD00020",
+   "lat": 24.7792,
+   "lng": 120.998,
+   "name": "新竹科學園區_研發四路",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "Free (依現場為準)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:Free (依現場為準) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD00021",
+   "lat": 24.76981,
+   "lng": 121.02361,
+   "name": "新竹科學園區_篤行會館",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "Free (依現場為準)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/6元每度,計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:Free (依現場為準) 費率:計度/固定/6元每度,計度/固定/8元每度 樓層:1F, 1F",
+   "floors": "1F, 1F",
+   "id": "90807408-SCSD00026",
+   "lat": 24.8071,
+   "lng": 121.0472,
+   "name": "新竹生醫科學園區",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "Free (依現場為準)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:Free (依現場為準) 費率:計度/固定/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD00029",
+   "lat": 24.7774,
+   "lng": 121.0134,
+   "name": "新竹科學園區_弘道樓",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "Free (依現場為準)",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 28,
+   "charging_rate": "計度/固定/7.5元每度,計度/固定/8.5元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 11,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 15,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:24 充電樁數量:28 停車費:週一 ~ 週五：30元 / 每小時；週六 ~ 週日 & 例假日：60元 / 每小時 費率:計度/固定/7.5元每度,計度/固定/8.5元每度 樓層:2F(VIP區), 5F, 7F, B2, B3",
+   "floors": "2F(VIP區), 5F, 7F, B2, B3",
+   "id": "90807408-SCSD00072",
+   "lat": 24.810763,
+   "lng": 120.975103,
+   "name": "新竹Big City遠東巨城",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "週一 ~ 週五：30元 / 每小時；週六 ~ 週日 & 例假日：60元 / 每小時",
+   "restriction": null,
+   "service_time": "平日 /11:00-21:30, 平日 /11:00-22:00, 假日 /11:00-22:00, 假日 /11:00-21:30",
+   "spaces": 24
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "停車位:1 充電樁數量:2 停車費:免費 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02556",
+   "lat": 24.843499,
+   "lng": 120.931688,
+   "name": "7-11_新竹冠亨門市",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 12,
+   "charging_rate": "計度/固定/8.3元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/8元每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:9 充電樁數量:12 停車費:免費 費率:計度/固定/8.3元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/8元每度 樓層:1F",
+   "floors": "1F",
+   "id": "90807408-SCSD02837",
+   "lat": 24.809167,
+   "lng": 121.041504,
+   "name": "嘟嘟房高鐵新竹站停車場",
+   "operation_type": "公辦民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 9
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:2 充電樁數量:2 停車費:20元/時 費率:計度/固定/8元每度 樓層:B3",
+   "floors": "B3",
+   "id": "90807408-SCSD03097",
+   "lat": 24.806281,
+   "lng": 120.969715,
+   "name": "歐特儀_新竹稅務停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "停車位:3 充電樁數量:3 停車費:20元/時 費率:計度/固定/8元每度 樓層:B2",
+   "floors": "B2",
+   "id": "90807408-SCSD03099",
+   "lat": 24.808017,
+   "lng": 120.953869,
+   "name": "歐特儀_新竹竹光停車場",
+   "operation_type": "私有民營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 3
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度/固定/8元每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "僅提供慢充3柱，靠近出入口繳費機旁",
+   "floors": "1F",
+   "id": "91383456-SA032801",
+   "lat": 24.810795,
+   "lng": 120.973281,
+   "name": "俥亭停車新竹民權路",
+   "operation_type": "公辦民營",
+   "operator": "俥亭停車新竹民權路",
+   "operator_id": "91383456",
+   "parking_rate": "計時/每日/20元 每小時",
+   "restriction": "本站僅提供慢充",
+   "service_time": "24H",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "1度7元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "提供慢充2柱",
+   "floors": "2F",
+   "id": "91650018-SB027001",
+   "lat": 24.801627,
+   "lng": 120.965685,
+   "name": "日月亭明志書院",
+   "operation_type": "公辦民營",
+   "operator": "日月亭明志書院停車場",
+   "operator_id": "91650018",
+   "parking_rate": "1小時30元",
+   "restriction": null,
+   "service_time": "24小時",
+   "spaces": 2
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "1度7元",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "僅提供慢充2柱",
+   "floors": "B1",
+   "id": "91650093-SB027201",
+   "lat": 24.801545,
+   "lng": 120.982186,
+   "name": "日月亭新竹市立動物園地下停車場",
+   "operation_type": "公辦民營",
+   "operator": "日月亭新竹動物園地下停車場",
+   "operator_id": "91650093",
+   "parking_rate": "$20/H",
+   "restriction": "提供慢充2柱",
+   "service_time": "24H",
+   "spaces": 2
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "1度8元",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "只提供慢充。沒有現金繳費。不提供停車費和充電費分開開立發票",
+   "floors": "1F",
+   "id": "91927471-SB028801",
+   "lat": 24.803372,
+   "lng": 120.96726,
+   "name": "日月亭新竹民眾活動中心停車場",
+   "operation_type": "公辦民營",
+   "operator": "日月亭股份有限公司",
+   "operator_id": "91927471",
+   "parking_rate": "30元/H",
+   "restriction": "只提供慢充。沒有現金繳費。",
+   "service_time": "24小時",
+   "spaces": 1
+  },
+  {
+   "charging_points": 1,
+   "charging_rate": "計度/固定/5.8 元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "充電車位2格，CCS1*1、CCS2*1，DC 30kW",
+   "floors": "1",
+   "id": "93519232-S2606",
+   "lat": 24.784845,
+   "lng": 120.919717,
+   "name": "新竹香山靜思綠能停車場",
+   "operation_type": "私有民營",
+   "operator": "區快充科技股份有限公司",
+   "operator_id": "93519232",
+   "parking_rate": "計時/每日/20 元每小時/每日最高 60 元",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計分/1 元每分",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "充電費率每分 1 元。充電插頭 J-1772。充電格位數量 6",
+   "floors": "B1",
+   "id": "94175832-SUCE0109E006",
+   "lat": 24.819474,
+   "lng": 121.026596,
+   "name": "竹北享平方B1停車場",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/40 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時",
+   "spaces": 6
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "計度/8 元每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "充電費率每度 8 元。充電插頭 J-1772/TYPE2。充電格位數量 14",
+   "floors": "B1",
+   "id": "94175832-SUCF0274F041",
+   "lat": 24.793285,
+   "lng": 121.013403,
+   "name": "好市多新竹店B1充電站",
+   "operation_type": "私有民營",
+   "operator": "台灣大動力服務股份有限公司",
+   "operator_id": "94175832",
+   "parking_rate": "計時/每日/100 元每小時",
+   "restriction": null,
+   "service_time": "7x24小時或每日/10:00-21:30",
+   "spaces": 14
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "其他",
+     "type": "other"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有6樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S107",
+   "lat": 24.806634,
+   "lng": 120.960136,
+   "name": "新竹市_棒球場地下停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/30 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 24,
+   "charging_rate": "計度 /固定 /8元 AC每度；計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 21,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有21樁7kW、3樁30kW充電樁",
+   "floors": "B1F",
+   "id": "97179430-S114",
+   "lat": 24.799931,
+   "lng": 120.991308,
+   "name": "新竹市_園道五地下停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/30 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 24
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "免費",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有2樁180kW充電樁，1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S118",
+   "lat": 24.809231,
+   "lng": 120.967382,
+   "name": "新竹市_北大路大客車停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": "本充電站限新竹市大客車使用",
+   "service_time": "每日/00:00-24:00",
+   "spaces": 3
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度；計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有2樁120kW、4樁180kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S119",
+   "lat": 24.78997,
+   "lng": 121.010806,
+   "name": "新竹市_慈雲路停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度；計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁以及1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S120",
+   "lat": 24.788448,
+   "lng": 121.021361,
+   "name": "新竹市_新莊車站前停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度 /固定 /8元 AC每度",
+   "connectors": [
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有10樁7kW充電樁",
+   "floors": "B1F",
+   "id": "97179430-S121",
+   "lat": 24.779196,
+   "lng": 121.02472,
+   "name": "新竹市_新科國中地下停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 10
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度\r\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有2樁120kW、2樁180kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S125",
+   "lat": 24.755732,
+   "lng": 120.953244,
+   "name": "新竹市_香山轉運站",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度 /固定 /12元 DC 30kW每度\r\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁以及1樁30kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S130",
+   "lat": 24.782526,
+   "lng": 121.010628,
+   "name": "新竹市_科學園路212巷停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 3
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度；計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有2樁30kW充電樁以及7樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S131",
+   "lat": 24.819376,
+   "lng": 120.96482,
+   "name": "新竹市_武陵路73巷停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 9
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /8元 AC每度；計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有5樁7kW、1樁30kW充電樁",
+   "floors": "B1",
+   "id": "97179430-S132",
+   "lat": 24.796991,
+   "lng": 120.972251,
+   "name": "新竹市_頂竹圍地下停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 17,
+   "charging_rate": "計度 /固定 /7元 AC 7kW每度,計度 /固定 /9元 DC 30kW每度,計度 /固定 /11元 DC 120kW每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 5,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 10,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有10樁7kw和3樁30kW充電樁以及2樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S177",
+   "lat": 24.801948,
+   "lng": 120.974785,
+   "name": "新竹市_新竹火車站後站停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 17
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度,計度 /固定 /14元 DC 120kW每度,計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有1樁7kw、2樁30kW充電樁、1樁120kW充電樁以及1樁180kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S178",
+   "lat": 24.797256,
+   "lng": 120.9581,
+   "name": "新竹市_台溪平面停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 7
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度,計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁以及1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S179",
+   "lat": 24.783004,
+   "lng": 120.915338,
+   "name": "新竹市_日落大道停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有4樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S180",
+   "lat": 24.788554,
+   "lng": 121.010784,
+   "name": "新竹市_園區陸橋下停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 3,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有1樁30kW充電樁，2樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S181",
+   "lat": 24.801081,
+   "lng": 120.926667,
+   "name": "新竹市_浸水公園停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 3
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有2樁30kW充電樁，4樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S182",
+   "lat": 24.79639,
+   "lng": 120.948861,
+   "name": "新竹市_景觀橋下平面停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有2樁30kW充電樁，5樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S183",
+   "lat": 24.787639,
+   "lng": 121.016415,
+   "name": "新竹市_新莊平面停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 7
+  },
+  {
+   "charging_points": 7,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度,計度 /固定 /14元 DC 120kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有1樁120kW充電樁，1樁30kW充電樁，4樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S184",
+   "lat": 24.783588,
+   "lng": 120.990112,
+   "name": "新竹市_寶山路452巷",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 7
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有4樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S185",
+   "lat": 24.802279,
+   "lng": 120.94664,
+   "name": "新竹市_南勢社區停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /12元 DC 30kW每度,計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有2樁30kW充電樁以及1樁180kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S186",
+   "lat": 24.796472,
+   "lng": 120.987472,
+   "name": "新竹市_十八尖山停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 9,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 9,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有8樁30kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S200",
+   "lat": 24.799833,
+   "lng": 120.980111,
+   "name": "新竹市_體育館前停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/30 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 8
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁以及1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S201",
+   "lat": 24.805588,
+   "lng": 120.994338,
+   "name": "新竹市_取水口停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有1樁30kW充電樁以及3樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S202",
+   "lat": 24.803056,
+   "lng": 120.983056,
+   "name": "新竹市_東園市場停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有1樁30kW充電樁以及4樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S203",
+   "lat": 24.757527,
+   "lng": 120.910362,
+   "name": "新竹市_海山市民活動中心",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁以及1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S204",
+   "lat": 24.818778,
+   "lng": 120.971639,
+   "name": "新竹市_湳雅街平面停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 4
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有2樁180kW充電樁以及1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S205",
+   "lat": 24.807609,
+   "lng": 120.984665,
+   "name": "新竹市_北新竹車站大客車停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "免費",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /14元 DC 120kW每度\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有2樁180kW充電樁以及1樁120kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S206",
+   "lat": 24.801723,
+   "lng": 120.975666,
+   "name": "新竹市_火車站後站大客車停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/40 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 5,
+   "charging_rate": "計度 /固定 /12元 DC 30kW每度\n計度 /固定 /14元 DC 120kW每度\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁、1樁120kW充電樁以及1樁30kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S207",
+   "lat": 24.816972,
+   "lng": 120.963583,
+   "name": "新竹市_武陵陸橋下(武陵東大路口)停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 5
+  },
+  {
+   "charging_points": 6,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度",
+   "connectors": [
+    {
+     "count": 6,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有6樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S208",
+   "lat": 24.795221,
+   "lng": 120.971859,
+   "name": "新竹市_西大路立體(停七)停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/30 元每小時 /每日最高 /90元每日",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 6
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有2樁30kW充電樁以及7樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S209",
+   "lat": 24.80799,
+   "lng": 120.972269,
+   "name": "新竹市_東大陸橋下(中央)停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 9
+  },
+  {
+   "charging_points": 9,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有2樁30kW充電樁以及7樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S210",
+   "lat": 24.80438,
+   "lng": 120.975159,
+   "name": "新竹市_東大陸橋下(中華)停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 9
+  },
+  {
+   "charging_points": 10,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "本站目前共有3樁30kW充電樁以及7樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S211",
+   "lat": 24.824611,
+   "lng": 120.971278,
+   "name": "新竹市_武陵陸橋下(武陵路271巷)停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 10
+  },
+  {
+   "charging_points": 14,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度",
+   "connectors": [
+    {
+     "count": 14,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有14樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S212",
+   "lat": 24.822222,
+   "lng": 120.969861,
+   "name": "新竹市_武陵陸橋下(武陵鐵道路口)停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/20 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 14
+  },
+  {
+   "charging_points": 16,
+   "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度\n計度 /固定 /14元 DC 120kW每度\n計度 /固定 /14元 DC 180kW每度",
+   "connectors": [
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 7,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "本站目前共有1樁180kW充電樁、1樁120kW充電樁、5樁30kW充電樁以及7樁7kW充電樁",
+   "floors": "1F",
+   "id": "97179430-S213",
+   "lat": 24.845526,
+   "lng": 120.932196,
+   "name": "新竹市_南寮運動公園停車場",
+   "operation_type": "公辦公營",
+   "operator": "遠傳電信股份有限公司",
+   "operator_id": "97179430",
+   "parking_rate": "計時 /每日/30 元每小時",
+   "restriction": null,
+   "service_time": "每日/08:00-22:00",
+   "spaces": 15
+  }
+ ],
+ "title": "充電站之基本資料",
+ "update_time": "2026-10-14T21:55:54+08:00"
+}

@@ -8,7 +8,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1058058565",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1058058564",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "low",
@@ -25,7 +25,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1058058564",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": false,
@@ -39,7 +39,7 @@
    "name": "統一精工新屋加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 5081,
@@ -147,7 +147,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/148726",
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-14"
  },
  "osm": {
   "id": 1058058564,
@@ -174,7 +174,7 @@
   "note": "約 3928 m² 在高架/屋頂下（佔 77%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1058058564",
   "value": true,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "桃園市",
@@ -505,7 +505,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1058058564",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [
   {
@@ -529,7 +529,7 @@
    "source": "https://www.openstreetmap.org/way/1058058564",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "confidence": "low",
@@ -540,22 +540,22 @@
    "source": "https://www.openstreetmap.org/way/1058058564",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T15:56:58+00:00",
+   "as_of": "2026-10-14T14:05:44+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

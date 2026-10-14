@@ -8,7 +8,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9742799923",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "drinking_water": {
    "confidence": "low",
@@ -16,7 +16,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/499449965",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "station": {
    "confidence": "low",
@@ -25,7 +25,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/499449965",
    "value": null,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   "toilet": {
    "accessible": true,
@@ -39,7 +39,7 @@
    "name": "蘆竹藝文音樂廣場公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  },
  "area_m2": 2717,
@@ -158,7 +158,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S338001",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   },
   {
    "access": null,
@@ -178,7 +178,7 @@
    "name": "德國馬牌輪胎BestDrive - 弘旺輪胎",
    "opening_hours": "7x24小時",
    "operation_type": "私有民營",
-   "operator": "特斯拉",
+   "operator": "台灣特斯拉汽車有限公司",
    "osm": null,
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
@@ -203,7 +203,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S142db8ad-95f6-4022-80d5-3b7783a15661",
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-14"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -251,7 +251,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1251015151"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -277,7 +277,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1250686184"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -303,7 +303,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1072766344"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -329,7 +329,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002693937"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -355,7 +355,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1058284438"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   },
   {
    "access": null,
@@ -381,7 +381,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1519715030"
    },
-   "verified_at": "2026-10-12"
+   "verified_at": "2026-10-13"
   }
  ],
  "playground": {
@@ -402,7 +402,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/499449965",
   "value": false,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "region": {
   "city": "桃園市",
@@ -733,22 +733,22 @@
   },
   "source": "https://www.openstreetmap.org/way/499449965",
   "value": null,
-  "verified_at": "2026-10-12"
+  "verified_at": "2026-10-13"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-12T20:21:35Z",
+   "as_of": "2026-10-13T20:21:31Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-13T22:55:36+08:00",
+   "as_of": "2026-10-14T21:55:41+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-12"
+ "updated_at": "2026-10-13"
 }

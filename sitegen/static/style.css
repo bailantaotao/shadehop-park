@@ -1,14 +1,14 @@
 :root {
   --bg: #f7f7f4; --surface: #ffffff; --text: #1d2321; --muted: #5d6763; --line: #dde1dc;
   --accent: #1f6f5c; --accent-ink: #ffffff;
-  --a: #2563c9; --hi: #1f8a4c; --mid: #c98a12; --lo: #c8463a; --night: #9aa3a0;
+  --a: #2563c9; --hi: #1f8a4c; --mid: #c98a12; --lo: #c8463a; --night: #9aa3a0; --weak: #8aa9c7;
   --chip: #eef1ec; --shadow: rgba(30, 40, 60, .38);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #121615; --surface: #1b201f; --text: #e8ece9; --muted: #9aa5a0; --line: #2d3432;
     --accent: #5cc3a6; --accent-ink: #0d1412;
-    --a: #6ea2ff; --hi: #4cc77f; --mid: #e3b04b; --lo: #f07b6f; --night: #5e6764;
+    --a: #6ea2ff; --hi: #4cc77f; --mid: #e3b04b; --lo: #f07b6f; --night: #5e6764; --weak: #7f9bb8;
     --chip: #232a28; --shadow: rgba(0, 0, 0, .5);
     color-scheme: dark;
   }
@@ -16,7 +16,7 @@
 :root[data-theme="dark"] {
   --bg: #121615; --surface: #1b201f; --text: #e8ece9; --muted: #9aa5a0; --line: #2d3432;
   --accent: #5cc3a6; --accent-ink: #0d1412;
-  --a: #6ea2ff; --hi: #4cc77f; --mid: #e3b04b; --lo: #f07b6f; --night: #5e6764;
+  --a: #6ea2ff; --hi: #4cc77f; --mid: #e3b04b; --lo: #f07b6f; --night: #5e6764; --weak: #7f9bb8;
   --chip: #232a28; --shadow: rgba(0, 0, 0, .5);
   color-scheme: dark;
 }
@@ -65,8 +65,6 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .chip.more { color: var(--muted); }
 .chip.more[aria-expanded="true"] { border-color: var(--accent); color: var(--text); }
 .chips[hidden] { display: none; }
-.slot-note { flex: 1 1 100%; font-size: .85rem; color: var(--muted); }
-.slot-note[hidden] { display: none; }
 /* Touch screens: every chip is a full 44px target. */
 @media (pointer: coarse) { .chip { min-height: 44px; } }
 .banner:empty { display: none; }
@@ -151,7 +149,6 @@ footer p { margin: 0 0 4px; }
   .timebar output { min-width: 0; order: 1; }
   .timebar .chip { order: 2; padding: 4px 10px; font-size: .85rem; }
   .timebar #playBtn .lbl { display: none; }
-  .timebar .slot-note { order: 4; font-size: .8rem; }
   .timebar input[type=range] { order: 3; flex: 1 1 100%; margin: 0; }
   /* The four main filters wrap so 更多條件 is always visible; the extra ones scroll in one row. */
   .chips.filters { gap: 6px; }
@@ -210,6 +207,17 @@ footer p { margin: 0 0 4px; }
 .tdx-logo img, .tdx-credit img { background: #fff; border-radius: 4px; padding: 2px 4px; vertical-align: middle; }
 .tdx-logo { margin-left: 4px; }
 .map-night .i { margin-right: .3em; }
+/* Notes that float on the map, so they never push the page around. */
+.map-note, .map-empty { position: absolute; left: 50%; transform: translateX(-50%); z-index: 1000; max-width: calc(100% - 120px);
+  background: var(--surface); color: var(--text); padding: 6px 12px; border-radius: 8px; font-size: .85rem; text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+.map-note { top: 52px; pointer-events: none; }
+.map-empty { top: 52px; }
+.map-note[hidden], .map-empty[hidden], .popup-open .map-note, .popup-open .map-empty { display: none; }
+.map-empty .link { margin: 0 2px; }
+/* The map takes keyboard focus; an inset ring instead of a frame around the whole map. */
+.leaflet-container:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 12px; }
+.leaflet-container:focus:not(:focus-visible) { outline: none; }
 .map-night { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); z-index: 1000; max-width: 70%;
   background: rgba(11,26,51,.85); color: #fff; padding: 6px 12px; border-radius: 8px; font-size: .88rem; text-align: center; pointer-events: none; }
 .map-night[hidden] { display: none; }
@@ -242,7 +250,9 @@ footer p { margin: 0 0 4px; }
 .pstat.hi, .pp-pill.hi { background: color-mix(in srgb, var(--hi) 18%, var(--surface)); }
 .pstat.mid, .pp-pill.mid { background: color-mix(in srgb, var(--mid) 22%, var(--surface)); }
 .pstat.lo, .pp-pill.lo { background: color-mix(in srgb, var(--lo) 18%, var(--surface)); }
-.pstat.night, .pp-pill.night { background: var(--chip); opacity: 1; }  /* not the faded map "night" dot */
+.pstat.night, .pp-pill.night { background: var(--chip); opacity: 1; }
+.pstat.weak, .pp-pill.weak, .badge.v-weak { background: color-mix(in srgb, var(--weak) 22%, var(--surface)); }
+.dot.weak { background: var(--weak); }  /* not the faded map "night" dot */
 .plist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 .plist li { display: flex; gap: 8px; align-items: flex-start; }
 .plist li[hidden] { display: none; }

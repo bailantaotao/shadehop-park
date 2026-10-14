@@ -15,16 +15,16 @@
 {# 1. Name, where, and what to do next #}
 <section class="pcard">
   <h1 class="pname">{{ p.name }}</h1>
-  <p class="muted small" style="margin:0">{{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}{% if addr %}・{{ addr }}{% endif %}{% if p.park_name and p.park_name not in p.name %}・位於{{ p.park_name }}{% endif %}</p>
+  <p class="muted small m0">{{ p.region.city }}{% if p.region.district != p.region.city %}{{ p.region.district }}{% endif %}{% if addr %}・{{ addr }}{% endif %}{% if p.park_name and p.park_name not in p.name %}・位於{{ p.park_name }}{% endif %}</p>
   <div class="pbtns">
     <a class="pbtn primary" href="{{ p.directions_url }}" target="_blank" rel="noopener">導航</a>
     <a class="pbtn" href="{{ p.google_maps_url }}" target="_blank" rel="noopener" title="Google 地圖上的評論">評論{{ icon("external") }}</a>
     <button type="button" class="pbtn fav" data-fav="{{ p.id }}" data-on="已收藏" data-off="收藏" aria-pressed="false" title="加入我的最愛">{{ icon("star", "off") }}{{ icon("star-on", "on") }}<span class="fav-label">收藏</span></button>
     <button type="button" class="pbtn" id="shareLink" data-url="{{ site_url }}/parks/{{ p.id }}/" data-text="{{ p.name }}：{{ p.level_label }}">分享</button>
   </div>
-  <p class="small muted" id="copyStatus" role="status" aria-live="polite" style="margin:6px 0 0"></p>
+  <p class="small muted mt-6" id="copyStatus" role="status" aria-live="polite"></p>
   {% if p.indoor is sameas true or p.indoor == "possible" or p.kind == "park" %}
-  <p class="pnote" id="parkNote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。去過的話<a href="#report">告訴我們</a>。{% endif %}</p>
+  <p class="pnote" id="parkNote">{% if p.indoor is sameas true %}室內場所{% if pg.fee == "yes" %}，需付費{% endif %}，可能有開放時間，出發前請先確認。{% elif p.indoor == "possible" %}位在建築物範圍內，可能是室內場館或社區中庭，出發前請先確認能否進入。{% else %}這座公園的遊具還沒有人標在地圖上，不確定有沒有遊戲場。{% if TURNSTILE_SITE_KEY %}去過的話<a href="#report">告訴我們</a>。{% endif %}{% endif %}</p>
   {% endif %}
 </section>
 
@@ -32,16 +32,16 @@
 <section class="pcard" id="now">
   <h2 class="ptitle">現在去適合嗎？</h2>
   <div class="pstats">
-    <div class="pstat" id="nowShade"><b>—</b><span>遮陰</span></div>
+    <div class="pstat" id="nowShade"><b>—</b><span>現在去</span></div>
     <div class="pstat" id="nowRain"><b>—</b><span>降雨機率</span></div>
     <div class="pstat" id="nowUv"><b>—</b><span>今天紫外線</span></div>
   </div>
-  <p class="small muted" style="margin:10px 0 4px">今天的遮陰（06:00–18:00，每半小時）</p>
+  <p class="small muted tl-cap">今天的遮陰（06:00–18:00，每半小時）</p>
   <div class="timeline" id="todayBar" aria-label="今天每半小時的遮陰"></div>
   <div class="tl-axis"><span>6</span><span>9</span><span>12</span><span>15</span><span>18</span></div>
-  <p style="margin:10px 0 0" id="bestToday">最陰涼：<span class="muted">—</span></p>
-  <p style="margin:4px 0 0">下雨：<b>{{ {True: "有遮蔽，下雨可玩", "partial": "部分區域可躲雨", False: "沒有遮蔽處"}[p.rain_cover.value] }}</b></p>
-  <p class="small muted" style="margin:8px 0 0" id="nowNote">遮陰是依建物、高架與太陽位置推算的估計值。</p>
+  <p class="mt-10" id="bestToday">最陰涼：<span class="muted">—</span></p>
+  <p class="mt-4">下雨：<b>{{ {True: "有遮蔽，下雨可玩", "partial": "部分區域可躲雨", False: "沒有遮蔽處"}[p.rain_cover.value] }}</b></p>
+  <p class="small muted mt-8" id="nowNote">遮陰是依建物、高架與太陽位置推算的估計值。</p>
   <script type="application/json" id="parkData">{{ {"slots": p.shade_timetable.slots, "weather": root ~ "api/weather?city=" ~ (p.region.city | urlencode) ~ "&district=" ~ (p.region.district | urlencode)} | tojson }}</script>
 </section>
 
@@ -57,7 +57,7 @@
   {% if st and st.value %}<li><span class="pico">{{ icon("train") }}</span><span>{% if st.location %}<a href="{{ st.location | place_url }}" target="_blank" rel="noopener">{{ st.name }}</a>{% else %}{{ st.name }}{% endif %} {{ st.distance_m }}m</span></li>{% endif %}
   {% if w.value %}<li><span class="pico">{{ icon("droplet") }}</span><span>{% if w.location %}<a href="{{ w.location | place_url }}" target="_blank" rel="noopener">飲水機</a>{% else %}飲水機{% endif %} {{ w.distance_m }}m</span></li>{% endif %}
   </ul>
-  <p class="prov" style="margin-top:8px">公廁：環境部「全國公廁建檔資料」與 OpenStreetMap；便利商店、車站：OpenStreetMap。距離為直線距離。</p>
+  <p class="prov mt-8">公廁：環境部「全國公廁建檔資料」與 OpenStreetMap；便利商店、車站：OpenStreetMap。距離為直線距離。</p>
 </section>
 
 {# 3a. The playground itself: equipment (official list, OSM, or parents' reports filled in by park.js) and who runs it #}
@@ -72,7 +72,7 @@
   {% if p.official and p.official.facilities %}<li><span class="pico">{{ icon("info") }}</span>設施：{{ p.official.facilities }}</li>{% endif %}
   {% if pg.surface %}<li><span class="pico">{{ icon("texture") }}</span>地面：{{ SURFACE_LABEL.get(pg.surface, pg.surface) }}{% if pg.surface in ("rubber", "tartan", "artificial_turf") %}（大太陽下可能很燙）{% endif %}</li>{% endif %}
   {% if ages %}<li><span class="pico">{{ icon("age") }}</span>適合年齡：{% if pg.min_age %}{{ pg.min_age }} 歲{% endif %}–{% if pg.max_age %}{{ pg.max_age }} 歲{% endif %}</li>{% endif %}
-  {% if not known %}<li class="muted" id="infoEmpty"><span class="pico">{{ icon("kid") }}</span><span>還沒有遊具資料。去過的話<a href="#report">告訴我們</a>有哪些遊具。</span></li>{% endif %}
+  {% if not known %}<li class="muted" id="infoEmpty"><span class="pico">{{ icon("kid") }}</span><span>還沒有遊具資料。{% if TURNSTILE_SITE_KEY %}去過的話<a href="#report">告訴我們</a>有哪些遊具。{% endif %}</span></li>{% endif %}
   {% if p.official and p.official.management %}<li><span class="pico">{{ icon("bank") }}</span><span>管理單位：{{ p.official.management }}{% if p.official.phone %} <a href="tel:{{ p.official.phone | replace('(', '') | replace(')', '') | replace(' ', '') }}">{{ p.official.phone }}</a>{% endif %}</span></li>{% endif %}
   </ul>
 </section>
@@ -81,25 +81,25 @@
 <section class="pcard" id="report" data-park="{{ p.id }}" data-lat="{{ p.location.lat }}" data-lng="{{ p.location.lng }}"
          data-name="{{ p.name }}" data-url="{{ site_url }}/parks/{{ p.id }}/" data-sitekey="{{ TURNSTILE_SITE_KEY }}">
   <h2 class="ptitle">這裡有遊戲場嗎？</h2>
-  <p class="small" id="reportTally" style="margin:0 0 10px">{% if p.kind == "park" %}地圖上還沒有標示這裡的遊具。你去過的話，告訴其他家長吧！{% else %}遊戲場拆了或找不到？也可以告訴我們。{% endif %}</p>
+  <p class="small mb-10" id="reportTally">{% if p.kind == "park" %}地圖上還沒有標示這裡的遊具。你去過的話，告訴其他家長吧！{% else %}遊戲場拆了或找不到？也可以告訴我們。{% endif %}</p>
   {% if TURNSTILE_SITE_KEY %}
   <form id="reportForm" novalidate>
-    <div class="pbtns" style="grid-template-columns:1fr 1fr;margin-top:0">
+    <div class="pbtns two">
       <button type="button" class="pbtn" data-verdict="yes" aria-pressed="false">{{ icon("thumb-up") }}有遊戲場</button>
       <button type="button" class="pbtn" data-verdict="no" aria-pressed="false">{{ icon("thumb-down") }}沒有遊戲場</button>
     </div>
     <fieldset id="reportEquip" class="report-equip" hidden>
       <legend class="small muted">看到哪些遊具？（可複選）</legend>
       {% for e in REPORT_EQUIPMENT %}<label class="tag"><input type="checkbox" value="{{ e }}"> {{ e }}</label>{% endfor %}
-      <label class="small" style="display:block;margin-top:8px"><input type="checkbox" id="reportOsm"> 同時在 OpenStreetMap 留公開附註，請志工把遊戲場畫上地圖</label>
+      <label class="small block mt-8"><input type="checkbox" id="reportOsm"> 同時在 OpenStreetMap 留公開附註，請志工把遊戲場畫上地圖</label>
     </fieldset>
-    <div id="turnstile" style="margin-top:10px"></div>
-    <button type="submit" class="pbtn primary" id="reportSend" style="margin-top:10px;width:100%" disabled>送出回報</button>
-    <p class="small muted" id="reportStatus" role="status" aria-live="polite" style="margin:8px 0 0"></p>
+    <div class="mt-10" id="turnstile"></div>
+    <button type="submit" class="pbtn primary mt-10 full" id="reportSend" disabled>送出回報</button>
+    <p class="small muted mt-8" id="reportStatus" role="status" aria-live="polite"></p>
   </form>
   <p class="prov">回報會公開顯示人數，不會顯示你是誰；詳見<a href="{{ root }}terms/#privacy">隱私權</a>。</p>
   {% else %}
-  <p class="small muted" style="margin:0">回報功能即將開放。</p>
+  <p class="small muted m0">回報功能即將開放。</p>
   {% endif %}
 </section>
 
@@ -134,7 +134,7 @@
 </tbody>
 </table>
 </div>
-<p class="legend" style="margin-top:6px"><span><span class="dot hi"></span>≥60%</span><span><span class="dot mid"></span>30–60%</span><span><span class="dot lo"></span>&lt;30%</span><span><span class="dot night"></span>無日照</span></p>
+<p class="legend mt-6"><span><span class="dot hi"></span>≥60%</span><span><span class="dot mid"></span>30–60%</span><span><span class="dot lo"></span>&lt;30%</span><span><span class="dot night"></span>無日照</span></p>
 <div class="tablewrap"><table>
 <thead><tr><th>月份</th><th>最長連續遮陰時段（≥60%）</th><th>平均遮陰</th></tr></thead>
 <tbody>

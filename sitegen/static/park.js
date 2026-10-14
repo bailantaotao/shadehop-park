@@ -84,7 +84,9 @@
     setStat("nowShade", idx < 0 ? "日出前" : "已日落", "night");
     document.getElementById("nowNote").textContent = "現在沒有直射陽光，不用擔心曬。遮陰是依建物、高架與太陽位置推算的估計值。";
   } else {
-    setStat("nowShade", Math.round(v * 100) + "%", cls(v));
+    // The answer in words first; the percentage is the evidence.
+    setStat("nowShade", { hi: "適合", mid: "還可以", lo: "太曬" }[cls(v)], cls(v));
+    document.querySelector("#nowShade span").textContent = "遮陰 " + Math.round(v * 100) + "%";
   }
 
   document.getElementById("todayBar").innerHTML = row.map(function (x, i) {
@@ -110,6 +112,7 @@
     else setStat("nowUv", "暫無", "");
   }).catch(function () {
     setStat("nowRain", "暫無", ""); setStat("nowUv", "暫無", "");
+    document.getElementById("nowNote").textContent += " 天氣資料暫時無法取得，請稍後再試或查看中央氣象署。";
   });
 })();
 
@@ -130,7 +133,7 @@
     if (s.yes) {
       var eq = Object.keys(s.equipment || {}).sort(function (a, b) { return s.equipment[b] - s.equipment[a]; })
         .map(function (k) { return k + " " + s.equipment[k]; });
-      parts.push(I("thumb-up") + esc(s.yes + " 位家長回報有遊戲場" + (eq.length ? "（" + eq.join("、") + "）" : "")));
+      parts.push(I("thumb-up") + esc(s.yes + " 位家長回報有遊戲場"));
     }
     if (s.no) parts.push(I("thumb-down") + esc(s.no + " 位回報沒有"));
     tally.innerHTML = parts.join("；");

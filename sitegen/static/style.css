@@ -61,17 +61,38 @@ a.chip { text-decoration: none; }
 button.link { background: none; border: 0; color: var(--accent); font: inherit; cursor: pointer; padding: 0; text-decoration: underline; }
 .banner { border-radius: 10px; padding: 8px 12px; background: var(--chip); font-size: .92rem; }
 .banner .i { color: var(--accent); margin-right: .3em; }
+.banner .link { margin-left: .4em; }
+.chip.more { color: var(--muted); }
+.chip.more[aria-expanded="true"] { border-color: var(--accent); color: var(--text); }
+.chips[hidden] { display: none; }
+.slot-note { flex: 1 1 100%; font-size: .85rem; color: var(--muted); }
+.slot-note[hidden] { display: none; }
+/* Touch screens: every chip is a full 44px target. */
+@media (pointer: coarse) { .chip { min-height: 44px; } }
 .banner:empty { display: none; }
 
 #map { height: 58vh; min-height: 340px; border-radius: 12px; border: 1px solid var(--line); margin: 12px 0; }
 /* The vector map's own paper colour while it loads, so it fades in instead of popping out of grey. */
 #map.leaflet-container { background: #f8f4f0; }
-.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
+.legend { display: flex; gap: 8px 14px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
+.legend-box { margin: 0 0 4px; }
+.legend-box summary { cursor: pointer; color: var(--muted); font-size: .88rem; padding: 4px 0; }
+.legend-box[open] summary { margin-bottom: 6px; }
+.legend-box .prov { margin: 8px 0 0; }
+/* The colour key inside the map (bottom left), so colours are never decoded from below the fold. */
+.map-key { background: color-mix(in srgb, var(--surface) 92%, transparent); color: var(--text); border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25); padding: 5px 9px; display: flex; gap: 4px 10px; flex-wrap: wrap; font-size: .78rem; max-width: 220px; }
+.map-key span { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+.map-key .dot { margin: 0; }
 .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
 .dot.a { background: transparent; border: 3px solid var(--a); } .dot.hi { background: var(--hi); } .dot.mid { background: var(--mid); } .dot.lo { background: var(--lo); } .dot.night { background: var(--night); }
 .dot.unconfirmed { width: 8px; height: 8px; background: var(--muted); opacity: .45; }
 .listbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 18px 0 10px; }
 .listbar h2 { margin: 0; }
+.empty { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; grid-column: 1 / -1; }
+.empty p { margin: 0 0 8px; } .empty p:last-child { margin: 0; }
+.empty-filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip.on { background: color-mix(in srgb, var(--accent) 14%, var(--surface)); border-color: var(--accent); }
 .dot.shadow { background: var(--shadow); border-radius: 2px; }
 .chg { display: flex; align-items: center; justify-content: center; line-height: 1; }
 .chg svg { width: 100%; height: 100%; display: block; }
@@ -91,6 +112,9 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .badges { display: flex; gap: 6px; flex-wrap: wrap; }
 .badge { font-size: .78rem; padding: 2px 8px; border-radius: 999px; background: var(--chip); }
 .badge.A { background: var(--a); color: #fff; }
+.badge.v-hi { background: color-mix(in srgb, var(--hi) 18%, var(--surface)); }
+.badge.v-mid { background: color-mix(in srgb, var(--mid) 22%, var(--surface)); }
+.badge.v-lo { background: color-mix(in srgb, var(--lo) 18%, var(--surface)); }
 .badge .i { width: 1em; height: 1em; margin-right: .2em; }
 .facts .i { color: var(--muted); margin-right: .25em; }
 .facts { font-size: .88rem; color: var(--muted); display: grid; gap: 2px; }
@@ -127,15 +151,18 @@ footer p { margin: 0 0 4px; }
   .timebar output { min-width: 0; order: 1; }
   .timebar .chip { order: 2; padding: 4px 10px; font-size: .85rem; }
   .timebar #playBtn .lbl { display: none; }
+  .timebar .slot-note { order: 4; font-size: .8rem; }
   .timebar input[type=range] { order: 3; flex: 1 1 100%; margin: 0; }
-  .chips.filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  /* The four main filters wrap so 更多條件 is always visible; the extra ones scroll in one row. */
+  .chips.filters { gap: 6px; }
+  #moreFilters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
     margin: 0 -8px; padding: 0 8px 2px; }
-  .chips.filters::-webkit-scrollbar { display: none; }
+  #moreFilters::-webkit-scrollbar { display: none; }
   .chips.filters .chip { flex: none; white-space: nowrap; padding: 4px 10px; font-size: .85rem; }
   .banner { padding: 6px 10px; font-size: .82rem; }
   #map { height: 64vh; min-height: 380px; margin: 10px 0; border-radius: 10px; }
   /* Small but never cut: OpenStreetMap's licence requires the credit to stay readable. */
-  .leaflet-control-attribution { font-size: 9px; line-height: 1.4; white-space: nowrap; }
+  .leaflet-control-attribution { font-size: 11px; line-height: 1.5; padding: 1px 6px; white-space: nowrap; }
   .legend { gap: 6px 12px; font-size: .78rem; }
   .park-pop .leaflet-popup-content { margin: 10px 12px; font-size: 13px; }
   .pp-name { font-size: 15px; }
@@ -168,7 +195,7 @@ footer p { margin: 0 0 4px; }
 .map-ctl .locate.busy svg { animation: pulse 1s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: .3; } }
 .chg-ctl { display: flex; flex-direction: column; gap: 8px; }
-.chg-btn { position: relative; width: 48px; height: 48px; border-radius: 50%; border: 2px solid #fff;
+.chg-btn { position: relative; width: 44px; height: 44px; border-radius: 50%; border: 2px solid #fff;
   box-shadow: 0 1px 5px rgba(0,0,0,.35); background: #fff; color: #868e96; padding: 0;
   display: flex; align-items: center; justify-content: center; }
 .chg-btn[aria-pressed="true"] { background: #d9480f; color: #fff; }
@@ -203,6 +230,10 @@ footer p { margin: 0 0 4px; }
 .pbtn .i { width: 1.05em; height: 1.05em; }
 .pbtn.fav[aria-pressed="true"] { border-color: #e8a317; }
 .pbtn.fav .fav-label { margin-left: 2px; }
+/* Spacing utilities for the park page (instead of inline styles). */
+.m0 { margin: 0; } .mt-4 { margin: 4px 0 0; } .mt-6 { margin: 6px 0 0; } .mt-8 { margin: 8px 0 0; } .mt-10 { margin: 10px 0 0; }
+.mb-10 { margin: 0 0 10px; } .tl-cap { margin: 10px 0 4px; } .block { display: block; } .full { width: 100%; }
+.pbtns.two { grid-template-columns: 1fr 1fr; margin-top: 0; }
 .pnote { margin: 10px 0 0; padding: 8px 10px; border-radius: 10px; background: var(--chip); font-size: .88rem; }
 .pstats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
 .pstat { background: var(--chip); border-radius: 10px; padding: 8px 4px; }
@@ -253,6 +284,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
 
 /* Search */
 .search { position: relative; }
+.search input::placeholder { color: var(--muted); opacity: 1; }
 .search input { width: 100%; font: inherit; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--text); }
 .search-results { position: absolute; z-index: 1100; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px 0; list-style: none;
   background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.15); max-height: 60vh; overflow-y: auto; }

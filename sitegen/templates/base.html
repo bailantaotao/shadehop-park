@@ -9,6 +9,11 @@
 <link rel="alternate" type="text/plain" title="LLM guide" href="{{ site_url }}/llms.txt">
 <link rel="alternate" type="application/geo+json" title="Parks GeoJSON" href="{{ site_url }}/api/parks.geojson">
 <link rel="stylesheet" href="{{ root }}{{ asset('static/style.css') }}">
+<link rel="manifest" href="{{ root }}manifest.webmanifest">
+<link rel="icon" href="{{ root }}static/icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root }}static/icons/apple-touch-icon.png">
+<meta name="theme-color" content="#1f6f5c">
+<meta name="apple-mobile-web-app-title" content="遮陽公園">
 {% block head %}{% endblock %}
 </head>
 <body>
@@ -25,5 +30,6 @@
   資料版本 {{ (meta.generated_from_osm_base or '')[:10] }}。<a href="{{ root }}terms/">使用條款與隱私權</a>
 </footer>
 {% block scripts %}{% endblock %}
+<script>if ("serviceWorker" in navigator) window.addEventListener("load", function () { navigator.serviceWorker.register("{{ root }}sw.js").catch(function () {}); });</script>
 </body>
 </html>

@@ -5,12 +5,12 @@
   var SHADOW_MIN_ZOOM = 16, MAX_SHADOW_M = 600;
   var PARK_HREF = window.SHADEHOP_PARK_HREF || "parks/{id}/";
   function parkHref(id) { return PARK_HREF.replace("{id}", encodeURIComponent(id)); }
-  var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false, fav: false };
+  var filters = { rain: false, shade: false, parking: false, fast: false, slow: false, toilet: false, fav: false, confirmed: false };
   var Favs = window.ShadeHopFavs;
   var LIST_MAX = 60;
   var CHARGER_R = window.SHADEHOP_CHARGER_RADIUS_M || 500;
   // Parks load per region as the map view reaches it; nobody has to pick a region first.
-  var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {} };
+  var state = { date: null, slot: 8, user: null, features: [], playTimer: null, regions: [], loaded: {}, sort: "shade" };
   var chargersOn = true;  // one on-map toggle for all chargers
   // Shadow casters are split into ~1 km tiles; only tiles in view are downloaded.
   var tiles = { index: null, deg: 0.01, data: {} };
@@ -140,6 +140,7 @@
     if (filters.slow && p.slow_nearest_m === null) return false;
     if (filters.toilet && !p.toilet) return false;
     if (filters.fav && !Favs.has(p.id)) return false;
+    if (filters.confirmed && p.kind === "park") return false;  // parks whose play equipment is unconfirmed
     return true;
   }
 
@@ -195,15 +196,19 @@
     Object.keys(markers).forEach(function (id) { if (markers[id].isPopupOpen()) open = id; });
     markerLayer.clearLayers();
     markers = {};
-    state.features.forEach(function (f) {
-      if (!passes(f)) return;
-      var p = f.properties, cls = shadeClass(shadeAt(f));
+    // Parks with unconfirmed play equipment are small and faint, and drawn first so confirmed
+    // playgrounds sit on top of them.
+    var ordered = state.features.filter(passes).sort(function (a, b) {
+      return (a.properties.kind === "park" ? 0 : 1) - (b.properties.kind === "park" ? 0 : 1);
+    });
+    ordered.forEach(function (f) {
+      var p = f.properties, cls = shadeClass(shadeAt(f)), unsure = p.kind === "park" && p.rain !== true;
       var m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
-        radius: p.rain === true ? 10 : 8,
+        radius: p.rain === true ? 10 : unsure ? 5.5 : 8,
         color: p.rain === true ? css("--a") : css("--surface"),
-        weight: p.rain === true ? 4 : 2,
+        weight: p.rain === true ? 4 : unsure ? 1 : 2,
         fillColor: css("--" + cls),
-        fillOpacity: cls === "night" ? 0.5 : 0.95,
+        fillOpacity: unsure ? 0.45 : cls === "night" ? 0.5 : 0.95,
       });
       m.bindPopup(function () { return popupHtml(f); }, { className: "park-pop", minWidth: 250, maxWidth: 280 });
       m.addTo(markerLayer);
@@ -360,12 +365,16 @@
   function drawList() {
     // "My favourites" lists every favourite, wherever it is; otherwise only parks in view.
     var fs = state.features.filter(function (f) { return passes(f) && (filters.fav || inView(f)); });
+    var near = state.sort === "near" && state.user;
     fs.sort(function (a, b) {
-      if (state.user) return distM(state.user, a.geometry.coordinates) - distM(state.user, b.geometry.coordinates);
+      if (near) return distM(state.user, a.geometry.coordinates) - distM(state.user, b.geometry.coordinates);
       var ra = a.properties.rain === true ? 1 : 0, rb = b.properties.rain === true ? 1 : 0;
-      return rb - ra || (shadeAt(b) || 0) - (shadeAt(a) || 0);
+      var ca = a.properties.kind === "park" ? 0 : 1, cb = b.properties.kind === "park" ? 0 : 1;
+      // Rain-proof first, then confirmed playgrounds before parks whose equipment is unsure, then shade now.
+      return rb - ra || cb - ca || (shadeAt(b) || 0) - (shadeAt(a) || 0);
     });
-    $("#count").textContent = (filters.fav ? "我的最愛（" : "地圖範圍內的公園（") + fs.length + "）· " + month() + " 月 " + slotLabel(state.slot);
+    $("#count").textContent = (filters.fav ? "我的最愛（" : "地圖範圍內的公園（") + fs.length + "）· " + month() + " 月 " + slotLabel(state.slot) +
+      (near ? " · 離你最近的在前面" : "");
     var html = fs.slice(0, LIST_MAX).map(card).join("");
     if (fs.length > LIST_MAX) html += '<p class="muted">還有 ' + (fs.length - LIST_MAX) + " 處，放大地圖可以縮小範圍。</p>";
     if (!fs.length && filters.fav) {
@@ -422,6 +431,107 @@
       render();
     });
   });
+  function setSort(mode) {
+    state.sort = mode;
+    document.querySelectorAll("[data-sort]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.sort === mode)); });
+    render(true);
+  }
+  document.querySelectorAll("[data-sort]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      // "Nearest" needs the user's position; ask for it the first time.
+      if (b.dataset.sort === "near" && !state.user) { if (locateBtn) locate(locateBtn); return; }
+      setSort(b.dataset.sort);
+    });
+  });
+  // ---------------------------------------------------------------- search
+  // By park name or district, across all regions (they load on the first keystroke).
+  var searchQ = "", searchEl = $("#search"), resultsEl = $("#searchResults");
+  function norm(t) { return String(t || "").replace(/臺/g, "台").replace(/\s+/g, "").toLowerCase(); }
+  function runSearch() {
+    var q = norm(searchQ);
+    if (!q) { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); return; }
+    var hits = [], districts = {};
+    state.features.forEach(function (f) {
+      var p = f.properties, name = norm(p.name), dist = norm(p.district);
+      if (dist.indexOf(q) >= 0) {
+        var key = p.region + "|" + p.district;
+        (districts[key] = districts[key] || { region: p.region, district: p.district, fs: [] }).fs.push(f);
+      }
+      if (name.indexOf(q) >= 0) hits.push(f);
+    });
+    hits.sort(function (a, b) {
+      var an = norm(a.properties.name), bn = norm(b.properties.name);
+      return (bn.indexOf(q) === 0) - (an.indexOf(q) === 0) ||                       // name starts with the query
+        (a.properties.kind === "park") - (b.properties.kind === "park") ||        // confirmed playgrounds first
+        an.length - bn.length;
+    });
+    var html = Object.keys(districts).slice(0, 2).map(function (k) {
+      var d = districts[k], r = state.regions.find(function (x) { return x.id === d.region; });
+      return '<li role="option" tabindex="-1" data-district="' + esc(k) + '">📍 前往 ' + esc((r ? r.city : "") + d.district) +
+        ' <span class="muted">（' + d.fs.length + " 處）</span></li>";
+    }).join("");
+    // Several play areas of one park share its name: list the park once.
+    var groups = [], byKey = {};
+    hits.forEach(function (f) {
+      var k = f.properties.name + "|" + f.properties.district;
+      if (!byKey[k]) groups.push(byKey[k] = []);
+      byKey[k].push(f);
+    });
+    html += groups.slice(0, 8).map(function (g, i) {
+      var p = g[0].properties;
+      return '<li role="option" tabindex="-1" ' + (g.length > 1 ? 'data-group="' + i + '"' : 'data-id="' + esc(p.id) + '"') + ">" + esc(p.name) +
+        ' <span class="muted">' + esc(p.district) + (g.length > 1 ? "・" + g.length + " 處遊戲場" : p.kind === "park" ? "・遊具待確認" : "") + "</span></li>";
+    }).join("");
+    resultsEl._groups = groups;
+    if (!html) html = '<li class="muted">' + (Object.keys(state.loaded).length < state.regions.length ? "搜尋中…" : "找不到符合的公園") + "</li>";
+    resultsEl.innerHTML = html;
+    resultsEl.hidden = false;
+    searchEl.setAttribute("aria-expanded", "true");
+    resultsEl._districts = districts;
+  }
+  function chooseResult(li) {
+    if (!li) return;
+    if (li.dataset.id) {
+      var f = state.features.find(function (x) { return x.properties.id === li.dataset.id; });
+      if (f && !markers[li.dataset.id]) mapToast("這座公園不符合目前的篩選條件，先幫你移過去");
+      if (f) {
+        map.setView([f.geometry.coordinates[1], f.geometry.coordinates[0]], 17);
+        if (markers[li.dataset.id]) focusPark(li.dataset.id);
+      }
+    } else if (li.dataset.district || li.dataset.group) {
+      var fs = li.dataset.group ? resultsEl._groups[Number(li.dataset.group)] : resultsEl._districts[li.dataset.district].fs;
+      map.fitBounds(L.latLngBounds(fs.map(function (f) { return [f.geometry.coordinates[1], f.geometry.coordinates[0]]; })).pad(0.2), { maxZoom: 17 });
+      document.getElementById("map").scrollIntoView({ behavior: "smooth" });
+    } else {
+      return;
+    }
+    resultsEl.hidden = true;
+    searchEl.setAttribute("aria-expanded", "false");
+    searchEl.blur();
+  }
+  var searchTimer = null;
+  searchEl.addEventListener("input", function () {
+    searchQ = searchEl.value.trim();
+    loadAllRegions();
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(runSearch, 120);
+  });
+  searchEl.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") { e.preventDefault(); chooseResult(resultsEl.querySelector("li[tabindex]")); }
+    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); }
+    if (e.key === "ArrowDown") { e.preventDefault(); var first = resultsEl.querySelector("li[tabindex]"); if (first) first.focus(); }
+  });
+  resultsEl.addEventListener("keydown", function (e) {
+    var li = e.target.closest("li");
+    if (e.key === "Enter") { e.preventDefault(); chooseResult(li); }
+    if (e.key === "ArrowDown" && li && li.nextElementSibling) { e.preventDefault(); li.nextElementSibling.focus(); }
+    if (e.key === "ArrowUp") { e.preventDefault(); (li && li.previousElementSibling ? li.previousElementSibling : searchEl).focus(); }
+  });
+  resultsEl.addEventListener("click", function (e) { chooseResult(e.target.closest("li")); });
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".search")) { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); }
+  });
+
   // Show a park on the map: centre it, open its popup, mark its card, and bring the map into view.
   function focusPark(id) {
     var m = markers[id];
@@ -504,6 +614,7 @@
         state.features = state.features.concat(gj.features);
         render();
         weatherIfMoved();  // the weather needs a park nearby to know the district
+        if (searchQ) runSearch();  // results can come from a region that just loaded
       }).catch(function () { state.loaded[r.id] = false; });
     });
   }
@@ -516,6 +627,7 @@
         state.features = state.features.concat(gj.features);
         render();
         weatherIfMoved();  // the weather needs a park nearby to know the district
+        if (searchQ) runSearch();  // results can come from a region that just loaded
       }).catch(function () { state.loaded[r.id] = false; });
     });
   }
@@ -637,7 +749,7 @@
     options: { position: "topleft" },
     onAdd: function () {
       var box = L.DomUtil.create("div", "leaflet-bar map-ctl");
-      var b = L.DomUtil.create("button", "locate", box);
+      var b = locateBtn = L.DomUtil.create("button", "locate", box);
       b.type = "button"; b.title = "回到我的位置"; b.setAttribute("aria-label", "回到我的位置");
       b.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="currentColor"/>' +
         '<circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>' +
@@ -647,6 +759,7 @@
       return box;
     },
   });
+  var locateBtn = null;
   function locate(b) {
     if (!navigator.geolocation) { mapToast("這個瀏覽器不支援定位"); return; }
     b.classList.add("busy");
@@ -658,7 +771,7 @@
       L.circle(ll, { radius: pos.coords.accuracy, stroke: false, fillColor: "#2b7bff", fillOpacity: 0.12, interactive: false }).addTo(userLayer);
       L.circleMarker(ll, { radius: 7, color: "#fff", weight: 3, fillColor: "#2b7bff", fillOpacity: 1, interactive: false }).addTo(userLayer);
       map.setView(ll, Math.max(map.getZoom(), 16));
-      render(true);
+      setSort("near");  // located: nearest parks first (the user can switch back)
     }, function (err) {
       b.classList.remove("busy");
       mapToast(err.code === 1 ? "沒有定位權限：請在瀏覽器設定允許這個網站使用位置" : "暫時無法取得位置，請稍後再試");

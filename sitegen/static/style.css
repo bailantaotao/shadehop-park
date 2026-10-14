@@ -53,6 +53,9 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
 .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
 .dot.a { background: transparent; border: 3px solid var(--a); } .dot.hi { background: var(--hi); } .dot.mid { background: var(--mid); } .dot.lo { background: var(--lo); } .dot.night { background: var(--night); }
+.dot.unconfirmed { width: 8px; height: 8px; background: var(--muted); opacity: .45; }
+.listbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 18px 0 10px; }
+.listbar h2 { margin: 0; }
 .dot.shadow { background: var(--shadow); border-radius: 2px; }
 .chg { display: flex; align-items: center; justify-content: center; line-height: 1; }
 .chg svg { width: 100%; height: 100%; display: block; }
@@ -183,3 +186,12 @@ footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align:
 /* Terms page: tighter list indent on phones */
 .terms ol, .terms ul { padding-left: 1.3em; }
 .terms li { margin-bottom: 6px; }
+
+/* Search */
+.search { position: relative; }
+.search input { width: 100%; font: inherit; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--text); }
+.search-results { position: absolute; z-index: 1100; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px 0; list-style: none;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,.15); max-height: 60vh; overflow-y: auto; }
+.search-results[hidden] { display: none; }
+.search-results li { padding: 9px 12px; cursor: pointer; }
+.search-results li[tabindex]:hover, .search-results li:focus { background: var(--chip); outline: none; }

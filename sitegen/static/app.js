@@ -227,7 +227,9 @@
         fillColor: css("--" + cls),
         fillOpacity: faint ? 0.45 : cls === "night" ? 0.5 : 0.95,
       });
-      m.bindPopup(function () { return popupHtml(f); }, { className: "park-pop", minWidth: 250, maxWidth: 280 });
+      // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
+      m.bindPopup(function () { return popupHtml(f); }, { className: "park-pop", minWidth: 240, maxWidth: 280,
+        autoPanPaddingTopLeft: L.point(52, 70), autoPanPaddingBottomRight: L.point(12, 24) });
       m.addTo(markerLayer);
       markers[p.id] = m;
     });
@@ -434,8 +436,8 @@
   $("#nowBtn").addEventListener("click", function () { setNow(); render(); });
   $("#playBtn").addEventListener("click", function (e) {
     var btn = e.currentTarget;
-    if (state.playTimer) { clearInterval(state.playTimer); state.playTimer = null; btn.setAttribute("aria-pressed", "false"); btn.textContent = "▶ 播放一天"; return; }
-    btn.setAttribute("aria-pressed", "true"); btn.textContent = "⏸ 暫停";
+    if (state.playTimer) { clearInterval(state.playTimer); state.playTimer = null; btn.setAttribute("aria-pressed", "false"); btn.innerHTML = '▶<span class="lbl"> 播放一天</span>'; return; }
+    btn.setAttribute("aria-pressed", "true"); btn.innerHTML = '⏸<span class="lbl"> 暫停</span>';
     state.playTimer = setInterval(function () {
       state.slot = (state.slot + 1) % SLOTS; $("#slot").value = state.slot; render();
     }, 700);

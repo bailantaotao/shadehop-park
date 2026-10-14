@@ -93,7 +93,42 @@ section { margin: 22px 0; }
 h2 { font-size: 1.1rem; }
 .prov { font-size: .82rem; color: var(--muted); }
 footer { padding: 24px 16px; color: var(--muted); font-size: .82rem; text-align: center; }
-@media (max-width: 600px) { #map { height: 50vh; } header.top nav { margin-left: 0; } }
+/* Phones: the map comes first - compact header and controls, one swipeable row of filters, a taller map. */
+@media (max-width: 600px) {
+  header.top { padding: 8px 12px; gap: 8px; align-items: center; flex-wrap: nowrap; }
+  header.top h1 { font-size: 1rem; white-space: nowrap; }
+  header.top .subtitle { display: none; }
+  header.top nav { margin-left: auto; gap: 10px; font-size: .82rem; white-space: nowrap; }
+  main { padding: 10px 10px 16px; }
+  .controls { padding: 8px; gap: 8px; border-radius: 10px; }
+  .search input { padding: 7px 10px; font-size: .95rem; }
+  .timebar { gap: 6px 8px; }
+  .timebar .tlabel { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .timebar input[type=date] { font-size: .85rem; padding: 3px 4px; }
+  .timebar output { min-width: 0; order: 1; }
+  .timebar .chip { order: 2; padding: 4px 10px; font-size: .85rem; }
+  .timebar #playBtn .lbl { display: none; }
+  .timebar input[type=range] { order: 3; flex: 1 1 100%; margin: 0; }
+  .chips.filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    margin: 0 -8px; padding: 0 8px 2px; }
+  .chips.filters::-webkit-scrollbar { display: none; }
+  .chips.filters .chip { flex: none; white-space: nowrap; padding: 4px 10px; font-size: .85rem; }
+  .banner { padding: 6px 10px; font-size: .82rem; }
+  #map { height: 64vh; min-height: 380px; margin: 10px 0; border-radius: 10px; }
+  /* Small but never cut: OpenStreetMap's licence requires the credit to stay readable. */
+  .leaflet-control-attribution { font-size: 9px; line-height: 1.4; white-space: nowrap; }
+  .legend { gap: 6px 12px; font-size: .78rem; }
+  .park-pop .leaflet-popup-content { margin: 10px 12px; font-size: 13px; }
+  .pp-name { font-size: 15px; }
+  .pp-pills { margin: 8px 0 6px; }
+  .pp-pill { font-size: 11.5px; padding: 2px 8px; }
+  .pp-best { font-size: 12px; margin-bottom: 6px; }
+  .pp-grid { gap: 4px; margin-bottom: 8px; }
+  .pp-tile { padding: 4px 2px; font-size: 11px; }
+  .pp-tile span { font-size: 14px; }
+  .pp-tile b { font-size: 12px; }
+  .pp-btn { padding: 5px 8px; font-size: 12.5px; }
+}
 
 .fav { background: none; border: 0; padding: 0 2px; font-size: 1.15rem; line-height: 1; cursor: pointer; color: var(--muted); }
 .fav[aria-pressed="true"] { color: #e8a317; }

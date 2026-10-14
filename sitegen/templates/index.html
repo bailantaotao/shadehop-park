@@ -11,20 +11,20 @@
 {% block main %}
 <div class="controls" aria-label="篩選">
   <div class="search" role="search">
-    <input type="search" id="search" placeholder="搜尋公園名稱或行政區，例如：木柵、林口" autocomplete="off"
+    <input type="search" id="search" placeholder="搜尋公園或行政區（例：木柵）" autocomplete="off"
            aria-label="搜尋公園" aria-controls="searchResults" aria-expanded="false">
     <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
   </div>
   <div class="timebar">
-    <label for="date">日期</label>
+    <label for="date" class="tlabel">日期</label>
     <input type="date" id="date">
-    <label for="slot">時間</label>
+    <label for="slot" class="tlabel">時間</label>
     <input type="range" id="slot" min="0" max="23" step="1" value="8" aria-describedby="slotOut">
     <output id="slotOut" for="slot">10:00</output>
     <button class="chip" id="nowBtn" type="button">現在</button>
-    <button class="chip" id="playBtn" type="button" aria-pressed="false">▶ 播放一天</button>
+    <button class="chip" id="playBtn" type="button" aria-pressed="false" aria-label="播放一天">▶<span class="lbl"> 播放一天</span></button>
   </div>
-  <div class="chips" role="group" aria-label="條件">
+  <div class="chips filters" role="group" aria-label="條件">
     <button class="chip" data-filter="fav" aria-pressed="false">⭐ 我的最愛</button>
     <button class="chip" data-filter="confirmed" aria-pressed="false" title="隱藏遊具還沒確認的公園">🛝 確定有遊戲場</button>
     <button class="chip" data-filter="rain" aria-pressed="false">☔ 下雨可玩</button>

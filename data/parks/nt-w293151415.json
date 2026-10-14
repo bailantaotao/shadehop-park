@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 49,
+   "location": {
+    "lat": 25.186086,
+    "lng": 121.525215
+   },
    "method": "osm",
    "name": "二子坪合作社",
    "source": "https://www.openstreetmap.org/node/4307465176",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/293151415",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/293151415",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.187709,
+    "lng": 121.521803
+   },
    "method": "official_data",
    "name": "陽明山國家公園大屯自然公園遊客服務站—",
    "source": "https://data.gov.tw/dataset/30794",

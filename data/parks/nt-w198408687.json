@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 358,
+   "location": {
+    "lat": 25.101224,
+    "lng": 121.45082
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2111807703",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/198408687",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 886,
+   "location": {
+    "lat": 25.091278,
+    "lng": 121.465104
+   },
    "method": "osm",
    "name": "捷運蘆洲站",
    "source": "https://www.openstreetmap.org/node/3812564423",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.09835,
+    "lng": 121.4575
+   },
    "method": "official_data",
    "name": "五股濕地",
    "source": "https://data.gov.tw/dataset/30794",

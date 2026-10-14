@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 91,
+   "location": {
+    "lat": 24.822468,
+    "lng": 120.910703
+   },
    "method": "osm",
    "name": "便利商店",
    "source": "https://www.openstreetmap.org/node/3724533870",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/894247714",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/894247714",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 114,
     "family_room": false,
+    "location": {
+     "lat": 24.822065,
+     "lng": 120.909594
+    },
     "name": "港南運河公園觀景台"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.82331,
+    "lng": 120.91033
+   },
    "method": "official_data",
    "name": "港南風景區",
    "source": "https://data.gov.tw/dataset/30794",

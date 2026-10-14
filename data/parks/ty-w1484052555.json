@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 278,
+   "location": {
+    "lat": 24.810784,
+    "lng": 121.239837
+   },
    "method": "osm",
    "name": "販賣部",
    "source": "https://www.openstreetmap.org/way/519149510",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1484052555",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1484052555",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.813592,
+    "lng": 121.242206
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/13607561377",

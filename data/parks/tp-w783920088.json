@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 203,
+   "location": {
+    "lat": 25.094785,
+    "lng": 121.518408
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4679440000",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 100,
+   "location": {
+    "lat": 25.096159,
+    "lng": 121.518913
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/783920088",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 809,
+   "location": {
+    "lat": 25.103003,
+    "lng": 121.52252
+   },
    "method": "osm",
    "name": "捷運芝山站",
    "source": "https://www.openstreetmap.org/node/3495094877",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 57,
     "family_room": true,
+    "location": {
+     "lat": 25.097307,
+     "lng": 121.517384
+    },
     "name": "美崙公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.097268,
+    "lng": 121.517394
+   },
    "method": "official_data",
    "name": "美崙公園",
    "source": "https://data.gov.tw/dataset/30794",

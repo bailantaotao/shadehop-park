@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 139,
+   "location": {
+    "lat": 24.735689,
+    "lng": 121.089749
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7021070535",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/987668995",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 597,
+   "location": {
+    "lat": 24.738321,
+    "lng": 121.094903
+   },
    "method": "osm",
    "name": "竹東站",
    "source": "https://www.openstreetmap.org/node/1374041041",
@@ -39,9 +48,17 @@
     "changing_table": false,
     "distance_m": 271,
     "family_room": true,
+    "location": {
+     "lat": 24.735987,
+     "lng": 121.092863
+    },
     "name": "竹東鎮衛生所1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.736809,
+    "lng": 121.091482
+   },
    "method": "official_data",
    "name": "竹東鎮公所1F",
    "source": "https://data.gov.tw/dataset/30794",

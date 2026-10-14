@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 56,
+   "location": {
+    "lat": 25.064912,
+    "lng": 121.632343
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3887826262",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 185,
+   "location": {
+    "lat": 25.063376,
+    "lng": 121.632074
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/888100197",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/888100197",
@@ -35,6 +44,10 @@
    "distance_m": 44,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.065643,
+    "lng": 121.631843
+   },
    "method": "official_data",
    "name": "麥當勞汐止中興店2F",
    "source": "https://data.gov.tw/dataset/30794",

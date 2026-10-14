@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 215,
+   "location": {
+    "lat": 25.044274,
+    "lng": 121.536248
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2178474545",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 159,
+   "location": {
+    "lat": 25.047497,
+    "lng": 121.537526
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 612,
+   "location": {
+    "lat": 25.04229,
+    "lng": 121.532838
+   },
    "method": "osm",
    "name": "捷運忠孝新生站",
    "source": "https://www.openstreetmap.org/node/3812564401",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 204,
     "family_room": false,
+    "location": {
+     "lat": 25.046379,
+     "lng": 121.53962
+    },
     "name": "台灣中油中崙加油站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.046167,
+    "lng": 121.537699
+   },
    "method": "official_data",
    "name": "進安公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -932,7 +952,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 53,
+   "location": {
+    "lat": 25.116161,
+    "lng": 121.244499
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/410872031",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/410872058",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/410872058",
@@ -35,6 +41,10 @@
    "distance_m": 40,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.11689,
+    "lng": 121.245587
+   },
    "method": "official_data",
    "name": "竹圍漁港直銷中心後面",
    "source": "https://data.gov.tw/dataset/30794",

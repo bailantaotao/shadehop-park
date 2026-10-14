@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 62,
+   "location": {
+    "lat": 25.055797,
+    "lng": 121.513826
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5110489241",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 15,
+   "location": {
+    "lat": 25.055795,
+    "lng": 121.512916
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 770,
+   "location": {
+    "lat": 25.049399,
+    "lng": 121.510329
+   },
    "method": "osm",
    "name": "捷運北門站",
    "source": "https://www.openstreetmap.org/node/3263840809",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 125,
     "family_room": true,
+    "location": {
+     "lat": 25.057079,
+     "lng": 121.512543
+    },
     "name": "新芳春茶行1樓"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.056134,
+    "lng": 121.513724
+   },
    "method": "official_data",
    "name": "朝陽公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -824,7 +844,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

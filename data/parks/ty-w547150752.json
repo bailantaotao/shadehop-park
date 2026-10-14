@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 116,
+   "location": {
+    "lat": 24.907282,
+    "lng": 121.150103
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4367059292",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/547150752",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 550,
+   "location": {
+    "lat": 24.914352,
+    "lng": 121.146507
+   },
    "method": "osm",
    "name": "楊梅站",
    "source": "https://www.openstreetmap.org/node/1263487518",
@@ -35,6 +44,10 @@
    "distance_m": 179,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.907307,
+    "lng": 121.150792
+   },
    "method": "official_data",
    "name": "柑園加油站楊梅站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -86,7 +99,7 @@
    "name": "楊梅行政園區停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -124,7 +137,7 @@
    "name": "新成立體停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -162,7 +175,7 @@
    "name": "大模停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/30.00元每小時",
    "restriction": null,
@@ -740,7 +753,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

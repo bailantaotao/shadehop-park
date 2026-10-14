@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 208,
+   "location": {
+    "lat": 25.116761,
+    "lng": 121.533196
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118095195",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 52,
+   "location": {
+    "lat": 25.114744,
+    "lng": 121.534613
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1230325973",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1230325973",
@@ -35,6 +44,10 @@
    "distance_m": 29,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.114946,
+    "lng": 121.534231
+   },
    "method": "official_data",
    "name": "天母運動場",
    "source": "https://data.gov.tw/dataset/30794",

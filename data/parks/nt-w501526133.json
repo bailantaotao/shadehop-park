@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 327,
+   "location": {
+    "lat": 24.975532,
+    "lng": 121.516975
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10007786072",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/501526133",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 561,
+   "location": {
+    "lat": 24.983442,
+    "lng": 121.518589
+   },
    "method": "osm",
    "name": "新和國小站",
    "source": "https://www.openstreetmap.org/node/8041597964",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 241,
     "family_room": true,
+    "location": {
+     "lat": 24.978884,
+     "lng": 121.516099
+    },
     "name": "陽光運動園區B區"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.977819,
+    "lng": 121.518255
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4923172131",

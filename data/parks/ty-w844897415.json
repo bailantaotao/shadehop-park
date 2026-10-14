@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 167,
+   "location": {
+    "lat": 25.116161,
+    "lng": 121.244499
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/410872031",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/844897415",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/844897415",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 122,
     "family_room": false,
+    "location": {
+     "lat": 25.116331,
+     "lng": 121.243898
+    },
     "name": "竹圍漁港路廣場"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.115091,
+    "lng": 121.240546
+   },
    "method": "official_data",
    "name": "竹圍漁港漁業綜合大樓1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -673,7 +687,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

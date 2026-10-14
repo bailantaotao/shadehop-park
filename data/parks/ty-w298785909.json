@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 33,
+   "location": {
+    "lat": 24.817916,
+    "lng": 121.351157
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6275650886",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 24.816325,
+    "lng": 121.349086
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/298785909",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/298785909",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 102,
     "family_room": true,
+    "location": {
+     "lat": 24.815071,
+     "lng": 121.350982
+    },
     "name": "復興區衛生所1F"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.816292,
+    "lng": 121.349199
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3208885551",

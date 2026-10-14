@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 137,
+   "location": {
+    "lat": 25.005163,
+    "lng": 121.567964
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4275934597",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 850,
+   "location": {
+    "lat": 24.998609,
+    "lng": 121.568123
+   },
    "method": "osm",
    "name": "捷運萬芳社區站",
    "source": "https://www.openstreetmap.org/node/689418701",
@@ -594,7 +603,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

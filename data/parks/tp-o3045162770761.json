@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 171,
+   "location": {
+    "lat": 25.04242,
+    "lng": 121.539829
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2470166927",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 31,
+   "location": {
+    "lat": 25.043913,
+    "lng": 121.540685
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 435,
+   "location": {
+    "lat": 25.041541,
+    "lng": 121.543771
+   },
    "method": "osm",
    "name": "捷運忠孝復興站",
    "source": "https://www.openstreetmap.org/node/3497302605",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 259,
     "family_room": false,
+    "location": {
+     "lat": 25.046379,
+     "lng": 121.53962
+    },
     "name": "台灣中油中崙加油站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.044752,
+    "lng": 121.540461
+   },
    "method": "official_data",
    "name": "市民大道地下停車場建復段B1",
    "source": "https://data.gov.tw/dataset/30794",
@@ -889,7 +909,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

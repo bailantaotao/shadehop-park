@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/432770245",
@@ -13,6 +14,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 178,
+   "location": {
+    "lat": 24.939814,
+    "lng": 120.987198
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/432770245",
    "value": true,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/432770245",
@@ -35,6 +41,10 @@
    "distance_m": 148,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.940457,
+    "lng": 120.988573
+   },
    "method": "official_data",
    "name": "新屋綠色隧道(台61橋下蚵間段)",
    "source": "https://data.gov.tw/dataset/30794",

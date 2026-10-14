@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 231,
+   "location": {
+    "lat": 24.972301,
+    "lng": 121.434162
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118272993",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/278454999",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 805,
+   "location": {
+    "lat": 24.966872,
+    "lng": 121.43627
+   },
    "method": "osm",
    "name": "捷運永寧站",
    "source": "https://www.openstreetmap.org/node/373399546",
@@ -35,6 +44,10 @@
    "distance_m": 265,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.9722,
+    "lng": 121.4345
+   },
    "method": "official_data",
    "name": "台亞土城城林橋站1F",
    "source": "https://data.gov.tw/dataset/30794",

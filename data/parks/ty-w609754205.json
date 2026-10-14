@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 342,
+   "location": {
+    "lat": 24.958681,
+    "lng": 121.115325
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4326609395",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/609754205",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/609754205",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.960148,
+    "lng": 121.118431
+   },
    "method": "official_data",
    "name": "新屋區長祥宮",
    "source": "https://data.gov.tw/dataset/30794",

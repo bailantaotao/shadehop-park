@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 17,
+   "location": {
+    "lat": 24.871417,
+    "lng": 121.407797
+   },
    "method": "osm",
    "name": "板根便利店",
    "source": "https://www.openstreetmap.org/way/527268693",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/527268696",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/527268696",
@@ -35,6 +41,10 @@
    "distance_m": 35,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.871407,
+    "lng": 121.407868
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/5126369634",

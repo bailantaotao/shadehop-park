@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 117,
+   "location": {
+    "lat": 25.084631,
+    "lng": 121.537979
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4524863815",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/456206438",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1163,
+   "location": {
+    "lat": 25.079865,
+    "lng": 121.54744
+   },
    "method": "osm",
    "name": "捷運大直站",
    "source": "https://www.openstreetmap.org/node/1681745146",
@@ -35,6 +44,10 @@
    "distance_m": 86,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.08492,
+    "lng": 121.537994
+   },
    "method": "official_data",
    "name": "中山區劍潭里區民活動中心1樓",
    "source": "https://data.gov.tw/dataset/30794",

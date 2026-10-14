@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 31,
+   "location": {
+    "lat": 24.807818,
+    "lng": 120.978696
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9449166799",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/330321733",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 546,
+   "location": {
+    "lat": 24.80863,
+    "lng": 120.98379
+   },
    "method": "osm",
    "name": "北新竹站",
    "source": "https://www.openstreetmap.org/node/1543862087",
@@ -35,6 +44,10 @@
    "distance_m": 45,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.80777,
+    "lng": 120.97731
+   },
    "method": "official_data",
    "name": "7-11便利商店-新竹民門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -760,7 +773,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

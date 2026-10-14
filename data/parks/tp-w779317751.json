@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 147,
+   "location": {
+    "lat": 25.098176,
+    "lng": 121.534324
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13413775746",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/779317751",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1054,
+   "location": {
+    "lat": 25.093495,
+    "lng": 121.526247
+   },
    "method": "osm",
    "name": "捷運士林站",
    "source": "https://www.openstreetmap.org/node/3495094876",
@@ -39,9 +48,17 @@
     "changing_table": false,
     "distance_m": 210,
     "family_room": true,
+    "location": {
+     "lat": 25.101496,
+     "lng": 121.53403
+    },
     "name": "芝山公園1號"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.098161,
+    "lng": 121.535082
+   },
    "method": "official_data",
    "name": "雙溪公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -797,7 +814,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 188,
+   "location": {
+    "lat": 25.021097,
+    "lng": 121.548268
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2621123793",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 112,
+   "location": {
+    "lat": 25.022752,
+    "lng": 121.545637
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1327484616",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 538,
+   "location": {
+    "lat": 25.026101,
+    "lng": 121.54346
+   },
    "method": "osm",
    "name": "捷運科技大樓站",
    "source": "https://www.openstreetmap.org/node/3497302604",
@@ -35,6 +47,10 @@
    "distance_m": 83,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.022105,
+    "lng": 121.547479
+   },
    "method": "official_data",
    "name": "大安區福安宮",
    "source": "https://data.gov.tw/dataset/30794",

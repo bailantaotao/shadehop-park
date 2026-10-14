@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 322,
+   "location": {
+    "lat": 25.066556,
+    "lng": 121.290765
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4361705408",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1552906771",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1474,
+   "location": {
+    "lat": 25.080806,
+    "lng": 121.284778
+   },
    "method": "osm",
    "name": "捷運山鼻站",
    "source": "https://www.openstreetmap.org/node/4450092074",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.072198,
+    "lng": 121.301503
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/424286923",

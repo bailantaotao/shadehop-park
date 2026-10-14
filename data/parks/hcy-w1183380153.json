@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 32,
+   "location": {
+    "lat": 24.83948,
+    "lng": 121.007423
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9391251410",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 199,
+   "location": {
+    "lat": 24.839136,
+    "lng": 121.009175
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1183380153",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 204,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 224,
     "family_room": false,
+    "location": {
+     "lat": 24.838847,
+     "lng": 121.009301
+    },
     "name": "竹北車站"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.839082,
+    "lng": 121.008979
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3353757817",

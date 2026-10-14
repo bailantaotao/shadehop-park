@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 197,
+   "location": {
+    "lat": 24.87038,
+    "lng": 121.223304
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/6852321990",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/586093762",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/586093762",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 277,
     "family_room": false,
+    "location": {
+     "lat": 24.870838,
+     "lng": 121.222358
+    },
     "name": "桃園市立圖書館龍潭分館1館2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.868483,
+    "lng": 121.221441
+   },
    "method": "official_data",
    "name": "龍潭區台灣中油龍門加油站無障礙廁所(中油加盟)",
    "source": "https://data.gov.tw/dataset/30794",

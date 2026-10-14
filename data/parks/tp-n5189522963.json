@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 150,
+   "location": {
+    "lat": 25.001893,
+    "lng": 121.567277
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9401545424",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 59,
+   "location": {
+    "lat": 25.001115,
+    "lng": 121.568436
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/5189522963",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 210,
+   "location": {
+    "lat": 24.998609,
+    "lng": 121.568123
+   },
    "method": "osm",
    "name": "捷運萬芳社區站",
    "source": "https://www.openstreetmap.org/node/689418701",
@@ -35,6 +47,10 @@
    "distance_m": 68,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.001231,
+    "lng": 121.568399
+   },
    "method": "official_data",
    "name": "萬芳公園",
    "source": "https://data.gov.tw/dataset/30794",

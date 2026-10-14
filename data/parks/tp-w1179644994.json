@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 149,
+   "location": {
+    "lat": 24.987614,
+    "lng": 121.550326
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2526130503",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1179644994",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1051,
+   "location": {
+    "lat": 24.992712,
+    "lng": 121.540706
+   },
    "method": "osm",
    "name": "捷運景美站",
    "source": "https://www.openstreetmap.org/node/3530915061",
@@ -35,6 +44,10 @@
    "distance_m": 163,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.987491,
+    "lng": 121.550176
+   },
    "method": "official_data",
    "name": "麥當勞台北考試院店",
    "source": "https://data.gov.tw/dataset/30794",
@@ -722,7 +735,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

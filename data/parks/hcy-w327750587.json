@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 108,
+   "location": {
+    "lat": 24.919054,
+    "lng": 121.054373
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3208534911",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/327750587",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 300,
+   "location": {
+    "lat": 24.922491,
+    "lng": 121.0559
+   },
    "method": "osm",
    "name": "北湖站",
    "source": "https://www.openstreetmap.org/node/2016804222",
@@ -35,6 +44,10 @@
    "distance_m": 259,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.922121,
+    "lng": 121.0554
+   },
    "method": "official_data",
    "name": "北湖車站",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 95,
+   "location": {
+    "lat": 25.002065,
+    "lng": 121.548674
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4200643972",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/759096915",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 891,
+   "location": {
+    "lat": 25.001903,
+    "lng": 121.539023
+   },
    "method": "osm",
    "name": "捷運萬隆站",
    "source": "https://www.openstreetmap.org/node/3530915062",

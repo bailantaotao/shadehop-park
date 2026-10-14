@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 57,
+   "location": {
+    "lat": 25.118508,
+    "lng": 121.507662
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3448499594",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 25.11906,
+    "lng": 121.507698
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 248,
+   "location": {
+    "lat": 25.120905,
+    "lng": 121.50613
+   },
    "method": "osm",
    "name": "捷運唭哩岸站",
    "source": "https://www.openstreetmap.org/node/3495094880",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 225,
     "family_room": true,
+    "location": {
+     "lat": 25.120857,
+     "lng": 121.506443
+    },
     "name": "捷運唭哩岸站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.119342,
+    "lng": 121.508394
+   },
    "method": "official_data",
    "name": "臺北市立圖書館吉利分館6F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -869,7 +889,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

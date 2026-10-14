@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 142,
+   "location": {
+    "lat": 24.996599,
+    "lng": 121.515116
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2430739269",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1238511847",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 384,
+   "location": {
+    "lat": 24.99215,
+    "lng": 121.516173
+   },
    "method": "osm",
    "name": "捷運景平站",
    "source": "https://www.openstreetmap.org/node/2866571176",
@@ -35,6 +44,10 @@
    "distance_m": 242,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.993162,
+    "lng": 121.515277
+   },
    "method": "official_data",
    "name": "統一超商中和天城門市1F",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 98,
+   "location": {
+    "lat": 24.870856,
+    "lng": 121.033558
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5841086586",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/947708644",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/947708644",
@@ -35,6 +41,10 @@
    "distance_m": 158,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.869153,
+    "lng": 121.034572
+   },
    "method": "official_data",
    "name": "湖口鄉德厚宮",
    "source": "https://data.gov.tw/dataset/30794",

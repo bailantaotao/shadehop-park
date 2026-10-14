@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 116,
+   "location": {
+    "lat": 24.936141,
+    "lng": 121.297292
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272955",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/437912434",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/437912434",
@@ -35,6 +41,10 @@
    "distance_m": 97,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.937394,
+    "lng": 121.298686
+   },
    "method": "official_data",
    "name": "桃園市政府消防局防災教育館1F",
    "source": "https://data.gov.tw/dataset/30794",

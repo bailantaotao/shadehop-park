@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 97,
+   "location": {
+    "lat": 25.029628,
+    "lng": 121.50339
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3164110142",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/4409155123",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 631,
+   "location": {
+    "lat": 25.03344,
+    "lng": 121.499927
+   },
    "method": "osm",
    "name": "萬華站",
    "source": "https://www.openstreetmap.org/node/1273038428",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 216,
     "family_room": true,
+    "location": {
+     "lat": 25.026672,
+     "lng": 121.502942
+    },
     "name": "新和國小地下停車場"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.02746,
+    "lng": 121.502167
+   },
    "method": "official_data",
    "name": "萬華22號",
    "source": "https://data.gov.tw/dataset/30794",

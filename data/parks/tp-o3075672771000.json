@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 30,
+   "location": {
+    "lat": 25.045829,
+    "lng": 121.570179
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/5110348563",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 694,
+   "location": {
+    "lat": 25.041128,
+    "lng": 121.5661
+   },
    "method": "osm",
    "name": "捷運市政府站",
    "source": "https://www.openstreetmap.org/node/3512275767",
@@ -35,6 +44,10 @@
    "distance_m": 182,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.046742,
+    "lng": 121.572292
+   },
    "method": "official_data",
    "name": "統一超商臺北市松錢門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -856,7 +869,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

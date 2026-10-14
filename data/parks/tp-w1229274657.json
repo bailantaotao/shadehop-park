@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 184,
+   "location": {
+    "lat": 25.128265,
+    "lng": 121.472375
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4616488810",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1229274657",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 212,
+   "location": {
+    "lat": 25.130951,
+    "lng": 121.473374
+   },
    "method": "osm",
    "name": "捷運忠義站",
    "source": "https://www.openstreetmap.org/node/3495094884",
@@ -35,6 +44,10 @@
    "distance_m": 164,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.12834,
+    "lng": 121.47201
+   },
    "method": "official_data",
    "name": "和信治癌中心醫院1001",
    "source": "https://data.gov.tw/dataset/30794",

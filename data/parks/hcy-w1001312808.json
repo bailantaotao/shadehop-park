@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 298,
+   "location": {
+    "lat": 24.900067,
+    "lng": 121.055521
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7927398097",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1001312808",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1426,
+   "location": {
+    "lat": 24.902802,
+    "lng": 121.043748
+   },
    "method": "osm",
    "name": "湖口站",
    "source": "https://www.openstreetmap.org/node/418760121",

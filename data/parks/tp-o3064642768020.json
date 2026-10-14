@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 66,
+   "location": {
+    "lat": 25.018678,
+    "lng": 121.558946
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3554214093",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 95,
+   "location": {
+    "lat": 25.01864,
+    "lng": 121.5586
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 89,
+   "location": {
+    "lat": 25.018439,
+    "lng": 121.558905
+   },
    "method": "osm",
    "name": "捷運麟光站",
    "source": "https://www.openstreetmap.org/node/689442955",
@@ -35,6 +47,10 @@
    "distance_m": 74,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.018611,
+    "lng": 121.558903
+   },
    "method": "official_data",
    "name": "統一超商臺北市麟運門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -690,7 +706,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

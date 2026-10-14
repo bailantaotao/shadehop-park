@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 331,
+   "location": {
+    "lat": 25.033118,
+    "lng": 121.49166
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3806468028",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/254990764",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1069,
+   "location": {
+    "lat": 25.035284,
+    "lng": 121.499581
+   },
    "method": "osm",
    "name": "捷運龍山寺站",
    "source": "https://www.openstreetmap.org/node/3639530981",
@@ -35,6 +44,10 @@
    "distance_m": 29,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.034449,
+    "lng": 121.488436
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/11516238260",

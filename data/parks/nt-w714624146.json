@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 168,
+   "location": {
+    "lat": 25.127607,
+    "lng": 121.817104
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/5531069108",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/714624146",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/714624146",
@@ -35,6 +41,10 @@
    "distance_m": 40,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.129403,
+    "lng": 121.819399
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/9920709921",

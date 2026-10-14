@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 94,
+   "location": {
+    "lat": 25.084928,
+    "lng": 121.55622
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/1720014718",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 74,
+   "location": {
+    "lat": 25.086166,
+    "lng": 121.555237
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1238557276",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 102,
+   "location": {
+    "lat": 25.084849,
+    "lng": 121.555653
+   },
    "method": "osm",
    "name": "捷運劍南路站",
    "source": "https://www.openstreetmap.org/node/3497302610",
@@ -35,6 +47,10 @@
    "distance_m": 65,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.086179,
+    "lng": 121.555347
+   },
    "method": "official_data",
    "name": "中山8號",
    "source": "https://data.gov.tw/dataset/30794",
@@ -703,7 +719,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

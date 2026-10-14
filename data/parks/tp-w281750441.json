@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 211,
+   "location": {
+    "lat": 25.028494,
+    "lng": 121.557055
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4837986443",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 94,
+   "location": {
+    "lat": 25.028724,
+    "lng": 121.559441
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/281750441",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 527,
+   "location": {
+    "lat": 25.032979,
+    "lng": 121.562445
+   },
    "method": "osm",
    "name": "捷運台北101/世貿站",
    "source": "https://www.openstreetmap.org/node/9974435156",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 231,
     "family_room": true,
+    "location": {
+     "lat": 25.029014,
+     "lng": 121.561176
+    },
     "name": "臺北市立圖書館三興分館4F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.029554,
+    "lng": 121.557086
+   },
    "method": "official_data",
    "name": "大安7號",
    "source": "https://data.gov.tw/dataset/30794",

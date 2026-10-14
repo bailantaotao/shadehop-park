@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 272,
+   "location": {
+    "lat": 25.098487,
+    "lng": 121.532333
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4410824044",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 144,
+   "location": {
+    "lat": 25.095796,
+    "lng": 121.530564
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/777894244",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 639,
+   "location": {
+    "lat": 25.093495,
+    "lng": 121.526247
+   },
    "method": "osm",
    "name": "捷運士林站",
    "source": "https://www.openstreetmap.org/node/3495094876",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 208,
     "family_room": true,
+    "location": {
+     "lat": 25.094654,
+     "lng": 121.530461
+    },
     "name": "士林官邸4號"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.095994,
+    "lng": 121.530719
+   },
    "method": "official_data",
    "name": "福林公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -767,7 +787,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

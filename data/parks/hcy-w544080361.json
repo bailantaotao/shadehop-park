@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 77,
+   "location": {
+    "lat": 24.741338,
+    "lng": 121.090725
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7927395414",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/544080361",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 613,
+   "location": {
+    "lat": 24.738321,
+    "lng": 121.094903
+   },
    "method": "osm",
    "name": "竹東站",
    "source": "https://www.openstreetmap.org/node/1374041041",
@@ -35,6 +44,10 @@
    "distance_m": 291,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.739622,
+    "lng": 121.087777
+   },
    "method": "official_data",
    "name": "蕭如松藝術園區",
    "source": "https://data.gov.tw/dataset/30794",

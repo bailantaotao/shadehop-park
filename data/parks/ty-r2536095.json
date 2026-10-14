@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 24,
+   "location": {
+    "lat": 24.935152,
+    "lng": 121.297478
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/9462056831",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/2536095",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/2536095",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 238,
     "family_room": false,
+    "location": {
+     "lat": 24.937394,
+     "lng": 121.298686
+    },
     "name": "桃園市政府消防局防災教育館1F"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.934572,
+    "lng": 121.294421
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/13063772441",

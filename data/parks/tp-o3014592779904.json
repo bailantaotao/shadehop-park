@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 212,
+   "location": {
+    "lat": 25.126026,
+    "lng": 121.508212
+   },
    "method": "osm",
    "name": "奇岩商店",
    "source": "https://www.openstreetmap.org/node/2336797432",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 22,
+   "location": {
+    "lat": 25.12648,
+    "lng": 121.51059
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 755,
+   "location": {
+    "lat": 25.120905,
+    "lng": 121.50613
+   },
    "method": "osm",
    "name": "捷運唭哩岸站",
    "source": "https://www.openstreetmap.org/node/3495094880",
@@ -35,6 +47,10 @@
    "distance_m": 27,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.127005,
+    "lng": 121.51026
+   },
    "method": "official_data",
    "name": "丹鳳公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -693,7 +709,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

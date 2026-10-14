@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 186,
+   "location": {
+    "lat": 24.702014,
+    "lng": 121.05596
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/1516350452",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/364451437",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/364451437",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 251,
     "family_room": true,
+    "location": {
+     "lat": 24.699035,
+     "lng": 121.056588
+    },
     "name": "北埔老街(商圈內)-親子廁所(100)"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.700846,
+    "lng": 121.055324
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4552056918",

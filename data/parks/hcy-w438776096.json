@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 24.827056,
+    "lng": 121.067385
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/way/1296254269",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/438776096",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/438776096",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 216,
     "family_room": true,
+    "location": {
+     "lat": 24.826541,
+     "lng": 121.071
+    },
     "name": "新埔鎮公兒四公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.827569,
+    "lng": 121.068499
+   },
    "method": "official_data",
    "name": "台灣中油新埔加油站",
    "source": "https://data.gov.tw/dataset/30794",

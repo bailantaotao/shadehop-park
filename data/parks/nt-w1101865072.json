@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 288,
+   "location": {
+    "lat": 24.95383,
+    "lng": 121.537199
+   },
    "method": "osm",
    "name": "成興商店",
    "source": "https://www.openstreetmap.org/node/3821097949",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1101865072",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 757,
+   "location": {
+    "lat": 24.958067,
+    "lng": 121.537631
+   },
    "method": "osm",
    "name": "捷運新店站",
    "source": "https://www.openstreetmap.org/node/3461854239",
@@ -35,6 +44,10 @@
    "distance_m": 192,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.952779,
+    "lng": 121.537578
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/327779290",

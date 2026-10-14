@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 191,
+   "location": {
+    "lat": 25.008665,
+    "lng": 121.471315
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4147389964",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/345803330",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 534,
+   "location": {
+    "lat": 25.014531,
+    "lng": 121.472418
+   },
    "method": "osm",
    "name": "捷運板新站",
    "source": "https://www.openstreetmap.org/node/2866590585",
@@ -35,6 +44,10 @@
    "distance_m": 103,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.010554,
+    "lng": 121.469072
+   },
    "method": "official_data",
    "name": "板橋第一運動場場內簡報室",
    "source": "https://data.gov.tw/dataset/30794",
@@ -712,7 +725,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 24,
+   "location": {
+    "lat": 25.012525,
+    "lng": 121.456115
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3632423655",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 138,
+   "location": {
+    "lat": 25.011256,
+    "lng": 121.455537
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/317461748",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 481,
+   "location": {
+    "lat": 25.00877,
+    "lng": 121.45928
+   },
    "method": "osm",
    "name": "捷運府中站",
    "source": "https://www.openstreetmap.org/node/3639530943",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 70,
     "family_room": true,
+    "location": {
+     "lat": 25.013238,
+     "lng": 121.45655
+    },
     "name": "板橋體育館B1"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.012692,
+    "lng": 121.456524
+   },
    "method": "official_data",
    "name": "板橋區戶政事務所",
    "source": "https://data.gov.tw/dataset/30794",
@@ -886,7 +906,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

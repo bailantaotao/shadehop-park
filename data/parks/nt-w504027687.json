@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/504027687",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/504027687",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/504027687",
@@ -35,6 +38,10 @@
    "distance_m": 292,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.916366,
+    "lng": 121.547454
+   },
    "method": "official_data",
    "name": "中油屈尺加油站",
    "source": "https://data.gov.tw/dataset/30794",

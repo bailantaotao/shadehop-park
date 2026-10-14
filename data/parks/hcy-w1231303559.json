@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 138,
+   "location": {
+    "lat": 24.789286,
+    "lng": 121.183059
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3303552164",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1231303559",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1231303559",
@@ -35,6 +41,10 @@
    "distance_m": 150,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.789067,
+    "lng": 121.184303
+   },
    "method": "official_data",
    "name": "關西鎮鳴鳳公園",
    "source": "https://data.gov.tw/dataset/30794",

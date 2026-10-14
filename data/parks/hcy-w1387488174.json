@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 24.828688,
+    "lng": 121.006599
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4367773942",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1387488174",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1244,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",

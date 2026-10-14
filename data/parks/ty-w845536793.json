@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 265,
+   "location": {
+    "lat": 24.937203,
+    "lng": 121.306087
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5455666199",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/845536793",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/845536793",
@@ -35,6 +41,10 @@
    "distance_m": 267,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.937183,
+    "lng": 121.306075
+   },
    "method": "official_data",
    "name": "八德區統一超商榮興店",
    "source": "https://data.gov.tw/dataset/30794",

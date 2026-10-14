@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 100,
+   "location": {
+    "lat": 25.027223,
+    "lng": 121.545843
+   },
    "method": "osm",
    "name": "家樂福超市",
    "source": "https://www.openstreetmap.org/node/2410011026",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 156,
+   "location": {
+    "lat": 25.026134,
+    "lng": 121.543472
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/618387944",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 159,
+   "location": {
+    "lat": 25.026101,
+    "lng": 121.54346
+   },
    "method": "osm",
    "name": "捷運科技大樓站",
    "source": "https://www.openstreetmap.org/node/3497302604",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 182,
     "family_room": true,
+    "location": {
+     "lat": 25.026046,
+     "lng": 121.543212
+    },
     "name": "科技大樓地下停車場B1"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.026589,
+    "lng": 121.543674
+   },
    "method": "official_data",
    "name": "爭鮮科技店",
    "source": "https://data.gov.tw/dataset/30794",

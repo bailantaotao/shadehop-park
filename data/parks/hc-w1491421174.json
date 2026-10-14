@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 126,
+   "location": {
+    "lat": 24.768942,
+    "lng": 120.97726
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4845036332",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1491421174",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1491421174",
@@ -35,6 +41,10 @@
    "distance_m": 70,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.769145,
+    "lng": 120.978248
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1491421186",

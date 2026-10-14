@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 104,
+   "location": {
+    "lat": 24.945167,
+    "lng": 121.229298
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9279741208",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1391751105",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1044,
+   "location": {
+    "lat": 24.953317,
+    "lng": 121.22616
+   },
    "method": "osm",
    "name": "中壢站",
    "source": "https://www.openstreetmap.org/node/247059970",
@@ -35,6 +44,10 @@
    "distance_m": 16,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.944367,
+    "lng": 121.230126
+   },
    "method": "official_data",
    "name": "台灣中油龍岡站",
    "source": "https://data.gov.tw/dataset/30794",

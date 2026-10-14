@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 10,
+   "location": {
+    "lat": 25.049771,
+    "lng": 121.48078
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/323394361",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344208112",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 413,
+   "location": {
+    "lat": 25.054664,
+    "lng": 121.482813
+   },
    "method": "osm",
    "name": "捷運三重站",
    "source": "https://www.openstreetmap.org/node/4653351593",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 140,
     "family_room": false,
+    "location": {
+     "lat": 25.049112,
+     "lng": 121.478604
+    },
     "name": "重新橋第2市民活動中心-性平友善"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.049625,
+    "lng": 121.480836
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4483244395",
@@ -786,7 +803,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 376,
+   "location": {
+    "lat": 24.969991,
+    "lng": 121.260984
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9351908811",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1020165599",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 504,
+   "location": {
+    "lat": 24.97256,
+    "lng": 121.258353
+   },
    "method": "osm",
    "name": "內壢站",
    "source": "https://www.openstreetmap.org/node/1255618458",

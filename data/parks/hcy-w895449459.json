@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 423,
+   "location": {
+    "lat": 24.860335,
+    "lng": 121.008014
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3305091608",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/895449459",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1001,
+   "location": {
+    "lat": 24.869277,
+    "lng": 120.996534
+   },
    "method": "osm",
    "name": "新豐站",
    "source": "https://www.openstreetmap.org/node/418760215",

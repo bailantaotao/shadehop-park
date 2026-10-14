@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 298,
+   "location": {
+    "lat": 24.861525,
+    "lng": 121.206637
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1046197294",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1013976641",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1013976641",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 244,
     "family_room": false,
+    "location": {
+     "lat": 24.861581,
+     "lng": 121.211742
+    },
     "name": "龍潭區老人文康活動中心旁"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.860277,
+    "lng": 121.209679
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/12753556890",
@@ -626,7 +640,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:44+00:00",
+   "as_of": "2026-10-14T15:15:57+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"

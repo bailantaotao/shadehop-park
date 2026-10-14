@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 263,
+   "location": {
+    "lat": 24.819816,
+    "lng": 120.961281
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2078334548",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1471852900",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1471852900",
@@ -35,6 +41,10 @@
    "distance_m": 133,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.82072,
+    "lng": 120.96037
+   },
    "method": "official_data",
    "name": "新竹市士林公有零售市場",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 216,
+   "location": {
+    "lat": 25.061114,
+    "lng": 121.19417
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/10708222647",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1494520576",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1494520576",
@@ -35,6 +41,10 @@
    "distance_m": 22,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.05874,
+    "lng": 121.194292
+   },
    "method": "official_data",
    "name": "華興池生態埤塘公園",
    "source": "https://data.gov.tw/dataset/30794",

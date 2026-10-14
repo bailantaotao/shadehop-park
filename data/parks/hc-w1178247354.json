@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 81,
+   "location": {
+    "lat": 24.798068,
+    "lng": 120.996742
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2626124603",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1178247354",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1070,
+   "location": {
+    "lat": 24.806617,
+    "lng": 121.00341
+   },
    "method": "osm",
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 255,
     "family_room": false,
+    "location": {
+     "lat": 24.80063,
+     "lng": 120.99869
+    },
     "name": "建功國小對面"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.796924,
+    "lng": 120.997597
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/2761345332",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 200,
+   "location": {
+    "lat": 24.701206,
+    "lng": 121.057422
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3678483689",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/364451418",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/364451418",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 273,
     "family_room": true,
+    "location": {
+     "lat": 24.699035,
+     "lng": 121.056588
+    },
     "name": "北埔老街(商圈內)-親子廁所(100)"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.70097,
+    "lng": 121.058961
+   },
    "method": "official_data",
    "name": "北埔鄉秀鑾公園",
    "source": "https://data.gov.tw/dataset/30794",

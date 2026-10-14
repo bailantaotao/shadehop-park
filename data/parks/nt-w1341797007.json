@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 168,
+   "location": {
+    "lat": 25.090395,
+    "lng": 121.441905
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10211003184",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1341797007",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1341797007",
@@ -35,6 +41,10 @@
    "distance_m": 162,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.090513,
+    "lng": 121.442033
+   },
    "method": "official_data",
    "name": "成泰市民活動中心",
    "source": "https://data.gov.tw/dataset/30794",

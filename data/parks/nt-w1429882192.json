@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 166,
+   "location": {
+    "lat": 25.038496,
+    "lng": 121.423892
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9459956813",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1429882192",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 533,
+   "location": {
+    "lat": 25.033345,
+    "lng": 121.422963
+   },
    "method": "osm",
    "name": "捷運泰山貴和站",
    "source": "https://www.openstreetmap.org/node/4653351598",
@@ -35,6 +44,10 @@
    "distance_m": 234,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.039969,
+    "lng": 121.423446
+   },
    "method": "official_data",
    "name": "泰山貴子圖書館3F",
    "source": "https://data.gov.tw/dataset/30794",

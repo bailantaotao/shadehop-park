@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1495317755",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1495317755",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1495317755",
@@ -35,6 +38,10 @@
    "distance_m": 18,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.093423,
+    "lng": 121.197296
+   },
    "method": "official_data",
    "name": "圳頭軍史公園",
    "source": "https://data.gov.tw/dataset/30794",

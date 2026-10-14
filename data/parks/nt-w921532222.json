@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 136,
+   "location": {
+    "lat": 25.013916,
+    "lng": 121.460123
+   },
    "method": "osm",
    "name": "22 King",
    "source": "https://www.openstreetmap.org/node/13610786115",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/921532222",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 367,
+   "location": {
+    "lat": 25.014499,
+    "lng": 121.462992
+   },
    "method": "osm",
    "name": "捷運板橋站",
    "source": "https://www.openstreetmap.org/node/3639530948",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 79,
     "family_room": false,
+    "location": {
+     "lat": 25.012426,
+     "lng": 121.460769
+    },
     "name": "萬坪公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.012511,
+    "lng": 121.460651
+   },
    "method": "official_data",
    "name": "萬坪公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -1039,7 +1056,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

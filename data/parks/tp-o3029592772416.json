@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 34,
+   "location": {
+    "lat": 25.058623,
+    "lng": 121.525062
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2124843065",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 10,
+   "location": {
+    "lat": 25.058863,
+    "lng": 121.525055
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 430,
+   "location": {
+    "lat": 25.062674,
+    "lng": 121.526598
+   },
    "method": "osm",
    "name": "捷運中山國小站",
    "source": "https://www.openstreetmap.org/node/3812564391",
@@ -35,6 +47,10 @@
    "distance_m": 23,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.059287,
+    "lng": 121.524744
+   },
    "method": "official_data",
    "name": "永盛公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -869,7 +885,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

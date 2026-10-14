@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 89,
+   "location": {
+    "lat": 25.082804,
+    "lng": 121.519397
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3835835239",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 8,
+   "location": {
+    "lat": 25.082896,
+    "lng": 121.520479
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/855924391",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 487,
+   "location": {
+    "lat": 25.084291,
+    "lng": 121.524981
+   },
    "method": "osm",
    "name": "捷運劍潭站",
    "source": "https://www.openstreetmap.org/node/3495094875",
@@ -35,6 +47,10 @@
    "distance_m": 63,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.083272,
+    "lng": 121.52088
+   },
    "method": "official_data",
    "name": "華齡公園景觀",
    "source": "https://data.gov.tw/dataset/30794",

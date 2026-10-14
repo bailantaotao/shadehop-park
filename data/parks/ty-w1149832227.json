@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1149832227",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1149832227",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 760,
+   "location": {
+    "lat": 25.036492,
+    "lng": 121.215796
+   },
    "method": "osm",
    "name": "捷運橫山站",
    "source": "https://www.openstreetmap.org/node/1257929926",

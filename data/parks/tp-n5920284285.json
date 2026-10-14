@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 25.030999,
+    "lng": 121.515801
+   },
    "method": "osm",
    "name": "心心便利超商",
    "source": "https://www.openstreetmap.org/node/3522084132",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 158,
+   "location": {
+    "lat": 25.029582,
+    "lng": 121.515008
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/5920284285",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 375,
+   "location": {
+    "lat": 25.033696,
+    "lng": 121.517545
+   },
    "method": "osm",
    "name": "捷運中正紀念堂站",
    "source": "https://www.openstreetmap.org/node/3494960750",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 121,
     "family_room": true,
+    "location": {
+     "lat": 25.031614,
+     "lng": 121.513793
+    },
     "name": "二二八國家紀念館"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.03158,
+    "lng": 121.51476
+   },
    "method": "official_data",
    "name": "郵政博物館2樓",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 274,
+   "location": {
+    "lat": 24.809812,
+    "lng": 120.967993
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3488634353",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 108,
+   "location": {
+    "lat": 24.811193,
+    "lng": 120.968694
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/340654107",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1192,
+   "location": {
+    "lat": 24.801403,
+    "lng": 120.971678
+   },
    "method": "osm",
    "name": "新竹站",
    "source": "https://www.openstreetmap.org/node/3372916575",
@@ -35,6 +47,10 @@
    "distance_m": 10,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.81204,
+    "lng": 120.96979
+   },
    "method": "official_data",
    "name": "黑蝙蝠中隊文物陳列館",
    "source": "https://data.gov.tw/dataset/30794",
@@ -775,7 +791,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

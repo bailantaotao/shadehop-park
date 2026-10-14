@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 200,
+   "location": {
+    "lat": 24.973498,
+    "lng": 121.529902
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2938450958",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 98,
+   "location": {
+    "lat": 24.971988,
+    "lng": 121.530319
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1467747007",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 115,
+   "location": {
+    "lat": 24.97177,
+    "lng": 121.530599
+   },
    "method": "osm",
    "name": "捷運小碧潭站",
    "source": "https://www.openstreetmap.org/node/3800658231",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 161,
     "family_room": false,
+    "location": {
+     "lat": 24.975418,
+     "lng": 121.527264
+    },
     "name": "中央公有市場東側1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.971791,
+    "lng": 121.529088
+   },
    "method": "official_data",
    "name": "小碧潭景觀",
    "source": "https://data.gov.tw/dataset/30794",

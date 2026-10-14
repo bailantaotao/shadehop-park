@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 26,
+   "location": {
+    "lat": 24.969045,
+    "lng": 121.298772
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5104411931",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/10180459",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/10180459",
@@ -35,6 +41,10 @@
    "distance_m": 109,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.965038,
+    "lng": 121.29907
+   },
    "method": "official_data",
    "name": "迪卡儂1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -196,7 +206,7 @@
    "name": "廣豐一停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -272,7 +282,7 @@
    "name": "永福停車場(八德)",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -310,7 +320,7 @@
    "name": "公二地下公有停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -348,7 +358,7 @@
    "name": "廣豐二停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -944,7 +954,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

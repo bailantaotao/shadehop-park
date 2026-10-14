@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 34,
+   "location": {
+    "lat": 24.778597,
+    "lng": 121.010643
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/1477987189",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 24.780224,
+    "lng": 121.013964
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/94874393",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1108,
+   "location": {
+    "lat": 24.788093,
+    "lng": 121.021958
+   },
    "method": "osm",
    "name": "新莊站",
    "source": "https://www.openstreetmap.org/node/1553495847",
@@ -35,6 +47,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.78011,
+    "lng": 121.01382
+   },
    "method": "official_data",
    "name": "靜心湖",
    "source": "https://data.gov.tw/dataset/30794",
@@ -739,7 +755,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

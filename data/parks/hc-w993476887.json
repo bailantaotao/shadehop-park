@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/993476887",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/993476887",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 314,
+   "location": {
+    "lat": 24.806617,
+    "lng": 121.00341
+   },
    "method": "osm",
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
@@ -35,6 +41,10 @@
    "distance_m": 286,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.80671,
+    "lng": 121.00315
+   },
    "method": "official_data",
    "name": "千甲火車站",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 40,
+   "location": {
+    "lat": 25.110412,
+    "lng": 121.793356
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/2847608017",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1150627250",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1226,
+   "location": {
+    "lat": 25.109011,
+    "lng": 121.806558
+   },
    "method": "osm",
    "name": "瑞芳站",
    "source": "https://www.openstreetmap.org/node/289131555",
@@ -35,6 +44,10 @@
    "distance_m": 47,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.11039,
+    "lng": 121.79483
+   },
    "method": "official_data",
    "name": "中油瑞泉加油站",
    "source": "https://data.gov.tw/dataset/30794",

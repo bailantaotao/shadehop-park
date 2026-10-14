@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/442389082",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/442389082",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/442389082",
@@ -35,6 +38,10 @@
    "distance_m": 5,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.078163,
+    "lng": 121.853652
+   },
    "method": "official_data",
    "name": "三貂十三層清水公園",
    "source": "https://data.gov.tw/dataset/30794",

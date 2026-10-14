@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 369,
+   "location": {
+    "lat": 25.214984,
+    "lng": 121.644186
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6578475284",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/921797821",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/921797821",
@@ -35,6 +41,10 @@
    "distance_m": 160,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.216928,
+    "lng": 121.649768
+   },
    "method": "official_data",
    "name": "下社老人活動中心",
    "source": "https://data.gov.tw/dataset/30794",

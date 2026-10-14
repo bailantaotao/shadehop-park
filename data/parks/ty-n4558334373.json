@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4558334373",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/4558334373",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1413,
+   "location": {
+    "lat": 24.822616,
+    "lng": 121.181164
+   },
    "method": "osm",
    "name": "蒸汽火車站",
    "source": "https://www.openstreetmap.org/way/469657863",
@@ -35,6 +41,10 @@
    "distance_m": 97,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.835808,
+    "lng": 121.178748
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4558258888",

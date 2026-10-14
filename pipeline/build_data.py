@@ -345,11 +345,12 @@ class Builder:
             o = t[1].get("official")
             if o:
                 return {"distance_m": int(round(t[0])), "name": o["name"], "family_room": "親子廁所" in o["types"],
-                        "changing_table": o["diaper"] > 0, "accessible": "無障礙廁所" in o["types"], "category": o["category"]}
+                        "changing_table": o["diaper"] > 0, "accessible": "無障礙廁所" in o["types"], "category": o["category"],
+                        "location": self._latlng(t[1]["geom"])}
             tg = t[1]["tags"]
             return {"distance_m": int(round(t[0])), "name": tg.get("name"), "family_room": None,
                     "changing_table": tg.get("changing_table") == "yes" or None, "accessible": tg.get("wheelchair") == "yes" or None,
-                    "category": None}
+                    "category": None, "location": self._latlng(t[1]["geom"])}
         if not toilets:
             return fact(None, "osm", d, "low", src, distance_m=None, changing_table=None,
                         note=f"{config.TOILET_RADIUS_M}m 內沒有登記或標示的公廁；不代表沒有")
@@ -618,15 +619,18 @@ class Builder:
         amenities = {
             "toilet": self._toilet_fact(toilets, d, src),
             "drinking_water": fact(bool(water) or None, "osm", d, "medium" if water else "low", src,
-                                   distance_m=int(round(water[0][0])) if water else None),
+                                   distance_m=int(round(water[0][0])) if water else None,
+                                   location=self._latlng(water[0][1]["geom"]) if water else None),
             "convenience_store": fact(bool(shops) or None, "osm", d, "medium" if shops else "low",
                                       osm_ref(shops[0][1]["el"])["url"] if shops else src,
                                       distance_m=int(round(shops[0][0])) if shops else None,
-                                      name=_shop_name(shops[0][1]["tags"]) if shops else None),
+                                      name=_shop_name(shops[0][1]["tags"]) if shops else None,
+                                      location=self._latlng(shops[0][1]["geom"]) if shops else None),
             "station": fact(bool(stations) or None, "osm", d, "medium" if stations else "low",
                             osm_ref(stations[0][1]["el"])["url"] if stations else src,
                             distance_m=int(round(stations[0][0])) if stations else None,
-                            name=_station_name(stations[0][1]["tags"]) if stations else None),
+                            name=_station_name(stations[0][1]["tags"]) if stations else None,
+                            location=self._latlng(stations[0][1]["geom"]) if stations else None),
         }
 
         loc = self._latlng(item["geom"])

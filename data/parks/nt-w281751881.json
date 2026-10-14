@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 193,
+   "location": {
+    "lat": 25.005374,
+    "lng": 121.465333
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9424219899",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/281751881",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 863,
+   "location": {
+    "lat": 25.00877,
+    "lng": 121.45928
+   },
    "method": "osm",
    "name": "捷運府中站",
    "source": "https://www.openstreetmap.org/node/3639530943",
@@ -35,6 +44,10 @@
    "distance_m": 157,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.006426,
+    "lng": 121.465798
+   },
    "method": "official_data",
    "name": "新北市市定古蹟台北放送局板橋放送所",
    "source": "https://data.gov.tw/dataset/30794",

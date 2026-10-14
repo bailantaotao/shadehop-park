@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 173,
+   "location": {
+    "lat": 25.001555,
+    "lng": 121.542527
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/5924195085",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 13,
+   "location": {
+    "lat": 25.002429,
+    "lng": 121.54437
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/671617012",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 508,
+   "location": {
+    "lat": 25.001903,
+    "lng": 121.539023
+   },
    "method": "osm",
    "name": "捷運萬隆站",
    "source": "https://www.openstreetmap.org/node/3530915062",
@@ -35,6 +47,10 @@
    "distance_m": 59,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.002953,
+    "lng": 121.544273
+   },
    "method": "official_data",
    "name": "景美運動公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -888,7 +904,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

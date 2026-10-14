@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4279961090",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/4279961090",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/4279961090",
@@ -35,6 +38,10 @@
    "distance_m": 109,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.86933,
+    "lng": 120.979548
+   },
    "method": "official_data",
    "name": "小叮噹科學遊樂區(游泳池)",
    "source": "https://data.gov.tw/dataset/30794",

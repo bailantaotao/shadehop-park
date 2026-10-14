@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 162,
+   "location": {
+    "lat": 25.002084,
+    "lng": 121.363923
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4155481668",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 10,
+   "location": {
+    "lat": 25.003464,
+    "lng": 121.365935
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/624673144",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/624673144",
@@ -35,6 +44,10 @@
    "distance_m": 18,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.003399,
+    "lng": 121.365987
+   },
    "method": "official_data",
    "name": "龜山區壽山巖觀音寺",
    "source": "https://data.gov.tw/dataset/30794",

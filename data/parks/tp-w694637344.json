@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 173,
+   "location": {
+    "lat": 25.117444,
+    "lng": 121.512974
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3849103543",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/694637344",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 348,
+   "location": {
+    "lat": 25.114607,
+    "lng": 121.515523
+   },
    "method": "osm",
    "name": "捷運石牌站",
    "source": "https://www.openstreetmap.org/node/3495094879",
@@ -35,6 +44,10 @@
    "distance_m": 159,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.114627,
+    "lng": 121.513148
+   },
    "method": "official_data",
    "name": "石牌國小地下停車場",
    "source": "https://data.gov.tw/dataset/30794",

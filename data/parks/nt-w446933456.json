@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 460,
+   "location": {
+    "lat": 25.058206,
+    "lng": 121.472333
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/11641153054",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/446933456",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 929,
+   "location": {
+    "lat": 25.054664,
+    "lng": 121.482813
+   },
    "method": "osm",
    "name": "捷運三重站",
    "source": "https://www.openstreetmap.org/node/4653351593",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 198,
     "family_room": true,
+    "location": {
+     "lat": 25.062561,
+     "lng": 121.47701
+    },
     "name": "幸福水漾公園(疏洪)"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.061145,
+    "lng": 121.476073
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/8224414303",

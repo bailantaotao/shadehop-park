@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 248,
+   "location": {
+    "lat": 24.987977,
+    "lng": 121.181439
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1135834645",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/620119020",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/620119020",
@@ -35,6 +41,10 @@
    "distance_m": 187,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.988837,
+    "lng": 121.181242
+   },
    "method": "official_data",
    "name": "中壢區大崙崇德宮",
    "source": "https://data.gov.tw/dataset/30794",

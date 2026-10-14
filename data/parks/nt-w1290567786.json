@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1290567786",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1290567786",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1290567786",
@@ -35,6 +38,10 @@
    "distance_m": 108,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.196029,
+    "lng": 121.68663
+   },
    "method": "official_data",
    "name": "龜吼停車場",
    "source": "https://data.gov.tw/dataset/30794",

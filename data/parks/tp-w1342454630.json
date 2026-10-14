@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 205,
+   "location": {
+    "lat": 25.109,
+    "lng": 121.518805
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3744245327",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 160,
+   "location": {
+    "lat": 25.107594,
+    "lng": 121.52195
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1342454630",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 284,
+   "location": {
+    "lat": 25.109859,
+    "lng": 121.518769
+   },
    "method": "osm",
    "name": "捷運明德站",
    "source": "https://www.openstreetmap.org/node/3495094878",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 162,
     "family_room": false,
+    "location": {
+     "lat": 25.106151,
+     "lng": 121.520522
+    },
     "name": "建民公園景觀公"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.106913,
+    "lng": 121.52172
+   },
    "method": "official_data",
    "name": "克強公園景觀公廁",
    "source": "https://data.gov.tw/dataset/30794",

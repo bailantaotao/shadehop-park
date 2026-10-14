@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 79,
+   "location": {
+    "lat": 24.972289,
+    "lng": 121.394038
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9717369815",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 161,
+   "location": {
+    "lat": 24.972611,
+    "lng": 121.39261
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/232864095",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 169,
+   "location": {
+    "lat": 24.972689,
+    "lng": 121.392587
+   },
    "method": "osm",
    "name": "山佳站",
    "source": "https://www.openstreetmap.org/node/4802842932",
@@ -35,6 +47,10 @@
    "distance_m": 18,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.971573,
+    "lng": 121.39466
+   },
    "method": "official_data",
    "name": "樹林地政事務所1F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -650,7 +666,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

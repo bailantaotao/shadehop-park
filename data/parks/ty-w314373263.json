@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 123,
+   "location": {
+    "lat": 24.939043,
+    "lng": 121.085924
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1427723275",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/314373263",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 700,
+   "location": {
+    "lat": 24.93409,
+    "lng": 121.082822
+   },
    "method": "osm",
    "name": "富岡站",
    "source": "https://www.openstreetmap.org/node/2387066709",
@@ -35,6 +44,10 @@
    "distance_m": 258,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.938575,
+    "lng": 121.084708
+   },
    "method": "official_data",
    "name": "楊梅區伯公岡公園",
    "source": "https://data.gov.tw/dataset/30794",

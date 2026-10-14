@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 101,
+   "location": {
+    "lat": 25.026588,
+    "lng": 121.546936
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5835453711",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 94,
+   "location": {
+    "lat": 25.025409,
+    "lng": 121.545388
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/618387943",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 238,
+   "location": {
+    "lat": 25.026101,
+    "lng": 121.54346
+   },
    "method": "osm",
    "name": "捷運科技大樓站",
    "source": "https://www.openstreetmap.org/node/3497302604",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 264,
     "family_room": true,
+    "location": {
+     "lat": 25.026046,
+     "lng": 121.543212
+    },
     "name": "科技大樓地下停車場B1"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.025504,
+    "lng": 121.545281
+   },
    "method": "official_data",
    "name": "臺北市立圖書館成功閱覽室",
    "source": "https://data.gov.tw/dataset/30794",

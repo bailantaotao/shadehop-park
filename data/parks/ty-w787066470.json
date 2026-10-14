@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 84,
+   "location": {
+    "lat": 25.020643,
+    "lng": 121.410971
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4153948146",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/787066470",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 268,
+   "location": {
+    "lat": 25.022079,
+    "lng": 121.411902
+   },
    "method": "osm",
    "name": "捷運迴龍站",
    "source": "https://www.openstreetmap.org/node/3812564425",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 267,
     "family_room": false,
+    "location": {
+     "lat": 25.020357,
+     "lng": 121.407959
+    },
     "name": "樂生療養院迴龍院區1F(小兒科)"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.019368,
+    "lng": 121.408712
+   },
    "method": "official_data",
    "name": "桃園市立圖書館迴龍分館4F",
    "source": "https://data.gov.tw/dataset/30794",

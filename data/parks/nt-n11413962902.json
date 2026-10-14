@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/11413962902",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/11413962902",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1087,
+   "location": {
+    "lat": 24.993786,
+    "lng": 121.505046
+   },
    "method": "osm",
    "name": "捷運景安站",
    "source": "https://www.openstreetmap.org/node/3812564403",
@@ -35,6 +41,10 @@
    "distance_m": 197,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.9873,
+    "lng": 121.4997
+   },
    "method": "official_data",
    "name": "中興公園",
    "source": "https://data.gov.tw/dataset/30794",

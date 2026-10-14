@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 375,
+   "location": {
+    "lat": 24.948327,
+    "lng": 121.499585
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/2177300268",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/2177296941",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 888,
+   "location": {
+    "lat": 24.95092,
+    "lng": 121.49406
+   },
    "method": "osm",
    "name": "玫瑰中國城站",
    "source": "https://www.openstreetmap.org/node/8041597970",
@@ -35,6 +44,10 @@
    "distance_m": 225,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.942835,
+    "lng": 121.499176
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/535171415",

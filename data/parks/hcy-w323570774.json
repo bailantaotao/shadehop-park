@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 42,
+   "location": {
+    "lat": 24.82647,
+    "lng": 121.009584
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3303552647",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323570774",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1445,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 205,
     "family_room": false,
+    "location": {
+     "lat": 24.827645,
+     "lng": 121.010982
+    },
     "name": "新竹縣政府前棟3F(法制科)"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.826059,
+    "lng": 121.010602
+   },
    "method": "official_data",
    "name": "肯德基竹北店",
    "source": "https://data.gov.tw/dataset/30794",

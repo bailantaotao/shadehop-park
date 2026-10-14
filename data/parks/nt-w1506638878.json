@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 108,
+   "location": {
+    "lat": 25.289516,
+    "lng": 121.549486
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10976173325",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1506638878",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1506638878",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 27,
     "family_room": false,
+    "location": {
+     "lat": 25.290253,
+     "lng": 121.548775
+    },
     "name": "風箏公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.290195,
+    "lng": 121.548282
+   },
    "method": "official_data",
    "name": "風箏公園停車場",
    "source": "https://data.gov.tw/dataset/30794",

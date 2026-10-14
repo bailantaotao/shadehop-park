@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 200,
+   "location": {
+    "lat": 25.031281,
+    "lng": 121.495661
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9377991071",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 26,
+   "location": {
+    "lat": 25.032466,
+    "lng": 121.497068
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 296,
+   "location": {
+    "lat": 25.03344,
+    "lng": 121.499927
+   },
    "method": "osm",
    "name": "萬華站",
    "source": "https://www.openstreetmap.org/node/1273038428",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 276,
     "family_room": false,
+    "location": {
+     "lat": 25.033494,
+     "lng": 121.499704
+    },
     "name": "萬華車站地下停車場"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.033532,
+    "lng": 121.498397
+   },
    "method": "official_data",
    "name": "統一星巴克艋舺門市1樓",
    "source": "https://data.gov.tw/dataset/30794",
@@ -949,7 +969,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

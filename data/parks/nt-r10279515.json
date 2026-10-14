@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 27,
+   "location": {
+    "lat": 25.20497,
+    "lng": 121.689854
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3725892476",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 132,
+   "location": {
+    "lat": 25.205284,
+    "lng": 121.688337
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/10279515",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/10279515",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 55,
     "family_room": false,
+    "location": {
+     "lat": 25.2053,
+     "lng": 121.6911
+    },
     "name": "野柳海洋世界-2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.205291,
+    "lng": 121.689928
+   },
    "method": "official_data",
    "name": "野柳地質公園(出口)",
    "source": "https://data.gov.tw/dataset/30794",

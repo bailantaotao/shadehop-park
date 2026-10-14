@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 302,
+   "location": {
+    "lat": 25.177116,
+    "lng": 121.425717
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2993729162",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 79,
+   "location": {
+    "lat": 25.179105,
+    "lng": 121.429302
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/289704901",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1139,
+   "location": {
+    "lat": 25.182005,
+    "lng": 121.418612
+   },
    "method": "osm",
    "name": "淡水漁人碼頭站",
    "source": "https://www.openstreetmap.org/node/8043755931",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 30,
     "family_room": false,
+    "location": {
+     "lat": 25.178538,
+     "lng": 121.431268
+    },
     "name": "滬尾砲台"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.17835,
+    "lng": 121.430399
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/292146413",
@@ -792,13 +812,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 15,
+   "location": {
+    "lat": 25.03997,
+    "lng": 121.452121
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2782992086",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 25.042184,
+    "lng": 121.450542
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/225901789",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 436,
+   "location": {
+    "lat": 25.036333,
+    "lng": 121.453359
+   },
    "method": "osm",
    "name": "捷運新莊站",
    "source": "https://www.openstreetmap.org/node/3812564402",
@@ -35,6 +47,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.039066,
+    "lng": 121.447886
+   },
    "method": "official_data",
    "name": "新莊國民運動中心3F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -916,7 +932,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

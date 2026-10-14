@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 19,
+   "location": {
+    "lat": 25.061598,
+    "lng": 121.525088
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4393509720",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 8,
+   "location": {
+    "lat": 25.061628,
+    "lng": 121.52498
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 205,
+   "location": {
+    "lat": 25.062674,
+    "lng": 121.526598
+   },
    "method": "osm",
    "name": "捷運中山國小站",
    "source": "https://www.openstreetmap.org/node/3812564391",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 205,
     "family_room": false,
+    "location": {
+     "lat": 25.063451,
+     "lng": 121.525526
+    },
     "name": "聯合醫院林森中醫院區2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.062498,
+    "lng": 121.52536
+   },
    "method": "official_data",
    "name": "摩斯漢堡民權林森店",
    "source": "https://data.gov.tw/dataset/30794",
@@ -851,7 +871,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

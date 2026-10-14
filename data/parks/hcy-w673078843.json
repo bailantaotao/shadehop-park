@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 22,
+   "location": {
+    "lat": 24.898736,
+    "lng": 121.042716
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6315690336",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/673078843",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 443,
+   "location": {
+    "lat": 24.902802,
+    "lng": 121.043748
+   },
    "method": "osm",
    "name": "湖口站",
    "source": "https://www.openstreetmap.org/node/418760121",
@@ -35,6 +44,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.897453,
+    "lng": 121.042149
+   },
    "method": "official_data",
    "name": "湖口鄉王爺壟運動公園",
    "source": "https://data.gov.tw/dataset/30794",

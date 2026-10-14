@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 86,
+   "location": {
+    "lat": 25.073201,
+    "lng": 121.611745
+   },
    "method": "osm",
    "name": "便利商店",
    "source": "https://www.openstreetmap.org/node/10715882405",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 3,
+   "location": {
+    "lat": 25.073823,
+    "lng": 121.610877
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/3232509990",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 378,
+   "location": {
+    "lat": 25.072639,
+    "lng": 121.607363
+   },
    "method": "osm",
    "name": "捷運葫洲站",
    "source": "https://www.openstreetmap.org/node/3501186377",
@@ -35,6 +47,10 @@
    "distance_m": 111,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.072708,
+    "lng": 121.610764
+   },
    "method": "official_data",
    "name": "統一超商臺北市晏揚門市",
    "source": "https://data.gov.tw/dataset/30794",

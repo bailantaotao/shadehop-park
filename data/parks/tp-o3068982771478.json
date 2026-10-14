@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 37,
+   "location": {
+    "lat": 25.050483,
+    "lng": 121.564379
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3045739914",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 0,
+   "location": {
+    "lat": 25.0505,
+    "lng": 121.563892
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 110,
+   "location": {
+    "lat": 25.051428,
+    "lng": 121.564306
+   },
    "method": "osm",
    "name": "捷運南京三民站",
    "source": "https://www.openstreetmap.org/node/3812564394",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 157,
     "family_room": true,
+    "location": {
+     "lat": 25.051613,
+     "lng": 121.564909
+    },
     "name": "捷運南京三民站站內"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.051347,
+    "lng": 121.563902
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3939158378",
@@ -1021,7 +1041,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

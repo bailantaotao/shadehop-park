@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 53,
+   "location": {
+    "lat": 25.049714,
+    "lng": 121.298358
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272905",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1058276141",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1058276141",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 199,
     "family_room": false,
+    "location": {
+     "lat": 25.050876,
+     "lng": 121.297681
+    },
     "name": "南崁兒童藝術村"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.047243,
+    "lng": 121.299719
+   },
    "method": "official_data",
    "name": "龜山區台亞石油全鋒中悅加油站",
    "source": "https://data.gov.tw/dataset/30794",

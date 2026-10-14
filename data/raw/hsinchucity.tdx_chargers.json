@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Hsinchu",
  "count": null,
- "fetched_at": "2026-10-14T14:06:46+00:00",
+ "fetched_at": "2026-10-14T15:16:59+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucity",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-14T21:55:36+08:00",
+ "src_update_time": "2026-10-14T22:35:36+08:00",
  "stations": [
   {
    "charging_points": 1,
@@ -595,37 +595,6 @@
    "spaces": 2
   },
   {
-   "charging_points": 3,
-   "charging_rate": "計度/固定/6元每度,計度/固定/8元每度",
-   "connectors": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "type": "type2"
-    },
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    }
-   ],
-   "description": "停車位:3 充電樁數量:3 停車費:Free (依現場為準) 費率:計度/固定/6元每度,計度/固定/8元每度 樓層:1F, 1F",
-   "floors": "1F, 1F",
-   "id": "90807408-SCSD00026",
-   "lat": 24.8071,
-   "lng": 121.0472,
-   "name": "新竹生醫科學園區",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "operator_id": "90807408",
-   "parking_rate": "Free (依現場為準)",
-   "restriction": null,
-   "service_time": "7x24小時",
-   "spaces": 3
-  },
-  {
    "charging_points": 2,
    "charging_rate": "計度/固定/8元每度",
    "connectors": [
@@ -729,49 +698,6 @@
    "restriction": null,
    "service_time": "7x24小時",
    "spaces": 1
-  },
-  {
-   "charging_points": 12,
-   "charging_rate": "計度/固定/8.3元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/8元每度",
-   "connectors": [
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
-    },
-    {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 2",
-     "type": "type2"
-    },
-    {
-     "count": 4,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    }
-   ],
-   "description": "停車位:9 充電樁數量:12 停車費:免費 費率:計度/固定/8.3元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/8元每度 樓層:1F",
-   "floors": "1F",
-   "id": "90807408-SCSD02837",
-   "lat": 24.809167,
-   "lng": 121.041504,
-   "name": "嘟嘟房高鐵新竹站停車場",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "operator_id": "90807408",
-   "parking_rate": "免費",
-   "restriction": null,
-   "service_time": "7x24小時",
-   "spaces": 9
   },
   {
    "charging_points": 2,
@@ -2120,5 +2046,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-14T21:55:54+08:00"
+ "update_time": "2026-10-14T22:35:36+08:00"
 }

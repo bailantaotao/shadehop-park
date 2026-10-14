@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 40,
+   "location": {
+    "lat": 25.013061,
+    "lng": 121.136025
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5570252615",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1538971483",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1538971483",
@@ -35,6 +41,10 @@
    "distance_m": 27,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.014163,
+    "lng": 121.136971
+   },
    "method": "official_data",
    "name": "桃園市立圖書館新坡分館",
    "source": "https://data.gov.tw/dataset/30794",

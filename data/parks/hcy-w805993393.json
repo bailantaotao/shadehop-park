@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 165,
+   "location": {
+    "lat": 24.823172,
+    "lng": 121.030579
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1308750670",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/805993393",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/805993393",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 174,
     "family_room": true,
+    "location": {
+     "lat": 24.821954,
+     "lng": 121.029155
+    },
     "name": "竹北市兒七宗教公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.823144,
+    "lng": 121.030723
+   },
    "method": "official_data",
    "name": "7-11竹北強利門市",
    "source": "https://data.gov.tw/dataset/30794",

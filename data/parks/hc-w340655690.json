@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 80,
+   "location": {
+    "lat": 24.807282,
+    "lng": 120.971462
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4601463689",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 97,
+   "location": {
+    "lat": 24.806846,
+    "lng": 120.968955
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/340655690",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 611,
+   "location": {
+    "lat": 24.801403,
+    "lng": 120.971678
+   },
    "method": "osm",
    "name": "新竹站",
    "source": "https://www.openstreetmap.org/node/3372916575",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 64,
     "family_room": true,
+    "location": {
+     "lat": 24.80626,
+     "lng": 120.96985
+    },
     "name": "新竹市稅務局"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.80727,
+    "lng": 120.96992
+   },
    "method": "official_data",
    "name": "府後停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -992,7 +1012,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

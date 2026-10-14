@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 102,
+   "location": {
+    "lat": 25.088763,
+    "lng": 121.522582
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5949987489",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 51,
+   "location": {
+    "lat": 25.089843,
+    "lng": 121.521631
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/780145013",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 586,
+   "location": {
+    "lat": 25.093495,
+    "lng": 121.526247
+   },
    "method": "osm",
    "name": "捷運士林站",
    "source": "https://www.openstreetmap.org/node/3495094876",
@@ -35,6 +47,10 @@
    "distance_m": 17,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.089898,
+    "lng": 121.522171
+   },
    "method": "official_data",
    "name": "承德公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -980,7 +996,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

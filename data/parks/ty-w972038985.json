@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 126,
+   "location": {
+    "lat": 24.927449,
+    "lng": 121.223833
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/9543003448",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/972038985",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/972038985",
@@ -35,6 +41,10 @@
    "distance_m": 2,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.927963,
+    "lng": 121.224931
+   },
    "method": "official_data",
    "name": "平鎮區獅子林社會發展協會(1f)",
    "source": "https://data.gov.tw/dataset/30794",

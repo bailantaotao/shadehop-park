@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 45,
+   "location": {
+    "lat": 25.034806,
+    "lng": 121.573647
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3514374827",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 16,
+   "location": {
+    "lat": 25.035385,
+    "lng": 121.573112
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1390599820",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 430,
+   "location": {
+    "lat": 25.032868,
+    "lng": 121.569758
+   },
    "method": "osm",
    "name": "捷運象山站",
    "source": "https://www.openstreetmap.org/node/3494960745",
@@ -35,6 +47,10 @@
    "distance_m": 53,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.034849,
+    "lng": 121.572798
+   },
    "method": "official_data",
    "name": "興雅國中地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
@@ -973,7 +989,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 388,
+   "location": {
+    "lat": 25.109737,
+    "lng": 121.845348
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2291348648",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/271979276",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/271979276",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 180,
     "family_room": true,
+    "location": {
+     "lat": 25.10868,
+     "lng": 121.84361
+    },
     "name": "昇平戲院"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.1076,
+    "lng": 121.84295
+   },
    "method": "official_data",
    "name": "金山岩",
    "source": "https://data.gov.tw/dataset/30794",

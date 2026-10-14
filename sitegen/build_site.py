@@ -14,7 +14,7 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from .links import directions_url, google_maps_url
+from .links import directions_url, google_maps_url, place_url
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -195,15 +195,28 @@ def build(out: Path = OUT) -> None:
     # Extra map-popup fields: links, and the nearest toilet / convenience store (the popup shows them).
     def near(p: dict, key: str):
         a = p["amenities"].get(key) or {}
-        return a.get("distance_m") if a.get("value") else None
-    links = {p["id"]: {"gmaps": p["google_maps_url"], "nav": p["directions_url"],
-                       "toilet_m": near(p, "toilet"), "shop_m": near(p, "convenience_store")}
-             for p in parks}
+        return a if a.get("value") else {}
+    def charger(p: dict):
+        s = p["charger_summary"]
+        want = ("fast", "both") if s["nearest_fast_m"] is not None else ("slow",)
+        return next((c for c in p["chargers"] if c["speed"] in want), None)
+    links = {}
+    for p in parks:
+        c = charger(p)
+        links[p["id"]] = {
+            "gmaps": p["google_maps_url"], "nav": p["directions_url"],
+            "toilet_m": near(p, "toilet").get("distance_m"), "shop_m": near(p, "convenience_store").get("distance_m"),
+            "toilet_url": place_url(near(p, "toilet").get("location")),
+            "shop_url": place_url(near(p, "convenience_store").get("location")),
+            "parking_url": place_url(p["parking"][0]["location"]) if p["parking"] else None,
+            "charger_url": place_url(c["location"]) if c else None,
+        }
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
     env = Environment(loader=FileSystemLoader(ROOT / "sitegen" / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["shade_class"] = shade_class
+    env.filters["place_url"] = place_url
     # Fingerprint static files (?v=<content hash>) so browsers never pair a new page with an old
     # cached script or stylesheet - some mobile and in-app browsers keep stale copies.
     def asset(path: str) -> str:

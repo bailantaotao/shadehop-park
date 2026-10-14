@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 43,
+   "location": {
+    "lat": 25.016183,
+    "lng": 121.944885
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2502919736",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 34,
+   "location": {
+    "lat": 25.015893,
+    "lng": 121.944765
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1077983630",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 50,
+   "location": {
+    "lat": 25.015692,
+    "lng": 121.944576
+   },
    "method": "osm",
    "name": "福隆站",
    "source": "https://www.openstreetmap.org/node/289339351",
@@ -35,6 +47,10 @@
    "distance_m": 42,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.015841,
+    "lng": 121.944669
+   },
    "method": "official_data",
    "name": "福隆火車站",
    "source": "https://data.gov.tw/dataset/30794",

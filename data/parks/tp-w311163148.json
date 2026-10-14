@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 168,
+   "location": {
+    "lat": 25.034146,
+    "lng": 121.493055
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3412857521",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 144,
+   "location": {
+    "lat": 25.033557,
+    "lng": 121.494689
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/311163148",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 486,
+   "location": {
+    "lat": 25.035284,
+    "lng": 121.499581
+   },
    "method": "osm",
    "name": "捷運龍山寺站",
    "source": "https://www.openstreetmap.org/node/3639530981",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 229,
     "family_room": false,
+    "location": {
+     "lat": 25.036937,
+     "lng": 121.495473
+    },
     "name": "臺北市立圖書館柳鄉民眾閱覽室"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.033596,
+    "lng": 121.494246
+   },
    "method": "official_data",
    "name": "新糖廍公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",

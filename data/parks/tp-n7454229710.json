@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 197,
+   "location": {
+    "lat": 25.111942,
+    "lng": 121.526718
+   },
    "method": "osm",
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9371544763",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 82,
+   "location": {
+    "lat": 25.110874,
+    "lng": 121.52515
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/7454229710",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 614,
+   "location": {
+    "lat": 25.109859,
+    "lng": 121.518769
+   },
    "method": "osm",
    "name": "捷運明德站",
    "source": "https://www.openstreetmap.org/node/3495094878",
@@ -35,6 +47,10 @@
    "distance_m": 33,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.111699,
+    "lng": 121.525113
+   },
    "method": "official_data",
    "name": "榮華公園景觀公",
    "source": "https://data.gov.tw/dataset/30794",
@@ -765,7 +781,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 55,
+   "location": {
+    "lat": 24.983594,
+    "lng": 121.517728
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2625564276",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1230490452",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 12,
+   "location": {
+    "lat": 24.983442,
+    "lng": 121.518589
+   },
    "method": "osm",
    "name": "新和國小站",
    "source": "https://www.openstreetmap.org/node/8041597964",
@@ -35,6 +44,10 @@
    "distance_m": 265,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.981418,
+    "lng": 121.517275
+   },
    "method": "official_data",
    "name": "欣欣加油站",
    "source": "https://data.gov.tw/dataset/30794",

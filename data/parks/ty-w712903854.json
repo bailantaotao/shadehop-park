@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/712903854",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/712903854",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/712903854",
@@ -35,6 +38,10 @@
    "distance_m": 245,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.058194,
+    "lng": 121.32326
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/9213352117",

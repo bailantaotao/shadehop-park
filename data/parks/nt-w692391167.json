@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 111,
+   "location": {
+    "lat": 25.124377,
+    "lng": 121.861156
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13423767482",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/692391167",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/692391167",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 263,
     "family_room": false,
+    "location": {
+     "lat": 25.12169,
+     "lng": 121.86379
+    },
     "name": "水湳洞停車場"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.122223,
+    "lng": 121.861166
+   },
    "method": "official_data",
    "name": "濂洞市民活動中心",
    "source": "https://data.gov.tw/dataset/30794",

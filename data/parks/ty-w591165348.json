@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 32,
+   "location": {
+    "lat": 25.017485,
+    "lng": 121.292757
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272972",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/591165348",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/591165348",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 221,
     "family_room": false,
+    "location": {
+     "lat": 25.019245,
+     "lng": 121.292664
+    },
     "name": "瑞慶公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.016926,
+    "lng": 121.291542
+   },
    "method": "official_data",
    "name": "桃園區鎮海宮",
    "source": "https://data.gov.tw/dataset/30794",

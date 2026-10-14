@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 272,
+   "location": {
+    "lat": 24.988233,
+    "lng": 121.018598
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6898027606",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/442700955",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/442700955",
@@ -35,6 +41,10 @@
    "distance_m": 25,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.981373,
+    "lng": 121.017536
+   },
    "method": "official_data",
    "name": "新屋濱海植物園",
    "source": "https://data.gov.tw/dataset/30794",

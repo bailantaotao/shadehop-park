@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 468,
+   "location": {
+    "lat": 25.015649,
+    "lng": 121.194451
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13308380203",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/625317765",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/625317765",
@@ -35,6 +41,10 @@
    "distance_m": 34,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.014665,
+    "lng": 121.190271
+   },
    "method": "official_data",
    "name": "中壢區月眉環保公園",
    "source": "https://data.gov.tw/dataset/30794",

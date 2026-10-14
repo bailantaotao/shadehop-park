@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 14,
+   "location": {
+    "lat": 24.949275,
+    "lng": 121.352952
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9377714194",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 62,
+   "location": {
+    "lat": 24.949371,
+    "lng": 121.352255
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1475184973",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 468,
+   "location": {
+    "lat": 24.952571,
+    "lng": 121.349519
+   },
    "method": "osm",
    "name": "捷運陶瓷老街站",
    "source": "https://www.openstreetmap.org/node/4990733840",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 33,
     "family_room": false,
+    "location": {
+     "lat": 24.949527,
+     "lng": 121.352519
+    },
     "name": "鶯歌陶瓷博物館1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.949257,
+    "lng": 121.352918
+   },
    "method": "official_data",
    "name": "統一超商聖陶門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -664,7 +684,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

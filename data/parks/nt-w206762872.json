@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 475,
+   "location": {
+    "lat": 24.964759,
+    "lng": 121.419107
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118272991",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/206762872",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1031,
+   "location": {
+    "lat": 24.959734,
+    "lng": 121.419477
+   },
    "method": "osm",
    "name": "捷運頂埔站",
    "source": "https://www.openstreetmap.org/node/3639530980",
@@ -39,9 +48,17 @@
     "changing_table": false,
     "distance_m": 139,
     "family_room": true,
+    "location": {
+     "lat": 24.973672,
+     "lng": 121.418856
+    },
     "name": "彭興親子公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.96946,
+    "lng": 121.409769
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3791010493",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 53,
+   "location": {
+    "lat": 25.038288,
+    "lng": 121.503075
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5095512244",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 12,
+   "location": {
+    "lat": 25.038627,
+    "lng": 121.502868
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/6153515435",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 482,
+   "location": {
+    "lat": 25.035284,
+    "lng": 121.499581
+   },
    "method": "osm",
    "name": "捷運龍山寺站",
    "source": "https://www.openstreetmap.org/node/3639530981",
@@ -35,6 +47,10 @@
    "distance_m": 13,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.03858,
+    "lng": 121.502484
+   },
    "method": "official_data",
    "name": "臺北市立圖書館龍山分館2F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -802,7 +818,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

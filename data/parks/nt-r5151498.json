@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/5151498",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/5151498",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/relation/5151498",
@@ -35,6 +38,10 @@
    "distance_m": 17,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.217837,
+    "lng": 121.451582
+   },
    "method": "official_data",
    "name": "興仁里活動中心",
    "source": "https://data.gov.tw/dataset/30794",

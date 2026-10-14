@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 68,
+   "location": {
+    "lat": 24.817878,
+    "lng": 121.026818
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2833723449",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323598296",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323598296",
@@ -35,6 +41,10 @@
    "distance_m": 299,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.820289,
+    "lng": 121.028089
+   },
    "method": "official_data",
    "name": "新竹喜來登大飯店1F(大廳)",
    "source": "https://data.gov.tw/dataset/30794",

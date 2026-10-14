@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 116,
+   "location": {
+    "lat": 24.776181,
+    "lng": 121.026909
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/2903200146",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/556634550",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 625,
+   "location": {
+    "lat": 24.781713,
+    "lng": 121.0312
+   },
    "method": "osm",
    "name": "竹中站",
    "source": "https://www.openstreetmap.org/node/6548984264",
@@ -35,6 +44,10 @@
    "distance_m": 206,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.77533,
+    "lng": 121.02723
+   },
    "method": "official_data",
    "name": "7-11便利商店-金山里",
    "source": "https://data.gov.tw/dataset/30794",
@@ -683,7 +696,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:36+08:00",
+   "as_of": "2026-10-14T22:35:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

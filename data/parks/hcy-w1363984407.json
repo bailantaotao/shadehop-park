@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1363984407",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1363984407",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1471,
+   "location": {
+    "lat": 24.738321,
+    "lng": 121.094903
+   },
    "method": "osm",
    "name": "竹東站",
    "source": "https://www.openstreetmap.org/node/1374041041",
@@ -35,6 +41,10 @@
    "distance_m": 300,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.733556,
+    "lng": 121.084016
+   },
    "method": "official_data",
    "name": "竹東鎮立圖書館C棟1F",
    "source": "https://data.gov.tw/dataset/30794",

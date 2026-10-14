@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 230,
+   "location": {
+    "lat": 24.922572,
+    "lng": 121.191625
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/1009012163",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/876005639",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 708,
+   "location": {
+    "lat": 24.919647,
+    "lng": 121.183619
+   },
    "method": "osm",
    "name": "埔心站",
    "source": "https://www.openstreetmap.org/node/4420612322",

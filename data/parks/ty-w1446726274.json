@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 209,
+   "location": {
+    "lat": 24.999662,
+    "lng": 121.320029
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/5225847729",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1446726274",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1497,
+   "location": {
+    "lat": 24.988726,
+    "lng": 121.313777
+   },
    "method": "osm",
    "name": "桃園站",
    "source": "https://www.openstreetmap.org/node/246416407",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 50,
     "family_room": true,
+    "location": {
+     "lat": 25.001241,
+     "lng": 121.318498
+    },
     "name": "桃園區三民公園女廁（兒童遊戲場旁）"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.001613,
+    "lng": 121.319264
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/8000187350",
@@ -111,7 +128,7 @@
    "name": "三民公園停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -149,7 +166,7 @@
    "name": "新永和停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -767,7 +784,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

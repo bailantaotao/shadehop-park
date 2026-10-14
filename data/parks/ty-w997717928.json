@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 241,
+   "location": {
+    "lat": 24.794035,
+    "lng": 121.363946
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/1191540552",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/997717928",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/997717928",
@@ -35,6 +41,10 @@
    "distance_m": 30,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.79279,
+    "lng": 121.367194
+   },
    "method": "official_data",
    "name": "復興區羅浮遊客中心",
    "source": "https://data.gov.tw/dataset/30794",

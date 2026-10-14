@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 137,
+   "location": {
+    "lat": 24.823701,
+    "lng": 121.014259
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7924924416",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/323575780",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/323575780",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 149,
     "family_room": true,
+    "location": {
+     "lat": 24.823168,
+     "lng": 121.01375
+    },
     "name": "東元綜合醫院C棟1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.824117,
+    "lng": 121.014141
+   },
    "method": "official_data",
    "name": "東元綜合醫院A棟B2",
    "source": "https://data.gov.tw/dataset/30794",

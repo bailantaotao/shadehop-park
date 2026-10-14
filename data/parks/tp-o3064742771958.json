@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 152,
+   "location": {
+    "lat": 25.053794,
+    "lng": 121.560962
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3953673660",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 190,
+   "location": {
+    "lat": 25.054389,
+    "lng": 121.557748
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 579,
+   "location": {
+    "lat": 25.051428,
+    "lng": 121.564306
+   },
    "method": "osm",
    "name": "捷運南京三民站",
    "source": "https://www.openstreetmap.org/node/3812564394",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 210,
     "family_room": true,
+    "location": {
+     "lat": 25.05394,
+     "lng": 121.557705
+    },
     "name": "三軍總醫院松山分院1F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.053861,
+    "lng": 121.561117
+   },
    "method": "official_data",
    "name": "統一超商臺北市婦聯門市",
    "source": "https://data.gov.tw/dataset/30794",
@@ -864,7 +884,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

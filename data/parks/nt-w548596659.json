@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 223,
+   "location": {
+    "lat": 24.981259,
+    "lng": 121.526247
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9760911234",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 54,
+   "location": {
+    "lat": 24.979708,
+    "lng": 121.527059
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/548596659",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 519,
+   "location": {
+    "lat": 24.984363,
+    "lng": 121.527308
+   },
    "method": "osm",
    "name": "十四張站",
    "source": "https://www.openstreetmap.org/node/8041597963",
@@ -35,6 +47,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.979694,
+    "lng": 121.527639
+   },
    "method": "official_data",
    "name": "十四張歷史公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -738,13 +754,13 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

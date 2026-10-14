@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 233,
+   "location": {
+    "lat": 24.823701,
+    "lng": 121.014259
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7924924416",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/321415413",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1456,
+   "location": {
+    "lat": 24.839126,
+    "lng": 121.009226
+   },
    "method": "osm",
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
@@ -35,6 +44,10 @@
    "distance_m": 52,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 24.826989,
+    "lng": 121.013022
+   },
    "method": "official_data",
    "name": "新竹縣政府前棟2F(財政處)",
    "source": "https://data.gov.tw/dataset/30794",

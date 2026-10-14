@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 70,
+   "location": {
+    "lat": 25.046461,
+    "lng": 121.58841
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2126461117",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 105,
+   "location": {
+    "lat": 25.047548,
+    "lng": 121.586987
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/9540141000",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 623,
+   "location": {
+    "lat": 25.044741,
+    "lng": 121.582322
+   },
    "method": "osm",
    "name": "捷運後山埤站",
    "source": "https://www.openstreetmap.org/node/3639530944",
@@ -35,6 +47,10 @@
    "distance_m": 67,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.046479,
+    "lng": 121.588379
+   },
    "method": "official_data",
    "name": "統一超商臺北市聯坊門市",
    "source": "https://data.gov.tw/dataset/30794",

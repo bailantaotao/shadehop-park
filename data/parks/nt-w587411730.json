@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 316,
+   "location": {
+    "lat": 25.015622,
+    "lng": 121.45257
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9932969707",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/587411730",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1310,
+   "location": {
+    "lat": 25.00877,
+    "lng": 121.45928
+   },
    "method": "osm",
    "name": "捷運府中站",
    "source": "https://www.openstreetmap.org/node/3639530943",
@@ -35,6 +44,10 @@
    "distance_m": 210,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.016595,
+    "lng": 121.451766
+   },
    "method": "official_data",
    "name": "環河公園",
    "source": "https://data.gov.tw/dataset/30794",

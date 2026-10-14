@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 218,
+   "location": {
+    "lat": 25.109552,
+    "lng": 121.52554
+   },
    "method": "osm",
    "name": "義美食品",
    "source": "https://www.openstreetmap.org/node/5181308623",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 52,
+   "location": {
+    "lat": 25.110312,
+    "lng": 121.523559
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/797027275",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 511,
+   "location": {
+    "lat": 25.109859,
+    "lng": 121.518769
+   },
    "method": "osm",
    "name": "捷運明德站",
    "source": "https://www.openstreetmap.org/node/3495094878",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 120,
     "family_room": true,
+    "location": {
+     "lat": 25.111851,
+     "lng": 121.524217
+    },
     "name": "大葉高島屋百貨法院旁B1"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.110813,
+    "lng": 121.523555
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/10763150257",
@@ -634,7 +654,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

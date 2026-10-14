@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 190,
+   "location": {
+    "lat": 25.137108,
+    "lng": 121.510291
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/8208086805",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 109,
+   "location": {
+    "lat": 25.13692,
+    "lng": 121.5067
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/886937922",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 464,
+   "location": {
+    "lat": 25.136964,
+    "lng": 121.503169
+   },
    "method": "osm",
    "name": "捷運新北投站",
    "source": "https://www.openstreetmap.org/node/269820830",
@@ -35,6 +47,10 @@
    "distance_m": 75,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.136712,
+    "lng": 121.507136
+   },
    "method": "official_data",
    "name": "北投溫泉博物館",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/2076176386",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/2076176386",
    "value": null,
@@ -21,6 +23,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 285,
+   "location": {
+    "lat": 25.087019,
+    "lng": 121.827214
+   },
    "method": "osm",
    "name": "猴硐站",
    "source": "https://www.openstreetmap.org/node/289131479",
@@ -35,6 +41,10 @@
    "distance_m": 135,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.08531,
+    "lng": 121.82775
+   },
    "method": "official_data",
    "name": "猴硐文字牆",
    "source": "https://data.gov.tw/dataset/30794",

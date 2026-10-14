@@ -2,7 +2,7 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "HsinchuCounty",
  "count": null,
- "fetched_at": "2026-10-14T14:06:46+00:00",
+ "fetched_at": "2026-10-14T15:16:59+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucounty",
@@ -1038,37 +1038,6 @@
    "restriction": null,
    "service_time": "每日/00:00-24:00",
    "spaces": 2
-  },
-  {
-   "charging_points": 2,
-   "charging_rate": "計度/固定/8元每度",
-   "connectors": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 2",
-     "type": "type2"
-    },
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    }
-   ],
-   "description": "停車位:1 充電樁數量:2 停車費:Free (依現場為準) 費率:計度/固定/8元每度 樓層:1F",
-   "floors": "1F",
-   "id": "90807408-SCSD00023",
-   "lat": 24.7071,
-   "lng": 120.9228,
-   "name": "苗栗竹南科學園區_轉運站",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "operator_id": "90807408",
-   "parking_rate": "Free (依現場為準)",
-   "restriction": null,
-   "service_time": "7x24小時",
-   "spaces": 1
   },
   {
    "charging_points": 9,

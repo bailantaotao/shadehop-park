@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/220191880",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/220191880",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/220191880",
@@ -35,6 +38,10 @@
    "distance_m": 134,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.171923,
+    "lng": 121.679601
+   },
    "method": "official_data",
    "name": "中幅里活動中心",
    "source": "https://data.gov.tw/dataset/30794",

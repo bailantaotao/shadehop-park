@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 47,
+   "location": {
+    "lat": 25.044578,
+    "lng": 121.516649
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2876179606",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/9652216797",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 209,
+   "location": {
+    "lat": 25.046243,
+    "lng": 121.517475
+   },
    "method": "osm",
    "name": "捷運台北車站",
    "source": "https://www.openstreetmap.org/node/3495094870",
@@ -39,9 +48,17 @@
     "changing_table": false,
     "distance_m": 248,
     "family_room": true,
+    "location": {
+     "lat": 25.046303,
+     "lng": 121.515823
+    },
     "name": "捷運善導寺站"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.044291,
+    "lng": 121.516797
+   },
    "method": "official_data",
    "name": "麥當勞台北公園店",
    "source": "https://data.gov.tw/dataset/30794",

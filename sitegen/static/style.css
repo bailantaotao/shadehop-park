@@ -213,6 +213,8 @@ footer p { margin: 0 0 4px; }
 .pp-best { font-size: 13px; margin-bottom: 8px; }
 .pp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; text-align: center; font-size: 12px; margin-bottom: 10px; }
 .pp-tile { background: var(--chip); border-radius: 8px; padding: 6px 2px; color: var(--muted); }
+a.pp-tile { text-decoration: none; border: 1px solid var(--line); }
+a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
 .pp-tile span { display: block; font-size: 16px; line-height: 1.3; }
 .pp-tile b { display: block; color: var(--text); font-size: 13px; }
 .pp-btns { display: flex; gap: 6px; }

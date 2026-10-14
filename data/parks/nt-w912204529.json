@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 44,
+   "location": {
+    "lat": 25.204438,
+    "lng": 121.501724
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/912463926",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/912204529",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/912204529",
@@ -35,6 +41,10 @@
    "distance_m": 0,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.2036,
+    "lng": 121.501903
+   },
    "method": "official_data",
    "name": "三芝興華驛站農藝中心",
    "source": "https://data.gov.tw/dataset/30794",

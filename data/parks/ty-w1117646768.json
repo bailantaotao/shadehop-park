@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 111,
+   "location": {
+    "lat": 24.920047,
+    "lng": 121.211557
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9562269626",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1117646768",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1117646768",
@@ -35,6 +41,10 @@
    "distance_m": 59,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.920873,
+    "lng": 121.212984
+   },
    "method": "official_data",
    "name": "大潤發平鎮店B1",
    "source": "https://data.gov.tw/dataset/30794",

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 420,
+   "location": {
+    "lat": 25.067836,
+    "lng": 121.19989
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/6315689266",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/905870982",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1497,
+   "location": {
+    "lat": 25.055814,
+    "lng": 121.21065
+   },
    "method": "osm",
    "name": "捷運大園站",
    "source": "https://www.openstreetmap.org/node/4653351589",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 217,
     "family_room": false,
+    "location": {
+     "lat": 25.070927,
+     "lng": 121.205791
+    },
     "name": "航空城聯合服務中心A棟2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.069961,
+    "lng": 121.205785
+   },
    "method": "official_data",
    "name": "航空城聯合服務中心C棟2F",
    "source": "https://data.gov.tw/dataset/30794",

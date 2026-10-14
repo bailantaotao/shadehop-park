@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 23,
+   "location": {
+    "lat": 25.014298,
+    "lng": 121.517821
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4538275034",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1524834648",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 271,
+   "location": {
+    "lat": 25.013601,
+    "lng": 121.515472
+   },
    "method": "osm",
    "name": "捷運頂溪站",
    "source": "https://www.openstreetmap.org/node/3812564426",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 292,
     "family_room": true,
+    "location": {
+     "lat": 25.013014,
+     "lng": 121.51551
+    },
     "name": "捷運頂溪站B1-1號出口"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.014277,
+    "lng": 121.518803
+   },
    "method": "official_data",
    "name": "上林市民活動中心2F",
    "source": "https://data.gov.tw/dataset/30794",
@@ -743,7 +760,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

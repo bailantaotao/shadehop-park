@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 82,
+   "location": {
+    "lat": 25.017146,
+    "lng": 121.46518
+   },
    "method": "osm",
    "name": "新站便利商店",
    "source": "https://www.openstreetmap.org/node/3292774957",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 137,
+   "location": {
+    "lat": 25.0164,
+    "lng": 121.465446
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/3389163232",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 213,
+   "location": {
+    "lat": 25.015187,
+    "lng": 121.464592
+   },
    "method": "osm",
    "name": "捷運板橋站",
    "source": "https://www.openstreetmap.org/node/2866570655",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 172,
     "family_room": false,
+    "location": {
+     "lat": 25.018583,
+     "lng": 121.465241
+    },
     "name": "板橋火車站1F東門"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.017283,
+    "lng": 121.464439
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3409809187",
@@ -854,7 +874,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

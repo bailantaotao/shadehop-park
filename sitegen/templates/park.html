@@ -50,12 +50,12 @@
 <section class="pcard">
   <h2 class="ptitle">附近有什麼</h2>
   <ul class="plist">
-  {% if t.value %}<li><span class="pico">🚻</span><span>公廁 {{ t.distance_m }}m{% if t.name %}・{{ t.name }}{% endif %}{% if t.family_room %} <span class="tag">親子廁所</span>{% endif %}{% if t.changing_table %} <span class="tag">尿布台</span>{% endif %}{% if t.accessible %} <span class="tag">無障礙</span>{% endif %}</span></li>
+  {% if t.value %}<li><span class="pico">🚻</span><span>公廁 {{ t.distance_m }}m{% if t.name %}・{% if t.location %}<a href="{{ t.location | place_url }}" target="_blank" rel="noopener">{{ t.name }}</a>{% else %}{{ t.name }}{% endif %}{% elif t.location %}・<a href="{{ t.location | place_url }}" target="_blank" rel="noopener">地圖</a>{% endif %}{% if t.family_room %} <span class="tag">親子廁所</span>{% endif %}{% if t.changing_table %} <span class="tag">尿布台</span>{% endif %}{% if t.accessible %} <span class="tag">無障礙</span>{% endif %}</span></li>
   {% else %}<li class="muted"><span class="pico">🚻</span>{{ meta.assumptions.TOILET_RADIUS_M }}m 內沒有登記的公廁</li>{% endif %}
-  {% if fam %}<li><span class="pico">👶</span><span>{{ "親子廁所" if fam.family_room else "尿布台" }} {{ fam.distance_m }}m・{{ fam.name }}</span></li>{% endif %}
-  {% if cv and cv.value %}<li><span class="pico">🏪</span>{{ cv.name }} {{ cv.distance_m }}m</li>{% endif %}
-  {% if st and st.value %}<li><span class="pico">🚉</span>{{ st.name }} {{ st.distance_m }}m</li>{% endif %}
-  {% if w.value %}<li><span class="pico">🚰</span>飲水機 {{ w.distance_m }}m</li>{% endif %}
+  {% if fam %}<li><span class="pico">👶</span><span>{{ "親子廁所" if fam.family_room else "尿布台" }} {{ fam.distance_m }}m・{% if fam.location %}<a href="{{ fam.location | place_url }}" target="_blank" rel="noopener">{{ fam.name }}</a>{% else %}{{ fam.name }}{% endif %}</span></li>{% endif %}
+  {% if cv and cv.value %}<li><span class="pico">🏪</span><span>{% if cv.location %}<a href="{{ cv.location | place_url }}" target="_blank" rel="noopener">{{ cv.name }}</a>{% else %}{{ cv.name }}{% endif %} {{ cv.distance_m }}m</span></li>{% endif %}
+  {% if st and st.value %}<li><span class="pico">🚉</span><span>{% if st.location %}<a href="{{ st.location | place_url }}" target="_blank" rel="noopener">{{ st.name }}</a>{% else %}{{ st.name }}{% endif %} {{ st.distance_m }}m</span></li>{% endif %}
+  {% if w.value %}<li><span class="pico">🚰</span><span>{% if w.location %}<a href="{{ w.location | place_url }}" target="_blank" rel="noopener">飲水機</a>{% else %}飲水機{% endif %} {{ w.distance_m }}m</span></li>{% endif %}
   </ul>
   {% set facts = namespace(n=0) %}
   {% if p.official and p.official.equipment %}{% set facts.n = facts.n + 1 %}{% endif %}{% if pg.equipment or pg.surface or pg.min_age or pg.max_age or (p.official and (p.official.facilities or p.official.management)) %}{% set facts.n = facts.n + 1 %}{% endif %}

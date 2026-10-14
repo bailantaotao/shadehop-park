@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 122,
+   "location": {
+    "lat": 25.114543,
+    "lng": 121.517526
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/2628218112",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 41,
+   "location": {
+    "lat": 25.115271,
+    "lng": 121.519106
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 305,
+   "location": {
+    "lat": 25.114607,
+    "lng": 121.515523
+   },
    "method": "osm",
    "name": "捷運石牌站",
    "source": "https://www.openstreetmap.org/node/3495094879",
@@ -35,6 +47,10 @@
    "distance_m": 18,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.115168,
+    "lng": 121.518848
+   },
    "method": "official_data",
    "name": "振華公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -857,7 +873,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 50,
+   "location": {
+    "lat": 24.940259,
+    "lng": 121.29733
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8150551051",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1024116146",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1024116146",
@@ -39,9 +45,17 @@
     "changing_table": false,
     "distance_m": 197,
     "family_room": true,
+    "location": {
+     "lat": 24.939048,
+     "lng": 121.298493
+    },
     "name": "桃園市身心障礙福利館2F"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.940926,
+    "lng": 121.297934
+   },
    "method": "official_data",
    "name": "八德區中油嘉昕站",
    "source": "https://data.gov.tw/dataset/30794",

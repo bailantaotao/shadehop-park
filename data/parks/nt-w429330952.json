@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 71,
+   "location": {
+    "lat": 24.977498,
+    "lng": 121.460482
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/13335652889",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/429330952",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/429330952",
@@ -35,6 +41,10 @@
    "distance_m": 173,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.977747,
+    "lng": 121.459492
+   },
    "method": "official_data",
    "name": "清水市民活動中心B1",
    "source": "https://data.gov.tw/dataset/30794",
@@ -637,7 +647,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

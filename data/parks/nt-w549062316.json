@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 54,
+   "location": {
+    "lat": 24.996826,
+    "lng": 121.485716
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2614374655",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/549062316",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 809,
+   "location": {
+    "lat": 25.004604,
+    "lng": 121.490246
+   },
    "method": "osm",
    "name": "捷運橋和站",
    "source": "https://www.openstreetmap.org/node/5444300911",
@@ -35,6 +44,10 @@
    "distance_m": 117,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.998754,
+    "lng": 121.485607
+   },
    "method": "official_data",
    "name": "中油嘉樂福加油站",
    "source": "https://data.gov.tw/dataset/30794",
@@ -724,7 +737,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

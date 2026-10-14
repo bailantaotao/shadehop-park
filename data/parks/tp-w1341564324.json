@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 288,
+   "location": {
+    "lat": 25.032508,
+    "lng": 121.574652
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3997541428",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 37,
+   "location": {
+    "lat": 25.031417,
+    "lng": 121.577806
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1341564324",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 776,
+   "location": {
+    "lat": 25.032868,
+    "lng": 121.569758
+   },
    "method": "osm",
    "name": "捷運象山站",
    "source": "https://www.openstreetmap.org/node/3494960745",
@@ -35,6 +47,10 @@
    "distance_m": 12,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.031566,
+    "lng": 121.577205
+   },
    "method": "official_data",
    "name": "永春崗公園景觀",
    "source": "https://data.gov.tw/dataset/30794",
@@ -788,7 +804,7 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

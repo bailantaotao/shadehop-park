@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 146,
+   "location": {
+    "lat": 24.948129,
+    "lng": 121.244779
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/520945825",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/204392212",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/204392212",
@@ -35,6 +41,10 @@
    "distance_m": 56,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.94799,
+    "lng": 121.24637
+   },
    "method": "official_data",
    "name": "中壢長慎醫院",
    "source": "https://data.gov.tw/dataset/30794",

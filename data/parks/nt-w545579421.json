@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/545579421",
@@ -13,6 +14,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/545579421",
    "value": null,
@@ -21,6 +23,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/545579421",
@@ -35,6 +38,10 @@
    "distance_m": 273,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.884237,
+    "lng": 121.549317
+   },
    "method": "official_data",
    "name": "忠治派出所2F",
    "source": "https://data.gov.tw/dataset/30794",

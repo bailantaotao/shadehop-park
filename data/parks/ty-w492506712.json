@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 18,
+   "location": {
+    "lat": 24.947727,
+    "lng": 121.205727
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3669613455",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/492506712",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 971,
+   "location": {
+    "lat": 24.942908,
+    "lng": 121.214543
+   },
    "method": "osm",
    "name": "平鎮站",
    "source": "https://www.openstreetmap.org/node/14244739700",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 111,
     "family_room": false,
+    "location": {
+     "lat": 24.947231,
+     "lng": 121.207462
+    },
     "name": "桃苗汽車南中壢營業所"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.948143,
+    "lng": 121.205541
+   },
    "method": "official_data",
    "name": "乙未保台紀念公園地下停車場復旦路出口",
    "source": "https://data.gov.tw/dataset/30794",
@@ -810,7 +827,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

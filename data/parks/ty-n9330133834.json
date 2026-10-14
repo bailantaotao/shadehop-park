@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 274,
+   "location": {
+    "lat": 24.933257,
+    "lng": 121.264379
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/5102682827",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/9330133834",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/9330133834",
@@ -35,6 +41,10 @@
    "distance_m": 238,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.934676,
+    "lng": 121.262229
+   },
    "method": "official_data",
    "name": "桃園北區客家會館A棟1F",
    "source": "https://data.gov.tw/dataset/30794",

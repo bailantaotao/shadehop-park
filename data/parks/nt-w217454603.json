@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 52,
+   "location": {
+    "lat": 25.022208,
+    "lng": 121.471619
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/1397157176",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/217454603",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 395,
+   "location": {
+    "lat": 25.02346,
+    "lng": 121.468306
+   },
    "method": "osm",
    "name": "捷運新埔站",
    "source": "https://www.openstreetmap.org/node/3639530946",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 157,
     "family_room": false,
+    "location": {
+     "lat": 25.021215,
+     "lng": 121.470052
+    },
     "name": "板橋花市"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.02231,
+    "lng": 121.472261
+   },
    "method": "official_data",
    "name": "萬板親子圖書閱覽室",
    "source": "https://data.gov.tw/dataset/30794",
@@ -778,7 +795,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

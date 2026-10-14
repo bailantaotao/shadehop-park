@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 60,
+   "location": {
+    "lat": 25.072993,
+    "lng": 121.661335
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/5286707761",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/4599224",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 556,
+   "location": {
+    "lat": 25.067421,
+    "lng": 121.660685
+   },
    "method": "osm",
    "name": "汐止站",
    "source": "https://www.openstreetmap.org/node/289281848",
@@ -39,9 +48,17 @@
     "changing_table": true,
     "distance_m": 65,
     "family_room": false,
+    "location": {
+     "lat": 25.072937,
+     "lng": 121.661353
+    },
     "name": "國泰綜合醫院汐止分院1F"
    },
    "family_room": null,
+   "location": {
+    "lat": 25.072828,
+    "lng": 121.660139
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/13084346374",

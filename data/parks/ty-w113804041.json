@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 14,
+   "location": {
+    "lat": 24.948327,
+    "lng": 121.260497
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9499775042",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/113804041",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/113804041",
@@ -35,6 +41,10 @@
    "distance_m": 230,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.946554,
+    "lng": 121.261868
+   },
    "method": "official_data",
    "name": "中壢華勛公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -691,7 +701,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:44+00:00",
+   "as_of": "2026-10-14T15:15:57+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"

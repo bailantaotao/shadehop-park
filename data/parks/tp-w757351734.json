@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 106,
+   "location": {
+    "lat": 25.001611,
+    "lng": 121.552746
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3842796425",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 18,
+   "location": {
+    "lat": 25.001551,
+    "lng": 121.551565
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/757351734",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 681,
+   "location": {
+    "lat": 24.999431,
+    "lng": 121.558138
+   },
    "method": "osm",
    "name": "捷運萬芳醫院站",
    "source": "https://www.openstreetmap.org/node/689354512",
@@ -35,6 +47,10 @@
    "distance_m": 29,
    "family": null,
    "family_room": true,
+   "location": {
+    "lat": 25.00157,
+    "lng": 121.551407
+   },
    "method": "official_data",
    "name": "文山社福中心",
    "source": "https://data.gov.tw/dataset/30794",

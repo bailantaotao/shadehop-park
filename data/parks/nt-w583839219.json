@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 80,
+   "location": {
+    "lat": 25.004543,
+    "lng": 121.445227
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6237905638",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 167,
+   "location": {
+    "lat": 25.004237,
+    "lng": 121.44433
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/583839219",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 124,
+   "location": {
+    "lat": 25.004192,
+    "lng": 121.444762
+   },
    "method": "osm",
    "name": "浮洲站",
    "source": "https://www.openstreetmap.org/node/1320065245",
@@ -39,9 +51,17 @@
     "changing_table": false,
     "distance_m": 204,
     "family_room": true,
+    "location": {
+     "lat": 25.002459,
+     "lng": 121.445736
+    },
     "name": "臺紙公園"
    },
    "family_room": false,
+   "location": {
+    "lat": 25.003775,
+    "lng": 121.445618
+   },
    "method": "official_data",
    "name": "府中15-男廁-6樓",
    "source": "https://data.gov.tw/dataset/30794",
@@ -814,7 +834,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

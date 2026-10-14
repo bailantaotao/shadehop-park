@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 74,
+   "location": {
+    "lat": 24.894514,
+    "lng": 121.040214
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/1549032464",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/947708775",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 908,
+   "location": {
+    "lat": 24.902802,
+    "lng": 121.043748
+   },
    "method": "osm",
    "name": "湖口站",
    "source": "https://www.openstreetmap.org/node/418760121",
@@ -35,6 +44,10 @@
    "distance_m": 22,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.895341,
+    "lng": 121.040153
+   },
    "method": "official_data",
    "name": "湖口鄉公三親子公園",
    "source": "https://data.gov.tw/dataset/30794",

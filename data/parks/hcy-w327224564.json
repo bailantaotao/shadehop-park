@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 93,
+   "location": {
+    "lat": 24.84315,
+    "lng": 121.036211
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7927398095",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/327224564",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/327224564",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 36,
     "family_room": false,
+    "location": {
+     "lat": 24.843914,
+     "lng": 121.036289
+    },
     "name": "新埔鎮褒忠亭義民廟"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.844133,
+    "lng": 121.035482
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/1052386877",

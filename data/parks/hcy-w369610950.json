@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 123,
+   "location": {
+    "lat": 24.896079,
+    "lng": 121.045437
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/14089246589",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/369610950",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 879,
+   "location": {
+    "lat": 24.902802,
+    "lng": 121.043748
+   },
    "method": "osm",
    "name": "湖口站",
    "source": "https://www.openstreetmap.org/node/418760121",
@@ -35,6 +44,10 @@
    "distance_m": 169,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.896792,
+    "lng": 121.047195
+   },
    "method": "official_data",
    "name": "湖口鄉衛生所",
    "source": "https://data.gov.tw/dataset/30794",

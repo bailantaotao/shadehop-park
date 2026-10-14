@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 328,
+   "location": {
+    "lat": 24.982323,
+    "lng": 121.421717
+   },
    "method": "osm",
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3268545261",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 97,
+   "location": {
+    "lat": 24.984583,
+    "lng": 121.42126
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/3369987542",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 690,
+   "location": {
+    "lat": 24.991216,
+    "lng": 121.424535
+   },
    "method": "osm",
    "name": "樹林站",
    "source": "https://www.openstreetmap.org/node/4802842931",
@@ -39,9 +51,17 @@
     "changing_table": true,
     "distance_m": 244,
     "family_room": false,
+    "location": {
+     "lat": 24.983646,
+     "lng": 121.420222
+    },
     "name": "大同公園"
    },
    "family_room": null,
+   "location": {
+    "lat": 24.985574,
+    "lng": 121.422209
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3369987545",
@@ -693,7 +713,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:40+00:00",
+   "as_of": "2026-10-14T15:15:54+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"

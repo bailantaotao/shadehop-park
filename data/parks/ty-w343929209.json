@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 65,
+   "location": {
+    "lat": 24.94008,
+    "lng": 121.255834
+   },
    "method": "osm",
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4492799795",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/343929209",
    "value": null,
@@ -21,6 +26,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/343929209",
@@ -39,9 +45,17 @@
     "changing_table": true,
     "distance_m": 264,
     "family_room": true,
+    "location": {
+     "lat": 24.937684,
+     "lng": 121.255788
+    },
     "name": "桃園市立圖書館龍岡分館3F右側"
    },
    "family_room": false,
+   "location": {
+    "lat": 24.940546,
+    "lng": 121.259105
+   },
    "method": "official_data",
    "name": "中壢區士校生態埤塘公園",
    "source": "https://data.gov.tw/dataset/30794",
@@ -748,7 +762,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:55:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

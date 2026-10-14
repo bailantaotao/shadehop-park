@@ -4,6 +4,7 @@
   "convenience_store": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/way/286923741",
@@ -13,6 +14,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 20,
+   "location": {
+    "lat": 25.068674,
+    "lng": 121.574422
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/286923741",
    "value": true,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 1274,
+   "location": {
+    "lat": 25.080073,
+    "lng": 121.575203
+   },
    "method": "osm",
    "name": "捷運港墘站",
    "source": "https://www.openstreetmap.org/node/3501186374",
@@ -35,6 +44,10 @@
    "distance_m": 83,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 25.069046,
+    "lng": 121.574918
+   },
    "method": "official_data",
    "name": "台亞堤頂交流道加油站",
    "source": "https://data.gov.tw/dataset/30794",

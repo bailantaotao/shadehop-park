@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 117,
+   "location": {
+    "lat": 25.064269,
+    "lng": 121.56598
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4899588538",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 50,
+   "location": {
+    "lat": 25.064631,
+    "lng": 121.567659
+   },
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
@@ -21,6 +29,7 @@
   "station": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "name": null,
    "source": "https://data.gov.tw/dataset/136476",
@@ -35,6 +44,10 @@
    "distance_m": 128,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 25.064358,
+    "lng": 121.568379
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3575335830",
@@ -691,7 +704,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T14:05:42+00:00",
+   "as_of": "2026-10-14T15:15:56+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"

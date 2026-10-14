@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 449,
+   "location": {
+    "lat": 24.705379,
+    "lng": 121.182287
+   },
    "method": "osm",
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/13125207021",
@@ -13,6 +17,7 @@
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
+   "location": null,
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1004639064",
    "value": null,
@@ -21,6 +26,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 487,
+   "location": {
+    "lat": 24.705346,
+    "lng": 121.182679
+   },
    "method": "osm",
    "name": "內灣站",
    "source": "https://www.openstreetmap.org/node/1067352403",
@@ -35,6 +44,10 @@
    "distance_m": 97,
    "family": null,
    "family_room": false,
+   "location": {
+    "lat": 24.705609,
+    "lng": 121.178598
+   },
    "method": "official_data",
    "name": "內灣第一公有停車場",
    "source": "https://data.gov.tw/dataset/30794",

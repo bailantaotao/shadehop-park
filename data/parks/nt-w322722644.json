@@ -4,6 +4,10 @@
   "convenience_store": {
    "confidence": "medium",
    "distance_m": 250,
+   "location": {
+    "lat": 24.993736,
+    "lng": 121.539016
+   },
    "method": "osm",
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3245712542",
@@ -13,6 +17,10 @@
   "drinking_water": {
    "confidence": "medium",
    "distance_m": 108,
+   "location": {
+    "lat": 24.995128,
+    "lng": 121.53667
+   },
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/322722644",
    "value": true,
@@ -21,6 +29,10 @@
   "station": {
    "confidence": "medium",
    "distance_m": 430,
+   "location": {
+    "lat": 24.992712,
+    "lng": 121.540706
+   },
    "method": "osm",
    "name": "捷運景美站",
    "source": "https://www.openstreetmap.org/node/3530915061",
@@ -35,6 +47,10 @@
    "distance_m": 46,
    "family": null,
    "family_room": null,
+   "location": {
+    "lat": 24.994845,
+    "lng": 121.534664
+   },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/11530824070",
@@ -709,7 +725,7 @@
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T21:55:41+08:00",
+   "as_of": "2026-10-14T22:15:36+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"

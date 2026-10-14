@@ -86,7 +86,7 @@
     <fieldset id="reportEquip" class="report-equip" hidden>
       <legend class="small muted">看到哪些遊具？（可複選）</legend>
       {% for e in REPORT_EQUIPMENT %}<label class="tag"><input type="checkbox" value="{{ e }}"> {{ e }}</label>{% endfor %}
-      <label class="small" style="display:block;margin-top:8px"><input type="checkbox" id="reportOsm" checked> 同時在 OpenStreetMap 留公開附註，請志工把遊戲場畫上地圖</label>
+      <label class="small" style="display:block;margin-top:8px"><input type="checkbox" id="reportOsm"> 同時在 OpenStreetMap 留公開附註，請志工把遊戲場畫上地圖</label>
     </fieldset>
     <div id="turnstile" style="margin-top:10px"></div>
     <button type="submit" class="pbtn primary" id="reportSend" style="margin-top:10px;width:100%" disabled>送出回報</button>

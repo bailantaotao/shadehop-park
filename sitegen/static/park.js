@@ -95,7 +95,8 @@
 
   document.getElementById("todayBar").innerHTML = row.map(function (x, i) {
     var label = (6 + Math.floor(i / 2)) + ":" + (i % 2 ? "30" : "00") + " " + (x === null ? "無日照" : Math.round(x * 100) + "%");
-    return '<span class="' + cls(x) + (i === idx ? " cur" : "") + '" title="' + label + '"></span>';
+    var vx = window.ShadeHopVerdict(x, i);  // same colours as the map: 陽光弱 before 08:00 / from 17:00
+    return '<span class="' + vx.cls + (i === idx ? " cur" : "") + '" title="' + label + " " + vx.word + '"></span>';
   }).join("");
 
   // After sunset, plan tomorrow (next month's row on the last day of a month).

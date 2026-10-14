@@ -22,7 +22,7 @@ OUT = ROOT / "public"
 SITE_URL = (os.environ.get("SITE_URL") or "https://shadehop-park.pages.dev").rstrip("/")
 # Public Cloudflare Turnstile key for the "is there a playground?" reports; without it the form is hidden.
 TURNSTILE_SITE_KEY = os.environ.get("TURNSTILE_SITE_KEY", "")
-REPORT_EQUIPMENT = ["溜滑梯", "鞦韆", "攀爬架", "沙坑", "搖搖馬", "翹翹板", "戲水區", "體健設施", "其他"]
+REPORT_EQUIPMENT = ["溜滑梯", "鞦韆", "攀爬架", "沙坑", "搖搖馬", "翹翹板", "戲水區", "體健設施", "腳踏車場地", "其他"]
 
 # Date of the current 使用條款與隱私權 text; change it whenever terms.html changes in substance.
 TERMS_DATE = "2026-10-15"

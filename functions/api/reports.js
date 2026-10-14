@@ -10,7 +10,7 @@
    (UPDATE reports SET hidden = 1 WHERE ...).
 */
 
-const EQUIPMENT = ["溜滑梯", "鞦韆", "攀爬架", "沙坑", "搖搖馬", "翹翹板", "戲水區", "體健設施", "其他"];
+const EQUIPMENT = ["溜滑梯", "鞦韆", "攀爬架", "沙坑", "搖搖馬", "翹翹板", "戲水區", "體健設施", "腳踏車場地", "其他"];
 const DAILY_MAX = 20;
 const KEEP_DAYS = 180;
 const SUMMARY_CACHE_S = 300;

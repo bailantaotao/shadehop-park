@@ -41,6 +41,7 @@ a { color: var(--accent); text-underline-offset: .18em; text-decoration-thicknes
 header.top { padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--surface); display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
 header.top h1 { font-size: 1.15rem; margin: 0; }
 header.top nav { margin-left: auto; display: flex; gap: 14px; font-size: .9rem; }
+.nav-about .i { display: none; }
 main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 .muted { color: var(--muted); }
 .small { font-size: .85rem; }
@@ -324,6 +325,10 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   body.page-map { height: 100%; overflow: hidden; overscroll-behavior: none; }
   body.page-map header.top { position: fixed; top: 0; left: 0; right: 0; z-index: 1200; }
   body.page-map main { padding: 0; }
+  /* Map page on phones: the header is just the name and an ⓘ to 資料與方法 (also in the sheet's footer). */
+  body.page-map .nav-about .lbl { display: none; }
+  body.page-map .nav-about { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: -10px -10px -10px 0; color: var(--muted); }
+  body.page-map .nav-about .i { display: inline-block; width: 22px; height: 22px; }
   #map { position: fixed; top: var(--head-h, 44px); left: 0; right: 0; bottom: var(--peek, 72px);
     height: auto; min-height: 0; margin: 0; border: 0; border-radius: 0; }
   .leaflet-container:focus-visible { border-radius: 0; }

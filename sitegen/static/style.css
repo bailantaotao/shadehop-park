@@ -216,6 +216,25 @@ footer p { margin: 0 0 4px; }
 .map-empty { top: 52px; }
 .map-note[hidden], .map-empty[hidden], .popup-open .map-note, .popup-open .map-empty { display: none; }
 .map-empty .link { margin: 0 2px; }
+/* First visit: where to start. Sits over the overview map, which stays visible as proof of coverage. */
+.map-start { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 1100;
+  width: min(360px, calc(100% - 32px)); background: var(--surface); color: var(--text); border-radius: 16px;
+  padding: 20px 20px 14px; text-align: center; box-shadow: 0 12px 32px rgba(0,0,0,.22), 0 2px 6px rgba(0,0,0,.12);
+  animation: start-in .32s cubic-bezier(.16,1,.3,1); }
+.map-start[hidden] { display: none; }
+.map-start h2 { margin: 0 0 6px; font-size: 1.2rem; line-height: 1.35; text-wrap: balance; }
+.map-start p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.start-locate { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 48px; margin: 16px 0 0;
+  border: 0; border-radius: 12px; background: var(--accent); color: var(--accent-ink); font: inherit; font-size: 1rem; font-weight: 700; cursor: pointer; }
+.start-locate:hover { background: color-mix(in srgb, var(--accent) 88%, #000); }
+.start-locate.busy { opacity: .75; cursor: progress; }
+.map-start .start-or { margin: 14px 0 8px; font-size: .82rem; }
+.start-cities { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.map-start .start-note { margin-top: 14px; font-size: .78rem; }
+.start-skip { margin-top: 6px; min-height: 36px; font-size: .85rem; color: var(--muted); }
+.start-open .map-empty, .start-open .map-note { display: none; }
+@keyframes start-in { from { opacity: 0; transform: translate(-50%, calc(-50% + 8px)); } }
+@media (prefers-reduced-motion: reduce) { .map-start { animation: none; } }
 /* The map takes keyboard focus; an inset ring instead of a frame around the whole map. */
 .leaflet-container:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 12px; }
 .leaflet-container:focus:not(:focus-visible) { outline: none; }
@@ -353,6 +372,11 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
 
   /* Map controls clear the floating panel; the on-map key and empty note move into the sheet head. */
   #map .leaflet-top { top: calc(var(--ctl-h, 110px) + 8px); }  /* leaflet.css loads after this file */
+  /* Below the floating controls, clear of the sheet's peek. */
+  .map-start { top: calc(var(--ctl-h, 110px) + 16px); transform: translateX(-50%); }
+  @keyframes start-in { from { opacity: 0; transform: translate(-50%, 8px); } }
+  .start-skip { min-height: 44px; }
+  .start-open #map .leaflet-control-container { visibility: hidden; }  /* the card spans the map's width */
   .map-key, .map-empty, .map-note { display: none; }  /* the sheet head says these */
 
   /* The sheet */

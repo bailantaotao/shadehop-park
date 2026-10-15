@@ -871,7 +871,47 @@
     if (m) return map.setView([Number(m[2]), Number(m[3])], Number(m[1]));
     var all = state.regions.reduce(function (b, x) { return b ? b.extend(regionBounds(x)) : regionBounds(x); }, null);
     if (all) map.fitBounds(all); else map.setView([25.05, 121.5], 11);
+    // First visit: five cities at once is too far out to answer anything. If location is already
+    // allowed, go there; otherwise ask where to start (the overview stays behind the card).
+    var ask = function () { showStart(true); };
+    if (navigator.permissions && navigator.permissions.query && locateBtn) {
+      navigator.permissions.query({ name: "geolocation" }).then(function (p) {
+        if (p.state === "granted") locate(locateBtn, function (ok) { if (!ok) ask(); }); else ask();
+      }, ask);
+    } else ask();
   }
+
+  // ---------------------------------------------------------- first visit
+  var START_ZOOM = 15;
+  var startEl = $("#mapStart");
+  map.getContainer().appendChild(startEl);
+  L.DomEvent.disableClickPropagation(startEl);
+  L.DomEvent.disableScrollPropagation(startEl);
+  function startOpen() { return !!startEl && !startEl.hidden; }
+  function showStart(on) {
+    startEl.hidden = !on;
+    document.body.classList.toggle("start-open", on);
+    if (on) $("#startLocate").focus({ preventScroll: true });
+    updateSummary(state.features.filter(function (f) { return inView(f) && passes(f); }));
+  }
+  $("#startLocate").addEventListener("click", function () {
+    var b = this;
+    b.classList.add("busy"); b.querySelector("span").textContent = "定位中…";
+    locate(locateBtn, function (ok) {
+      b.classList.remove("busy"); b.querySelector("span").textContent = "用我的位置";
+      if (ok) showStart(false);
+    });
+  });
+  startEl.querySelectorAll("[data-start]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var ll = b.dataset.start.split(",").map(Number);
+      showStart(false);
+      map.setView(ll, START_ZOOM);
+    });
+  });
+  $("#startSkip").addEventListener("click", function () { showStart(false); });
+  // Moving the map by hand answers the question too.
+  map.on("dragstart", function () { if (startOpen()) showStart(false); });
 
   // ------------------------------------------------------------- chargers
   var chargerLayer = L.layerGroup().addTo(map), chargers = [], chargersLoaded = false;
@@ -974,8 +1014,9 @@
     },
   });
   var locateBtn = null;
-  function locate(b) {
-    if (!navigator.geolocation) { mapToast("這個瀏覽器不支援定位"); return; }
+  function locate(b, done) {
+    done = done || function () {};
+    if (!navigator.geolocation) { mapToast("這個瀏覽器不支援定位"); done(false); return; }
     b.classList.add("busy");
     navigator.geolocation.getCurrentPosition(function (pos) {
       b.classList.remove("busy"); b.classList.add("on");
@@ -986,8 +1027,10 @@
       L.circleMarker(ll, { radius: 7, color: "#fff", weight: 3, fillColor: "#2b7bff", fillOpacity: 1, interactive: false }).addTo(userLayer);
       map.setView(ll, Math.max(map.getZoom(), 16));
       setSort("near");  // located: nearest parks first (the user can switch back)
+      done(true);
     }, function (err) {
       b.classList.remove("busy");
+      done(false);
       mapToast(err.code === 1 ? "沒有定位權限：請在瀏覽器設定允許這個網站使用位置" : "暫時無法取得位置，請稍後再試");
     }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 });
   }
@@ -1134,6 +1177,7 @@
   // The one-line answer in the sheet head: how many parks in view suit the selected time, or why none.
   function updateSummary(fs) {
     var el = $("#sheetSummary");
+    if (startOpen()) { el.textContent = "選一個地方開始，看附近現在不曬的公園"; return; }
     if (!state.features.length) { el.textContent = "地圖載入中…"; return; }
     var covered = state.regions.some(function (r) { return regionInView(r); });
     if (!covered) { el.textContent = "這個範圍還沒有資料"; return; }

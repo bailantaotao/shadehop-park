@@ -44,6 +44,23 @@
 
 <div id="map" role="region" aria-label="地圖"></div>
 
+{# First visit only (no saved view, no shared link): pick where to start instead of facing all of northern Taiwan. #}
+<section class="map-start" id="mapStart" aria-labelledby="mapStartTitle" hidden>
+  <h2 id="mapStartTitle">附近哪座公園現在不曬？</h2>
+  <p>從你在的地方開始，地圖會放大到附近。</p>
+  <button type="button" class="start-locate" id="startLocate">{{ icon("pin") }}<span>用我的位置</span></button>
+  <p class="start-or">或從這裡開始</p>
+  <div class="start-cities">
+    <button type="button" class="chip" data-start="25.0330,121.5434" title="大安區一帶">臺北市</button>
+    <button type="button" class="chip" data-start="25.0136,121.4637" title="板橋區一帶">新北市</button>
+    <button type="button" class="chip" data-start="24.9937,121.3010" title="桃園區一帶">桃園市</button>
+    <button type="button" class="chip" data-start="24.8016,120.9716" title="新竹車站一帶">新竹市</button>
+    <button type="button" class="chip" data-start="24.8390,121.0100" title="竹北市一帶">新竹縣</button>
+  </div>
+  <p class="start-note">位置只在這台裝置上用來找附近的公園，不會上傳。</p>
+  <button type="button" class="link start-skip" id="startSkip">先看整張地圖</button>
+</section>
+
 {# On phones this is a bottom sheet over a full-screen map (app.js); on wider screens it is the page below the map. #}
 <section class="sheet" id="sheet" aria-label="公園清單">
 <div class="sheet-head" id="sheetHead">

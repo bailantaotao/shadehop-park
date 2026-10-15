@@ -1038,14 +1038,19 @@
   sheetPark.innerHTML = '<button type="button" class="sheet-close" aria-label="關閉這座公園">✕</button><div id="sheetParkBody"></div>';
   var sheetState = "peek";
   function sheetMetrics() {
-    var full = sheet.offsetHeight, peek = sheetHead.offsetHeight;
-    return { full: full, peek: peek, half: Math.min(full, Math.max(peek + 160, Math.round(window.innerHeight * 0.48))) };
+    var full = sheet.offsetHeight, peek = sheetHead.offsetHeight, half = Math.round(window.innerHeight * 0.48);
+    // With a park or the filters open, "half" is just tall enough to show all of it (actions included).
+    var open = !sheetPark.hidden ? sheetPark : !$("#sheetFilters").hidden ? $("#sheetFilters") : null;
+    if (open) half = peek + open.offsetHeight + 24;
+    return { full: full, peek: peek, half: Math.min(full, Math.max(peek + 160, half)) };
   }
   function sheetOffset(st) {
     var m = sheetMetrics();
     return m.full - (st === "full" ? m.full : st === "half" ? m.half : m.peek);
   }
   function setSheet(st) {
+    // Collapsing to the one-line answer puts away whatever was open.
+    if (st === "peek" && phone.matches) { if (!sheetPark.hidden) { closePark(); render(true); } if (!$("#sheetFilters").hidden) closeFilters(); }
     sheetState = st;
     if (!phone.matches) { sheet.style.transform = ""; return; }
     sheet.style.transform = "translateY(" + sheetOffset(st) + "px)";
@@ -1092,6 +1097,7 @@
     state.selected = f.properties.id;
     $("#sheetParkBody").innerHTML = popupHtml(f);
     sheetPark.hidden = false;
+    sheet.classList.add("has-park");  // the park answers the question; the area summary steps aside
     closeFilters();
     sheetBody.scrollTop = 0;
     setSheet("half");
@@ -1103,16 +1109,18 @@
     render(true);
   }
   sheetPark.addEventListener("click", function (e) {
-    if (e.target.closest(".sheet-close")) { sheetPark.hidden = true; state.selected = null; setSheet("peek"); render(true); return; }
+    if (e.target.closest(".sheet-close")) { closePark(); setSheet("peek"); render(true); return; }
     var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]");
     if (go) { e.preventDefault(); focusPark(go.dataset.goto); }
     if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); }
   });
 
+  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; }
   function openFilters() {
-    $("#sheetFilters").hidden = false; sheetPark.hidden = true;
+    closePark();
+    $("#sheetFilters").hidden = false;
     $("#filterBtn").setAttribute("aria-expanded", "true");
-    sheetBody.scrollTop = 0; setSheet("full");
+    sheetBody.scrollTop = 0; setSheet("half");  // half: the map and the live count stay in view
   }
   function closeFilters() {
     $("#sheetFilters").hidden = true;
@@ -1182,15 +1190,15 @@
   });
 
   // Move the filters, weather line and footer into the sheet on phones, and back on wider screens.
-  var moved = [["#sheetFilters", ".chips.filters", true], ["#sheetFilters", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
+  var moved = [["#grpPlay", ".chips.filters", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
   var homes = moved.map(function (x) { var el = $(x[1]); var mark = document.createComment("home"); el.parentNode.insertBefore(mark, el); return { el: el, mark: mark, to: x[0] }; });
   function layoutForWidth() {
     homes.forEach(function (h) {
-      if (phone.matches) $(h.to).appendChild(h.el);
+      if (phone.matches) { var to = $(h.to); if (to.tagName === "P") to.after(h.el); else to.appendChild(h.el); }
       else h.mark.parentNode.insertBefore(h.el, h.mark.nextSibling);
     });
     $("#moreFilters").hidden = phone.matches ? false : $("#moreBtn").getAttribute("aria-expanded") !== "true";
-    if (!phone.matches) { closeFilters(); sheetPark.hidden = true; }
+    if (!phone.matches) { closeFilters(); closePark(); }
     syncOffsets();
     drawMarkers();
     setSheet(phone.matches ? sheetState : "peek");

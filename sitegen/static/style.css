@@ -368,6 +368,9 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .sheet[data-state="peek"] .sheet-body { visibility: hidden; }
   .sheet-filters:not([hidden]) { display: block; margin-bottom: 12px; }
   .sheet-filters-head { display: flex; justify-content: space-between; align-items: center; margin: 2px 0 10px; }
+  .sheet-group { margin: 4px 0 6px; font-size: .82rem; color: var(--muted); }
+  .sheet.has-park .sheet-summary, .sheet.has-park .sheet-key, .sheet.has-park #weather { display: none; }
+  .sheet.has-park .sheet-head { padding-bottom: 0; }
   .sheet-filters .chips.filters, .sheet-filters #moreFilters { flex-wrap: wrap; overflow: visible; margin: 0 0 8px; padding: 0; }
   .sheet-filters .chip { min-height: 44px; }
   .sheet-park:not([hidden]) { display: block; position: relative; padding: 4px 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }

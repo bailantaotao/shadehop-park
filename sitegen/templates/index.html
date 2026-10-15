@@ -54,6 +54,8 @@
 <div class="sheet-body" id="sheetBody">
 <div class="sheet-filters" id="sheetFilters" hidden>
   <div class="sheet-filters-head"><b>篩選條件</b><button type="button" class="link" id="filtersDone">完成</button></div>
+  <p class="sheet-group" id="grpPlay">玩的條件</p>
+  <p class="sheet-group" id="grpGo">交通與設施</p>
 </div>
 <div class="sheet-park" id="sheetPark" hidden></div>
 <details class="legend-box">
@@ -75,7 +77,7 @@
 <div class="listbar">
   <h2 id="count">公園</h2>
   <div class="chips" role="group" aria-label="排序與我的最愛">
-    <button class="chip" data-sort="shade" aria-pressed="true">遮陰優先</button>
+    <button class="chip" data-sort="shade" aria-pressed="true" title="先列下雨可玩的，再來是確定有遊戲場的，同一組裡遮陰多的在前">推薦</button>
     <button class="chip" data-sort="near" aria-pressed="false">{{ icon("pin") }}離我最近</button>
     <button class="chip" data-filter="fav" aria-pressed="false">{{ icon("star") }}我的最愛</button>
   </div>

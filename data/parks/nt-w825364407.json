@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/7936908614",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/825364407",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/825364407",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
@@ -49,7 +49,7 @@
    "name": "萊爾富八里大船店",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 1741,
@@ -92,7 +92,7 @@
   "3": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.68,
+   "mean": 0.69,
    "start": "16:30",
    "start_slot": 21
   },
@@ -110,24 +110,12 @@
    "start": "17:30",
    "start_slot": 23
   },
-  "6": {
-   "end": "18:00",
-   "end_slot": 24,
-   "mean": 0.61,
-   "start": "17:30",
-   "start_slot": 23
-  },
-  "7": {
-   "end": "18:00",
-   "end_slot": 24,
-   "mean": 0.62,
-   "start": "17:30",
-   "start_slot": 23
-  },
+  "6": null,
+  "7": null,
   "8": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.81,
+   "mean": 0.82,
    "start": "17:30",
    "start_slot": 23
   },
@@ -193,7 +181,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02790",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.05,
@@ -221,7 +209,7 @@
   "phone": "(02)26102621",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-14"
+  "verified_at": "2026-10-18"
  },
  "osm": {
   "id": 825364407,
@@ -235,14 +223,14 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 157,
+   "distance_m": 155,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.147445,
-    "lng": 121.397207
+    "lat": 25.147451,
+    "lng": 121.397213
    },
    "maxheight_m": null,
    "method": "osm",
@@ -254,21 +242,47 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299807165"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 278,
+   "distance_m": 169,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 25.147714,
+    "lng": 121.396283
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1568139995,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1568139995"
+   },
+   "verified_at": "2026-10-17"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 275,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.148538,
-    "lng": 121.397231
+    "lat": 25.148513,
+    "lng": 121.397261
    },
    "maxheight_m": null,
    "method": "osm",
@@ -280,7 +294,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/848343544"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -306,7 +320,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299807164"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -332,7 +346,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714659313"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -358,33 +372,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/378491782"
    },
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 620,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.148265,
-    "lng": 121.40221
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "TIMES八里中山路停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 714659312,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/714659312"
-   },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -405,7 +393,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/825364407",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -414,7 +402,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.67,
-  "buildings_considered": 170,
+  "buildings_considered": 171,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -437,13 +425,13 @@
     0.16,
     0.06,
     0.01,
-    0.03,
-    0.11,
-    0.22,
-    0.36,
+    0.04,
+    0.12,
+    0.23,
+    0.37,
     0.57,
-    0.89,
-    0.19,
+    0.9,
+    0.2,
     null,
     null
    ],
@@ -463,13 +451,13 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.05,
+    0.01,
+    0.06,
     0.15,
     0.27,
     0.46,
-    0.77,
-    0.45,
+    0.76,
+    0.47,
     null,
     null
    ],
@@ -487,14 +475,14 @@
     0.27,
     0.16,
     0.06,
-    0.0,
     0.01,
-    0.07,
-    0.16,
+    0.02,
+    0.08,
+    0.17,
     0.29,
-    0.46,
+    0.47,
     0.75,
-    0.6,
+    0.61,
     0.0,
     null,
     null
@@ -513,14 +501,14 @@
     0.37,
     0.24,
     0.11,
+    0.04,
     0.03,
-    0.02,
-    0.09,
-    0.19,
-    0.32,
-    0.5,
-    0.79,
-    0.53,
+    0.1,
+    0.2,
+    0.33,
+    0.51,
+    0.8,
+    0.54,
     0.0,
     null,
     null
@@ -542,12 +530,12 @@
     0.03,
     0.0,
     0.0,
-    0.02,
+    0.03,
     0.1,
-    0.2,
+    0.21,
     0.35,
     0.57,
-    0.87,
+    0.89,
     0.03,
     null
    ],
@@ -572,9 +560,9 @@
     0.02,
     0.1,
     0.21,
-    0.38,
-    0.64,
-    0.72,
+    0.37,
+    0.63,
+    0.74,
     0.0
    ],
    "4": [
@@ -598,10 +586,10 @@
     0.0,
     0.02,
     0.1,
-    0.23,
-    0.41,
-    0.75,
-    0.27
+    0.22,
+    0.4,
+    0.73,
+    0.28
    ],
    "5": [
     0.53,
@@ -625,8 +613,8 @@
     0.0,
     0.02,
     0.11,
-    0.25,
-    0.47,
+    0.24,
+    0.45,
     0.88
    ],
    "6": [
@@ -650,10 +638,10 @@
     0.0,
     0.0,
     0.0,
-    0.05,
-    0.15,
-    0.31,
-    0.61
+    0.04,
+    0.14,
+    0.3,
+    0.58
    ],
    "7": [
     0.48,
@@ -677,9 +665,9 @@
     0.0,
     0.0,
     0.05,
-    0.16,
-    0.32,
-    0.62
+    0.15,
+    0.3,
+    0.59
    ],
    "8": [
     0.73,
@@ -702,10 +690,10 @@
     0.0,
     0.0,
     0.05,
-    0.15,
+    0.14,
     0.29,
-    0.54,
-    0.81
+    0.52,
+    0.82
    ],
    "9": [
     1.0,
@@ -725,39 +713,39 @@
     0.0,
     0.0,
     0.0,
-    0.01,
+    0.02,
     0.09,
     0.21,
     0.37,
-    0.65,
-    0.66,
+    0.64,
+    0.67,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/825364407",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T00:55:37+08:00",
+   "as_of": "2026-10-19T04:30:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T17:24:13+00:00",
+   "as_of": "2026-10-18T21:34:21+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/5323075124",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/278139892",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運南勢角站",
    "source": "https://www.openstreetmap.org/node/3812564395",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "華新里辦公處1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 280,
@@ -198,7 +198,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/6084138"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -224,7 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/281750874"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -250,7 +250,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/442934223"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -276,7 +276,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/515195091"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -302,7 +302,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/302427441"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -323,7 +323,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/278139892",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -654,16 +654,16 @@
   },
   "source": "https://www.openstreetmap.org/way/278139892",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

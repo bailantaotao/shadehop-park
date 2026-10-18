@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9345816164",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/215191243",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運江子翠站",
    "source": "https://www.openstreetmap.org/node/3639530950",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "永安公園活動中心",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 5013,
@@ -221,7 +221,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02958",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -266,7 +266,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02913",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -325,7 +325,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02900",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -373,7 +373,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948068969"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -399,7 +399,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948068968"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -425,7 +425,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/904416002"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -451,7 +451,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/413393440"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -477,7 +477,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/947372738"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -503,7 +503,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1088765696"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -524,7 +524,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/215191243",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -855,22 +855,22 @@
   },
   "source": "https://www.openstreetmap.org/way/215191243",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T00:55:37+08:00",
+   "as_of": "2026-10-19T04:30:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7922528405",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/548735498",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/548735498",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
@@ -49,7 +49,7 @@
    "name": "台灣中油永富加盟站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 741,
@@ -123,7 +123,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1192055735"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -149,7 +149,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/548729323"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -175,7 +175,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/197626297"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -201,7 +201,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/115786687"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -227,7 +227,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483630458"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -253,7 +253,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483630465"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -274,7 +274,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/548735498",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新竹市",
@@ -282,8 +282,8 @@
   "id": "hsinchucity"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.02,
-  "buildings_considered": 58,
+  "building_height_known_share": 0.01,
+  "buildings_considered": 77,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -605,7 +605,7 @@
   },
   "source": "https://www.openstreetmap.org/way/548735498",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [
   {
@@ -624,16 +624,16 @@
    "source": "https://www.openstreetmap.org/way/548735498",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

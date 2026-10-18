@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9342491839",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/8240772017",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運三和國中站",
    "source": "https://www.openstreetmap.org/node/3812564387",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8224435840",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 452,
@@ -190,7 +190,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02783",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -242,7 +242,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "12681939-SPSS_YA41001",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -287,7 +287,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "83039115-S0002",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.24,
@@ -335,7 +335,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1394452993"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -361,7 +361,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/777210697"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -387,7 +387,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019781523"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -413,7 +413,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/7166330086"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -439,7 +439,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/777210705"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -465,7 +465,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/777210706"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -486,7 +486,7 @@
   "note": "約 122 m² 在高架/屋頂下（佔 27%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/node/8240772017",
   "value": "partial",
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -817,7 +817,7 @@
   },
   "source": "https://www.openstreetmap.org/node/8240772017",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [
   {
@@ -846,22 +846,22 @@
    "source": "https://www.openstreetmap.org/node/8240772017",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T00:55:37+08:00",
+   "as_of": "2026-10-19T04:30:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

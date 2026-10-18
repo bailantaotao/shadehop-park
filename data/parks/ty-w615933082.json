@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118206963",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/615933082",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,25 +31,25 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/615933082",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
    "category": "文化育樂活動場所",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 232,
+   "distance_m": 230,
    "family": null,
    "family_room": false,
    "location": {
-    "lat": 25.051657,
-    "lng": 121.35819
+    "lat": 25.051648,
+    "lng": 121.358178
    },
    "method": "official_data",
    "name": "桃園市立圖書館大崗分館1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 2410,
@@ -123,7 +123,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1382808164"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -149,7 +149,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1376646093"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -175,7 +175,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1376646091"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -201,7 +201,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1128036269"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -227,7 +227,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1095413571"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -253,7 +253,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1128036270"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -274,7 +274,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/615933082",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -605,16 +605,16 @@
   },
   "source": "https://www.openstreetmap.org/way/615933082",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

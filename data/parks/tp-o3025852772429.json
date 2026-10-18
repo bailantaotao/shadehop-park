@@ -12,7 +12,7 @@
    "name": "維康醫療用品(北馬院外店)",
    "source": "https://www.openstreetmap.org/node/5110488715",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運雙連站",
    "source": "https://www.openstreetmap.org/node/3495094872",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
@@ -52,10 +52,10 @@
     "lng": 121.522558
    },
    "method": "official_data",
-   "name": "馬偕紀念醫院平安樓四樓",
+   "name": "馬偕紀念醫院平安樓七樓",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 280,
@@ -151,8 +151,8 @@
   "nearest_fast_m": null,
   "nearest_slow_m": 166,
   "radius_m": 500,
-  "slow": 3,
-  "total": 3,
+  "slow": 4,
+  "total": 4,
   "unknown": 0
  },
  "chargers": [
@@ -199,7 +199,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0156",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -244,7 +244,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0425",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -282,7 +282,52 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0977",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 2,
+   "charging_rate": "AC/計度/一般/ 8.000元每度",
+   "distance_m": 422,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "1",
+   "location": {
+    "lat": 25.05526,
+    "lng": 121.52151
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "中山運動中心旁臨時平面停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "公辦公營",
+   "operator": "華城電能科技股份有限公司",
+   "osm": null,
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "output_kw": null,
+     "type": "type2"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "TPE0441",
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.34,
@@ -312,7 +357,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-10-14"
+  "verified_at": "2026-10-18"
  },
  "osm": null,
  "park_name": "民享公園",
@@ -341,7 +386,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1022938095"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -367,7 +412,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948881124"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -393,7 +438,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5110489304"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "yes",
@@ -419,7 +464,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019909255"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -445,7 +490,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/916913293"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -471,7 +516,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1344537643"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -492,7 +537,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "臺北市",
@@ -823,28 +868,28 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T23:55:29+08:00",
+   "as_of": "2026-10-19T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T17:24:15+00:00",
+   "as_of": "2026-10-18T21:34:23+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

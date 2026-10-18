@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/way/289854292",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1480458914",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運先嗇宮站",
    "source": "https://www.openstreetmap.org/node/3812564393",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "神農百草公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 7915,
@@ -159,8 +159,8 @@
   "nearest_fast_m": null,
   "nearest_slow_m": 14,
   "radius_m": 500,
-  "slow": 4,
-  "total": 4,
+  "slow": 5,
+  "total": 5,
   "unknown": 0
  },
  "chargers": [
@@ -207,7 +207,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03263",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -252,7 +252,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02813",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -290,7 +290,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "28007736-S099",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -335,7 +335,45 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S5a4c664d-b9f1-4b87-b33a-51295d34979a",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
+  },
+  {
+   "access": null,
+   "brand": null,
+   "capacity": 3,
+   "charging_rate": "計度/固定/6元每度",
+   "distance_m": 315,
+   "distance_method": "straight_line",
+   "fee": null,
+   "floors": "B2",
+   "location": {
+    "lat": 25.048492,
+    "lng": 121.472126
+   },
+   "max_kw": null,
+   "method": "official_data",
+   "name": "美麗人生停車場",
+   "opening_hours": "每日/00:00-24:00",
+   "operation_type": "私有民營",
+   "operator": "美麗人生展業有限公司",
+   "osm": null,
+   "parking_rate": "計時/每日/60元每小時",
+   "restriction": null,
+   "sockets": [
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "output_kw": null,
+     "type": "type1"
+    }
+   ],
+   "source": "tdx",
+   "speed": "slow",
+   "speed_label": "慢充 (AC)",
+   "speed_source": "official",
+   "tdx_id": "53718137-S03017",
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.01,
@@ -363,7 +401,7 @@
   "phone": "(02)29862345",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-14"
+  "verified_at": "2026-10-18"
  },
  "osm": {
   "id": 1480458914,
@@ -396,7 +434,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1480460219"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -422,7 +460,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943448"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -448,7 +486,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943457"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -474,7 +512,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666869"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -500,7 +538,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943446"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -526,7 +564,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943459"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -547,7 +585,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1480458914",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -878,7 +916,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1480458914",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [
   {
@@ -902,28 +940,28 @@
    "source": "https://www.openstreetmap.org/way/1480458914",
    "type": "pavilion",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T00:55:37+08:00",
+   "as_of": "2026-10-19T04:30:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T17:24:13+00:00",
+   "as_of": "2026-10-18T21:34:21+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Hsinchu",
  "count": null,
- "fetched_at": "2026-10-14T17:25:19+00:00",
+ "fetched_at": "2026-10-18T21:35:26+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucity",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-15T01:15:00+08:00",
+ "src_update_time": "2026-10-19T04:30:32+08:00",
  "stations": [
   {
    "charging_points": 1,
@@ -120,16 +120,16 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
      "count": 2,
      "current": "DC",
      "label": "Tesla TPC",
      "type": "tesla_tpc"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數6",
@@ -153,14 +153,14 @@
     {
      "count": 8,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     },
     {
      "count": 8,
      "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數8",
@@ -670,7 +670,7 @@
   },
   {
    "charging_points": 2,
-   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "charging_rate": "計度/固定/8.3元每度",
    "connectors": [
     {
      "count": 1,
@@ -685,7 +685,7 @@
      "type": "type2_combo"
     }
    ],
-   "description": "停車位:1 充電樁數量:2 停車費:免費 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
+   "description": "停車位:1 充電樁數量:2 停車費:免費 費率:計度/固定/8.3元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD02556",
    "lat": 24.843499,
@@ -1079,14 +1079,14 @@
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
+     "label": "CCS2",
+     "type": "type2_combo"
     },
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "CCS1",
+     "type": "type1_combo"
     }
    ],
    "description": "本站目前共有1樁180kW充電樁以及1樁120kW充電樁",
@@ -2046,5 +2046,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-15T01:15:36+08:00"
+ "update_time": "2026-10-19T04:30:32+08:00"
 }

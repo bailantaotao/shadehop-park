@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7778040748",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/968940979",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,25 +34,25 @@
    "name": "平鎮站",
    "source": "https://www.openstreetmap.org/node/14244739700",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
    "category": "觀光地區及風景區",
    "changing_table": true,
    "confidence": "high",
-   "distance_m": 198,
+   "distance_m": 181,
    "family": null,
    "family_room": false,
    "location": {
-    "lat": 24.935083,
+    "lat": 24.934928,
     "lng": 121.225147
    },
    "method": "official_data",
    "name": "葡萄王生技",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 3884,
@@ -126,7 +126,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/989029349"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -152,7 +152,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992191744"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -178,7 +178,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992191743"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "yes",
@@ -204,7 +204,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/996658232"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -230,7 +230,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008060591"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -256,7 +256,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992686962"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -277,7 +277,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/968940979",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -608,16 +608,16 @@
   },
   "source": "https://www.openstreetmap.org/way/968940979",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Taipei",
  "count": null,
- "fetched_at": "2026-10-14T17:25:19+00:00",
+ "fetched_at": "2026-10-18T21:35:26+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "taipei",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-14T23:55:29+08:00",
+ "src_update_time": "2026-10-19T04:10:32+08:00",
  "stations": [
   {
    "charging_points": 6,
@@ -5265,6 +5265,37 @@
    "restriction": null,
    "service_time": "每日/00:00~24:00",
    "spaces": 6
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "AC/計度/一般/ 8.000元每度",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 2",
+     "type": "type2"
+    }
+   ],
+   "description": "20元/時",
+   "floors": "1",
+   "id": "TPE0441",
+   "lat": 25.05526,
+   "lng": 121.52151,
+   "name": "中山運動中心旁臨時平面停車場",
+   "operation_type": "公辦公營",
+   "operator": "華城電能科技股份有限公司",
+   "operator_id": "90807408",
+   "parking_rate": "20元/時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 2
   },
   {
    "charging_points": 2,
@@ -11987,5 +12018,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-14T23:55:40+08:00"
+ "update_time": "2026-10-19T04:16:32+08:00"
 }

@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/3488634353",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/229745105",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "新竹站",
    "source": "https://www.openstreetmap.org/node/3372916575",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
@@ -55,7 +55,7 @@
    "name": "新竹市演藝廳1樓",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 18055,
@@ -168,7 +168,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "97179430-S118",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -206,7 +206,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "50696139-SA012001",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -244,7 +244,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "91383456-SA032801",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -296,7 +296,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "97179430-S209",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -341,7 +341,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03097",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -379,7 +379,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "39981419-Sgowin_5",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -417,7 +417,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "50696460-SA0124",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -465,7 +465,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/923037075"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -491,7 +491,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1308263156"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -517,7 +517,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/669916812"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -543,7 +543,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/295249759"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -569,7 +569,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1009877361"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -595,7 +595,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/287279816"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -616,7 +616,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/229745105",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新竹市",
@@ -947,22 +947,22 @@
   },
   "source": "https://www.openstreetmap.org/way/229745105",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T01:15:00+08:00",
+   "as_of": "2026-10-19T04:30:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

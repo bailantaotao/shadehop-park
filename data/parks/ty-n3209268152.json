@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6275650886",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/3209268152",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -34,7 +34,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/3209268152",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
@@ -49,10 +49,10 @@
     "lng": 121.350982
    },
    "method": "official_data",
-   "name": "復興區衛生所1F",
+   "name": "復興區衛生所2F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 420,
@@ -144,7 +144,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/298788874"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "yes",
@@ -170,7 +170,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1011008594"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "yes",
@@ -196,7 +196,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/298788873"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -222,7 +222,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1230119758"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -248,7 +248,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/299252405"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "yes",
@@ -274,7 +274,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474301099"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -295,7 +295,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/3209268152",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -626,16 +626,16 @@
   },
   "source": "https://www.openstreetmap.org/node/3209268152",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6898027606",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/693464627",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -34,12 +34,12 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/693464627",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
-   "accessible": false,
+   "accessible": true,
    "category": "文化育樂活動場所",
-   "changing_table": false,
+   "changing_table": true,
    "confidence": "high",
    "distance_m": 0,
    "family": null,
@@ -49,10 +49,10 @@
     "lng": 121.016109
    },
    "method": "official_data",
-   "name": "永安海螺文化體驗園區室外",
+   "name": "永安海螺文化體驗園區室內1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 49794,
@@ -126,7 +126,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1066169245"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -152,7 +152,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1066169246"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -178,7 +178,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/27696464"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -204,7 +204,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/27696465"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -230,7 +230,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1498514952"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -256,7 +256,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1251224604"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -277,7 +277,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/693464627",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -608,16 +608,16 @@
   },
   "source": "https://www.openstreetmap.org/way/693464627",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

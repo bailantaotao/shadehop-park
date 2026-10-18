@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/7936908614",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/366414910",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/366414910",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "changing_table": null,
@@ -41,10 +41,10 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/366414910",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
- "area_m2": 85150,
+ "area_m2": 79904,
  "best_shade_windows": {
   "1": null,
   "10": null,
@@ -106,7 +106,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "89132567-S0110",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -117,8 +117,8 @@
  "level": "B",
  "level_label": "部分遮陽設施 / 樹蔭",
  "location": {
-  "lat": 25.14624,
-  "lng": 121.390816
+  "lat": 25.14608,
+  "lng": 121.390983
  },
  "name": "水仙公園",
  "name_source": "osm_name",
@@ -134,7 +134,7 @@
   "phone": "(02)26102621",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-14"
+  "verified_at": "2026-10-18"
  },
  "osm": {
   "id": 366414910,
@@ -167,21 +167,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/378491782"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 85,
+   "distance_m": 89,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.142466,
-    "lng": 121.390209
+    "lat": 25.14253,
+    "lng": 121.390196
    },
    "maxheight_m": null,
    "method": "osm",
@@ -193,14 +193,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/230622871"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 133,
+   "distance_m": 151,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -219,14 +219,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/306975903"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 153,
+   "distance_m": 152,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -245,14 +245,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/378491791"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 191,
+   "distance_m": 190,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -271,33 +271,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/378491781"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 226,
+   "distance_m": 222,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
+   "kind": null,
+   "kind_label": "停車場",
    "location": {
-    "lat": 25.150487,
-    "lng": 121.390441
+    "lat": 25.147714,
+    "lng": 121.396283
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
+   "name": "停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 3819084963,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3819084963"
+    "id": 1568139995,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1568139995"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -312,13 +312,13 @@
  "playground_mapped": false,
  "rain_cover": {
   "confidence": "medium",
-  "covered_area_m2": 2175,
+  "covered_area_m2": 2320,
   "covered_ratio": 0.03,
   "method": "computed",
-  "note": "約 2175 m² 在高架/屋頂下（佔 3%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
+  "note": "約 2320 m² 在高架/屋頂下（佔 3%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/366414910",
   "value": "partial",
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -327,7 +327,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.57,
-  "buildings_considered": 120,
+  "buildings_considered": 122,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -337,41 +337,40 @@
    "1": [
     null,
     null,
-    0.25,
-    0.07,
-    0.03,
-    0.01,
-    0.01,
+    0.26,
+    0.08,
+    0.04,
     0.02,
     0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.05,
     null,
     null
    ],
    "10": [
-    0.51,
+    0.53,
     0.15,
-    0.05,
-    0.02,
-    0.02,
-    0.02,
+    0.06,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -381,31 +380,32 @@
     0.03,
     0.03,
     0.04,
+    0.04,
     0.05,
-    0.07,
+    0.06,
     null,
     null
    ],
    "11": [
     null,
-    0.28,
+    0.29,
     0.07,
-    0.03,
-    0.01,
-    0.01,
+    0.04,
     0.02,
     0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.05,
     0.17,
@@ -416,42 +416,41 @@
     null,
     null,
     0.19,
+    0.06,
+    0.02,
+    0.02,
+    0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.03,
+    0.03,
+    0.04,
     0.05,
-    0.02,
-    0.01,
-    0.01,
-    0.02,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.04,
-    0.04,
-    0.14,
+    0.13,
     null,
     null
    ],
    "2": [
     null,
     null,
-    0.21,
-    0.05,
-    0.02,
-    0.01,
-    0.02,
+    0.22,
+    0.06,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -460,16 +459,21 @@
     0.03,
     0.03,
     0.04,
+    0.04,
     0.05,
-    0.11,
+    0.09,
     null
    ],
    "3": [
     null,
     0.29,
     0.08,
+    0.05,
     0.04,
-    0.02,
+    0.04,
+    0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -480,20 +484,19 @@
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.05,
-    0.06,
-    0.41
+    0.07,
+    0.42
    ],
    "4": [
-    0.23,
+    0.24,
     0.07,
-    0.05,
+    0.07,
+    0.06,
+    0.04,
+    0.04,
     0.04,
     0.03,
     0.03,
@@ -506,20 +509,20 @@
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.04,
     0.05,
     0.06,
-    0.25
+    0.27
    ],
    "5": [
+    0.08,
     0.07,
+    0.06,
     0.05,
-    0.05,
+    0.04,
+    0.04,
     0.04,
     0.03,
     0.03,
@@ -532,21 +535,21 @@
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.04,
     0.05,
     0.06,
-    0.12
+    0.14
    ],
    "6": [
+    0.09,
     0.07,
     0.06,
     0.05,
     0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -557,26 +560,22 @@
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.04,
     0.04,
     0.05,
-    0.07
+    0.06,
+    0.09
    ],
    "7": [
-    0.08,
+    0.09,
+    0.07,
+    0.06,
     0.05,
-    0.05,
     0.04,
     0.04,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -592,17 +591,17 @@
     0.04,
     0.04,
     0.05,
-    0.07
+    0.06,
+    0.08
    ],
    "8": [
-    0.16,
+    0.17,
+    0.07,
+    0.07,
     0.05,
-    0.05,
     0.04,
     0.04,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -618,12 +617,17 @@
     0.04,
     0.04,
     0.05,
-    0.11
+    0.06,
+    0.13
    ],
    "9": [
-    0.39,
+    0.41,
     0.1,
+    0.06,
     0.05,
+    0.04,
+    0.04,
+    0.04,
     0.03,
     0.03,
     0.03,
@@ -635,11 +639,7 @@
     0.03,
     0.03,
     0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
-    0.03,
+    0.04,
     0.04,
     0.04,
     0.05,
@@ -649,7 +649,7 @@
   },
   "source": "https://www.openstreetmap.org/way/366414910",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [
   {
@@ -664,42 +664,42 @@
      "url": "https://www.openstreetmap.org/way/940710741"
     },
     {
-     "id": 940710742,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/940710742"
-    },
-    {
      "id": 940710739,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/940710739"
+    },
+    {
+     "id": 940710742,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/940710742"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/366414910",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T00:55:37+08:00",
+   "as_of": "2026-10-19T04:30:00+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-14T17:24:13+00:00",
+   "as_of": "2026-10-18T21:34:21+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

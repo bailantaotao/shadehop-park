@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13206395954",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/556969228",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,14 +31,14 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/556969228",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
    "category": "商業營業場所",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 43,
+   "distance_m": 54,
    "family": {
     "accessible": false,
     "category": "公園",
@@ -53,14 +53,14 @@
    },
    "family_room": false,
    "location": {
-    "lat": 24.998623,
-    "lng": 121.296222
+    "lat": 24.998533,
+    "lng": 121.296255
    },
    "method": "official_data",
    "name": "台灣中油力行加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 1390,
@@ -197,7 +197,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S330029",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -235,7 +235,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "92788429-SB034701",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -273,7 +273,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S330001",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -301,7 +301,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -346,7 +346,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "58430020-S330019",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "91887484-SA039601",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -429,7 +429,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "36444443-SO25100001",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.02,
@@ -477,7 +477,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466142050"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -503,7 +503,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1342301857"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -529,7 +529,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1266493886"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -555,7 +555,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/20192130"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -581,7 +581,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1024000711"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -607,7 +607,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1284434336"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -628,7 +628,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/556969228",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -959,22 +959,22 @@
   },
   "source": "https://www.openstreetmap.org/way/556969228",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T01:15:36+08:00",
+   "as_of": "2026-10-19T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

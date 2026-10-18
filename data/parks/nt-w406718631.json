@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2111807694",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/406718631",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/406718631",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
@@ -42,14 +42,14 @@
    "family": null,
    "family_room": false,
    "location": {
-    "lat": 25.103217,
-    "lng": 121.44848
+    "lat": 25.103213,
+    "lng": 121.448474
    },
    "method": "official_data",
    "name": "五股區集賢里活動中心",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 990,
@@ -195,7 +195,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/406718632"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -221,7 +221,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/406718625"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -242,7 +242,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/406718631",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新北市",
@@ -573,16 +573,16 @@
   },
   "source": "https://www.openstreetmap.org/way/406718631",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

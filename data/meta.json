@@ -25,31 +25,31 @@
   "VIADUCT_DECK_TOP_M": 10.0
  },
  "counts": {
-  "buildings_in_bbox": 421297,
-  "buildings_with_height": 93191,
+  "buildings_in_bbox": 421441,
+  "buildings_with_height": 93189,
   "by_level": {
    "A": 45,
    "B": 141,
    "C": 55,
    "none": 3022
   },
-  "chargers_in_bbox": 1321,
-  "chargers_official": 1225,
+  "chargers_in_bbox": 1327,
+  "chargers_official": 1231,
   "chargers_osm_only": 96,
   "city_registry_parks": 1324,
-  "convenience_stores": 15113,
+  "convenience_stores": 15118,
   "mapped_playgrounds": 774,
   "matched_city_registry": 637,
   "official_only": 297,
   "park_candidates": 2125,
-  "parking_lots_in_bbox": 14480,
+  "parking_lots_in_bbox": 14485,
   "parks": 3263,
   "stations": 522,
-  "toilets_official": 5704
+  "toilets_official": 5694
  },
  "coverage": "新北市、臺北市、桃園市、新竹市、新竹縣",
- "fetched_at": "2026-10-14T17:22:35+00:00",
- "generated_from_osm_base": "2026-10-13T20:21:31Z",
+ "fetched_at": "2026-10-18T21:32:20+00:00",
+ "generated_from_osm_base": "2026-10-17T20:20:51Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
   "B": "部分遮陽設施 / 樹蔭",
@@ -74,11 +74,11 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T17:25:19+00:00",
+    "fetched_at": "2026-10-18T21:35:26+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-15T01:15:00+08:00",
+    "src_update_time": "2026-10-19T04:30:32+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
@@ -321,7 +321,7 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 12486,
+    "buildings_in_bbox": 12546,
     "buildings_with_height": 1548,
     "by_level": {
      "A": 8,
@@ -338,10 +338,10 @@
     "matched_city_registry": 66,
     "official_only": 0,
     "park_candidates": 168,
-    "parking_lots_in_bbox": 969,
+    "parking_lots_in_bbox": 970,
     "parks": 271,
     "stations": 12,
-    "toilets_official": 228
+    "toilets_official": 225
    },
    "default_building_heights_by_type": {
     "apartments": 33.0,
@@ -354,8 +354,8 @@
     "university": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T17:22:35+00:00",
-   "generated_from_osm_base": "2026-10-13T20:21:31Z",
+   "fetched_at": "2026-10-18T21:32:20+00:00",
+   "generated_from_osm_base": "2026-10-17T20:20:51Z",
    "region": {
     "city": "新竹市",
     "city_en": "Hsinchu City",
@@ -380,17 +380,17 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T17:25:19+00:00",
+    "fetched_at": "2026-10-18T21:35:26+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-15T00:55:36+08:00",
+    "src_update_time": "2026-10-19T04:10:32+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": null,
    "city_registry_not_in_osm": [],
    "counts": {
-    "buildings_in_bbox": 46161,
+    "buildings_in_bbox": 46224,
     "buildings_with_height": 4417,
     "by_level": {
      "A": 3,
@@ -398,16 +398,16 @@
      "C": 3,
      "none": 372
     },
-    "chargers_in_bbox": 75,
-    "chargers_official": 63,
+    "chargers_in_bbox": 76,
+    "chargers_official": 64,
     "chargers_osm_only": 12,
     "city_registry_parks": null,
-    "convenience_stores": 1688,
+    "convenience_stores": 1689,
     "mapped_playgrounds": 75,
     "matched_city_registry": 0,
     "official_only": 0,
     "park_candidates": 313,
-    "parking_lots_in_bbox": 2137,
+    "parking_lots_in_bbox": 2138,
     "parks": 388,
     "stations": 37,
     "toilets_official": 321
@@ -427,8 +427,8 @@
     "university": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T17:22:35+00:00",
-   "generated_from_osm_base": "2026-10-13T20:21:31Z",
+   "fetched_at": "2026-10-18T21:32:20+00:00",
+   "generated_from_osm_base": "2026-10-17T20:20:51Z",
    "region": {
     "city": "新竹縣",
     "city_en": "Hsinchu County",
@@ -452,16 +452,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T17:25:19+00:00",
+    "fetched_at": "2026-10-18T21:35:26+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-15T00:55:37+08:00",
+    "src_update_time": "2026-10-19T04:30:00+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 635,
-    "fetched_at": "2026-10-14T17:24:13+00:00",
+    "fetched_at": "2026-10-18T21:34:21+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "新北市政府農業局",
@@ -1599,27 +1599,27 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 157521,
-    "buildings_with_height": 40611,
+    "buildings_in_bbox": 157522,
+    "buildings_with_height": 40608,
     "by_level": {
      "A": 12,
      "B": 64,
      "C": 18,
      "none": 1029
     },
-    "chargers_in_bbox": 312,
-    "chargers_official": 282,
+    "chargers_in_bbox": 313,
+    "chargers_official": 283,
     "chargers_osm_only": 30,
     "city_registry_parks": 635,
-    "convenience_stores": 5399,
+    "convenience_stores": 5400,
     "mapped_playgrounds": 197,
     "matched_city_registry": 372,
     "official_only": 0,
     "park_candidates": 926,
-    "parking_lots_in_bbox": 4918,
+    "parking_lots_in_bbox": 4920,
     "parks": 1123,
     "stations": 221,
-    "toilets_official": 2530
+    "toilets_official": 2528
    },
    "default_building_heights_by_type": {
     "apartments": 15.0,
@@ -1655,8 +1655,8 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T17:22:35+00:00",
-   "generated_from_osm_base": "2026-10-13T20:21:31Z",
+   "fetched_at": "2026-10-18T21:32:20+00:00",
+   "generated_from_osm_base": "2026-10-17T20:20:51Z",
    "region": {
     "city": "新北市",
     "city_en": "New Taipei City",
@@ -1684,16 +1684,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T17:25:19+00:00",
+    "fetched_at": "2026-10-18T21:35:26+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-14T23:55:29+08:00",
+    "src_update_time": "2026-10-19T04:10:32+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 520,
-    "fetched_at": "2026-10-14T17:24:15+00:00",
+    "fetched_at": "2026-10-18T21:34:23+00:00",
     "kind": "playgrounds",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "臺北市政府工務局公園路燈工程管理處",
@@ -1702,7 +1702,7 @@
    },
    "city_registry_not_in_osm": [],
    "counts": {
-    "buildings_in_bbox": 106908,
+    "buildings_in_bbox": 106911,
     "buildings_with_height": 34527,
     "by_level": {
      "A": 9,
@@ -1710,11 +1710,11 @@
      "C": 19,
      "none": 557
     },
-    "chargers_in_bbox": 454,
-    "chargers_official": 438,
+    "chargers_in_bbox": 455,
+    "chargers_official": 439,
     "chargers_osm_only": 16,
     "city_registry_parks": 520,
-    "convenience_stores": 3462,
+    "convenience_stores": 3463,
     "mapped_playgrounds": 315,
     "matched_city_registry": 151,
     "official_only": 297,
@@ -1722,7 +1722,7 @@
     "parking_lots_in_bbox": 2547,
     "parks": 612,
     "stations": 150,
-    "toilets_official": 1482
+    "toilets_official": 1485
    },
    "default_building_heights_by_type": {
     "apartments": 15.0,
@@ -1756,8 +1756,8 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T17:22:35+00:00",
-   "generated_from_osm_base": "2026-10-13T20:21:31Z",
+   "fetched_at": "2026-10-18T21:32:20+00:00",
+   "generated_from_osm_base": "2026-10-17T20:20:51Z",
    "region": {
     "city": "臺北市",
     "city_en": "Taipei City",
@@ -1782,16 +1782,16 @@
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
-    "fetched_at": "2026-10-14T17:25:19+00:00",
+    "fetched_at": "2026-10-18T21:35:26+00:00",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "交通部",
     "source": "https://data.gov.tw/dataset/170220",
-    "src_update_time": "2026-10-15T01:15:36+08:00",
+    "src_update_time": "2026-10-19T04:10:32+08:00",
     "title": "充電站之基本資料"
    },
    "city_registry": {
     "entries": 54,
-    "fetched_at": "2026-10-14T17:24:16+00:00",
+    "fetched_at": "2026-10-18T21:34:24+00:00",
     "kind": "parks",
     "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
     "publisher": "桃園市政府工務局",
@@ -1857,27 +1857,27 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 98221,
-    "buildings_with_height": 12088,
+    "buildings_in_bbox": 98238,
+    "buildings_with_height": 12089,
     "by_level": {
      "A": 13,
      "B": 25,
      "C": 10,
      "none": 821
     },
-    "chargers_in_bbox": 406,
-    "chargers_official": 375,
+    "chargers_in_bbox": 409,
+    "chargers_official": 378,
     "chargers_osm_only": 31,
     "city_registry_parks": 54,
-    "convenience_stores": 3929,
+    "convenience_stores": 3931,
     "mapped_playgrounds": 128,
     "matched_city_registry": 48,
     "official_only": 0,
     "park_candidates": 718,
-    "parking_lots_in_bbox": 3909,
+    "parking_lots_in_bbox": 3910,
     "parks": 869,
     "stations": 102,
-    "toilets_official": 1143
+    "toilets_official": 1135
    },
    "default_building_heights_by_type": {
     "apartments": 21.0,
@@ -1904,8 +1904,8 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-10-14T17:22:35+00:00",
-   "generated_from_osm_base": "2026-10-13T20:21:31Z",
+   "fetched_at": "2026-10-18T21:32:20+00:00",
+   "generated_from_osm_base": "2026-10-17T20:20:51Z",
    "region": {
     "city": "桃園市",
     "city_en": "Taoyuan City",

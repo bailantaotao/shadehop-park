@@ -3,32 +3,32 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 102,
+   "distance_m": 103,
    "location": {
-    "lat": 25.108975,
-    "lng": 121.530705
+    "lat": 25.110884,
+    "lng": 121.529755
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/5187735901",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/2660846192",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "medium",
-   "distance_m": 19,
+   "distance_m": 16,
    "location": {
-    "lat": 25.109445,
-    "lng": 121.529832
+    "lat": 25.110089,
+    "lng": 121.529392
    },
    "method": "osm",
-   "source": "https://www.openstreetmap.org/node/7600127736",
+   "source": "https://www.openstreetmap.org/way/1569098822",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
-   "distance_m": 1042,
+   "distance_m": 1022,
    "location": {
     "lat": 25.103003,
     "lng": 121.52252
@@ -37,14 +37,14 @@
    "name": "捷運芝山站",
    "source": "https://www.openstreetmap.org/node/3495094877",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
    "category": "交通",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 48,
+   "distance_m": 53,
    "family": null,
    "family_room": false,
    "location": {
@@ -55,74 +55,104 @@
    "name": "蘭雅公園地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
- "area_m2": 452,
+ "area_m2": 81,
  "best_shade_windows": {
   "1": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.94,
+   "end": "07:30",
+   "end_slot": 3,
+   "mean": 1.0,
    "start": "07:00",
    "start_slot": 2
   },
   "10": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.95,
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 1.0,
    "start": "06:00",
    "start_slot": 0
   },
   "11": {
-   "end": "08:00",
-   "end_slot": 4,
-   "mean": 0.9,
-   "start": "06:30",
-   "start_slot": 1
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 1.0,
+   "start": "16:00",
+   "start_slot": 20
   },
   "12": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.99,
+   "start": "16:00",
+   "start_slot": 20
+  },
+  "2": {
    "end": "08:00",
    "end_slot": 4,
    "mean": 1.0,
    "start": "07:00",
    "start_slot": 2
   },
-  "2": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.92,
-   "start": "07:00",
-   "start_slot": 2
-  },
   "3": {
-   "end": "09:00",
-   "end_slot": 6,
-   "mean": 0.9,
-   "start": "06:30",
-   "start_slot": 1
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 1.0,
+   "start": "17:30",
+   "start_slot": 23
   },
-  "4": null,
-  "5": null,
-  "6": null,
-  "7": null,
-  "8": null,
+  "4": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.89,
+   "start": "17:00",
+   "start_slot": 22
+  },
+  "5": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.97,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "6": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.63,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "7": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.85,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "8": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 1.0,
+   "start": "17:30",
+   "start_slot": 23
+  },
   "9": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.86,
-   "start": "07:00",
-   "start_slot": 2
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 1.0,
+   "start": "17:00",
+   "start_slot": 22
   }
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": 55,
+  "nearest_any_m": 43,
   "nearest_fast_m": null,
-  "nearest_slow_m": 55,
+  "nearest_slow_m": 43,
   "radius_m": 500,
-  "slow": 5,
-  "total": 5,
+  "slow": 4,
+  "total": 4,
   "unknown": 0
  },
  "chargers": [
@@ -131,7 +161,7 @@
    "brand": null,
    "capacity": 4,
    "charging_rate": "AC/計度/一般/ 8.000元每度,AC/計度/尖峰/ 8.000元每度,AC/計度/離峰/ 8.000元每度",
-   "distance_m": 55,
+   "distance_m": 43,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "B1",
@@ -169,14 +199,14 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0819",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
    "brand": null,
    "capacity": 1,
    "charging_rate": "計分/ 0.8元每分",
-   "distance_m": 243,
+   "distance_m": 208,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "B2",
@@ -207,14 +237,14 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0453",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
    "brand": null,
    "capacity": 1,
    "charging_rate": "慢充每度8元",
-   "distance_m": 326,
+   "distance_m": 371,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "1",
@@ -245,14 +275,14 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1675",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
    "brand": null,
    "capacity": 2,
    "charging_rate": "AC/計度/一般/ 0.00元每度",
-   "distance_m": 331,
+   "distance_m": 373,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "1",
@@ -290,74 +320,36 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0735",
-   "verified_at": "2026-10-14"
-  },
-  {
-   "access": null,
-   "brand": null,
-   "capacity": 1,
-   "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 471,
-   "distance_method": "straight_line",
-   "fee": null,
-   "floors": "1",
-   "location": {
-    "lat": 25.10566,
-    "lng": 121.53165
-   },
-   "max_kw": null,
-   "method": "official_data",
-   "name": "臺北市立聯合醫院-陽明院區停車場",
-   "opening_hours": "每日/00:00-24:00",
-   "operation_type": "公辦民營",
-   "operator": "華城電能科技股份有限公司",
-   "osm": null,
-   "parking_rate": "40元/時",
-   "restriction": null,
-   "sockets": [
-    {
-     "count": 1,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "output_kw": null,
-     "type": "type1"
-    }
-   ],
-   "source": "tdx",
-   "speed": "slow",
-   "speed_label": "慢充 (AC)",
-   "speed_source": "official",
-   "tdx_id": "TPE0118",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.0,
- "geometry_estimated": true,
- "id": "tp-n7600127736",
+ "geometry_estimated": false,
+ "id": "tp-w1569098822",
  "indoor": false,
  "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 25.109709,
-  "lng": 121.529916
+  "lat": 25.110053,
+  "lng": 121.529152
  },
- "name": "蘭雅公園 遊戲場",
+ "name": "蘭雅一號公園 遊戲場",
  "name_source": "park_name",
  "official": null,
  "osm": {
-  "id": 7600127736,
-  "type": "node",
-  "url": "https://www.openstreetmap.org/node/7600127736"
+  "id": 1569098822,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/1569098822"
  },
- "park_name": "蘭雅公園",
+ "park_name": "蘭雅一號公園",
  "parking": [
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 73,
+   "distance_m": 156,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
@@ -376,14 +368,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/557230239"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 135,
+   "distance_m": 180,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -402,40 +394,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/557230238"
    },
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 187,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.110279,
-    "lng": 121.532112
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "蘭雅國中",
-   "osm": {
-    "id": 557230237,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/557230237"
-   },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "customers",
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 198,
+   "distance_m": 232,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "multi-storey",
@@ -454,14 +420,66 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/18451131"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 232,
+   "distance_m": 260,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.110279,
+    "lng": 121.532112
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": "蘭雅國中",
+   "osm": {
+    "id": 557230237,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/557230237"
+   },
+   "verified_at": "2026-10-17"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 281,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 25.112589,
+    "lng": 121.528711
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "地下停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 5242581622,
+    "type": "node",
+    "url": "https://www.openstreetmap.org/node/5242581622"
+   },
+   "verified_at": "2026-10-17"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 285,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -480,33 +498,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/258411040"
    },
-   "verified_at": "2026-10-13"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 311,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.106639,
-    "lng": 121.529395
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 258410987,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/258410987"
-   },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -515,7 +507,7 @@
   "max_age": null,
   "min_age": null,
   "opening_hours": null,
-  "surface": null,
+  "surface": "gravel",
   "wheelchair": null
  },
  "playground_mapped": true,
@@ -525,9 +517,9 @@
   "covered_ratio": 0.0,
   "method": "osm",
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
-  "source": "https://www.openstreetmap.org/node/7600127736",
+  "source": "https://www.openstreetmap.org/way/1569098822",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "臺北市",
@@ -535,8 +527,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.13,
-  "buildings_considered": 738,
+  "building_height_known_share": 0.12,
+  "buildings_considered": 729,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -547,59 +539,58 @@
     null,
     null,
     1.0,
+    0.06,
+    0.06,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     1.0,
-    0.81,
-    0.03,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.11,
-    0.07,
-    0.1,
     null,
     null
    ],
    "10": [
     1.0,
+    0.47,
     1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     1.0,
-    1.0,
-    0.73,
-    0.19,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     null,
     null
    ],
    "11": [
     null,
     1.0,
-    1.0,
-    0.69,
+    0.72,
     0.03,
     0.0,
     0.0,
@@ -615,8 +606,9 @@
     0.0,
     0.0,
     0.0,
-    0.02,
     0.0,
+    0.0,
+    1.0,
     1.0,
     null,
     null
@@ -625,9 +617,8 @@
     null,
     null,
     1.0,
-    1.0,
-    0.59,
-    0.01,
+    0.11,
+    0.05,
     0.0,
     0.0,
     0.0,
@@ -640,9 +631,10 @@
     0.0,
     0.0,
     0.0,
-    0.13,
-    0.28,
-    0.07,
+    0.0,
+    0.0,
+    0.0,
+    0.99,
     1.0,
     null,
     null
@@ -652,34 +644,29 @@
     null,
     1.0,
     1.0,
-    0.77,
-    0.37,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     0.12,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.21,
+    1.0,
     null
    ],
    "3": [
     null,
-    0.66,
-    0.92,
-    1.0,
-    1.0,
-    0.93,
     0.0,
     0.0,
     0.0,
@@ -696,15 +683,17 @@
     0.0,
     0.0,
     0.0,
-    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.54,
     1.0
    ],
    "4": [
     0.0,
     0.0,
-    0.13,
-    0.36,
-    0.58,
     0.0,
     0.0,
     0.0,
@@ -722,8 +711,11 @@
     0.0,
     0.0,
     0.0,
-    0.02,
-    0.3
+    0.0,
+    0.0,
+    0.0,
+    0.77,
+    1.0
    ],
    "5": [
     0.0,
@@ -748,8 +740,8 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.15
+    0.0,
+    0.97
    ],
    "6": [
     0.0,
@@ -775,7 +767,7 @@
     0.0,
     0.0,
     0.0,
-    0.08
+    0.63
    ],
    "7": [
     0.0,
@@ -801,14 +793,12 @@
     0.0,
     0.0,
     0.0,
-    0.06
+    0.85
    ],
    "8": [
     0.0,
     0.0,
     0.0,
-    0.03,
-    0.19,
     0.0,
     0.0,
     0.0,
@@ -826,54 +816,56 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.13
+    0.0,
+    0.0,
+    0.0,
+    1.0
    ],
    "9": [
-    0.28,
-    0.38,
-    0.65,
-    0.93,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     1.0,
-    0.13,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.04,
     null
    ]
   },
-  "source": "https://www.openstreetmap.org/node/7600127736",
+  "source": "https://www.openstreetmap.org/way/1569098822",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T23:55:29+08:00",
+   "as_of": "2026-10-19T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

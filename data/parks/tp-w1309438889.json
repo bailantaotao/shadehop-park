@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1309438889",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1309438889",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -31,7 +31,7 @@
    "name": "捷運葫洲站",
    "source": "https://www.openstreetmap.org/node/3501186377",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "changing_table": null,
@@ -41,7 +41,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1309438889",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 46,
@@ -178,7 +178,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1084",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -216,7 +216,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0482",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.13,
@@ -264,7 +264,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846128"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -290,7 +290,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846111"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -316,7 +316,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846138"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -342,7 +342,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/260401245"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -368,7 +368,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846131"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -394,7 +394,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846136"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -415,7 +415,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1309438889",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "臺北市",
@@ -746,22 +746,22 @@
   },
   "source": "https://www.openstreetmap.org/way/1309438889",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T23:55:29+08:00",
+   "as_of": "2026-10-19T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

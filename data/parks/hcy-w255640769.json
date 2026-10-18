@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/way/1107277724",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/255640769",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "六家站",
    "source": "https://www.openstreetmap.org/node/3560261986",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "changing_table": null,
@@ -44,7 +44,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/255640769",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 14743,
@@ -157,7 +157,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03024",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -202,7 +202,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-Se8a631e8-a856-41d8-963e-f29300ac1e56",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -254,7 +254,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "89132567-S0060",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -299,7 +299,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "42861108-S2b99e24a-2ae5-4298-a907-ad3d1ed2b2f7",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -325,14 +325,7 @@
    "restriction": null,
    "sockets": [
     {
-     "count": 5,
-     "current": "AC",
-     "label": "Tesla TPC",
-     "output_kw": null,
-     "type": "tesla_tpc"
-    },
-    {
-     "count": 1,
+     "count": 6,
      "current": "AC",
      "label": "Type 2",
      "output_kw": null,
@@ -344,13 +337,13 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S6937fe7d-a089-4cb8-a163-c6f089ca1042",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
    "brand": null,
    "capacity": 8,
-   "charging_rate": "計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
+   "charging_rate": "計度/固定/8元每度,計度/固定/8.3元每度",
    "distance_m": 426,
    "distance_method": "straight_line",
    "fee": null,
@@ -396,7 +389,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03034",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -441,7 +434,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "42861108-S943417ea-35a1-49b6-9afc-80cbcc5c66e4",
-   "verified_at": "2026-10-15"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -489,7 +482,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/323447613"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -515,7 +508,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614713"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -541,7 +534,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1542787152"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -567,7 +560,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614645"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -593,7 +586,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612804"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -619,7 +612,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614644"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -640,7 +633,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/255640769",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "新竹縣",
@@ -971,22 +964,22 @@
   },
   "source": "https://www.openstreetmap.org/way/255640769",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-15T00:55:36+08:00",
+   "as_of": "2026-10-19T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13306482109",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1054198535",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,25 +34,17 @@
    "name": "捷運山鼻站",
    "source": "https://www.openstreetmap.org/node/4450092074",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
-   "accessible": false,
-   "category": "交通",
-   "changing_table": false,
-   "confidence": "high",
-   "distance_m": 275,
-   "family": null,
-   "family_room": false,
-   "location": {
-    "lat": 25.076907,
-    "lng": 121.291862
-   },
-   "method": "official_data",
-   "name": "桃園捷運-A10山鼻站",
-   "source": "https://data.gov.tw/dataset/30794",
-   "value": true,
-   "verified_at": "2026-10-13"
+   "changing_table": null,
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
+   "source": "https://www.openstreetmap.org/way/1054198535",
+   "value": null,
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 2299,
@@ -198,7 +190,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1219687065"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -224,7 +216,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1219687063"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -250,7 +242,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1054198540"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -276,7 +268,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/438425545"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -302,7 +294,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1251015132"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -323,7 +315,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1054198535",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -654,16 +646,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1054198535",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

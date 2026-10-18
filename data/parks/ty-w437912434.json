@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272955",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/437912434",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "low",
@@ -31,25 +31,25 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/437912434",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": true,
    "category": "民眾洽公場所",
    "changing_table": true,
    "confidence": "high",
-   "distance_m": 97,
+   "distance_m": 102,
    "family": null,
    "family_room": false,
    "location": {
-    "lat": 24.937394,
-    "lng": 121.298686
+    "lat": 24.937442,
+    "lng": 121.298696
    },
    "method": "official_data",
    "name": "桃園市政府消防局防災教育館1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 1175,
@@ -129,7 +129,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1361161278"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -155,7 +155,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/513494394"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -181,7 +181,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846039"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -207,7 +207,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/2536094"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -233,7 +233,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/668777720"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -259,7 +259,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/668777719"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -280,7 +280,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/437912434",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -611,16 +611,16 @@
   },
   "source": "https://www.openstreetmap.org/way/437912434",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

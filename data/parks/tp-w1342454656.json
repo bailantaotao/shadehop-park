@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3744240093",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1342454656",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運明德站",
    "source": "https://www.openstreetmap.org/node/3495094878",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
@@ -63,7 +63,7 @@
    "name": "自強綜合市場",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 210,
@@ -207,7 +207,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1346",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -245,7 +245,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "33029464-STP6810001",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   },
   {
    "access": null,
@@ -283,7 +283,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1864",
-   "verified_at": "2026-10-14"
+   "verified_at": "2026-10-19"
   }
  ],
  "daytime_shaded_share": 0.74,
@@ -331,7 +331,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/733140241"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "permit",
@@ -357,7 +357,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1245416121"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -383,7 +383,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/461655940"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "permit",
@@ -409,7 +409,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1146878413"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -435,7 +435,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3786805533"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -461,7 +461,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/202909226"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -482,7 +482,7 @@
   "note": "約 199 m² 在高架/屋頂下（佔 95%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1342454656",
   "value": true,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "臺北市",
@@ -813,7 +813,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1342454656",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [
   {
@@ -837,7 +837,7 @@
    "source": "https://www.openstreetmap.org/way/1342454656",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "confidence": "low",
@@ -848,22 +848,22 @@
    "source": "https://www.openstreetmap.org/way/1342454656",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-14T23:55:29+08:00",
+   "as_of": "2026-10-19T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

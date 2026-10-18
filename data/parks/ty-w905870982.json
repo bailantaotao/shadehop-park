@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/6315689266",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/905870982",
    "value": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -34,36 +34,36 @@
    "name": "捷運大園站",
    "source": "https://www.openstreetmap.org/node/4653351589",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
    "accessible": false,
    "category": "民眾洽公場所",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 124,
+   "distance_m": 157,
    "family": {
     "accessible": false,
     "category": "民眾洽公場所",
     "changing_table": true,
-    "distance_m": 217,
+    "distance_m": 219,
     "family_room": false,
     "location": {
-     "lat": 25.070927,
-     "lng": 121.205791
+     "lat": 25.070964,
+     "lng": 121.205749
     },
     "name": "航空城聯合服務中心A棟2F"
    },
    "family_room": false,
    "location": {
-    "lat": 25.069961,
-    "lng": 121.205785
+    "lat": 25.070175,
+    "lng": 121.206025
    },
    "method": "official_data",
-   "name": "航空城聯合服務中心C棟2F",
+   "name": "航空城聯合服務中心C棟1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 6167,
@@ -137,7 +137,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/674377814"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -163,7 +163,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1457693812"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -184,7 +184,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/905870982",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -515,16 +515,16 @@
   },
   "source": "https://www.openstreetmap.org/way/905870982",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

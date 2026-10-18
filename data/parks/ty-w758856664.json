@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/6863892162",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/758856664",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "station": {
    "confidence": "medium",
@@ -37,36 +37,36 @@
    "name": "第二航廈站",
    "source": "https://www.openstreetmap.org/node/13934857304",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   "toilet": {
-   "accessible": false,
-   "category": "交通",
-   "changing_table": false,
-   "confidence": "high",
-   "distance_m": 69,
+   "accessible": true,
+   "category": null,
+   "changing_table": null,
+   "confidence": "medium",
+   "distance_m": 72,
    "family": {
     "accessible": true,
     "category": "交通",
     "changing_table": true,
-    "distance_m": 254,
+    "distance_m": 253,
     "family_room": true,
     "location": {
-     "lat": 25.077547,
-     "lng": 121.231366
+     "lat": 25.077372,
+     "lng": 121.231543
     },
-    "name": "桃園國際機場第二航廈(資訊處)2F"
+    "name": "桃園國際機場第二航廈(中南)3F"
    },
-   "family_room": false,
+   "family_room": null,
    "location": {
-    "lat": 25.077637,
-    "lng": 121.233713
+    "lat": 25.079954,
+    "lng": 121.23293
    },
-   "method": "official_data",
-   "name": "桃園國際機場第二航廈(維護處)B2",
-   "source": "https://data.gov.tw/dataset/30794",
+   "method": "osm",
+   "name": null,
+   "source": "https://www.openstreetmap.org/node/3495159934",
    "value": true,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  },
  "area_m2": 30331,
@@ -157,7 +157,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -185,7 +185,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": null,
@@ -213,7 +213,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -261,7 +261,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/395947062"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "customers",
@@ -287,7 +287,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/24000909"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "customers",
@@ -313,7 +313,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/395556356"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   },
   {
    "access": "customers",
@@ -339,7 +339,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/213137814"
    },
-   "verified_at": "2026-10-13"
+   "verified_at": "2026-10-17"
   }
  ],
  "playground": {
@@ -360,7 +360,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/758856664",
   "value": false,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "region": {
   "city": "桃園市",
@@ -691,16 +691,16 @@
   },
   "source": "https://www.openstreetmap.org/way/758856664",
   "value": null,
-  "verified_at": "2026-10-13"
+  "verified_at": "2026-10-17"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-13T20:21:31Z",
+   "as_of": "2026-10-17T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-13"
+ "updated_at": "2026-10-17"
 }

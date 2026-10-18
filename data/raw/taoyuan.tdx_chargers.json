@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Taoyuan",
  "count": null,
- "fetched_at": "2026-10-14T17:25:19+00:00",
+ "fetched_at": "2026-10-18T21:35:26+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "taoyuan",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-15T01:15:36+08:00",
+ "src_update_time": "2026-10-19T04:10:32+08:00",
  "stations": [
   {
    "charging_points": 25,
@@ -1499,16 +1499,16 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
-     "count": 2,
-     "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
-    },
-    {
      "count": 4,
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數6",
@@ -1561,16 +1561,16 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
-     "count": 5,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
      "count": 2,
      "current": "AC",
      "label": "Type 2",
      "type": "type2"
+    },
+    {
+     "count": 5,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數7",
@@ -5298,6 +5298,31 @@
    "restriction": null,
    "service_time": "每日/00:00-24:00",
    "spaces": 2
+  },
+  {
+   "charging_points": 4,
+   "charging_rate": "計度/固定/超快充 8 元每度, 計度/固定/快充8 元每度, 計度/固定/慢充 5 元每度",
+   "connectors": [
+    {
+     "count": 4,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "包含充電樁 4 個，停車位 8 個",
+   "floors": "1",
+   "id": "58430020-STCGB2",
+   "lat": 24.992914,
+   "lng": 121.30106,
+   "name": "桃園市政府後棟",
+   "operation_type": "公辦公營",
+   "operator": "程豐資通股份有限公司",
+   "operator_id": "58430020",
+   "parking_rate": "計時/每日/20元每小時",
+   "restriction": null,
+   "service_time": "每日/00:00-24:00",
+   "spaces": 8
   },
   {
    "charging_points": 4,
@@ -10221,6 +10246,68 @@
   },
   {
    "charging_points": 2,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "服務時間：24小時開放 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "1",
+   "id": "95082403-S1219",
+   "lat": 24.967458,
+   "lng": 121.220872,
+   "name": "桃園捷運-A21環北站",
+   "operation_type": "公辦民營",
+   "operator": null,
+   "operator_id": "95082403",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    }
+   ],
+   "description": "服務時間：24小時開放 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "1",
+   "id": "95084129-S1218",
+   "lat": 25.022731,
+   "lng": 121.222422,
+   "name": "桃園捷運-A17領航站",
+   "operation_type": "公辦民營",
+   "operator": null,
+   "operator_id": "95084129",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放",
+   "spaces": 4
+  },
+  {
+   "charging_points": 2,
    "charging_rate": "計度/尖峰/16:00-22:00/10.00 元每度, 計度/半尖峰/09:00-16:00/8.00 元每度, 計度/半尖峰/22:00-23:59/8.00 元每度, 計度/半尖峰/06:00-11:00/8.00 元每度, 計度/半尖峰/14:00-23:59/8.00 元每度, 計度/離峰/23:59-09:00/8.00 元每度, 計度/離峰/23:59-06:00/8.00 元每度, 計度/離峰/11:00-14:00/8.00 元每度, 計度/半尖峰/09:00-23:59/8.00 元每度, 計度/半尖峰/06:00-11:00/8.00 元每度, 計度/半尖峰/14:00-23:59/8.00 元每度, 計度/離峰/23:59-09:00/8.00 元每度, 計度/離峰/23:59-06:00/8.00 元每度, 計度/離峰/11:00-14:00/8.00 元每度, 計度/離峰/00:00-23:59/8.00 元每度, 計度/離峰/00:00-23:59/8.00 元每度",
    "connectors": [
     {
@@ -10538,5 +10625,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-15T01:15:43+08:00"
+ "update_time": "2026-10-19T04:30:32+08:00"
 }

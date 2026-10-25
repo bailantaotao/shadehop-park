@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3724691191",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/958764620",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/958764620",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -60,7 +60,7 @@
    "name": "八里水興公固定式",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 552,
@@ -108,7 +108,20 @@
  },
  "name": "八里左岸公園 遊戲場",
  "name_source": "park_name",
- "official": null,
+ "official": {
+  "address": "河川區域無住址",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "新北市政府高灘地工程管理處",
+  "method": "name_match",
+  "name": "八里左岸公園",
+  "phone": "(02)89699596",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-25"
+ },
  "osm": {
   "id": 958764620,
   "type": "way",
@@ -140,7 +153,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812276"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -166,7 +179,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/769979067"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -192,7 +205,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812275"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -218,7 +231,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714662189"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -244,7 +257,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1086193542"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -270,7 +283,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12040088205"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -291,7 +304,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/958764620",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -622,16 +635,22 @@
   },
   "source": "https://www.openstreetmap.org/way/958764620",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-25T21:51:28+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

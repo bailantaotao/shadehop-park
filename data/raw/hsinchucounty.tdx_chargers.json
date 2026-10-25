@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "HsinchuCounty",
  "count": null,
- "fetched_at": "2026-10-18T21:35:26+00:00",
+ "fetched_at": "2026-10-25T21:52:37+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucounty",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-19T04:10:32+08:00",
+ "src_update_time": "2026-10-26T03:50:32+08:00",
  "stations": [
   {
    "charging_points": 50,
@@ -337,16 +337,16 @@
    "charging_rate": "費用詳情請查詢TESLA站點",
    "connectors": [
     {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
      "count": 2,
      "current": "DC",
      "label": "Tesla TPC",
      "type": "tesla_tpc"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數6",
@@ -1847,10 +1847,10 @@
    "charging_rate": "計度 /固定 /12元 DC每度,計度 /固定 /8.5元 AC每度",
    "connectors": [
     {
-     "count": 4,
-     "current": "DC",
-     "label": "其他",
-     "type": "other"
+     "count": 16,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
     },
     {
      "count": 16,
@@ -1865,10 +1865,10 @@
      "type": "type2_combo"
     },
     {
-     "count": 16,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
+     "count": 4,
+     "current": "DC",
+     "label": "其他",
+     "type": "other"
     }
    ],
    "description": "本站目前共有8樁 30kW 充電樁；8樁 7kW充電樁。",
@@ -1887,5 +1887,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-19T05:10:32+08:00"
+ "update_time": "2026-10-26T05:30:33+08:00"
 }

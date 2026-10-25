@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/323394361",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344208112",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運三重站",
    "source": "https://www.openstreetmap.org/node/4653351593",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/4483244395",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 233253,
@@ -128,7 +128,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "28007736-S099",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -173,7 +173,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03263",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -189,7 +189,20 @@
  },
  "name": "二重疏洪運動公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": "河川區域無住址",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "新北市政府高灘地工程管理處",
+  "method": "name_match",
+  "name": "二重疏洪運動公園",
+  "phone": "(02)89699596",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-25"
+ },
  "osm": {
   "id": 344208112,
   "type": "way",
@@ -221,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317123808"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -247,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457991746"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -273,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457991748"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -299,7 +312,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943452"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -325,7 +338,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943438"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -351,7 +364,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/492887844"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -372,7 +385,7 @@
   "note": "約 33119 m² 在高架/屋頂下（佔 14%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/344208112",
   "value": "partial",
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -703,7 +716,7 @@
   },
   "source": "https://www.openstreetmap.org/way/344208112",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -738,6 +751,11 @@
      "url": "https://www.openstreetmap.org/way/1209715158"
     },
     {
+     "id": 194431412,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/194431412"
+    },
+    {
      "id": 1413009202,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1413009202"
@@ -756,11 +774,6 @@
      "id": 1010223586,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1010223586"
-    },
-    {
-     "id": 194431412,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/194431412"
     },
     {
      "id": 194431413,
@@ -792,22 +805,28 @@
    "source": "https://www.openstreetmap.org/way/344208112",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:30:00+08:00",
+   "as_of": "2026-10-26T05:30:34+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-25T21:51:28+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

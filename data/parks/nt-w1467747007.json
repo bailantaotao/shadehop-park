@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2938450958",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1467747007",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運小碧潭站",
    "source": "https://www.openstreetmap.org/node/3800658231",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -66,7 +66,7 @@
    "name": "小碧潭景觀",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 83981,
@@ -140,7 +140,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/723893754"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -166,7 +166,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/383637293"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -192,7 +192,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12374937252"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -218,7 +218,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1323741090"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -244,7 +244,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1480010351"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -270,7 +270,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/371456962"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -291,7 +291,7 @@
   "note": "約 3779 m² 在高架/屋頂下（佔 5%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1467747007",
   "value": "partial",
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -622,7 +622,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1467747007",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -641,7 +641,7 @@
    "source": "https://www.openstreetmap.org/way/1467747007",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "confidence": "medium",
@@ -649,11 +649,6 @@
    "level": "B",
    "method": "computed",
    "osm": [
-    {
-     "id": 1531999727,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/1531999727"
-    },
     {
      "id": 200015406,
      "type": "way",
@@ -668,6 +663,11 @@
      "id": 106304918,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/106304918"
+    },
+    {
+     "id": 1531999727,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1531999727"
     },
     {
      "id": 106304948,
@@ -694,16 +694,16 @@
    "source": "https://www.openstreetmap.org/way/1467747007",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

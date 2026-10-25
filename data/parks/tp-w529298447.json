@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5949987494",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/529298447",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運芝山站",
    "source": "https://www.openstreetmap.org/node/3495094877",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": "臺北市立兒童新樂園1F20號停車場",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 535,
@@ -203,7 +203,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0928",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -241,7 +241,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1180",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -279,7 +279,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0101",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 1.0,
@@ -327,7 +327,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3519592781"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -353,7 +353,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/662310966"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -379,7 +379,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/449291234"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -405,7 +405,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/375212575"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -431,7 +431,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1229240379"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -457,7 +457,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/654714932"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -478,7 +478,7 @@
   "note": "約 535 m² 在高架/屋頂下（佔 100%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/529298447",
   "value": true,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "臺北市",
@@ -809,7 +809,7 @@
   },
   "source": "https://www.openstreetmap.org/way/529298447",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -828,7 +828,7 @@
    "source": "https://www.openstreetmap.org/way/529298447",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "confidence": "low",
@@ -839,22 +839,22 @@
    "source": "https://www.openstreetmap.org/way/529298447",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:10:32+08:00",
+   "as_of": "2026-10-26T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

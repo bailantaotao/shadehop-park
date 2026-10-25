@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/way/1107277724",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1022152122",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "六家站",
    "source": "https://www.openstreetmap.org/node/3560261986",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "changing_table": null,
@@ -44,7 +44,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1022152122",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 2624,
@@ -181,7 +181,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03024",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -226,7 +226,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-Se8a631e8-a856-41d8-963e-f29300ac1e56",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -271,7 +271,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "90148497-S1182",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -323,7 +323,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "89132567-S0060",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.62,
@@ -371,7 +371,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1542787152"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -397,7 +397,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/323447613"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -423,7 +423,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612804"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -449,7 +449,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614639"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -475,7 +475,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612803"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -501,7 +501,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614644"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -522,7 +522,7 @@
   "note": "約 2369 m² 在高架/屋頂下（佔 90%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1022152122",
   "value": true,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新竹縣",
@@ -853,7 +853,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1022152122",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -887,7 +887,7 @@
    "source": "https://www.openstreetmap.org/way/1022152122",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "confidence": "low",
@@ -898,22 +898,22 @@
    "source": "https://www.openstreetmap.org/way/1022152122",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:10:32+08:00",
+   "as_of": "2026-10-26T03:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

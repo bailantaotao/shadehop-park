@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13413753097",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344208116",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新北產業園區站",
    "source": "https://www.openstreetmap.org/node/2083320848",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": null,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/13176454166",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 242231,
@@ -124,7 +124,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02917",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -140,7 +140,20 @@
  },
  "name": "疏洪親水公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": "河川區域無住址",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "新北市政府高灘地工程管理處",
+  "method": "name_match",
+  "name": "疏洪親水公園",
+  "phone": "(02)89699596",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-25"
+ },
  "osm": {
   "id": 344208116,
   "type": "way",
@@ -172,7 +185,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729755"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -198,7 +211,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729765"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -224,7 +237,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729763"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -250,7 +263,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457992996"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -276,7 +289,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/441731087"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -302,7 +315,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1160425965"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -323,7 +336,7 @@
   "note": "約 4919 m² 在高架/屋頂下（佔 2%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/344208116",
   "value": "partial",
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -654,7 +667,7 @@
   },
   "source": "https://www.openstreetmap.org/way/344208116",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -683,22 +696,28 @@
    "source": "https://www.openstreetmap.org/way/344208116",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:30:00+08:00",
+   "as_of": "2026-10-26T05:30:34+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-10-25T21:51:28+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

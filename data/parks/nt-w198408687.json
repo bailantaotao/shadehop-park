@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2111807703",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/198408687",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運蘆洲站",
    "source": "https://www.openstreetmap.org/node/3812564423",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "五股濕地",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 226975,
@@ -94,7 +94,20 @@
  },
  "name": "疏洪生態公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": "新北市五股區一號越堤道",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "新北市政府高灘地工程管理處",
+  "method": "name_match",
+  "name": "疏洪生態公園",
+  "phone": "(02)89699596",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-25"
+ },
  "osm": {
   "id": 198408687,
   "type": "way",
@@ -126,7 +139,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/198408708"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -152,7 +165,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/198408711"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -178,7 +191,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/406718625"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -204,7 +217,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/253570183"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -230,7 +243,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/406718632"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -256,7 +269,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1496517581"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -277,7 +290,7 @@
   "note": "約 12136 m² 在高架/屋頂下（佔 5%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/198408687",
   "value": "partial",
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -608,7 +621,7 @@
   },
   "source": "https://www.openstreetmap.org/way/198408687",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -637,16 +650,22 @@
    "source": "https://www.openstreetmap.org/way/198408687",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-25T21:51:28+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

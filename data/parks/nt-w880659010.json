@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/13273357029",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/880659010",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運鶯桃福德站",
    "source": "https://www.openstreetmap.org/node/4990733837",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "逗逗龍公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 2399,
@@ -63,8 +63,20 @@
   "12": null,
   "2": null,
   "3": null,
-  "4": null,
-  "5": null,
+  "4": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.8,
+   "start": "17:30",
+   "start_slot": 23
+  },
+  "5": {
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.62,
+   "start": "17:30",
+   "start_slot": 23
+  },
   "6": null,
   "7": null,
   "8": null,
@@ -94,7 +106,20 @@
  },
  "name": "逗逗龍公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": "新北市鶯歌區龍五路及鳳五路口",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "鶯歌區公所",
+  "method": "name_match",
+  "name": "逗逗龍公園",
+  "phone": "(02)26780202",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-25"
+ },
  "osm": {
   "id": 880659010,
   "type": "way",
@@ -126,7 +151,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481042959"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -152,7 +177,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1492632402"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -178,7 +203,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1336425251"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -204,7 +229,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1492632398"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -230,7 +255,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/547082504"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -256,7 +281,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1495108396"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -277,7 +302,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/880659010",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -285,8 +310,8 @@
   "id": "newtaipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.02,
-  "buildings_considered": 52,
+  "building_height_known_share": 0.01,
+  "buildings_considered": 72,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -296,16 +321,16 @@
    "1": [
     null,
     null,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.19,
+    0.26,
+    0.37,
+    0.39,
+    0.35,
+    0.26,
+    0.16,
+    0.11,
+    0.07,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -320,7 +345,14 @@
     null
    ],
    "10": [
-    0.01,
+    0.03,
+    0.05,
+    0.08,
+    0.13,
+    0.14,
+    0.11,
+    0.07,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -334,29 +366,22 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.04,
+    0.18,
     null,
     null
    ],
    "11": [
     null,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.14,
+    0.2,
+    0.29,
+    0.33,
+    0.29,
+    0.23,
+    0.13,
+    0.08,
+    0.04,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -374,17 +399,17 @@
    "12": [
     null,
     null,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.26,
+    0.36,
+    0.46,
+    0.44,
+    0.37,
+    0.24,
+    0.17,
+    0.12,
+    0.07,
+    0.04,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -400,31 +425,37 @@
    "2": [
     null,
     null,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     0.09,
+    0.13,
+    0.19,
+    0.21,
+    0.18,
+    0.13,
+    0.06,
+    0.02,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.14,
     null
    ],
    "3": [
     null,
+    0.01,
+    0.02,
+    0.04,
+    0.07,
+    0.06,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -440,13 +471,7 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.05,
+    0.24,
     0.47
    ],
    "4": [
@@ -472,8 +497,8 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.53
+    0.21,
+    0.8
    ],
    "5": [
     0.0,
@@ -497,9 +522,9 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.09
+    0.01,
+    0.18,
+    0.62
    ],
    "6": [
     0.0,
@@ -523,9 +548,9 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0
+    0.01,
+    0.13,
+    0.43
    ],
    "7": [
     0.0,
@@ -550,10 +575,11 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0
+    0.1,
+    0.39
    ],
    "8": [
+    0.05,
     0.0,
     0.0,
     0.0,
@@ -575,13 +601,16 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.13
+    0.14,
+    0.59
    ],
    "9": [
     0.0,
     0.0,
+    0.01,
+    0.02,
+    0.03,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -597,27 +626,29 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.11,
+    0.03,
+    0.4,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/880659010",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-25T21:51:28+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

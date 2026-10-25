@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272900",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1013731740",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1013731740",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -49,7 +49,7 @@
    "name": "綠九公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 1134,
@@ -193,7 +193,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S142db8ad-95f6-4022-80d5-3b7783a15661",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -231,7 +231,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S338001",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.99,
@@ -279,7 +279,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1251015151"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -305,7 +305,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1250686184"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -331,7 +331,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1072766344"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -357,7 +357,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002693937"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -383,7 +383,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/424082691"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -409,7 +409,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/424082690"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -430,7 +430,7 @@
   "note": "約 757 m² 在高架/屋頂下（佔 67%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1013731740",
   "value": true,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "桃園市",
@@ -761,7 +761,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1013731740",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -785,7 +785,7 @@
    "source": "https://www.openstreetmap.org/way/1013731740",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "confidence": "low",
@@ -796,22 +796,22 @@
    "source": "https://www.openstreetmap.org/way/1013731740",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:10:32+08:00",
+   "as_of": "2026-10-26T05:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

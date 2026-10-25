@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/11849327111",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1117629604",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1117629604",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "changing_table": null,
@@ -41,7 +41,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1117629604",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 906,
@@ -49,7 +49,13 @@
   "1": null,
   "10": null,
   "11": null,
-  "12": null,
+  "12": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.83,
+   "start": "16:30",
+   "start_slot": 21
+  },
   "2": null,
   "3": null,
   "4": null,
@@ -115,7 +121,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1035059151"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -136,7 +142,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1117629604",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "桃園市",
@@ -144,8 +150,8 @@
   "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.0,
-  "buildings_considered": 11,
+  "building_height_known_share": 0.41,
+  "buildings_considered": 39,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -226,7 +232,7 @@
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.49,
     null,
     null
    ],
@@ -252,7 +258,7 @@
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.83,
     null,
     null
    ],
@@ -467,16 +473,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1117629604",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4836651121",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/376032068",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新北投站",
    "source": "https://www.openstreetmap.org/node/269820830",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "三軍總醫院中和街門診部1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 70,
@@ -189,7 +189,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0102",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -227,7 +227,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "33029464-STP6770001",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -265,7 +265,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "28371994-STP3570001",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -303,7 +303,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0680",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.14,
@@ -351,7 +351,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3795264578"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -377,7 +377,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3795264577"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -403,7 +403,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3795264568"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -429,7 +429,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3795264569"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -455,7 +455,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3795264579"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -481,7 +481,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3795264576"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -502,7 +502,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/376032068",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "臺北市",
@@ -833,22 +833,22 @@
   },
   "source": "https://www.openstreetmap.org/way/376032068",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:10:32+08:00",
+   "as_of": "2026-10-26T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

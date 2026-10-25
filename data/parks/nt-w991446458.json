@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/12412577541",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/991446458",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/991446458",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -49,7 +49,7 @@
    "name": "貿商社區活動中心1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 2367,
@@ -104,7 +104,7 @@
  "name": "石德公園",
  "name_source": "osm_name",
  "official": {
-  "address": "水碓路與水碓一路交叉",
+  "address": "新北市五股區水碓路與水碓一路交叉",
   "distance_m": null,
   "equipment": null,
   "facilities": null,
@@ -115,7 +115,7 @@
   "phone": "(02)22916051",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-18"
+  "verified_at": "2026-10-25"
  },
  "osm": {
   "id": 991446458,
@@ -148,7 +148,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402219"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -174,7 +174,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402220"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -200,7 +200,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1176855304"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -226,7 +226,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/17445214"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -252,7 +252,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/409987254"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -278,7 +278,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/17445215"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -299,7 +299,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/991446458",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -630,22 +630,22 @@
   },
   "source": "https://www.openstreetmap.org/way/991446458",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-18T21:34:21+00:00",
+   "as_of": "2026-10-25T21:51:28+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

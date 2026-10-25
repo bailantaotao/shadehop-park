@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/236810740",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/236810740",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +28,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/236810740",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -46,7 +46,7 @@
    "name": "獅子公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 16761,
@@ -89,7 +89,7 @@
  "name": "獅子公園",
  "name_source": "osm_name",
  "official": {
-  "address": "西濱公路台二線52K處",
+  "address": "新北市萬里區台2線51K+800處(基金公路)",
   "distance_m": null,
   "equipment": null,
   "facilities": null,
@@ -100,7 +100,7 @@
   "phone": "(02)24922064",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-18"
+  "verified_at": "2026-10-25"
  },
  "osm": {
   "id": 236810740,
@@ -133,7 +133,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/236810742"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -159,7 +159,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/775353846"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -185,7 +185,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/367771654"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -206,7 +206,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/236810740",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -537,7 +537,7 @@
   },
   "source": "https://www.openstreetmap.org/way/236810740",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -556,22 +556,22 @@
    "source": "https://www.openstreetmap.org/way/236810740",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-18T21:34:21+00:00",
+   "as_of": "2026-10-25T21:51:28+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

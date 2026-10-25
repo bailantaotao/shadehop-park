@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3716458588",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/949716950",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/949716950",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "changing_table": null,
@@ -41,7 +41,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/949716950",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 1806,
@@ -90,18 +90,18 @@
  "name": "東湖公園",
  "name_source": "osm_name",
  "official": {
-  "address": "東湖路75巷與東湖一街口",
+  "address": "東湖路75巷與東湖路93巷之間",
   "distance_m": null,
   "equipment": null,
   "facilities": null,
   "features": null,
   "management": "林口區公所",
   "method": "name_match",
-  "name": "東湖公園(公鄰32)",
+  "name": "東湖公園",
   "phone": "(02)26033111",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-18"
+  "verified_at": "2026-10-25"
  },
  "osm": {
   "id": 949716950,
@@ -134,7 +134,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1213001353"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -160,7 +160,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/940694867"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -186,7 +186,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1455719919"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -212,7 +212,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980933"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -238,7 +238,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/259017518"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -264,7 +264,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13349356636"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -285,7 +285,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/949716950",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -616,22 +616,22 @@
   },
   "source": "https://www.openstreetmap.org/way/949716950",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-18T21:34:21+00:00",
+   "as_of": "2026-10-25T21:51:28+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

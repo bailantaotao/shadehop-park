@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7922528408",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/992970533",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新莊站",
    "source": "https://www.openstreetmap.org/node/1553495847",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "7-11便利商店-關圓",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 246,
@@ -196,7 +196,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "97179430-S120",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.66,
@@ -244,7 +244,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992970532"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -270,7 +270,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992970530"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -296,7 +296,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/141916491"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -322,7 +322,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992098804"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -348,7 +348,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5365901195"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -374,7 +374,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992098805"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -395,7 +395,7 @@
   "note": "約 224 m² 在高架/屋頂下（佔 91%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/992970533",
   "value": true,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新竹市",
@@ -726,7 +726,7 @@
   },
   "source": "https://www.openstreetmap.org/way/992970533",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -735,11 +735,6 @@
    "level": "A",
    "method": "computed",
    "osm": [
-    {
-     "id": 1474239077,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/1474239077"
-    },
     {
      "id": 349620062,
      "type": "way",
@@ -751,6 +746,11 @@
      "url": "https://www.openstreetmap.org/way/349620060"
     },
     {
+     "id": 1474239077,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1474239077"
+    },
+    {
      "id": 1474239076,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1474239076"
@@ -760,7 +760,7 @@
    "source": "https://www.openstreetmap.org/way/992970533",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "confidence": "medium",
@@ -771,22 +771,22 @@
    "source": "https://www.openstreetmap.org/way/992970533",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:30:32+08:00",
+   "as_of": "2026-10-26T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

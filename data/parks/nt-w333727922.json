@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/9404139408",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/333727922",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "國華站",
    "source": "https://www.openstreetmap.org/node/4990733839",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "中油裕進加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 9165,
@@ -60,21 +60,39 @@
   "1": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.78,
+   "mean": 0.8,
    "start": "07:00",
    "start_slot": 2
   },
-  "10": null,
+  "10": {
+   "end": "07:00",
+   "end_slot": 2,
+   "mean": 0.77,
+   "start": "06:00",
+   "start_slot": 0
+  },
   "11": {
    "end": "07:00",
    "end_slot": 2,
-   "mean": 0.69,
+   "mean": 0.78,
    "start": "06:30",
    "start_slot": 1
   },
   "12": null,
-  "2": null,
-  "3": null,
+  "2": {
+   "end": "07:30",
+   "end_slot": 3,
+   "mean": 0.81,
+   "start": "07:00",
+   "start_slot": 2
+  },
+  "3": {
+   "end": "07:00",
+   "end_slot": 2,
+   "mean": 0.67,
+   "start": "06:30",
+   "start_slot": 1
+  },
   "4": null,
   "5": null,
   "6": null,
@@ -138,7 +156,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727931"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -164,7 +182,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727930"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -190,7 +208,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1381668298"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -216,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188725"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -242,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1381668305"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -268,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188726"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -289,7 +307,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/333727922",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -297,8 +315,8 @@
   "id": "newtaipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.35,
-  "buildings_considered": 46,
+  "building_height_known_share": 0.29,
+  "buildings_considered": 56,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -308,10 +326,10 @@
    "1": [
     null,
     null,
-    0.78,
-    0.16,
-    0.0,
-    0.0,
+    0.8,
+    0.37,
+    0.08,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -332,12 +350,12 @@
     null
    ],
    "10": [
-    0.52,
-    0.27,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.91,
+    0.62,
+    0.23,
+    0.1,
+    0.04,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -359,10 +377,10 @@
    ],
    "11": [
     null,
-    0.69,
-    0.16,
-    0.0,
-    0.0,
+    0.78,
+    0.41,
+    0.1,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -386,9 +404,9 @@
    "12": [
     null,
     null,
-    0.4,
-    0.05,
-    0.0,
+    0.52,
+    0.21,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -412,10 +430,10 @@
    "2": [
     null,
     null,
-    0.55,
-    0.04,
-    0.0,
-    0.0,
+    0.81,
+    0.28,
+    0.1,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -437,12 +455,12 @@
    ],
    "3": [
     null,
-    0.24,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.67,
+    0.31,
+    0.18,
+    0.08,
+    0.04,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -462,13 +480,13 @@
     0.0
    ],
    "4": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.5,
+    0.41,
+    0.22,
+    0.12,
+    0.06,
+    0.03,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -488,14 +506,14 @@
     0.0
    ],
    "5": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.5,
+    0.28,
+    0.16,
+    0.1,
+    0.06,
+    0.03,
+    0.02,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -514,14 +532,14 @@
     0.0
    ],
    "6": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.43,
+    0.26,
+    0.16,
+    0.1,
+    0.06,
+    0.04,
+    0.02,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -540,14 +558,14 @@
     0.0
    ],
    "7": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.48,
+    0.31,
+    0.18,
+    0.11,
+    0.07,
+    0.04,
+    0.02,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -566,14 +584,14 @@
     0.0
    ],
    "8": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.51,
+    0.4,
+    0.21,
+    0.12,
+    0.07,
+    0.04,
+    0.02,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -592,13 +610,13 @@
     0.0
    ],
    "9": [
+    0.5,
+    0.39,
+    0.23,
+    0.12,
+    0.06,
     0.03,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -620,16 +638,16 @@
   },
   "source": "https://www.openstreetmap.org/way/333727922",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

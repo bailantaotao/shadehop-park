@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10650818441",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1087124653",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運亞東醫院站",
    "source": "https://www.openstreetmap.org/node/3639530940",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "新北市政府消防局",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 152,
@@ -167,7 +167,7 @@
   {
    "access": null,
    "brand": null,
-   "capacity": 3,
+   "capacity": 5,
    "charging_rate": "計度/固定/8元每度",
    "distance_m": 325,
    "distance_method": "straight_line",
@@ -207,7 +207,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02928",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -252,7 +252,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02931",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.83,
@@ -300,7 +300,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1197454434"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -326,7 +326,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1720309752"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -352,7 +352,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/361262663"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -378,7 +378,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/581162900"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -404,7 +404,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/170994690"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -430,7 +430,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1222892022"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -451,7 +451,7 @@
   "note": "約 130 m² 在高架/屋頂下（佔 85%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1087124653",
   "value": true,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -782,7 +782,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1087124653",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -792,6 +792,11 @@
    "method": "computed",
    "osm": [
     {
+     "id": 141461343,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/141461343"
+    },
+    {
      "id": 712373731,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/712373731"
@@ -800,18 +805,13 @@
      "id": 205362976,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/205362976"
-    },
-    {
-     "id": 141461343,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/141461343"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/1087124653",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "confidence": "low",
@@ -822,22 +822,22 @@
    "source": "https://www.openstreetmap.org/way/1087124653",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:30:00+08:00",
+   "as_of": "2026-10-26T05:30:34+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4689831231",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,20 +21,20 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1528169615",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
    "distance_m": 818,
    "location": {
-    "lat": 24.938923,
-    "lng": 121.376449
+    "lat": 24.93894,
+    "lng": 121.376487
    },
    "method": "osm",
    "name": "捷運三峽站",
    "source": "https://www.openstreetmap.org/node/13976613665",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "中油三峽加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 62,
@@ -156,7 +156,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1477333501"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -182,7 +182,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481743415"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -208,7 +208,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/531663078"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -234,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481743416"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -260,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1465608570"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -286,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1451008121"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -307,7 +307,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1528169615",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -638,16 +638,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1528169615",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

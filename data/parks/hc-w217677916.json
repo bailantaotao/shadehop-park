@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/7922528440",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/217677916",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新莊站",
    "source": "https://www.openstreetmap.org/node/1553495847",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "台灣中油青雲加盟站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 4264,
@@ -203,7 +203,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "97179430-S183",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -241,7 +241,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90148497-S1217",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -286,7 +286,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "97179430-S120",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -331,7 +331,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "94175832-SUCF0274F041",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -392,7 +392,33 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1097076805"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 212,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 24.792011,
+    "lng": 121.019988
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1570542023,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1570542023"
+   },
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -418,7 +444,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1029577966"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -444,21 +470,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/264545726"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 367,
+   "distance_m": 368,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.790476,
-    "lng": 121.013399
+    "lat": 24.790524,
+    "lng": 121.013348
    },
    "maxheight_m": null,
    "method": "osm",
@@ -470,59 +496,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/971883364"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 396,
+   "distance_m": 377,
    "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
    "location": {
-    "lat": 24.792047,
-    "lng": 121.013456
+    "lat": 24.790123,
+    "lng": 121.021845
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Decathlon地下停車場",
+   "name": "停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 6615595605,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/6615595605"
-   },
-   "verified_at": "2026-10-17"
-  },
-  {
-   "access": null,
-   "capacity": 64,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 400,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.788313,
-    "lng": 121.021129
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新莊車站前停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 141916491,
+    "id": 1570542024,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/141916491"
+    "url": "https://www.openstreetmap.org/way/1570542024"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -543,7 +543,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/217677916",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新竹市",
@@ -551,8 +551,8 @@
   "id": "hsinchucity"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.79,
-  "buildings_considered": 81,
+  "building_height_known_share": 0.78,
+  "buildings_considered": 82,
   "confidence": "medium",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -564,7 +564,7 @@
     null,
     0.57,
     0.74,
-    0.38,
+    0.37,
     0.09,
     0.0,
     0.0,
@@ -587,9 +587,9 @@
    ],
    "10": [
     0.26,
-    0.44,
-    0.32,
-    0.09,
+    0.47,
+    0.31,
+    0.08,
     0.02,
     0.01,
     0.0,
@@ -614,10 +614,10 @@
    "11": [
     null,
     0.52,
-    0.68,
-    0.33,
+    0.67,
+    0.32,
     0.07,
-    0.01,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -640,8 +640,8 @@
    "12": [
     null,
     null,
-    0.71,
-    0.7,
+    0.72,
+    0.69,
     0.3,
     0.05,
     0.0,
@@ -666,8 +666,8 @@
    "2": [
     null,
     null,
-    0.53,
-    0.43,
+    0.55,
+    0.42,
     0.16,
     0.02,
     0.01,
@@ -691,10 +691,10 @@
    ],
    "3": [
     null,
-    0.29,
-    0.3,
-    0.13,
-    0.04,
+    0.32,
+    0.32,
+    0.12,
+    0.03,
     0.02,
     0.01,
     0.0,
@@ -716,11 +716,11 @@
     1.0
    ],
    "4": [
-    0.16,
-    0.15,
+    0.2,
+    0.17,
     0.08,
-    0.05,
-    0.03,
+    0.04,
+    0.02,
     0.01,
     0.01,
     0.0,
@@ -742,13 +742,13 @@
     1.0
    ],
    "5": [
+    0.13,
     0.1,
-    0.08,
-    0.06,
+    0.05,
     0.03,
     0.02,
     0.01,
-    0.01,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -768,8 +768,8 @@
     1.0
    ],
    "6": [
-    0.09,
-    0.08,
+    0.13,
+    0.1,
     0.05,
     0.03,
     0.02,
@@ -794,10 +794,10 @@
     0.88
    ],
    "7": [
-    0.1,
-    0.08,
+    0.13,
+    0.11,
     0.06,
-    0.04,
+    0.03,
     0.02,
     0.01,
     0.01,
@@ -820,11 +820,11 @@
     0.93
    ],
    "8": [
-    0.13,
-    0.11,
-    0.08,
-    0.05,
-    0.03,
+    0.17,
+    0.14,
+    0.07,
+    0.04,
+    0.02,
     0.01,
     0.01,
     0.0,
@@ -846,13 +846,13 @@
     1.0
    ],
    "9": [
-    0.19,
-    0.22,
+    0.21,
+    0.25,
     0.14,
-    0.05,
-    0.03,
+    0.04,
+    0.02,
     0.01,
-    0.01,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -874,18 +874,18 @@
   },
   "source": "https://www.openstreetmap.org/way/217677916",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:30:32+08:00",
+   "as_of": "2026-10-26T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
@@ -897,5 +897,5 @@
    "url": "https://data.gov.tw/dataset/132713"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "NewTaipei",
  "count": null,
- "fetched_at": "2026-10-18T21:35:26+00:00",
+ "fetched_at": "2026-10-25T21:52:37+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "newtaipei",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-19T04:30:00+08:00",
+ "src_update_time": "2026-10-26T05:30:34+08:00",
  "stations": [
   {
    "charging_points": 2,
@@ -1007,14 +1007,14 @@
     {
      "count": 8,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     },
     {
      "count": 8,
      "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數8",
@@ -1036,16 +1036,16 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
-     "count": 3,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
      "count": 1,
      "current": "DC",
      "label": "Tesla TPC",
      "type": "tesla_tpc"
+    },
+    {
+     "count": 3,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數4",
@@ -1342,14 +1342,14 @@
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     },
     {
      "count": 2,
      "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數4",
@@ -1367,7 +1367,7 @@
    "spaces": 4
   },
   {
-   "charging_points": 9,
+   "charging_points": 8,
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
@@ -1377,7 +1377,7 @@
      "type": "tesla_tpc"
     },
     {
-     "count": 2,
+     "count": 1,
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
@@ -1389,7 +1389,7 @@
      "type": "type2"
     }
    ],
-   "description": "充電格位數9",
+   "description": "充電格位數8",
    "floors": "B1",
    "id": "42861108-Sd70033ee-9101-425a-adb5-919c788f5dbc",
    "lat": 25.07461,
@@ -1401,7 +1401,7 @@
    "parking_rate": "費用詳情請查詢TESLA站點",
    "restriction": null,
    "service_time": "每日/08:00-20:00",
-   "spaces": 9
+   "spaces": 8
   },
   {
    "charging_points": 4,
@@ -2949,6 +2949,43 @@
     }
    ],
    "description": "服務時間：24小時開放。 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
+   "floors": "B2",
+   "id": "90148497-S1251",
+   "lat": 24.962629,
+   "lng": 121.512538,
+   "name": "全聯新店安德店",
+   "operation_type": "私有民營",
+   "operator": "星舟快充",
+   "operator_id": "90148497",
+   "parking_rate": "停車費率依現場公告為準。",
+   "restriction": null,
+   "service_time": "24小時開放。",
+   "spaces": 3
+  },
+  {
+   "charging_points": 2,
+   "charging_rate": "充電費率依系統公告為準。",
+   "connectors": [
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS1",
+     "type": "type1_combo"
+    },
+    {
+     "count": 1,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
+    },
+    {
+     "count": 1,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    }
+   ],
+   "description": "服務時間：24小時開放。 / 停車費率：停車費率依現場公告為準。 / 充電費率：充電費率依系統公告為準。",
    "floors": "B1",
    "id": "90148497-S1252",
    "lat": 24.9583,
@@ -4089,13 +4126,13 @@
    "charging_rate": "計度/固定/8元每度",
    "connectors": [
     {
-     "count": 5,
+     "count": 6,
      "current": "AC",
      "label": "Type 2",
      "type": "type2"
     },
     {
-     "count": 6,
+     "count": 5,
      "current": "AC",
      "label": "Type 1 (J1772)",
      "type": "type1"
@@ -5897,7 +5934,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:3 充電樁數量:5 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
+   "description": "停車位:5 充電樁數量:5 停車費:30元/時 費率:計度/固定/8元每度 樓層:B1",
    "floors": "B1",
    "id": "90807408-SCSD02928",
    "lat": 25.001393,
@@ -5909,7 +5946,7 @@
    "parking_rate": "30元/時",
    "restriction": null,
    "service_time": "7x24小時",
-   "spaces": 3
+   "spaces": 5
   },
   {
    "charging_points": 5,
@@ -6223,7 +6260,7 @@
   },
   {
    "charging_points": 2,
-   "charging_rate": "計度/固定/8.3元每度",
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
    "connectors": [
     {
      "count": 1,
@@ -6238,7 +6275,7 @@
      "type": "type2_combo"
     }
    ],
-   "description": "停車位:2 充電樁數量:2 停車費:平日20元/時，假日30元/時 費率:計度/固定/8.3元每度 樓層:1F",
+   "description": "停車位:2 充電樁數量:2 停車費:平日20元/時，假日30元/時 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD02940",
    "lat": 25.065977,
@@ -7153,7 +7190,7 @@
   },
   {
    "charging_points": 2,
-   "charging_rate": "計度/固定/8.3元每度",
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度",
    "connectors": [
     {
      "count": 1,
@@ -7168,7 +7205,7 @@
      "type": "type2_combo"
     }
    ],
-   "description": "停車位:1 充電樁數量:2 停車費:免費 費率:計度/固定/8.3元每度 樓層:1F",
+   "description": "停車位:1 充電樁數量:2 停車費:免費 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD03203",
    "lat": 25.189988,
@@ -7563,7 +7600,7 @@
   },
   {
    "charging_points": 13,
-   "charging_rate": "計度/固定/8.3元每度,計度/固定/7.8元每度",
+   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度,計度/固定/7.8元每度",
    "connectors": [
     {
      "count": 1,
@@ -7590,7 +7627,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:13 充電樁數量:13 停車費:免費 費率:計度/固定/8.3元每度,計度/固定/7.8元每度 樓層:6F",
+   "description": "停車位:13 充電樁數量:13 停車費:免費 費率:浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度,計度/固定/7.8元每度 樓層:6F",
    "floors": "6F",
    "id": "90807408-SCSD03510",
    "lat": 25.047953,
@@ -8274,7 +8311,7 @@
    "lng": 121.460584,
    "name": "桃園捷運-A3新北產業園區站",
    "operation_type": "公辦民營",
-   "operator": null,
+   "operator": "A3新北產業園區站",
    "operator_id": "95081039",
    "parking_rate": "停車費率依現場公告為準。",
    "restriction": null,
@@ -8317,6 +8354,12 @@
    "charging_rate": "計度 /固定 /12元 DC每度,計度 /固定 /8.5元 AC每度",
    "connectors": [
     {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
      "count": 6,
      "current": "DC",
      "label": "CCS1",
@@ -8327,12 +8370,6 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
-    },
-    {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
     }
    ],
    "description": "本站目前共有6樁 30kW 充電樁；2樁 7kW充電樁。",
@@ -8376,5 +8413,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-19T04:30:32+08:00"
+ "update_time": "2026-10-26T05:30:36+08:00"
 }

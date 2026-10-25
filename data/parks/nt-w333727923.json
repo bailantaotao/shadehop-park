@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/7936101654",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/333727923",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "國華站",
    "source": "https://www.openstreetmap.org/node/4990733839",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "中油裕進加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 5129,
@@ -61,7 +61,7 @@
   "10": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.69,
+   "mean": 0.84,
    "start": "06:00",
    "start_slot": 0
   },
@@ -74,7 +74,13 @@
   "6": null,
   "7": null,
   "8": null,
-  "9": null
+  "9": {
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.65,
+   "start": "06:00",
+   "start_slot": 0
+  }
  },
  "charger_summary": {
   "fast": 0,
@@ -100,7 +106,20 @@
  },
  "name": "永昌公園",
  "name_source": "osm_name",
- "official": null,
+ "official": {
+  "address": "新北市鶯歌區尖山埔路接尖山埔路二段，近中正二路平交道口。",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "鶯歌區公所",
+  "method": "name_match",
+  "name": "永昌公園",
+  "phone": "(02)26780202",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-10-25"
+ },
  "osm": {
   "id": 333727923,
   "type": "way",
@@ -132,7 +151,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727931"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -158,7 +177,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727930"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -184,7 +203,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1381668298"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -210,7 +229,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/334970469"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -236,7 +255,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188725"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -262,7 +281,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188726"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -283,7 +302,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/333727923",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -291,8 +310,8 @@
   "id": "newtaipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.43,
-  "buildings_considered": 35,
+  "building_height_known_share": 0.33,
+  "buildings_considered": 45,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -326,8 +345,8 @@
     null
    ],
    "10": [
-    0.69,
-    0.0,
+    0.84,
+    0.05,
     0.0,
     0.0,
     0.0,
@@ -406,7 +425,7 @@
    "2": [
     null,
     null,
-    0.0,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -431,7 +450,7 @@
    ],
    "3": [
     null,
-    0.22,
+    0.48,
     0.0,
     0.0,
     0.0,
@@ -456,7 +475,7 @@
     0.0
    ],
    "4": [
-    0.0,
+    0.39,
     0.0,
     0.0,
     0.0,
@@ -482,7 +501,7 @@
     0.0
    ],
    "5": [
-    0.0,
+    0.05,
     0.0,
     0.0,
     0.0,
@@ -508,7 +527,7 @@
     0.0
    ],
    "6": [
-    0.0,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -534,7 +553,7 @@
     0.0
    ],
    "7": [
-    0.0,
+    0.13,
     0.0,
     0.0,
     0.0,
@@ -560,7 +579,7 @@
     0.0
    ],
    "8": [
-    0.0,
+    0.27,
     0.0,
     0.0,
     0.0,
@@ -586,7 +605,7 @@
     0.0
    ],
    "9": [
-    0.2,
+    0.65,
     0.0,
     0.0,
     0.0,
@@ -614,16 +633,22 @@
   },
   "source": "https://www.openstreetmap.org/way/333727923",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-10-25T21:51:28+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

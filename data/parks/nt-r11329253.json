@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9867180254",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/11329253",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運永吉公園站",
    "source": "https://www.openstreetmap.org/node/4990733838",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "永吉公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 75867,
@@ -102,11 +102,11 @@
   "features": null,
   "management": "鶯歌區公所",
   "method": "name_match",
-  "name": "永吉公園(鳳鳴公二)",
+  "name": "永吉公園",
   "phone": "(02)26780202",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-18"
+  "verified_at": "2026-10-25"
  },
  "osm": {
   "id": 11329253,
@@ -139,7 +139,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1004821523"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -165,7 +165,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1047537181"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -191,7 +191,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/314874963"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -217,7 +217,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475573300"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -243,7 +243,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/516282287"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -269,7 +269,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1533439802"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -284,13 +284,13 @@
  "playground_mapped": false,
  "rain_cover": {
   "confidence": "medium",
-  "covered_area_m2": 1541,
+  "covered_area_m2": 1368,
   "covered_ratio": 0.02,
   "method": "computed",
-  "note": "約 1541 m² 在高架/屋頂下（佔 2%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
+  "note": "約 1368 m² 在高架/屋頂下（佔 2%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/relation/11329253",
   "value": "partial",
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -298,8 +298,8 @@
   "id": "newtaipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.05,
-  "buildings_considered": 42,
+  "building_height_known_share": 0.04,
+  "buildings_considered": 46,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -328,14 +328,14 @@
     0.06,
     0.07,
     0.09,
-    0.17,
+    0.16,
     null,
     null
    ],
    "10": [
     0.04,
-    0.02,
-    0.02,
+    0.03,
+    0.03,
     0.02,
     0.02,
     0.03,
@@ -349,7 +349,7 @@
     0.04,
     0.04,
     0.04,
-    0.05,
+    0.04,
     0.05,
     0.06,
     0.07,
@@ -369,7 +369,7 @@
     0.03,
     0.03,
     0.03,
-    0.04,
+    0.03,
     0.04,
     0.04,
     0.04,
@@ -399,7 +399,7 @@
     0.04,
     0.04,
     0.04,
-    0.05,
+    0.04,
     0.05,
     0.05,
     0.06,
@@ -415,7 +415,6 @@
     null,
     0.03,
     0.03,
-    0.02,
     0.03,
     0.03,
     0.03,
@@ -423,7 +422,8 @@
     0.03,
     0.03,
     0.03,
-    0.04,
+    0.03,
+    0.03,
     0.04,
     0.04,
     0.04,
@@ -432,7 +432,7 @@
     0.05,
     0.06,
     0.07,
-    0.11,
+    0.1,
     0.22,
     null
    ],
@@ -458,7 +458,7 @@
     0.05,
     0.06,
     0.07,
-    0.09,
+    0.08,
     0.15,
     0.37
    ],
@@ -471,6 +471,7 @@
     0.02,
     0.02,
     0.02,
+    0.02,
     0.03,
     0.03,
     0.03,
@@ -478,7 +479,6 @@
     0.03,
     0.03,
     0.03,
-    0.04,
     0.04,
     0.04,
     0.05,
@@ -497,8 +497,8 @@
     0.02,
     0.02,
     0.02,
-    0.03,
-    0.03,
+    0.02,
+    0.02,
     0.03,
     0.03,
     0.03,
@@ -509,7 +509,7 @@
     0.04,
     0.04,
     0.05,
-    0.06,
+    0.05,
     0.06,
     0.08,
     0.15
@@ -524,7 +524,8 @@
     0.02,
     0.02,
     0.02,
-    0.03,
+    0.02,
+    0.02,
     0.03,
     0.03,
     0.03,
@@ -534,11 +535,10 @@
     0.04,
     0.04,
     0.04,
-    0.05,
     0.05,
     0.06,
     0.07,
-    0.11
+    0.1
    ],
    "7": [
     0.02,
@@ -550,7 +550,8 @@
     0.02,
     0.02,
     0.02,
-    0.03,
+    0.02,
+    0.02,
     0.03,
     0.03,
     0.03,
@@ -560,7 +561,6 @@
     0.04,
     0.04,
     0.04,
-    0.05,
     0.05,
     0.06,
     0.07,
@@ -575,8 +575,8 @@
     0.02,
     0.02,
     0.02,
-    0.03,
-    0.03,
+    0.02,
+    0.02,
     0.03,
     0.03,
     0.03,
@@ -600,6 +600,7 @@
     0.02,
     0.02,
     0.02,
+    0.02,
     0.03,
     0.03,
     0.03,
@@ -607,7 +608,6 @@
     0.03,
     0.03,
     0.03,
-    0.04,
     0.04,
     0.04,
     0.04,
@@ -621,7 +621,7 @@
   },
   "source": "https://www.openstreetmap.org/relation/11329253",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -631,36 +631,36 @@
    "method": "computed",
    "osm": [
     {
-     "id": 358741942,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/358741942"
-    },
-    {
      "id": 509970130,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/509970130"
+    },
+    {
+     "id": 358741942,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/358741942"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/relation/11329253",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-18T21:34:21+00:00",
+   "as_of": "2026-10-25T21:51:28+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

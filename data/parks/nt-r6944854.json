@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272760",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/6944854",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運中原站",
    "source": "https://www.openstreetmap.org/node/2083320640",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/331054304",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 30895,
@@ -128,7 +128,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "94128120-S0004120",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -173,7 +173,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02960",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -218,7 +218,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02686",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -246,16 +246,16 @@
     {
      "count": 8,
      "current": "DC",
-     "label": "CCS2",
+     "label": "Tesla TPC",
      "output_kw": null,
-     "type": "type2_combo"
+     "type": "tesla_tpc"
     },
     {
      "count": 8,
      "current": "DC",
-     "label": "Tesla TPC",
+     "label": "CCS2",
      "output_kw": null,
-     "type": "tesla_tpc"
+     "type": "type2_combo"
     }
    ],
    "source": "tdx",
@@ -263,7 +263,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "42861108-S543408c0-ad77-4f2c-af34-6bbbf4175c31",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -301,7 +301,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S6b706da3-fa15-4a3c-8d93-320a5c21af23",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -346,7 +346,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02936",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "28007736-S111",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -400,20 +400,7 @@
  },
  "name": "員山公園",
  "name_source": "osm_name",
- "official": {
-  "address": "員山路455巷內",
-  "distance_m": null,
-  "equipment": null,
-  "facilities": null,
-  "features": null,
-  "management": "中和區公所",
-  "method": "name_match",
-  "name": "員山公園(公八)",
-  "phone": "(02)22482688",
-  "registry_points": 1,
-  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-18"
- },
+ "official": null,
  "osm": {
   "id": 6944854,
   "type": "relation",
@@ -445,7 +432,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483573767"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": "yes",
@@ -471,7 +458,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1100746646"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -497,7 +484,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/331855098"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -523,7 +510,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4590390875"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -549,7 +536,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483577230"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -575,7 +562,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483577201"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -596,7 +583,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/relation/6944854",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "新北市",
@@ -927,7 +914,7 @@
   },
   "source": "https://www.openstreetmap.org/relation/6944854",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [
   {
@@ -951,28 +938,22 @@
    "source": "https://www.openstreetmap.org/relation/6944854",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:30:00+08:00",
+   "as_of": "2026-10-26T05:30:34+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
-  },
-  {
-   "as_of": "2026-10-18T21:34:21+00:00",
-   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
-   "name": "新北市政府農業局「新北市公園」",
-   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

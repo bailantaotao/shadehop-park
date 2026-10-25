@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Hsinchu",
  "count": null,
- "fetched_at": "2026-10-18T21:35:26+00:00",
+ "fetched_at": "2026-10-25T21:52:37+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucity",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-19T04:30:32+08:00",
+ "src_update_time": "2026-10-26T04:10:32+08:00",
  "stations": [
   {
    "charging_points": 1,
@@ -1135,14 +1135,14 @@
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
+     "label": "CCS2",
+     "type": "type2_combo"
     },
     {
      "count": 2,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "CCS1",
+     "type": "type1_combo"
     }
    ],
    "description": "本站目前共有2樁120kW、2樁180kW充電樁",
@@ -1195,12 +1195,6 @@
    "charging_rate": "計度 /固定 /8元 AC 7kW每度；計度 /固定 /12元 DC 30kW每度",
    "connectors": [
     {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    },
-    {
      "count": 2,
      "current": "DC",
      "label": "CCS1",
@@ -1211,6 +1205,12 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
+    },
+    {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
     }
    ],
    "description": "本站目前共有2樁30kW充電樁以及7樁7kW充電樁",
@@ -1232,6 +1232,12 @@
    "charging_rate": "計度 /固定 /8元 AC每度；計度 /固定 /12元 DC 30kW每度",
    "connectors": [
     {
+     "count": 5,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
      "count": 1,
      "current": "DC",
      "label": "CCS1",
@@ -1242,12 +1248,6 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
-    },
-    {
-     "count": 5,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
     }
    ],
    "description": "本站目前共有5樁7kW、1樁30kW充電樁",
@@ -1308,14 +1308,14 @@
     {
      "count": 4,
      "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
+     "label": "CCS2",
+     "type": "type2_combo"
     },
     {
      "count": 4,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "CCS1",
+     "type": "type1_combo"
     },
     {
      "count": 1,
@@ -1399,12 +1399,6 @@
    "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度",
    "connectors": [
     {
-     "count": 2,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    },
-    {
      "count": 1,
      "current": "DC",
      "label": "CCS1",
@@ -1415,6 +1409,12 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
     }
    ],
    "description": "本站目前共有1樁30kW充電樁，2樁7kW充電樁",
@@ -1510,12 +1510,6 @@
    "charging_rate": "計度 /固定 /8元 AC 7kW每度,計度 /固定 /12元 DC 30kW每度,計度 /固定 /14元 DC 120kW每度",
    "connectors": [
     {
-     "count": 2,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
      "count": 4,
      "current": "AC",
      "label": "Type 1 (J1772)",
@@ -1526,6 +1520,12 @@
      "current": "DC",
      "label": "CCS1",
      "type": "type1_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "本站目前共有1樁120kW充電樁，1樁30kW充電樁，4樁7kW充電樁",
@@ -1574,14 +1574,14 @@
     {
      "count": 3,
      "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
+     "label": "CCS2",
+     "type": "type2_combo"
     },
     {
      "count": 3,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "CCS1",
+     "type": "type1_combo"
     }
    ],
    "description": "本站目前共有2樁30kW充電樁以及1樁180kW充電樁",
@@ -1665,12 +1665,6 @@
    "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
    "connectors": [
     {
-     "count": 3,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
-    },
-    {
      "count": 1,
      "current": "DC",
      "label": "CCS1",
@@ -1681,6 +1675,12 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
+    },
+    {
+     "count": 3,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
     }
    ],
    "description": "本站目前共有1樁30kW充電樁以及3樁7kW充電樁",
@@ -1822,14 +1822,14 @@
     {
      "count": 3,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "CCS1",
+     "type": "type1_combo"
     },
     {
      "count": 3,
      "current": "DC",
-     "label": "CCS1",
-     "type": "type1_combo"
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "本站目前共有1樁180kW充電樁、1樁120kW充電樁以及1樁30kW充電樁",
@@ -1876,6 +1876,12 @@
    "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
    "connectors": [
     {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
      "count": 2,
      "current": "DC",
      "label": "CCS1",
@@ -1886,12 +1892,6 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
-    },
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
     }
    ],
    "description": "本站目前共有2樁30kW充電樁以及7樁7kW充電樁",
@@ -1913,6 +1913,12 @@
    "charging_rate": "計度 /固定 /8元 AC 7kW每度\n計度 /固定 /12元 DC 30kW每度",
    "connectors": [
     {
+     "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
      "count": 2,
      "current": "DC",
      "label": "CCS1",
@@ -1923,12 +1929,6 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
-    },
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
     }
    ],
    "description": "本站目前共有2樁30kW充電樁以及7樁7kW充電樁",
@@ -2013,6 +2013,12 @@
    "connectors": [
     {
      "count": 7,
+     "current": "AC",
+     "label": "Type 1 (J1772)",
+     "type": "type1"
+    },
+    {
+     "count": 7,
      "current": "DC",
      "label": "CCS1",
      "type": "type1_combo"
@@ -2022,12 +2028,6 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
-    },
-    {
-     "count": 7,
-     "current": "AC",
-     "label": "Type 1 (J1772)",
-     "type": "type1"
     }
    ],
    "description": "本站目前共有1樁180kW充電樁、1樁120kW充電樁、5樁30kW充電樁以及7樁7kW充電樁",
@@ -2046,5 +2046,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-19T04:30:32+08:00"
+ "update_time": "2026-10-26T04:50:32+08:00"
 }

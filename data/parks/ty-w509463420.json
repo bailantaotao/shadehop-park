@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9607986808",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/509463420",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/509463420",
    "value": null,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   "toilet": {
    "accessible": null,
@@ -60,7 +60,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/5568092261",
    "value": true,
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  },
  "area_m2": 4716,
@@ -197,7 +197,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S334007",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -242,7 +242,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "89132567-S0056",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -287,7 +287,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "42861108-S34548f5d-be15-486e-bdfd-945e6f214418",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -313,18 +313,18 @@
    "restriction": null,
    "sockets": [
     {
-     "count": 5,
-     "current": "DC",
-     "label": "CCS2",
-     "output_kw": null,
-     "type": "type2_combo"
-    },
-    {
      "count": 6,
      "current": "DC",
      "label": "Tesla TPC",
      "output_kw": null,
      "type": "tesla_tpc"
+    },
+    {
+     "count": 5,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
     }
    ],
    "source": "tdx",
@@ -332,7 +332,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "42861108-S3c553ccb-0ea5-4c30-ae65-ff0c4f640cbf",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -370,13 +370,13 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03342",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
    "brand": null,
    "capacity": 1,
-   "charging_rate": "浮動費率,計度/尖峰/15:00-21:00/13.5元每度,計度/離峰/00:00-06:00/5.8元每度,計度/一般/*06:01-14:59*21:01-23:59/6.6元每度",
+   "charging_rate": "浮動費率,,計度/離峰/00:00-06:00/5.8元每度,計度/一般/*06:01-23:59/8.3元每度",
    "distance_m": 215,
    "distance_method": "straight_line",
    "fee": null,
@@ -415,7 +415,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03225",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   },
   {
    "access": null,
@@ -453,7 +453,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S334006",
-   "verified_at": "2026-10-19"
+   "verified_at": "2026-10-26"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -501,7 +501,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/734498324"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -527,7 +527,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1202569807"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -553,7 +553,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/999816414"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -579,7 +579,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1044126889"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -605,7 +605,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1289802978"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   },
   {
    "access": null,
@@ -631,7 +631,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1569141106"
    },
-   "verified_at": "2026-10-17"
+   "verified_at": "2026-10-24"
   }
  ],
  "playground": {
@@ -652,7 +652,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/509463420",
   "value": false,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "region": {
   "city": "桃園市",
@@ -983,22 +983,22 @@
   },
   "source": "https://www.openstreetmap.org/way/509463420",
   "value": null,
-  "verified_at": "2026-10-17"
+  "verified_at": "2026-10-24"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-17T20:20:51Z",
+   "as_of": "2026-10-24T20:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-19T04:10:32+08:00",
+   "as_of": "2026-10-26T05:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-17"
+ "updated_at": "2026-10-24"
 }

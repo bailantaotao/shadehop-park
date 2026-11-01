@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5304951142",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/1707844687",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "桃園站",
    "source": "https://www.openstreetmap.org/node/246416407",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": true,
@@ -52,17 +52,17 @@
    "name": "東門公有零售市場美食街",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 452,
  "best_shade_windows": {
   "1": {
-   "end": "08:30",
-   "end_slot": 5,
+   "end": "17:00",
+   "end_slot": 22,
    "mean": 0.92,
-   "start": "07:00",
-   "start_slot": 2
+   "start": "15:00",
+   "start_slot": 18
   },
   "10": {
    "end": "08:30",
@@ -72,18 +72,18 @@
    "start_slot": 0
   },
   "11": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.89,
-   "start": "06:30",
-   "start_slot": 1
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.84,
+   "start": "14:30",
+   "start_slot": 17
   },
   "12": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.81,
-   "start": "07:00",
-   "start_slot": 2
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.93,
+   "start": "14:30",
+   "start_slot": 17
   },
   "2": {
    "end": "09:00",
@@ -93,11 +93,11 @@
    "start_slot": 2
   },
   "3": {
-   "end": "08:30",
-   "end_slot": 5,
-   "mean": 0.98,
-   "start": "06:30",
-   "start_slot": 1
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.86,
+   "start": "15:30",
+   "start_slot": 19
   },
   "4": {
    "end": "18:00",
@@ -171,7 +171,7 @@
    "name": "建國一村停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/30.00元每小時，每日最高收費150.00元",
    "restriction": null,
@@ -189,7 +189,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S333010",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -234,10 +234,10 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "97179430-S158",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
- "daytime_shaded_share": 0.01,
+ "daytime_shaded_share": 0.08,
  "geometry_estimated": true,
  "id": "ty-n1707844687",
  "indoor": false,
@@ -282,7 +282,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1252255150"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -308,7 +308,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1252234912"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -334,7 +334,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/665209274"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -360,7 +360,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/633726421"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -386,7 +386,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/665209272"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": "yes",
@@ -412,7 +412,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1378044467"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -433,7 +433,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/1707844687",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "桃園市",
@@ -442,7 +442,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.17,
-  "buildings_considered": 110,
+  "buildings_considered": 113,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -467,11 +467,11 @@
     0.07,
     0.18,
     0.32,
-    0.46,
-    0.52,
-    0.46,
-    0.42,
-    0.41,
+    0.56,
+    0.85,
+    1.0,
+    0.94,
+    0.87,
     null,
     null
    ],
@@ -493,11 +493,11 @@
     0.0,
     0.01,
     0.1,
-    0.27,
-    0.42,
-    0.53,
-    0.66,
-    0.84,
+    0.3,
+    0.6,
+    0.77,
+    0.77,
+    0.86,
     null,
     null
    ],
@@ -518,12 +518,12 @@
     0.02,
     0.09,
     0.19,
-    0.33,
-    0.45,
-    0.44,
-    0.41,
-    0.42,
-    0.49,
+    0.38,
+    0.68,
+    0.97,
+    0.92,
+    0.84,
+    0.79,
     null,
     null
    ],
@@ -544,12 +544,12 @@
     0.06,
     0.18,
     0.34,
-    0.5,
-    0.59,
-    0.53,
-    0.46,
-    0.42,
-    0.41,
+    0.54,
+    0.82,
+    1.0,
+    1.0,
+    0.94,
+    0.88,
     null,
     null
    ],
@@ -571,12 +571,12 @@
     0.0,
     0.01,
     0.05,
-    0.18,
-    0.34,
-    0.41,
-    0.43,
-    0.54,
-    0.77,
+    0.19,
+    0.45,
+    0.72,
+    0.82,
+    0.78,
+    0.85,
     null
    ],
    "3": [
@@ -599,8 +599,8 @@
     0.02,
     0.12,
     0.29,
-    0.58,
-    0.75,
+    0.62,
+    0.78,
     0.88,
     1.0,
     1.0
@@ -764,22 +764,22 @@
   },
   "source": "https://www.openstreetmap.org/node/1707844687",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:10:32+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

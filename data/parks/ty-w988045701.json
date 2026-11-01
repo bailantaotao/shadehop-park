@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118206991",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/988045701",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "平鎮站",
    "source": "https://www.openstreetmap.org/node/14244739700",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "平鎮區戶政事務所1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 5539,
@@ -83,18 +83,18 @@
    "start_slot": 0
   },
   "11": {
-   "end": "07:00",
-   "end_slot": 2,
-   "mean": 0.98,
-   "start": "06:30",
-   "start_slot": 1
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 1.0,
+   "start": "16:30",
+   "start_slot": 21
   },
   "12": {
-   "end": "07:30",
-   "end_slot": 3,
-   "mean": 0.83,
-   "start": "07:00",
-   "start_slot": 2
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 1.0,
+   "start": "16:30",
+   "start_slot": 21
   },
   "2": {
    "end": "07:30",
@@ -189,7 +189,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02850",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -237,7 +237,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/242020213"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -263,7 +263,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/997474400"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -289,7 +289,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/242014073"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -315,7 +315,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1303731752"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -341,7 +341,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1007621104"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -367,7 +367,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1303731747"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -388,7 +388,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/988045701",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "桃園市",
@@ -396,8 +396,8 @@
   "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.16,
-  "buildings_considered": 562,
+  "building_height_known_share": 0.12,
+  "buildings_considered": 787,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -478,7 +478,7 @@
     0.0,
     0.0,
     0.09,
-    0.82,
+    1.0,
     null,
     null
    ],
@@ -504,7 +504,7 @@
     0.0,
     0.0,
     0.05,
-    0.7,
+    1.0,
     null,
     null
    ],
@@ -531,7 +531,7 @@
     0.0,
     0.0,
     0.05,
-    0.46,
+    0.56,
     null
    ],
    "3": [
@@ -719,22 +719,22 @@
   },
   "source": "https://www.openstreetmap.org/way/988045701",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:10:32+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

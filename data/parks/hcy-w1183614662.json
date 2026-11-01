@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/3303545476",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1183614662",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "竹東站",
    "source": "https://www.openstreetmap.org/node/1374041041",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
@@ -63,7 +63,7 @@
    "name": "樹杞林文化館2F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 281,
@@ -185,7 +185,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992098808"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -211,7 +211,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/858433612"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -237,7 +237,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/301100515"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -263,7 +263,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1006403373"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -289,7 +289,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1229029145"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -315,7 +315,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992098815"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -336,7 +336,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1183614662",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新竹縣",
@@ -345,7 +345,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.0,
-  "buildings_considered": 44,
+  "buildings_considered": 46,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -667,16 +667,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1183614662",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

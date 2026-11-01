@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "Hsinchu",
  "count": null,
- "fetched_at": "2026-10-25T21:52:37+00:00",
+ "fetched_at": "2026-11-01T22:54:55+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucity",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-10-26T04:10:32+08:00",
+ "src_update_time": "2026-11-02T06:30:32+08:00",
  "stations": [
   {
    "charging_points": 1,
@@ -120,16 +120,16 @@
    "charging_rate": "計度/離峰/00:00-16:00/6 元每度計度/尖峰/16:00-22:00/13 元每度計度/離峰/22:00-00:00/6 元每度計度/一般時段/00:00-12:00/7 元每度計度/一般時段/12:00-00:00/7 元每度",
    "connectors": [
     {
-     "count": 2,
-     "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
-    },
-    {
      "count": 4,
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
+    },
+    {
+     "count": 2,
+     "current": "DC",
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數6",
@@ -153,14 +153,14 @@
     {
      "count": 8,
      "current": "DC",
-     "label": "Tesla TPC",
-     "type": "tesla_tpc"
+     "label": "CCS2",
+     "type": "type2_combo"
     },
     {
      "count": 8,
      "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
+     "label": "Tesla TPC",
+     "type": "tesla_tpc"
     }
    ],
    "description": "充電格位數8",
@@ -2046,5 +2046,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-10-26T04:50:32+08:00"
+ "update_time": "2026-11-02T06:30:32+08:00"
 }

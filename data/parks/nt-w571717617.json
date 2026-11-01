@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/7902834999",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/571717617",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運板新站",
    "source": "https://www.openstreetmap.org/node/2866590585",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "埔墘第1市民活動中心2F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 1126,
@@ -60,44 +60,44 @@
   "1": {
    "end": "09:00",
    "end_slot": 6,
-   "mean": 0.95,
+   "mean": 0.99,
    "start": "07:00",
    "start_slot": 2
   },
   "10": {
-   "end": "07:30",
-   "end_slot": 3,
-   "mean": 0.9,
+   "end": "08:00",
+   "end_slot": 4,
+   "mean": 0.85,
    "start": "06:00",
    "start_slot": 0
   },
   "11": {
    "end": "08:30",
    "end_slot": 5,
-   "mean": 0.92,
+   "mean": 0.96,
    "start": "06:30",
    "start_slot": 1
   },
   "12": {
    "end": "09:00",
    "end_slot": 6,
-   "mean": 0.93,
+   "mean": 0.97,
    "start": "07:00",
    "start_slot": 2
   },
   "2": {
    "end": "08:30",
    "end_slot": 5,
-   "mean": 0.93,
+   "mean": 0.98,
    "start": "07:00",
    "start_slot": 2
   },
   "3": {
-   "end": "18:00",
-   "end_slot": 24,
-   "mean": 1.0,
-   "start": "17:30",
-   "start_slot": 23
+   "end": "08:00",
+   "end_slot": 4,
+   "mean": 0.7,
+   "start": "07:00",
+   "start_slot": 2
   },
   "4": null,
   "5": null,
@@ -153,7 +153,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "28371994-STP5380001",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -201,7 +201,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1267928827"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -227,7 +227,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/846912716"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -253,7 +253,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/385172990"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -279,7 +279,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1491399410"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -305,7 +305,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13668397871"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -331,7 +331,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/541847243"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -352,7 +352,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/571717617",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新北市",
@@ -374,12 +374,12 @@
     1.0,
     1.0,
     1.0,
-    0.78,
-    0.47,
-    0.28,
-    0.14,
-    0.05,
-    0.0,
+    0.95,
+    0.59,
+    0.37,
+    0.22,
+    0.11,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -398,10 +398,10 @@
     0.79,
     0.92,
     0.99,
-    0.58,
-    0.31,
-    0.14,
-    0.03,
+    0.72,
+    0.41,
+    0.22,
+    0.09,
     0.0,
     0.0,
     0.0,
@@ -425,11 +425,11 @@
     1.0,
     1.0,
     1.0,
-    0.69,
-    0.41,
-    0.23,
-    0.11,
-    0.01,
+    0.85,
+    0.52,
+    0.32,
+    0.18,
+    0.07,
     0.0,
     0.0,
     0.0,
@@ -452,12 +452,12 @@
     1.0,
     1.0,
     1.0,
-    0.72,
-    0.44,
-    0.26,
-    0.14,
-    0.05,
-    0.0,
+    0.88,
+    0.56,
+    0.36,
+    0.22,
+    0.11,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -477,11 +477,11 @@
     null,
     1.0,
     1.0,
-    0.78,
-    0.44,
-    0.23,
-    0.1,
-    0.0,
+    0.95,
+    0.56,
+    0.33,
+    0.17,
+    0.06,
     0.0,
     0.0,
     0.0,
@@ -502,10 +502,10 @@
     null,
     0.53,
     0.72,
-    0.56,
-    0.28,
-    0.11,
-    0.0,
+    0.69,
+    0.38,
+    0.19,
+    0.06,
     0.0,
     0.0,
     0.0,
@@ -527,9 +527,9 @@
    "4": [
     0.02,
     0.08,
-    0.15,
-    0.08,
-    0.0,
+    0.17,
+    0.14,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -632,7 +632,7 @@
     0.0,
     0.01,
     0.04,
-    0.0,
+    0.04,
     0.0,
     0.0,
     0.0,
@@ -657,10 +657,10 @@
    "9": [
     0.18,
     0.33,
-    0.41,
-    0.23,
-    0.07,
-    0.0,
+    0.47,
+    0.32,
+    0.14,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -683,22 +683,22 @@
   },
   "source": "https://www.openstreetmap.org/way/571717617",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:30:34+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

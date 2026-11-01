@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/220360067",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/220360067",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -31,7 +31,7 @@
    "name": "三姓橋站",
    "source": "https://www.openstreetmap.org/node/4450762389",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": null,
@@ -49,7 +49,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/2294876440",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 731535,
@@ -136,7 +136,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/220360068"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -162,7 +162,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/2294876984"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -188,7 +188,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/743420623"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -214,7 +214,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/743420622"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -240,7 +240,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/441778718"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -266,7 +266,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/272370489"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -287,7 +287,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/220360067",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新竹市",
@@ -618,7 +618,7 @@
   },
   "source": "https://www.openstreetmap.org/way/220360067",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [
   {
@@ -653,16 +653,6 @@
      "url": "https://www.openstreetmap.org/node/3475962022"
     },
     {
-     "id": 3475962023,
-     "type": "node",
-     "url": "https://www.openstreetmap.org/node/3475962023"
-    },
-    {
-     "id": 2311542664,
-     "type": "node",
-     "url": "https://www.openstreetmap.org/node/2311542664"
-    },
-    {
      "id": 2311542673,
      "type": "node",
      "url": "https://www.openstreetmap.org/node/2311542673"
@@ -671,18 +661,28 @@
      "id": 3475962024,
      "type": "node",
      "url": "https://www.openstreetmap.org/node/3475962024"
+    },
+    {
+     "id": 3475962023,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/3475962023"
+    },
+    {
+     "id": 2311542664,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/2311542664"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/220360067",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -694,5 +694,5 @@
    "url": "https://data.gov.tw/dataset/132713"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

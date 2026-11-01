@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9279741208",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1391751105",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "中壢站",
    "source": "https://www.openstreetmap.org/node/247059970",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "台灣中油龍岡站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 4223,
@@ -84,7 +84,7 @@
   "4": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.66,
+   "mean": 0.82,
    "start": "17:30",
    "start_slot": 23
   },
@@ -150,7 +150,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1391751104"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -176,7 +176,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4211589925"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -202,7 +202,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1390122822"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -228,7 +228,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/421396583"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -254,7 +254,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008072013"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -280,7 +280,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008072014"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -301,7 +301,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1391751105",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "桃園市",
@@ -309,8 +309,8 @@
   "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.06,
-  "buildings_considered": 269,
+  "building_height_known_share": 0.05,
+  "buildings_considered": 291,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -470,7 +470,7 @@
     0.19,
     0.23,
     0.27,
-    0.35,
+    0.36,
     0.99
    ],
    "4": [
@@ -496,8 +496,8 @@
     0.16,
     0.21,
     0.27,
-    0.32,
-    0.66
+    0.34,
+    0.82
    ],
    "5": [
     0.0,
@@ -601,7 +601,7 @@
     0.18,
     0.25,
     0.29,
-    0.45
+    0.46
    ],
    "9": [
     0.0,
@@ -626,22 +626,22 @@
     0.19,
     0.24,
     0.29,
-    0.45,
+    0.46,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/1391751105",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

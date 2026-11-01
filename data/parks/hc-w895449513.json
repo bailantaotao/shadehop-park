@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/4372639210",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/895449513",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新莊站",
    "source": "https://www.openstreetmap.org/node/1553495847",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "7-11便利商店-新竹介壽",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 3381,
@@ -198,7 +198,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1499497356"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -224,7 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1494492198"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -250,7 +250,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/272362079"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -276,7 +276,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1168956200"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -302,7 +302,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992098805"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -311,7 +311,7 @@
    "capacity_parent": null,
    "distance_m": 384,
    "distance_method": "straight_line",
-   "fee": null,
+   "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -320,15 +320,15 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "163巷停車場",
+   "opening_hours": "24/7",
    "operator": null,
    "osm": {
     "id": 948420842,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948420842"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -349,7 +349,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/895449513",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新竹市",
@@ -680,16 +680,16 @@
   },
   "source": "https://www.openstreetmap.org/way/895449513",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

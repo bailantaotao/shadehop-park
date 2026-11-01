@@ -3,7 +3,7 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 193,
+   "distance_m": 197,
    "location": {
     "lat": 25.152542,
     "lng": 121.54748
@@ -12,19 +12,19 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/2686831976",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "medium",
-   "distance_m": 26,
+   "distance_m": 28,
    "location": {
     "lat": 25.151186,
     "lng": 121.548268
    },
    "method": "osm",
-   "source": "https://data.gov.tw/dataset/136476",
+   "source": "https://www.openstreetmap.org/way/1571968404",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "low",
@@ -32,30 +32,30 @@
    "location": null,
    "method": "osm",
    "name": null,
-   "source": "https://data.gov.tw/dataset/136476",
+   "source": "https://www.openstreetmap.org/way/1571968404",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": true,
    "category": "觀光地區及風景區",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 56,
+   "distance_m": 55,
    "family": null,
    "family_room": false,
    "location": {
-    "lat": 25.151452,
+    "lat": 25.151422,
     "lng": 121.548378
    },
    "method": "official_data",
    "name": "陽明山公園前山公園1號",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
- "area_m2": 452,
+ "area_m2": 71,
  "best_shade_windows": {
   "1": null,
   "10": {
@@ -65,12 +65,18 @@
    "start": "06:00",
    "start_slot": 0
   },
-  "11": null,
+  "11": {
+   "end": "07:00",
+   "end_slot": 2,
+   "mean": 0.92,
+   "start": "06:30",
+   "start_slot": 1
+  },
   "12": null,
   "2": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.8,
+   "mean": 1.0,
    "start": "17:00",
    "start_slot": 22
   },
@@ -84,7 +90,7 @@
   "4": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.74,
+   "mean": 0.81,
    "start": "17:30",
    "start_slot": 23
   },
@@ -95,7 +101,7 @@
   "9": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.77,
+   "mean": 1.0,
    "start": "06:00",
    "start_slot": 0
   }
@@ -112,35 +118,39 @@
  },
  "chargers": [],
  "daytime_shaded_share": 0.0,
- "geometry_estimated": true,
- "id": "tp-o3052752782598",
+ "geometry_estimated": false,
+ "id": "tp-w1571968404",
  "indoor": false,
  "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 25.150845,
-  "lng": 121.548273
+  "lat": 25.150884,
+  "lng": 121.548283
  },
- "name": "前山一公園",
- "name_source": "official",
+ "name": "前山公園 遊戲場",
+ "name_source": "park_name",
  "official": {
   "address": null,
-  "distance_m": null,
+  "distance_m": 0,
   "equipment": {
    "組合遊具": 1
   },
   "facilities": null,
   "features": null,
   "management": "花卉中心",
-  "method": "official_record",
+  "method": "location_match",
   "name": "前山一公園",
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-10-25"
+  "verified_at": "2026-11-01"
  },
- "osm": null,
+ "osm": {
+  "id": 1571968404,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/1571968404"
+ },
  "park_name": "前山公園",
  "parking": [
   {
@@ -148,7 +158,7 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 230,
+   "distance_m": 232,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -167,14 +177,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/338995788"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 434,
+   "distance_m": 439,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
@@ -193,14 +203,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/34921725"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 491,
+   "distance_m": 493,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
@@ -219,14 +229,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1081384039"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 575,
+   "distance_m": 577,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
@@ -245,14 +255,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1081384040"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 672,
+   "distance_m": 675,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -271,7 +281,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/559386077"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -283,16 +293,16 @@
   "surface": null,
   "wheelchair": null
  },
- "playground_mapped": false,
+ "playground_mapped": true,
  "rain_cover": {
   "confidence": "low",
   "covered_area_m2": 0,
   "covered_ratio": 0.0,
   "method": "osm",
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
-  "source": "https://data.gov.tw/dataset/136476",
+  "source": "https://www.openstreetmap.org/way/1571968404",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "臺北市",
@@ -301,7 +311,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.01,
-  "buildings_considered": 148,
+  "buildings_considered": 136,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -311,7 +321,7 @@
    "1": [
     null,
     null,
-    0.27,
+    0.49,
     0.0,
     0.0,
     0.0,
@@ -329,8 +339,8 @@
     0.0,
     0.0,
     0.0,
-    0.02,
-    0.13,
+    0.0,
+    0.0,
     null,
     null
    ],
@@ -354,15 +364,15 @@
     0.0,
     0.0,
     0.0,
+    0.01,
     0.0,
-    0.04,
-    0.33,
+    0.53,
     null,
     null
    ],
    "11": [
     null,
-    0.44,
+    0.92,
     0.0,
     0.0,
     0.0,
@@ -381,8 +391,8 @@
     0.0,
     0.0,
     0.0,
-    0.11,
-    0.46,
+    0.0,
+    0.91,
     null,
     null
    ],
@@ -407,8 +417,8 @@
     0.0,
     0.0,
     0.0,
-    0.14,
-    0.11,
+    0.0,
+    0.0,
     null,
     null
    ],
@@ -434,14 +444,37 @@
     0.0,
     0.0,
     0.0,
-    0.05,
-    0.8,
+    0.02,
+    1.0,
     null
    ],
    "3": [
     null,
-    0.16,
     0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.04,
+    0.01,
+    0.24,
+    1.0
+   ],
+   "4": [
     0.0,
     0.0,
     0.0,
@@ -461,34 +494,11 @@
     0.0,
     0.0,
     0.03,
-    0.09,
-    1.0
-   ],
-   "4": [
-    0.08,
+    0.07,
+    0.11,
+    0.11,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.05,
-    0.74
+    0.81
    ],
    "5": [
     0.0,
@@ -508,13 +518,13 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.02,
-    0.05
+    0.04,
+    0.08,
+    0.12,
+    0.16,
+    0.2,
+    0.16,
+    0.0
    ],
    "6": [
     0.0,
@@ -533,14 +543,14 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.03
+    0.01,
+    0.05,
+    0.09,
+    0.13,
+    0.18,
+    0.23,
+    0.26,
+    0.04
    ],
    "7": [
     0.0,
@@ -560,13 +570,13 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.04
+    0.03,
+    0.07,
+    0.12,
+    0.16,
+    0.21,
+    0.23,
+    0.05
    ],
    "8": [
     0.0,
@@ -586,16 +596,16 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.03,
-    0.07
+    0.01,
+    0.04,
+    0.09,
+    0.13,
+    0.15,
+    0.09,
+    0.0
    ],
    "9": [
-    0.77,
+    1.0,
     0.0,
     0.0,
     0.0,
@@ -613,32 +623,32 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.04,
-    0.11,
+    0.01,
+    0.05,
+    0.07,
+    0.01,
+    0.02,
     null
    ]
   },
-  "source": "https://data.gov.tw/dataset/136476",
+  "source": "https://www.openstreetmap.org/way/1571968404",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-25T21:51:32+00:00",
+   "as_of": "2026-11-01T22:53:50+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

@@ -3,7 +3,7 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 43,
+   "distance_m": 40,
    "location": {
     "lat": 25.050701,
     "lng": 121.428988
@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118239053",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,11 +21,11 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1125369573",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
-   "distance_m": 1000,
+   "distance_m": 1003,
    "location": {
     "lat": 25.053265,
     "lng": 121.439552
@@ -34,14 +34,14 @@
    "name": "捷運泰山站",
    "source": "https://www.openstreetmap.org/node/4653215488",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
    "category": "社福機構、集會場所",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 100,
+   "distance_m": 99,
    "family": {
     "accessible": true,
     "category": "交通",
@@ -63,101 +63,101 @@
    "name": "新北市泰山區義仁里活動中心",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
- "area_m2": 15109,
+ "area_m2": 13306,
  "best_shade_windows": {
   "1": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.78,
+   "mean": 0.85,
    "start": "16:00",
    "start_slot": 20
   },
   "10": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.86,
+   "mean": 0.92,
    "start": "16:00",
    "start_slot": 20
   },
   "11": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.97,
-   "start": "16:00",
-   "start_slot": 20
+   "mean": 0.86,
+   "start": "15:30",
+   "start_slot": 19
   },
   "12": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.93,
+   "mean": 0.97,
    "start": "16:00",
    "start_slot": 20
   },
   "2": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.93,
+   "mean": 0.95,
    "start": "16:30",
    "start_slot": 21
   },
   "3": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.89,
+   "mean": 0.92,
    "start": "16:30",
    "start_slot": 21
   },
   "4": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.9,
-   "start": "16:30",
-   "start_slot": 21
+   "mean": 0.87,
+   "start": "16:00",
+   "start_slot": 20
   },
   "5": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.91,
-   "start": "16:30",
-   "start_slot": 21
+   "mean": 0.87,
+   "start": "16:00",
+   "start_slot": 20
   },
   "6": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.89,
-   "start": "16:30",
-   "start_slot": 21
+   "mean": 0.85,
+   "start": "16:00",
+   "start_slot": 20
   },
   "7": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.87,
+   "mean": 0.92,
    "start": "16:30",
    "start_slot": 21
   },
   "8": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.88,
+   "mean": 0.92,
    "start": "16:30",
    "start_slot": 21
   },
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.92,
-   "start": "16:30",
-   "start_slot": 21
+   "mean": 0.87,
+   "start": "16:00",
+   "start_slot": 20
   }
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": 147,
+  "nearest_any_m": 146,
   "nearest_fast_m": null,
-  "nearest_slow_m": 147,
+  "nearest_slow_m": 146,
   "radius_m": 500,
   "slow": 1,
   "total": 1,
@@ -169,7 +169,7 @@
    "brand": null,
    "capacity": 3,
    "charging_rate": "計度/固定/8元每度",
-   "distance_m": 147,
+   "distance_m": 146,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "B1",
@@ -207,10 +207,10 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02794",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
- "daytime_shaded_share": 0.0,
+ "daytime_shaded_share": 0.01,
  "geometry_estimated": false,
  "id": "nt-w1125369573",
  "indoor": false,
@@ -218,8 +218,8 @@
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 25.049817,
-  "lng": 121.429402
+  "lat": 25.049839,
+  "lng": 121.429339
  },
  "name": "義仁公園",
  "name_source": "osm_name",
@@ -235,7 +235,7 @@
   "phone": "(02)29099551",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-25"
+  "verified_at": "2026-11-01"
  },
  "osm": {
   "id": 1125369573,
@@ -268,7 +268,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1028884749"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": "yes",
@@ -294,14 +294,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1025471798"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 230,
+   "distance_m": 231,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
@@ -320,14 +320,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1028884748"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 407,
+   "distance_m": 403,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": null,
@@ -346,14 +346,14 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4489648883"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 552,
+   "distance_m": 554,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -372,33 +372,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1297280741"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
-   "access": null,
+   "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 618,
+   "distance_m": 615,
    "distance_method": "straight_line",
-   "fee": null,
+   "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.050722,
-    "lng": 121.436711
+    "lat": 25.055703,
+    "lng": 121.426144
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停五停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 1196259857,
+    "id": 452163131,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/1196259857"
+    "url": "https://www.openstreetmap.org/way/452163131"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -419,7 +419,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1125369573",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新北市",
@@ -427,8 +427,8 @@
   "id": "newtaipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.4,
-  "buildings_considered": 88,
+  "building_height_known_share": 0.39,
+  "buildings_considered": 90,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -452,12 +452,12 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.07,
-    0.16,
-    0.28,
-    0.61,
-    0.96,
+    0.03,
+    0.11,
+    0.21,
+    0.34,
+    0.72,
+    0.99,
     null,
     null
    ],
@@ -476,14 +476,14 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.03,
-    0.08,
-    0.16,
-    0.27,
-    0.43,
-    0.75,
-    0.98,
+    0.01,
+    0.05,
+    0.12,
+    0.22,
+    0.34,
+    0.52,
+    0.85,
+    0.99,
     null,
     null
    ],
@@ -503,12 +503,12 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.06,
-    0.15,
-    0.25,
-    0.5,
-    0.93,
+    0.03,
+    0.1,
+    0.2,
+    0.32,
+    0.6,
+    0.97,
     1.0,
     null,
     null
@@ -529,12 +529,12 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.03,
-    0.1,
-    0.2,
-    0.4,
-    0.85,
+    0.01,
+    0.06,
+    0.14,
+    0.26,
+    0.48,
+    0.93,
     1.0,
     null,
     null
@@ -556,12 +556,12 @@
     0.0,
     0.0,
     0.0,
-    0.02,
-    0.08,
-    0.16,
-    0.27,
-    0.45,
-    0.86,
+    0.05,
+    0.12,
+    0.21,
+    0.34,
+    0.54,
+    0.9,
     1.0,
     null
    ],
@@ -581,41 +581,41 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.05,
-    0.11,
-    0.2,
-    0.31,
-    0.48,
-    0.76,
-    0.91,
+    0.02,
+    0.08,
+    0.15,
+    0.25,
+    0.38,
+    0.58,
+    0.85,
+    0.93,
     0.99
    ],
    "4": [
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
     0.03,
-    0.08,
-    0.15,
-    0.24,
-    0.35,
-    0.53,
-    0.8,
-    0.95,
-    0.96
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.06,
+    0.12,
+    0.2,
+    0.3,
+    0.43,
+    0.64,
+    0.9,
+    0.98,
+    0.97
    ],
    "5": [
     0.0,
@@ -631,46 +631,19 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.02,
-    0.05,
-    0.11,
-    0.17,
-    0.26,
-    0.37,
-    0.54,
-    0.8,
-    0.96,
-    0.97
+    0.01,
+    0.04,
+    0.08,
+    0.15,
+    0.23,
+    0.32,
+    0.45,
+    0.64,
+    0.89,
+    0.97,
+    0.98
    ],
    "6": [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.02,
-    0.06,
-    0.1,
-    0.17,
-    0.25,
-    0.35,
-    0.5,
-    0.74,
-    0.95,
-    0.99
-   ],
-   "7": [
-    0.0,
     0.0,
     0.0,
     0.0,
@@ -688,90 +661,117 @@
     0.04,
     0.09,
     0.15,
-    0.23,
-    0.33,
-    0.47,
-    0.69,
-    0.93,
+    0.22,
+    0.31,
+    0.43,
+    0.6,
+    0.84,
+    0.98,
+    0.99
+   ],
+   "7": [
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.03,
+    0.07,
+    0.13,
+    0.2,
+    0.29,
+    0.4,
+    0.57,
+    0.81,
+    0.97,
     0.98
    ],
    "8": [
-    0.02,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
     0.03,
-    0.08,
-    0.15,
-    0.23,
-    0.33,
-    0.49,
-    0.75,
-    0.94,
-    0.95
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.02,
+    0.06,
+    0.12,
+    0.2,
+    0.29,
+    0.41,
+    0.59,
+    0.85,
+    0.95,
+    0.96
    ],
    "9": [
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     0.03,
-    0.08,
-    0.16,
-    0.25,
-    0.38,
-    0.58,
-    0.86,
-    0.98,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.06,
+    0.12,
+    0.21,
+    0.31,
+    0.46,
+    0.7,
+    0.91,
+    0.99,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/1125369573",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:30:34+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-25T21:51:28+00:00",
+   "as_of": "2026-11-01T22:53:45+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

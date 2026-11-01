@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/6163029969",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/6153518185",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -37,36 +37,36 @@
    "name": "捷運龍山寺站",
    "source": "https://www.openstreetmap.org/node/3639530981",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": true,
    "category": "民眾洽公場所",
    "changing_table": false,
    "confidence": "high",
-   "distance_m": 133,
+   "distance_m": 132,
    "family": {
     "accessible": true,
-    "category": "商業營業場所",
+    "category": "公園",
     "changing_table": true,
-    "distance_m": 216,
+    "distance_m": 203,
     "family_room": true,
     "location": {
-     "lat": 25.035011,
-     "lng": 121.499812
+     "lat": 25.035607,
+     "lng": 121.50015
     },
-    "name": "公有龍山商場2F"
+    "name": "艋舺公園"
    },
    "family_room": false,
    "location": {
-    "lat": 25.033564,
-    "lng": 121.501448
+    "lat": 25.033574,
+    "lng": 121.501445
    },
    "method": "official_data",
    "name": "臺北市勞動局勞動權益中心6F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 452,
@@ -197,7 +197,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0401",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -242,7 +242,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0575",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -280,7 +280,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0450",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -318,7 +318,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0636",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -356,7 +356,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "TPE1550",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -404,7 +404,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/468653884"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -430,7 +430,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/196943474"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -456,7 +456,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/308675004"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -482,7 +482,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/11252882076"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -508,7 +508,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/313195266"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": "yes",
@@ -534,7 +534,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3191035893"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -555,7 +555,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/6153518185",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "臺北市",
@@ -886,22 +886,22 @@
   },
   "source": "https://www.openstreetmap.org/node/6153518185",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T04:10:32+08:00",
+   "as_of": "2026-11-02T03:50:28+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

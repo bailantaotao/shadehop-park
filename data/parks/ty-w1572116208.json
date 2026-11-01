@@ -2,142 +2,62 @@
  "address": null,
  "amenities": {
   "convenience_store": {
-   "confidence": "medium",
-   "distance_m": 160,
-   "location": {
-    "lat": 25.038345,
-    "lng": 121.616926
-   },
+   "confidence": "low",
+   "distance_m": null,
+   "location": null,
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/1682979045",
-   "value": true,
-   "verified_at": "2026-10-24"
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1572116208",
+   "value": null,
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
    "location": null,
    "method": "osm",
-   "source": "https://www.openstreetmap.org/node/3751062783",
+   "source": "https://www.openstreetmap.org/way/1572116208",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
-   "confidence": "low",
-   "distance_m": null,
-   "location": null,
+   "confidence": "medium",
+   "distance_m": 323,
+   "location": {
+    "lat": 25.055814,
+    "lng": 121.21065
+   },
    "method": "osm",
-   "name": null,
-   "source": "https://www.openstreetmap.org/node/3751062783",
-   "value": null,
-   "verified_at": "2026-10-24"
+   "name": "捷運大園站",
+   "source": "https://www.openstreetmap.org/node/4653351589",
+   "value": true,
+   "verified_at": "2026-10-31"
   },
   "toilet": {
-   "accessible": false,
-   "category": "其他",
-   "changing_table": false,
-   "confidence": "high",
-   "distance_m": 213,
-   "family": null,
-   "family_room": false,
-   "location": {
-    "lat": 25.038755,
-    "lng": 121.61729
-   },
-   "method": "official_data",
-   "name": "南港2號",
-   "source": "https://data.gov.tw/dataset/30794",
-   "value": true,
-   "verified_at": "2026-10-24"
+   "changing_table": null,
+   "confidence": "low",
+   "distance_m": null,
+   "method": "osm",
+   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
+   "source": "https://www.openstreetmap.org/way/1572116208",
+   "value": null,
+   "verified_at": "2026-10-31"
   }
  },
- "area_m2": 452,
+ "area_m2": 9663,
  "best_shade_windows": {
-  "1": {
-   "end": "08:00",
-   "end_slot": 4,
-   "mean": 1.0,
-   "start": "07:00",
-   "start_slot": 2
-  },
-  "10": {
-   "end": "07:30",
-   "end_slot": 3,
-   "mean": 0.95,
-   "start": "06:00",
-   "start_slot": 0
-  },
-  "11": {
-   "end": "17:00",
-   "end_slot": 22,
-   "mean": 0.77,
-   "start": "15:30",
-   "start_slot": 19
-  },
-  "12": {
-   "end": "17:00",
-   "end_slot": 22,
-   "mean": 1.0,
-   "start": "15:30",
-   "start_slot": 19
-  },
-  "2": {
-   "end": "08:00",
-   "end_slot": 4,
-   "mean": 0.93,
-   "start": "07:00",
-   "start_slot": 2
-  },
-  "3": {
-   "end": "08:00",
-   "end_slot": 4,
-   "mean": 0.9,
-   "start": "06:30",
-   "start_slot": 1
-  },
-  "4": {
-   "end": "07:00",
-   "end_slot": 2,
-   "mean": 0.93,
-   "start": "06:00",
-   "start_slot": 0
-  },
-  "5": {
-   "end": "06:30",
-   "end_slot": 1,
-   "mean": 1.0,
-   "start": "06:00",
-   "start_slot": 0
-  },
-  "6": {
-   "end": "06:30",
-   "end_slot": 1,
-   "mean": 0.92,
-   "start": "06:00",
-   "start_slot": 0
-  },
-  "7": {
-   "end": "06:30",
-   "end_slot": 1,
-   "mean": 1.0,
-   "start": "06:00",
-   "start_slot": 0
-  },
-  "8": {
-   "end": "07:00",
-   "end_slot": 2,
-   "mean": 0.87,
-   "start": "06:00",
-   "start_slot": 0
-  },
-  "9": {
-   "end": "07:30",
-   "end_slot": 3,
-   "mean": 0.92,
-   "start": "06:00",
-   "start_slot": 0
-  }
+  "1": null,
+  "10": null,
+  "11": null,
+  "12": null,
+  "2": null,
+  "3": null,
+  "4": null,
+  "5": null,
+  "6": null,
+  "7": null,
+  "8": null,
+  "9": null
  },
  "charger_summary": {
   "fast": 0,
@@ -150,82 +70,40 @@
   "unknown": 0
  },
  "chargers": [],
- "daytime_shaded_share": 0.01,
- "geometry_estimated": true,
- "id": "tp-n3751062783",
+ "daytime_shaded_share": 0.0,
+ "geometry_estimated": false,
+ "id": "ty-w1572116208",
  "indoor": false,
- "kind": "playground",
+ "kind": "park",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 25.036811,
-  "lng": 121.616676
+  "lat": 25.054459,
+  "lng": 121.214389
  },
- "name": "遊戲場（近研究院路二段）",
- "name_source": "nearest_street",
- "official": {
-  "address": null,
-  "distance_m": 0,
-  "equipment": {
-   "其他": 2,
-   "組合遊具": 1
-  },
-  "facilities": null,
-  "features": null,
-  "management": "園工隊",
-  "method": "location_match",
-  "name": "九如綠地",
-  "phone": null,
-  "registry_points": 1,
-  "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-10-25"
- },
+ "name": "海豐坡公園",
+ "name_source": "osm_name",
+ "official": null,
  "osm": {
-  "id": 3751062783,
-  "type": "node",
-  "url": "https://www.openstreetmap.org/node/3751062783"
+  "id": 1572116208,
+  "type": "way",
+  "url": "https://www.openstreetmap.org/way/1572116208"
  },
- "park_name": null,
+ "park_name": "海豐坡公園",
  "parking": [
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 459,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.041182,
-    "lng": 121.617538
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 155777610,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/155777610"
-   },
-   "verified_at": "2026-10-24"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 492,
+   "distance_m": 214,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 25.040621,
-    "lng": 121.620201
+    "lat": 25.057347,
+    "lng": 121.212797
    },
    "maxheight_m": null,
    "method": "osm",
@@ -233,25 +111,25 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 201085319,
+    "id": 540671778,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/201085319"
+    "url": "https://www.openstreetmap.org/way/540671778"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 493,
+   "distance_m": 220,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 25.04067,
-    "lng": 121.620229
+    "lat": 25.057014,
+    "lng": 121.212119
    },
    "maxheight_m": null,
    "method": "osm",
@@ -259,25 +137,51 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 975322307,
+    "id": 540671776,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/975322307"
+    "url": "https://www.openstreetmap.org/way/540671776"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 565,
+   "distance_m": 326,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 25.03618,
-    "lng": 121.610592
+    "lat": 25.057841,
+    "lng": 121.212203
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "連勝出國停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 5170493122,
+    "type": "node",
+    "url": "https://www.openstreetmap.org/node/5170493122"
+   },
+   "verified_at": "2026-10-31"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 376,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 25.058739,
+    "lng": 121.211647
    },
    "maxheight_m": null,
    "method": "osm",
@@ -285,25 +189,25 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 942203333,
+    "id": 540671765,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/942203333"
+    "url": "https://www.openstreetmap.org/way/540671765"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 596,
+   "distance_m": 386,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 25.041211,
-    "lng": 121.61285
+    "lat": 25.054462,
+    "lng": 121.219053
    },
    "maxheight_m": null,
    "method": "osm",
@@ -311,25 +215,25 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 199925652,
+    "id": 493189012,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/199925652"
+    "url": "https://www.openstreetmap.org/way/493189012"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 615,
+   "distance_m": 484,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 25.042459,
-    "lng": 121.615838
+    "lat": 25.054075,
+    "lng": 121.220017
    },
    "maxheight_m": null,
    "method": "osm",
@@ -337,11 +241,11 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 366111487,
+    "id": 493189006,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/366111487"
+    "url": "https://www.openstreetmap.org/way/493189006"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -353,25 +257,25 @@
   "surface": null,
   "wheelchair": null
  },
- "playground_mapped": true,
+ "playground_mapped": false,
  "rain_cover": {
   "confidence": "low",
   "covered_area_m2": 0,
   "covered_ratio": 0.0,
   "method": "osm",
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
-  "source": "https://www.openstreetmap.org/node/3751062783",
+  "source": "https://www.openstreetmap.org/way/1572116208",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
-  "city": "臺北市",
-  "district": "南港區",
-  "id": "taipei"
+  "city": "桃園市",
+  "district": "大園區",
+  "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.37,
-  "buildings_considered": 307,
+  "building_height_known_share": 0.0,
+  "buildings_considered": 13,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -381,10 +285,6 @@
    "1": [
     null,
     null,
-    1.0,
-    1.0,
-    0.36,
-    0.06,
     0.0,
     0.0,
     0.0,
@@ -398,18 +298,22 @@
     0.0,
     0.0,
     0.0,
-    0.36,
-    0.95,
-    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     null,
     null
    ],
    "10": [
-    1.0,
-    1.0,
-    0.86,
-    0.43,
-    0.08,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -432,10 +336,6 @@
    ],
    "11": [
     null,
-    1.0,
-    1.0,
-    0.42,
-    0.1,
     0.0,
     0.0,
     0.0,
@@ -450,18 +350,19 @@
     0.0,
     0.0,
     0.0,
-    0.73,
-    0.96,
-    0.62,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     null,
     null
    ],
    "12": [
     null,
     null,
-    1.0,
-    0.79,
-    0.16,
     0.0,
     0.0,
     0.0,
@@ -475,20 +376,19 @@
     0.0,
     0.0,
     0.0,
-    0.25,
-    1.0,
-    1.0,
-    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     null,
     null
    ],
    "2": [
     null,
     null,
-    1.0,
-    0.85,
-    0.42,
-    0.1,
     0.0,
     0.0,
     0.0,
@@ -504,16 +404,16 @@
     0.0,
     0.0,
     0.0,
-    0.22,
-    0.06,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     null
    ],
    "3": [
     null,
-    1.0,
-    1.0,
-    0.71,
-    0.24,
     0.0,
     0.0,
     0.0,
@@ -532,13 +432,13 @@
     0.0,
     0.0,
     0.0,
-    1.0
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
    ],
    "4": [
-    1.0,
-    0.86,
-    0.45,
-    0.15,
     0.0,
     0.0,
     0.0,
@@ -558,13 +458,13 @@
     0.0,
     0.0,
     0.0,
-    0.85
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
    ],
    "5": [
-    1.0,
-    0.34,
-    0.07,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -584,12 +484,13 @@
     0.0,
     0.0,
     0.0,
-    0.02
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
    ],
    "6": [
-    0.92,
-    0.21,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -610,12 +511,12 @@
     0.0,
     0.0,
     0.0,
-    0.18
+    0.0,
+    0.0,
+    0.0,
+    0.0
    ],
    "7": [
-    1.0,
-    0.38,
-    0.04,
     0.0,
     0.0,
     0.0,
@@ -636,13 +537,16 @@
     0.0,
     0.0,
     0.0,
-    0.11
+    0.0,
+    0.0,
+    0.0,
+    0.0
    ],
    "8": [
-    1.0,
-    0.74,
-    0.29,
-    0.08,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -665,11 +569,11 @@
     0.0
    ],
    "9": [
-    1.0,
-    1.0,
-    0.75,
-    0.3,
-    0.03,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -691,24 +595,18 @@
     null
    ]
   },
-  "source": "https://www.openstreetmap.org/node/3751062783",
+  "source": "https://www.openstreetmap.org/way/1572116208",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
-  },
-  {
-   "as_of": "2026-10-25T21:51:32+00:00",
-   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
-   "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
-   "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

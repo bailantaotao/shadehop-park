@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/9404139408",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/333727922",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "國華站",
    "source": "https://www.openstreetmap.org/node/4990733839",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "中油裕進加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 9165,
@@ -156,7 +156,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727931"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": "yes",
@@ -182,7 +182,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727930"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -208,7 +208,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1381668298"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -234,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188725"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -260,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1381668305"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -286,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188726"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -307,7 +307,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/333727922",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新北市",
@@ -328,8 +328,8 @@
     null,
     0.8,
     0.37,
-    0.08,
-    0.01,
+    0.1,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -352,9 +352,9 @@
    "10": [
     0.91,
     0.62,
-    0.23,
-    0.1,
-    0.04,
+    0.26,
+    0.13,
+    0.05,
     0.01,
     0.0,
     0.0,
@@ -379,8 +379,8 @@
     null,
     0.78,
     0.41,
-    0.1,
-    0.02,
+    0.13,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -406,7 +406,7 @@
     null,
     0.52,
     0.21,
-    0.03,
+    0.04,
     0.0,
     0.0,
     0.0,
@@ -431,10 +431,10 @@
     null,
     null,
     0.81,
-    0.28,
-    0.1,
-    0.03,
-    0.0,
+    0.31,
+    0.12,
+    0.04,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -456,11 +456,11 @@
    "3": [
     null,
     0.67,
-    0.31,
-    0.18,
-    0.08,
-    0.04,
-    0.01,
+    0.34,
+    0.21,
+    0.1,
+    0.05,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -481,12 +481,12 @@
    ],
    "4": [
     0.5,
-    0.41,
-    0.22,
-    0.12,
-    0.06,
-    0.03,
-    0.01,
+    0.44,
+    0.26,
+    0.14,
+    0.08,
+    0.04,
+    0.02,
     0.0,
     0.0,
     0.0,
@@ -506,12 +506,12 @@
     0.0
    ],
    "5": [
-    0.5,
-    0.28,
-    0.16,
-    0.1,
-    0.06,
-    0.03,
+    0.52,
+    0.33,
+    0.19,
+    0.12,
+    0.07,
+    0.04,
     0.02,
     0.01,
     0.0,
@@ -532,13 +532,13 @@
     0.0
    ],
    "6": [
-    0.43,
-    0.26,
-    0.16,
-    0.1,
-    0.06,
-    0.04,
-    0.02,
+    0.46,
+    0.3,
+    0.19,
+    0.12,
+    0.08,
+    0.05,
+    0.03,
     0.01,
     0.0,
     0.0,
@@ -558,13 +558,13 @@
     0.0
    ],
    "7": [
-    0.48,
-    0.31,
-    0.18,
-    0.11,
-    0.07,
-    0.04,
-    0.02,
+    0.51,
+    0.36,
+    0.21,
+    0.13,
+    0.08,
+    0.05,
+    0.03,
     0.01,
     0.0,
     0.0,
@@ -585,11 +585,11 @@
    ],
    "8": [
     0.51,
-    0.4,
-    0.21,
-    0.12,
-    0.07,
-    0.04,
+    0.46,
+    0.25,
+    0.15,
+    0.08,
+    0.05,
     0.02,
     0.01,
     0.0,
@@ -611,10 +611,10 @@
    ],
    "9": [
     0.5,
-    0.39,
-    0.23,
-    0.12,
-    0.06,
+    0.42,
+    0.27,
+    0.14,
+    0.07,
     0.03,
     0.01,
     0.0,
@@ -638,16 +638,16 @@
   },
   "source": "https://www.openstreetmap.org/way/333727922",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

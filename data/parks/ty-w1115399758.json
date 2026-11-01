@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/9411693074",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1115399758",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "中壢站",
    "source": "https://www.openstreetmap.org/node/247059970",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "changing_table": null,
@@ -44,7 +44,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1115399758",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 786,
@@ -94,42 +94,42 @@
   "4": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.94,
-   "start": "16:00",
-   "start_slot": 20
+   "mean": 0.89,
+   "start": "15:30",
+   "start_slot": 19
   },
   "5": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.91,
-   "start": "16:00",
-   "start_slot": 20
+   "mean": 0.9,
+   "start": "15:30",
+   "start_slot": 19
   },
   "6": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.87,
-   "start": "16:00",
-   "start_slot": 20
+   "mean": 0.88,
+   "start": "15:30",
+   "start_slot": 19
   },
   "7": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.86,
+   "mean": 0.94,
    "start": "16:00",
    "start_slot": 20
   },
   "8": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.91,
+   "mean": 0.95,
    "start": "16:00",
    "start_slot": 20
   },
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.88,
+   "mean": 0.89,
    "start": "15:30",
    "start_slot": 19
   }
@@ -188,10 +188,10 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02850",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
- "daytime_shaded_share": 0.06,
+ "daytime_shaded_share": 0.08,
  "geometry_estimated": false,
  "id": "ty-w1115399758",
  "indoor": false,
@@ -236,7 +236,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1007621104"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -262,7 +262,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/997474400"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -288,7 +288,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/721601487"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -314,7 +314,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1293449693"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -340,7 +340,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/589463305"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -366,7 +366,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/421396583"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -387,7 +387,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1115399758",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "桃園市",
@@ -395,8 +395,8 @@
   "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.07,
-  "buildings_considered": 427,
+  "building_height_known_share": 0.04,
+  "buildings_considered": 676,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -406,8 +406,8 @@
    "1": [
     null,
     null,
-    0.1,
-    0.0,
+    0.24,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -431,7 +431,7 @@
    ],
    "10": [
     1.0,
-    0.4,
+    0.45,
     0.05,
     0.0,
     0.0,
@@ -457,7 +457,7 @@
    ],
    "11": [
     null,
-    0.18,
+    0.31,
     0.03,
     0.0,
     0.0,
@@ -484,7 +484,7 @@
    "12": [
     null,
     null,
-    0.04,
+    0.15,
     0.0,
     0.0,
     0.0,
@@ -510,7 +510,7 @@
    "2": [
     null,
     null,
-    0.3,
+    0.41,
     0.12,
     0.0,
     0.0,
@@ -561,6 +561,31 @@
    ],
    "4": [
     0.98,
+    0.32,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.04,
+    0.09,
+    0.16,
+    0.25,
+    0.39,
+    0.6,
+    0.86,
+    0.99,
+    1.0,
+    1.0
+   ],
+   "5": [
     0.31,
     0.0,
     0.0,
@@ -573,46 +598,21 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.01,
     0.04,
     0.09,
-    0.15,
-    0.24,
-    0.35,
-    0.53,
-    0.79,
-    0.96,
+    0.17,
+    0.28,
+    0.44,
+    0.63,
+    0.85,
     1.0,
-    1.0
-   ],
-   "5": [
-    0.19,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.04,
-    0.09,
-    0.15,
-    0.22,
-    0.33,
-    0.48,
-    0.71,
-    0.93,
     1.0,
     1.0
    ],
    "6": [
-    0.12,
+    0.2,
     0.0,
     0.0,
     0.0,
@@ -627,18 +627,18 @@
     0.0,
     0.0,
     0.03,
-    0.07,
-    0.13,
-    0.2,
-    0.3,
+    0.09,
+    0.17,
+    0.28,
     0.43,
-    0.62,
-    0.87,
+    0.61,
+    0.8,
     0.98,
+    1.0,
     1.0
    ],
    "7": [
-    0.29,
+    0.43,
     0.0,
     0.0,
     0.0,
@@ -654,17 +654,17 @@
     0.0,
     0.03,
     0.07,
-    0.12,
-    0.19,
-    0.28,
-    0.41,
-    0.6,
-    0.86,
-    0.98,
+    0.15,
+    0.25,
+    0.39,
+    0.57,
+    0.77,
+    0.97,
+    1.0,
     1.0
    ],
    "8": [
-    0.89,
+    0.97,
     0.16,
     0.0,
     0.0,
@@ -681,17 +681,17 @@
     0.03,
     0.08,
     0.14,
-    0.21,
-    0.31,
-    0.46,
-    0.69,
-    0.93,
+    0.24,
+    0.37,
+    0.57,
+    0.8,
+    0.99,
     1.0,
     1.0
    ],
    "9": [
     0.83,
-    0.5,
+    0.53,
     0.0,
     0.0,
     0.0,
@@ -708,9 +708,9 @@
     0.11,
     0.18,
     0.29,
-    0.43,
-    0.64,
-    0.9,
+    0.44,
+    0.65,
+    0.93,
     0.99,
     1.0,
     null
@@ -718,22 +718,22 @@
   },
   "source": "https://www.openstreetmap.org/way/1115399758",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:10:32+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

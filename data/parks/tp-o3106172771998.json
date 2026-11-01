@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/907971186",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "南港站",
    "source": "https://www.openstreetmap.org/node/4275358087",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "changing_table": null,
@@ -44,7 +44,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 452,
@@ -181,7 +181,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1599",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -219,7 +219,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1868",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -257,7 +257,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1399",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -295,7 +295,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1400",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -347,7 +347,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "TPE0959",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.03,
@@ -378,11 +378,37 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-10-25"
+  "verified_at": "2026-11-01"
  },
  "osm": null,
  "park_name": "新陽綠地",
  "parking": [
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 89,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.055323,
+    "lng": 121.601922
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1572262781,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1572262781"
+   },
+   "verified_at": "2026-10-31"
+  },
   {
    "access": null,
    "capacity": null,
@@ -407,7 +433,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/75507696"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -433,7 +459,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/75507703"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -459,7 +485,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1453901690"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -485,59 +511,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/75091364"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 313,
+   "distance_m": 353,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
-    "lat": 25.057982,
-    "lng": 121.600722
+    "lat": 25.058097,
+    "lng": 121.602379
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 1024303011,
+    "id": 1572267384,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/1024303011"
+    "url": "https://www.openstreetmap.org/way/1572267384"
    },
-   "verified_at": "2026-10-24"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 371,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.052703,
-    "lng": 121.597592
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1021360166,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1021360166"
-   },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -558,7 +558,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "臺北市",
@@ -567,7 +567,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.13,
-  "buildings_considered": 321,
+  "buildings_considered": 325,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -889,28 +889,28 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T04:10:32+08:00",
+   "as_of": "2026-11-02T03:50:28+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-25T21:51:32+00:00",
+   "as_of": "2026-11-01T22:53:50+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

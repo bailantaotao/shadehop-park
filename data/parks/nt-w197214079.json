@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2931294192",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/197214079",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "十四張站",
    "source": "https://www.openstreetmap.org/node/8041597963",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1467831341",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 4571,
@@ -67,7 +67,7 @@
   "10": {
    "end": "07:00",
    "end_slot": 2,
-   "mean": 0.86,
+   "mean": 0.87,
    "start": "06:00",
    "start_slot": 0
   },
@@ -95,7 +95,7 @@
   "3": {
    "end": "07:00",
    "end_slot": 2,
-   "mean": 0.95,
+   "mean": 0.97,
    "start": "06:30",
    "start_slot": 1
   },
@@ -183,7 +183,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "89132567-S0067",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -221,7 +221,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "89132567-S0080",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -269,7 +269,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064570573"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -295,7 +295,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064570014"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -321,7 +321,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/237014528"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -347,7 +347,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/462954233"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -373,7 +373,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/371456962"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -399,7 +399,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/462954240"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -420,7 +420,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/197214079",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新北市",
@@ -464,7 +464,7 @@
    ],
    "10": [
     1.0,
-    0.73,
+    0.74,
     0.28,
     0.02,
     0.02,
@@ -568,7 +568,7 @@
    ],
    "3": [
     null,
-    0.95,
+    0.97,
     0.33,
     0.03,
     0.02,
@@ -751,22 +751,22 @@
   },
   "source": "https://www.openstreetmap.org/way/197214079",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:30:34+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

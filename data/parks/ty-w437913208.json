@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118207003",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/437913208",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "low",
@@ -31,25 +31,25 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/437913208",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
    "category": "文化育樂活動場所",
    "changing_table": true,
    "confidence": "high",
-   "distance_m": 148,
+   "distance_m": 146,
    "family": null,
    "family_room": false,
    "location": {
     "lat": 24.932344,
-    "lng": 121.281403
+    "lng": 121.281392
    },
    "method": "official_data",
    "name": "北區青少年活動中心桃漾館1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 17172,
@@ -85,7 +85,7 @@
   "2": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.76,
+   "mean": 0.77,
    "start": "07:00",
    "start_slot": 2
   },
@@ -103,18 +103,12 @@
    "start": "06:00",
    "start_slot": 0
   },
-  "5": {
-   "end": "06:30",
-   "end_slot": 1,
-   "mean": 0.6,
-   "start": "06:00",
-   "start_slot": 0
-  },
+  "5": null,
   "6": null,
   "7": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.63,
+   "mean": 0.62,
    "start": "06:00",
    "start_slot": 0
   },
@@ -128,7 +122,7 @@
   "9": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.7,
+   "mean": 0.71,
    "start": "06:00",
    "start_slot": 0
   }
@@ -162,7 +156,7 @@
    "name": "廣興一路停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -180,7 +174,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S334017",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -200,7 +194,7 @@
    "name": "建德停車場",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -225,7 +219,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "58430020-S334013",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -277,7 +271,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "89132567-S0035",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -315,7 +309,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03343",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -335,7 +329,7 @@
    "name": "廣興停車場_場地整修暫停充電服務",
    "opening_hours": "每日/00:00-24:00",
    "operation_type": "公辦民營",
-   "operator": "程豐資通股份有限公司",
+   "operator": "程豐資通",
    "osm": null,
    "parking_rate": "計時/每日/0.00元每小時",
    "restriction": null,
@@ -360,7 +354,7 @@
    "speed_label": "快充 (DC)",
    "speed_source": "official",
    "tdx_id": "58430020-S334014",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -398,7 +392,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "87459643-SB018101",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -446,7 +440,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1421569117"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -472,7 +466,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1355195207"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -498,7 +492,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846027"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -524,7 +518,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846028"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -550,7 +544,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1529490886"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -576,7 +570,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/667779901"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -597,7 +591,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/437913208",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "桃園市",
@@ -617,10 +611,10 @@
     null,
     null,
     0.85,
-    0.58,
-    0.36,
-    0.23,
-    0.14,
+    0.57,
+    0.35,
+    0.22,
+    0.13,
     0.08,
     0.05,
     0.03,
@@ -642,8 +636,8 @@
    "10": [
     0.94,
     0.74,
-    0.4,
-    0.25,
+    0.39,
+    0.24,
     0.15,
     0.08,
     0.03,
@@ -669,8 +663,8 @@
     null,
     0.84,
     0.55,
-    0.34,
-    0.22,
+    0.33,
+    0.21,
     0.13,
     0.07,
     0.04,
@@ -696,7 +690,7 @@
     null,
     0.78,
     0.52,
-    0.33,
+    0.32,
     0.2,
     0.12,
     0.07,
@@ -720,10 +714,10 @@
    "2": [
     null,
     null,
-    0.76,
-    0.44,
-    0.28,
-    0.18,
+    0.77,
+    0.43,
+    0.27,
+    0.17,
     0.1,
     0.05,
     0.02,
@@ -746,9 +740,9 @@
    "3": [
     null,
     0.78,
-    0.52,
-    0.3,
-    0.18,
+    0.51,
+    0.29,
+    0.17,
     0.09,
     0.04,
     0.01,
@@ -771,110 +765,6 @@
    ],
    "4": [
     0.69,
-    0.51,
-    0.3,
-    0.17,
-    0.09,
-    0.04,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.01,
-    0.01,
-    0.0
-   ],
-   "5": [
-    0.6,
-    0.39,
-    0.21,
-    0.11,
-    0.06,
-    0.02,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.01,
-    0.02,
-    0.01
-   ],
-   "6": [
-    0.58,
-    0.37,
-    0.2,
-    0.11,
-    0.06,
-    0.02,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.01,
-    0.02,
-    0.02
-   ],
-   "7": [
-    0.63,
-    0.42,
-    0.24,
-    0.13,
-    0.07,
-    0.03,
-    0.01,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.01,
-    0.02,
-    0.02
-   ],
-   "8": [
-    0.65,
     0.5,
     0.29,
     0.16,
@@ -899,11 +789,115 @@
     0.01,
     0.0
    ],
-   "9": [
-    0.7,
-    0.56,
-    0.34,
+   "5": [
+    0.59,
+    0.37,
     0.2,
+    0.11,
+    0.06,
+    0.02,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.01,
+    0.02,
+    0.01
+   ],
+   "6": [
+    0.56,
+    0.35,
+    0.19,
+    0.1,
+    0.06,
+    0.02,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.01,
+    0.02,
+    0.02
+   ],
+   "7": [
+    0.62,
+    0.41,
+    0.23,
+    0.12,
+    0.07,
+    0.03,
+    0.01,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.01,
+    0.02,
+    0.02
+   ],
+   "8": [
+    0.65,
+    0.48,
+    0.28,
+    0.15,
+    0.08,
+    0.04,
+    0.01,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.01,
+    0.01,
+    0.01,
+    0.0
+   ],
+   "9": [
+    0.71,
+    0.56,
+    0.33,
+    0.19,
     0.1,
     0.05,
     0.01,
@@ -928,22 +922,22 @@
   },
   "source": "https://www.openstreetmap.org/way/437913208",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:10:32+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

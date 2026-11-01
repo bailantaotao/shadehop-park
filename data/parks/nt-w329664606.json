@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272834",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/329664606",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新埔民生站",
    "source": "https://www.openstreetmap.org/node/2866559962",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "玫瑰公園(近中正路372巷)",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 25920,
@@ -178,7 +178,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD02924",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -223,7 +223,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "94175832-SUCG0178G001",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -261,7 +261,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "87545768-S168_11",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -299,7 +299,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "87545768-S168_26",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   },
   {
    "access": null,
@@ -337,7 +337,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD03435",
-   "verified_at": "2026-10-26"
+   "verified_at": "2026-11-02"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -365,7 +365,7 @@
   "phone": "(02)29686911",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-25"
+  "verified_at": "2026-11-01"
  },
  "osm": {
   "id": 329664606,
@@ -398,7 +398,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/329664608"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -424,7 +424,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1411162924"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -450,7 +450,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/970537251"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -476,7 +476,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/8395704616"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -502,7 +502,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/970537250"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -528,7 +528,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1189482924"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -549,7 +549,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/329664606",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新北市",
@@ -584,9 +584,9 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.03,
-    0.13,
+    0.01,
+    0.04,
+    0.15,
     0.46,
     null,
     null
@@ -611,8 +611,8 @@
     0.0,
     0.0,
     0.01,
-    0.04,
-    0.14,
+    0.05,
+    0.15,
     0.36,
     null,
     null
@@ -636,8 +636,8 @@
     0.0,
     0.0,
     0.0,
-    0.02,
-    0.08,
+    0.03,
+    0.1,
     0.26,
     0.84,
     null,
@@ -663,7 +663,7 @@
     0.0,
     0.0,
     0.02,
-    0.08,
+    0.1,
     0.3,
     0.9,
     null,
@@ -689,8 +689,8 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.05,
+    0.02,
+    0.07,
     0.18,
     0.52,
     null
@@ -715,9 +715,9 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.05,
-    0.13,
+    0.02,
+    0.06,
+    0.15,
     0.29,
     0.85
    ],
@@ -743,7 +743,7 @@
     0.03,
     0.05,
     0.08,
-    0.13,
+    0.15,
     0.26,
     0.52
    ],
@@ -767,10 +767,10 @@
     0.01,
     0.02,
     0.05,
-    0.07,
+    0.08,
     0.11,
-    0.15,
-    0.23,
+    0.16,
+    0.24,
     0.36
    ],
    "6": [
@@ -795,8 +795,8 @@
     0.05,
     0.08,
     0.12,
-    0.15,
-    0.2,
+    0.16,
+    0.22,
     0.31
    ],
    "7": [
@@ -822,7 +822,7 @@
     0.07,
     0.11,
     0.14,
-    0.19,
+    0.2,
     0.3
    ],
    "8": [
@@ -845,10 +845,10 @@
     0.0,
     0.01,
     0.03,
-    0.05,
-    0.08,
-    0.12,
-    0.22,
+    0.06,
+    0.09,
+    0.13,
+    0.23,
     0.36
    ],
    "9": [
@@ -871,16 +871,16 @@
     0.0,
     0.01,
     0.02,
-    0.03,
-    0.07,
-    0.17,
+    0.04,
+    0.08,
+    0.18,
     0.34,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/329664606",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [
   {
@@ -899,28 +899,28 @@
    "source": "https://www.openstreetmap.org/way/329664606",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-26T05:30:34+08:00",
+   "as_of": "2026-11-02T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-10-25T21:51:28+00:00",
+   "as_of": "2026-11-01T22:53:45+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

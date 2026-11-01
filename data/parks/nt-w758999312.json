@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/10976173325",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/758999312",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/758999312",
    "value": null,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   "toilet": {
    "accessible": true,
@@ -43,11 +43,11 @@
     "accessible": true,
     "category": "公園",
     "changing_table": true,
-    "distance_m": 259,
+    "distance_m": 258,
     "family_room": false,
     "location": {
-     "lat": 25.290249,
-     "lng": 121.548786
+     "lat": 25.290253,
+     "lng": 121.548775
     },
     "name": "風箏公園"
    },
@@ -60,7 +60,7 @@
    "name": "石門老梅公地",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  },
  "area_m2": 22658,
@@ -114,7 +114,7 @@
   "phone": "(02)26381721",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-10-25"
+  "verified_at": "2026-11-01"
  },
  "osm": {
   "id": 758999312,
@@ -147,7 +147,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1051243610"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -173,7 +173,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1051243616"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -199,7 +199,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1051243605"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -225,7 +225,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/220203658"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -251,7 +251,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13779638071"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "access": null,
@@ -277,7 +277,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1227715597"
    },
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "playground": {
@@ -298,7 +298,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/758999312",
   "value": false,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "region": {
   "city": "新北市",
@@ -629,7 +629,7 @@
   },
   "source": "https://www.openstreetmap.org/way/758999312",
   "value": null,
-  "verified_at": "2026-10-24"
+  "verified_at": "2026-10-31"
  },
  "shade_types": [
   {
@@ -653,7 +653,7 @@
    "source": "https://www.openstreetmap.org/way/758999312",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   },
   {
    "confidence": "medium",
@@ -671,22 +671,22 @@
    "source": "https://www.openstreetmap.org/way/758999312",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-24"
+   "verified_at": "2026-10-31"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-24T20:20:51Z",
+   "as_of": "2026-10-31T21:23:06Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-10-25T21:51:28+00:00",
+   "as_of": "2026-11-01T22:53:45+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-24"
+ "updated_at": "2026-10-31"
 }

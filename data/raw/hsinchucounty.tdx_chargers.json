@@ -2,12 +2,12 @@
  "attribution": "資料介接「交通部TDX平臺」",
  "city": "HsinchuCounty",
  "count": null,
- "fetched_at": "2026-11-01T22:54:55+00:00",
+ "fetched_at": "2026-11-08T22:57:48+00:00",
  "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
  "publisher": "交通部",
  "region": "hsinchucounty",
  "source": "https://data.gov.tw/dataset/170220",
- "src_update_time": "2026-11-02T06:50:32+08:00",
+ "src_update_time": "2026-11-09T06:50:32+08:00",
  "stations": [
   {
    "charging_points": 50,
@@ -337,16 +337,16 @@
    "charging_rate": "費用詳情請查詢TESLA站點",
    "connectors": [
     {
-     "count": 4,
-     "current": "DC",
-     "label": "CCS2",
-     "type": "type2_combo"
-    },
-    {
      "count": 2,
      "current": "DC",
      "label": "Tesla TPC",
      "type": "tesla_tpc"
+    },
+    {
+     "count": 4,
+     "current": "DC",
+     "label": "CCS2",
+     "type": "type2_combo"
     }
    ],
    "description": "充電格位數6",
@@ -1355,7 +1355,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:6 充電樁數量:6 停車費:20元/時，依場域公告為準 費率:計度/固定/8元每度 樓層:1F",
+   "description": "停車位:6 充電樁數量:6 停車費:前10分鐘免費停車，20元/時（依場域公告為準） 費率:計度/固定/8元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD03024",
    "lat": 24.803633,
@@ -1364,7 +1364,7 @@
    "operation_type": "公辦民營",
    "operator": "華城電能科技股份有限公司",
    "operator_id": "90807408",
-   "parking_rate": "20元/時，依場域公告為準",
+   "parking_rate": "前10分鐘免費停車，20元/時（依場域公告為準）",
    "restriction": null,
    "service_time": "7x24小時",
    "spaces": 6
@@ -1380,7 +1380,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:3 充電樁數量:3 停車費:20元/時，依場域公告為準 費率:計度/固定/8元每度 樓層:1F",
+   "description": "停車位:3 充電樁數量:3 停車費:前10分鐘免費停車，20元/時（依場域公告為準） 費率:計度/固定/8元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD03025",
    "lat": 24.80829,
@@ -1389,7 +1389,7 @@
    "operation_type": "公辦民營",
    "operator": "華城電能科技股份有限公司",
    "operator_id": "90807408",
-   "parking_rate": "20元/時，依場域公告為準",
+   "parking_rate": "前10分鐘免費停車，20元/時（依場域公告為準）",
    "restriction": null,
    "service_time": "7x24小時",
    "spaces": 3
@@ -1504,7 +1504,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:8 充電樁數量:8 停車費:免費 費率:計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.8元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
+   "description": "停車位:8 充電樁數量:8 停車費:前10分鐘免費停車，20元/時（依場域公告為準） 費率:計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.8元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD03034",
    "lat": 24.808356,
@@ -1513,7 +1513,7 @@
    "operation_type": "公辦民營",
    "operator": "華城電能科技股份有限公司",
    "operator_id": "90807408",
-   "parking_rate": "免費",
+   "parking_rate": "前10分鐘免費停車，20元/時（依場域公告為準）",
    "restriction": null,
    "service_time": "7x24小時",
    "spaces": 8
@@ -1541,7 +1541,7 @@
      "type": "type1"
     }
    ],
-   "description": "停車位:12 充電樁數量:12 停車費:免費 費率:計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.8元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
+   "description": "停車位:12 充電樁數量:12 停車費:前10分鐘免費停車，20元/時（依場域公告為準） 費率:計度/固定/8元每度浮動費率,計度/尖峰/15:00-21:00/13.8元每度,計度/一般/00:00-14:59*21:01-23:59/6.6元每度 樓層:1F",
    "floors": "1F",
    "id": "90807408-SCSD03035",
    "lat": 24.810793,
@@ -1550,7 +1550,7 @@
    "operation_type": "公辦民營",
    "operator": "華城電能科技股份有限公司",
    "operator_id": "90807408",
-   "parking_rate": "免費",
+   "parking_rate": "前10分鐘免費停車，20元/時（依場域公告為準）",
    "restriction": null,
    "service_time": "7x24小時",
    "spaces": 12
@@ -1863,12 +1863,6 @@
      "current": "DC",
      "label": "CCS2",
      "type": "type2_combo"
-    },
-    {
-     "count": 4,
-     "current": "DC",
-     "label": "其他",
-     "type": "other"
     }
    ],
    "description": "本站目前共有8樁 30kW 充電樁；8樁 7kW充電樁。",
@@ -1887,5 +1881,5 @@
   }
  ],
  "title": "充電站之基本資料",
- "update_time": "2026-11-02T06:50:37+08:00"
+ "update_time": "2026-11-09T06:50:47+08:00"
 }

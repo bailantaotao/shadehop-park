@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2168051759",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1314981544",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "樹林站",
    "source": "https://www.openstreetmap.org/node/4802842931",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "彭福親子公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 360,
@@ -198,7 +198,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/389024089"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -224,7 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/389024087"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -234,7 +234,7 @@
    "distance_m": 194,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
+   "kind": "carports",
    "kind_label": "停車場",
    "location": {
     "lat": 24.977783,
@@ -250,7 +250,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/238566800"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -260,7 +260,7 @@
    "distance_m": 217,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
+   "kind": "carports",
    "kind_label": "停車場",
    "location": {
     "lat": 24.977486,
@@ -276,33 +276,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/238566851"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 276,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.9778,
-    "lng": 121.424875
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "樹林拖吊場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 803654651,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/803654651"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -328,7 +302,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/598518686"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": "customers",
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 306,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.977984,
+    "lng": 121.418972
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 206803359,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/206803359"
+   },
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -349,7 +349,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1314981544",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新北市",
@@ -680,16 +680,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1314981544",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

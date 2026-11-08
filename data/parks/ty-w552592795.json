@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9307228166",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/552592795",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/552592795",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -49,7 +49,7 @@
    "name": "龜山區中正公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 293,
@@ -175,7 +175,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/148726",
-  "verified_at": "2026-11-01"
+  "verified_at": "2026-11-08"
  },
  "osm": {
   "id": 552592795,
@@ -189,14 +189,14 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 187,
+   "distance_m": 190,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.998265,
-    "lng": 121.3449
+    "lat": 24.99825,
+    "lng": 121.344906
    },
    "maxheight_m": null,
    "method": "osm",
@@ -208,21 +208,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268244"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 192,
+   "distance_m": 195,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.998076,
-    "lng": 121.344926
+    "lat": 24.998041,
+    "lng": 121.344942
    },
    "maxheight_m": null,
    "method": "osm",
@@ -234,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268243"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -260,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268241"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -286,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268242"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -296,15 +296,15 @@
    "distance_m": 523,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 24.998486,
     "lng": 121.337013
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -312,33 +312,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/465561576"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 782,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.991275,
-    "lng": 121.340608
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1340418314,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1340418314"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -359,7 +333,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/552592795",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "桃園市",
@@ -690,22 +664,22 @@
   },
   "source": "https://www.openstreetmap.org/way/552592795",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-01T22:53:52+00:00",
+   "as_of": "2026-11-08T22:56:45+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

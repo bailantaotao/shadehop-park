@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/5504621680",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/190064670",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運鶯桃福德站",
    "source": "https://www.openstreetmap.org/node/4990733837",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "八德區麥當勞桃鶯店(2F)",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 3420,
@@ -107,6 +107,32 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
+   "distance_m": 110,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.967316,
+    "lng": 121.328662
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1574727693,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1574727693"
+   },
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
    "distance_m": 467,
    "distance_method": "straight_line",
    "fee": null,
@@ -126,7 +152,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/241101168"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -152,7 +178,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481042959"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -178,7 +204,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1492632402"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -204,7 +230,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1495108396"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -230,33 +256,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1533439802"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 614,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.974262,
-    "lng": 121.331137
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "鳳鳴臨時停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1336425251,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1336425251"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -277,7 +277,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/190064670",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "桃園市",
@@ -608,16 +608,16 @@
   },
   "source": "https://www.openstreetmap.org/way/190064670",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

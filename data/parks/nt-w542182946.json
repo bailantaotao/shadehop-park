@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/5242060871",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/542182946",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -34,7 +34,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/542182946",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/542182945",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 1976,
@@ -123,7 +123,7 @@
   "phone": "(02)24922064",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-11-01"
+  "verified_at": "2026-11-08"
  },
  "osm": {
   "id": 542182946,
@@ -156,7 +156,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/72538303"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -166,15 +166,15 @@
    "distance_m": 221,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.205231,
     "lng": 121.691832
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -182,7 +182,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1523946767"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -208,7 +208,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1380315384"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -234,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/239376810"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -260,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/329795184"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -281,7 +281,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/542182946",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新北市",
@@ -612,22 +612,22 @@
   },
   "source": "https://www.openstreetmap.org/way/542182946",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-01T22:53:45+00:00",
+   "as_of": "2026-11-08T22:56:39+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

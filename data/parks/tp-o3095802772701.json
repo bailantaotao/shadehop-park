@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/14108677117",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運昆陽站",
    "source": "https://www.openstreetmap.org/node/3639530947",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": null,
@@ -66,7 +66,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/9850026424",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 452,
@@ -195,7 +195,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -233,7 +233,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1795",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   },
   {
    "access": null,
@@ -278,7 +278,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE1121",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -310,7 +310,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-11-01"
+  "verified_at": "2026-11-08"
  },
  "osm": null,
  "park_name": "潭美公園",
@@ -323,15 +323,15 @@
    "distance_m": 118,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.060542,
     "lng": 121.591887
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -339,7 +339,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1553115883"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -349,15 +349,15 @@
    "distance_m": 161,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.061317,
     "lng": 121.59264
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -365,7 +365,59 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/557524891"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 233,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.061098,
+    "lng": 121.593189
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1574727699,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1574727699"
+   },
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 255,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.061257,
+    "lng": 121.593521
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1574727700,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1574727700"
+   },
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -391,7 +443,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1551200992"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -417,59 +469,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780952"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 332,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.063937,
-    "lng": 121.588052
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1276780950,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1276780950"
-   },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 443,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.064291,
-    "lng": 121.586801
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房停車場-內湖行善站",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 877568636,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/877568636"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -490,7 +490,7 @@
   "note": "約 74 m² 在高架/屋頂下（佔 16%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://data.gov.tw/dataset/136476",
   "value": "partial",
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "臺北市",
@@ -821,7 +821,7 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [
   {
@@ -845,28 +845,28 @@
    "source": "https://data.gov.tw/dataset/136476",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-02T03:50:28+08:00",
+   "as_of": "2026-11-09T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
-   "as_of": "2026-11-01T22:53:50+00:00",
+   "as_of": "2026-11-08T22:56:43+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

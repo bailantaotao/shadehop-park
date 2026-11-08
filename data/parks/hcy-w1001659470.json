@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9598668442",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1001659470",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "湖口站",
    "source": "https://www.openstreetmap.org/node/418760121",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "台灣中油新湖口站加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 2568,
@@ -104,6 +104,58 @@
  "parking": [
   {
    "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 307,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 24.896635,
+    "lng": 121.045773
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1575192588,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1575192588"
+   },
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 334,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 24.89667,
+    "lng": 121.045466
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1575192587,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1575192587"
+   },
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
    "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
@@ -126,7 +178,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614695"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 380,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.896657,
+    "lng": 121.044739
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1575192584,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1575192584"
+   },
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -152,7 +230,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992979385"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -178,85 +256,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/361500766"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 520,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.902368,
-    "lng": 121.050251
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992979386,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992979386"
-   },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 530,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.90226,
-    "lng": 121.047433
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "興湖段路外停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 973081989,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/973081989"
-   },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 535,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.897107,
-    "lng": 121.043375
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1292613455,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1292613455"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -277,7 +277,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1001659470",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新竹縣",
@@ -285,8 +285,8 @@
   "id": "hsinchucounty"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.32,
-  "buildings_considered": 28,
+  "building_height_known_share": 0.29,
+  "buildings_considered": 31,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -608,16 +608,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1001659470",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

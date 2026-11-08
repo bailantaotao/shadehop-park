@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/8118272991",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/206762872",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運頂埔站",
    "source": "https://www.openstreetmap.org/node/3639530980",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/3791010493",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 219407,
@@ -117,7 +117,7 @@
   "phone": "(02)89699596",
   "registry_points": 1,
   "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
-  "verified_at": "2026-11-01"
+  "verified_at": "2026-11-08"
  },
  "osm": {
   "id": 206762872,
@@ -150,7 +150,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1301469326"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -176,7 +176,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1023139557"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -202,7 +202,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/238822607"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -228,7 +228,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/656603587"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -238,8 +238,8 @@
    "distance_m": 380,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 24.965742,
     "lng": 121.419708
@@ -254,7 +254,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/536463159"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -264,8 +264,8 @@
    "distance_m": 398,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 24.965824,
     "lng": 121.420805
@@ -280,7 +280,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/536463160"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -301,7 +301,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/206762872",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新北市",
@@ -632,22 +632,22 @@
   },
   "source": "https://www.openstreetmap.org/way/206762872",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-01T22:53:45+00:00",
+   "as_of": "2026-11-08T22:56:39+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

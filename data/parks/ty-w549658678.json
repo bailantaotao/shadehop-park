@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/9307228166",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/549658678",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/549658678",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": false,
@@ -60,7 +60,7 @@
    "name": "龜山眷村故事館2F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 12142,
@@ -167,7 +167,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S333009",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -215,7 +215,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268242"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -241,7 +241,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268241"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -251,15 +251,15 @@
    "distance_m": 266,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 24.998486,
     "lng": 121.337013
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -267,21 +267,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/465561576"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 272,
+   "distance_m": 275,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.998265,
-    "lng": 121.3449
+    "lat": 24.99825,
+    "lng": 121.344906
    },
    "maxheight_m": null,
    "method": "osm",
@@ -293,21 +293,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268244"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 276,
+   "distance_m": 279,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.998076,
-    "lng": 121.344926
+    "lat": 24.998041,
+    "lng": 121.344942
    },
    "maxheight_m": null,
    "method": "osm",
@@ -319,33 +319,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268243"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 558,
+   "distance_m": 604,
    "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "fee": "yes",
+   "kind": "underground",
+   "kind_label": "地下停車場",
    "location": {
-    "lat": 24.991275,
-    "lng": 121.340608
+    "lat": 24.991817,
+    "lng": 121.337603
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "中山地下停車場",
    "opening_hours": null,
-   "operator": null,
+   "operator": "公有中山地下停車場",
    "osm": {
-    "id": 1340418314,
+    "id": 554582058,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/1340418314"
+    "url": "https://www.openstreetmap.org/way/554582058"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -366,7 +366,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/549658678",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "桃園市",
@@ -697,22 +697,22 @@
   },
   "source": "https://www.openstreetmap.org/way/549658678",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-02T06:50:32+08:00",
+   "as_of": "2026-11-09T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

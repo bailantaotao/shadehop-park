@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/6315690336",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/369610952",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "湖口站",
    "source": "https://www.openstreetmap.org/node/418760121",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "湖口仁慈醫院6F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 9727,
@@ -137,7 +137,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614695"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -163,7 +163,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992979385"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -189,7 +189,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1292613449"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -215,21 +215,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1292613455"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 246,
+   "distance_m": 207,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 24.90177,
-    "lng": 121.043511
+    "lat": 24.89667,
+    "lng": 121.045466
    },
    "maxheight_m": null,
    "method": "osm",
@@ -237,37 +237,37 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 992979383,
+    "id": 1575192587,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/992979383"
+    "url": "https://www.openstreetmap.org/way/1575192587"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": 20,
+   "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 377,
+   "distance_m": 213,
    "distance_method": "straight_line",
-   "fee": "yes",
+   "fee": null,
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.90226,
-    "lng": 121.047433
+    "lat": 24.896657,
+    "lng": 121.044739
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "興湖段路外停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 973081989,
+    "id": 1575192584,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/973081989"
+    "url": "https://www.openstreetmap.org/way/1575192584"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -288,7 +288,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/369610952",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新竹縣",
@@ -296,8 +296,8 @@
   "id": "hsinchucounty"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.11,
-  "buildings_considered": 93,
+  "building_height_known_share": 0.1,
+  "buildings_considered": 96,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -619,7 +619,7 @@
   },
   "source": "https://www.openstreetmap.org/way/369610952",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [
   {
@@ -638,16 +638,16 @@
    "source": "https://www.openstreetmap.org/way/369610952",
    "type": "pavilion",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

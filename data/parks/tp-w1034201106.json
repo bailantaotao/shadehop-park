@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/3731163595",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1034201106",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -34,7 +34,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1034201106",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -52,94 +52,94 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/3835331464",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 156,
  "best_shade_windows": {
   "1": {
-   "end": "17:00",
-   "end_slot": 22,
-   "mean": 0.86,
+   "end": "16:30",
+   "end_slot": 21,
+   "mean": 0.84,
    "start": "15:00",
    "start_slot": 18
   },
   "10": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.88,
-   "start": "15:00",
-   "start_slot": 18
+   "mean": 0.9,
+   "start": "15:30",
+   "start_slot": 19
   },
   "11": {
    "end": "16:30",
    "end_slot": 21,
-   "mean": 0.82,
-   "start": "14:30",
-   "start_slot": 17
+   "mean": 0.93,
+   "start": "15:00",
+   "start_slot": 18
   },
   "12": {
    "end": "16:30",
    "end_slot": 21,
-   "mean": 0.83,
-   "start": "14:30",
-   "start_slot": 17
+   "mean": 0.93,
+   "start": "15:00",
+   "start_slot": 18
   },
   "2": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.85,
+   "mean": 0.83,
    "start": "15:30",
    "start_slot": 19
   },
   "3": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.9,
+   "mean": 0.93,
    "start": "16:00",
    "start_slot": 20
   },
   "4": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.85,
+   "mean": 0.83,
    "start": "16:00",
    "start_slot": 20
   },
   "5": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.89,
+   "mean": 0.91,
    "start": "16:30",
    "start_slot": 21
   },
   "6": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.87,
+   "mean": 0.82,
    "start": "16:30",
    "start_slot": 21
   },
   "7": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.87,
+   "mean": 0.82,
    "start": "16:30",
    "start_slot": 21
   },
   "8": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.91,
+   "mean": 0.93,
    "start": "16:30",
    "start_slot": 21
   },
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.85,
-   "start": "15:30",
-   "start_slot": 19
+   "mean": 0.93,
+   "start": "16:00",
+   "start_slot": 20
   }
  },
  "charger_summary": {
@@ -196,10 +196,10 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0206",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   }
  ],
- "daytime_shaded_share": 0.07,
+ "daytime_shaded_share": 0.05,
  "geometry_estimated": false,
  "id": "tp-w1034201106",
  "indoor": false,
@@ -244,7 +244,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/8720942182"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -270,7 +270,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1429740899"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -296,7 +296,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13142726829"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -322,7 +322,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/943745503"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -348,7 +348,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/941731856"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -374,7 +374,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/941731855"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -395,7 +395,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1034201106",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "臺北市",
@@ -403,8 +403,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.01,
-  "buildings_considered": 198,
+  "building_height_known_share": 0.0,
+  "buildings_considered": 201,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -428,12 +428,12 @@
     0.0,
     0.0,
     0.0,
-    0.1,
-    0.36,
-    0.77,
+    0.04,
+    0.27,
+    0.68,
     1.0,
-    0.87,
-    0.82,
+    0.83,
+    0.58,
     null,
     null
    ],
@@ -454,12 +454,12 @@
     0.0,
     0.0,
     0.0,
-    0.07,
-    0.31,
-    0.69,
+    0.02,
+    0.22,
+    0.59,
     1.0,
-    0.98,
-    0.83,
+    0.91,
+    0.78,
     null,
     null
    ],
@@ -479,12 +479,12 @@
     0.0,
     0.0,
     0.0,
-    0.04,
-    0.25,
-    0.6,
-    1.0,
-    1.0,
-    0.7,
+    0.0,
+    0.16,
+    0.5,
+    0.97,
+    0.98,
+    0.84,
     0.0,
     null,
     null
@@ -505,12 +505,12 @@
     0.0,
     0.0,
     0.0,
-    0.04,
-    0.26,
-    0.62,
-    1.0,
-    1.0,
-    0.7,
+    0.0,
+    0.17,
+    0.53,
+    0.98,
+    0.97,
+    0.85,
     0.0,
     null,
     null
@@ -533,12 +533,12 @@
     0.0,
     0.0,
     0.0,
-    0.14,
-    0.43,
-    0.85,
+    0.07,
+    0.33,
+    0.77,
     1.0,
-    0.69,
-    0.27,
+    0.73,
+    0.05,
     null
    ],
    "3": [
@@ -559,12 +559,12 @@
     0.0,
     0.0,
     0.0,
-    0.04,
-    0.25,
-    0.59,
-    1.0,
-    1.0,
-    0.71,
+    0.0,
+    0.16,
+    0.49,
+    0.95,
+    0.99,
+    0.84,
     0.0
    ],
    "4": [
@@ -586,12 +586,12 @@
     0.0,
     0.0,
     0.0,
-    0.12,
-    0.39,
-    0.79,
+    0.05,
+    0.28,
+    0.69,
     1.0,
-    0.77,
-    0.35
+    0.79,
+    0.13
    ],
    "5": [
     0.0,
@@ -612,12 +612,12 @@
     0.0,
     0.0,
     0.0,
-    0.04,
-    0.22,
-    0.54,
-    0.97,
+    0.0,
+    0.13,
+    0.44,
+    0.9,
     1.0,
-    0.7
+    0.82
    ],
    "6": [
     0.0,
@@ -639,11 +639,11 @@
     0.0,
     0.0,
     0.0,
-    0.12,
-    0.37,
-    0.76,
+    0.05,
+    0.26,
+    0.65,
     1.0,
-    0.84
+    0.81
    ],
    "7": [
     0.0,
@@ -665,11 +665,11 @@
     0.0,
     0.0,
     0.0,
-    0.11,
-    0.36,
-    0.74,
+    0.04,
+    0.25,
+    0.64,
     1.0,
-    0.86
+    0.83
    ],
    "8": [
     0.0,
@@ -690,12 +690,12 @@
     0.0,
     0.0,
     0.0,
-    0.05,
-    0.25,
-    0.59,
-    1.0,
-    1.0,
-    0.73
+    0.0,
+    0.16,
+    0.48,
+    0.95,
+    0.99,
+    0.86
    ],
    "9": [
     0.0,
@@ -715,33 +715,33 @@
     0.0,
     0.0,
     0.0,
-    0.06,
-    0.28,
-    0.63,
-    1.0,
-    1.0,
-    0.77,
+    0.01,
+    0.18,
+    0.53,
+    0.99,
+    0.96,
+    0.85,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/1034201106",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-02T03:50:28+08:00",
+   "as_of": "2026-11-09T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/11178374936",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/558192029",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/558192029",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": false,
@@ -49,7 +49,7 @@
    "name": "桃園區河濱綠地",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 5735,
@@ -176,7 +176,7 @@
    "speed_label": "快充 + 慢充",
    "speed_source": "official",
    "tdx_id": "58430020-S330003",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   },
   {
    "access": null,
@@ -214,7 +214,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90670753-Shfc_9",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   },
   {
    "access": null,
@@ -252,7 +252,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S330010",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   },
   {
    "access": null,
@@ -290,7 +290,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "58430020-S330002",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   },
   {
    "access": null,
@@ -335,7 +335,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "90807408-SCSD00034",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   },
   {
    "access": null,
@@ -373,7 +373,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "12681939-SIC0608",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -381,8 +381,8 @@
  "id": "ty-w558192029",
  "indoor": false,
  "kind": "park",
- "level": "none",
- "level_label": "大多曝曬",
+ "level": "B",
+ "level_label": "部分遮陽設施 / 樹蔭",
  "location": {
   "lat": 25.005694,
   "lng": 121.31483
@@ -421,7 +421,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/586437841"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -447,7 +447,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/829387488"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -457,8 +457,8 @@
    "distance_m": 160,
    "distance_method": "straight_line",
    "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.004006,
     "lng": 121.317031
@@ -473,7 +473,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1061693778"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -499,7 +499,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1495767817"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -525,7 +525,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1328395402"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
@@ -551,7 +551,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1027007344"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -572,7 +572,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/558192029",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "桃園市",
@@ -580,8 +580,8 @@
   "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.3,
-  "buildings_considered": 281,
+  "building_height_known_share": 0.29,
+  "buildings_considered": 282,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -593,8 +593,8 @@
     null,
     1.0,
     0.51,
-    0.02,
-    0.0,
+    0.03,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -618,8 +618,8 @@
     1.0,
     0.59,
     0.17,
+    0.02,
     0.01,
-    0.0,
     0.0,
     0.0,
     0.0,
@@ -645,7 +645,7 @@
     0.95,
     0.43,
     0.06,
-    0.0,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -670,8 +670,8 @@
     null,
     null,
     0.83,
-    0.46,
-    0.0,
+    0.48,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -698,7 +698,7 @@
     0.73,
     0.28,
     0.04,
-    0.0,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -723,8 +723,8 @@
     0.72,
     0.25,
     0.05,
-    0.0,
-    0.0,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -747,10 +747,10 @@
    "4": [
     0.59,
     0.26,
-    0.04,
-    0.0,
-    0.0,
-    0.0,
+    0.05,
+    0.01,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -773,9 +773,9 @@
    "5": [
     0.36,
     0.1,
-    0.0,
-    0.0,
-    0.0,
+    0.01,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -799,10 +799,10 @@
    "6": [
     0.29,
     0.08,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.01,
+    0.01,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -825,10 +825,10 @@
    "7": [
     0.38,
     0.12,
-    0.02,
-    0.0,
-    0.0,
-    0.0,
+    0.03,
+    0.01,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -851,10 +851,10 @@
    "8": [
     0.53,
     0.22,
-    0.04,
-    0.0,
-    0.0,
-    0.0,
+    0.05,
+    0.01,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -877,10 +877,10 @@
    "9": [
     0.72,
     0.35,
-    0.05,
-    0.0,
-    0.0,
-    0.0,
+    0.06,
+    0.01,
+    0.01,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -903,22 +903,35 @@
   },
   "source": "https://www.openstreetmap.org/way/558192029",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
- "shade_types": [],
+ "shade_types": [
+  {
+   "confidence": "low",
+   "level": "B",
+   "method": "osm",
+   "note": "樹冠大小未知時以直徑 6m 估計；落葉季節遮蔭會變少",
+   "rain_proof": false,
+   "source": "https://www.openstreetmap.org/way/558192029",
+   "trees": 1,
+   "type": "tree_canopy",
+   "value": true,
+   "verified_at": "2026-11-07"
+  }
+ ],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-02T06:50:32+08:00",
+   "as_of": "2026-11-09T06:50:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

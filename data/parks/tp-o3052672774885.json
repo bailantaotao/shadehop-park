@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/9938662073",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運大直站",
    "source": "https://www.openstreetmap.org/node/1681745146",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": false,
@@ -66,7 +66,7 @@
    "name": "摩斯漢堡北安店",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 452,
@@ -169,7 +169,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -199,7 +199,7 @@
   "phone": null,
   "registry_points": 1,
   "source": "https://data.gov.tw/dataset/136476",
-  "verified_at": "2026-11-01"
+  "verified_at": "2026-11-08"
  },
  "osm": null,
  "park_name": "直安公園",
@@ -228,7 +228,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/957535830"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -254,7 +254,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1943865066"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -280,7 +280,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/658046461"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -306,7 +306,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/612461523"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -315,7 +315,7 @@
    "capacity_parent": null,
    "distance_m": 412,
    "distance_method": "straight_line",
-   "fee": null,
+   "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -332,21 +332,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948277340"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 424,
+   "distance_m": 421,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.085422,
-    "lng": 121.54868
+    "lat": 25.08056,
+    "lng": 121.552323
    },
    "maxheight_m": null,
    "method": "osm",
@@ -354,11 +354,11 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 524355595,
+    "id": 1575983564,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/524355595"
+    "url": "https://www.openstreetmap.org/way/1575983564"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -379,7 +379,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "臺北市",
@@ -710,22 +710,22 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-01T22:53:50+00:00",
+   "as_of": "2026-11-08T22:56:43+00:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

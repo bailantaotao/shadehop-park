@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/447066447",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/447066447",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +28,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/447066447",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": null,
@@ -46,7 +46,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/12600787809",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 17519,
@@ -120,7 +120,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/989374245"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -146,7 +146,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/989564426"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -172,7 +172,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1040542588"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -198,7 +198,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1143936021"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -219,7 +219,7 @@
   "note": "約 4558 m² 在高架/屋頂下（佔 26%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/447066447",
   "value": "partial",
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "桃園市",
@@ -550,7 +550,7 @@
   },
   "source": "https://www.openstreetmap.org/way/447066447",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [
   {
@@ -575,6 +575,11 @@
      "url": "https://www.openstreetmap.org/way/770973478"
     },
     {
+     "id": 80493843,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/80493843"
+    },
+    {
      "id": 80493858,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/80493858"
@@ -595,11 +600,6 @@
      "url": "https://www.openstreetmap.org/way/128594534"
     },
     {
-     "id": 80493843,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/80493843"
-    },
-    {
      "id": 770973464,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/770973464"
@@ -609,16 +609,16 @@
    "source": "https://www.openstreetmap.org/way/447066447",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

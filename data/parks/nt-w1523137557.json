@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1523137557",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1523137557",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +28,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1523137557",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": null,
@@ -46,7 +46,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1088823055",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 3778,
@@ -104,15 +104,15 @@
    "distance_m": 5,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.229077,
     "lng": 121.645588
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -120,7 +120,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1523137556"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -130,15 +130,15 @@
    "distance_m": 57,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.229697,
     "lng": 121.647427
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -146,7 +146,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1364987244"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -172,7 +172,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/371671369"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -198,7 +198,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/230786074"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
@@ -224,7 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/549823674"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -250,7 +250,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/302432336"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -271,7 +271,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1523137557",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新北市",
@@ -602,16 +602,16 @@
   },
   "source": "https://www.openstreetmap.org/way/1523137557",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

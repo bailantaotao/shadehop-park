@@ -12,7 +12,7 @@
    "name": "7-Eleven",
    "source": "https://www.openstreetmap.org/node/3725892476",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/10279515",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "low",
@@ -34,7 +34,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/relation/10279515",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "野柳地質公園(出口)",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 314417,
@@ -137,7 +137,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/72538303"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -163,7 +163,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/239376810"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -173,15 +173,15 @@
    "distance_m": 36,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.205231,
     "lng": 121.691832
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -189,7 +189,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1523946767"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -215,7 +215,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1380315384"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -241,7 +241,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/329795184"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -262,7 +262,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/relation/10279515",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新北市",
@@ -593,7 +593,7 @@
   },
   "source": "https://www.openstreetmap.org/relation/10279515",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [
   {
@@ -602,6 +602,11 @@
    "level": "B",
    "method": "computed",
    "osm": [
+    {
+     "id": 3725892499,
+     "type": "node",
+     "url": "https://www.openstreetmap.org/node/3725892499"
+    },
     {
      "id": 368743163,
      "type": "way",
@@ -626,27 +631,22 @@
      "id": 2182109583,
      "type": "node",
      "url": "https://www.openstreetmap.org/node/2182109583"
-    },
-    {
-     "id": 3725892499,
-     "type": "node",
-     "url": "https://www.openstreetmap.org/node/3725892499"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/relation/10279515",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

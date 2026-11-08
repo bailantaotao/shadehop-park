@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/8118207171",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/6924514568",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運中正紀念堂站",
    "source": "https://www.openstreetmap.org/node/3494960750",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": "六號公廁",
    "source": "https://www.openstreetmap.org/way/1053359187",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 395,
@@ -203,7 +203,7 @@
    "speed_label": "慢充 (AC)",
    "speed_source": "official",
    "tdx_id": "TPE0529",
-   "verified_at": "2026-11-02"
+   "verified_at": "2026-11-09"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -232,6 +232,58 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
+   "distance_m": 139,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.038209,
+    "lng": 121.519646
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1574727747,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1574727747"
+   },
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 171,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "underground",
+   "kind_label": "地下停車場",
+   "location": {
+    "lat": 25.038312,
+    "lng": 121.519509
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "中正區市民運動中心停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 9722705095,
+    "type": "node",
+    "url": "https://www.openstreetmap.org/node/9722705095"
+   },
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
    "distance_m": 206,
    "distance_method": "straight_line",
    "fee": "yes",
@@ -251,7 +303,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/828307293"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
@@ -277,7 +329,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/870732874"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 255,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "underground",
+   "kind_label": "地下停車場",
+   "location": {
+    "lat": 25.036127,
+    "lng": 121.518746
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "國家兩廳院地下停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 14341924024,
+    "type": "node",
+    "url": "https://www.openstreetmap.org/node/14341924024"
+   },
+   "verified_at": "2026-11-07"
   },
   {
    "access": "permit",
@@ -303,85 +381,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/269170874"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": "permit",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 287,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.03994,
-    "lng": 121.520117
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺大醫院員工停車場",
-   "opening_hours": null,
-   "operator": "臺大醫院",
-   "osm": {
-    "id": 2744612493,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2744612493"
-   },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 313,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.040272,
-    "lng": 121.520518
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺大醫院國際會議中心停車場",
-   "opening_hours": null,
-   "operator": "臺大醫院",
-   "osm": {
-    "id": 8104143568,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/8104143568"
-   },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 388,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.038582,
-    "lng": 121.516962
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 247685964,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/247685964"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -402,7 +402,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/6924514568",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "臺北市",
@@ -733,22 +733,22 @@
   },
   "source": "https://www.openstreetmap.org/node/6924514568",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   },
   {
-   "as_of": "2026-11-02T03:50:28+08:00",
+   "as_of": "2026-11-09T04:10:32+08:00",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

@@ -3,64 +3,114 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 298,
+   "distance_m": 277,
    "location": {
-    "lat": 24.900067,
-    "lng": 121.055521
+    "lat": 24.916669,
+    "lng": 121.048209
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/7927398097",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/3204221501",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
    "distance_m": null,
    "location": null,
    "method": "osm",
-   "source": "https://www.openstreetmap.org/way/1001312808",
+   "source": "https://www.openstreetmap.org/way/1575192653",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
-   "distance_m": 1426,
+   "distance_m": 940,
    "location": {
-    "lat": 24.902802,
-    "lng": 121.043748
+    "lat": 24.922491,
+    "lng": 121.0559
    },
    "method": "osm",
-   "name": "湖口站",
-   "source": "https://www.openstreetmap.org/node/418760121",
+   "name": "北湖站",
+   "source": "https://www.openstreetmap.org/node/2016804222",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
+   "accessible": null,
+   "category": null,
    "changing_table": null,
-   "confidence": "low",
-   "distance_m": null,
+   "confidence": "medium",
+   "distance_m": 26,
+   "family": null,
+   "family_room": null,
+   "location": {
+    "lat": 24.915717,
+    "lng": 121.050533
+   },
    "method": "osm",
-   "note": "300m 內沒有登記或標示的公廁；不代表沒有",
-   "source": "https://www.openstreetmap.org/way/1001312808",
-   "value": null,
-   "verified_at": "2026-10-31"
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/1575192641",
+   "value": true,
+   "verified_at": "2026-11-07"
   }
  },
- "area_m2": 1968,
+ "area_m2": 256,
  "best_shade_windows": {
-  "1": null,
-  "10": null,
-  "11": null,
-  "12": null,
-  "2": null,
-  "3": null,
+  "1": {
+   "end": "16:30",
+   "end_slot": 21,
+   "mean": 0.79,
+   "start": "16:00",
+   "start_slot": 20
+  },
+  "10": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.96,
+   "start": "16:30",
+   "start_slot": 21
+  },
+  "11": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.96,
+   "start": "16:00",
+   "start_slot": 20
+  },
+  "12": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.77,
+   "start": "15:30",
+   "start_slot": 19
+  },
+  "2": {
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.76,
+   "start": "16:30",
+   "start_slot": 21
+  },
+  "3": {
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 0.85,
+   "start": "17:00",
+   "start_slot": 22
+  },
   "4": null,
   "5": null,
   "6": null,
   "7": null,
   "8": null,
-  "9": null
+  "9": {
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 0.78,
+   "start": "17:00",
+   "start_slot": 22
+  }
  },
  "charger_summary": {
   "fast": 0,
@@ -73,40 +123,40 @@
   "unknown": 0
  },
  "chargers": [],
- "daytime_shaded_share": 0.0,
+ "daytime_shaded_share": 0.01,
  "geometry_estimated": false,
- "id": "hcy-w1001312808",
+ "id": "hcy-w1575192653",
  "indoor": false,
- "kind": "park",
+ "kind": "playground",
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 24.901966,
-  "lng": 121.058098
+  "lat": 24.915403,
+  "lng": 121.050644
  },
- "name": "公園（近信昌五街）",
- "name_source": "nearest_street",
+ "name": "塔型遊具",
+ "name_source": "osm_name",
  "official": null,
  "osm": {
-  "id": 1001312808,
+  "id": 1575192653,
   "type": "way",
-  "url": "https://www.openstreetmap.org/way/1001312808"
+  "url": "https://www.openstreetmap.org/way/1575192653"
  },
- "park_name": null,
+ "park_name": "東興村特色公園",
  "parking": [
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 0,
+   "distance_m": 31,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 24.902192,
-    "lng": 121.058226
+    "lat": 24.915495,
+    "lng": 121.050158
    },
    "maxheight_m": null,
    "method": "osm",
@@ -114,51 +164,51 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 1001312809,
+    "id": 1575192638,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/1001312809"
+    "url": "https://www.openstreetmap.org/way/1575192638"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 314,
+   "distance_m": 375,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
-    "lat": 24.905143,
-    "lng": 121.057399
+    "lat": 24.918766,
+    "lng": 121.04916
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 992979391,
+    "id": 1353248812,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/992979391"
+    "url": "https://www.openstreetmap.org/way/1353248812"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 443,
+   "distance_m": 388,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 24.90365,
-    "lng": 121.053477
+    "lat": 24.918731,
+    "lng": 121.053611
    },
    "maxheight_m": null,
    "method": "osm",
@@ -166,51 +216,51 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 992979388,
+    "id": 468739629,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/992979388"
+    "url": "https://www.openstreetmap.org/way/468739629"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 710,
+   "distance_m": 414,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
-    "lat": 24.896484,
-    "lng": 121.062744
+    "lat": 24.919011,
+    "lng": 121.049163
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 992979392,
+    "id": 1353248813,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/992979392"
+    "url": "https://www.openstreetmap.org/way/1353248813"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 729,
+   "distance_m": 421,
    "distance_method": "straight_line",
    "fee": null,
    "kind": null,
    "kind_label": "停車場",
    "location": {
-    "lat": 24.902368,
-    "lng": 121.050251
+    "lat": 24.918655,
+    "lng": 121.048029
    },
    "maxheight_m": null,
    "method": "osm",
@@ -218,11 +268,37 @@
    "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 992979386,
+    "id": 1001371454,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/992979386"
+    "url": "https://www.openstreetmap.org/way/1001371454"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 430,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": null,
+   "kind_label": "停車場",
+   "location": {
+    "lat": 24.913572,
+    "lng": 121.04575
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 689932967,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/689932967"
+   },
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -234,16 +310,16 @@
   "surface": null,
   "wheelchair": null
  },
- "playground_mapped": false,
+ "playground_mapped": true,
  "rain_cover": {
   "confidence": "low",
   "covered_area_m2": 0,
   "covered_ratio": 0.0,
   "method": "osm",
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
-  "source": "https://www.openstreetmap.org/way/1001312808",
+  "source": "https://www.openstreetmap.org/way/1575192653",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新竹縣",
@@ -252,7 +328,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.0,
-  "buildings_considered": 4,
+  "buildings_considered": 11,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -262,6 +338,7 @@
    "1": [
     null,
     null,
+    0.55,
     0.0,
     0.0,
     0.0,
@@ -278,15 +355,13 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.16,
+    0.79,
+    0.34,
     null,
     null
    ],
    "10": [
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -307,12 +382,14 @@
     0.0,
     0.0,
     0.0,
-    0.01,
+    0.37,
+    0.96,
     null,
     null
    ],
    "11": [
     null,
+    0.18,
     0.0,
     0.0,
     0.0,
@@ -329,11 +406,10 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.01,
+    0.45,
+    0.92,
+    1.0,
     null,
     null
    ],
@@ -356,10 +432,10 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.08,
+    0.6,
+    0.72,
+    1.0,
     null,
     null
    ],
@@ -384,15 +460,13 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.09,
+    0.76,
+    0.37,
     null
    ],
    "3": [
     null,
-    0.01,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -410,17 +484,14 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.01,
-    0.02,
-    0.04
+    0.0,
+    0.0,
+    0.0,
+    0.09,
+    0.85,
+    0.0
    ],
    "4": [
-    0.02,
-    0.02,
-    0.02,
-    0.01,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -434,46 +505,45 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.01,
-    0.02,
-    0.05,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.09,
-    0.1
+    0.35
    ],
    "5": [
-    0.03,
-    0.03,
-    0.03,
-    0.02,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.01,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.02,
-    0.04,
-    0.06,
-    0.13,
-    0.15
+    0.32
    ],
    "6": [
-    0.04,
-    0.04,
-    0.03,
-    0.03,
-    0.02,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -486,45 +556,46 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.02,
-    0.04,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.06,
-    0.12,
-    0.17
+    0.1
    ],
    "7": [
-    0.04,
-    0.04,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     0.03,
-    0.03,
-    0.02,
-    0.01,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.01,
-    0.02,
-    0.03,
-    0.05,
-    0.1,
-    0.16
+    0.06
    ],
    "8": [
-    0.03,
-    0.03,
-    0.02,
-    0.02,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -538,18 +609,19 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.01,
-    0.03,
-    0.05,
-    0.1,
-    0.12
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.59
    ],
    "9": [
-    0.02,
-    0.01,
-    0.01,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -565,25 +637,29 @@
     0.0,
     0.0,
     0.0,
-    0.01,
-    0.02,
-    0.04,
-    0.05,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.06,
+    0.78,
     null
    ]
   },
-  "source": "https://www.openstreetmap.org/way/1001312808",
+  "source": "https://www.openstreetmap.org/way/1575192653",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

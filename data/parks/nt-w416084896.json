@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/13413753097",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/416084896",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新北產業園區站",
    "source": "https://www.openstreetmap.org/node/2083320848",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": null,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8736466727",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 16480,
@@ -110,15 +110,15 @@
    "distance_m": 69,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.070054,
     "lng": 121.467492
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -126,7 +126,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1160425965"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -152,7 +152,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/441731087"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -178,25 +178,25 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729765"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 194,
+   "distance_m": 196,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
-    "lat": 25.071257,
-    "lng": 121.467496
+    "lat": 25.071207,
+    "lng": 121.467639
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "平面停車場",
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -204,7 +204,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/301443239"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -230,7 +230,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457992996"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -256,7 +256,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3054761527"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -277,7 +277,7 @@
   "note": "約 1657 m² 在高架/屋頂下（佔 10%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/416084896",
   "value": "partial",
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "新北市",
@@ -608,7 +608,7 @@
   },
   "source": "https://www.openstreetmap.org/way/416084896",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [
   {
@@ -618,11 +618,6 @@
    "method": "computed",
    "osm": [
     {
-     "id": 1303486388,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/1303486388"
-    },
-    {
      "id": 482263709,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/482263709"
@@ -631,22 +626,27 @@
      "id": 482263710,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/482263710"
+    },
+    {
+     "id": 1303486388,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1303486388"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/416084896",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

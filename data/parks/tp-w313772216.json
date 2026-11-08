@@ -12,7 +12,7 @@
    "name": "蝦皮店到店",
    "source": "https://www.openstreetmap.org/node/11082701290",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/313772216",
    "value": null,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運小南門站",
    "source": "https://www.openstreetmap.org/node/3812564399",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "中正11號",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  },
  "area_m2": 183,
@@ -138,7 +138,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/915548816"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -148,8 +148,8 @@
    "distance_m": 128,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
     "lat": 25.029616,
     "lng": 121.511498
@@ -164,7 +164,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/375213742"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -190,7 +190,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/915548815"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -216,7 +216,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1086775096"
    },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 273,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 25.029694,
+    "lng": 121.508342
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1574727788,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1574727788"
+   },
+   "verified_at": "2026-11-07"
   },
   {
    "access": null,
@@ -242,33 +268,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/544545204"
    },
-   "verified_at": "2026-10-31"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 379,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.026965,
-    "lng": 121.515267
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福州街平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 4601745,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/4601745"
-   },
-   "verified_at": "2026-10-31"
+   "verified_at": "2026-11-07"
   }
  ],
  "playground": {
@@ -289,7 +289,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/313772216",
   "value": false,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "region": {
   "city": "臺北市",
@@ -620,16 +620,16 @@
   },
   "source": "https://www.openstreetmap.org/way/313772216",
   "value": null,
-  "verified_at": "2026-10-31"
+  "verified_at": "2026-11-07"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-10-31T21:23:06Z",
+   "as_of": "2026-11-07T21:21:36Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-10-31"
+ "updated_at": "2026-11-07"
 }

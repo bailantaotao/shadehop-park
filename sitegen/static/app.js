@@ -1136,10 +1136,18 @@
     document.documentElement.style.setProperty("--peek", sheetMetrics().peek + "px");
   }
   var drag = null;
-  sheetHead.addEventListener("pointerdown", function (e) {
-    if (!phone.matches || e.target.closest("button:not(.sheet-handle), a, input, .timebar")) return;
-    drag = { y: e.clientY, from: sheetOffset(sheetState), moved: false, id: e.pointerId };
+  // The whole head drags the sheet (and the tapped park's title row), except its own controls.
+  sheet.addEventListener("pointerdown", function (e) {
+    if (!phone.matches || drag) return;
+    var head = e.target.closest("#sheetHead"), title = e.target.closest("#sheetPark .pp-head");
+    if (!head && !title) return;
+    if (e.target.closest("button:not(.sheet-handle), a, input, label, select, output")) return;
+    drag = { y: e.clientY, from: sheetOffset(sheetState), moved: false, id: e.pointerId, tap: !!head };
     sheet.classList.add("dragging");
+  });
+  window.addEventListener("pointercancel", function (e) {
+    if (!drag || e.pointerId !== drag.id) return;
+    drag = null; sheet.classList.remove("dragging"); setSheet(sheetState);
   });
   window.addEventListener("pointermove", function (e) {
     if (!drag || e.pointerId !== drag.id) return;
@@ -1153,7 +1161,7 @@
     if (!drag || e.pointerId !== drag.id) return;
     sheet.classList.remove("dragging");
     var d = drag; drag = null;
-    if (!d.moved) { setSheet(sheetState === "peek" ? "half" : sheetState === "half" ? "full" : "peek"); return; }
+    if (!d.moved) { if (d.tap) setSheet(sheetState === "peek" ? "half" : sheetState === "half" ? "full" : "peek"); else setSheet(sheetState); return; }
     var y = new DOMMatrix(getComputedStyle(sheet).transform).m42;
     var best = ["peek", "half", "full"].reduce(function (a, b) {
       return Math.abs(sheetOffset(b) - y) < Math.abs(sheetOffset(a) - y) ? b : a;

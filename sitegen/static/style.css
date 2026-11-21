@@ -352,7 +352,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
    Wider screens: the sheet is just the page below the map, and the phone-only controls are hidden.
    Phones (<= 600px): a full-screen map, controls floating on top, and a bottom sheet with three
    heights (peek / half / full) holding the answer, the tapped park, the list and the filters. */
-.filter-btn, .date-btn, .sheet-head, .sheet-filters, .sheet-park { display: none; }
+.filter-btn, .date-btn, .search-about, .sheet-head, .sheet-filters, .sheet-park { display: none; }
 @media (max-width: 600px) {
   /* Only the map page is an app screen; park, about and terms pages scroll normally. */
   body.page-map { height: 100%; overflow: hidden; overscroll-behavior: none; }
@@ -366,17 +366,30 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
     height: auto; min-height: 0; margin: 0; border: 0; border-radius: 0; }
   .leaflet-container:focus-visible { border-radius: 0; }
 
-  /* Search, 篩選 and the time row all move into the sheet head, near the thumb; nothing floats on top. */
-  body.page-map .controls { display: none; }
+  /* Like Google Maps: a floating search pill and a row of filter chips over the map; the time row,
+     the answer and the list live in the bottom sheet. No page header on the map. */
+  body.page-map header.top { display: none; }
   body.page-map .leaflet-control-zoom { display: none; }
   #map .leaflet-bottom.leaflet-right .map-ctl { margin-right: 10px; margin-bottom: 10px; }
-  .controls { position: fixed; z-index: 1100; top: calc(var(--head-h, 44px) + 6px); left: 8px; right: 8px;
-    padding: 6px; gap: 6px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,.18); }
-  .search { display: flex; gap: 6px; }
-  .search input { flex: 1; min-width: 0; min-height: 44px; }
-  .filter-btn { display: inline-flex; align-items: center; gap: 4px; flex: none; min-height: 44px; padding: 0 12px;
-    border: 1px solid var(--line); border-radius: 10px; background: var(--chip); color: var(--text); font: inherit; font-size: .9rem; cursor: pointer; }
-  .filter-btn[aria-expanded="true"] { border-color: var(--accent); }
+  .controls { position: fixed; z-index: 1100; top: calc(var(--head-h, 0px) + 8px + env(safe-area-inset-top)); left: 0; right: 0;
+    padding: 0; gap: 8px; border: 0; border-radius: 0; background: none; box-shadow: none; pointer-events: none; }
+  .controls > * { pointer-events: auto; }
+  .search { display: flex; align-items: center; margin: 0 10px; padding: 0 2px 0 6px; min-height: 48px; border-radius: 24px;
+    background: var(--surface); box-shadow: 0 2px 8px rgba(0,0,0,.2); }
+  .search input { flex: 1; min-width: 0; min-height: 44px; border: 0; background: none; padding: 0 10px; font-size: 1rem; }
+  .search input:focus-visible { outline: none; }
+  .search:focus-within { box-shadow: 0 0 0 2px var(--accent), 0 2px 8px rgba(0,0,0,.2); }
+  .search-about { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--muted); flex: none; }
+  .search-about .i { display: inline-block; width: 22px; height: 22px; }
+  .search-results { top: calc(100% + 6px); }
+  .controls .chips.filters { flex-wrap: nowrap; overflow-x: auto; padding: 2px 10px 6px; gap: 8px; scrollbar-width: none; }
+  .controls .chips.filters::-webkit-scrollbar { display: none; }
+  .controls .chips.filters .chip, .filter-btn { flex: none; min-height: 36px; padding: 0 14px; border: 0; border-radius: 18px;
+    background: var(--surface); color: var(--text); box-shadow: 0 1px 4px rgba(0,0,0,.22); font: inherit; font-size: .88rem; white-space: nowrap; }
+  .controls .chips.filters .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+  .controls .chips.filters .chip[aria-pressed="true"] .i { color: inherit; }
+  .filter-btn { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
+  .filter-btn[aria-expanded="true"] { box-shadow: 0 0 0 2px var(--accent), 0 1px 4px rgba(0,0,0,.22); }
   .timebar { flex-wrap: nowrap; gap: 6px; }
   .timebar input[type=date] { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
   .timebar .date-btn { display: inline-flex; order: 0; }
@@ -395,6 +408,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .start-skip { min-height: 44px; }
   .start-open #map .leaflet-control-container { visibility: hidden; }  /* the card spans the map's width */
   .map-key, .map-empty, .map-note { display: none; }  /* the sheet head says these */
+  .map-night, .map-loading { top: calc(var(--ctl-h, 100px) + 6px); }  /* below the search pill and chips */
 
   /* The sheet */
   .sheet { position: fixed; z-index: 1050; left: 0; right: 0; bottom: 0; top: calc(var(--head-h, 44px) + var(--ctl-h, 110px) + 14px);
@@ -405,8 +419,6 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .sheet-head { display: block; padding: 6px 14px 10px; touch-action: none; cursor: grab; flex: none; }
   .sheet-handle { display: block; width: 100%; height: 22px; margin: 0; padding: 0; border: 0; background: none; cursor: grab; position: relative; }
   .sheet-handle::before { content: ""; position: absolute; left: 50%; top: 8px; width: 40px; height: 5px; margin-left: -20px; border-radius: 3px; background: var(--line); }
-  .sheet-search .search { margin: 0 0 8px; cursor: auto; }
-  .sheet-search .search-results { max-height: calc(100dvh - var(--head-h, 44px) - 140px); }
   .sheet-time .timebar { margin: 0 0 8px; cursor: auto; }
   .sheet-summary { font-size: .95rem; line-height: 1.45; }
   .sheet-summary .link { font-size: inherit; }

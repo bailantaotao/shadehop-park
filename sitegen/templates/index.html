@@ -15,7 +15,7 @@
     <input type="search" id="search" placeholder="搜尋公園或地區" autocomplete="off"
            aria-label="搜尋公園" aria-controls="searchResults" aria-expanded="false">
     <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
-    <button class="filter-btn" id="filterBtn" type="button" aria-controls="sheetFilters" aria-expanded="false">{{ icon("filters") }}篩選<span class="n"></span></button>
+    <a class="search-about" href="{{ root }}about/" aria-label="資料與方法">{{ icon("info") }}</a>
   </div>
   <div class="timebar">
     <button class="chip date-btn" id="dateBtn" type="button" aria-label="選擇日期">今天</button>
@@ -28,6 +28,7 @@
     <button class="chip" id="playBtn" type="button" aria-pressed="false" aria-label="播放一天">{{ icon("play") }}<span class="lbl">播放一天</span></button>
   </div>
   <div class="chips filters" role="group" aria-label="條件">
+    <button class="filter-btn" id="filterBtn" type="button" aria-controls="sheetFilters" aria-expanded="false">{{ icon("filters") }}篩選<span class="n"></span></button>
     <button class="chip" data-filter="rain" aria-pressed="false">{{ icon("umbrella") }}下雨可玩</button>
     <button class="chip" data-filter="shade" aria-pressed="false">{{ icon("trees") }}這個時間有遮陰</button>
     <button class="chip" data-filter="confirmed" aria-pressed="false" title="隱藏遊具還沒確認的公園">{{ icon("kid") }}確定有遊戲場</button>
@@ -65,16 +66,13 @@
 <section class="sheet" id="sheet" aria-label="公園清單">
 <div class="sheet-head" id="sheetHead">
   <button type="button" class="sheet-handle" id="sheetHandle" aria-controls="sheetBody" aria-label="展開清單"></button>
-  {# Phones: search and the time row live here, within thumb reach (app.js moves them in). #}
-  <div class="sheet-search" id="sheetSearch"></div>
-  <div class="sheet-time" id="sheetTime"></div>
+  <div class="sheet-time" id="sheetTime"></div>{# phones: the time row lives here, within thumb reach #}
   <div class="sheet-summary" id="sheetSummary" role="status" aria-live="polite">地圖載入中…</div>
   <div class="sheet-key" aria-hidden="true"><i class="dot hi"></i>適合<i class="dot mid"></i>還可以<i class="dot lo"></i>太曬<i class="dot weak"></i>陽光弱<i class="dot a"></i>下雨可玩</div>
 </div>
 <div class="sheet-body" id="sheetBody">
 <div class="sheet-filters" id="sheetFilters" hidden>
   <div class="sheet-filters-head"><b>篩選條件</b><button type="button" class="link" id="filtersDone">完成</button></div>
-  <p class="sheet-group" id="grpPlay">玩的條件</p>
   <p class="sheet-group" id="grpGo">交通與設施</p>
 </div>
 <div class="sheet-park" id="sheetPark" hidden></div>

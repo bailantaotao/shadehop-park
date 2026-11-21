@@ -1189,7 +1189,8 @@
     if (!phone.matches || drag) return;
     var head = e.target.closest("#sheetHead"), title = e.target.closest("#sheetPark .pp-head");
     if (!head && !title) return;
-    if (e.target.closest("button:not(.sheet-handle), a, input, label, select, output")) return;
+    // Search and its results sit in the head too: a tap on a result must reach the result.
+    if (e.target.closest("button:not(.sheet-handle), a, input, label, select, output, .search")) return;
     drag = { y: e.clientY, from: sheetOffset(sheetState), moved: false, id: e.pointerId, tap: !!head };
     sheet.classList.add("dragging");
   });

@@ -46,6 +46,23 @@
     return { cls: cls, word: word, text: word + pct };
   };
 
+  // The day strip in words, for screen readers: shaded and sunny spans between 08:00 and 17:00.
+  window.ShadeHopStripText = function (row) {
+    var lab = function (k) { var m = 360 + k * 30; return Math.floor(m / 60) + ":" + (m % 60 ? "30" : "00"); };
+    var spans = { hi: [], lo: [] }, cur = null, start = 0;
+    for (var i = 4; i <= 22; i++) {
+      var x = row[i], c = i === 22 || x === null || x === undefined ? null : x >= 0.6 ? "hi" : x < 0.3 ? "lo" : "mid";
+      if (c !== cur) {
+        if (cur === "hi" || cur === "lo") spans[cur].push(lab(start) + "–" + lab(i));
+        cur = c; start = i;
+      }
+    }
+    var out = [];
+    if (spans.hi.length) out.push("適合 " + spans.hi.join("、"));
+    if (spans.lo.length) out.push("太曬 " + spans.lo.join("、"));
+    return out.length ? out.join("；") : "8–17 點大多還可以";
+  };
+
   window.ShadeHopFavs = {
     list: read,
     has: function (id) { return read().indexOf(id) >= 0; },

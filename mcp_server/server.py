@@ -284,7 +284,7 @@ def build_server():
 
     server = MCPServer(
         name="shadehop-park",
-        title="ShadeHop 遮陽公園（新北・台北・桃園・新竹）",
+        title="ShadeHop 遮陽公園（新北・臺北・桃園・新竹）",
         instructions=(
             "Find shaded or rain-proof children's playgrounds in 新北市 (New Taipei; region='newtaipei'), 桃園市 (Taoyuan; region='taoyuan'), "
             "臺北市 (Taipei City; region='taipei'), 新竹市 (Hsinchu City; region='hsinchucity') and "

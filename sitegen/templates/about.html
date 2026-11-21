@@ -26,12 +26,12 @@
 <section>
 <h2>遮蔽分級</h2>
 <table>
-<thead><tr><th>等級</th><th>說明</th><th>數量</th></tr></thead>
+<thead><tr><th>全年遮陰</th><th>說明</th><th>數量</th><th>API 代號</th></tr></thead>
 <tbody>
-<tr><td>A</td><td>{{ meta.level_labels.A }}：遊戲場 ≥ {{ (meta.assumptions.COVERED_FULL_RATIO * 100) | int }}% 面積位於高架道路/軌道或屋頂下方</td><td>{{ meta.counts.by_level.A }}</td></tr>
-<tr><td>C</td><td>{{ meta.level_labels.C }}：全年 09–16 時平均有 ≥ {{ (meta.assumptions.LEVEL_C_MIN_DAYTIME_SHARE * 100) | int }}% 時段遮陰 ≥ {{ (meta.assumptions.SHADED_SLOT_RATIO * 100) | int }}%</td><td>{{ meta.counts.by_level.C }}</td></tr>
-<tr><td>B</td><td>{{ meta.level_labels.B }}：部分遮蔽或有樹</td><td>{{ meta.counts.by_level.B }}</td></tr>
-<tr><td>—</td><td>{{ meta.level_labels.none }}</td><td>{{ meta.counts.by_level.none }}</td></tr>
+<tr><td>{{ meta.level_labels.A }}</td><td>遊戲場 ≥ {{ (meta.assumptions.COVERED_FULL_RATIO * 100) | int }}% 面積位於高架道路/軌道或屋頂下方</td><td>{{ meta.counts.by_level.A }}</td><td><code>A</code></td></tr>
+<tr><td>{{ meta.level_labels.C }}</td><td>全年 09–16 時平均有 ≥ {{ (meta.assumptions.LEVEL_C_MIN_DAYTIME_SHARE * 100) | int }}% 時段遮陰 ≥ {{ (meta.assumptions.SHADED_SLOT_RATIO * 100) | int }}%</td><td>{{ meta.counts.by_level.C }}</td><td><code>C</code></td></tr>
+<tr><td>{{ meta.level_labels.B }}</td><td>部分遮蔽或有樹</td><td>{{ meta.counts.by_level.B }}</td><td><code>B</code></td></tr>
+<tr><td>{{ meta.level_labels.none }}</td><td>其他</td><td>{{ meta.counts.by_level.none }}</td><td><code>none</code></td></tr>
 </tbody>
 </table>
 </section>

@@ -48,6 +48,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px; }
 
 .controls { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px; display: grid; gap: 10px; }
 .timebar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.date-pick { display: contents; }
 .timebar input[type=range] { flex: 1 1 220px; accent-color: var(--accent); }
 .timebar output { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 4.5em; }
 .timebar input[type=date] { font: inherit; padding: 4px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--text); }
@@ -391,8 +392,11 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .filter-btn { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
   .filter-btn[aria-expanded="true"] { box-shadow: 0 0 0 2px var(--accent), 0 1px 4px rgba(0,0,0,.22); }
   .timebar { flex-wrap: nowrap; gap: 6px; }
-  .timebar input[type=date] { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
-  .timebar .date-btn { display: inline-flex; order: 0; }
+  .timebar .date-pick { display: inline-flex; position: relative; order: 0; flex: none; }
+  .timebar .date-btn { display: inline-flex; align-items: center; }
+  .timebar .date-pick input[type=date] { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0;
+    opacity: 0; font-size: 16px; cursor: pointer; -webkit-appearance: none; appearance: none; }
+  .timebar .date-pick:focus-within .date-btn { outline: 2px solid var(--accent); outline-offset: 2px; }
   .timebar output { order: 1; }
   .timebar input[type=range] { order: 2; flex: 1 1 auto; min-width: 70px; }
   .timebar #playBtn { order: 3; }

@@ -112,7 +112,7 @@
 <section class="pcard" id="report" data-park="{{ p.id }}" data-lat="{{ p.location.lat }}" data-lng="{{ p.location.lng }}"
          data-name="{{ p.name }}" data-url="{{ site_url }}/parks/{{ p.id }}/" data-sitekey="{{ TURNSTILE_SITE_KEY }}">
   <h2 class="ptitle">這裡有遊戲場嗎？</h2>
-  <p class="small mb-10" id="reportTally">{% if p.kind == "park" %}地圖上還沒有標示這裡的遊具。你去過的話，告訴其他家長吧！{% else %}遊戲場拆了或找不到？也可以告訴我們。{% endif %}</p>
+  <p class="small mb-10" id="reportTally">{% if p.kind == "park" %}地圖上還沒標出這裡的遊具。去過的話，可以回報給其他家長參考。{% else %}遊戲場拆了或找不到？也可以告訴我們。{% endif %}</p>
   {% if TURNSTILE_SITE_KEY %}
   <form id="reportForm" novalidate>
     <div class="pbtns two">

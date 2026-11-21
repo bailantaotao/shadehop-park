@@ -120,7 +120,7 @@
     else setStat("nowUv", "暫無", "");
   }).catch(function () {
     setStat("nowRain", "暫無", ""); setStat("nowUv", "暫無", "");
-    document.getElementById("nowNote").textContent += " 天氣資料暫時無法取得，請稍後再試或查看中央氣象署。";
+    document.getElementById("nowNote").textContent += " 暫時查不到天氣，可以稍後再試，或直接看中央氣象署。";
   });
 })();
 
@@ -228,7 +228,7 @@
     }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); }).then(function (res) {
       if (!res.ok) throw new Error(res.j.error || "送出失敗");
       showTally({ yes: res.j.yes, no: res.j.no, equipment: {} });
-      var done = "謝謝你！回報已經送出，其他家長馬上就看得到。";
+      var done = "謝謝，回報已送出。有 2 位以上家長回報、而且多數一致時，地圖和這一頁就會顯示結果。";
       if (verdict === "yes" && osm && osm.checked) {
         status.textContent = done + " 正在通知 OpenStreetMap 志工…";
         return osmNote(items).then(function (id) {

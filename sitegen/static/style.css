@@ -355,7 +355,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
    Wider screens: the sheet is just the page below the map, and the phone-only controls are hidden.
    Phones (<= 600px): a full-screen map, controls floating on top, and a bottom sheet with three
    heights (peek / half / full) holding the answer, the tapped park, the list and the filters. */
-.filter-btn, .date-btn, .search-about, .sheet-head, .sheet-filters, .sheet-park { display: none; }
+.filter-btn, .date-btn, .search-about, .search-ico, .sheet-head, .sheet-filters, .sheet-park { display: none; }
 @media (max-width: 600px) {
   /* Only the map page is an app screen; park, about and terms pages scroll normally. */
   body.page-map { height: 100%; overflow: hidden; overscroll-behavior: none; }
@@ -365,34 +365,50 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   body.page-map .nav-about .lbl { display: none; }
   body.page-map .nav-about { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: -10px -10px -10px 0; color: var(--muted); }
   body.page-map .nav-about .i { display: inline-block; width: 22px; height: 22px; }
-  #map { position: fixed; top: var(--head-h, 44px); left: 0; right: 0; bottom: var(--peek, 72px);
+  #map { position: fixed; top: var(--head-h, 44px); left: 0; right: 0; bottom: 0;
     height: auto; min-height: 0; margin: 0; border: 0; border-radius: 0; }
   .leaflet-container:focus-visible { border-radius: 0; }
 
-  /* Like Google Maps: a floating search pill and a row of filter chips over the map; the time row,
-     the answer and the list live in the bottom sheet. No page header on the map. */
+  /* Like Apple Maps: one row of filter chips over the map; search, the time row, the answer and the
+     list live in a floating card at the bottom. No page header on the map. */
   body.page-map header.top { display: none; }
   body.page-map .leaflet-control-zoom { display: none; }
-  #map .leaflet-bottom.leaflet-right .map-ctl { margin-right: 10px; margin-bottom: 10px; }
   .controls { position: fixed; z-index: 1100; top: calc(var(--head-h, 0px) + 8px + env(safe-area-inset-top)); left: 0; right: 0;
     padding: 0; gap: 8px; border: 0; border-radius: 0; background: none; box-shadow: none; pointer-events: none; }
   .controls > * { pointer-events: auto; }
-  .search { display: flex; align-items: center; margin: 0 10px; padding: 0 2px 0 6px; min-height: 48px; border-radius: 24px;
-    background: var(--surface); box-shadow: 0 2px 8px rgba(0,0,0,.2); }
-  .search input { flex: 1; min-width: 0; min-height: 44px; border: 0; background: none; padding: 0 10px; font-size: 1rem; }
-  .search input:focus-visible { outline: none; }
-  .search:focus-within { box-shadow: 0 0 0 2px var(--accent), 0 2px 8px rgba(0,0,0,.2); }
+  #chipsMain { flex-wrap: nowrap; overflow-x: auto; padding: 2px 10px 8px; gap: 8px; scrollbar-width: none; }
+  #chipsMain::-webkit-scrollbar { display: none; }
+  #chipsMain #moreFilters { display: contents; }
+  #chipsMain .filter-btn, #chipsMain .chip.more { display: none; }
+  #chipsMain .chip { flex: none; min-height: 38px; padding: 0 14px; border: 1px solid var(--line); border-radius: 19px;
+    background: var(--surface);
+    color: var(--text); box-shadow: 0 2px 8px rgba(0,0,0,.16); font: inherit; font-size: .88rem; white-space: nowrap; }
+  #chipsMain .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  #chipsMain .chip[aria-pressed="true"] .i { color: inherit; }
+
+  /* Search field inside the sheet; while searching it stays put at the top of the full sheet. */
+  .sheet-search .search { display: flex; align-items: center; gap: 4px; margin: 0 0 10px; }
+  .search-ico { display: inline-flex; position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  .search-ico .i { width: 19px; height: 19px; }
+  .sheet-search .search input { flex: 1; min-width: 0; min-height: 44px; padding: 0 12px 0 38px; border: 0; border-radius: 12px;
+    background: color-mix(in srgb, var(--text) 9%, transparent); font-size: 16px; }
+  .sheet-search .search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
+  .search-cancel { flex: none; min-height: 44px; padding: 0 6px; border: 0; background: none; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; }
+  .search-cancel[hidden] { display: none; }
   .search-about { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--muted); flex: none; }
   .search-about .i { display: inline-block; width: 22px; height: 22px; }
-  .search-results { top: calc(100% + 6px); }
-  .controls .chips.filters { flex-wrap: nowrap; overflow-x: auto; padding: 2px 10px 6px; gap: 8px; scrollbar-width: none; }
-  .controls .chips.filters::-webkit-scrollbar { display: none; }
-  .controls .chips.filters .chip, .filter-btn { flex: none; min-height: 36px; padding: 0 14px; border: 0; border-radius: 18px;
-    background: var(--surface); color: var(--text); box-shadow: 0 1px 4px rgba(0,0,0,.22); font: inherit; font-size: .88rem; white-space: nowrap; }
-  .controls .chips.filters .chip[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
-  .controls .chips.filters .chip[aria-pressed="true"] .i { color: inherit; }
-  .filter-btn { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; }
-  .filter-btn[aria-expanded="true"] { box-shadow: 0 0 0 2px var(--accent), 0 1px 4px rgba(0,0,0,.22); }
+  .sheet.searching .search-about { display: none; }
+  .search-results { top: calc(100% + 6px); max-height: calc(var(--vvh, 100dvh) - 120px); }
+  .sheet.searching { top: calc(env(safe-area-inset-top) + 8px); }
+  body.searching .controls { visibility: hidden; }  /* the full sheet covers the chips while searching */
+  .sheet.searching .sheet-time, .sheet.searching .sheet-summary, .sheet.searching .sheet-key, .sheet.searching #weather { display: none; }
+
+  /* Map buttons: bottom right, clear of the floating sheet. */
+  #map .leaflet-bottom { bottom: calc(var(--peek, 72px) + 16px + env(safe-area-inset-bottom)); }
+  #map .leaflet-bottom.leaflet-right .map-ctl { margin-right: 12px; margin-bottom: 10px; }
+  #map .map-ctl.leaflet-bar, #map .chg-btn { border: 1px solid var(--line); background: var(--surface); box-shadow: 0 2px 10px rgba(0,0,0,.18); }
+  #map .map-ctl .locate { width: 44px; height: 44px; background: none; color: var(--text); border-radius: 12px; }
+  #map .map-ctl.leaflet-bar { border-radius: 14px; overflow: hidden; }
   .timebar { flex-wrap: nowrap; gap: 6px; }
   .timebar .date-pick { display: inline-flex; position: relative; order: 0; flex: none; }
   .timebar .date-btn { display: inline-flex; align-items: center; }
@@ -403,7 +419,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .timebar input[type=range] { order: 2; flex: 1 1 auto; min-width: 70px; }
   .timebar #playBtn { order: 3; }
   .timebar #nowBtn { order: 4; }
-  .timebar .chip { min-height: 44px; padding: 0 10px; }
+  .timebar .chip { min-height: 44px; padding: 0 10px; white-space: nowrap; flex: none; }
   .chip.more { display: none; }
 
   /* Map controls clear the floating panel; the on-map key and empty note move into the sheet head. */
@@ -417,8 +433,10 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .map-night, .map-loading { top: calc(var(--ctl-h, 100px) + 6px); }  /* below the search pill and chips */
 
   /* The sheet */
-  .sheet { position: fixed; z-index: 1050; left: 0; right: 0; bottom: 0; top: calc(var(--head-h, 44px) + var(--ctl-h, 110px) + 14px);
-    margin: 0; background: var(--surface); border-radius: 16px 16px 0 0; box-shadow: 0 -2px 14px rgba(0,0,0,.18);
+  .sheet { position: fixed; z-index: 1050; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom));
+    top: calc(var(--head-h, 44px) + var(--ctl-h, 110px) + 14px);
+    margin: 0; border: 1px solid var(--line); border-radius: 26px; background: var(--surface); box-shadow: 0 8px 30px rgba(0,0,0,.22);
+    overflow: hidden;
     display: flex; flex-direction: column; transform: translateY(100%); transition: transform .22s cubic-bezier(.2, .8, .2, 1);
     padding-bottom: env(safe-area-inset-bottom); }
   .sheet.dragging { transition: none; }

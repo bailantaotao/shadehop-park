@@ -32,9 +32,14 @@ def directions_url(p: dict) -> str:
     return "https://www.google.com/maps/dir/?api=1&destination=" + quote(_place_query(p))
 
 
-def place_url(loc: dict | None) -> str | None:
-    """Google Maps pin at a nearby toilet, shop or station (coordinates: the name alone can match a
-    different branch of the same chain)."""
+def place_url(loc: dict | None, name: str | None = None, kind: str | None = None) -> str | None:
+    """Google Maps for a nearby parking lot, toilet, shop, station or charger: search its name (or
+    the kind of place when it has none, e.g. 停車場) with the map centred on its coordinates, so
+    Google shows its own labelled place there rather than an anonymous dropped pin, and a chain
+    name such as 7-Eleven picks the branch at that spot."""
     if not loc:
         return None
-    return f"https://www.google.com/maps/search/?api=1&query={loc['lat']},{loc['lng']}"
+    term = (name or "").strip() or (kind or "").strip()
+    if not term:
+        return f"https://www.google.com/maps/search/?api=1&query={loc['lat']},{loc['lng']}"
+    return f"https://www.google.com/maps/search/{quote(term, safe='')}/@{loc['lat']},{loc['lng']},19z"

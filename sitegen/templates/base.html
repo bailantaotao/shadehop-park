@@ -6,6 +6,17 @@
 <title>{% block title %}{{ SITE_NAME }}（{{ COVERAGE_SHORT }}）{% endblock %}</title>
 <meta name="description" content="{% block description %}{{ meta.coverage }}遮陽、下雨也能玩的兒童遊戲場地圖：依時間顯示大樓陰影、附近停車場與電動車快充/慢充。{% endblock %}">
 <link rel="canonical" href="{% block canonical %}{{ site_url }}/{% endblock %}">
+{# Link previews (LINE, Messenger, Facebook, X): a reason to tap, not just the page title. #}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ SITE_NAME }}">
+<meta property="og:title" content="{% block og_title %}{{ SITE_NAME }}｜幾點去不曬、下雨也能玩{% endblock %}">
+<meta property="og:description" content="{% block og_description %}找附近現在不曬的兒童遊戲場：每半小時的遮陰、下雨可玩的高架下公園，還有停車、廁所與充電站。{% endblock %}">
+<meta property="og:url" content="{{ self.canonical() }}">
+<meta property="og:image" content="{{ site_url }}/static/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="text/plain" title="LLM guide" href="{{ site_url }}/llms.txt">
 <link rel="alternate" type="application/geo+json" title="Parks GeoJSON" href="{{ site_url }}/api/parks.geojson">
 <link rel="stylesheet" href="{{ root }}{{ asset('static/style.css') }}">

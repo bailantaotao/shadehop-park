@@ -743,7 +743,9 @@
     resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false");
     searchEl.blur();
   }
-  searchEl.addEventListener("click", function (e) {
+  // iOS Safari does not fire "click" for the first tap on a read-only field, so start on touchend
+  // (still a user gesture, so the keyboard opens); "click" covers mouse and other browsers.
+  function startSearch(e) {
     if (!phone.matches || searching) return;
     e.preventDefault();
     searchFrom = sheetState; searching = true;
@@ -753,7 +755,9 @@
     $("#searchCancel").hidden = false;
     searchEl.blur(); searchEl.readOnly = false; searchEl.focus();
     if (searchQ) runSearch();
-  });
+  }
+  searchEl.addEventListener("touchend", startSearch, { passive: false });
+  searchEl.addEventListener("click", startSearch);
   searchEl.addEventListener("focus", function () {
     if (phone.matches) requestAnimationFrame(function () { window.scrollTo(0, 0); });
   });
@@ -1019,7 +1023,7 @@
       (p.floors ? "樓層：" + esc(p.floors) + "<br>" : "") +
       (p.restriction ? "限制：" + esc(p.restriction) + "<br>" : "") +
       (p.operator ? "營運：" + esc(p.operator) + "<br>" : "") +
-      '<a href="https://www.google.com/maps/dir/?api=1&destination=' + f.geometry.coordinates[1] + "," + f.geometry.coordinates[0] + '" rel="noopener" target="_blank">導航</a> · ' +
+      '<a href="https://www.google.com/maps/search/' + encodeURIComponent(p.name) + "/@" + f.geometry.coordinates[1] + "," + f.geometry.coordinates[0] + ',19z" rel="noopener" target="_blank">在 Google 地圖查看</a> · ' +
       (p.source === "tdx" ? '<span class="small">資料介接「交通部TDX平臺」</span>'
         : '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>');
   }

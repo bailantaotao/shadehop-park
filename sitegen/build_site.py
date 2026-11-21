@@ -222,6 +222,65 @@ def slim(p: dict) -> dict:
     return {k: v for k, v in p.items() if k not in SLIM_DROP}
 
 
+def parking_name(q: dict) -> str:
+    """A lot's own name, or "" when the name is only its kind (平面停車場) - search 停車場 then."""
+    return "" if q.get("name") == q.get("kind_label") else (q.get("name") or "")
+
+
+def best_daytime(row: list) -> dict | None:
+    """Longest run of >= 60% shade between 08:00 and 17:00 (same rule as the map)."""
+    best, start = None, None
+    for i in range(4, 23):
+        ok = i < 22 and row[i] is not None and row[i] >= 0.6
+        if ok and start is None:
+            start = i
+        if not ok and start is not None:
+            if not best or i - start > best[1] - best[0]:
+                best = (start, i)
+            start = None
+    if not best:
+        return None
+    lab = lambda k: f"{(360 + k * 30) // 60}:{'30' if k % 2 else '00'}"
+    return {"start": lab(best[0]), "end": lab(best[1])}
+
+
+def share_summary(p: dict, month: int) -> str:
+    """What a link preview (LINE, Messenger, search results) shows: the reasons to go, plainly.
+    Only facts we have; nothing when we do not (no 大多曝曬 as the headline)."""
+    bits = []
+    rain = p["rain_cover"]["value"]
+    if rain is True:
+        bits.append("下雨也能玩")
+    elif rain == "partial":
+        bits.append("部分區域可躲雨")
+    if p.get("level") == "B":
+        bits.append("有樹蔭")
+    w = best_daytime((p["shade_timetable"]["slots"] or {}).get(str(month)) or [])
+    if w:
+        bits.append(f"{month} 月最陰涼 {w['start']}–{w['end']}")
+    equip = list(((p.get("official") or {}).get("equipment") or {}).keys()) or list((p.get("playground") or {}).get("equipment") or [])
+    equip = [e for e in equip if e not in ("其他", "其它")]
+    if equip:
+        bits.append("遊具：" + "、".join(equip[:3]) + ("等" if len(equip) > 3 else ""))
+    # Within 50 m reads better as "就在旁邊" than as a number like 1m.
+    items = []
+    if p["parking"]:
+        items.append(("停車場", p["parking"][0]["distance_m"]))
+    t = p["amenities"].get("toilet") or {}
+    if t.get("value"):
+        items.append(("廁所", t["distance_m"]))
+    if p["charger_summary"]["nearest_fast_m"] is not None:
+        items.append(("快充", p["charger_summary"]["nearest_fast_m"]))
+    beside = [w for w, m in items if m < 50]
+    if beside:
+        bits.append("、".join(beside) + "就在旁邊")
+    far = [f"{w} {m}m" for w, m in items if m >= 50]
+    if far:
+        bits.append("、".join(far))
+    head = "・".join(bits) if bits else f"{p['region']['district']}的兒童遊戲場"
+    return head + "。打開看今天每半小時哪裡不曬，一鍵導航。"
+
+
 def build(out: Path = OUT) -> None:
     meta, parks = load_dataset(DATA)
     # Display-only links are added here, not in the pipeline, so changing them needs no data rebuild.
@@ -242,10 +301,10 @@ def build(out: Path = OUT) -> None:
         links[p["id"]] = {
             "gmaps": p["google_maps_url"], "nav": p["directions_url"],
             "toilet_m": near(p, "toilet").get("distance_m"), "shop_m": near(p, "convenience_store").get("distance_m"),
-            "toilet_url": place_url(near(p, "toilet").get("location")),
-            "shop_url": place_url(near(p, "convenience_store").get("location")),
-            "parking_url": place_url(p["parking"][0]["location"]) if p["parking"] else None,
-            "charger_url": place_url(c["location"]) if c else None,
+            "toilet_url": place_url(near(p, "toilet").get("location"), near(p, "toilet").get("name"), "公廁"),
+            "shop_url": place_url(near(p, "convenience_store").get("location"), near(p, "convenience_store").get("name"), "便利商店"),
+            "parking_url": place_url(p["parking"][0]["location"], parking_name(p["parking"][0]), "停車場") if p["parking"] else None,
+            "charger_url": place_url(c["location"], c.get("name"), "充電站") if c else None,
         }
     if out.exists():
         shutil.rmtree(out)
@@ -253,6 +312,8 @@ def build(out: Path = OUT) -> None:
     env = Environment(loader=FileSystemLoader(ROOT / "sitegen" / "templates"), autoescape=select_autoescape(["html"]))
     env.filters["shade_class"] = shade_class
     env.filters["place_url"] = place_url
+    env.globals["place_url"] = place_url
+    env.globals["parking_name"] = parking_name
     # Fingerprint static files (?v=<content hash>) so browsers never pair a new page with an old
     # cached script or stylesheet - some mobile and in-app browsers keep stale copies.
     def asset(path: str) -> str:
@@ -331,8 +392,10 @@ def build(out: Path = OUT) -> None:
     render("about.html", "about/index.html", dataset_ld=dataset_ld)
     render("terms.html", "terms/index.html")
     shadier = shadier_nearby(parks)
+    share_month = date.today().month  # link previews name this month's shadiest time
     for p in parks:
         render("park.html", f"parks/{p['id']}/index.html", p=p, ld=park_jsonld(p, meta), description=describe(p),
+               share=share_summary(p, share_month),
                shadier=shadier.get(p["id"], []))
 
     (out / "llms.txt").write_text(env.get_template("llms.txt").render(**ctx, parks=parks))

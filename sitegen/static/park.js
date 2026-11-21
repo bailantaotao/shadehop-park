@@ -96,7 +96,7 @@
   document.getElementById("todayBar").setAttribute("aria-label", "今天每半小時的遮陰：" + window.ShadeHopStripText(row));
   document.getElementById("todayBar").innerHTML = row.map(function (x, i) {
     var label = (6 + Math.floor(i / 2)) + ":" + (i % 2 ? "30" : "00") + " " + (x === null ? "無日照" : Math.round(x * 100) + "%");
-    var vx = window.ShadeHopVerdict(x, i);  // same colours as the map: 陽光弱 before 08:00 / from 17:00
+    var vx = window.ShadeHopVerdict(x, i);  // same colours as the map: 不太曬 before 08:00 / from 17:00
     return '<span class="' + vx.cls + (i === idx ? " cur" : "") + '" title="' + label + " " + vx.word + '"></span>';
   }).join("");
 

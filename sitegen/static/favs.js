@@ -36,11 +36,11 @@
 
   // Is this half-hour a good time to go? v = shade share 0..1 (null: sun not up), slot = 0 for 06:00.
   // Before 08:00 and from 17:00 the sun is low and weak: a high shade share then is not a reason to go,
-  // so those slots say 陽光弱 instead of grading the shade (8-17 is the window the best-time hint uses).
+  // so those slots say 不太曬 instead of grading the shade (8-17 is the window the best-time hint uses).
   window.ShadeHopVerdict = function (v, slot) {
     if (v === null || v === undefined) return { cls: "night", word: "沒有直射陽光", text: "沒有直射陽光" };
     var pct = "（遮陰 " + Math.round(v * 100) + "%）";
-    if (slot < 4 || slot >= 22) return { cls: "weak", word: "陽光弱", text: "陽光弱" + pct };
+    if (slot < 4 || slot >= 22) return { cls: "weak", word: "不太曬", text: "太陽低，不太曬" };
     var cls = v >= 0.6 ? "hi" : v >= 0.3 ? "mid" : "lo";
     var word = { hi: "適合", mid: "還可以", lo: "太曬" }[cls];
     return { cls: cls, word: word, text: word + pct };

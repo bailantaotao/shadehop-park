@@ -29,7 +29,7 @@
   </div>
   <div class="chips filters" role="group" aria-label="條件">
     <button class="chip" data-filter="rain" aria-pressed="false">{{ icon("umbrella") }}下雨可玩</button>
-    <button class="chip" data-filter="shade" aria-pressed="false">{{ icon("trees") }}選定時間有遮陰</button>
+    <button class="chip" data-filter="shade" aria-pressed="false">{{ icon("trees") }}這個時間有遮陰</button>
     <button class="chip" data-filter="confirmed" aria-pressed="false" title="隱藏遊具還沒確認的公園">{{ icon("kid") }}確定有遊戲場</button>
     <button class="chip more" id="moreBtn" type="button" aria-expanded="false" aria-controls="moreFilters">更多條件<span class="n"></span></button>
   </div>
@@ -65,6 +65,9 @@
 <section class="sheet" id="sheet" aria-label="公園清單">
 <div class="sheet-head" id="sheetHead">
   <button type="button" class="sheet-handle" id="sheetHandle" aria-controls="sheetBody" aria-label="展開清單"></button>
+  {# Phones: search and the time row live here, within thumb reach (app.js moves them in). #}
+  <div class="sheet-search" id="sheetSearch"></div>
+  <div class="sheet-time" id="sheetTime"></div>
   <div class="sheet-summary" id="sheetSummary" role="status" aria-live="polite">地圖載入中…</div>
   <div class="sheet-key" aria-hidden="true"><i class="dot hi"></i>適合<i class="dot mid"></i>還可以<i class="dot lo"></i>太曬<i class="dot weak"></i>陽光弱<i class="dot a"></i>下雨可玩</div>
 </div>

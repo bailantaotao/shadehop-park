@@ -247,7 +247,7 @@
       autoPanPaddingTopLeft: L.point(56, 70), autoPanPaddingBottomRight: L.point(8, 24) };
   }
 
-  var TICK_ZOOM = 13;
+  var TICK_ZOOM = 14;
   var TICK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4.5 4.5 8.5-9" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var tickMode = null;
   map.on("zoomend", function () {
@@ -487,7 +487,7 @@
 
   // No park in view matches: say which filters are on (each removable), when shade comes back, and
   // the nearest match outside the view.
-  var FILTER_LABEL = { rain: "下雨可玩", shade: "選定時間有遮陰", confirmed: "確定有遊戲場", fav: "我的最愛", parking: "停車 ≤ 300m",
+  var FILTER_LABEL = { rain: "下雨可玩", shade: "這個時間有遮陰", confirmed: "確定有遊戲場", fav: "我的最愛", parking: "停車 ≤ 300m",
     fast: CHARGER_R + "m 內有快充", slow: CHARGER_R + "m 內有慢充", toilet: "附近有廁所" };
   // Next half-hour today with shade for some park in view (other filters kept), or -1.
   function nextShadeSlot() {
@@ -508,7 +508,7 @@
       L.DomEvent.disableClickPropagation(el);  // a tap here is not a tap on the map
       el.addEventListener("click", function (e) {
         var j = e.target.closest("[data-jump]"), c = e.target.closest("[data-clear]"), g = e.target.closest("[data-goto]");
-        if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); }
+        if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
         if (c) clearFilter("all");
         if (g) focusPark(g.dataset.goto);
       });
@@ -590,22 +590,12 @@
     $("#date").value = state.date;
     $("#slot").value = state.slot;
     var early = t.min < SLOT_START, late = t.min >= SLOT_START + SLOTS * SLOT_MIN;
-    nowNote(early || late ? "現在 " + hhmm(t.min) + (early ? "，天還沒亮，先顯示早上 " : "，太陽快下山了，顯示 ") + slotLabel(state.slot) : "");
     atNow = !(early || late);
   }
-  var atNow = true, noteText = "";
-  function nowNote(text) {
-    noteText = text;
-    if (!text) atNow = false;  // any manual time change leaves "now"
-    var el = map.getContainer().querySelector(".map-note");
-    if (!el && !text) return;
-    if (!el) { el = L.DomUtil.create("div", "map-note", map.getContainer()); el.setAttribute("role", "status"); }
-    el.textContent = text;
-    el.hidden = !text;
-  }
+  var atNow = true;  // any manual time change leaves "now"
 
-  $("#slot").addEventListener("input", function (e) { state.slot = Number(e.target.value); nowNote(""); render(); });
-  $("#date").addEventListener("change", function (e) { if (e.target.value) { state.date = e.target.value; nowNote(""); render(); } });
+  $("#slot").addEventListener("input", function (e) { state.slot = Number(e.target.value); atNow = false; render(); });
+  $("#date").addEventListener("change", function (e) { if (e.target.value) { state.date = e.target.value; atNow = false; render(); } });
   $("#nowBtn").addEventListener("click", function () { setNow(); render(); });
   $("#playBtn").addEventListener("click", function (e) {
     var btn = e.currentTarget;
@@ -727,6 +717,18 @@
     resultsEl.hidden = true;
     searchEl.setAttribute("aria-expanded", "false");
     searchEl.blur();
+    searchDone(!!(li.dataset.id && markers[li.dataset.id]));
+  }
+  // Phones: searching takes the whole sheet (the field rises to the top, clear of the keyboard).
+  var searchFrom = null;
+  searchEl.addEventListener("focus", function () {
+    if (!phone.matches || sheetState === "full") return;
+    searchFrom = sheetState; closePark(); closeFilters(); setSheet("full");
+  });
+  function searchDone(toPark) {
+    if (!phone.matches || searchFrom === null) return;
+    var back = searchFrom; searchFrom = null;
+    if (!toPark) setSheet(back === "full" ? "half" : back);
   }
   var searchTimer = null;
   searchEl.addEventListener("input", function () {
@@ -737,7 +739,7 @@
   });
   searchEl.addEventListener("keydown", function (e) {
     if (e.key === "Enter") { e.preventDefault(); chooseResult(resultsEl.querySelector("li[tabindex]")); }
-    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); }
+    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); searchEl.blur(); searchDone(false); }
     if (e.key === "ArrowDown") { e.preventDefault(); var first = resultsEl.querySelector("li[tabindex]"); if (first) first.focus(); }
   });
   resultsEl.addEventListener("keydown", function (e) {
@@ -779,7 +781,7 @@
       if (g) { map.setView([g.geometry.coordinates[1], g.geometry.coordinates[0]], 16); setTimeout(function () { focusPark(go.dataset.goto); }, 400); }
       return; }
     var j = e.target.closest("[data-jump]"), f = e.target.closest("[data-focus]");
-    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
     if (f) { focusPark(f.dataset.focus); return; }
     // Anywhere else on a card (not its name link, star or other buttons) also shows it on the map.
     var card = e.target.closest("[data-park]");
@@ -828,12 +830,12 @@
             undo = '<button type="button" class="link" data-clear="rain">不用，顯示全部</button>';
           }
         } else if (w.uv !== null && w.uv >= 6) {
-          ico = "sun"; msg = where.district + "今天紫外線指數 " + w.uv + "，建議選擇此時段遮陰 ≥ 60% 的公園。";
+          ico = "sun"; msg = where.district + "今天紫外線指數 " + w.uv + "，挑標示「適合」的公園比較不會曬。";
         }
         $("#weather").innerHTML = msg ? I(ico) + esc(msg + "（天氣：中央氣象署）") + (undo ? " " + undo : "") : "";
         render();
       }).catch(function () {
-        $("#weather").textContent = "天氣資料暫時無法取得，降雨與紫外線提醒先暫停。";
+        $("#weather").textContent = "暫時查不到天氣，這次沒有降雨和紫外線提醒。";
       });
   }
 
@@ -886,7 +888,7 @@
     });
     e.popup.getElement().querySelectorAll("[data-jump]").forEach(function (b) {
       b.addEventListener("click", function (ev) {
-        ev.preventDefault(); state.slot = Number(b.dataset.jump); $("#slot").value = state.slot; nowNote(""); render();
+        ev.preventDefault(); state.slot = Number(b.dataset.jump); $("#slot").value = state.slot; atNow = false; render();
       });
     });
     e.popup.getElement().querySelectorAll("[data-fav]").forEach(function (b) {
@@ -1075,7 +1077,8 @@
       mapToast(err.code === 1 ? "沒有定位權限：請在瀏覽器設定允許這個網站使用位置" : "暫時無法取得位置，請稍後再試");
     }, { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 });
   }
-  map.addControl(new LocateControl());
+  var locateCtl = new LocateControl();
+  map.addControl(locateCtl);
 
   // One charger toggle on the map (like an EV map app), with the number of stations in view.
   var BOLT = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M13.5 1.5 4 13.5h6.5L9 22.5l10-12.5h-6.6z"/></svg>';
@@ -1092,7 +1095,8 @@
       return box;
     },
   });
-  map.addControl(new ChargerControl());
+  var chargerCtl = new ChargerControl();
+  map.addControl(chargerCtl);
   function setChargers(on) {
     chargersOn = on;
     storeSet("shadehop.chargers", on ? "1" : "0");
@@ -1145,7 +1149,7 @@
   }
   var drag = null;
   sheetHead.addEventListener("pointerdown", function (e) {
-    if (!phone.matches || e.target.closest("button:not(.sheet-handle), a")) return;
+    if (!phone.matches || e.target.closest("button:not(.sheet-handle), a, input, .timebar")) return;
     drag = { y: e.clientY, from: sheetOffset(sheetState), moved: false, id: e.pointerId };
     sheet.classList.add("dragging");
   });
@@ -1196,7 +1200,7 @@
     if (e.target.closest(".sheet-close")) { closePark(); setSheet("peek"); render(true); return; }
     var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]");
     if (go) { e.preventDefault(); focusPark(go.dataset.goto); }
-    if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); }
+    if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
   });
 
   function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; }
@@ -1243,9 +1247,8 @@
       return;
     }
     var cls = window.ShadeHopVerdict(0, state.slot).cls;
-    var prefix = noteText ? esc(noteText) + "<br>" : "";
     if (cls === "weak" || state.features.length && fs.every(function (f) { var v = shadeAt(f); return v === null || v === undefined; })) {
-      el.innerHTML = prefix + "<b>" + when + "太陽很低，不太曬</b>・畫面中 " + fs.length + " 座公園";
+      el.innerHTML = "<b>" + when + "太陽很低，不太曬</b>・畫面中 " + fs.length + " 座公園";
       return;
     }
     var good = fs.filter(function (f) { return verdict(shadeAt(f)).cls === "hi" || f.properties.rain === true && verdict(shadeAt(f)).cls !== "lo"; });
@@ -1253,7 +1256,7 @@
       var ref = state.user || [map.getCenter().lng, map.getCenter().lat];
       good.sort(function (a, b) { return distM(ref, a.geometry.coordinates) - distM(ref, b.geometry.coordinates); });
       var g = good[0], d = distM(ref, g.geometry.coordinates);
-      el.innerHTML = prefix + "<b>" + when + "有 " + good.length + " 座適合</b>・" + (state.user ? "離你最近 " : "最近：") +
+      el.innerHTML = "<b>" + when + "有 " + good.length + " 座適合</b>・" + (state.user ? "離你最近 " : "最近：") +
         '<button type="button" class="link" data-goto="' + esc(g.properties.id) + '">' + esc(g.properties.name) + "</button>" +
         (state.user ? " " + (d < 1000 ? Math.round(d) + "m" : (d / 1000).toFixed(1) + " km") : "");
       return;
@@ -1265,13 +1268,13 @@
       if (n) later = i;
     }
     state.slot = keep;
-    el.innerHTML = prefix + "<b>" + when + "畫面中沒有適合的公園</b>" +
-      (later >= 0 ? '・<button type="button" class="link" data-jump="' + later + '">' + slotLabel(later) + " 起有 " + n + " 座</button>" : "・拉開清單看看遮陰最多的");
+    el.innerHTML = "<b>" + when + "畫面中沒有適合的公園</b>" +
+      (later >= 0 ? '・<button type="button" class="link" data-jump="' + later + '">' + slotLabel(later) + " 起有 " + n + " 座</button>" : "・往上拉清單，看哪座遮陰最多");
   }
   sheetHead.addEventListener("click", function (e) {
     var c = e.target.closest("[data-clear]"), j = e.target.closest("[data-jump]"), go = e.target.closest("[data-goto]");
     if (c) clearFilter(c.dataset.clear);
-    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; nowNote(""); render(); }
+    if (j) { state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
     if (go) focusPark(go.dataset.goto);
   });
 
@@ -1286,8 +1289,8 @@
     try { d.showPicker(); } catch (e) { d.focus(); d.click(); }
   });
 
-  // Move the filters, weather line and footer into the sheet on phones, and back on wider screens.
-  var moved = [["#grpPlay", ".chips.filters", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
+  // Move search, the time row, filters, weather line and footer into the sheet on phones, and back on wider screens.
+  var moved = [["#sheetSearch", ".search", true], ["#sheetTime", ".timebar", true], ["#grpPlay", ".chips.filters", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
   var homes = moved.map(function (x) { var el = $(x[1]); var mark = document.createComment("home"); el.parentNode.insertBefore(mark, el); return { el: el, mark: mark, to: x[0] }; });
   function layoutForWidth() {
     homes.forEach(function (h) {
@@ -1295,6 +1298,9 @@
       else h.mark.parentNode.insertBefore(h.el, h.mark.nextSibling);
     });
     $("#moreFilters").hidden = phone.matches ? false : $("#moreBtn").getAttribute("aria-expanded") !== "true";
+    // Phones: pinch replaces the zoom buttons (CSS hides them); locate and chargers sit bottom right, near the thumb.
+    locateCtl.setPosition(phone.matches ? "bottomright" : "topleft");
+    chargerCtl.setPosition(phone.matches ? "bottomright" : "topright");
     if (!phone.matches) { closeFilters(); closePark(); }
     syncOffsets();
     drawMarkers();

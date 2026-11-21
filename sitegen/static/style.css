@@ -80,7 +80,7 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .legend-box[open] summary { margin-bottom: 6px; }
 .legend-box .prov { margin: 8px 0 0; }
 /* The colour key inside the map (bottom left), so colours are never decoded from below the fold. */
-.map-key { background: color-mix(in srgb, var(--surface) 92%, transparent); color: var(--text); border-radius: 8px;
+.map-key { background: var(--surface); color: var(--text); border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,.25); padding: 5px 9px; display: flex; gap: 4px 10px; flex-wrap: wrap; font-size: .78rem; max-width: 220px; }
 .map-key span { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
 .map-key .dot { margin: 0; }
@@ -218,7 +218,7 @@ footer p { margin: 0 0 4px; }
   background: #fff; color: #222; font-size: 11px; font-weight: 700; line-height: 18px; box-shadow: 0 0 0 1px rgba(0,0,0,.2); }
 .chg-btn .n:empty { display: none; }
 .map-toast { position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 1000; max-width: 90%;
-  background: rgba(30,30,30,.88); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: .88rem; text-align: center; }
+  background: #1e1e1e; color: #fff; padding: 8px 14px; border-radius: 8px; font-size: .88rem; text-align: center; }
 .map-toast[hidden] { display: none; }
 
 /* TDX attribution: the logo has dark text, so give it a light backing in dark mode too. */
@@ -256,9 +256,9 @@ footer p { margin: 0 0 4px; }
 .leaflet-container:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 12px; }
 .leaflet-container:focus:not(:focus-visible) { outline: none; }
 .map-night { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); z-index: 1000; max-width: 70%;
-  background: rgba(11,26,51,.85); color: #fff; padding: 6px 12px; border-radius: 8px; font-size: .88rem; text-align: center; pointer-events: none; }
+  background: #0b1a33; color: #fff; padding: 6px 12px; border-radius: 8px; font-size: .88rem; text-align: center; pointer-events: none; }
 .map-night[hidden] { display: none; }
-.map-loading { position: absolute; left: 56px; top: 10px; z-index: 1000; background: rgba(255,255,255,.92); color: #333;
+.map-loading { position: absolute; left: 56px; top: 10px; z-index: 1000; background: var(--surface); color: var(--text);
   padding: 4px 10px; border-radius: 6px; font-size: .82rem; box-shadow: 0 1px 3px rgba(0,0,0,.25); pointer-events: none; }
 .map-loading[hidden] { display: none; }
 

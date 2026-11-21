@@ -38,7 +38,7 @@ REGIONS = {
         "city": "臺北市",
         "city_en": "Taipei City",
         "name_en": "Taipei City",
-        "label": "台北市",
+        "label": "臺北市",
         "osm_boundary": 'rel["boundary"="administrative"]["admin_level"="4"]["name"="臺北市"]',
         "osm_districts": 'rel(area.r)["boundary"="administrative"]["admin_level"="7"]',
         "osm_boundary_tags": {"boundary": "administrative", "admin_level": "4", "name": "臺北市"},

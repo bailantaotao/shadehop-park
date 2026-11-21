@@ -12,7 +12,7 @@
 {% block main %}
 <div class="controls" aria-label="篩選">
   <div class="search" role="search">
-    <input type="search" id="search" placeholder="搜尋公園或地區（例：新竹）" autocomplete="off"
+    <input type="search" id="search" placeholder="搜尋公園或地區" autocomplete="off"
            aria-label="搜尋公園" aria-controls="searchResults" aria-expanded="false">
     <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
     <button class="filter-btn" id="filterBtn" type="button" aria-controls="sheetFilters" aria-expanded="false">{{ icon("filters") }}篩選<span class="n"></span></button>
@@ -66,7 +66,7 @@
 <div class="sheet-head" id="sheetHead">
   <button type="button" class="sheet-handle" id="sheetHandle" aria-controls="sheetBody" aria-label="展開清單"></button>
   <div class="sheet-summary" id="sheetSummary" role="status" aria-live="polite">地圖載入中…</div>
-  <div class="sheet-key" aria-hidden="true"><i class="dot hi"></i>適合<i class="dot mid"></i>還可以<i class="dot lo"></i>太曬<i class="dot weak"></i>陽光弱</div>
+  <div class="sheet-key" aria-hidden="true"><i class="dot hi"></i>適合<i class="dot mid"></i>還可以<i class="dot lo"></i>太曬<i class="dot weak"></i>陽光弱<i class="dot a"></i>下雨可玩</div>
 </div>
 <div class="sheet-body" id="sheetBody">
 <div class="sheet-filters" id="sheetFilters" hidden>
@@ -80,7 +80,7 @@
   <div class="legend">
   <span><span class="dot hi"></span>適合：此時遮陰 ≥ 60%</span>
   <span><span class="dot mid"></span>還可以：30–60%</span>
-  <span><span class="dot lo"></span>太曬：&lt; 30%</span>
+  <span><span class="dot lo"></span>太曬：&lt; 30%（空心小圈）</span>
   <span><span class="dot weak"></span>陽光弱：8 點前、17 點後，太陽低、不太曬</span>
   <span><span class="dot night"></span>日出前／日落後</span>
   <span><span class="dot a"></span>藍色外框：高架或屋頂下，下雨可玩</span>
@@ -94,11 +94,12 @@
 <div class="listbar">
   <h2 id="count">公園</h2>
   <div class="chips" role="group" aria-label="排序與我的最愛">
-    <button class="chip" data-sort="shade" aria-pressed="true" title="先列下雨可玩的，再來是確定有遊戲場的，同一組裡遮陰多的在前">推薦</button>
+    <button class="chip" data-sort="shade" aria-pressed="true" aria-describedby="sortNote">推薦</button>
     <button class="chip" data-sort="near" aria-pressed="false">{{ icon("pin") }}離我最近</button>
     <button class="chip" data-filter="fav" aria-pressed="false">{{ icon("star") }}我的最愛</button>
   </div>
 </div>
+<p class="sort-note" id="sortNote">推薦順序：下雨可玩 → 確定有遊戲場 → 此時遮陰多</p>
 <div class="list" id="list"></div>
 
 <noscript>

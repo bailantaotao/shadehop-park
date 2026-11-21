@@ -247,6 +247,16 @@
       autoPanPaddingTopLeft: L.point(56, 70), autoPanPaddingBottomRight: L.point(8, 24) };
   }
 
+  // The park open in the sheet (phones) or popup gets a dark ring, so a faint dot is still findable.
+  var selLayer = L.layerGroup().addTo(map);
+  function drawSel() {
+    selLayer.clearLayers();
+    var f = state.selected && state.features.find(function (x) { return x.properties.id === state.selected; });
+    if (!f) return;
+    L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { radius: 17, color: css("--text"), weight: 3,
+      fill: false, interactive: false }).addTo(selLayer);
+  }
+  map.on("popupclose", function () { if (!phone.matches) { state.selected = null; drawSel(); } });
   var TICK_ZOOM = 14;
   var TICK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4.5 4.5 8.5-9" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var tickMode = null;
@@ -279,22 +289,23 @@
       } else if (cls === "hi") {
         m = L.circleMarker(ll, { radius: o.faint ? 5 : 7, color: rain ? css("--a") : "#fff", weight: rain ? 3 : 1.5, fillColor: css("--hi"), fillOpacity: o.faint ? .8 : 1 });
       } else if (o.faint) {
-        m = L.circleMarker(ll, { radius: 3.5, stroke: false, fillColor: css("--muted"), fillOpacity: .4 });
+        m = L.circleMarker(ll, { radius: 4.5, color: css("--surface"), weight: 1, fillColor: css("--muted"), fillOpacity: .6 });
       } else if (cls === "lo") {
         m = L.circleMarker(ll, { radius: rain ? 8 : 5, color: rain ? css("--a") : css("--lo"), weight: rain ? 3 : 1.5, fillColor: css("--surface"), fillOpacity: .9 });
       } else {
-        // 還可以, 陽光弱 and night: a plain filled dot (the brown edge keeps the amber visible on light map areas).
+        // 還可以, 不太曬 (low sun) and night: a plain filled dot (the brown edge keeps the amber visible on light map areas).
         var mid = cls === "mid";
         m = L.circleMarker(ll, { radius: rain ? 9 : mid ? 7 : 6, color: rain ? css("--a") : mid ? "#6b5000" : css("--surface"),
           weight: rain ? 3 : 1.5, fillColor: css(cls === "night" ? "--muted" : "--" + cls), fillOpacity: cls === "night" ? .85 : 1 });
       }
       // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
       if (phone.matches) m.on("click", function () { showPark(f); });
-      else m.bindPopup(function () { return popupHtml(f); }, popupOptions());
+      else m.bindPopup(function () { return popupHtml(f); }, popupOptions()).on("popupopen", function () { state.selected = p.id; drawSel(); });
       m.addTo(markerLayer);
       markers[p.id] = m;
     });
     if (open && markers[open]) markers[open].openPopup();
+    drawSel();
     if (phone.matches && state.selected && !$("#sheetPark").hidden) {
       var sel = state.features.find(function (x) { return x.properties.id === state.selected; });
       if (sel && passes(sel)) $("#sheetParkBody").innerHTML = popupHtml(sel);  // the selected time changed
@@ -1099,7 +1110,6 @@
     onAdd: function () {
       var box = L.DomUtil.create("div", "map-key");
       box.innerHTML = '<span><i class="dot hi"></i>適合</span><span><i class="dot mid"></i>還可以</span><span><i class="dot lo"></i>太曬</span>' +
-        '<span><i class="dot weak"></i>陽光弱</span>' +
         '<span><i class="dot a"></i>下雨可玩</span><span><i class="dot unconfirmed"></i>遊具待確認</span>';
       box.setAttribute("aria-hidden", "true");  // the same words are in the list cards and popups
       return box;
@@ -1181,6 +1191,7 @@
     state.selected = f.properties.id;
     $("#sheetParkBody").innerHTML = popupHtml(f);
     sheetPark.hidden = false;
+    drawSel();
     sheet.classList.add("has-park");  // the park answers the question; the area summary steps aside
     closeFilters();
     sheetBody.scrollTop = 0;
@@ -1199,7 +1210,7 @@
     if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
   });
 
-  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; }
+  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; drawSel(); }
   // Filters take the sheet over; the park card the parent was looking at comes back when they are done.
   var parkBeforeFilters = null;
   function openFilters() {
@@ -1228,6 +1239,11 @@
   // The one-line answer in the sheet head: how many parks in view suit the selected time, or why none.
   function updateSummary(fs) {
     var el = $("#sheetSummary");
+    // Early morning, evening and night have no shade to compare: the colour key would only add a
+    // question ("which colour do I look for?"), so it steps aside and the answer says why.
+    var dark = fs.length > 0 && fs.every(function (f) { var v = shadeAt(f); return v === null || v === undefined; });
+    var low = dark || window.ShadeHopVerdict(0, state.slot).cls === "weak";
+    document.body.classList.toggle("low-sun", low);
     if (startOpen()) { el.textContent = "選一個地方開始，看附近現在不曬的公園"; return; }
     if (!state.features.length) { el.textContent = "地圖載入中…"; return; }
     var covered = state.regions.some(function (r) { return regionInView(r); });
@@ -1242,11 +1258,8 @@
         (on ? '・<button type="button" class="link" data-clear="all">取消篩選</button>' : "");
       return;
     }
-    var cls = window.ShadeHopVerdict(0, state.slot).cls;
-    if (cls === "weak" || state.features.length && fs.every(function (f) { var v = shadeAt(f); return v === null || v === undefined; })) {
-      el.innerHTML = "<b>" + when + "太陽很低，不太曬</b>・畫面中 " + fs.length + " 座公園";
-      return;
-    }
+    if (dark) { el.innerHTML = "<b>" + when + "天黑了，沒有直射陽光</b>・畫面中 " + fs.length + " 座公園"; return; }
+    if (low) { el.innerHTML = "<b>" + when + "太陽低，哪座都不太曬</b>，挑近的就好・畫面中 " + fs.length + " 座公園"; return; }
     var good = fs.filter(function (f) { return verdict(shadeAt(f)).cls === "hi" || f.properties.rain === true && verdict(shadeAt(f)).cls !== "lo"; });
     if (good.length) {
       var ref = state.user || [map.getCenter().lng, map.getCenter().lat];

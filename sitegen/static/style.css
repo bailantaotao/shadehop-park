@@ -86,6 +86,8 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .map-key .dot { margin: 0; }
 .dot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; vertical-align: -1px; margin-right: 4px; }
 .dot.a { background: transparent; border: 3px solid var(--a); } .dot.hi { background: var(--hi); } .dot.mid { background: var(--mid); } .dot.lo { background: var(--lo); } .dot.night { background: var(--night); }
+/* Early morning, evening and night: no shade to compare, so no colour key (the answer says why). */
+.low-sun .sheet-key, .low-sun .map-key { display: none; }
 .dot.unconfirmed { width: 8px; height: 8px; background: var(--muted); opacity: .45; }
 /* Map keys draw the dots the way the map draws markers: a tick for 適合, a quiet ring for 太曬. */
 :is(.map-key, .sheet-key, .legend-box) .dot.hi { width: 14px; height: 14px; vertical-align: -3px;

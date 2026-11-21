@@ -286,7 +286,7 @@
         // 還可以, 陽光弱 and night: a plain filled dot (the brown edge keeps the amber visible on light map areas).
         var mid = cls === "mid";
         m = L.circleMarker(ll, { radius: rain ? 9 : mid ? 7 : 6, color: rain ? css("--a") : mid ? "#6b5000" : css("--surface"),
-          weight: rain ? 3 : 1.5, fillColor: css("--" + cls), fillOpacity: cls === "night" ? .6 : 1 });
+          weight: rain ? 3 : 1.5, fillColor: css(cls === "night" ? "--muted" : "--" + cls), fillOpacity: cls === "night" ? .85 : 1 });
       }
       // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
       if (phone.matches) m.on("click", function () { showPark(f); });
@@ -717,18 +717,6 @@
     resultsEl.hidden = true;
     searchEl.setAttribute("aria-expanded", "false");
     searchEl.blur();
-    searchDone(!!(li.dataset.id && markers[li.dataset.id]));
-  }
-  // Phones: searching takes the whole sheet (the field rises to the top, clear of the keyboard).
-  var searchFrom = null;
-  searchEl.addEventListener("focus", function () {
-    if (!phone.matches || sheetState === "full") return;
-    searchFrom = sheetState; closePark(); closeFilters(); setSheet("full");
-  });
-  function searchDone(toPark) {
-    if (!phone.matches || searchFrom === null) return;
-    var back = searchFrom; searchFrom = null;
-    if (!toPark) setSheet(back === "full" ? "half" : back);
   }
   var searchTimer = null;
   searchEl.addEventListener("input", function () {
@@ -739,7 +727,7 @@
   });
   searchEl.addEventListener("keydown", function (e) {
     if (e.key === "Enter") { e.preventDefault(); chooseResult(resultsEl.querySelector("li[tabindex]")); }
-    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); searchEl.blur(); searchDone(false); }
+    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); }
     if (e.key === "ArrowDown") { e.preventDefault(); var first = resultsEl.querySelector("li[tabindex]"); if (first) first.focus(); }
   });
   resultsEl.addEventListener("keydown", function (e) {
@@ -1289,8 +1277,8 @@
     try { d.showPicker(); } catch (e) { d.focus(); d.click(); }
   });
 
-  // Move search, the time row, filters, weather line and footer into the sheet on phones, and back on wider screens.
-  var moved = [["#sheetSearch", ".search", true], ["#sheetTime", ".timebar", true], ["#grpPlay", ".chips.filters", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
+  // Move the time row, the extra filters, weather line and footer into the sheet on phones, and back on wider screens.
+  var moved = [["#sheetTime", ".timebar", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
   var homes = moved.map(function (x) { var el = $(x[1]); var mark = document.createComment("home"); el.parentNode.insertBefore(mark, el); return { el: el, mark: mark, to: x[0] }; });
   function layoutForWidth() {
     homes.forEach(function (h) {

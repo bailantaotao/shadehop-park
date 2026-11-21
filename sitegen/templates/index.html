@@ -18,9 +18,10 @@
     <a class="search-about" href="{{ root }}about/" aria-label="資料與方法">{{ icon("info") }}</a>
   </div>
   <div class="timebar">
-    <button class="chip date-btn" id="dateBtn" type="button" aria-label="選擇日期">今天</button>
     <label for="date" class="tlabel">日期</label>
-    <input type="date" id="date">
+    {# Phones show 今天 / 明天 / M/D; the real date field lies on top of it, so a tap opens the
+       system date picker directly (iOS Safari ignores showPicker on a hidden field). #}
+    <span class="date-pick"><span class="chip date-btn" id="dateBtn" aria-hidden="true">今天</span><input type="date" id="date"></span>
     <label for="slot" class="tlabel">時間</label>
     <input type="range" id="slot" min="0" max="23" step="1" value="8" aria-describedby="slotOut">
     <output id="slotOut" for="slot">10:00</output>

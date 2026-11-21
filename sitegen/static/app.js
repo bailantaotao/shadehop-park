@@ -1274,16 +1274,12 @@
     if (go) focusPark(go.dataset.goto);
   });
 
-  // Date button (phones): 今天 / 明天 / M/D, opening the native date picker.
+  // Date label (phones): 今天 / 明天 / M/D; the transparent date field on top of it opens the picker.
   function dateLabel() {
     var t = taipeiNow(), today = new Date(Date.UTC(t.y, t.m - 1, t.d)), p = state.date.split("-").map(Number);
     var diff = Math.round((Date.UTC(p[0], p[1] - 1, p[2]) - today) / 86400000);
     $("#dateBtn").textContent = diff === 0 ? "今天" : diff === 1 ? "明天" : p[1] + "/" + p[2];
   }
-  $("#dateBtn").addEventListener("click", function () {
-    var d = $("#date");
-    try { d.showPicker(); } catch (e) { d.focus(); d.click(); }
-  });
 
   // Move the time row, the extra filters, weather line and footer into the sheet on phones, and back on wider screens.
   var moved = [["#sheetTime", ".timebar", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];

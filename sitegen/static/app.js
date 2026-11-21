@@ -728,7 +728,44 @@
     resultsEl.hidden = true;
     searchEl.setAttribute("aria-expanded", "false");
     searchEl.blur();
+    leaveSearch(!!(li.dataset.id && markers[li.dataset.id]));
   }
+  // Phones: the field sits in the bottom sheet, read-only until tapped. A tap first opens the sheet
+  // to full height (no animation) so the field is already at the top, then focuses it inside the
+  // same gesture: iOS then has nothing to scroll into view above the keyboard (it used to push the
+  // whole page up and the field out of sight).
+  var searching = false, searchFrom = "peek";
+  function endSearch() {
+    searching = false;
+    sheet.classList.remove("searching"); document.body.classList.remove("searching");
+    searchEl.readOnly = phone.matches;
+    $("#searchCancel").hidden = true;
+    resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false");
+    searchEl.blur();
+  }
+  searchEl.addEventListener("click", function (e) {
+    if (!phone.matches || searching) return;
+    e.preventDefault();
+    searchFrom = sheetState; searching = true;
+    closePark(); closeFilters();
+    sheet.classList.add("searching"); document.body.classList.add("searching");
+    sheet.style.transition = "none"; setSheet("full"); void sheet.offsetHeight; sheet.style.transition = "";
+    $("#searchCancel").hidden = false;
+    searchEl.blur(); searchEl.readOnly = false; searchEl.focus();
+    if (searchQ) runSearch();
+  });
+  searchEl.addEventListener("focus", function () {
+    if (phone.matches) requestAnimationFrame(function () { window.scrollTo(0, 0); });
+  });
+  function leaveSearch(toPark) {
+    if (!searching) return;
+    endSearch();
+    if (!toPark) setSheet(searchFrom === "full" ? "half" : searchFrom);
+  }
+  $("#searchCancel").addEventListener("click", function () { searchEl.value = ""; searchQ = ""; leaveSearch(false); });
+  if (window.visualViewport) visualViewport.addEventListener("resize", function () {
+    document.documentElement.style.setProperty("--vvh", visualViewport.height + "px");
+  });
   var searchTimer = null;
   searchEl.addEventListener("input", function () {
     searchQ = searchEl.value.trim();
@@ -738,7 +775,7 @@
   });
   searchEl.addEventListener("keydown", function (e) {
     if (e.key === "Enter") { e.preventDefault(); chooseResult(resultsEl.querySelector("li[tabindex]")); }
-    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); }
+    if (e.key === "Escape") { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); leaveSearch(false); }
     if (e.key === "ArrowDown") { e.preventDefault(); var first = resultsEl.querySelector("li[tabindex]"); if (first) first.focus(); }
   });
   resultsEl.addEventListener("keydown", function (e) {
@@ -1137,6 +1174,7 @@
   function setSheet(st) {
     // Collapsing to the one-line answer puts away whatever was open.
     if (st === "peek" && phone.matches) { if (!sheetPark.hidden) { closePark(); render(true); } if (!$("#sheetFilters").hidden) closeFilters(); }
+    if (searching && st !== "full") endSearch();  // dragged down while searching
     sheetState = st;
     if (!phone.matches) { sheet.style.transform = ""; return; }
     sheet.style.transform = "translateY(" + sheetOffset(st) + "px)";
@@ -1258,7 +1296,7 @@
         (on ? '・<button type="button" class="link" data-clear="all">取消篩選</button>' : "");
       return;
     }
-    if (dark) { el.innerHTML = "<b>" + when + "天黑了，沒有直射陽光</b>・畫面中 " + fs.length + " 座公園"; return; }
+    if (dark) { el.innerHTML = "<b>" + when + (state.slot < 12 ? "日出前，還沒有直射陽光" : "天黑了，沒有直射陽光") + "</b>・畫面中 " + fs.length + " 座公園"; return; }
     if (low) { el.innerHTML = "<b>" + when + "太陽低，哪座都不太曬</b>，挑近的就好・畫面中 " + fs.length + " 座公園"; return; }
     var good = fs.filter(function (f) { return verdict(shadeAt(f)).cls === "hi" || f.properties.rain === true && verdict(shadeAt(f)).cls !== "lo"; });
     if (good.length) {
@@ -1294,8 +1332,8 @@
     $("#dateBtn").textContent = diff === 0 ? "今天" : diff === 1 ? "明天" : p[1] + "/" + p[2];
   }
 
-  // Move the time row, the extra filters, weather line and footer into the sheet on phones, and back on wider screens.
-  var moved = [["#sheetTime", ".timebar", true], ["#grpGo", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
+  // Phones: search and the time row go into the sheet, every filter into the one chip row on top; back on wider screens.
+  var moved = [["#sheetSearch", ".search", true], ["#sheetTime", ".timebar", true], ["#chipsMain", "#moreFilters", true], ["#sheetHead", "#weather", true], ["#sheetBody", "footer", false]];
   var homes = moved.map(function (x) { var el = $(x[1]); var mark = document.createComment("home"); el.parentNode.insertBefore(mark, el); return { el: el, mark: mark, to: x[0] }; });
   function layoutForWidth() {
     homes.forEach(function (h) {
@@ -1303,6 +1341,7 @@
       else h.mark.parentNode.insertBefore(h.el, h.mark.nextSibling);
     });
     $("#moreFilters").hidden = phone.matches ? false : $("#moreBtn").getAttribute("aria-expanded") !== "true";
+    searchEl.readOnly = phone.matches && !searching;
     // Phones: pinch replaces the zoom buttons (CSS hides them); locate and chargers sit bottom right, near the thumb.
     locateCtl.setPosition(phone.matches ? "bottomright" : "topleft");
     chargerCtl.setPosition(phone.matches ? "bottomright" : "topright");

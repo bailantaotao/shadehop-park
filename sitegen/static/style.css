@@ -99,6 +99,16 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .mk-hi svg { width: 62%; height: 62%; }
 .mk-hi.rain { box-shadow: 0 0 0 3px var(--a), 0 2px 6px rgba(0,0,0,.35); }
 .mk-hi.unsure { border-style: dashed; opacity: .85; }
+/* The tapped park: its own marker, grown and lifted while its card or popup is open. */
+.leaflet-marker-icon.mk-sel { display: flex; align-items: center; justify-content: center; pointer-events: none; }
+.mk-sel-in { display: flex; transform: scale(var(--s)); filter: drop-shadow(0 3px 4px rgba(0,0,0,.35)); }
+.mk-sel .mk-hi { opacity: 1; box-shadow: none; }
+.mk-sel .mk-hi.rain { box-shadow: 0 0 0 3px var(--a); }
+.sel-dot { display: block; box-sizing: border-box; border-radius: 50%; }
+.mk-sel.pop .mk-sel-in { animation: sel-pop .34s cubic-bezier(.2, .9, .3, 1.25) both; }
+@keyframes sel-pop { 0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
+  55% { transform: scale(calc(var(--s) * 1.14)); } 100% { transform: scale(var(--s)); } }
+@media (prefers-reduced-motion: reduce) { .mk-sel.pop .mk-sel-in { animation: none; } }
 .listbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin: 18px 0 10px; }
 .listbar h2 { margin: 0; }
 .sort-note { margin: -4px 0 10px; font-size: .82rem; color: var(--muted); }

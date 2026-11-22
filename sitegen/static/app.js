@@ -913,8 +913,7 @@
     var m = markers[id];
     if (!m) return;
     state.selected = id;
-    if (phone.matches) {
-      map.setView(m.getLatLng(), Math.max(map.getZoom(), 17));
+    if (phone.matches) {  // showPark zooms in and centres it above the sheet
       showPark(state.features.find(function (x) { return x.properties.id === id; }));
       return;
     }
@@ -1370,6 +1369,16 @@
     var y = map.latLngToContainerPoint(ll).y, want = (top + bottom) / 2;
     if (y < top + 20 || y > bottom - 20) map.panBy([0, y - want]);
   }
+  // A tapped park: zoom in to street level (never out) with the park in the middle of the map strip
+  // left open between the floating chips and the half sheet.
+  var PARK_ZOOM = 17;
+  function centreOn(ll, z) {
+    var size = map.getSize(), mapTop = map.getContainer().getBoundingClientRect().top;
+    var top = $(".controls").getBoundingClientRect().bottom - mapTop, bottom = window.innerHeight - sheetMetrics().half - mapTop;
+    var want = L.point(size.x / 2, (top + bottom) / 2);
+    var centre = map.unproject(map.project(ll, z).add(size.divideBy(2)).subtract(want), z);
+    map.setView(centre, z);
+  }
   function showCharger(f) {
     state.selected = null;
     setCard("chg", chargerCard(f).head, chargerCard(f).body);
@@ -1461,7 +1470,7 @@
     closeFilters();
     sheetBody.scrollTop = 0;
     setSheet("half");
-    keepInView(L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]));
+    centreOn(L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]), Math.max(map.getZoom(), PARK_ZOOM));
     render(true);
     drawSel();
   }

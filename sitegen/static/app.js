@@ -701,7 +701,7 @@
   function nearPlaces(d, kind) {
     var a = d.amenities || {}, one = function (x) { return x && x.value && x.location ? [x] : []; };
     if (kind === "parking") return (d.parking || []).slice(0, 5);
-    if (kind === "charge") return (d.chargers || []).slice(0, 6);
+    if (kind === "charge") return d.chargers || [];
     if (kind === "toilet") return one(a.toilet);
     return one(a.convenience_store);
   }
@@ -710,10 +710,23 @@
     return n && n !== x.kind_label ? n : NEAR[kind].label;
   }
   function placeLink(x, kind, area) {
-    // Its own name (with the area) finds that very spot; a nameless one searches the kind there.
-    var ll = x.location.lat + "," + x.location.lng, n = placeName(x, kind);
-    var term = n !== NEAR[kind].label ? n + " " + area : NEAR[kind].label;
-    return "https://maps.google.com/maps?q=" + encodeURIComponent(term) + "&ll=" + ll + "&sll=" + ll + "&z=18";
+    // A named place: Google's own listing for it (name and area find that very spot).
+    var ll = x.location.lat + "," + x.location.lng;
+    return "https://maps.google.com/maps?q=" + encodeURIComponent(placeName(x, kind) + " " + area) + "&ll=" + ll + "&sll=" + ll + "&z=18";
+  }
+  function placeRoute(x, kind, area) {
+    // Directions straight to it. A nameless lot or toilet goes by its coordinates: searching just
+    // "停車場" made the Google Maps app list the lots around the phone instead of this one.
+    var named = placeName(x, kind) !== NEAR[kind].label;
+    return "https://www.google.com/maps/dir/?api=1&destination=" +
+      encodeURIComponent(named ? placeName(x, kind) + " " + area : x.location.lat + "," + x.location.lng);
+  }
+  // Bottom edge (in map pixels) of what floats over the top of the map: the chips and the night/weather note.
+  function overlayBottom() {
+    var top = map.getContainer().getBoundingClientRect().top, b = $(".controls").getBoundingClientRect().bottom;
+    var w = document.getElementById("weather");
+    if (w && w.offsetParent && w.textContent.trim()) b = Math.max(b, w.getBoundingClientRect().bottom);
+    return Math.max(0, b - top);
   }
   function clearNear() {
     nearLayer.clearLayers();
@@ -738,7 +751,14 @@
       clearNear();
       var items = [];
       (kind === "all" ? ["parking", "toilet", "shop", "charge"] : [kind]).forEach(function (k) {
-        nearPlaces(d, k).slice(0, kind === "all" ? 1 : 6).forEach(function (x) { items.push({ x: x, k: k }); });
+        var list = nearPlaces(d, k), picked;
+        var fast = k === "charge" ? list.filter(function (x) { return x.speed === "fast" || x.speed === "both"; }) : [];
+        if (kind === "all") picked = (fast.length ? fast : list).slice(0, 1);  // the charger its tile names: nearest fast first
+        else {
+          picked = list.slice(0, 6);
+          if (fast.length && picked.indexOf(fast[0]) < 0) picked.push(fast[0]);  // keep the tile's 快充 in the list
+        }
+        picked.forEach(function (x) { items.push({ x: x, k: k }); });
       });
       if (!items.length) { if (kind !== "all") mapToast("附近沒有" + NEAR[kind].label + "的資料"); return; }
       nearShown = id + "|" + kind;
@@ -755,8 +775,10 @@
           html: '<span class="near-in">' + I(icon) + "<b>" + x.distance_m + "m</b></span>", iconSize: [0, 0], iconAnchor: [0, 0] }) })
           .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, k)) + "</strong>" +
             '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
-            '<a class="pp-btn primary" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖開啟</a></div>',
-            { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, $(".controls").offsetHeight + 16),
+            '<div class="near-btns"><a class="pp-btn primary" href="' + esc(placeRoute(x, k, area)) + '" target="_blank" rel="noopener">導航</a>' +
+            (placeName(x, k) !== NEAR[k].label ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "") +
+            "</div></div>",
+            { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, overlayBottom() + 12),
               autoPanPaddingBottomRight: L.point(16, phone.matches ? sheetMetrics().half + 16 : 16) })
           .addTo(nearLayer);
       });

@@ -332,7 +332,8 @@ footer p { margin: 0 0 4px; }
 .pp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; text-align: center; font-size: 12px; margin-bottom: 10px; }
 .pp-tile { background: var(--chip); border-radius: 8px; padding: 6px 2px; color: var(--muted); }
 a.pp-tile, button.pp-tile { text-decoration: none; border: 1px solid var(--line); font: inherit; width: 100%; cursor: pointer; }
-a.pp-tile:hover, a.pp-tile:focus-visible, button.pp-tile:hover, button.pp-tile:focus-visible { border-color: var(--accent); }
+a.pp-tile:focus-visible, button.pp-tile:focus-visible { border-color: var(--accent); }
+@media (hover: hover) { a.pp-tile:hover, button.pp-tile:hover { border-color: var(--accent); } }  /* no sticky hover after a tap */
 button.pp-tile[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, var(--surface)); box-shadow: inset 0 0 0 1px var(--accent); }
 button.pp-tile.busy { opacity: .6; }
 /* Nearby places for a park card's tile: a small labelled pin, centred on the spot. */

@@ -1437,6 +1437,9 @@
         down = null;
       }
     }
+    // The second touch belongs to the zoom: keep iOS from treating it as text selection or a magnifier.
+    el.addEventListener("touchstart", function (e) { if (g) e.preventDefault(); }, { passive: false, capture: true });
+    el.addEventListener("touchmove", function (e) { if (g) e.preventDefault(); }, { passive: false, capture: true });
     window.addEventListener("pointerup", end, true);
     window.addEventListener("pointercancel", end, true);
     window.addEventListener("touchend", function (e) { if (g && !e.touches.length) finish(); }, true);

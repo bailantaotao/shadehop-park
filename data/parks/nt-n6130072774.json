@@ -337,7 +337,16 @@
    },
    "maxheight_m": 2.0,
    "method": "osm",
-   "name": "秀朗國小停車場",
+   "name": "永和區秀朗國小地下停車場",
+   "official": {
+    "address": "新北永和區民權路1號B1-B3",
+    "cars": 754,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4200元;身障車月租2200元;重型機車計時30元;重型機車計時40元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 41,
+    "name": "永和區秀朗國小地下停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -345,11 +354,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/11118984854"
    },
+   "osm_name": "秀朗國小停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 404,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 569,
@@ -363,14 +373,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "中和秀山公園地下停車場",
+   "official": {
+    "address": "新北市中和區自立路15巷12號B1、B2",
+    "cars": 404,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4000元;身障車月租2000元;機車計次20元;機車月租300元;身障機車月租150元;重型機車計時30元;重型機車計時40元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "中和秀山公園地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 959117296,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/959117296"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -744,6 +764,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

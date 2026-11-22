@@ -304,7 +304,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 135,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 15,
@@ -319,7 +319,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "永錡停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市板橋區板林路及樹林區保安街1段交叉路口",
+    "cars": 135,
+    "fare": "小型車計時40元;小型車計時50元;小型車月租3500元;",
+    "hours": "0~24時",
+    "match_m": 17,
+    "name": "永錡停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 351716422,
@@ -370,14 +379,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "樹林區第一停車場",
-   "opening_hours": null,
+   "name": "樹林區第一平面停車場",
+   "official": {
+    "address": "新北市樹林區保順街107號",
+    "cars": 66,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3000元;身障車月租2200元 ;機車計次10元;機車月租 300元 ;身障機車月租150元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 7,
+    "name": "樹林區第一平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 247180391,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/247180391"
    },
+   "osm_name": "樹林區第一停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -396,14 +415,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "保安立體停車場",
-   "opening_hours": null,
+   "name": "樹林保安立體停車場",
+   "official": {
+    "address": "新北市樹林區保安街1段7號",
+    "cars": 266,
+    "fare": "小型車計時20元;小型車月租2500元;身障車月租1250元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 23,
+    "name": "樹林保安立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 207282119,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/207282119"
    },
+   "osm_name": "保安立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -822,6 +851,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

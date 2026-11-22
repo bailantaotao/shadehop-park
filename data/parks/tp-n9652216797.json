@@ -475,7 +475,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺大醫院景福停車場",
+   "name": "台大醫院景福停車場",
+   "official": {
+    "address": "公園路15-2號",
+    "cars": 19,
+    "fare": "小型車：計時 50元/時，停車全程以半小時計。",
+    "hours": "06:30:00-23:00:00",
+    "match_m": 26,
+    "name": "台大醫院景福停車場",
+    "source": "taipei"
+   },
    "opening_hours": "06:30-23:00",
    "operator": null,
    "osm": {
@@ -483,6 +492,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727780"
    },
+   "osm_name": "臺大醫院景福停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -527,14 +537,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中正第一分局停車場",
-   "opening_hours": null,
+   "name": "中山南路2巷臨時平面停車場",
+   "official": {
+    "address": "中山南路2巷",
+    "cars": null,
+    "fare": "機車：20元/次，隔日另計。",
+    "hours": "星期一至星期六 9時至17時",
+    "match_m": 39,
+    "name": "中山南路2巷臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六 9時至17時",
    "operator": "中正第一分局",
    "osm": {
     "id": 10736611401,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10736611401"
    },
+   "osm_name": "中正第一分局停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -553,7 +573,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺大兒醫停車場 (入口)",
+   "name": "臺大醫院健康大樓停車場",
+   "official": {
+    "address": "中山南路12號地下2至3層",
+    "cars": 195,
+    "fare": "計時：小型車50元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "臺大醫院健康大樓停車場",
+    "source": "taipei"
+   },
    "opening_hours": "06:00-24:00",
    "operator": null,
    "osm": {
@@ -561,11 +590,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9654394171"
    },
+   "osm_name": "臺大兒醫停車場 (入口)",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 127,
@@ -579,14 +609,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "信陽街平面停車場",
-   "opening_hours": null,
+   "name": "Times信陽街",
+   "official": {
+    "address": "信陽街25號旁",
+    "cars": 6,
+    "fare": "計時：200元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "Times信陽街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 18469576,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/18469576"
    },
+   "osm_name": "信陽街平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -999,6 +1039,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

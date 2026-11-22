@@ -22,7 +22,7 @@ from shapely import STRtree
 from shapely.geometry import Point
 from shapely.ops import unary_union
 
-from . import config, shade_cache
+from . import config, official_parking, shade_cache
 from .chargers import classify, is_car_charger
 from .geo import LocalProjection, element_geometry, is_area
 from .shade import Caster, ShadeModel, best_windows, daytime_shaded_share, timetable
@@ -1157,6 +1157,9 @@ def main(argv: list[str]) -> None:
         b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid), load_toilets(rid))
         b.tt_cache = shade_cache.load(rid)
         mine = b.build()
+        om = official_parking.Matcher(official_parking.load(rid))  # names, fees and hours the city registered
+        for p in mine:
+            official_parking.apply(p, om)
         reused = len(b.tt_used.keys() & b.tt_cache.keys())
         print(f"{rid}: shade timetables reused {reused}/{len(b.tt_used)} from cache", file=sys.stderr)
         shade_cache.save(rid, b.tt_used)

@@ -361,14 +361,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "洲子立體停車場",
-   "opening_hours": null,
+   "name": "洲子站",
+   "official": {
+    "address": "瑞光路513巷22弄2號地下1層",
+    "cars": 35,
+    "fare": "小型車：計時 40元/時，停車全程以半小時計；月租 全日9,600元。機車：40元/次月租600元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "洲子站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 581604895,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/581604895"
    },
+   "osm_name": "洲子立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -425,7 +435,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 295,
@@ -439,14 +449,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times 內湖路一段",
+   "official": {
+    "address": "內湖路1段388號旁",
+    "cars": 37,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "Times 內湖路一段",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 243253066,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/243253066"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -465,7 +485,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "Times 瑞光路",
+   "official": {
+    "address": "瑞光路639號旁空地",
+    "cars": 48,
+    "fare": "小型車：計時 200元/時，全程以半小時計;月租 全日10,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "Times 瑞光路",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "普客二四瑞光路停車場",
    "osm": {
@@ -473,11 +502,12 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/641122675"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 413,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 402,
@@ -492,7 +522,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "自由廣場停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "瑞光路393巷8號地上3層至9層、地下2層",
+    "cars": 413,
+    "fare": "計時：小型車30元/時，機車10元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "自由廣場停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4688621839,
@@ -872,6 +911,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

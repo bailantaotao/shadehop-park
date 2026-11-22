@@ -222,7 +222,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 148,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 56,
@@ -236,19 +236,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "百齡橋堤外足球場停車場(一)",
+   "official": {
+    "address": "百齡橋下足球場",
+    "cars": 148,
+    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計，全日雙月票6,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日；收費時間：09-17",
+    "match_m": 42,
+    "name": "百齡橋堤外足球場停車場(一)",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日；收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 500585206,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/500585206"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 447,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 217,
@@ -262,14 +272,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "百齡橋堤外平面停車場",
+   "official": {
+    "address": "通河西街旁堤防外",
+    "cars": 447,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：09-17",
+    "match_m": 28,
+    "name": "百齡橋堤外平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 356780459,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/356780459"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -300,7 +320,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 299,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 286,
@@ -314,19 +334,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "百齡橋堤外槌球場南側臨時平面停車場",
+   "official": {
+    "address": "通河西街1段129號旁堤外",
+    "cars": 299,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：09-17",
+    "match_m": 33,
+    "name": "百齡橋堤外槌球場南側臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 356780458,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/356780458"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 316,
@@ -340,19 +370,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立陽明高級中學學生活動中心地下停車場",
+   "official": {
+    "address": "中正路510號",
+    "cars": 20,
+    "fare": "小型車：月租 全日1,500元，季租4,500元。",
+    "hours": "週一至週四19-翌日7時，週五及國定假日19-假日結束翌日7時",
+    "match_m": 37,
+    "name": "臺北市立陽明高級中學學生活動中心地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週四19-翌日7時，週五及國定假日19-假日結束翌日7時",
    "operator": null,
    "osm": {
     "id": 4462637481,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4462637481"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 31,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 406,
@@ -366,14 +406,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
+   "name": "社中街平面停車場",
+   "official": {
+    "address": "社中街94號旁",
+    "cars": 31,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日4,800元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "社中街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "阜爾運通股份有限公司",
    "osm": {
     "id": 827822816,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/827822816"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   }
  ],
@@ -765,6 +815,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

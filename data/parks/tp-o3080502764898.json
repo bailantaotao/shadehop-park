@@ -312,7 +312,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 132,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 489,
@@ -326,14 +326,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北市文山區行政中心便民停車場",
-   "opening_hours": null,
+   "name": "臺北市文山區行政中心停車場",
+   "official": {
+    "address": "木柵路3段220號",
+    "cars": 132,
+    "fare": "計時：日間30元/時(7-20)，夜間10元/時(20-07)，洽公民眾前30分鐘免費，全程以半小時計費。月租：平面2,000元/月(週一至週五18-08 、週六及週日) 、夜間1,200元/月(週一至週日18-08)；地下室2,400元/月(週一至週五08-18)。",
+    "hours": "平面24小時，地下室8時至18時",
+    "match_m": 23,
+    "name": "臺北市文山區行政中心停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "平面24小時，地下室8時至18時",
    "operator": null,
    "osm": {
     "id": 990704269,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/990704269"
    },
+   "osm_name": "臺北市文山區行政中心便民停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -778,6 +788,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

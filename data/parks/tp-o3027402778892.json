@@ -258,7 +258,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "振興公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "天母西路112號地下(地下共3層)",
+    "cars": 210,
+    "fare": "計時：小型車(含大型重型機車)50元/時(08-23)、20元/時(23-08)，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日4,200元/月，夜間(19-08)2,000元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 50,
+    "name": "振興公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "臺北市停車管理工程處",
    "osm": {
     "id": 361491770,
@@ -269,7 +278,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 133,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 61,
@@ -283,14 +292,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "振興醫療財團法人振興醫院附設停車場",
+   "official": {
+    "address": "振興街45號建物附設平面及地下1層",
+    "cars": 133,
+    "fare": "計時：小型車50元/時(07-23)、20元/時(23-07)，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。前30分鐘出場免費。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 49,
+    "name": "振興醫療財團法人振興醫院附設停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 361390467,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/361390467"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -742,6 +761,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

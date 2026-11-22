@@ -541,7 +541,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 180,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 51,
@@ -556,7 +556,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "民權立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市板橋區民權路89號",
+    "cars": 180,
+    "fare": "小型車計時30元;小型車月租3600元;身障車月租1800元;",
+    "hours": "0~24時",
+    "match_m": 2,
+    "name": "民權立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "俥亭停車事業",
    "osm": {
     "id": 317253532,
@@ -593,7 +602,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 147,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 214,
@@ -608,7 +617,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "府後立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市板橋區府中路32-1號1樓及4樓~屋頂層",
+    "cars": 147,
+    "fare": "小型車計時40元;小型車月租4000元;身障車月租2000元;機車計時10元;機車月租400元;身障機車月租200元;",
+    "hours": "0~24時",
+    "match_m": 15,
+    "name": "府後立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "板橋區公所",
    "osm": {
     "id": 317245512,
@@ -619,7 +637,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 64,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -633,14 +651,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "新北市板橋府中站汽、機車平面停車場",
+   "official": {
+    "address": "新北市板橋區縣民大道1段與府中路交叉口及縣民大道1段與民族路交叉口",
+    "cars": 64,
+    "fare": "小型車計時100元;小型車月租1萬元;機車計次100元;機車月租1000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "新北市板橋府中站汽、機車平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1050774064,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1050774064"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -659,19 +687,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "永琦停車場",
-   "opening_hours": null,
+   "name": "Times板橋北門街停車場",
+   "official": {
+    "address": "新北市板橋區北門街25號旁",
+    "cars": 45,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 28,
+    "name": "Times板橋北門街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "永琦資產管理",
    "osm": {
     "id": 317607080,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317607080"
    },
+   "osm_name": "永琦停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 841,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 405,
@@ -685,14 +723,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新北市市民廣場地下停車場",
-   "opening_hours": null,
+   "name": "市民廣場地下停車場",
+   "official": {
+    "address": "新北市板橋區縣民大道二段22號B1-B3",
+    "cars": 841,
+    "fare": "小型車計時30元;小型車計時40元;小型車計時20元;小型車月租4000元;身障車月租2150元;重型機車計時30元;重型機車計時40元;重型機車計時20元;重型機車月租1500元;機車計時10元;機車月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "市民廣場地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "台灣國際開發事業有限公司",
    "osm": {
     "id": 808480742,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/808480742"
    },
+   "osm_name": "新北市市民廣場地下停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -1060,6 +1108,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

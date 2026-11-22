@@ -360,7 +360,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "正好停 科技大樓地下場",
+   "name": "科技大樓地下停車場",
+   "official": {
+    "address": "復興南路2段228-230號地上2至地下4層",
+    "cars": 113,
+    "fare": "計時：小型車(含大型重型機車)50元/時(09-21)、10元/時(21-09)，機車10元/時，當日單次停車最高收費上限30元/次，隔日另計，以00時為基準，停車全程以半小時計，自行車：5元/時，當日當次上限10元，隔日另計。月租：小型車全日5,760元/月，機車全日300元/月，大型重型機車全日2,880元/月，自行車全日月票150元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 36,
+    "name": "科技大樓地下停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "正好停",
    "osm": {
@@ -368,11 +377,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13912360479"
    },
+   "osm_name": "正好停 科技大樓地下場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 198,
@@ -386,19 +396,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "CITY PARKING 城市車旅停車場",
-   "opening_hours": null,
+   "name": "城市車旅台北科技停車場",
+   "official": {
+    "address": "復興南路2段193巷16弄旁空地",
+    "cars": 22,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日12,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 26,
+    "name": "城市車旅台北科技停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 14229720601,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/14229720601"
    },
+   "osm_name": "CITY PARKING 城市車旅停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 222,
@@ -412,19 +432,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "千里亭",
-   "opening_hours": null,
+   "name": "千里亭有限公司復興南路停車場",
+   "official": {
+    "address": "復興南路2段119號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "千里亭有限公司復興南路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 430627600,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/430627600"
    },
+   "osm_name": "千里亭",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 302,
@@ -438,7 +468,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "USPACE 成功郵局鄰近車位",
+   "name": "榮帝科技全聯大安北師店停車場",
+   "official": {
+    "address": "和平東路2段311巷29號地下1層",
+    "cars": 5,
+    "fare": "小型車：計時 100元/時，全程以半小時計;月租 全日10,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 27,
+    "name": "榮帝科技全聯大安北師店停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "USPACE",
    "osm": {
@@ -446,11 +485,12 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/20819287"
    },
+   "osm_name": "USPACE 成功郵局鄰近車位",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 347,
@@ -464,19 +504,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
+   "name": "榮帝科技全聯大安北師店停車場",
+   "official": {
+    "address": "和平東路2段311巷29號地下1層",
+    "cars": 5,
+    "fare": "小型車：計時 100元/時，全程以半小時計;月租 全日10,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "榮帝科技全聯大安北師店停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1526301845,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1526301845"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 4,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 352,
@@ -490,14 +540,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "博客停車",
-   "opening_hours": null,
+   "name": "博客停車場科技大樓站",
+   "official": {
+    "address": "和平東路2段118巷2-2號旁",
+    "cars": 4,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "博客停車場科技大樓站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 438301751,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/438301751"
    },
+   "osm_name": "博客停車",
    "verified_at": "2026-11-07"
   }
  ],
@@ -871,6 +931,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -454,7 +454,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 15,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -468,19 +468,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times萬華夜市",
+   "official": {
+    "address": "梧州街58號北側空地",
+    "cars": 15,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "Times萬華夜市",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 1086749742,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1086749742"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 318,
@@ -494,14 +504,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times 梧州街",
+   "official": {
+    "address": "梧州街59號",
+    "cars": 12,
+    "fare": "小型車：計時 200元/時，全程以半小時計",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "Times 梧州街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 9957482200,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9957482200"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   }
  ],
@@ -869,6 +889,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

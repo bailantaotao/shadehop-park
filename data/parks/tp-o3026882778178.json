@@ -215,7 +215,7 @@
   },
   {
    "access": "permit",
-   "capacity": null,
+   "capacity": 132,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 347,
@@ -229,14 +229,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "懷德街55巷平面停車場",
+   "official": {
+    "address": "懷德街與懷德街55巷交叉口",
+    "cars": 132,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日3,600元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "懷德街55巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1245416121,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1245416121"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -714,6 +724,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -362,7 +362,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 19,
@@ -376,19 +376,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "八德路二段臨時平面停車場",
-   "opening_hours": null,
+   "name": "八德路2段臨時平面停車場",
+   "official": {
+    "address": "八德路2段31號旁",
+    "cars": 12,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。",
+    "hours": "週一至週六 7時至20時",
+    "match_m": 9,
+    "name": "八德路2段臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六 7時至20時",
    "operator": null,
    "osm": {
     "id": 1519270687,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1519270687"
    },
+   "osm_name": "八德路二段臨時平面停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 298,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 137,
@@ -402,7 +412,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "日月亭希望園區場",
+   "name": "希望園區停車場",
+   "official": {
+    "address": "八德路1段55號地下1至4層",
+    "cars": 298,
+    "fare": "計時：小型車60元/時，機車20元/時，停車全程以半小時計。月租：小型車全日6,000元/月，機車全日1,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "希望園區停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -410,11 +429,12 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/936161475"
    },
+   "osm_name": "日月亭希望園區場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 54,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 222,
@@ -428,19 +448,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新生高架(松江-金山北(橋外))",
+   "official": {
+    "address": "新生北路1段新生高架(松江-金山北(橋外))",
+    "cars": 54,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。免費停車：機車。",
+    "hours": "週一至週六07-2130，週日09-17。",
+    "match_m": 23,
+    "name": "新生高架(松江-金山北(橋外))",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六07-2130，週日09-17。",
    "operator": null,
    "osm": {
     "id": 16868690,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/16868690"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 81,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 236,
@@ -454,19 +484,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "光華數位新天地地下停車場",
-   "opening_hours": null,
+   "name": "台北光華商場停車場",
+   "official": {
+    "address": "市民大道3段8號地下1層",
+    "cars": 81,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日9,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 55,
+    "name": "台北光華商場停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 14341923814,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/14341923814"
    },
+   "osm_name": "光華數位新天地地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 52,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 316,
@@ -481,7 +521,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "良友八德停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "忠孝東路2段95號",
+    "cars": 52,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "良友八德停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4325694179,
@@ -492,7 +541,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 78,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 318,
@@ -507,7 +556,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "北科先鋒停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "忠孝東路3段46號地下1至4層",
+    "cars": 78,
+    "fare": "計時：小型車50元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "北科先鋒停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 10035706038,
@@ -887,6 +945,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -260,7 +260,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 323,
@@ -274,14 +274,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 台北松信路停車場",
-   "opening_hours": null,
+   "name": "台北松信路停車場",
+   "official": {
+    "address": "松信路與虎林街120巷交叉口空地",
+    "cars": 49,
+    "fare": "計時：100元/時，停車全程以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "台北松信路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 964323335,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/964323335"
    },
+   "osm_name": "Hi PARKING 台北松信路停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -312,7 +322,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 400,
@@ -326,19 +336,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "雅祥虎林(二)",
+   "official": {
+    "address": "忠孝東路5段275巷2號對面空地",
+    "cars": 21,
+    "fare": "計時：小型車120元/時，停車全程以半小時計。月租：小型車全日7,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 30,
+    "name": "雅祥虎林(二)",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1390296816,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1390296816"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 410,
@@ -352,14 +372,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 台北永吉路停車場",
-   "opening_hours": null,
+   "name": "台北永吉路停車場",
+   "official": {
+    "address": "永吉路120巷83號虎林街120巷交叉口",
+    "cars": 40,
+    "fare": "計時：小型車120元/時，停車全程以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "台北永吉路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 764466776,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/764466776"
    },
+   "osm_name": "Hi PARKING 台北永吉路停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -759,6 +789,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

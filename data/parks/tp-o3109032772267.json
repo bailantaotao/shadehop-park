@@ -419,7 +419,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 638,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 253,
@@ -434,7 +434,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "興中立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興中路44巷1號",
+    "cars": 638,
+    "fare": "小型車(含大型重型機車)：計時 20元/時，停車全程以半小時計；月租 全日3,000元，大型重機1,500元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 34,
+    "name": "興中立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 73750276,
@@ -512,7 +521,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "南港區行政中心地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "南港路1段360號地下1層",
+    "cars": 8,
+    "fare": "計時:洽公臨時停車前30分鐘免費，逾半小時未滿1小時30元，逾1小時部分，以半小時計，80元/時(8時-20時)；非洽公臨時停車100元/時，未滿一小時以1小時計(8時-20時)。月租:員工:3,000元/月(8時-20時)；夜間:3,000元/月(20時-翌日7時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "南港區行政中心地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3157660616,
@@ -892,6 +910,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

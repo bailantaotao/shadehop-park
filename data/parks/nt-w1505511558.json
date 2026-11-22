@@ -257,7 +257,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 60,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 139,
@@ -271,19 +271,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "禮頓企業有限公司新莊龍安二站停車場",
+   "official": {
+    "address": "新北市新莊區中正路新旺巷8號旁空地",
+    "cars": 60,
+    "fare": "小型車計時100元;大型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 24,
+    "name": "禮頓企業有限公司新莊龍安二站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 659425078,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/659425078"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 19,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 173,
@@ -297,14 +307,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "禮頓新莊龍安停車場",
+   "official": {
+    "address": "新北市新莊區龍安路1-5號旁空地",
+    "cars": 19,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "禮頓新莊龍安停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1453277031,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1453277031"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -756,6 +776,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

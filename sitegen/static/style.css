@@ -348,6 +348,7 @@ button.pp-tile.busy { opacity: .6; }
 .near-mk.charge.fast .near-in { border-color: #d9480f; } .near-mk.charge.fast .near-in .i { color: #d9480f; }
 .near-pop { display: grid; gap: 6px; min-width: 180px; font-size: 14px; }
 .near-btns { display: flex; gap: 6px; margin-top: 2px; }
+.near-fact { font-size: 13px; color: var(--muted); line-height: 1.4; }
 .near-pop .pp-btn { display: inline-flex; justify-content: center; align-items: center; min-height: 40px; }
 .pp-tile span { display: block; line-height: 1; margin-bottom: 3px; color: var(--accent); }
 .pp-tile span .i { width: 18px; height: 18px; vertical-align: 0; }

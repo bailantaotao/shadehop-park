@@ -330,7 +330,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 102,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 357,
@@ -345,7 +345,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "愛買南雅店路外停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市板橋區貴興路119號",
+    "cars": 102,
+    "fare": "小型車計時50元;",
+    "hours": "0~24時",
+    "match_m": 43,
+    "name": "愛買南雅店路外停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 361262663,
@@ -408,7 +417,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 457,
@@ -422,14 +431,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "大觀段平面停車場",
+   "official": {
+    "address": "新北市板橋區大觀路1段29巷127-1號",
+    "cars": 70,
+    "fare": "小型車計時20元;小型車月租2500元;機車計次10元;機車月租120元;",
+    "hours": "0~24時",
+    "match_m": 12,
+    "name": "大觀段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1222892022,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1222892022"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -837,6 +856,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

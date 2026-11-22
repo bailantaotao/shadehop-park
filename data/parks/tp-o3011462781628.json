@@ -232,7 +232,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 147,
@@ -246,19 +246,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "華南銀行行員活動中心停車場",
-   "opening_hours": null,
+   "name": "華南巷停車場",
+   "official": {
+    "address": "泉源路華南巷2號對面空地",
+    "cars": 32,
+    "fare": "計時：50元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：2,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "華南巷停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1155279598,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1155279598"
    },
+   "osm_name": "華南銀行行員活動中心停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 238,
@@ -273,7 +283,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "開勝平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "珠海路88號旁",
+    "cars": 29,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "開勝平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 377896431,
@@ -284,7 +303,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 69,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 283,
@@ -299,7 +318,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "復興路平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "進賢路、復興路口",
+    "cars": 69,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 21,
+    "name": "復興路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 377896433,
@@ -362,7 +390,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 122,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 648,
@@ -376,14 +404,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "大業立體停車場",
+   "official": {
+    "address": "大業路745號",
+    "cars": 122,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日3,750元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "大業立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 136183943,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/136183943"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -757,6 +795,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

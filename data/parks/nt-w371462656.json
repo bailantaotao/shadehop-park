@@ -410,7 +410,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 118,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 549,
@@ -424,14 +424,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "民享公園停車場",
-   "opening_hours": null,
+   "name": "中和區民享公園地下停車場",
+   "official": {
+    "address": "新北市中和區自治街67號B1、B2",
+    "cars": 118,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4200元;身障車月租2150元;",
+    "hours": "0~24時",
+    "match_m": 40,
+    "name": "中和區民享公園地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 4590390875,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4590390875"
    },
+   "osm_name": "民享公園停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -462,7 +472,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 584,
@@ -476,19 +486,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "民安社區停車場",
-   "opening_hours": null,
+   "name": "中和區民安平面停車場",
+   "official": {
+    "address": "新北市中和區員山路455巷10號前空地",
+    "cars": 37,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3200元;身障車月租1500元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "中和區民安平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 483573767,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483573767"
    },
+   "osm_name": "民安社區停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 613,
@@ -502,14 +522,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "湯海悅停車場",
-   "opening_hours": null,
+   "name": "中和區員山市場臨時平面停車場",
+   "official": {
+    "address": "新北市中和區員山路466巷19號",
+    "cars": 35,
+    "fare": "小型車計時40元;小型車月租3400元;身障車月租2000元;機車計次20元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 11,
+    "name": "中和區員山市場臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 483577230,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483577230"
    },
+   "osm_name": "湯海悅停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -883,6 +913,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

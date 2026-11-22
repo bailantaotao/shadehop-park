@@ -398,7 +398,7 @@
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 1503,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 232,
@@ -412,14 +412,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "大葉天母停車場",
+   "official": {
+    "address": "忠誠路2段55號地下1至3層、地上6至11層",
+    "cars": 1503,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。計次：機車50元/次。月租：小型車全日8,000元/月，日間(07-19)5,000元/月，夜間(21-09)5,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "大葉天母停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 18451131,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/18451131"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -476,7 +486,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 285,
@@ -490,14 +500,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "忠誠路（一）平面停車場",
+   "official": {
+    "address": "忠誠路1段與德行東路132巷3弄交叉口旁",
+    "cars": 23,
+    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 15,
+    "name": "忠誠路（一）平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 258411040,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/258411040"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -865,6 +885,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

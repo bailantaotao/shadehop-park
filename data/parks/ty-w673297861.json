@@ -401,6 +401,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "中路停一停車場",
+   "official": {
+    "address": "桃園市桃園區吉安街95號",
+    "cars": null,
+    "fare": "計時：30元/時、月租3600元",
+    "hours": null,
+    "match_m": 21,
+    "name": "中路停一停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "力揚停車場",
    "osm": {
@@ -530,7 +539,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "City Parking城市車旅停車場",
+   "name": "吉安停車場",
+   "official": {
+    "address": "桃園市桃園區 正光路與吉安街",
+    "cars": null,
+    "fare": "小型車臨時停車收費：  全日計時：每小時20元，12小時內最高收費80元",
+    "hours": null,
+    "match_m": 52,
+    "name": "吉安停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -538,6 +556,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1024000704"
    },
+   "osm_name": "City Parking城市車旅停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -905,6 +924,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

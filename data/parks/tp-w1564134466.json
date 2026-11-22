@@ -328,7 +328,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 157,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -343,7 +343,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "塔城公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "塔城街11號地下共2層",
+    "cars": 157,
+    "fare": "小型車(含大型重型機車)：計時 30元/時，停車全程以半小時計；月租 全日5,760元，夜間3,300元(21-08)，大型重機2,880元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "塔城公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "塔城公園地下停車場",
    "osm": {
     "id": 837734049,
@@ -354,7 +363,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 83,
@@ -368,19 +377,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台北塔城場",
+   "official": {
+    "address": "塔城街13號旁",
+    "cars": 49,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "台北塔城場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 462935602,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/462935602"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 254,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 136,
@@ -394,19 +413,29 @@
    },
    "maxheight_m": 1.8,
    "method": "osm",
-   "name": "市民大道停車場塔城段",
-   "opening_hours": null,
+   "name": "市民大道塔城段停車場",
+   "official": {
+    "address": "西寧北路至塔城街(地下)",
+    "cars": 254,
+    "fare": "計時：小型車(含大型重型機車)30元/時(08-20)、10元/時(20-08)，停車全程以半小時計。月租：小型車日間(07-19)3,000元/月，夜間週一至週五及政府行政機關放假之紀念日、民俗節日(18-09)650元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 31,
+    "name": "市民大道塔城段停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4524864157,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4524864157"
    },
+   "osm_name": "市民大道停車場塔城段",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 80,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 216,
@@ -420,19 +449,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立聯合醫院-中興院區停車場",
+   "official": {
+    "address": "鄭州路145號",
+    "cars": 80,
+    "fare": "小型車：計時 1-2月50元/時(07-22)，10元/時(22-07)，3-12月40元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 日間2,000元，進場未滿30分鐘離場不收費，殯葬廠商月票5,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "臺北市立聯合醫院-中興院區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 201280883,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/201280883"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 80,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 227,
@@ -446,19 +485,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立聯合醫院-中興院區停車場",
+   "official": {
+    "address": "鄭州路145號",
+    "cars": 80,
+    "fare": "小型車：計時 1-2月50元/時(07-22)，10元/時(22-07)，3-12月40元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 日間2,000元，進場未滿30分鐘離場不收費，殯葬廠商月票5,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "臺北市立聯合醫院-中興院區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 201280886,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/201280886"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 80,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 235,
@@ -472,14 +521,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立聯合醫院-中興院區停車場",
+   "official": {
+    "address": "鄭州路145號",
+    "cars": 80,
+    "fare": "小型車：計時 1-2月50元/時(07-22)，10元/時(22-07)，3-12月40元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 日間2,000元，進場未滿30分鐘離場不收費，殯葬廠商月票5,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 42,
+    "name": "臺北市立聯合醫院-中興院區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 201280874,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/201280874"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -865,6 +924,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

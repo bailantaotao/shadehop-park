@@ -229,7 +229,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 101,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 139,
@@ -243,19 +243,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北市中正運動中心地下停車場",
+   "official": {
+    "address": "信義路1段1號地下3層",
+    "cars": 101,
+    "fare": "小型車：計時 40元/時，停車全程以半小時計。",
+    "hours": "06:00:00-22:00:00",
+    "match_m": 32,
+    "name": "臺北市中正運動中心地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "06:00:00-22:00:00",
    "operator": null,
    "osm": {
     "id": 1574727747,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727747"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 101,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 171,
@@ -269,19 +279,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中正區市民運動中心停車場",
-   "opening_hours": null,
+   "name": "臺北市中正運動中心地下停車場",
+   "official": {
+    "address": "信義路1段1號地下3層",
+    "cars": 101,
+    "fare": "小型車：計時 40元/時，停車全程以半小時計。",
+    "hours": "06:00:00-22:00:00",
+    "match_m": 15,
+    "name": "臺北市中正運動中心地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "06:00:00-22:00:00",
    "operator": null,
    "osm": {
     "id": 9722705095,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9722705095"
    },
+   "osm_name": "中正區市民運動中心停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 137,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 206,
@@ -295,14 +315,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北市政府青年局地下停車場",
-   "opening_hours": null,
+   "name": "臺北市政府青年局停車場",
+   "official": {
+    "address": "仁愛路1段17號",
+    "cars": 137,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日5,000元/月，日間(07-19)3,750元/月，提前或延後出場，以每小時15元計費。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 23,
+    "name": "臺北市政府青年局停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 828307293,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/828307293"
    },
+   "osm_name": "臺北市政府青年局地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -748,6 +778,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

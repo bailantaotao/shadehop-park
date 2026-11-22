@@ -389,7 +389,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 200,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 204,
@@ -403,14 +403,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "西湖捷運地下停場",
-   "opening_hours": null,
+   "name": "西湖市場暨捷運站地下停車場",
+   "official": {
+    "address": "內湖路1段285號地下1至4層",
+    "cars": 200,
+    "fare": "計時：小型車80元/時，全程以半小時計費。月租：小型車8,000元/月。機車免費。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 32,
+    "name": "西湖市場暨捷運站地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1839319943,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1839319943"
    },
+   "osm_name": "西湖捷運地下停場",
    "verified_at": "2026-11-07"
   },
   {
@@ -429,7 +439,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "Times 瑞光路",
+   "official": {
+    "address": "瑞光路639號旁空地",
+    "cars": 48,
+    "fare": "小型車：計時 200元/時，全程以半小時計;月租 全日10,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "Times 瑞光路",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "普客二四瑞光路停車場",
    "osm": {
@@ -437,6 +456,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/641122675"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -467,7 +487,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 86,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 396,
@@ -481,19 +501,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-樂群場",
+   "official": {
+    "address": "樂群三路310號旁空地",
+    "cars": 86,
+    "fare": "計時：小型車100元/時，機車30元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "168停車聯盟-樂群場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 449379848,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/449379848"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 86,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 470,
@@ -507,19 +537,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-樂群場",
+   "official": {
+    "address": "樂群三路310號旁空地",
+    "cars": 86,
+    "fare": "計時：小型車100元/時，機車30元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "168停車聯盟-樂群場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "應安停車場",
    "osm": {
     "id": 10076711328,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10076711328"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 470,
@@ -533,14 +573,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "文湖平面停車場",
+   "official": {
+    "address": "文湖街21巷口文湖國小旁",
+    "cars": 34,
+    "fare": "小型車：計時 20元/時，全程以半小時計；月租 全日4,800元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "文湖平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 961275515,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/961275515"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -914,6 +964,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

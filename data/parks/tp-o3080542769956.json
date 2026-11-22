@@ -335,7 +335,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 273,
@@ -349,19 +349,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "忠孝五停車場",
+   "official": {
+    "address": "忠孝東路5段236巷27弄10號旁空地",
+    "cars": 33,
+    "fare": "70元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "忠孝五停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 597617486,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/597617486"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 54,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 279,
@@ -376,7 +386,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "松德停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "松勇路53巷68號對面空地",
+    "cars": 54,
+    "fare": "計時：小型車180元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "松德停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 370145092,
@@ -453,7 +472,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "力揚信義松德停車場",
+   "name": "松德臨時平面停車場",
+   "official": {
+    "address": "松德路底(中強公園旁)",
+    "cars": 86,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月，日間2,000元/月(07-19)。機車免費停車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 37,
+    "name": "松德臨時平面停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -461,6 +489,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/258816696"
    },
+   "osm_name": "力揚信義松德停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -846,6 +875,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

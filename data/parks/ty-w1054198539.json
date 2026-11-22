@@ -274,7 +274,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "A10山鼻站停車場",
+   "name": "南崁廣停一平面停車場",
+   "official": {
+    "address": "桃園市蘆竹區南山路三段125號旁",
+    "cars": null,
+    "fare": "當日當次20元",
+    "hours": null,
+    "match_m": 57,
+    "name": "南崁廣停一平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -282,6 +291,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1054198540"
    },
+   "osm_name": "A10山鼻站停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -300,7 +310,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "力揚停車場廣停一站",
+   "name": "南崁廣停一平面停車場",
+   "official": {
+    "address": "桃園市蘆竹區南山路三段125號旁",
+    "cars": null,
+    "fare": "當日當次20元",
+    "hours": null,
+    "match_m": 27,
+    "name": "南崁廣停一平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -308,6 +327,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1219687063"
    },
+   "osm_name": "力揚停車場廣停一站",
    "verified_at": "2026-11-07"
   },
   {
@@ -326,7 +346,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "力揚停車場廣停二站",
+   "name": "南崁廣停二平面停車場",
+   "official": {
+    "address": "桃園市蘆竹區山鼻路16巷10弄16號旁",
+    "cars": null,
+    "fare": "計時每小時20園前12小時80元月租1200元季繳3000元",
+    "hours": null,
+    "match_m": 13,
+    "name": "南崁廣停二平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -334,6 +363,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1219687065"
    },
+   "osm_name": "力揚停車場廣停二站",
    "verified_at": "2026-11-07"
   }
  ],
@@ -701,6 +731,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

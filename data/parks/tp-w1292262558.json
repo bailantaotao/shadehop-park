@@ -182,7 +182,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 427,
@@ -197,7 +197,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "萬寧街臨時平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "萬寧街125號旁",
+    "cars": 5,
+    "fare": "小型車： 計次 週一~週五30元/次(09時~17時)。",
+    "hours": "收費日：1-5；收費時間：9~17",
+    "match_m": 2,
+    "name": "萬寧街臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：1-5；收費時間：9~17",
    "operator": null,
    "osm": {
     "id": 1264436598,
@@ -208,7 +217,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 102,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 536,
@@ -222,14 +231,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "萬芳8號公園平面停車場",
-   "opening_hours": null,
+   "name": "萬芳八號公園停車場",
+   "official": {
+    "address": "公務員訓練中心旁",
+    "cars": 102,
+    "fare": "計次：小型車50元/次(09-17)，隔日另計，以24時為基準。",
+    "hours": "周一至周六9時至17時",
+    "match_m": 19,
+    "name": "萬芳八號公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六9時至17時",
    "operator": null,
    "osm": {
     "id": 410452468,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/410452468"
    },
+   "osm_name": "萬芳8號公園平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -260,7 +279,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 129,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 642,
@@ -275,7 +294,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "辛亥國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "辛亥路4段103號地下共2層",
+    "cars": 129,
+    "fare": "小型車：計時 20元/時(08時~18時)，10元/時(18時~08時)，停車全程以半小時計；月租 全日3,840元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 53,
+    "name": "辛亥國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 824570175,
@@ -669,6 +697,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

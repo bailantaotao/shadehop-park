@@ -297,7 +297,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 8,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 177,
@@ -311,14 +311,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times昆明街",
+   "official": {
+    "address": "昆明街185號後面",
+    "cars": 8,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "Times昆明街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 832684234,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/832684234"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -338,7 +348,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "艋舺公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "西園路1段145號地下室",
+    "cars": 518,
+    "fare": "小型車：計時 週六、週日、行政機關放假之紀念日與民俗日(08時~22時)40元/時，(22時~08時)10元/時，週一~週五(08時~22時)30元/時，(22時~08時)10元/時，全程以半小時計;月租 全日4,800元，日間2,400元(07時~19時)，夜間2,400元(19時~08時)，大型重機2,400元/月，日間時段性月票2,400元/月(10-22)。。機車：機車收費10元/時，隔日另計;機車月租300元/月",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 40,
+    "name": "艋舺公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "正好停股份有限公司",
    "osm": {
     "id": 3191035893,
@@ -349,7 +368,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 426,
@@ -363,14 +382,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "ViVi PARK",
-   "opening_hours": null,
+   "name": "中華路一段停車場",
+   "official": {
+    "address": "廣州街與中華路1段交叉口",
+    "cars": 14,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日20,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 17,
+    "name": "中華路一段停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1208979628,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1208979628"
    },
+   "osm_name": "ViVi PARK",
    "verified_at": "2026-11-07"
   },
   {
@@ -389,14 +418,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大客車停車位",
-   "opening_hours": null,
+   "name": "艋舺公園地下停車場",
+   "official": {
+    "address": "西園路1段145號地下室",
+    "cars": 518,
+    "fare": "小型車：計時 週六、週日、行政機關放假之紀念日與民俗日(08時~22時)40元/時，(22時~08時)10元/時，週一~週五(08時~22時)30元/時，(22時~08時)10元/時，全程以半小時計;月租 全日4,800元，日間2,400元(07時~19時)，夜間2,400元(19時~08時)，大型重機2,400元/月，日間時段性月票2,400元/月(10-22)。。機車：機車收費10元/時，隔日另計;機車月租300元/月",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 59,
+    "name": "艋舺公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 313195266,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/313195266"
    },
+   "osm_name": "大客車停車位",
    "verified_at": "2026-11-07"
   },
   {
@@ -415,19 +454,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "紅樓站停車場",
+   "official": {
+    "address": "西寧南路102巷3號旁空地",
+    "cars": 5,
+    "fare": "計時：小型車200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日20,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "紅樓站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "禾典實業",
    "osm": {
     "id": 550847093,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/550847093"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 205,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 461,
@@ -441,14 +490,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北市萬華區行政中心地下停車場",
+   "official": {
+    "address": "和平西路3段120號地下1至5層",
+    "cars": 205,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租：全日9,600元/雙月、日間4,800/雙月(07-19)、夜間4,800/雙月(19-07)。機車：20元/次，隔日另計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 45,
+    "name": "臺北市萬華區行政中心地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 308675004,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/308675004"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -822,6 +881,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

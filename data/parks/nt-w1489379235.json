@@ -524,7 +524,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 184,
@@ -538,14 +538,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times林口八德路停車場",
+   "official": {
+    "address": "新北市林口區八德路500巷15號旁",
+    "cars": 23,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 7,
+    "name": "Times林口八德路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 1489379179,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1489379179"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
@@ -654,7 +664,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 82,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 568,
@@ -668,14 +678,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "林口區行政園區平面停車場",
+   "official": {
+    "address": "新北市林口區忠孝二路55號旁",
+    "cars": 82,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2500元;身障車月租1250元;機車計次10元;機車月租200元;身障機車月租100元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 56,
+    "name": "林口區行政園區平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 443054014,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/443054014"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -1049,6 +1069,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

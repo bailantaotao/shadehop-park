@@ -270,7 +270,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 253,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 45,
@@ -285,7 +285,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "景美國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "景文街142巷2號地下(共3層)",
+    "cars": 253,
+    "fare": "小型車及大型重型機車：計時 週一至週四(11-21)30元/時，(21-11)20元/時，週五至週日(11-21)40元/時，(21-11)20元/時，停車全程以半小時計；月租 全日4,800元，日間(07-19)2,500元，夜間(19-08)1,000元，大型重機2,400元/月。機車：當日當次收費最高上限20元/(隔日另計)；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 16,
+    "name": "景美國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 373245310,
@@ -296,7 +305,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 89,
@@ -310,14 +319,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "景文平面停車場",
+   "official": {
+    "address": "景文街90巷內廣場停車場",
+    "cars": 53,
+    "fare": "小型車：計時 30元/時，全程以半小時計。",
+    "hours": "周一至周六 9時至17時",
+    "match_m": 3,
+    "name": "景文平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六 9時至17時",
    "operator": null,
    "osm": {
     "id": 358671227,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358671227"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -336,14 +355,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景新分館地下停車場",
-   "opening_hours": null,
+   "name": "景新地下停車場",
+   "official": {
+    "address": "景後街151號地下2至3層",
+    "cars": 47,
+    "fare": "計時：60元/時，停車全程以半小時計；月租：7,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 25,
+    "name": "景新地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "俥亭",
    "osm": {
     "id": 3635673679,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3635673679"
    },
+   "osm_name": "景新分館地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -374,7 +403,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 287,
@@ -388,14 +417,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景美集應廟文化願景館地下停車場",
-   "opening_hours": null,
+   "name": "景美集應廟站停車場",
+   "official": {
+    "address": "景後街130號地下1至3層",
+    "cars": 50,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "景美集應廟站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 797083838,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/797083838"
    },
+   "osm_name": "景美集應廟文化願景館地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -789,6 +828,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

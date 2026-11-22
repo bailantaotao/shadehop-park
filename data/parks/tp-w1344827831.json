@@ -422,6 +422,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "三張里地下停車場",
+   "official": {
+    "address": "松平路81號地下室(地下共3層)",
+    "cars": 354,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日5,000元，夜間2,600元(19時~08時)，大型重機2,500元/月，小型車臨停費率同大型重機；電動汽車充電另收充電服務費，採以度計費。機車：10元/時，當日單次停車最高收費上限20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 41,
+    "name": "三張里地下停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -433,7 +442,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 113,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 76,
@@ -447,14 +456,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times松勤松仁停車場",
-   "opening_hours": null,
+   "name": "Times 松勤松仁",
+   "official": {
+    "address": "松仁路148號旁空地",
+    "cars": 113,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "Times 松勤松仁",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 434548441,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/434548441"
    },
+   "osm_name": "Times松勤松仁停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -474,6 +493,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "臺北市災害應變中心地下停車場",
+   "official": {
+    "address": "莊敬路391巷11弄2號地下",
+    "cars": 169,
+    "fare": "小型車：計時 30元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日5,000元。機車：10元/時，當日單次停車最高收費上限20元/次，隔日另計，以0時為基準；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 39,
+    "name": "臺北市災害應變中心地下停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -485,7 +513,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 214,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 179,
@@ -499,19 +527,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房信義松智站",
-   "opening_hours": null,
+   "name": "168停車聯盟-松智場",
+   "official": {
+    "address": "松智路與莊敬路391巷11弄交叉口空地",
+    "cars": 214,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 21,
+    "name": "168停車聯盟-松智場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 262078807,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/262078807"
    },
+   "osm_name": "嘟嘟房信義松智站",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 45,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -526,7 +564,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "昇榮信義停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "松仁路130號對面空地",
+    "cars": 45,
+    "fare": "計時:100元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租:6000元/月(24小時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 16,
+    "name": "昇榮信義停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 249943425,
@@ -552,7 +599,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "信義廣場地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "信義路5段11號地下(地下共2層)",
+    "cars": 369,
+    "fare": "計時：小型車(含大型重型機車)週一至週五50元/時(08-22)，週六至週日及政府行政機關放假之紀念日、民俗節日60元/時(08-22)，停車全程以半小時計，每日(22-08)10元。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日4,800元/月，日間(07-20)3,500元/月，夜間(21-08)500元/月，機車全日300元/月，大型重型機車全日2,400元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 52,
+    "name": "信義廣場地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 12388351796,
@@ -951,6 +1007,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

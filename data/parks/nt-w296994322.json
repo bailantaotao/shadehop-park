@@ -250,7 +250,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 60,
@@ -264,19 +264,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "建國路第一停車場",
-   "opening_hours": null,
+   "name": "鶯歌區建國路停一平面停車場",
+   "official": {
+    "address": "新北市鶯歌區建國路66號",
+    "cars": 50,
+    "fare": "大型車月租4800元;小型車計時30元;小型車月租2400元;身障車月租1200元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 34,
+    "name": "鶯歌區建國路停一平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 296994323,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/296994323"
    },
+   "osm_name": "建國路第一停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 61,
@@ -290,14 +300,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "宏達經營管理顧問有限公司鶯歌停車場",
+   "official": {
+    "address": "新北市鶯歌區建國路12號對面空地",
+    "cars": 56,
+    "fare": "小型車計時50元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 57,
+    "name": "宏達經營管理顧問有限公司鶯歌停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1216701209,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1216701209"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -328,7 +348,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 3,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 119,
@@ -342,14 +362,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "Times鶯歌仁愛路第2(月租)停車場",
+   "official": {
+    "address": "新北市鶯歌區仁愛路17號對面",
+    "cars": 3,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 60,
+    "name": "Times鶯歌仁愛路第2(月租)停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 296994324,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/296994324"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -769,6 +799,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

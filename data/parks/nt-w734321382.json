@@ -268,7 +268,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 100,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 291,
@@ -282,19 +282,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "貴賢停車場",
-   "opening_hours": null,
+   "name": "貴賢臨時平面停車場",
+   "official": {
+    "address": "新北市泰山區明志路3段145巷12號旁",
+    "cars": 100,
+    "fare": "小型車計時20元;小型車月租2500元;身障車月租1250元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 45,
+    "name": "貴賢臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1297280739,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1297280739"
    },
+   "osm_name": "貴賢停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 413,
@@ -308,14 +318,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新明停車場",
-   "opening_hours": null,
+   "name": "新明臨時平面停車場",
+   "official": {
+    "address": "新北市泰山區中央路5巷25號旁",
+    "cars": 24,
+    "fare": "小型車計時20元;小型車月租2200元;身障車月租1100元;機車計次10元;機車月租月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 13,
+    "name": "新明臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1297280741,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1297280741"
    },
+   "osm_name": "新明停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -683,6 +703,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

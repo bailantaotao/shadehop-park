@@ -192,7 +192,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 131,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 354,
@@ -206,14 +206,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "晉呈資產管理有限公司立德三停車場",
+   "official": {
+    "address": "新北市中和區立德街213號旁空地",
+    "cars": 131,
+    "fare": "小型車計時80元;小型車月租5000元;機車計次50元;機車月租1000元;",
+    "hours": "0~24時",
+    "match_m": 22,
+    "name": "晉呈資產管理有限公司立德三停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1474846064,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846064"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -736,6 +746,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

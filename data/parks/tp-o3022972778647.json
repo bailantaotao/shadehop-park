@@ -352,7 +352,7 @@
  "parking": [
   {
    "access": "permit",
-   "capacity": null,
+   "capacity": 148,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
@@ -366,14 +366,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-石牌二場",
+   "official": {
+    "address": "裕民二路與裕民三路交叉口空地",
+    "cars": 148,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "168停車聯盟-石牌二場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1146878413,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1146878413"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -393,7 +403,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "明德平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "明德路315號對面",
+    "cars": 30,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日7,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "明德平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "臺北市停車管理工程處",
    "osm": {
     "id": 361492922,
@@ -404,7 +423,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 30,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 193,
@@ -418,19 +437,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
+   "name": "明德平面停車場",
+   "official": {
+    "address": "明德路315號對面",
+    "cars": 30,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日7,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 51,
+    "name": "明德平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 361491768,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/361491768"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "permit",
-   "capacity": null,
+   "capacity": 132,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 203,
@@ -444,14 +473,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "懷德街55巷平面停車場",
+   "official": {
+    "address": "懷德街與懷德街55巷交叉口",
+    "cars": 132,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日3,600元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "懷德街55巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1245416121,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1245416121"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -482,7 +521,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 64,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 350,
@@ -496,14 +535,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房捷運石牌站停車場",
+   "official": {
+    "address": "石牌路1段200號",
+    "cars": 64,
+    "fare": "小型車：計時 週一至週五10元/時(24-06)，30元/時(06-24)，週六、週日、行政機關放假之紀念日與民俗日10元/時(24-06)，40元/時(06-24)，停車全程以半小時計，入場前10分鐘免費。季租：10,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 21,
+    "name": "嘟嘟房捷運石牌站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 374307299,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/374307299"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -877,6 +926,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

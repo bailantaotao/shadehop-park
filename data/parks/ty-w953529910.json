@@ -302,7 +302,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "俥亭停車",
+   "name": "小檜溪停車場",
+   "official": {
+    "address": "桃園市桃園區青溪三路與朝陽街交叉口",
+    "cars": null,
+    "fare": "一小時20元;每12小時50元",
+    "hours": null,
+    "match_m": 38,
+    "name": "小檜溪停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "日月亭",
    "osm": {
@@ -310,6 +319,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/953396916"
    },
+   "osm_name": "俥亭停車",
    "verified_at": "2026-11-07"
   },
   {
@@ -432,7 +442,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "清溪第三停車場",
+   "name": "新永和停車場",
+   "official": {
+    "address": "桃園市桃園區三民路二段8號",
+    "cars": null,
+    "fare": "汽車：計時平日20元/時，假日30元/時。月租3500元/月。機車：計次10元/次，月租500元/月。",
+    "hours": null,
+    "match_m": 58,
+    "name": "新永和停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -440,6 +459,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1515750532"
    },
+   "osm_name": "清溪第三停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -809,6 +829,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

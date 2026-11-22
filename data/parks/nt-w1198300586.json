@@ -410,7 +410,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 126,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 363,
@@ -424,14 +424,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "宏達永利停車場",
-   "opening_hours": null,
+   "name": "宏達經營管理顧問有限公司永利停車場",
+   "official": {
+    "address": "新北市永和區永利路47號與永貞路70巷5號1~3F",
+    "cars": 126,
+    "fare": "小型車計時80元;小型車月租9000元;",
+    "hours": "0~24時",
+    "match_m": 20,
+    "name": "宏達經營管理顧問有限公司永利停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "宏達永利停車場",
    "osm": {
     "id": 11364309498,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/11364309498"
    },
+   "osm_name": "宏達永利停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -450,7 +460,16 @@
    },
    "maxheight_m": 2.0,
    "method": "osm",
-   "name": "秀朗國小停車場",
+   "name": "永和區秀朗國小地下停車場",
+   "official": {
+    "address": "新北永和區民權路1號B1-B3",
+    "cars": 754,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4200元;身障車月租2200元;重型機車計時30元;重型機車計時40元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 41,
+    "name": "永和區秀朗國小地下停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -458,6 +477,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/11118984854"
    },
+   "osm_name": "秀朗國小停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -851,6 +871,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

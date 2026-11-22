@@ -134,7 +134,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 9,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 103,
@@ -148,14 +148,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "聯永物業股份有限公司-樹林三俊站停車場",
+   "official": {
+    "address": "新北市樹林區三俊街65巷旁",
+    "cars": 9,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 28,
+    "name": "聯永物業股份有限公司-樹林三俊站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 414220681,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/414220681"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -647,6 +657,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -249,19 +249,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "天成舊宗場",
-   "opening_hours": null,
+   "name": "天成舊宗停車場(松山、內湖保管場)",
+   "official": {
+    "address": "新湖二路191巷18號旁空地",
+    "cars": 32,
+    "fare": "小型車：計時 60元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計; 計次 200元/次，隔日另計;月租 全日8000元，違規拖吊保管費每半日計費1次，逾1小時以上未滿12小時者，以半日計費，未滿1小時免收保管費；小型車半日100元/次。。機車：，機車半日25元/次。。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 27,
+    "name": "天成舊宗停車場(松山、內湖保管場)",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1435164267,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1435164267"
    },
+   "osm_name": "天成舊宗場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 515,
@@ -276,7 +286,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "金莊停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "石潭路與金莊路交叉口",
+    "cars": 49,
+    "fare": "計時：60元/時，全程以半小時計。月租：7,200元/月(保證金2,000元)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 46,
+    "name": "金莊停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1551200992,
@@ -287,7 +306,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 547,
@@ -301,14 +320,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times 新湖二路第二停車場",
-   "opening_hours": null,
+   "name": "天成舊宗停車場(松山、內湖保管場)",
+   "official": {
+    "address": "新湖二路191巷18號旁空地",
+    "cars": 32,
+    "fare": "小型車：計時 60元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計; 計次 200元/次，隔日另計;月租 全日8000元，違規拖吊保管費每半日計費1次，逾1小時以上未滿12小時者，以半日計費，未滿1小時免收保管費；小型車半日100元/次。。機車：，機車半日25元/次。。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 40,
+    "name": "天成舊宗停車場(松山、內湖保管場)",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1435164269,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1435164269"
    },
+   "osm_name": "Times 新湖二路第二停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -339,7 +368,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 548,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 576,
@@ -353,14 +382,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "吉拾停車場內湖一場",
+   "official": {
+    "address": "舊宗路1段128號地上1層、地下1、2層",
+    "cars": 548,
+    "fare": "計時：小型車100元/時，機車50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日5,000元/月。",
+    "hours": "09:00:00-23:00:00",
+    "match_m": 46,
+    "name": "吉拾停車場內湖一場",
+    "source": "taipei"
+   },
+   "opening_hours": "09:00:00-23:00:00",
    "operator": null,
    "osm": {
     "id": 345207904,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/345207904"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -734,6 +773,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -187,7 +187,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 192,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 317,
@@ -201,14 +201,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景新停車場",
-   "opening_hours": null,
+   "name": "中和景新立體停車場",
+   "official": {
+    "address": "新北市中和區景新街399巷12號",
+    "cars": 192,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4000元;身障車月租2000元;機車計次10元;機車月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 31,
+    "name": "中和景新立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "新北市政府",
    "osm": {
     "id": 674873336,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/674873336"
    },
+   "osm_name": "景新停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -239,7 +249,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 43,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 457,
@@ -253,14 +263,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "友宏信義收費停車場",
+   "official": {
+    "address": "新北市中和區信義街41巷25-1號B1",
+    "cars": 43,
+    "fare": "小型車月租4500元;",
+    "hours": "0~24時",
+    "match_m": 60,
+    "name": "友宏信義收費停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 480334295,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/480334295"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -317,7 +337,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 529,
@@ -331,14 +351,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "中和興南停車場",
+   "official": {
+    "address": "新北市中和區興南路1段21號旁",
+    "cars": 34,
+    "fare": "小型車計時100元;小型車月租1萬元;",
+    "hours": "0~24時",
+    "match_m": 36,
+    "name": "中和興南停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1487211388,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1487211388"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -712,6 +742,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -230,7 +230,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 291,
@@ -244,14 +244,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停十二",
-   "opening_hours": null,
+   "name": "樹林區第十三平面停車場",
+   "official": {
+    "address": "新北市樹林區中山路1段與文化街交叉路口",
+    "cars": 16,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2600元;身障車月租2000元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "樹林區第十三平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 206748999,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/206748999"
    },
+   "osm_name": "停十二",
    "verified_at": "2026-11-07"
   },
   {
@@ -645,6 +655,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

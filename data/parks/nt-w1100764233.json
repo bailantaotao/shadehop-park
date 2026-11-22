@@ -326,7 +326,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 63,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 185,
@@ -340,14 +340,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "宜舍停車",
-   "opening_hours": null,
+   "name": "金城平面停車場",
+   "official": {
+    "address": "新北市土城區金城路2段與明德路1段交叉口",
+    "cars": 63,
+    "fare": "小型車計時30元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 34,
+    "name": "金城平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1075934524,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1075934524"
    },
+   "osm_name": "宜舍停車",
    "verified_at": "2026-11-07"
   },
   {
@@ -378,7 +388,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 249,
@@ -392,19 +402,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "幸福花園停車場",
-   "opening_hours": null,
+   "name": "晉呈資產管理有限公司明德停車場",
+   "official": {
+    "address": "新北市土城區明德路2段101號旁空地",
+    "cars": 50,
+    "fare": "小型車計時100元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 18,
+    "name": "晉呈資產管理有限公司明德停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 526404505,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/526404505"
    },
+   "osm_name": "幸福花園停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 288,
@@ -418,14 +438,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城區綜合球場平面停車場",
+   "official": {
+    "address": "新北市土城區明德路1段與清水路交叉口停車場",
+    "cars": 36,
+    "fare": "小型車計時20元;小型車月租3500元;身障車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "土城區綜合球場平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1075934519,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1075934519"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -793,6 +823,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

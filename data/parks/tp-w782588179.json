@@ -325,7 +325,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北市殯葬管理處黎元停車場",
+   "name": "助安企業股份有限公司黎元停車場",
+   "official": {
+    "address": "辛亥路3段223號空地",
+    "cars": 97,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 15,
+    "name": "助安企業股份有限公司黎元停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "泰翔公寓大廈管理維護股份有限公司",
    "osm": {
@@ -333,6 +342,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/261044861"
    },
+   "osm_name": "臺北市殯葬管理處黎元停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -415,7 +425,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 295,
@@ -429,14 +439,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北市芳和實驗中學",
+   "official": {
+    "address": "臥龍街170號",
+    "cars": 37,
+    "fare": "月租：2,000元/月，1次收取3個月費用。",
+    "hours": "平日：18時至翌日07時；假日：週六至週一上午07時；國定假日前1晚18時至國定假日結束後翌日07時",
+    "match_m": 2,
+    "name": "臺北市芳和實驗中學",
+    "source": "taipei"
+   },
+   "opening_hours": "平日：18時至翌日07時；假日：週六至週一上午07時；國定假日前1晚18時至國定假日結束後翌日07時",
    "operator": null,
    "osm": {
     "id": 359844704,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/359844704"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -456,6 +476,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "辛亥水安停車場",
+   "official": {
+    "address": "長興街131號",
+    "cars": 62,
+    "fare": "計時：小型車20元/時，停車全程以半小時計。月租：小型車全日3,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 30,
+    "name": "辛亥水安停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -830,6 +859,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

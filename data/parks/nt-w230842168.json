@@ -285,7 +285,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 244,
@@ -299,19 +299,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊中原路第5停車場",
+   "official": {
+    "address": "新北市新莊區中原路71號對面",
+    "cars": 70,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 24,
+    "name": "Times新莊中原路第5停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402178,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402178"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 244,
@@ -325,19 +335,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊中原路第5停車場",
+   "official": {
+    "address": "新北市新莊區中原路71號對面",
+    "cars": 70,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "Times新莊中原路第5停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402177,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402177"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 272,
@@ -351,19 +371,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊中原路第5停車場",
+   "official": {
+    "address": "新北市新莊區中原路71號對面",
+    "cars": 70,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "Times新莊中原路第5停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402179,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402179"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 279,
@@ -377,14 +407,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊中原路第7停車場",
+   "official": {
+    "address": "新北市新莊區中原路1段89號對面",
+    "cars": 50,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 44,
+    "name": "Times新莊中原路第7停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402180,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402180"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -415,7 +455,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 292,
@@ -429,14 +469,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "鼎天餐飲店停車場",
+   "official": {
+    "address": "新北市新莊區中原路39號斜對面",
+    "cars": 29,
+    "fare": "小型車計時200元;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "鼎天餐飲店停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 4577164112,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4577164112"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -829,6 +879,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

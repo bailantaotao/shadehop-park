@@ -407,7 +407,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 174,
@@ -421,19 +421,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-涼州場",
+   "official": {
+    "address": "重慶北路2段與涼州街交叉口空地",
+    "cars": 49,
+    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 44,
+    "name": "168停車聯盟-涼州場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 5110489238,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5110489238"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 196,
@@ -447,14 +457,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-涼州場",
+   "official": {
+    "address": "重慶北路2段與涼州街交叉口空地",
+    "cars": 49,
+    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "168停車聯盟-涼州場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 505340533,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/505340533"
    },
+   "osm_name": "停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -485,7 +505,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 47,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 301,
@@ -499,14 +519,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "和雲",
-   "opening_hours": null,
+   "name": "承德二站停車場",
+   "official": {
+    "address": "民權西路102巷33弄旁空地",
+    "cars": 47,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "承德二站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 712414033,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/712414033"
    },
+   "osm_name": "和雲",
    "verified_at": "2026-11-07"
   }
  ],
@@ -880,6 +910,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

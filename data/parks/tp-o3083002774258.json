@@ -387,7 +387,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 40,
@@ -401,19 +401,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times 江南街",
+   "official": {
+    "address": "江南街71巷16弄30號對面",
+    "cars": 5,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "Times 江南街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1424769736,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1424769736"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 93,
@@ -427,19 +437,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "久誼展業瑞光路停車場",
+   "official": {
+    "address": "瑞光路196號旁空地",
+    "cars": 16,
+    "fare": "計時：小型車200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日20,000元/月，日間(08-18)16,000元/月，夜間(18-08)12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "久誼展業瑞光路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1424072194,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1424072194"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 232,
@@ -453,19 +473,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "長揚停車場",
-   "opening_hours": null,
+   "name": "長揚停車場加美站",
+   "official": {
+    "address": "瑞光路188巷43、45號地下1至3層",
+    "cars": 33,
+    "fare": "小型車：計時 50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日5,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 45,
+    "name": "長揚停車場加美站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3606296009,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3606296009"
    },
+   "osm_name": "長揚停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 294,
@@ -479,19 +509,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "便利停車場港墘站",
+   "official": {
+    "address": "內湖路1段596號",
+    "cars": 12,
+    "fare": "計時：小型車60元/時(08-22)、10元/時(22-08)，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "便利停車場港墘站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 905032865,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/905032865"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 305,
@@ -505,19 +545,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "便利停車場港墘站",
+   "official": {
+    "address": "內湖路1段596號",
+    "cars": 12,
+    "fare": "計時：小型車60元/時(08-22)、10元/時(22-08)，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 34,
+    "name": "便利停車場港墘站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1474846090,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846090"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 88,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 316,
@@ -531,14 +581,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "Times 陽光街",
+   "official": {
+    "address": "陽光街381號旁空地",
+    "cars": 88,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 23,
+    "name": "Times 陽光街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "Yangguang Jie Parking",
    "osm": {
     "id": 8146242008,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/8146242008"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -912,6 +972,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

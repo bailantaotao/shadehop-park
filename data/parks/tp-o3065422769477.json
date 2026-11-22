@@ -485,7 +485,16 @@
    },
    "maxheight_m": 3.8,
    "method": "osm",
-   "name": "國際會議中心停車場",
+   "name": "嘟嘟房世貿站停車場",
+   "official": {
+    "address": "信義路5段1號地下1至地下2層",
+    "cars": 382,
+    "fare": "計時：小型車60元/時，大客車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日6,000元/月，大客車全日25,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 44,
+    "name": "嘟嘟房世貿站停車場",
+    "source": "taipei"
+   },
    "opening_hours": "07:00-23:00",
    "operator": null,
    "osm": {
@@ -493,11 +502,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12404372264"
    },
+   "osm_name": "國際會議中心停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 47,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 141,
@@ -511,14 +521,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "國雲停車泊車趣",
-   "opening_hours": null,
+   "name": "國雲松勤平面停車場",
+   "official": {
+    "address": "松勤街41號",
+    "cars": 47,
+    "fare": "小型車：月租 全日6,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "國雲松勤平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 847056041,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/847056041"
    },
+   "osm_name": "國雲停車泊車趣",
    "verified_at": "2026-11-07"
   },
   {
@@ -996,6 +1016,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

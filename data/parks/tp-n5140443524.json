@@ -289,7 +289,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 193,
@@ -303,19 +303,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
+   "name": "城市車旅台北臨江停車場",
+   "official": {
+    "address": "安和路2段69巷26號對面空地",
+    "cars": 16,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "城市車旅台北臨江停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "阜爾運通股份有限公司",
    "osm": {
     "id": 824580418,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/824580418"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 193,
@@ -329,19 +339,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "小君悅站",
+   "official": {
+    "address": "信義路4段265巷17-1號",
+    "cars": 20,
+    "fare": "計時：80元/時，停車未滿1小時以1小時計；逾1小時以上者，未滿半小時以半小時計。月租：8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "小君悅站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1038718498,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1038718498"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 202,
@@ -355,19 +375,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "遠東大廈停車場",
-   "opening_hours": null,
+   "name": "飛璜開發有限公司通化營業所",
+   "official": {
+    "address": "文昌街278巷3號旁空地",
+    "cars": 6,
+    "fare": "計時：小型車180元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "飛璜開發有限公司通化營業所",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3705848848,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3705848848"
    },
+   "osm_name": "遠東大廈停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 31,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 245,
@@ -382,7 +412,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "愛馬屋通化場",
-   "opening_hours": null,
+   "official": {
+    "address": "光復南路676巷18之1號",
+    "cars": 31,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 31,
+    "name": "愛馬屋通化場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4837986557,
@@ -393,7 +432,7 @@
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -407,14 +446,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "便利停車場大安地政事務所一站",
+   "official": {
+    "address": "信義路4段335巷6號旁空地",
+    "cars": 5,
+    "fare": "計時：小型車80元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "便利停車場大安地政事務所一站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 334649429,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/334649429"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -814,6 +863,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

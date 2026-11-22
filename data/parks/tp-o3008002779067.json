@@ -386,7 +386,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 204,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 64,
@@ -400,19 +400,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "立農公園地下停車場",
+   "official": {
+    "address": "承德路7段372號地下層",
+    "cars": 204,
+    "fare": "小型車：計時 30元/時，全程以半小時計；月租 全日4,800元，日間2,800元(07時~19時)，夜間2,000元(19時~08時)，大型重機2,400元/月。機車：10元/時，當日單次停車最高收費上限20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 17,
+    "name": "立農公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 2624433741,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/2624433741"
    },
+   "osm_name": "停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 132,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
@@ -426,19 +436,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "公舘路平面停車場",
+   "official": {
+    "address": "公舘路與西安街口",
+    "cars": 132,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 23,
+    "name": "公舘路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 375338659,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/375338659"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 46,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 276,
@@ -452,14 +472,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "ViVi PARK吉利超市停車場",
-   "opening_hours": null,
+   "name": "吉利超市停車場",
+   "official": {
+    "address": "吉利街125號地下1至2層",
+    "cars": 46,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "吉利超市停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 10736477007,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10736477007"
    },
+   "osm_name": "ViVi PARK吉利超市停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -911,6 +941,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

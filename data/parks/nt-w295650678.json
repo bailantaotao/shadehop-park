@@ -338,7 +338,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 572,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 192,
@@ -352,14 +352,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "光榮國小地下停車場",
-   "opening_hours": null,
+   "name": "三重區光榮國小地下停車場",
+   "official": {
+    "address": "新北市三重區介壽路32號B1、B2",
+    "cars": 572,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;機車計次20元;機車月租300元;身障機車月租150元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "三重區光榮國小地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 9931956607,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9931956607"
    },
+   "osm_name": "光榮國小地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -390,7 +400,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 128,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 274,
@@ -404,14 +414,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "環快橋下(B區)停車場",
-   "opening_hours": null,
+   "name": "三重區環河快速高架橋下平面停車場",
+   "official": {
+    "address": "新北市三重區河邊北街70號對面，位於環河北路近開元公園至環河北路128巷",
+    "cars": 128,
+    "fare": "小型車計時30元;小型車月租3500元;身障車月租1750元;重型機車計時30元;重型機車月租1500元;機車計次10元;機車月租150元;身障機車月租75元;",
+    "hours": "0~24時",
+    "match_m": 34,
+    "name": "三重區環河快速高架橋下平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 890181844,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/890181844"
    },
+   "osm_name": "環快橋下(B區)停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -442,7 +462,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 427,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 396,
@@ -456,14 +476,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "三重區龍門公園地下停車場",
+   "official": {
+    "address": "新北市三重區公園街32號",
+    "cars": 427,
+    "fare": "小型車計時20元;小型車月租3100元;身障車月租1550元;機車計次10元;機車月租月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 36,
+    "name": "三重區龍門公園地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1491375927,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1491375927"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -831,6 +861,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

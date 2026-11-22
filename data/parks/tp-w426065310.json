@@ -447,7 +447,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 91,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 76,
@@ -461,14 +461,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "新和庭園平面停車場",
+   "official": {
+    "address": "中華路2段416巷與416巷10弄交叉口",
+    "cars": 91,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "新和庭園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 1002930390,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002930390"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
@@ -513,14 +523,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "莒光路立體停車場",
-   "opening_hours": null,
+   "name": "莒光立體停車場",
+   "official": {
+    "address": "莒光路137號",
+    "cars": 108,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日4,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "莒光立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 287208259,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/287208259"
    },
+   "osm_name": "莒光路立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -914,6 +934,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

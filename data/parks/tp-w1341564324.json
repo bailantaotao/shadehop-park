@@ -373,7 +373,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 86,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 344,
@@ -387,14 +387,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "寧波同鄉會墓園停車場",
-   "opening_hours": null,
+   "name": "松德臨時平面停車場",
+   "official": {
+    "address": "松德路底(中強公園旁)",
+    "cars": 86,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月，日間2,000元/月(07-19)。機車免費停車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 30,
+    "name": "松德臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1341472295,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1341472295"
    },
+   "osm_name": "寧波同鄉會墓園停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -439,7 +449,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "力揚信義松德停車場",
+   "name": "松德臨時平面停車場",
+   "official": {
+    "address": "松德路底(中強公園旁)",
+    "cars": 86,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月，日間2,000元/月(07-19)。機車免費停車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 37,
+    "name": "松德臨時平面停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -447,6 +466,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/258816696"
    },
+   "osm_name": "力揚信義松德停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -820,6 +840,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -256,7 +256,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 154,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 229,
@@ -270,14 +270,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "湯城三期二站停車場",
+   "official": {
+    "address": "新北市三重區重新路5段609巷旁空地",
+    "cars": 154,
+    "fare": "小型車計時50元;小型車月租6000元;機車計時20元;機車月租800元;",
+    "hours": "0~24時",
+    "match_m": 35,
+    "name": "湯城三期二站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 232886916,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/232886916"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -308,7 +318,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 131,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 314,
@@ -322,14 +332,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "中興北停車場",
+   "official": {
+    "address": "新北市三重區中興北街83號對面",
+    "cars": 131,
+    "fare": "小型車計時30元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "中興北停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1147498114,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1147498114"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -749,6 +769,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

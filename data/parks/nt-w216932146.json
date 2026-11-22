@@ -150,7 +150,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 79,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 31,
@@ -164,14 +164,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "板橋四汴頭停車場",
+   "official": {
+    "address": "新北市板橋區四汴頭越堤道旁",
+    "cars": 79,
+    "fare": "小型車計時20元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 46,
+    "name": "板橋四汴頭停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 216588174,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/216588174"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -228,7 +238,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 161,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 343,
@@ -242,19 +252,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新莊西盛區停車場",
+   "official": {
+    "address": "新北市新莊區新莊堤19越堤道旁",
+    "cars": 161,
+    "fare": "小型車計時20元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 51,
+    "name": "新莊西盛區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 692388996,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/692388996"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 348,
@@ -268,14 +288,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 板橋龍興街停車場",
-   "opening_hours": null,
+   "name": "板橋龍興街停車場",
+   "official": {
+    "address": "新北市板橋區龍興街95巷27號對面",
+    "cars": 26,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 12,
+    "name": "板橋龍興街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1466666868,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666868"
    },
+   "osm_name": "Hi PARKING 板橋龍興街停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -669,6 +699,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

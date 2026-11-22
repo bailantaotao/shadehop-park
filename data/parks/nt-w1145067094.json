@@ -291,7 +291,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 107,
@@ -305,19 +305,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "新泰游泳池附設停車場",
+   "official": {
+    "address": "新北市新莊區新泰路502巷1號",
+    "cars": 16,
+    "fare": "小型車計時20元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 9,
+    "name": "新泰游泳池附設停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "新泰泳池停車場",
    "osm": {
     "id": 1145069464,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1145069464"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 19,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 369,
@@ -331,14 +341,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房中平全聯站停車場",
+   "official": {
+    "address": "新北市新莊區中平路82巷27號B1/135~153號車格位",
+    "cars": 19,
+    "fare": "小型車計時50元;小型車計時100元;小型車月租8000元;",
+    "hours": "月租24小時，臨停8~22時",
+    "match_m": 55,
+    "name": "嘟嘟房中平全聯站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "月租24小時，臨停8~22時",
    "operator": null,
    "osm": {
     "id": 313026797,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/313026797"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -395,7 +415,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 62,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 508,
@@ -409,14 +429,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房新莊中港國小站停車場",
+   "official": {
+    "address": "新北市新莊區中和街與中和街82巷口",
+    "cars": 62,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "嘟嘟房新莊中港國小站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 312380973,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/312380973"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -816,6 +846,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

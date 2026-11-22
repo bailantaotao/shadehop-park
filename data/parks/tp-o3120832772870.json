@@ -219,7 +219,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 158,
@@ -233,19 +233,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times 經貿二路第2",
+   "official": {
+    "address": "經貿二路157巷36弄62號旁",
+    "cars": 23,
+    "fare": "小型車：計時 200元/時，全程以半小時計;月租 全日10,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "Times 經貿二路第2",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 1002545260,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002545260"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 382,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 337,
@@ -259,19 +269,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "屋頂停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房捷運內湖機廠站停車場",
+   "official": {
+    "address": "經貿一路265號地上3至5層",
+    "cars": 382,
+    "fare": "計時：小型車30元/時(06-20)，10元/時(20-06)，停車全程以半小時計。計次：機車20元/次，隔日另計(凌晨2時為基準)。季租：小型車9,000元/季，機車900元/季。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 52,
+    "name": "嘟嘟房捷運內湖機廠站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 499749927,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/499749927"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 92,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 425,
@@ -285,19 +305,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "南港園區站",
+   "official": {
+    "address": "園區街6號地下2-4層",
+    "cars": 92,
+    "fare": "計時：80元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。計次：400元/次(隔日另計)。月租：8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 20,
+    "name": "南港園區站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 1720289811,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1720289811"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 113,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 474,
@@ -311,14 +341,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "安康公車調度站臨時平面停車場",
+   "official": {
+    "address": "五分街12號空地旁",
+    "cars": 113,
+    "fare": "計時：小型車30元/時，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日4,000元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "安康公車調度站臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 80317522,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/80317522"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -349,7 +389,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 359,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 614,
@@ -364,7 +404,16 @@
    "maxheight_m": 1.8,
    "method": "osm",
    "name": "東湖國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "東湖路115號之1地下",
+    "cars": 359,
+    "fare": "小型車：計時 40元/時(08時~21時)，20元/時(21時~08時)，全程以半小時計；月租 全日4,000元，日間2,000元(07時~19時)，夜間2,000元(19時~08時)，大型重機2,000元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 42,
+    "name": "東湖國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3232592861,
@@ -744,6 +793,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

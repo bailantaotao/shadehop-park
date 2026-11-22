@@ -101,7 +101,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -115,19 +115,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大屯公園2號停車場",
-   "opening_hours": null,
+   "name": "大屯2號停車場",
+   "official": {
+    "address": "新北市三芝區大屯自然公園旁",
+    "cars": 37,
+    "fare": "小型車計時20元;",
+    "hours": "0~24時",
+    "match_m": 54,
+    "name": "大屯2號停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 230730613,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/230730613"
    },
+   "osm_name": "大屯公園2號停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 8,
@@ -141,19 +151,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大屯公園1號停車場",
-   "opening_hours": null,
+   "name": "大屯1號停車場",
+   "official": {
+    "address": "新北市三芝區大屯自然公園旁",
+    "cars": 32,
+    "fare": "小型車計時20元;機車計次20元;",
+    "hours": "0~24時",
+    "match_m": 35,
+    "name": "大屯1號停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 293152200,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/293152200"
    },
+   "osm_name": "大屯公園1號停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 65,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 44,
@@ -167,14 +187,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "二子坪2號停車場",
-   "opening_hours": null,
+   "name": "二子坪停車場",
+   "official": {
+    "address": "新北市三芝 區二子坪、大屯山車道入口處",
+    "cars": 65,
+    "fare": "小型車計時30元;機車計次20元;",
+    "hours": "0~24時",
+    "match_m": 25,
+    "name": "二子坪停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "陽明山國家公園管理處",
    "osm": {
     "id": 136183945,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/136183945"
    },
+   "osm_name": "二子坪2號停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -205,7 +235,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 521,
@@ -219,14 +249,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大屯山鞍部停車場",
-   "opening_hours": null,
+   "name": "鞍部停車場",
+   "official": {
+    "address": "新北市三芝區大屯山鞍部登山口對面",
+    "cars": 26,
+    "fare": "小型車計時30元;機車計次20元;",
+    "hours": "0~24時",
+    "match_m": 27,
+    "name": "鞍部停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "陽明山國家公園管理處",
    "osm": {
     "id": 136183944,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/136183944"
    },
+   "osm_name": "大屯山鞍部停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -612,6 +652,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

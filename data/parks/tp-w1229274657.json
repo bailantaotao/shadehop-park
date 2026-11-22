@@ -278,7 +278,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 95,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 207,
@@ -292,19 +292,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "醫療財團法人辜公亮基金會和信治癌中心醫院-醫療大樓停車場",
+   "official": {
+    "address": "立德路125號地下1至2層醫療大樓",
+    "cars": 95,
+    "fare": "計時：小型車60元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。計次：機車30元/次，隔日隔次另計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "醫療財團法人辜公亮基金會和信治癌中心醫院-醫療大樓停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3811019335,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3811019335"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 690,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 237,
@@ -318,14 +328,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "屋頂停車場",
-   "opening_hours": null,
+   "name": "好市多北投分公司",
+   "official": {
+    "address": "立德路117號",
+    "cars": 690,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計，停車未滿30分鐘免費。免費停車：機車。",
+    "hours": "9時30分至21時30分(最遲22時30分離場)",
+    "match_m": 60,
+    "name": "好市多北投分公司",
+    "source": "taipei"
+   },
+   "opening_hours": "9時30分至21時30分(最遲22時30分離場)",
    "operator": null,
    "osm": {
     "id": 5283487240,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5283487240"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -745,6 +765,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

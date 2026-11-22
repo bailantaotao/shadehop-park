@@ -301,7 +301,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 278,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -316,7 +316,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "重慶公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市板橋區重慶路265號B1、B2",
+    "cars": 278,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2500元;機車免費;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "重慶公園地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 999820271,
@@ -327,7 +336,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 15,
@@ -341,19 +350,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "國慶停車場",
-   "opening_hours": null,
+   "name": "國慶平面停車場",
+   "official": {
+    "address": "新北市板橋區重慶路277、279號對面",
+    "cars": 36,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租3600元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "國慶平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 128246930,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/128246930"
    },
+   "osm_name": "國慶停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 473,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 165,
@@ -368,7 +387,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "民德立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市中和區民德路188號",
+    "cars": 473,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4000元;身障車月租2350元;機車計次10元;機車月租500元;身障機車月租250元;重型機車計時30元;重型機車計時40元;重型機車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "民德立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 317463438,
@@ -431,7 +459,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 480,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 404,
@@ -445,14 +473,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "忠孝國中地下停車場",
-   "opening_hours": null,
+   "name": "板橋區忠孝國中地下停車場",
+   "official": {
+    "address": "新北市板橋區重慶路168號B1、B2",
+    "cars": 480,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4000元;小型車月租3200元;機車計次20元;機車月租300元;機車月租240元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 41,
+    "name": "板橋區忠孝國中地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1100987529,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1100987529"
    },
+   "osm_name": "忠孝國中地下停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -826,6 +864,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

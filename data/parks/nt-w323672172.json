@@ -250,14 +250,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "水柳腳停車場",
-   "opening_hours": null,
+   "name": "水柳腳立體停車場",
+   "official": {
+    "address": "新北市坪林區水柳腳34號之1",
+    "cars": 98,
+    "fare": "小型車計時20元;小型車月租700元;身障車月租350元 ;機車計次10元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 10,
+    "name": "水柳腳立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 693018156,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/693018156"
    },
+   "osm_name": "水柳腳停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -625,6 +635,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

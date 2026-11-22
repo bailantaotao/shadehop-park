@@ -378,7 +378,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 167,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 58,
@@ -392,19 +392,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
+   "name": "城市車旅三重元信停車場",
+   "official": {
+    "address": "新北市三重區元信一街與元信二街交叉口",
+    "cars": 167,
+    "fare": "小型車計時100元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 56,
+    "name": "城市車旅三重元信停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "阜爾運通股份有限公司",
    "osm": {
     "id": 550535673,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/550535673"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 167,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 97,
@@ -418,19 +428,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "永侑停車場",
-   "opening_hours": null,
+   "name": "城市車旅三重元信停車場",
+   "official": {
+    "address": "新北市三重區元信一街與元信二街交叉口",
+    "cars": 167,
+    "fare": "小型車計時100元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 37,
+    "name": "城市車旅三重元信停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 550535672,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/550535672"
    },
+   "osm_name": "永侑停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 290,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 108,
@@ -444,14 +464,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "俥亭",
-   "opening_hours": null,
+   "name": "三重仁信段平面停車場",
+   "official": {
+    "address": "新北市三重區元信二街及元富二街交叉口旁空地",
+    "cars": 290,
+    "fare": "小型車計時20元;小型車月租3000元;身障車月租2000元;機車計次10元;機車月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 14,
+    "name": "三重仁信段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 550535674,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/550535674"
    },
+   "osm_name": "俥亭",
    "verified_at": "2026-11-07"
   },
   {
@@ -897,6 +927,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -222,7 +222,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 88,
@@ -236,14 +236,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "南港59號公園停車場",
-   "opening_hours": null,
+   "name": "南港59號公園臨時平面停車場",
+   "official": {
+    "address": "研究院路2段12巷57弄2號旁",
+    "cars": 21,
+    "fare": "計時：20元/時，全程以半小時計費。月租：4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "南港59號公園臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 298332755,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/298332755"
    },
+   "osm_name": "南港59號公園停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -300,7 +310,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 7,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 160,
@@ -314,19 +324,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "研究院路平面停車場",
+   "official": {
+    "address": "研究院路2段84巷",
+    "cars": 7,
+    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計，本場未出售月票。",
+    "hours": "周一至周日 9時至17時",
+    "match_m": 47,
+    "name": "研究院路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周日 9時至17時",
    "operator": null,
    "osm": {
     "id": 345839845,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/345839845"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 7,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 176,
@@ -340,14 +360,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "研究院路平面停車場",
+   "official": {
+    "address": "研究院路2段84巷",
+    "cars": 7,
+    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計，本場未出售月票。",
+    "hours": "周一至周日 9時至17時",
+    "match_m": 43,
+    "name": "研究院路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周日 9時至17時",
    "operator": null,
    "osm": {
     "id": 345839847,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/345839847"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -721,6 +751,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

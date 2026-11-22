@@ -222,7 +222,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 19,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 491,
@@ -236,19 +236,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "龍洞灣海洋公園停車場",
+   "official": {
+    "address": "新北市貢寮區龍洞街63-8號",
+    "cars": 19,
+    "fare": "小型車計時30元;",
+    "hours": "8~18時",
+    "match_m": 55,
+    "name": "龍洞灣海洋公園停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "8~18時",
    "operator": null,
    "osm": {
     "id": 1230289054,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1230289054"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 99,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 621,
@@ -262,19 +272,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "貢寮龍洞灣平面停車場",
+   "official": {
+    "address": "新北市貢寮區龍洞街63-8號旁空地停車場",
+    "cars": 99,
+    "fare": "大型車計次150元;小型車計時50元;",
+    "hours": "0~24時",
+    "match_m": 34,
+    "name": "貢寮龍洞灣平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1181241264,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1181241264"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 671,
@@ -288,14 +308,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "鼻頭港旁平面停車場",
+   "official": {
+    "address": "新北市瑞芳區鼻頭路237號對面",
+    "cars": 14,
+    "fare": "小型車計時100元;",
+    "hours": "0~24時",
+    "match_m": 6,
+    "name": "鼻頭港旁平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 261857081,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/261857081"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -683,6 +713,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -281,14 +281,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "泰山區同興平面停車場",
+   "official": {
+    "address": "新北市泰山區福興ㄧ街與同義街18巷交叉口",
+    "cars": 32,
+    "fare": "小型車計時20元;小型車月租2500元;身障車月租1500元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 40,
+    "name": "泰山區同興平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "新北市政府",
    "osm": {
     "id": 882012822,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/882012822"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -307,14 +317,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times泰山全興福興停車場",
+   "official": {
+    "address": "新北市泰山區全興路與福興街交叉口",
+    "cars": 21,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 10,
+    "name": "Times泰山全興福興停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "Times 24",
    "osm": {
     "id": 2480081262,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/2480081262"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -811,6 +831,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

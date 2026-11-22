@@ -385,7 +385,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "義芳第二停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興隆路1段137巷88號旁空地",
+    "cars": 148,
+    "fare": "月租：3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "義芳第二停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 8708472,
@@ -411,7 +420,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "三福街平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "景隆街36巷內",
+    "cars": 37,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "三福街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 7569455,
@@ -436,14 +454,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "義芳第一停車場",
-   "opening_hours": null,
+   "name": "義芳第二停車場",
+   "official": {
+    "address": "興隆路1段137巷88號旁空地",
+    "cars": 148,
+    "fare": "月租：3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 50,
+    "name": "義芳第二停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 8708471,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/8708471"
    },
+   "osm_name": "義芳第一停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -843,6 +871,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -411,7 +411,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大連停車場",
+   "name": "大連平面停車場",
+   "official": {
+    "address": "桃園市平鎮區上海路148號旁",
+    "cars": null,
+    "fare": "臨停20元/時、月租2400元/月",
+    "hours": null,
+    "match_m": 20,
+    "name": "大連平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -419,6 +428,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/730073074"
    },
+   "osm_name": "大連停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -437,7 +447,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大興停車場",
+   "name": "大興平面停車場",
+   "official": {
+    "address": "桃園市平鎮區大興街與金城交叉口",
+    "cars": null,
+    "fare": "臨停20元/時、月租2400元/月",
+    "hours": null,
+    "match_m": 13,
+    "name": "大興平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -445,6 +464,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1030416337"
    },
+   "osm_name": "大興停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -838,6 +858,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

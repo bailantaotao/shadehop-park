@@ -216,7 +216,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "廣明停車場",
+   "name": "新店區廣明平面停車場",
+   "official": {
+    "address": "新北市新店區北宜路1段39巷32號旁",
+    "cars": 37,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 17,
+    "name": "新店區廣明平面停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": "益彩國際股份有限公司",
    "osm": {
@@ -224,6 +233,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/106308580"
    },
+   "osm_name": "廣明停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -242,7 +252,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "國校停車場",
+   "name": "新店國校停車場",
+   "official": {
+    "address": "新北市新店區國校路30號對面空地",
+    "cars": 50,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "新店國校停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -250,6 +269,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/332016444"
    },
+   "osm_name": "國校停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -295,6 +315,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "捷運新店站轉乘停車場",
+   "official": {
+    "address": "新北市新店區北宜路1段2號B2~B4",
+    "cars": 209,
+    "fare": null,
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "捷運新店站轉乘停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": "臺北大眾捷運股份有限公司",
    "osm": {
@@ -719,6 +748,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -509,7 +509,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 91,
@@ -524,7 +524,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "長安林森停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "長安東路1段與林森北路口旁空地",
+    "cars": 12,
+    "fare": "小型車：計時 200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日18,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "長安林森停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 944570028,
@@ -535,7 +544,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 17,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 143,
@@ -549,19 +558,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "六條通停車場",
-   "opening_hours": null,
+   "name": "禾典中南站",
+   "official": {
+    "address": "中山北路1段105巷17號空地",
+    "cars": 17,
+    "fare": "計時：200元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。月租：全日20,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "禾典中南站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 940449130,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/940449130"
    },
+   "osm_name": "六條通停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 13,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 150,
@@ -575,19 +594,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "Times中山北路一段",
+   "official": {
+    "address": "中山北路1段39號旁空地",
+    "cars": 13,
+    "fare": "計時：200元/時，停車全程以半小時計；月租：全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "Times中山北路一段",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 1019904481,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019904481"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 7,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 194,
@@ -601,14 +630,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "林森五條通平面停車場",
-   "opening_hours": null,
+   "name": "五條通停車場",
+   "official": {
+    "address": "長安東路1段43巷6號邊空地",
+    "cars": 7,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "五條通停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 436568799,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436568799"
    },
+   "osm_name": "林森五條通平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -628,6 +667,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "行一大客車平面停車場",
+   "official": {
+    "address": "北平東路天津街口",
+    "cars": null,
+    "fare": "計時：60元/時，全程以半小時計費。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "行一大客車平面停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -653,7 +701,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
+   "name": "通通停長安停車場",
+   "official": {
+    "address": "長安東路1段26號空地",
+    "cars": 16,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "通通停長安停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "寶盛國際股份有限公司",
    "osm": {
@@ -661,6 +718,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436568797"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   }
  ],
@@ -1028,6 +1086,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

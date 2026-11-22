@@ -175,14 +175,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新北市瑞芳區立體停車場",
-   "opening_hours": null,
+   "name": "瑞芳區立體停車場",
+   "official": {
+    "address": "新北市瑞芳區民權街3之1號",
+    "cars": 348,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2500元;身障車月租1250元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 17,
+    "name": "瑞芳區立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 196809774,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/196809774"
    },
+   "osm_name": "新北市瑞芳區立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -291,7 +301,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 66,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 480,
@@ -305,14 +315,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "後火車站收費平面停車場",
-   "opening_hours": null,
+   "name": "瑞芳區後火車站平面停車場",
+   "official": {
+    "address": "新北市瑞芳區瑞芳街54號對面",
+    "cars": 66,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2000元;身障車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 20,
+    "name": "瑞芳區後火車站平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 710697929,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/710697929"
    },
+   "osm_name": "後火車站收費平面停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -699,6 +719,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

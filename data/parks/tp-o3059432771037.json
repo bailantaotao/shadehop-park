@@ -510,7 +510,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 99,
@@ -524,14 +524,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣聯通復源停車場",
+   "official": {
+    "address": "光復南路6巷48弄7號對面空地",
+    "cars": 21,
+    "fare": "計時：100元/時，停車全程以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "台灣聯通復源停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 746296431,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/746296431"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -576,19 +586,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新長越市民大道停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房市民延吉1站停車場",
+   "official": {
+    "address": "市民大道4段259號旁空地",
+    "cars": 16,
+    "fare": "小型車：計時 120元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計;月租 全日15,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "嘟嘟房市民延吉1站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 368877196,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/368877196"
    },
+   "osm_name": "新長越市民大道停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 226,
@@ -602,19 +622,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "應安168 華視五場",
-   "opening_hours": null,
+   "name": "168停車聯盟-文教一場",
+   "official": {
+    "address": "光復南路96巷25號",
+    "cars": 40,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 44,
+    "name": "168停車聯盟-文教一場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1340310149,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1340310149"
    },
+   "osm_name": "應安168 華視五場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 257,
@@ -628,19 +658,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "俥停 大安光復場",
-   "opening_hours": null,
+   "name": "168停車聯盟-文教二場",
+   "official": {
+    "address": "光復南路116巷7號1層(華視攝影大樓後方空地)",
+    "cars": 14,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 44,
+    "name": "168停車聯盟-文教二場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 331650859,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/331650859"
    },
+   "osm_name": "俥停 大安光復場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 2,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 258,
@@ -654,14 +694,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "應安168 華視三場",
-   "opening_hours": null,
+   "name": "168停車聯盟-文教地下室停車場",
+   "official": {
+    "address": "光復南路72巷73號地下1層",
+    "cars": 2,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "168停車聯盟-文教地下室停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1340310151,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1340310151"
    },
+   "osm_name": "應安168 華視三場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -1035,6 +1085,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

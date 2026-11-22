@@ -325,14 +325,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "安和停車場",
-   "opening_hours": null,
+   "name": "新店區安和公園臨時平面停車場",
+   "official": {
+    "address": "新北市新店區安和路2段141號旁",
+    "cars": 67,
+    "fare": "小型車計時30元;小型車月租3000元;小型車月租2800元;身障車月租2000元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 8,
+    "name": "新店區安和公園臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "興盛興有限公司安和公園臨時平面停車場",
    "osm": {
     "id": 380017351,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/380017351"
    },
+   "osm_name": "安和停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -752,6 +762,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

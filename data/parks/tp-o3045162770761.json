@@ -388,7 +388,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 134,
@@ -402,19 +402,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中崙第一停車場",
-   "opening_hours": null,
+   "name": "USPACE中崙旗艦二場",
+   "official": {
+    "address": "安東街16巷28號對面空地",
+    "cars": 49,
+    "fare": "小型車：計時 250元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日15,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "USPACE中崙旗艦二場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 311913874,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311913874"
    },
+   "osm_name": "中崙第一停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 135,
@@ -428,19 +438,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "USPACE中崙旗艦二場",
+   "official": {
+    "address": "安東街16巷28號對面空地",
+    "cars": 49,
+    "fare": "小型車：計時 250元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日15,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 49,
+    "name": "USPACE中崙旗艦二場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1474846002,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846002"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 95,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 142,
@@ -454,19 +474,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中崙第二停車場",
-   "opening_hours": null,
+   "name": "辰淵中崙停車場",
+   "official": {
+    "address": "八德路2段210巷8號對面空地",
+    "cars": 95,
+    "fare": "計時：100元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。月租：8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "辰淵中崙停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 311913873,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311913873"
    },
+   "osm_name": "中崙第二停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 103,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 150,
@@ -480,19 +510,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房中崙5站停車場",
+   "official": {
+    "address": "八德路2段278-1號旁",
+    "cars": 103,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "嘟嘟房中崙5站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1474846003,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846003"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 193,
@@ -506,14 +546,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "八德二月租場",
-   "opening_hours": null,
+   "name": "通通停中崙停車場",
+   "official": {
+    "address": "八德路2段174巷11弄5號空地",
+    "cars": 20,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "通通停中崙停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 430830501,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/430830501"
    },
+   "osm_name": "八德二月租場",
    "verified_at": "2026-11-07"
   },
   {
@@ -913,6 +963,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -129,7 +129,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 57,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -143,14 +143,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "鳳民停車場",
+   "official": {
+    "address": "新北市鶯歌區鳳福路鳳福公園旁",
+    "cars": 57,
+    "fare": "小型車月租2500元;",
+    "hours": "0~24時",
+    "match_m": 10,
+    "name": "鳳民停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1495108397,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1495108397"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -181,7 +191,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 79,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 70,
@@ -196,7 +206,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "永雄鳳福停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市鶯歌區鳳五路與鳳福路交口空地",
+    "cars": 79,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "永雄鳳福停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1495108396,
@@ -648,6 +667,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

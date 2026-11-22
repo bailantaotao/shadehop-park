@@ -319,7 +319,7 @@
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 73,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 208,
@@ -333,7 +333,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
+   "name": "嘉新大樓停車場",
+   "official": {
+    "address": "民生西路3巷9號地上1至3層",
+    "cars": 73,
+    "fare": "計時：小型車180元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 39,
+    "name": "嘉新大樓停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "阜爾運通股份有限公司",
    "osm": {
@@ -341,11 +350,12 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1022938095"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 225,
@@ -359,19 +369,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "禾典停車場",
-   "opening_hours": null,
+   "name": "禾典民權站",
+   "official": {
+    "address": "民權西路96巷底旁空地",
+    "cars": 48,
+    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元，日間8,000元(08時~18時)，夜間6,500元(18時~08時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "禾典民權站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1022231534,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1022231534"
    },
+   "osm_name": "禾典停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 9,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 237,
@@ -385,14 +405,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "ViVi Park",
-   "opening_hours": null,
+   "name": "168停車聯盟-中山場",
+   "official": {
+    "address": "中山北路2段105號旁空地",
+    "cars": 9,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "168停車聯盟-中山場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 948881124,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948881124"
    },
+   "osm_name": "ViVi Park",
    "verified_at": "2026-11-07"
   },
   {
@@ -423,7 +453,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 47,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 349,
@@ -437,14 +467,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "和雲",
-   "opening_hours": null,
+   "name": "承德二站停車場",
+   "official": {
+    "address": "民權西路102巷33弄旁空地",
+    "cars": 47,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "承德二站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 712414033,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/712414033"
    },
+   "osm_name": "和雲",
    "verified_at": "2026-11-07"
   }
  ],
@@ -818,6 +858,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

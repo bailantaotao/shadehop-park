@@ -229,7 +229,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 13,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 119,
@@ -244,7 +244,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "中港平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市新莊區中港路與中華路2段交叉口空地",
+    "cars": 13,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 13,
+    "name": "中港平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 309347754,
@@ -255,7 +264,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 126,
@@ -269,19 +278,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊榮華路停車場",
+   "official": {
+    "address": "新北市新莊區榮華路1段",
+    "cars": 28,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 54,
+    "name": "Times新莊榮華路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402271,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402271"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 200,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 132,
@@ -296,7 +315,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "中誠立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市新莊區中誠街53巷1號",
+    "cars": 200,
+    "fare": "小型車計時30元;小型車月租3300元;身障車月租1650元;機車計次10元;機車月租月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 14,
+    "name": "中誠立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 309115173,
@@ -307,7 +335,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 164,
@@ -321,19 +349,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊榮華路停車場",
+   "official": {
+    "address": "新北市新莊區榮華路1段",
+    "cars": 28,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "Times新莊榮華路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402273,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402273"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 173,
@@ -347,14 +385,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊榮華路停車場",
+   "official": {
+    "address": "新北市新莊區榮華路1段",
+    "cars": 28,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "Times新莊榮華路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402272,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402272"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -787,6 +835,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

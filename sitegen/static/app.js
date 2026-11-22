@@ -771,10 +771,14 @@
         // Mirror each place through the park too, so fitting the box keeps the park in the middle.
         pts.push(ll, L.latLng(2 * c.lat - ll.lat, 2 * c.lng - ll.lng));
         var sub = k === "charge" ? (x.speed_label || "") : k === "parking" && x.fee ? ({ yes: "收費", no: "免費" }[x.fee] || "") : "";
+        var off = x.official || {};  // the city's registered name, fare and hours for this lot
+        var more = (off.fare ? '<span class="near-fact">' + esc(off.fare.length > 70 ? off.fare.slice(0, 70) + "…" : off.fare) + "</span>" : "") +
+          (off.hours ? '<span class="near-fact">開放：' + esc(off.hours) + "</span>" : "");
         L.marker(ll, { pane: "near", keyboard: true, title: placeName(x, k), icon: L.divIcon({ className: "near-mk " + k + (fast ? " fast" : ""),
           html: '<span class="near-in">' + I(icon) + "<b>" + x.distance_m + "m</b></span>", iconSize: [0, 0], iconAnchor: [0, 0] }) })
           .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, k)) + "</strong>" +
             '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
+            more +
             '<div class="near-btns"><a class="pp-btn primary" href="' + esc(placeRoute(x, k, area)) + '" target="_blank" rel="noopener">導航</a>' +
             (placeName(x, k) !== NEAR[k].label ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "") +
             "</div></div>",

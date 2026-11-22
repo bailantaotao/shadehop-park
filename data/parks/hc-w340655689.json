@@ -430,7 +430,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "府後停車場",
+   "name": "府後地下停車場",
+   "official": {
+    "address": "新竹市北區府後街42號",
+    "cars": null,
+    "fare": "計時20元(8-22) 夜間優惠上限60元(22-8)",
+    "hours": null,
+    "match_m": 50,
+    "name": "府後地下停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -438,6 +447,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/323599512"
    },
+   "osm_name": "府後停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -482,7 +492,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "稅務大樓地下停車場",
+   "official": {
+    "address": "中央路112號",
+    "cars": null,
+    "fare": "停車費用 - 平日： 20元 機車：未收費 *\t停車費用 - 假日： 20元 機車：未收費",
+    "hours": null,
+    "match_m": 47,
+    "name": "稅務大樓地下停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -490,6 +509,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/368257742"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -508,7 +528,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "稅務大樓停車場",
+   "name": "稅務大樓地下停車場",
+   "official": {
+    "address": "中央路112號",
+    "cars": null,
+    "fare": "停車費用 - 平日： 20元 機車：未收費 *\t停車費用 - 假日： 20元 機車：未收費",
+    "hours": null,
+    "match_m": 12,
+    "name": "稅務大樓地下停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -516,6 +545,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10983579270"
    },
+   "osm_name": "稅務大樓停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -954,6 +984,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

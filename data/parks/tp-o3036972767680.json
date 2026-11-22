@@ -413,7 +413,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 17,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 87,
@@ -427,19 +427,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "南華高中停車場",
-   "opening_hours": null,
+   "name": "南華高中收費停車場",
+   "official": {
+    "address": "汀州路3段58號旁空地",
+    "cars": 17,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "南華高中收費停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 406441798,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/406441798"
    },
+   "osm_name": "南華高中停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 90,
@@ -453,19 +463,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台大羅斯福路平面停車場",
-   "opening_hours": null,
+   "name": "公館站停車場",
+   "official": {
+    "address": "羅斯福路3段333巷1號空地",
+    "cars": 12,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "公館站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 375248573,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/375248573"
    },
+   "osm_name": "台大羅斯福路平面停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 111,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 117,
@@ -479,14 +499,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "基泰台大地下停車場",
-   "opening_hours": null,
+   "name": "驛林交通股份有限公司基泰台大站",
+   "official": {
+    "address": "羅斯福路3段309-319號地下2至6層",
+    "cars": 111,
+    "fare": "計時：小型車週一至週五100元/時，週六至週日及政府行政機關放假之紀念日、民俗節日200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "驛林交通股份有限公司基泰台大站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 8494661625,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/8494661625"
    },
+   "osm_name": "基泰台大地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -505,7 +535,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅三總汀州場",
+   "name": "三軍總醫院汀州院區停車場",
+   "official": {
+    "address": "汀州路3段40號",
+    "cars": 75,
+    "fare": "計時：小型車60元/時(06-24)、30元/時(24-06)，停車全程以半小時計。月租：半日4,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "三軍總醫院汀州院區停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "阜爾運通股份有限公司",
    "osm": {
@@ -513,11 +552,12 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1307070679"
    },
+   "osm_name": "城市車旅三總汀州場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 13,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 213,
@@ -531,14 +571,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "普驛收費停車場",
-   "opening_hours": null,
+   "name": "禾典公館站",
+   "official": {
+    "address": "汀州路3段104巷4號旁空地",
+    "cars": 13,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月，日間(08-18)8,000元/月，夜間(18-08)6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "禾典公館站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 413680667,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/413680667"
    },
+   "osm_name": "普驛收費停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -957,6 +1007,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

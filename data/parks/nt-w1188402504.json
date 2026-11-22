@@ -239,14 +239,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中山立體停車場",
-   "opening_hours": null,
+   "name": "三重區中山立體停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段7號B1、B2、2F~7F及頂樓",
+    "cars": 466,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4200元;身障車月租2100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "三重區中山立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "俥亭停車",
    "osm": {
     "id": 436187822,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436187822"
    },
+   "osm_name": "中山立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -265,19 +275,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "三重區中山立體停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段7號B1、B2、2F~7F及頂樓",
+    "cars": 466,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4200元;身障車月租2100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 14,
+    "name": "三重區中山立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "俥亭停車",
    "osm": {
     "id": 548927771,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/548927771"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 130,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
@@ -291,14 +311,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新北市立聯合醫院三重院區停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段3號1樓/3~34、37~39、43~51、83、87~99號汽車位，1~86號機車位及新北大道1段3-1號B2、B3/1~20、22~42號汽車位",
+    "cars": 130,
+    "fare": "小型車計時40元;小型車月租4600元;機車計次30元;",
+    "hours": "0~24時",
+    "match_m": 48,
+    "name": "新北市立聯合醫院三重院區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 548927763,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/548927763"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -317,14 +347,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "行政大樓附設停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段11號旁/73~99、102~152及158號車格",
+    "cars": 79,
+    "fare": "小型車計時40元;小型車月租6000元;身障車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 25,
+    "name": "行政大樓附設停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 717155897,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/717155897"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -355,7 +395,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 130,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 227,
@@ -369,14 +409,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新北市立聯合醫院三重院區停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段3號1樓/3~34、37~39、43~51、83、87~99號汽車位，1~86號機車位及新北大道1段3-1號B2、B3/1~20、22~42號汽車位",
+    "cars": 130,
+    "fare": "小型車計時40元;小型車月租4600元;機車計次30元;",
+    "hours": "0~24時",
+    "match_m": 37,
+    "name": "新北市立聯合醫院三重院區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 548927768,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/548927768"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -744,6 +794,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

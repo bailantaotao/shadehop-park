@@ -301,7 +301,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 7,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 40,
@@ -315,14 +315,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "力揚停車新海抽水站公有停車場",
-   "opening_hours": null,
+   "name": "新月停車場",
+   "official": {
+    "address": "新北市板橋區新月三街、中正路口",
+    "cars": 7,
+    "fare": "小型車月租3500元;",
+    "hours": "0~24時",
+    "match_m": 54,
+    "name": "新月停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 970537250,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/970537250"
    },
+   "osm_name": "力揚停車新海抽水站公有停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -367,19 +377,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "江翠停五停車場",
-   "opening_hours": null,
+   "name": "江翠停五平面停車場",
+   "official": {
+    "address": "新北市板橋區中正路560號",
+    "cars": 392,
+    "fare": "小型車計時30元;小型車月租3000元;身障車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "江翠停五平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 970537251,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/970537251"
    },
+   "osm_name": "江翠停五停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 128,
@@ -393,19 +413,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "江翠水岸特區停四停車場",
-   "opening_hours": null,
+   "name": "板橋區江翠水岸特區停四平面停車場",
+   "official": {
+    "address": "新北市板橋區藝文一街與板城路交叉處",
+    "cars": 56,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2000元;身障車月租1000元;",
+    "hours": "0~24時",
+    "match_m": 47,
+    "name": "板橋區江翠水岸特區停四平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 587411727,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/587411727"
    },
+   "osm_name": "江翠水岸特區停四停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 72,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 139,
@@ -419,14 +449,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "市立殯儀館停車場",
+   "official": {
+    "address": "新北市板橋區中正路560號殯儀館附屬平面停車空間",
+    "cars": 72,
+    "fare": "小型車計時50元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 22,
+    "name": "市立殯儀館停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1574727739,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727739"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -813,6 +853,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

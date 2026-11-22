@@ -287,7 +287,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 65,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 348,
@@ -301,14 +301,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "市達停車場西盛街站",
+   "official": {
+    "address": "新北市新莊區西盛街362巷旁空地",
+    "cars": 65,
+    "fare": null,
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "市達停車場西盛街站",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 326324272,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326324272"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -702,6 +712,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

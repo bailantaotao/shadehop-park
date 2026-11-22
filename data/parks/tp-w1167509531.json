@@ -407,7 +407,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 82,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 145,
@@ -421,14 +421,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "City Park吳興三角窗站",
-   "opening_hours": null,
+   "name": "吳興街220巷平面停車場",
+   "official": {
+    "address": "吳興街220巷75號對面",
+    "cars": 82,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 52,
+    "name": "吳興街220巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 6745023,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/6745023"
    },
+   "osm_name": "City Park吳興三角窗站",
    "verified_at": "2026-11-07"
   },
   {
@@ -459,7 +469,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 217,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 242,
@@ -473,7 +483,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
+   "name": "景勤二號公園地下停車場",
+   "official": {
+    "address": "信安街49號地下室(地下共2層)",
+    "cars": 217,
+    "fare": "計時：小型車(含大型重型機車)30元/時，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日5,000元/月，機車全日300元/月，大型重型機車全日2,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 12,
+    "name": "景勤二號公園地下停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -481,11 +500,12 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/767314010"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 255,
@@ -500,7 +520,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "吳興街284巷臨時平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "吳興街284巷與吳興街260巷21弄交叉口旁",
+    "cars": 53,
+    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 15,
+    "name": "吳興街284巷臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 262090916,
@@ -880,6 +909,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -153,7 +153,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 395,
@@ -167,19 +167,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "秀山停車場",
-   "opening_hours": null,
+   "name": "中和區秀峰段平面停車場",
+   "official": {
+    "address": "新北市中和區秀峰街與秀峰街19巷口",
+    "cars": 25,
+    "fare": "小型車計時30元;小型車月租3500元;身障車月租1750元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 40,
+    "name": "中和區秀峰段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 739604916,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/739604916"
    },
+   "osm_name": "秀山停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 418,
@@ -193,14 +203,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "秀朗橋下汽車場(新店)",
+   "official": {
+    "address": "秀朗橋下(新店)",
+    "cars": 24,
+    "fare": ";",
+    "hours": "07:00~20:00",
+    "match_m": 42,
+    "name": "秀朗橋下汽車場(新店)",
+    "source": "newtaipei"
+   },
+   "opening_hours": "07:00~20:00",
    "operator": null,
    "osm": {
     "id": 773114640,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/773114640"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -219,19 +239,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "日月亭中和秀峰場",
-   "opening_hours": null,
+   "name": "中和區秀峰段平面停車場",
+   "official": {
+    "address": "新北市中和區秀峰街與秀峰街19巷口",
+    "cars": 25,
+    "fare": "小型車計時30元;小型車月租3500元;身障車月租1750元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 10,
+    "name": "中和區秀峰段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1064082813,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064082813"
    },
+   "osm_name": "日月亭中和秀峰場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 460,
@@ -245,14 +275,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "秀峰停車場",
-   "opening_hours": null,
+   "name": "中和區秀峰段平面停車場",
+   "official": {
+    "address": "新北市中和區秀峰街與秀峰街19巷口",
+    "cars": 25,
+    "fare": "小型車計時30元;小型車月租3500元;身障車月租1750元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 36,
+    "name": "中和區秀峰段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1306835993,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1306835993"
    },
+   "osm_name": "秀峰停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -640,6 +680,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

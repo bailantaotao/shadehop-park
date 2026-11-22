@@ -358,7 +358,7 @@
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 850,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 225,
@@ -372,14 +372,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "林口世大運選手村社會住宅地下停車場D區",
+   "official": {
+    "address": "新北市林口區文化一路1段140、142、146、148、150、152、156、158、160、162、166號地下1層及2層合併空間",
+    "cars": 850,
+    "fare": "小型車計時50元;小型車月租4000元;機車計時30元;機車月租600元;",
+    "hours": "0~24時",
+    "match_m": 53,
+    "name": "林口世大運選手村社會住宅地下停車場D區",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1455628177,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1455628177"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -805,6 +815,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -310,7 +310,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 326,
@@ -324,19 +324,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times蘆洲長興路停車場",
+   "official": {
+    "address": "新北市蘆洲區光華路186巷25-5號旁",
+    "cars": 56,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 15,
+    "name": "Times蘆洲長興路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1496517372,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1496517372"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 360,
@@ -350,14 +360,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times蘆洲長興路停車場",
+   "official": {
+    "address": "新北市蘆洲區光華路186巷25-5號旁",
+    "cars": 56,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "Times蘆洲長興路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1496517371,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1496517371"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -388,7 +408,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 498,
@@ -402,14 +422,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-蘆洲保和場停車場",
+   "official": {
+    "address": "新北市蘆洲區保和街50號空地",
+    "cars": 53,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "168停車聯盟-蘆洲保和場停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1496517435,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1496517435"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -809,6 +839,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

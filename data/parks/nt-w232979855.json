@@ -249,7 +249,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 63,
@@ -263,14 +263,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房三峽大德站",
-   "opening_hours": null,
+   "name": "嘟嘟房三峽大德站停車場",
+   "official": {
+    "address": "新北市三峽區大德路181號旁停車場",
+    "cars": 24,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 18,
+    "name": "嘟嘟房三峽大德站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 386752407,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/386752407"
    },
+   "osm_name": "嘟嘟房三峽大德站",
    "verified_at": "2026-11-07"
   },
   {
@@ -353,7 +363,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 162,
@@ -367,14 +377,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times三峽大學路第3停車場",
+   "official": {
+    "address": "新北市三峽區大學路152號旁",
+    "cars": 25,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 22,
+    "name": "Times三峽大學路第3停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 20682273,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/20682273"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -787,6 +807,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

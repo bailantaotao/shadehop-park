@@ -488,7 +488,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
+   "name": "三民公園停車場",
+   "official": {
+    "address": "桃園市桃園區三元街",
+    "cars": null,
+    "fare": "計時：30元/時、月租3600元",
+    "hours": null,
+    "match_m": 37,
+    "name": "三民公園停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "阜爾運通股份有限公司",
    "osm": {
@@ -496,6 +505,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/442976877"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
@@ -514,7 +524,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "假日花市停車場",
+   "official": {
+    "address": "桃園市桃園區萬山路190號對面",
+    "cars": null,
+    "fare": "計時30元/時",
+    "hours": null,
+    "match_m": 54,
+    "name": "假日花市停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "假日花市停車場",
    "osm": {
@@ -522,6 +541,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/911543866"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -540,7 +560,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新永和市場汽車停車場",
+   "name": "三民公園停車場",
+   "official": {
+    "address": "桃園市桃園區三元街",
+    "cars": null,
+    "fare": "計時：30元/時、月租3600元",
+    "hours": null,
+    "match_m": 38,
+    "name": "三民公園停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -548,6 +577,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1216491436"
    },
+   "osm_name": "新永和市場汽車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -592,7 +622,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
+   "name": "創新園區二期停車場",
+   "official": {
+    "address": "桃園市桃園區成功路三段1號",
+    "cars": null,
+    "fare": "計時:每小時20元當日最高100元月租2400元季繳6000元",
+    "hours": null,
+    "match_m": 7,
+    "name": "創新園區二期停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "阜爾運通股份有限公司",
    "osm": {
@@ -600,6 +639,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1312437664"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   }
  ],
@@ -1004,6 +1044,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

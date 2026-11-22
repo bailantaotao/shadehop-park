@@ -251,7 +251,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 155,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 203,
@@ -265,14 +265,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "延平北路5段1巷平面停車場",
+   "official": {
+    "address": "延平北路5段1巷內",
+    "cars": 155,
+    "fare": "小型車：計時 週一至週六20元/時(09-17)，停車全程以半小時計。機車：免費停車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "延平北路5段1巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 827809838,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/827809838"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -344,7 +354,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "海光公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "葫蘆街83號地下",
+    "cars": 105,
+    "fare": "小型車：計時 20元/時，全程以半小時計；月租 全日4,200元，夜間1,500元(19時~08時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "海光公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3033922309,
@@ -776,6 +795,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

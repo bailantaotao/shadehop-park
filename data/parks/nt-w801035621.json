@@ -233,7 +233,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 30,
@@ -247,14 +247,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "秀朗橋下汽車場(新店)",
+   "official": {
+    "address": "秀朗橋下(新店)",
+    "cars": 24,
+    "fare": ";",
+    "hours": "07:00~20:00",
+    "match_m": 42,
+    "name": "秀朗橋下汽車場(新店)",
+    "source": "newtaipei"
+   },
+   "opening_hours": "07:00~20:00",
    "operator": null,
    "osm": {
     "id": 773114640,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/773114640"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -752,6 +762,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

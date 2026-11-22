@@ -368,7 +368,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 30,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 1,
@@ -382,14 +382,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房五工福慧站停車場",
+   "official": {
+    "address": "新北市新莊區福慧路與五工六路交叉口空地",
+    "cars": 30,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 17,
+    "name": "嘟嘟房五工福慧站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1369590149,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1369590149"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -446,7 +456,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 236,
@@ -460,19 +470,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新莊中央停車場",
+   "official": {
+    "address": "新北市新莊區中央路與昌平街交叉口旁空地",
+    "cars": 38,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 38,
+    "name": "新莊中央停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 904719697,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/904719697"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 115,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 261,
@@ -486,19 +506,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "中貴停車場",
+   "official": {
+    "address": "新北市新莊區中央路與中貴路交叉口",
+    "cars": 115,
+    "fare": "小型車計時20元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 40,
+    "name": "中貴停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1474846110,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846110"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 58,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 264,
@@ -512,14 +542,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "車堡寶實業股份有限公司五工場停車場",
+   "official": {
+    "address": "新北市新莊區福慧路250號右側空地停車場",
+    "cars": 58,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "車堡寶實業股份有限公司五工場停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1474846133,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846133"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -917,6 +957,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

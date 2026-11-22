@@ -264,7 +264,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 403,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 137,
@@ -278,19 +278,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "基隆河5、6號水門堤外觀山段河濱公園附設平面停車場",
+   "official": {
+    "address": "基隆河5、6號水門堤外觀山段",
+    "cars": 403,
+    "fare": "小型車：計時 週一~週五20元/時，最高上限100元/日，隔日另計，週六、週日20元/時，停車全程以半小時計。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：9時-17時",
+    "match_m": 15,
+    "name": "基隆河5、6號水門堤外觀山段河濱公園附設平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：9時-17時",
    "operator": null,
    "osm": {
     "id": 358272598,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358272598"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 341,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 375,
@@ -304,14 +314,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "西松高中地下停車場",
+   "official": {
+    "address": "健康路325巷19弄1號地下",
+    "cars": 341,
+    "fare": "小型車：計時 30元/時(08時~22時)，10元/時(22時~08時)，全程以半小時計；月租 全日5,250元，日間2,800元(07時~20時)，夜間2,450元(18時~09時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "西松高中地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3226782858,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3226782858"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -342,7 +362,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 572,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 460,
@@ -356,14 +376,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "彩虹河濱公園堤外停車場",
+   "official": {
+    "address": "民權大橋至麥帥一橋",
+    "cars": 572,
+    "fare": "小型車： 計次 30元/次(09時~17時)，隔日另計，本場未出售月票。",
+    "hours": "09:00 :00-17:00:00",
+    "match_m": 15,
+    "name": "彩虹河濱公園堤外停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "09:00 :00-17:00:00",
    "operator": null,
    "osm": {
     "id": 349844550,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/349844550"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -763,6 +793,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

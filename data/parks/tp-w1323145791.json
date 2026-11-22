@@ -390,7 +390,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "吉拾台大尊賢場",
+   "name": "吉拾停車場台大尊賢場",
+   "official": {
+    "address": "羅斯福路4段83號地下2層",
+    "cars": 27,
+    "fare": "計時：小型車50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日4,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 51,
+    "name": "吉拾停車場台大尊賢場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -398,11 +407,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5110245046"
    },
+   "osm_name": "吉拾台大尊賢場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 27,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 26,
@@ -416,14 +426,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "吉拾停車場台大尊賢場",
+   "official": {
+    "address": "羅斯福路4段83號地下2層",
+    "cars": 27,
+    "fare": "計時：小型車50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日4,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 37,
+    "name": "吉拾停車場台大尊賢場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1323146910,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1323146910"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -454,7 +474,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 421,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 120,
@@ -468,14 +488,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺大公館平面停車場",
-   "opening_hours": null,
+   "name": "國立臺灣大學公館平面停車場",
+   "official": {
+    "address": "羅斯福路4段1號臺北市大安區基隆路四段145-146號",
+    "cars": 421,
+    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日9,000元/月，日間(07-18)7,000元/月，夜間(18-08)5,000元/月，機車全日600元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "國立臺灣大學公館平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 193424496,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/193424496"
    },
+   "osm_name": "臺大公館平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -495,6 +525,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "水源停車場",
+   "official": {
+    "address": "汀州路3段140巷內空地",
+    "cars": 44,
+    "fare": "計時：小型車週一至週五40元/時，週六至週日及政府行政機關放假之紀念日、民俗節日60元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日5,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 35,
+    "name": "水源停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "臺北自來水事業處",
    "osm": {
@@ -869,6 +908,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

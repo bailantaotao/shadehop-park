@@ -325,7 +325,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 147,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 111,
@@ -340,7 +340,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "雙園平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "長順街底堤外",
+    "cars": 147,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元，雙園堤外平面與雙園平面停車場月票可互通使用。",
+    "hours": "星期一至星期六 9時至17時",
+    "match_m": 11,
+    "name": "雙園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六 9時至17時",
    "operator": null,
    "osm": {
     "id": 374876250,
@@ -351,7 +360,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 748,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 157,
@@ -366,7 +375,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "雙園堤外平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "長順街底堤外",
+    "cars": 748,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元，雙園堤外平面與雙園平面停車場月票可互通使用。大型車：計時40元/時。機車：免費停車。",
+    "hours": "星期一至星期六 9時至17時",
+    "match_m": 48,
+    "name": "雙園堤外平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六 9時至17時",
    "operator": null,
    "osm": {
     "id": 609732943,
@@ -403,7 +421,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 444,
@@ -417,19 +435,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "綠堤停車場",
+   "official": {
+    "address": "雙園街89巷1號對面空地",
+    "cars": 49,
+    "fare": "計時：小型車40元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "綠堤停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 311039075,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311039075"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 422,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 508,
@@ -443,14 +471,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "環南平面停車場",
-   "opening_hours": null,
+   "name": "環南堤外平面停車場",
+   "official": {
+    "address": "長順街底堤外(華翠橋與萬板橋間)",
+    "cars": 422,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
+    "hours": "週一至週六 9時至17時",
+    "match_m": 23,
+    "name": "環南堤外平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六 9時至17時",
    "operator": null,
    "osm": {
     "id": 349570060,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/349570060"
    },
+   "osm_name": "環南平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -844,6 +882,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

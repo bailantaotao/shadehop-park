@@ -207,7 +207,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "168Parking 重慶南場",
+   "name": "168停車聯盟-重慶南場",
+   "official": {
+    "address": "重慶南路3段150號旁空地",
+    "cars": 19,
+    "fare": "計時：150元/時，全程以半小時計費。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "168停車聯盟-重慶南場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "168Parking",
    "osm": {
@@ -215,6 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1442270505"
    },
+   "osm_name": "168Parking 重慶南場",
    "verified_at": "2026-11-07"
   },
   {
@@ -245,7 +255,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 89,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 266,
@@ -259,14 +269,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房牯嶺2站停車場",
+   "official": {
+    "address": "牯嶺街101號",
+    "cars": 89,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "08:00:00-19:00:00",
+    "match_m": 19,
+    "name": "嘟嘟房牯嶺2站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "08:00:00-19:00:00",
    "operator": null,
    "osm": {
     "id": 1474846060,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846060"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -285,7 +305,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "同安停車場",
+   "name": "博客停車場-家福同安場",
+   "official": {
+    "address": "同安街71號地下1層",
+    "cars": 17,
+    "fare": "計時：60元/時，全程以半小時計費。月租：6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 26,
+    "name": "博客停車場-家福同安場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -293,6 +322,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/11263971962"
    },
+   "osm_name": "同安停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -323,7 +353,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 2,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 378,
@@ -337,14 +367,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "牯嶺街停車場",
+   "official": {
+    "address": "牯嶺街78號旁空地",
+    "cars": 2,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 27,
+    "name": "牯嶺街停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1431685602,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1431685602"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -712,6 +752,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

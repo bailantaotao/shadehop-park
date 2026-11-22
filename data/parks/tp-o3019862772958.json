@@ -385,7 +385,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 47,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 330,
@@ -399,14 +399,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "和雲",
-   "opening_hours": null,
+   "name": "承德二站停車場",
+   "official": {
+    "address": "民權西路102巷33弄旁空地",
+    "cars": 47,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "承德二站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 712414033,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/712414033"
    },
+   "osm_name": "和雲",
    "verified_at": "2026-11-07"
   },
   {
@@ -437,7 +447,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 370,
@@ -451,14 +461,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "禾典停車場",
-   "opening_hours": null,
+   "name": "禾典民權站",
+   "official": {
+    "address": "民權西路96巷底旁空地",
+    "cars": 48,
+    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元，日間8,000元(08時~18時)，夜間6,500元(18時~08時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "禾典民權站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1022231534,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1022231534"
    },
+   "osm_name": "禾典停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -478,7 +498,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "揚雅立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "大龍街136號",
+    "cars": 204,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,840元。",
+    "hours": "24小時(每日22時至翌日6時車輛禁止進出)",
+    "match_m": 7,
+    "name": "揚雅立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "24小時(每日22時至翌日6時車輛禁止進出)",
    "operator": null,
    "osm": {
     "id": 615408929,
@@ -858,6 +887,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

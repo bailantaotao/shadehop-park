@@ -400,7 +400,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "後站第一汽車停車場",
+   "name": "火車站後站(一、二、三、四)汽車停車場",
+   "official": {
+    "address": "300新竹市東區公竹路",
+    "cars": null,
+    "fare": "平假日 20元/時(24小時)",
+    "hours": null,
+    "match_m": 30,
+    "name": "火車站後站(一、二、三、四)汽車停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -408,6 +417,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1240705540"
    },
+   "osm_name": "後站第一汽車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -426,7 +436,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "後站大客車停車場",
+   "name": "勞山新村機車停車場",
+   "official": {
+    "address": "新竹市南大路140巷內",
+    "cars": null,
+    "fare": "計次$20元/次，月租300元/月",
+    "hours": null,
+    "match_m": 33,
+    "name": "勞山新村機車停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -434,6 +453,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1240705575"
    },
+   "osm_name": "後站大客車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -452,7 +472,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "後站第四汽車停車場",
+   "name": "勞山新村機車停車場",
+   "official": {
+    "address": "新竹市南大路140巷內",
+    "cars": null,
+    "fare": "計次$20元/次，月租300元/月",
+    "hours": null,
+    "match_m": 56,
+    "name": "勞山新村機車停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -460,6 +489,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1240705571"
    },
+   "osm_name": "後站第四汽車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -911,6 +941,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新竹市政府養護工程處「新竹市兒童遊戲場清冊」",
    "url": "https://data.gov.tw/dataset/132713"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

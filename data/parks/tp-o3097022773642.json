@@ -346,7 +346,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 110,
@@ -360,14 +360,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "石潭平面停車場",
+   "official": {
+    "address": "民權東路6段與民權東路6段174巷口",
+    "cars": 70,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "石潭平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 189161727,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/189161727"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -398,7 +408,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
@@ -412,14 +422,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "石潭平面停車場",
+   "official": {
+    "address": "民權東路6段與民權東路6段174巷口",
+    "cars": 70,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 60,
+    "name": "石潭平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 260256817,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/260256817"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -845,6 +865,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

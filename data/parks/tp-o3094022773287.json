@@ -346,7 +346,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 43,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 174,
@@ -360,19 +360,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通停車場-潭美場",
-   "opening_hours": null,
+   "name": "台灣聯通潭一停車場",
+   "official": {
+    "address": "金豐街70號和康捷境大樓旁空地",
+    "cars": 43,
+    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "台灣聯通潭一停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1551200991,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1551200991"
    },
+   "osm_name": "台灣聯通停車場-潭美場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 251,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 182,
@@ -386,19 +396,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台北市湖興立體停車場",
-   "opening_hours": null,
+   "name": "湖興立體停車場",
+   "official": {
+    "address": "成功路2段322號",
+    "cars": 251,
+    "fare": "小型車：計時 30元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 全日3,800元，夜間1,800元(19-08)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "湖興立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 261031428,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/261031428"
    },
+   "osm_name": "台北市湖興立體停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 233,
@@ -412,14 +432,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "辰淵-行善路平面停車場",
-   "opening_hours": null,
+   "name": "行善路平面停車場",
+   "official": {
+    "address": "行善路417巷",
+    "cars": 49,
+    "fare": "計時：小型車60元/時，停車全程以半小時計。月租：小型車全日6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "行善路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 772861885,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/772861885"
    },
+   "osm_name": "辰淵-行善路平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -450,7 +480,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 130,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 273,
@@ -464,14 +494,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "昇恆昌免稅廣場停車場",
+   "official": {
+    "address": "金莊路129號地下2至3層",
+    "cars": 130,
+    "fare": "計時：50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "10:00:00-21:00:00",
+    "match_m": 57,
+    "name": "昇恆昌免稅廣場停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "10:00:00-21:00:00",
    "operator": null,
    "osm": {
     "id": 1276780950,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780950"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -490,7 +530,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "內湖區行政中心便民停車場 (汽車)",
+   "name": "內湖區行政中心停車場",
+   "official": {
+    "address": "民權東路6段99號地上1層及地下1層",
+    "cars": 45,
+    "fare": "計時：日間(地上1層)前30分鐘免費，逾30分鐘至1小時30元，逾1小時80元/時，全程半小時計費。月租：夜間1,500元/月(地上1層，0800前須出場)、1,800元/月(地下1層，0730前須出場），未於規定時間出場80元/時，全程半小時計費。",
+    "hours": "地上1層:周一至五0830-1730(計時)，例假日不開放；夜間：1800-0800(地上1層)、1800-0730(地下1層)，選舉期間、特殊活動不開放。",
+    "match_m": 35,
+    "name": "內湖區行政中心停車場",
+    "source": "taipei"
+   },
    "opening_hours": "08:30-17:30; PH off",
    "operator": null,
    "osm": {
@@ -498,6 +547,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1435368598"
    },
+   "osm_name": "內湖區行政中心便民停車場 (汽車)",
    "verified_at": "2026-11-07"
   }
  ],
@@ -871,6 +921,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

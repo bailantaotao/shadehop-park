@@ -357,7 +357,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 81,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 133,
@@ -371,14 +371,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "晉呈資產管理有限公司神農四停車場",
+   "official": {
+    "address": "新北市三重區五谷王北街與五谷王北街27巷交叉口旁空地",
+    "cars": 81,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 27,
+    "name": "晉呈資產管理有限公司神農四停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 12943446,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943446"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -435,7 +445,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 65,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 199,
@@ -449,14 +459,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "宏達經營管理顧問有限公司清傳一停車場",
+   "official": {
+    "address": "新北市三重區德厚街與疏洪西路38巷交叉口前方空地",
+    "cars": 65,
+    "fare": "小型車計時100元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 31,
+    "name": "宏達經營管理顧問有限公司清傳一停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 12943438,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943438"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -824,6 +844,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -310,7 +310,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 132,
@@ -324,19 +324,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台北通化停車場",
+   "official": {
+    "address": "通化街163號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "台北通化停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 459941078,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/459941078"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 251,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 242,
@@ -350,19 +360,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北醫學大學大安校區停車場",
-   "opening_hours": null,
+   "name": "USPACE電信大樓停車場",
+   "official": {
+    "address": "基隆路2段172-1號地下3至6層",
+    "cars": 251,
+    "fare": "計時：180元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 34,
+    "name": "USPACE電信大樓停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 6725632028,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/6725632028"
    },
+   "osm_name": "臺北醫學大學大安校區停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 31,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 258,
@@ -377,7 +397,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "愛馬屋通化場",
-   "opening_hours": null,
+   "official": {
+    "address": "光復南路676巷18之1號",
+    "cars": 31,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 31,
+    "name": "愛馬屋通化場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4837986557,
@@ -388,7 +417,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 217,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 281,
@@ -402,7 +431,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
+   "name": "景勤二號公園地下停車場",
+   "official": {
+    "address": "信安街49號地下室(地下共2層)",
+    "cars": 217,
+    "fare": "計時：小型車(含大型重型機車)30元/時，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日5,000元/月，機車全日300元/月，大型重型機車全日2,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 12,
+    "name": "景勤二號公園地下停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -410,6 +448,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/767314010"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -440,7 +479,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 346,
@@ -454,14 +493,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
+   "name": "城市車旅台北臨江停車場",
+   "official": {
+    "address": "安和路2段69巷26號對面空地",
+    "cars": 16,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "城市車旅台北臨江停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "阜爾運通股份有限公司",
    "osm": {
     "id": 824580418,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/824580418"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   }
  ],
@@ -835,6 +884,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

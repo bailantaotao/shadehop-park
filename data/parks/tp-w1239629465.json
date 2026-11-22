@@ -220,7 +220,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 102,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 526,
@@ -234,19 +234,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "桂林路堤外停車場",
-   "opening_hours": null,
+   "name": "桂林路底堤外停車場",
+   "official": {
+    "address": "桂林路底堤外",
+    "cars": 102,
+    "fare": "小型車： 計次 100元/次，隔日另計。",
+    "hours": "星期一至星期六 9時至17時",
+    "match_m": 33,
+    "name": "桂林路底堤外停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六 9時至17時",
    "operator": null,
    "osm": {
     "id": 685238490,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/685238490"
    },
+   "osm_name": "桂林路堤外停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 91,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 539,
@@ -260,19 +270,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通停車場",
-   "opening_hours": null,
+   "name": "台灣聯通大世界停車場",
+   "official": {
+    "address": "成都路81號地下2至4層",
+    "cars": 91,
+    "fare": "小型車：計時 120元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計;月租 全日8,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "台灣聯通大世界停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣聯通停車場開發股份有限公司",
    "osm": {
     "id": 4338628225,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4338628225"
    },
+   "osm_name": "台灣聯通停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 518,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 552,
@@ -286,14 +306,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "峨眉停車場",
-   "opening_hours": null,
+   "name": "峨眉立體停車場",
+   "official": {
+    "address": "峨眉街83號地下1層及地上7層",
+    "cars": 518,
+    "fare": "小型車：計時 週一~週五(10時~22時)50元/時，(22時~10時)10元/時，週六、週日、行政機關放假之紀念日與民俗日(10時~24時)60元/時，(24時~10時)10元/時，全程以半小時計;月租 全日4,800元，日間4,000元(10時~22時)，夜間500元(21時~09時)。機車：機車收費20元/次;機車月租300元/月",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 31,
+    "name": "峨眉立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 222080306,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/222080306"
    },
+   "osm_name": "峨眉停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -312,19 +342,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "紅樓站停車場",
+   "official": {
+    "address": "西寧南路102巷3號旁空地",
+    "cars": 5,
+    "fare": "計時：小型車200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日20,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "紅樓站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "禾典實業",
    "osm": {
     "id": 550847093,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/550847093"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 8,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 606,
@@ -338,14 +378,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times昆明街",
+   "official": {
+    "address": "昆明街185號後面",
+    "cars": 8,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "Times昆明街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 832684234,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/832684234"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -713,6 +763,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

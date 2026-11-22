@@ -219,14 +219,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "微風4區停車場",
-   "opening_hours": null,
+   "name": "微風運河4區停車場",
+   "official": {
+    "address": "新北市五股區疏洪一路距離微風運河500公尺處",
+    "cars": 67,
+    "fare": "小型車計時20元;小型車計時10元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 5,
+    "name": "微風運河4區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "歐特儀股份有限公司",
    "osm": {
     "id": 253570183,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/253570183"
    },
+   "osm_name": "微風4區停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -245,14 +255,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "微風3區停車場",
-   "opening_hours": null,
+   "name": "微風運河3區停車場",
+   "official": {
+    "address": "新北市五股區疏洪一路近微風運河南側",
+    "cars": 91,
+    "fare": "小型車計時20元;小型車計時10元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 11,
+    "name": "微風運河3區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "歐特儀股份有限公司",
    "osm": {
     "id": 253570035,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/253570035"
    },
+   "osm_name": "微風3區停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -297,14 +317,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "微風5區停車場",
-   "opening_hours": null,
+   "name": "微風運河5區停車場",
+   "official": {
+    "address": "新北市五股區成蘆橋距微風運河700公尺處",
+    "cars": 91,
+    "fare": "大型車計時40元;大型車計時20元;大型車月租5000元;小型車計時20元;小型車計時10元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 7,
+    "name": "微風運河5區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "歐特儀股份有限公司",
    "osm": {
     "id": 198408711,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/198408711"
    },
+   "osm_name": "微風5區停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -323,14 +353,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "微風2區停車場",
-   "opening_hours": null,
+   "name": "微風運河2區停車場",
+   "official": {
+    "address": "新北市五股區疏洪一路土地公廟釣魚池旁",
+    "cars": 9,
+    "fare": "小型車計時20元;小型車計時10元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "微風運河2區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "歐特儀股份有限公司",
    "osm": {
     "id": 457996375,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457996375"
    },
+   "osm_name": "微風2區停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -698,6 +738,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

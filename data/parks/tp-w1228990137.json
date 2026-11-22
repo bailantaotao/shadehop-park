@@ -326,7 +326,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 261,
@@ -340,14 +340,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "通通停萬華青年站停車場",
+   "official": {
+    "address": "青年路168巷51弄富民路145巷口",
+    "cars": 24,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 15,
+    "name": "通通停萬華青年站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 310165307,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/310165307"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -367,7 +377,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "青年公園棒球場地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "青年路69號地下",
+    "cars": 276,
+    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日4,800元/月，夜間(18-08)2,400元/月，機車全日300元/月，大型重型機車全日2,400元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "青年公園棒球場地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3192426185,
@@ -378,7 +397,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 265,
@@ -392,19 +411,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "通通停萬華青年站停車場",
+   "official": {
+    "address": "青年路168巷51弄富民路145巷口",
+    "cars": 24,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "通通停萬華青年站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 310165306,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/310165306"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 63,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 274,
@@ -418,14 +447,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "馬場町紀念公園平面停車場",
+   "official": {
+    "address": "馬場町公園1區、2區停車場",
+    "cars": 63,
+    "fare": "計時：小型車20元/時，當日單次停車最高收費上限150元/日，隔日另計，以00時為基準，停車15分鐘內免費，逾15分鐘以上，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 12,
+    "name": "馬場町紀念公園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 229774713,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/229774713"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -456,7 +495,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 41,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 357,
@@ -470,14 +509,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "冠華停車場",
+   "official": {
+    "address": "萬大路493巷48弄23-10號對面空地",
+    "cars": 41,
+    "fare": "小型車：計時 50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日6,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 42,
+    "name": "冠華停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 309971539,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/309971539"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -851,6 +900,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

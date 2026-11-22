@@ -247,7 +247,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 309,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 209,
@@ -261,19 +261,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "游泳館地下停車場",
-   "opening_hours": null,
+   "name": "延平國小地下停車場",
+   "official": {
+    "address": "昌吉街97號地下層",
+    "cars": 309,
+    "fare": "計時：小型車(含大型重型機車)40元/時，機車10元/時(當日單次停車最高收費上限20元/日，隔日另計)，停車全程以半小時計；月租：小型車全日4,800元，夜間2,400元(19時~07時)，大型重機全日2,400元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 22,
+    "name": "延平國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4574296465,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4574296465"
    },
+   "osm_name": "游泳館地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 266,
@@ -287,19 +297,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "應安停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-延平北場",
+   "official": {
+    "address": "延平北路3段123號對面空地",
+    "cars": 12,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "168停車聯盟-延平北場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4838087756,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4838087756"
    },
+   "osm_name": "應安停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 84,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 298,
@@ -313,14 +333,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北橋下停車場",
-   "opening_hours": null,
+   "name": "臺北大橋橋下停車場",
+   "official": {
+    "address": "環河北路2段至延平北路3段間之臺北大橋橋下空間",
+    "cars": 84,
+    "fare": "計時：小型車(含大型重型機車)週一至週五40元/時，週六至週日及政府行政機關放假之紀念日、民俗節日50元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日7,200元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "臺北大橋橋下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 735264676,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/735264676"
    },
+   "osm_name": "臺北橋下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -339,14 +369,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北大橋橋下機車停車場",
+   "official": {
+    "address": "環河北路2段至延平北路3段橋下空間",
+    "cars": null,
+    "fare": "機車：20元/次(每日零時為計費基準點，凡跨越每日零時停車者，累計收費)。",
+    "hours": "星期一至星期六(09時至17時)",
+    "match_m": 34,
+    "name": "臺北大橋橋下機車停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六(09時至17時)",
    "operator": null,
    "osm": {
     "id": 1348687116,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1348687116"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -392,7 +432,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "揚雅立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "大龍街136號",
+    "cars": 204,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,840元。",
+    "hours": "24小時(每日22時至翌日6時車輛禁止進出)",
+    "match_m": 7,
+    "name": "揚雅立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "24小時(每日22時至翌日6時車輛禁止進出)",
    "operator": null,
    "osm": {
     "id": 615408929,
@@ -772,6 +821,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

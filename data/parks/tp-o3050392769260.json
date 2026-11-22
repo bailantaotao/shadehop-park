@@ -321,7 +321,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 145,
@@ -335,19 +335,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "千里亭",
-   "opening_hours": null,
+   "name": "千里亭有限公司復興南路停車場",
+   "official": {
+    "address": "復興南路2段119號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "千里亭有限公司復興南路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 430627600,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/430627600"
    },
+   "osm_name": "千里亭",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 15,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 215,
@@ -361,14 +371,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times大安路二段",
+   "official": {
+    "address": "大安路2段17號旁",
+    "cars": 15,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "Times大安路二段",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 340547144,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/340547144"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -399,7 +419,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 45,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 314,
@@ -413,7 +433,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "USPACE 成功國宅場 (和平東路三段)",
+   "name": "Uspace大安(和平東路3段1巷72弄口)",
+   "official": {
+    "address": "和平東路3段1巷72弄口",
+    "cars": 45,
+    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "每日不逾8小時，每月不逾240小時",
+    "match_m": 1,
+    "name": "Uspace大安(和平東路3段1巷72弄口)",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "USPACE",
    "osm": {
@@ -421,6 +450,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/20817687"
    },
+   "osm_name": "USPACE 成功國宅場 (和平東路三段)",
    "verified_at": "2026-11-07"
   },
   {
@@ -465,14 +495,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "信義大安平面停車場",
+   "official": {
+    "address": "信義路4段67號旁",
+    "cars": 4,
+    "fare": "計時：小型車80元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "信義大安平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 675218338,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/675218338"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -846,6 +886,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

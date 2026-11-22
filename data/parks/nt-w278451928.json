@@ -364,7 +364,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 173,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 405,
@@ -378,14 +378,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中洲停車場",
-   "opening_hours": null,
+   "name": "中洲平面停車場",
+   "official": {
+    "address": "新北市土城區中州路11號對面空地",
+    "cars": 173,
+    "fare": "小型車計時30元;小型車月租2600元;身障車月租1850元;機車計次10元;機車月租月租300元;機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 9,
+    "name": "中洲平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 278444839,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/278444839"
    },
+   "osm_name": "中洲停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -416,7 +426,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 8,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 577,
@@ -430,14 +440,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times土城中央路四段第2停車場",
+   "official": {
+    "address": "新北市土城區中央路4段88號旁",
+    "cars": 8,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 23,
+    "name": "Times土城中央路四段第2停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1072006431,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1072006431"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   }
  ],
@@ -811,6 +831,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

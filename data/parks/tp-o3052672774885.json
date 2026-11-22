@@ -206,7 +206,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 204,
@@ -220,14 +220,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times北安路第3",
+   "official": {
+    "address": "北安路588巷22號旁",
+    "cars": 20,
+    "fare": "計時：200元/時，停車全程以半小時計；月租：全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "Times北安路第3",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 957535830,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/957535830"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -310,7 +320,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 70,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 412,
@@ -324,14 +334,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times 明水路",
+   "official": {
+    "address": "明水路606巷18號旁空地",
+    "cars": 70,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "Times 明水路",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 948277340,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948277340"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -725,6 +745,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

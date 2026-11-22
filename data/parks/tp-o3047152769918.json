@@ -449,7 +449,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 85,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 16,
@@ -463,19 +463,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北市農會停車場",
-   "opening_hours": null,
+   "name": "福華大飯店附設停車場",
+   "official": {
+    "address": "仁愛路3段160號地下2至3層及建物附設地面",
+    "cars": 85,
+    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。超過4小時以每小時120元計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 38,
+    "name": "福華大飯店附設停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 403685588,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/403685588"
    },
+   "osm_name": "臺北市農會停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 54,
@@ -489,14 +499,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "福華大飯店附設停車場",
-   "opening_hours": null,
+   "name": "台北市農會B區停車場",
+   "official": {
+    "address": "復興南路1段340巷附中公園旁(使用面積2,611平方公尺)",
+    "cars": 49,
+    "fare": "計時：60元/時，停車未滿1小時以1小時計；逾1小時以上者，未滿半小時以半小時計。月租：全日6,000元/月、日間5,000元/月(07:30-19:30)、夜間2,500元/月(17:30-07:30含週六日)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 35,
+    "name": "台北市農會B區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4524863976,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4524863976"
    },
+   "osm_name": "福華大飯店附設停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -527,7 +547,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 11,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 228,
@@ -541,14 +561,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "安祥公園旁平面停車場",
+   "official": {
+    "address": "信義路3段157巷10弄2號",
+    "cars": 11,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計。",
+    "hours": "星期一至星期六 7時至20時",
+    "match_m": 3,
+    "name": "安祥公園旁平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六 7時至20時",
    "operator": null,
    "osm": {
     "id": 543896295,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/543896295"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -579,7 +609,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 341,
@@ -593,14 +623,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "鴻霖停車場2",
+   "official": {
+    "address": "仁愛路4段25號後方空地",
+    "cars": 14,
+    "fare": "計時：小型車180元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "鴻霖停車場2",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1005879800,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1005879800"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -974,6 +1014,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

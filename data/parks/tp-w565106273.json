@@ -338,7 +338,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 141,
@@ -353,7 +353,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "歐華酒店附設停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "林森北路646號地下1層",
+    "cars": 32,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日9,000元/月。",
+    "hours": "07:00:00-24:00:00",
+    "match_m": 16,
+    "name": "歐華酒店附設停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "07:00:00-24:00:00",
    "operator": null,
    "osm": {
     "id": 5293666984,
@@ -364,7 +373,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 193,
@@ -379,7 +388,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "德惠街停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "德惠街5-1號旁空地",
+    "cars": 10,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "德惠街停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 548887424,
@@ -416,7 +434,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 312,
@@ -430,14 +448,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "雙城街停車場",
-   "opening_hours": null,
+   "name": "雙城停車場",
+   "official": {
+    "address": "雙城街18巷5號空地",
+    "cars": 23,
+    "fare": "計時：120元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。月租：12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "雙城停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 291504144,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/291504144"
    },
+   "osm_name": "雙城街停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -857,6 +885,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

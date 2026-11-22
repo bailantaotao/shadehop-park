@@ -185,7 +185,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "168Parking 重慶南場",
+   "name": "168停車聯盟-重慶南場",
+   "official": {
+    "address": "重慶南路3段150號旁空地",
+    "cars": 19,
+    "fare": "計時：150元/時，全程以半小時計費。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "168停車聯盟-重慶南場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "168Parking",
    "osm": {
@@ -193,6 +202,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1442270505"
    },
+   "osm_name": "168Parking 重慶南場",
    "verified_at": "2026-11-07"
   },
   {
@@ -275,7 +285,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 260,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 432,
@@ -290,7 +300,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "古亭國中地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "中華路2段606巷1號地下",
+    "cars": 260,
+    "fare": "小型車(含大型重型機車)：計時 30元/時，停車全程以半小時計；月租 全日5,250元，夜間2,800元(18時~08時)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 49,
+    "name": "古亭國中地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 772708554,
@@ -692,6 +711,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

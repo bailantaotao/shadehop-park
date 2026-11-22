@@ -101,7 +101,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 135,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 38,
@@ -115,19 +115,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "百齡橋堤外（一）平面停車場",
+   "official": {
+    "address": "百齡橋堤外",
+    "cars": 135,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：09-17",
+    "match_m": 24,
+    "name": "百齡橋堤外（一）平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 356780460,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/356780460"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 447,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 261,
@@ -141,14 +151,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "百齡橋堤外平面停車場",
+   "official": {
+    "address": "通河西街旁堤防外",
+    "cars": 447,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：09-17",
+    "match_m": 28,
+    "name": "百齡橋堤外平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 356780459,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/356780459"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -179,7 +199,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 31,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 384,
@@ -193,14 +213,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
+   "name": "社中街平面停車場",
+   "official": {
+    "address": "社中街94號旁",
+    "cars": 31,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日4,800元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "社中街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "阜爾運通股份有限公司",
    "osm": {
     "id": 827822816,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/827822816"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
@@ -614,6 +644,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

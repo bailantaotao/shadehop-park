@@ -369,7 +369,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 194,
@@ -383,19 +383,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "博客停車場開發股份有限公司藏壽司捷運路場",
+   "official": {
+    "address": "新北市三重區捷運路1號",
+    "cars": 36,
+    "fare": "小型車計時40元;小型車計時50元;",
+    "hours": "0~24時",
+    "match_m": 27,
+    "name": "博客停車場開發股份有限公司藏壽司捷運路場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1574727755,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727755"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": 0,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 314,
@@ -409,14 +419,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times三重捷運路第5停車場",
+   "official": {
+    "address": "新北市三重區捷運路22巷21號旁停車場",
+    "cars": 40,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 42,
+    "name": "Times三重捷運路第5停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 492887844,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/492887844"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -447,7 +467,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 262,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 356,
@@ -461,19 +481,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中山高架橋下停車場",
-   "opening_hours": null,
+   "name": "文中小平面停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段159號對面停車場",
+    "cars": 262,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3300元;身障車月租1650元;機車計次10元;機車月租200元;身障機車月租100元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "文中小平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1015443507,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1015443507"
    },
+   "osm_name": "中山高架橋下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 88,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 419,
@@ -487,14 +517,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "過圳停車場",
-   "opening_hours": null,
+   "name": "過圳街停車場",
+   "official": {
+    "address": "三重區過圳街2~30號前空地",
+    "cars": 88,
+    "fare": "小型車計時20元;",
+    "hours": "0~24時",
+    "match_m": 12,
+    "name": "過圳街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 891122021,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/891122021"
    },
+   "osm_name": "過圳停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -868,6 +908,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

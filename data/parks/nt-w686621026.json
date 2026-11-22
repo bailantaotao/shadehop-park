@@ -239,7 +239,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "親水公園區停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市三重區疏洪十二路及疏洪一路交叉口",
+    "cars": 277,
+    "fare": "小型車計時20元;小型車計時10元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "親水公園區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "歐特儀股份有限公司",
    "osm": {
     "id": 440729765,
@@ -633,6 +642,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

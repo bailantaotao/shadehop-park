@@ -192,7 +192,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 118,
@@ -206,14 +206,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停十二",
-   "opening_hours": null,
+   "name": "樹林區第十三平面停車場",
+   "official": {
+    "address": "新北市樹林區中山路1段與文化街交叉路口",
+    "cars": 16,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2600元;身障車月租2000元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "樹林區第十三平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 206748999,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/206748999"
    },
+   "osm_name": "停十二",
    "verified_at": "2026-11-07"
   },
   {
@@ -244,7 +254,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 277,
@@ -258,14 +268,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "樹林國小慶福樓地下室及家長接送區停車場",
+   "official": {
+    "address": "新北市樹林區育英街176號B1及校外平面停車場",
+    "cars": 33,
+    "fare": "小型車月租2500元;小型車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 33,
+    "name": "樹林國小慶福樓地下室及家長接送區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 263053193,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/263053193"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -284,14 +304,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停七",
-   "opening_hours": null,
+   "name": "Times樹林復興路第2停車場",
+   "official": {
+    "address": "新北市樹林區復興路227號旁",
+    "cars": 6,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "Times樹林復興路第2停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 235917720,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/235917720"
    },
+   "osm_name": "停七",
    "verified_at": "2026-11-07"
   },
   {
@@ -336,14 +366,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "樹林區第八停車場",
-   "opening_hours": null,
+   "name": "樹林區第八平面停車場",
+   "official": {
+    "address": "新北市樹林區復興路390巷20號",
+    "cars": 49,
+    "fare": "小型車計時20元;小型車月租2500元;身障車月租2200元;",
+    "hours": "0~24時",
+    "match_m": 5,
+    "name": "樹林區第八平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 238566113,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/238566113"
    },
+   "osm_name": "樹林區第八停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -711,6 +751,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

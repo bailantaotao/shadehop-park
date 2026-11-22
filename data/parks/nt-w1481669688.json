@@ -218,7 +218,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 11,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 4,
@@ -232,19 +232,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "富山三峽國成街停車場(二區)",
+   "official": {
+    "address": "新北市三峽區學成路97號對面空地",
+    "cars": 11,
+    "fare": "小型車計時60元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 22,
+    "name": "富山三峽國成街停車場(二區)",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1481663971,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481663971"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 17,
@@ -258,14 +268,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "富山三峽國成街停車場(一區)",
+   "official": {
+    "address": "新北市三峽區學成路97號對面空地",
+    "cars": 49,
+    "fare": "小型車計時60元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "富山三峽國成街停車場(一區)",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1481663965,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481663965"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -296,7 +316,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 4,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 153,
@@ -310,19 +330,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "長揚停車場三峽站",
+   "official": {
+    "address": "新北市三峽區國光街364巷14號對面空地",
+    "cars": 4,
+    "fare": "小型車月租3500元;",
+    "hours": "0~24時",
+    "match_m": 5,
+    "name": "長揚停車場三峽站",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1481663962,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481663962"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 194,
@@ -336,14 +366,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "禮頓企業股份有限公司北大學成二站停車場",
+   "official": {
+    "address": "新北市三峽區學成路159號旁",
+    "cars": 24,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 29,
+    "name": "禮頓企業股份有限公司北大學成二站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1513916992,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1513916992"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -737,6 +777,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -528,7 +528,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 275,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 288,
@@ -542,14 +542,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "USPACE",
-   "opening_hours": null,
+   "name": "Uspace板橋旗艦停車場",
+   "official": {
+    "address": "新北市板橋區中山路1段279號",
+    "cars": 275,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 18,
+    "name": "Uspace板橋旗艦停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 337591647,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/337591647"
    },
+   "osm_name": "USPACE",
    "verified_at": "2026-11-07"
   }
  ],
@@ -923,6 +933,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -346,7 +346,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 57,
@@ -360,19 +360,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "景興路臨時平面停車場",
+   "official": {
+    "address": "景興路53巷~85巷之間",
+    "cars": 32,
+    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計。",
+    "hours": "星期一至星期六9時至17時",
+    "match_m": 47,
+    "name": "景興路臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六9時至17時",
    "operator": null,
    "osm": {
     "id": 759151875,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/759151875"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 57,
@@ -386,14 +396,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "景興路臨時平面停車場",
+   "official": {
+    "address": "景興路53巷~85巷之間",
+    "cars": 32,
+    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計。",
+    "hours": "星期一至星期六9時至17時",
+    "match_m": 19,
+    "name": "景興路臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期六9時至17時",
    "operator": null,
    "osm": {
     "id": 759151876,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/759151876"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -490,14 +510,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景華公園停車場",
-   "opening_hours": null,
+   "name": "景華公園地下停車場",
+   "official": {
+    "address": "景華街55號地下(地下共2層)",
+    "cars": 750,
+    "fare": "計時：小型車20元/時，停車全程以半小時計。月租：小型車全日4,800元/月，大型重型機車全日2,400元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 45,
+    "name": "景華公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 697566926,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/697566926"
    },
+   "osm_name": "景華公園停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -865,6 +895,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

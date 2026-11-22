@@ -334,7 +334,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 310,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 67,
@@ -349,7 +349,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "八德立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "八德路4段580號(地下1層及地上10層)",
+    "cars": 310,
+    "fare": "小型車、大型重型機車：計時40元/時(週一至週四)，50元/時(週五至週日、行政機關放假之紀念日與民俗日)，全程以半小時計；小型車全日4,800元/月，大型重機2,400元/月。機車10元/時，當日單次最高收費上限20元/次，隔日另計(以0時為基準)；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "八德立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 313584141,
@@ -386,7 +395,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 118,
@@ -400,19 +409,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 南松饒河一站停車場",
-   "opening_hours": null,
+   "name": "南松饒河一站平面停車場",
+   "official": {
+    "address": "八德路4段453巷與基隆路1段交叉口",
+    "cars": 16,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計；月租 全日20,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "南松饒河一站平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1466666861,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666861"
    },
+   "osm_name": "Hi PARKING 南松饒河一站停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 8,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 123,
@@ -426,19 +445,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 南松饒河二站停車場",
-   "opening_hours": null,
+   "name": "南松饒河二站平面停車場",
+   "official": {
+    "address": "塔悠路36號旁空地",
+    "cars": 8,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計；月租 全日20,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 25,
+    "name": "南松饒河二站平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1466666862,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666862"
    },
+   "osm_name": "Hi PARKING 南松饒河二站停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 204,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 221,
@@ -452,14 +481,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Yaxiang Park Car Park",
-   "opening_hours": null,
+   "name": "雅祥公園地下停車場",
+   "official": {
+    "address": "松隆路123巷7號地下(地下共3層)",
+    "cars": 204,
+    "fare": "計時：小型車(含大型重型機車)週一至週四40元/時，週五至週日及政府行政機關放假之紀念日、民俗節日50元/時，停車全程以半小時計。月租：小型車全日4,800元/月，夜間2,000元/月，（使用時段為週一至週五19時至翌日上午8時，週六、週日與行政機關放假之紀念日、民俗節日全日使用）。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 16,
+    "name": "雅祥公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 12869842690,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12869842690"
    },
+   "osm_name": "Yaxiang Park Car Park",
    "verified_at": "2026-11-07"
   },
   {
@@ -859,6 +898,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

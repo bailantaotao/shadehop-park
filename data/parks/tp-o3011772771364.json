@@ -353,7 +353,7 @@
  "parking": [
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 33,
@@ -367,19 +367,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "玉泉公園站停車場",
+   "official": {
+    "address": "西寧北路28號",
+    "cars": 25,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 48,
+    "name": "玉泉公園站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 449290527,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/449290527"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 44,
@@ -393,19 +403,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "玉泉公園站停車場",
+   "official": {
+    "address": "西寧北路28號",
+    "cars": 25,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "玉泉公園站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 449290524,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/449290524"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 1295,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 139,
@@ -419,19 +439,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "洛陽停車場",
-   "opening_hours": null,
+   "name": "洛陽綜合立體停車場",
+   "official": {
+    "address": "環河南路1段1號",
+    "cars": 1295,
+    "fare": "計時：小型車(含大型重型機車)週一至週五20元/時(08-22)、10元/時(22-08)，週六至週日及政府行政機關放假之紀念日、民俗節日20元/時(08-10)、30元/時(10-22)、10元/時(22-08)，停車全程以半小時計。月租：小型車全日4,000元/月，日間(07-20)2,400元/月，夜間(20-07)900元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "洛陽綜合立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 51919197,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/51919197"
    },
+   "osm_name": "洛陽停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 80,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 188,
@@ -445,19 +475,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立聯合醫院-中興院區停車場",
+   "official": {
+    "address": "鄭州路145號",
+    "cars": 80,
+    "fare": "小型車：計時 1-2月50元/時(07-22)，10元/時(22-07)，3-12月40元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 日間2,000元，進場未滿30分鐘離場不收費，殯葬廠商月票5,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "臺北市立聯合醫院-中興院區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 201280878,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/201280878"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 80,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 197,
@@ -471,19 +511,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立聯合醫院-中興院區停車場",
+   "official": {
+    "address": "鄭州路145號",
+    "cars": 80,
+    "fare": "小型車：計時 1-2月50元/時(07-22)，10元/時(22-07)，3-12月40元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 日間2,000元，進場未滿30分鐘離場不收費，殯葬廠商月票5,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "臺北市立聯合醫院-中興院區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 201280886,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/201280886"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 80,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 203,
@@ -497,14 +547,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市立聯合醫院-中興院區停車場",
+   "official": {
+    "address": "鄭州路145號",
+    "cars": 80,
+    "fare": "小型車：計時 1-2月50元/時(07-22)，10元/時(22-07)，3-12月40元/時(07-22)，10元/時(22-07)，停車全程以半小時計；月租 日間2,000元，進場未滿30分鐘離場不收費，殯葬廠商月票5,500元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "臺北市立聯合醫院-中興院區停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 201280883,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/201280883"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -878,6 +938,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -364,7 +364,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "文化公園地下停車場",
+   "name": "文化公園停車場",
+   "official": {
+    "address": "桃園市中壢區長春路57號對面停車場",
+    "cars": null,
+    "fare": "計時:30/H,12H最高70元,前30分鐘免費",
+    "hours": null,
+    "match_m": 26,
+    "name": "文化公園停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -372,6 +381,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1009116025"
    },
+   "osm_name": "文化公園地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -468,7 +478,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "中壢忠孝黃昏市場站",
+   "official": {
+    "address": "中壢區忠孝路476號",
+    "cars": null,
+    "fare": "小型車臨時停車收費方式：  全日計時：每半小時15元，當日最高收費100元",
+    "hours": null,
+    "match_m": 44,
+    "name": "中壢忠孝黃昏市場站",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -476,6 +495,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/203368838"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -875,6 +895,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -294,7 +294,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "竹蓮市場停車場",
+   "name": "頂竹圍地下停車場",
+   "official": {
+    "address": "新竹市東區頂竹里竹蓮街16號",
+    "cars": null,
+    "fare": "平假日 20元/時(24小時)",
+    "hours": null,
+    "match_m": 48,
+    "name": "頂竹圍地下停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -302,6 +311,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/8637539734"
    },
+   "osm_name": "竹蓮市場停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -321,6 +331,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "頂竹圍地下停車場",
+   "official": {
+    "address": "新竹市東區頂竹里竹蓮街16號",
+    "cars": null,
+    "fare": "平假日 20元/時(24小時)",
+    "hours": null,
+    "match_m": 12,
+    "name": "頂竹圍地下停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -346,7 +365,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "西大路立體停車場",
+   "name": "停七停車場",
+   "official": {
+    "address": "西大路41號",
+    "cars": null,
+    "fare": "停車費用 - 平日： 20元 *\t停車費用 - 假日： 20元",
+    "hours": null,
+    "match_m": 36,
+    "name": "停七停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -354,6 +382,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/245280575"
    },
+   "osm_name": "西大路立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -424,7 +453,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "後站第一汽車停車場",
+   "name": "火車站後站(一、二、三、四)汽車停車場",
+   "official": {
+    "address": "300新竹市東區公竹路",
+    "cars": null,
+    "fare": "平假日 20元/時(24小時)",
+    "hours": null,
+    "match_m": 30,
+    "name": "火車站後站(一、二、三、四)汽車停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -432,6 +470,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1240705540"
    },
+   "osm_name": "後站第一汽車停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -805,6 +844,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新竹市政府養護工程處「新竹市兒童遊戲場清冊」",
    "url": "https://data.gov.tw/dataset/132713"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

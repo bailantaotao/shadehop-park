@@ -251,7 +251,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 90,
@@ -265,19 +265,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臨沂二停車場",
-   "opening_hours": null,
+   "name": "聯永物業股份有限公司臨沂二站",
+   "official": {
+    "address": "忠孝東路2段134巷18號",
+    "cars": 10,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "聯永物業股份有限公司臨沂二站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 663577173,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/663577173"
    },
+   "osm_name": "臨沂二停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 52,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 171,
@@ -292,7 +302,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "良友八德停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "忠孝東路2段95號",
+    "cars": 52,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "良友八德停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4325694179,
@@ -303,7 +322,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 240,
@@ -317,19 +336,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "御車坊",
+   "official": {
+    "address": "金山南路1段17號旁空地",
+    "cars": 34,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日7,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 22,
+    "name": "御車坊",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1569770423,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1569770423"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 11,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 253,
@@ -343,19 +372,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "金山南路停車場",
+   "official": {
+    "address": "金山南路1段與齊東街口空地",
+    "cars": 11,
+    "fare": "小型車：計時 140元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "金山南路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 308664095,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/308664095"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 78,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 269,
@@ -370,7 +409,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "北科先鋒停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "忠孝東路3段46號地下1至4層",
+    "cars": 78,
+    "fare": "計時：小型車50元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "北科先鋒停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 10035706038,
@@ -381,7 +429,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 298,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 285,
@@ -395,7 +443,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "日月亭希望園區場",
+   "name": "希望園區停車場",
+   "official": {
+    "address": "八德路1段55號地下1至4層",
+    "cars": 298,
+    "fare": "計時：小型車60元/時，機車20元/時，停車全程以半小時計。月租：小型車全日6,000元/月，機車全日1,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "希望園區停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -403,6 +460,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/936161475"
    },
+   "osm_name": "日月亭希望園區場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -776,6 +834,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

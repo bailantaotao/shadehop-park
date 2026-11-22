@@ -323,7 +323,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 244,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 40,
@@ -337,14 +337,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "朝陽公園地下停車場",
+   "official": {
+    "address": "重慶北路2段68號地下室［地下共3層］",
+    "cars": 244,
+    "fare": "計時：小型車(含大型重型機車)40元/時(08-22)、10元/時(22-08)，停車全程以半小時計。月租：小型車全日5,760元/月，夜間(19-08)2,400元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 10,
+    "name": "朝陽公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "朝陽公園地下停車場",
    "osm": {
     "id": 1101043401,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1101043401"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -375,7 +385,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 198,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 370,
@@ -390,7 +400,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "大稻埕公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "歸綏街243號地下",
+    "cars": 198,
+    "fare": "計時：周一至五40元/時(08-19)，10元/時(19-翌日08)，周六至周日、政府行政機關放假之紀念日、民俗節日50元/時(08-19)，10元/時(19-翌日08)，全程以半小時計費。月票：全日5,760元/月，夜間2,000元/月(19-翌日08)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 44,
+    "name": "大稻埕公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 772708559,
@@ -415,19 +434,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times 迪化街",
-   "opening_hours": null,
+   "name": "Times迪化街",
+   "official": {
+    "address": "塔城街59號北側空地",
+    "cars": 5,
+    "fare": "計時：小型車300元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "Times迪化街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 1002200813,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002200813"
    },
+   "osm_name": "Times 迪化街",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 470,
@@ -441,19 +470,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-涼州場",
+   "official": {
+    "address": "重慶北路2段與涼州街交叉口空地",
+    "cars": 49,
+    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "168停車聯盟-涼州場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 505340533,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/505340533"
    },
+   "osm_name": "停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 490,
@@ -467,14 +506,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通太原場",
-   "opening_hours": null,
+   "name": "台灣聯通太原停車場",
+   "official": {
+    "address": "太原路76巷1號",
+    "cars": 28,
+    "fare": "小型車：計時 100元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計;月租 全日10,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 31,
+    "name": "台灣聯通太原停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣聯通停車場開發股份有限公司",
    "osm": {
     "id": 4410233101,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4410233101"
    },
+   "osm_name": "台灣聯通太原場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -848,6 +897,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

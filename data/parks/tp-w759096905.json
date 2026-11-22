@@ -258,7 +258,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 218,
@@ -273,7 +273,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "辛亥生態公園平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興德路66巷與興德路口",
+    "cars": 10,
+    "fare": "計時：小型車週一~週六20元/時(09時~17時)，停車全程以半小時計。機車：免費。",
+    "hours": "週一至週六9-17時",
+    "match_m": 13,
+    "name": "辛亥生態公園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六9-17時",
    "operator": null,
    "osm": {
     "id": 1106802701,
@@ -284,7 +293,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 245,
@@ -298,19 +307,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "路邊停車",
-   "opening_hours": null,
+   "name": "辛亥生態公園平面停車場",
+   "official": {
+    "address": "興德路66巷與興德路口",
+    "cars": 10,
+    "fare": "計時：小型車週一~週六20元/時(09時~17時)，停車全程以半小時計。機車：免費。",
+    "hours": "週一至週六9-17時",
+    "match_m": 38,
+    "name": "辛亥生態公園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六9-17時",
    "operator": null,
    "osm": {
     "id": 1106802700,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1106802700"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 129,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 306,
@@ -325,7 +344,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "辛亥國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "辛亥路4段103號地下共2層",
+    "cars": 129,
+    "fare": "小型車：計時 20元/時(08時~18時)，10元/時(18時~08時)，停車全程以半小時計；月租 全日3,840元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 53,
+    "name": "辛亥國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 824570175,
@@ -770,6 +798,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -575,7 +575,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 57,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 268,
@@ -589,19 +589,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "建國北路高架橋下IA區",
+   "official": {
+    "address": "建國北路橋下(民權東路-五常街)",
+    "cars": 57,
+    "fare": "計時：小型車(含大型重型機車)40元(0700-2130)、10元(2130-0700)，全程以半小時計。月租：小型車全日5,000元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "建國北路高架橋下IA區",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 674931327,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/674931327"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 315,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 309,
@@ -615,19 +625,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北市第一停車場",
-   "opening_hours": null,
+   "name": "第一停車場",
+   "official": {
+    "address": "民權東路2段145號",
+    "cars": 315,
+    "fare": "計時：小型車(含大型重型機車)40元/時(07-21)、10元/時(21-07)，機車10元/時，當日單次停車最高收費上限20元/次，大客車60元/時(07-21)、20元/時(21-07)，停車全程以半小時計。月租：小型車全日5,000元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 57,
+    "name": "第一停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 136053052,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/136053052"
    },
+   "osm_name": "臺北市第一停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 142,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 348,
@@ -641,14 +661,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "建國北路高架橋下IB區",
+   "official": {
+    "address": "建國北路橋下(五常街-農安街)",
+    "cars": 142,
+    "fare": "計時：小型車(含大型重型機車)40元(0700-2130)、10元(2130-0700)，全程以半小時計。月租：小型車全日5,000元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "建國北路高架橋下IB區",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 674931326,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/674931326"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -1022,6 +1052,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

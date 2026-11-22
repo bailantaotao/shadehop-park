@@ -266,7 +266,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 78,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 25,
@@ -280,19 +280,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "小型車停車場",
-   "opening_hours": null,
+   "name": "台灣聯通士林官邸停車場",
+   "official": {
+    "address": "福林路100巷旁空地",
+    "cars": 78,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "台灣聯通士林官邸停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 502357422,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/502357422"
    },
+   "osm_name": "小型車停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 88,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 25,
@@ -306,14 +316,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "小型車停車場",
-   "opening_hours": null,
+   "name": "福林路平面停車場",
+   "official": {
+    "address": "福林路與中正路交叉口南側空地",
+    "cars": 88,
+    "fare": "計時：小型車(含大型重型機車)20元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日3,500元/月。免費停車：機車。",
+    "hours": "收費日：星期一至星期日，收費時間：09時-17時",
+    "match_m": 28,
+    "name": "福林路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：09時-17時",
    "operator": null,
    "osm": {
     "id": 502359097,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/502359097"
    },
+   "osm_name": "小型車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -332,19 +352,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大客車停車場",
-   "opening_hours": null,
+   "name": "福林路大客車平面停車場",
+   "official": {
+    "address": "福林路中正路交叉口北側",
+    "cars": null,
+    "fare": "小型車：計時 60元/時(08時~22時)，20元/時(22時~08時)，當日單次停車最高收費上限100元/次，隔日另計，以NaN時為基準，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計，大客車：60元/時，全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "福林路大客車平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 491583050,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/491583050"
    },
+   "osm_name": "大客車停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 229,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 132,
@@ -359,7 +389,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "福林公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "中正路17號地下",
+    "cars": 229,
+    "fare": "小型車(含大型重型機車)：計時 週一~週五30元/時，週六~週日、行政機關放假之紀念日與民俗日40元/時(09時~21時)，30元/時(21時~09時)，停車全程以半小時計；月租 全日4,800元，夜間2,600元(週一至週五20時~08時，週六、日及政府行政機關放假之紀念日、民俗節日之全日)，大型重機2,400元/月。機車：20元/次，隔日另計，以0時為基準；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "福林公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 6151326418,
@@ -384,14 +423,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大客車停車場",
-   "opening_hours": null,
+   "name": "福林公園大客車平面停車場",
+   "official": {
+    "address": "中正路17號空地",
+    "cars": null,
+    "fare": "小型車：計時 60元/時(08時~22時)，20元/時(22時~08時)，停車全程以半小時計，本時段收費上限100元，本場未出售月票。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "福林公園大客車平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 435181719,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/435181719"
    },
+   "osm_name": "大客車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -791,6 +840,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

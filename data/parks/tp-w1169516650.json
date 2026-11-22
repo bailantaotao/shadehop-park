@@ -212,7 +212,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 46,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 450,
@@ -226,14 +226,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通停車場",
-   "opening_hours": null,
+   "name": "台灣聯通文成停車場",
+   "official": {
+    "address": "文德路273號旁空地",
+    "cars": 46,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "台灣聯通文成停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 372582373,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/372582373"
    },
+   "osm_name": "台灣聯通停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -264,7 +274,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 527,
@@ -278,14 +288,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市內湖區內湖國民小學孝悌樓地下停車場",
+   "official": {
+    "address": "內湖路2段41號地下1層",
+    "cars": 49,
+    "fare": "月租：小型車全日2,000元/月。於抽得車位後繳交停車費及租用保證金1期新臺幣5,000元。",
+    "hours": "周一至周五晚間6時30分起至翌日早上6時30分止及例假日全天",
+    "match_m": 18,
+    "name": "臺北市內湖區內湖國民小學孝悌樓地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周五晚間6時30分起至翌日早上6時30分止及例假日全天",
    "operator": null,
    "osm": {
     "id": 1065754178,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1065754178"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -711,6 +731,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

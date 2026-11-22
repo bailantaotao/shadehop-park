@@ -178,7 +178,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "五福停車場",
+   "name": "五福公園停車場",
+   "official": {
+    "address": "桃園市楊梅區文化街295巷",
+    "cars": null,
+    "fare": "計時",
+    "hours": null,
+    "match_m": 36,
+    "name": "五福公園停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -186,6 +195,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/961498505"
    },
+   "osm_name": "五福停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -651,6 +661,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

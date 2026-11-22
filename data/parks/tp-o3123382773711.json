@@ -271,7 +271,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 94,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 102,
@@ -285,19 +285,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房東湖站停車場",
+   "official": {
+    "address": "康樂街91號旁空地",
+    "cars": 94,
+    "fare": "小型車：計時 120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日12,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 30,
+    "name": "嘟嘟房東湖站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1481962136,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1481962136"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 207,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 168,
@@ -311,19 +321,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "樂活公園地下停車場",
+   "official": {
+    "address": "康樂街85巷57號地下（地下共2層）",
+    "cars": 207,
+    "fare": "計時：小型車(含大型重型機車)40元/時(08-21)，20元/時(21-08)，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日5,000元/月，機車全日300元/月，大型重型機車全日2,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 58,
+    "name": "樂活公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 80261112,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/80261112"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 359,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 271,
@@ -338,7 +358,16 @@
    "maxheight_m": 1.8,
    "method": "osm",
    "name": "東湖國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "東湖路115號之1地下",
+    "cars": 359,
+    "fare": "小型車：計時 40元/時(08時~21時)，20元/時(21時~08時)，全程以半小時計；月租 全日4,000元，日間2,000元(07時~19時)，夜間2,000元(19時~08時)，大型重機2,000元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 42,
+    "name": "東湖國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3232592861,
@@ -375,7 +404,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 113,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 528,
@@ -389,14 +418,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "安康公車調度站臨時平面停車場",
+   "official": {
+    "address": "五分街12號空地旁",
+    "cars": 113,
+    "fare": "計時：小型車30元/時，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日4,000元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "安康公車調度站臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 80317522,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/80317522"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -796,6 +835,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

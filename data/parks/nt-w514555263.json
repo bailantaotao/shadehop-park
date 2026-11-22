@@ -172,7 +172,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 117,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 416,
@@ -186,14 +186,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "俥亭新店中正平面停車場",
+   "official": {
+    "address": "新北市新店區中正路30號旁空地",
+    "cars": 117,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 31,
+    "name": "俥亭新店中正平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1293787485,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1293787485"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -302,7 +312,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 44,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 600,
@@ -316,14 +326,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新北市寶高智慧產業園區停車場",
+   "official": {
+    "address": "新北市新店區寶高路26~30號1樓",
+    "cars": 44,
+    "fare": "小型車計時30元;小型車月租2500元;機車計時10元;機車月租250元;",
+    "hours": "月租24小時，臨停6~22時",
+    "match_m": 37,
+    "name": "新北市寶高智慧產業園區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "月租24小時，臨停6~22時",
    "operator": null,
    "osm": {
     "id": 1284587892,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1284587892"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -691,6 +711,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

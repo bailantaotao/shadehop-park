@@ -302,7 +302,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 39,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 26,
@@ -316,14 +316,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "東和停車場",
-   "opening_hours": null,
+   "name": "東和公園平面停車場",
+   "official": {
+    "address": "天母東路69巷旁",
+    "cars": 39,
+    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 32,
+    "name": "東和公園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 389489976,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/389489976"
    },
+   "osm_name": "東和停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -354,7 +364,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 82,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 428,
@@ -368,19 +378,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺北市立大學天母校區停車場",
-   "opening_hours": null,
+   "name": "臺北市立大學天母校區體育館平面停車場",
+   "official": {
+    "address": "忠誠路2段207巷6號體育館旁",
+    "cars": 82,
+    "fare": "小型車：計時 週一至週五30元/時，週六、週日、行政機關放假之紀念日與民俗日50元/時，停車全程以半小時計；月租 全日4,800元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "臺北市立大學天母校區體育館平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 262945679,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/262945679"
    },
+   "osm_name": "臺北市立大學天母校區停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "permissive",
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 454,
@@ -394,14 +414,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北市立天母國民中學停車場",
+   "official": {
+    "address": "天母東路120號",
+    "cars": 20,
+    "fare": "季租：6,000元/季(3個月為一期)。",
+    "hours": "夜間：22時至翌日6時30分；例假日：星期六、日及國定假日全天。",
+    "match_m": 1,
+    "name": "臺北市立天母國民中學停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "夜間：22時至翌日6時30分；例假日：星期六、日及國定假日全天。",
    "operator": null,
    "osm": {
     "id": 861794474,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/861794474"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -827,6 +857,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

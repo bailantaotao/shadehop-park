@@ -108,7 +108,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 258,
@@ -123,7 +123,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "佳美停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市淡水區沙崙路257號隔壁",
+    "cars": 29,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 10,
+    "name": "佳美停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1460159491,
@@ -149,7 +158,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "淡水沙崙段平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市淡水區沙崙路與淡海路交叉口",
+    "cars": 140,
+    "fare": "小型車計時30元;小型車月租2200元;身障車月租 1200元  ;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "淡水沙崙段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 7514381,
@@ -621,6 +639,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -260,7 +260,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "台北景福停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "景福街168號巷口空地",
+    "cars": 49,
+    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "台北景福停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "陳昱光",
    "osm": {
     "id": 440646815,
@@ -271,7 +280,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 18,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 336,
@@ -285,14 +294,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "萬慶平面停車場",
-   "opening_hours": null,
+   "name": "萬慶街平面停車場",
+   "official": {
+    "address": "萬慶街48號對面",
+    "cars": 18,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
+    "hours": "收費日：周一至六，收費時間：上午9時至下午5時",
+    "match_m": 17,
+    "name": "萬慶街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：周一至六，收費時間：上午9時至下午5時",
    "operator": null,
    "osm": {
     "id": 429419983,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/429419983"
    },
+   "osm_name": "萬慶平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -323,7 +342,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 645,
@@ -337,14 +356,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times 景隆街",
+   "official": {
+    "address": "景隆街12號旁（部分面積：301平方公尺）",
+    "cars": 10,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "Times 景隆街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 845767866,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/845767866"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -772,6 +801,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

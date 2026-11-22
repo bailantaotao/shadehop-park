@@ -245,7 +245,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 175,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 81,
@@ -259,19 +259,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新莊副都心停車場",
+   "official": {
+    "address": "新北市新莊區富貴路與麗水路交叉口",
+    "cars": 175,
+    "fare": "小型車計時80元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 55,
+    "name": "新莊副都心停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1474846130,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846130"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 146,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 106,
@@ -285,19 +295,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "昌和停車場",
+   "official": {
+    "address": "新北市新莊區昌和街與昌平街交叉口",
+    "cars": 146,
+    "fare": "小型車計時30元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 42,
+    "name": "昌和停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402270,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402270"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 132,
@@ -311,19 +331,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊榮華路停車場",
+   "official": {
+    "address": "新北市新莊區榮華路1段",
+    "cars": 28,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "Times新莊榮華路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402272,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402272"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 135,
@@ -337,14 +367,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊榮華路停車場",
+   "official": {
+    "address": "新北市新莊區榮華路1段",
+    "cars": 28,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "Times新莊榮華路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402273,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402273"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -375,7 +415,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 175,
@@ -389,14 +429,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊榮華路停車場",
+   "official": {
+    "address": "新北市新莊區榮華路1段",
+    "cars": 28,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 54,
+    "name": "Times新莊榮華路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402271,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402271"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -770,6 +820,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

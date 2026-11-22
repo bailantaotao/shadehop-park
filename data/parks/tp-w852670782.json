@@ -502,7 +502,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 185,
@@ -516,19 +516,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "公有收費停車場",
-   "opening_hours": null,
+   "name": "中山北路2段42巷臨時平面停車場",
+   "official": {
+    "address": "中山北路2段42巷（中山運動中心旁）",
+    "cars": 22,
+    "fare": "計時：小型車(含大型重型機車)40元/時，停車全程以半小時計。月租：小型車全日9,600元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "中山北路2段42巷臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 258432686,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/258432686"
    },
+   "osm_name": "公有收費停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 206,
@@ -542,14 +552,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 中山運動中心旁臨時停車場",
-   "opening_hours": null,
+   "name": "中山運動中心旁臨時平面停車場",
+   "official": {
+    "address": "中山北路2段46巷與44巷間（台新銀行、中山運動中心及捷運公司旁）",
+    "cars": 53,
+    "fare": "計時：小型車(含大型重型機車)40元/時，停車全程以半小時計。月租：小型車全日9,600元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "中山運動中心旁臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 733943188,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/733943188"
    },
+   "osm_name": "Hi PARKING 中山運動中心旁臨時停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -568,14 +588,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times南京西路【機車】",
+   "official": {
+    "address": "南京西路64巷14弄2號對面",
+    "cars": null,
+    "fare": "計次：機車50元/次，隔日另計，以00時為基準。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "Times南京西路【機車】",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1005445764,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1005445764"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -632,7 +662,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 97,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 438,
@@ -646,14 +676,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新長越中山大樓停車場 (平面)",
-   "opening_hours": null,
+   "name": "中山大樓停車場",
+   "official": {
+    "address": "中山北路2段61號後側空地及地下1至2層",
+    "cars": 97,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "中山大樓停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1344537643,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1344537643"
    },
+   "osm_name": "新長越中山大樓停車場 (平面)",
    "verified_at": "2026-11-07"
   }
  ],
@@ -1029,6 +1069,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

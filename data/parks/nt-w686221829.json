@@ -215,7 +215,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 29,
@@ -230,7 +230,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "Times鶯歌文化路停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市鶯歌區文化路309號旁",
+    "cars": 16,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 8,
+    "name": "Times鶯歌文化路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 333752655,
@@ -241,7 +250,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 110,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 58,
@@ -255,14 +264,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "鶯歌區北鶯平面停車場",
+   "official": {
+    "address": "新北市鶯歌區館前路與文化路交叉口",
+    "cars": 110,
+    "fare": "小型車計時20元;小型車計時40元;小型車月租3000元;小型車月租2400元;身障車月租1500元;機車計次10元;機車月租300元;機車月租240元;身障機車月租150元 ;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "鶯歌區北鶯平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 665762633,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/665762633"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -740,6 +759,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

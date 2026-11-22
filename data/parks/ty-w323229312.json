@@ -305,6 +305,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "青溪停車場",
+   "official": {
+    "address": "桃園市桃園區中山東路126巷",
+    "cars": null,
+    "fare": "小型車臨時停車收費：  全日計時：每小時20元，當日最高收費120元  ※ 入場前30分鐘免費停車。 ※ 相關停車須知皆以現場公告為準。",
+    "hours": null,
+    "match_m": 14,
+    "name": "青溪停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "桃園市政府",
    "osm": {
@@ -408,7 +417,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "朝陽公園停車場",
+   "official": {
+    "address": "桃園市桃園區鎮撫街朝陽公園",
+    "cars": null,
+    "fare": "計時：30元/時、月租3600元",
+    "hours": null,
+    "match_m": 30,
+    "name": "朝陽公園停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "朝陽公園平面停車場",
    "osm": {
@@ -416,6 +434,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/540119340"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -821,6 +840,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

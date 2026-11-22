@@ -245,14 +245,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "成功水門停車場",
-   "opening_hours": null,
+   "name": "土城成功水門停車場",
+   "official": {
+    "address": "新北市土城區成功街水門旁",
+    "cars": 111,
+    "fare": "小型車計時20元;小型車月租2200元;身障車月租1100元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 15,
+    "name": "土城成功水門停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "俥亭",
    "osm": {
     "id": 656603587,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/656603587"
    },
+   "osm_name": "成功水門停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -638,6 +648,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

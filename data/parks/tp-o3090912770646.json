@@ -393,19 +393,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "玉成公園停車場",
-   "opening_hours": null,
+   "name": "玉成公園地下停車場",
+   "official": {
+    "address": "成福路118號地下",
+    "cars": 412,
+    "fare": "小型車：計時 20元/時，全程以半小時計；月租 全日4,800元，夜間2,400元(週一至週五19時~08時，週六、日及政府行政機關放假之紀念日、民俗節日之全日)，大型重機2,400元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 27,
+    "name": "玉成公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4721803326,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4721803326"
    },
+   "osm_name": "玉成公園停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 180,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 294,
@@ -419,19 +429,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "成德立體停車場",
+   "official": {
+    "address": "成福路1號",
+    "cars": 180,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日4,500元，日間2,500元(07-19)，夜間2,400元(19-07)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 22,
+    "name": "成德立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 904356888,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/904356888"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 180,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 334,
@@ -445,19 +465,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "成德立體停車場",
+   "official": {
+    "address": "成福路1號",
+    "cars": 180,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日4,500元，日間2,500元(07-19)，夜間2,400元(19-07)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "成德立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 447502429,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/447502429"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 149,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 344,
@@ -471,14 +501,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "忠孝玉成停車場",
+   "official": {
+    "address": "忠孝東路6段62號旁空地",
+    "cars": 149,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 25,
+    "name": "忠孝玉成停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 535270734,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/535270734"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -917,6 +957,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

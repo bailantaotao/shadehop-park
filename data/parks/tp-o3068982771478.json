@@ -490,7 +490,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 74,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 53,
@@ -504,19 +504,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "臺灣聯通八德場",
-   "opening_hours": null,
+   "name": "台灣聯通八德停車場",
+   "official": {
+    "address": "八德路4段245巷32弄9號",
+    "cars": 74,
+    "fare": "計時:80元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租:全天8,000元/月，日間7,000元/月(08-20)，夜間6,000元/月(20-08)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "台灣聯通八德停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4837986379,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4837986379"
    },
+   "osm_name": "臺灣聯通八德場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 61,
@@ -530,19 +540,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "宏達停車南京場",
-   "opening_hours": null,
+   "name": "驛林交通股份有限公司南京東興場",
+   "official": {
+    "address": "南京東路5段200號地下2層",
+    "cars": 53,
+    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 30,
+    "name": "驛林交通股份有限公司南京東興場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4837986376,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4837986376"
    },
+   "osm_name": "宏達停車南京場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 347,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 146,
@@ -557,7 +577,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "中崙高中地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "八德路4段101號地下室（地下2層）",
+    "cars": 347,
+    "fare": "小型車(含大型重型機車)：週一至週五30元/時，週六、週日、行政機關放假之紀念日與民俗日40元/時，停車全程以半小時計；月租：全日5,200元，日間4,400元(07-19)，夜間2,400元(19-08)，大型重機2,600元。本場常因配合大巨蛋活動調整費率為80元/時，請參閱現場費率調整公告。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 58,
+    "name": "中崙高中地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 812899985,
@@ -583,7 +612,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "吉祥平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "光復北路11巷81號旁",
+    "cars": 32,
+    "fare": "小型車：計時 30元/時，全程以半小時計；月租 全日7,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "吉祥平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 390780634,
@@ -620,7 +658,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -634,14 +672,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房京華城站停車場",
+   "official": {
+    "address": "東寧路21號旁",
+    "cars": 22,
+    "fare": "小型車：計時 120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "嘟嘟房京華城站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 313680580,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/313680580"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -1045,6 +1093,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

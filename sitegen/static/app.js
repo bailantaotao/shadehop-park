@@ -251,6 +251,35 @@
   var TICK_ZOOM = 14;
   var TICK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4.5 4.5 8.5-9" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var tickMode = null;
+
+  // The park the parent tapped grows and lifts (a copy of its marker drawn on top), so it is clear
+  // what was hit and which dot the open card belongs to. Canvas dots cannot animate, hence the copy.
+  var looks = {}, redrawing = false, popupSel = null, selMarker = null, selShown = null, selKey = null;
+  function selectedId() {
+    if (!phone.matches) return popupSel;
+    var sp = document.getElementById("sheetPark");
+    return sp && !sp.hidden ? state.selected : null;
+  }
+  function drawSel() {
+    if (redrawing) return;
+    var id = selectedId(), lk = id && looks[id];
+    if (!lk) { if (selMarker) map.removeLayer(selMarker); selMarker = selShown = null; return; }
+    var d, inner;
+    if (lk.tick) { d = lk.size; inner = '<span class="' + lk.cls + '" style="width:' + d + 'px;height:' + d + 'px">' + TICK_SVG + "</span>"; }
+    else {
+      d = 2 * lk.r + lk.weight;
+      inner = '<span class="sel-dot" style="width:' + d + "px;height:" + d + "px;background:" + lk.fill + ";border:" + lk.weight + "px solid " + lk.stroke + '"></span>';
+    }
+    var scale = lk.tick ? 1.5 : Math.max(1.7, 20 / d), box = Math.ceil(d * scale) + 12;
+    var key = id + "|" + lk.ll + "|" + inner + scale;
+    if (selMarker && selKey === key) return;  // unchanged: leave it, so a running pop is not cut short
+    if (selMarker) map.removeLayer(selMarker);
+    selKey = key;
+    selMarker = L.marker(lk.ll, { interactive: false, keyboard: false, zIndexOffset: 3000, icon: L.divIcon({
+      className: "mk-sel" + (selShown === id ? "" : " pop"), iconSize: [box, box], iconAnchor: [box / 2, box / 2],
+      html: '<span class="mk-sel-in" style="--s:' + scale.toFixed(2) + '">' + inner + "</span>" }) }).addTo(map);
+    selShown = id;
+  }
   map.on("zoomend", function () {
     var t = map.getZoom() >= TICK_ZOOM;
     if (tickMode !== null && t !== tickMode) drawMarkers();
@@ -259,8 +288,10 @@
     // Redrawing replaces every marker, which would close an open popup; reopen it afterwards.
     var open = null;
     Object.keys(markers).forEach(function (id) { if (markers[id].isPopupOpen()) open = id; });
+    redrawing = true;
     markerLayer.clearLayers();
     markers = {};
+    looks = {};
     // Parks that suit the selected time stand out (a tick, drawn last so they sit on top); 太曬 parks
     // are a quiet ring and parks with unconfirmed equipment a faint dot, so a midday map of mostly
     // sunny parks is not a wall of red. Zoomed far out, ticks would be a heap of DOM icons: dots instead.
@@ -277,6 +308,7 @@
         m = L.marker(ll, { title: p.name, zIndexOffset: o.faint ? 500 : 1000, icon: L.divIcon({
           className: "mk-hi" + (rain ? " rain" : "") + (o.faint ? " unsure" : ""), html: TICK_SVG,
           iconSize: [size, size], iconAnchor: [size / 2, size / 2] }) });
+        looks[p.id] = { ll: ll, tick: true, size: size, cls: "mk-hi" + (rain ? " rain" : "") + (o.faint ? " unsure" : "") };
       } else if (cls === "hi") {
         m = L.circleMarker(ll, { radius: o.faint ? 5 : 7, color: rain ? css("--a") : "#fff", weight: rain ? 3 : 1.5, fillColor: css("--hi"), fillOpacity: o.faint ? .8 : 1 });
       } else if (o.faint) {
@@ -289,6 +321,7 @@
         m = L.circleMarker(ll, { radius: rain ? 9 : mid ? 7 : 6, color: rain ? css("--a") : mid ? "#6b5000" : css("--surface"),
           weight: rain ? 3 : 1.5, fillColor: css(cls === "night" ? "--muted" : "--" + cls), fillOpacity: cls === "night" ? .85 : 1 });
       }
+      if (!looks[p.id]) looks[p.id] = { ll: ll, r: m.options.radius, fill: m.options.fillColor, stroke: m.options.color, weight: m.options.weight };
       // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
       if (phone.matches) m.on("click", function () { showPark(f); });
       else m.bindPopup(function () { return popupHtml(f); }, popupOptions());
@@ -296,6 +329,8 @@
       markers[p.id] = m;
     });
     if (open && markers[open]) markers[open].openPopup();
+    redrawing = false;
+    drawSel();
     if (phone.matches && state.selected && !$("#sheetPark").hidden) {
       var sel = state.features.find(function (x) { return x.properties.id === state.selected; });
       if (sel && passes(sel)) $("#sheetParkBody").innerHTML = popupHtml(sel);  // the selected time changed
@@ -908,8 +943,18 @@
   }
 
   // Floating notes would cover an open popup; step aside while one is open.
-  map.on("popupopen", function () { map.getContainer().classList.add("popup-open"); });
-  map.on("popupclose", function () { map.getContainer().classList.remove("popup-open"); });
+  map.on("popupopen", function (e) {
+    map.getContainer().classList.add("popup-open");
+    var src = e.popup._source;
+    popupSel = Object.keys(markers).find(function (id) { return markers[id] === src; }) || null;
+    drawSel();
+  });
+  map.on("popupclose", function (e) {
+    map.getContainer().classList.remove("popup-open");
+    if (redrawing) return;  // drawMarkers reopens it straight away
+    popupSel = null;
+    drawSel();
+  });
 
   // Leaflet popups stop click propagation, so stars inside them need their own handler.
   map.on("popupopen", function (e) {
@@ -1247,6 +1292,7 @@
     var y = map.latLngToContainerPoint(ll).y, want = (top + bottom) / 2;
     if (y < top + 20 || y > bottom - 20) map.panBy([0, y - want]);
     render(true);
+    drawSel();
   }
   sheetPark.addEventListener("click", function (e) {
     if (e.target.closest(".sheet-close")) { closePark(); setSheet("peek"); render(true); return; }
@@ -1255,7 +1301,7 @@
     if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
   });
 
-  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; }
+  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; drawSel(); }
   // Filters take the sheet over; the park card the parent was looking at comes back when they are done.
   var parkBeforeFilters = null;
   function openFilters() {

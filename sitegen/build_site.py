@@ -262,15 +262,22 @@ def share_summary(p: dict, month: int) -> str:
     equip = [e for e in equip if e not in ("其他", "其它")]
     if equip:
         bits.append("遊具：" + "、".join(equip[:3]) + ("等" if len(equip) > 3 else ""))
-    # Within 50 m reads better as "就在旁邊" than as a number like 1m.
+    # The facilities a parent asks about, each with its straight-line distance; within 50 m it
+    # reads better as "就在旁邊" than as a number like 1m.
     items = []
-    if p["parking"]:
-        items.append(("停車場", p["parking"][0]["distance_m"]))
     t = p["amenities"].get("toilet") or {}
     if t.get("value"):
         items.append(("廁所", t["distance_m"]))
-    if p["charger_summary"]["nearest_fast_m"] is not None:
-        items.append(("快充", p["charger_summary"]["nearest_fast_m"]))
+    cv = p["amenities"].get("convenience_store") or {}
+    if cv.get("value"):
+        items.append(("超商", cv["distance_m"]))
+    if p["parking"]:
+        items.append(("停車場", p["parking"][0]["distance_m"]))
+    cs = p["charger_summary"]
+    if cs["nearest_fast_m"] is not None:
+        items.append(("快充", cs["nearest_fast_m"]))
+    if cs["nearest_slow_m"] is not None:
+        items.append(("慢充", cs["nearest_slow_m"]))
     beside = [w for w, m in items if m < 50]
     if beside:
         bits.append("、".join(beside) + "就在旁邊")
@@ -299,7 +306,7 @@ def build(out: Path = OUT) -> None:
     for p in parks:
         c = charger(p)
         links[p["id"]] = {
-            "gmaps": p["google_maps_url"], "nav": p["directions_url"],
+            "gmaps": p["google_maps_url"], "nav": p["directions_url"], "share": share_summary(p, date.today().month),
             "toilet_m": near(p, "toilet").get("distance_m"), "shop_m": near(p, "convenience_store").get("distance_m"),
             "toilet_url": place_url(near(p, "toilet").get("location"), near(p, "toilet").get("name"), "公廁"),
             # The tiles answer "where is one nearby", so they search the kind of place around the nearest

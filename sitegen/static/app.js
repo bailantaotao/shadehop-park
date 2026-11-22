@@ -235,6 +235,7 @@
       '<div class="pp-btns">' + (p.nav ? '<a class="pp-btn primary" href="' + esc(p.nav) + '" target="_blank" rel="noopener">導航</a>' : "") +
       '<a class="pp-btn' + (p.nav ? "" : " primary") + '" href="' + parkHref(p.id) + '">詳情</a>' +
       (p.gmaps ? '<a class="pp-btn" href="' + esc(p.gmaps) + '" target="_blank" rel="noopener">評論</a>' : "") +
+      '<button type="button" class="pp-btn" data-share="' + esc(p.id) + '">分享</button>' +
       "</div></div>";
   }
 
@@ -247,16 +248,6 @@
       autoPanPaddingTopLeft: L.point(56, 70), autoPanPaddingBottomRight: L.point(8, 24) };
   }
 
-  // The park open in the sheet (phones) or popup gets a dark ring, so a faint dot is still findable.
-  var selLayer = L.layerGroup().addTo(map);
-  function drawSel() {
-    selLayer.clearLayers();
-    var f = state.selected && state.features.find(function (x) { return x.properties.id === state.selected; });
-    if (!f) return;
-    L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], { radius: 17, color: css("--text"), weight: 3,
-      fill: false, interactive: false }).addTo(selLayer);
-  }
-  map.on("popupclose", function () { if (!phone.matches) { state.selected = null; drawSel(); } });
   var TICK_ZOOM = 14;
   var TICK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 12.5l4.5 4.5 8.5-9" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var tickMode = null;
@@ -300,12 +291,11 @@
       }
       // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
       if (phone.matches) m.on("click", function () { showPark(f); });
-      else m.bindPopup(function () { return popupHtml(f); }, popupOptions()).on("popupopen", function () { state.selected = p.id; drawSel(); });
+      else m.bindPopup(function () { return popupHtml(f); }, popupOptions());
       m.addTo(markerLayer);
       markers[p.id] = m;
     });
     if (open && markers[open]) markers[open].openPopup();
-    drawSel();
     if (phone.matches && state.selected && !$("#sheetPark").hidden) {
       var sel = state.features.find(function (x) { return x.properties.id === state.selected; });
       if (sel && passes(sel)) $("#sheetParkBody").innerHTML = popupHtml(sel);  // the selected time changed
@@ -936,6 +926,19 @@
     });
   });
 
+  // 分享 on a park card: the system share sheet on phones (LINE, Messages...), else copy the link.
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-share]");
+    if (!b) return;
+    e.preventDefault();
+    var f = state.features.find(function (x) { return x.properties.id === b.dataset.share; });
+    if (!f) return;
+    var p = f.properties, url = new URL(parkHref(p.id), location.href).href;
+    var text = p.name + "：" + (p.share || "");
+    if (navigator.share) navigator.share({ title: p.name + "（" + p.district + "）幾點去不曬？", text: text, url: url }).catch(function () {});
+    else if (navigator.clipboard) navigator.clipboard.writeText(text + " " + url).then(function () { mapToast("已複製連結，可以貼給朋友"); }, function () {});
+  });
+
   // Re-filter when a star is toggled (the star buttons themselves update in favs.js).
   document.addEventListener("shadehop:favs", function () { if (filters.fav) render(); });
 
@@ -1234,7 +1237,6 @@
     state.selected = f.properties.id;
     $("#sheetParkBody").innerHTML = popupHtml(f);
     sheetPark.hidden = false;
-    drawSel();
     sheet.classList.add("has-park");  // the park answers the question; the area summary steps aside
     closeFilters();
     sheetBody.scrollTop = 0;
@@ -1253,7 +1255,7 @@
     if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
   });
 
-  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; drawSel(); }
+  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; }
   // Filters take the sheet over; the park card the parent was looking at comes back when they are done.
   var parkBeforeFilters = null;
   function openFilters() {

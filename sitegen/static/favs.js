@@ -100,3 +100,38 @@
     });
   });
 })();
+
+/* Nearby parking / shop / charger / toilet links on iPhone and iPad. A maps.google.com link opens the
+   Google Maps app, which ignores the link's centre (ll) and frames the results its own way, often
+   with the park off to one side. Its own URL scheme takes a centre, so try that first, centred on
+   the place; without the app installed nothing takes over the page, and the web link (which does
+   honour ll) opens instead. */
+(function () {
+  "use strict";
+  var ios = /iPhone|iPad|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (!ios) return;
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="https://maps.google.com/maps?"]');
+    if (!a || e.defaultPrevented || e.button) return;
+    var u = new URL(a.href), q = u.searchParams.get("q"), ll = u.searchParams.get("ll");
+    if (!q || !ll) return;
+    var NO_APP = "shadehop.noGmapsApp";
+    try { if (localStorage.getItem(NO_APP) === "1") return; } catch (err) { /* storage blocked: try the app */ }
+    e.preventDefault();
+    var web = a.href, left = false, timer;
+    var gone = function () { left = true; clearTimeout(timer); };
+    document.addEventListener("visibilitychange", function once() {
+      if (document.hidden) { gone(); document.removeEventListener("visibilitychange", once); }
+    });
+    window.addEventListener("pagehide", gone, { once: true });
+    // Still here: no app (Safari showed "address is invalid"). Remember, so next time goes straight to the web.
+    timer = setTimeout(function () {
+      if (left) return;
+      try { localStorage.setItem(NO_APP, "1"); } catch (err) { /* private mode */ }
+      location.href = web;
+    }, 1500);
+    // With a centre the app searches around it, so "<park> <area> 附近的停車場" becomes just 停車場.
+    location.href = "comgooglemaps://?q=" + encodeURIComponent(q.replace(/^.* 附近的/, "")) + "&center=" + ll + "&zoom=17";
+  });
+})();

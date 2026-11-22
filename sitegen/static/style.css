@@ -88,7 +88,6 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 .dot.a { background: transparent; border: 3px solid var(--a); } .dot.hi { background: var(--hi); } .dot.mid { background: var(--mid); } .dot.lo { background: var(--lo); } .dot.night { background: var(--night); }
 /* Early morning, evening and night: no shade to compare, so no colour key (the answer says why). */
 .low-sun .sheet-key, .low-sun .map-key { display: none; }
-.dot.unconfirmed { width: 8px; height: 8px; background: var(--muted); opacity: .45; }
 /* Map keys draw the dots the way the map draws markers: a tick for 適合, a quiet ring for 太曬. */
 :is(.map-key, .sheet-key, .legend-box) .dot.hi { width: 14px; height: 14px; vertical-align: -3px;
   background: var(--hi) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 12.5l4 4L18 8' fill='none' stroke='%23fff' stroke-width='3.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat; }
@@ -98,7 +97,6 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
   display: flex; align-items: center; justify-content: center; color: #fff; }
 .mk-hi svg { width: 62%; height: 62%; }
 .mk-hi.rain { box-shadow: 0 0 0 3px var(--a), 0 2px 6px rgba(0,0,0,.35); }
-.mk-hi.unsure { border-style: dashed; opacity: .85; }
 /* The tapped park: its own marker, grown and lifted while its card or popup is open. */
 .leaflet-marker-icon.mk-sel { display: flex; align-items: center; justify-content: center; pointer-events: none; }
 .mk-sel-in { display: flex; transform: scale(var(--s)); filter: drop-shadow(0 3px 4px rgba(0,0,0,.35)); }

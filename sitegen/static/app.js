@@ -293,26 +293,26 @@
     markers = {};
     looks = {};
     // Parks that suit the selected time stand out (a tick, drawn last so they sit on top); 太曬 parks
-    // are a quiet ring and parks with unconfirmed equipment a faint dot, so a midday map of mostly
+    // are a quiet ring, so a midday map of mostly
     // sunny parks is not a wall of red. Zoomed far out, ticks would be a heap of DOM icons: dots instead.
     var ticks = tickMode = map.getZoom() >= TICK_ZOOM;
     var ordered = state.features.filter(passes).map(function (f) {
-      var p = f.properties, cls = verdict(shadeAt(f)).cls, faint = unsure(p) && p.rain !== true;
-      return { f: f, cls: cls, faint: faint, rank: cls === "hi" ? (faint ? 4 : 5) : p.rain === true ? 3 : faint ? 0 : cls === "mid" ? 2 : 1 };
+      // Parks with unconfirmed equipment look like any other: parents read the map for shade. The card
+      // still says 遊具待確認, and the 確定有遊戲場 filter hides them.
+      var p = f.properties, cls = verdict(shadeAt(f)).cls;
+      return { f: f, cls: cls, rank: cls === "hi" ? 5 : p.rain === true ? 3 : cls === "mid" ? 2 : 1 };
     }).sort(function (a, b) { return a.rank - b.rank; });
     ordered.forEach(function (o) {
       var f = o.f, p = f.properties, cls = o.cls, ll = [f.geometry.coordinates[1], f.geometry.coordinates[0]], m;
       var rain = p.rain === true;
       if (cls === "hi" && ticks) {
-        var size = o.faint ? 20 : 26;
-        m = L.marker(ll, { title: p.name, zIndexOffset: o.faint ? 500 : 1000, icon: L.divIcon({
-          className: "mk-hi" + (rain ? " rain" : "") + (o.faint ? " unsure" : ""), html: TICK_SVG,
+        var size = 26;
+        m = L.marker(ll, { title: p.name, zIndexOffset: 1000, icon: L.divIcon({
+          className: "mk-hi" + (rain ? " rain" : ""), html: TICK_SVG,
           iconSize: [size, size], iconAnchor: [size / 2, size / 2] }) });
-        looks[p.id] = { ll: ll, tick: true, size: size, cls: "mk-hi" + (rain ? " rain" : "") + (o.faint ? " unsure" : "") };
+        looks[p.id] = { ll: ll, tick: true, size: size, cls: "mk-hi" + (rain ? " rain" : "") };
       } else if (cls === "hi") {
-        m = L.circleMarker(ll, { radius: o.faint ? 5 : 7, color: rain ? css("--a") : "#fff", weight: rain ? 3 : 1.5, fillColor: css("--hi"), fillOpacity: o.faint ? .8 : 1 });
-      } else if (o.faint) {
-        m = L.circleMarker(ll, { radius: 4.5, color: css("--surface"), weight: 1, fillColor: css("--muted"), fillOpacity: .6 });
+        m = L.circleMarker(ll, { radius: 7, color: rain ? css("--a") : "#fff", weight: rain ? 3 : 1.5, fillColor: css("--hi"), fillOpacity: 1 });
       } else if (cls === "lo") {
         m = L.circleMarker(ll, { radius: rain ? 8 : 5, color: rain ? css("--a") : css("--lo"), weight: rain ? 3 : 1.5, fillColor: css("--surface"), fillOpacity: .9 });
       } else {
@@ -1236,7 +1236,7 @@
     onAdd: function () {
       var box = L.DomUtil.create("div", "map-key");
       box.innerHTML = '<span><i class="dot hi"></i>適合</span><span><i class="dot mid"></i>還可以</span><span><i class="dot lo"></i>太曬</span>' +
-        '<span><i class="dot a"></i>下雨可玩</span><span><i class="dot unconfirmed"></i>遊具待確認</span>';
+        '<span><i class="dot a"></i>下雨可玩</span>';
       box.setAttribute("aria-hidden", "true");  // the same words are in the list cards and popups
       return box;
     },

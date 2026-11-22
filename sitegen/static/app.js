@@ -1361,8 +1361,64 @@
   cardHead.addEventListener("click", function (e) {
     if (e.target.closest(".sheet-close")) returnFromCard();
   });
-  // A tap on the empty map puts the card away, as ✕ does.
-  map.on("click", function () { if (phone.matches && !sheetPark.hidden) returnFromCard(); });
+  // A tap on the empty map puts the card away, as ✕ does: a moment later, because the tap may be the
+  // first half of a double tap or of a tap-and-drag zoom (below), which leave the card alone.
+  var tapTimer = null, gestureAt = 0;
+  map.on("click", function () {
+    if (!phone.matches || sheetPark.hidden || Date.now() - gestureAt < 400) return;
+    clearTimeout(tapTimer);
+    tapTimer = setTimeout(function () { if (!sheetPark.hidden) returnFromCard(); }, 320);
+  });
+
+  // Google Maps' one-finger gestures on touch screens: double tap zooms in one step; tap, then touch
+  // again and drag down to zoom in (up to zoom out), around the spot touched. Leaflet's own double
+  // tap zoom is off on touch screens so the two do not both fire.
+  (function () {
+    if (!window.matchMedia("(pointer: coarse)").matches) return;
+    map.doubleClickZoom.disable();
+    var el = map.getContainer(), last = null, down = null, g = null, snap = map.options.zoomSnap;
+    var skip = ".leaflet-control, .leaflet-popup, .map-start";
+    el.addEventListener("pointerdown", function (e) {
+      if (e.pointerType !== "touch" || !e.isPrimary || e.target.closest(skip)) { last = null; return; }
+      var now = Date.now();
+      if (last && now - last.t < 300 && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 40) {
+        clearTimeout(tapTimer);
+        map.dragging.disable();  // this touch zooms; it must not also pan
+        g = { id: e.pointerId, y: e.clientY, z: map.getZoom(), pt: map.mouseEventToContainerPoint(e), moved: false };
+        last = null;
+        return;
+      }
+      down = { id: e.pointerId, x: e.clientX, y: e.clientY, t: now };
+    }, true);
+    el.addEventListener("pointermove", function (e) {
+      if (!g || e.pointerId !== g.id) return;
+      var dy = e.clientY - g.y;
+      if (!g.moved && Math.abs(dy) < 8) return;
+      g.moved = true;
+      map.options.zoomSnap = 0;
+      var z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), g.z + dy / 110));  // ~110px a zoom level
+      map.setZoomAround(g.pt, z, { animate: false });
+    }, true);
+    function end(e) {
+      if (g && e.pointerId === g.id) {
+        map.options.zoomSnap = snap;
+        // A drag ends on the nearest whole level (links and the saved view use whole zooms).
+        var z = g.moved ? Math.round(map.getZoom()) : Math.min(map.getMaxZoom(), Math.round(map.getZoom()) + 1);
+        map.setZoomAround(g.pt, z, { animate: !g.moved });
+        map.dragging.enable();
+        g = null; gestureAt = Date.now();
+        return;
+      }
+      if (down && e.pointerId === down.id) {
+        // A short, still touch counts as the first tap of a gesture.
+        last = Date.now() - down.t < 250 && Math.hypot(e.clientX - down.x, e.clientY - down.y) < 12
+          ? { t: Date.now(), x: e.clientX, y: e.clientY } : null;
+        down = null;
+      }
+    }
+    el.addEventListener("pointerup", end, true);
+    el.addEventListener("pointercancel", end, true);
+  })();
   // Keep a place in the strip of map between the floating controls and the half sheet.
   function keepInView(ll) {
     var top = $(".controls").offsetHeight + 8, bottom = window.innerHeight - sheetMetrics().half - map.getContainer().getBoundingClientRect().top;

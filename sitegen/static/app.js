@@ -282,7 +282,10 @@
       html: '<span class="mk-sel-in" style="--s:' + scale.toFixed(2) + '">' + inner + "</span>" }) }).addTo(map);
     selShown = id;
   }
+  // True while a finger zooms the map (below): the view changes every frame, so the redraws wait for the end.
+  var zoomGesture = false;
   map.on("zoomend", function () {
+    if (zoomGesture) return;
     var t = map.getZoom() >= TICK_ZOOM;
     if (tickMode !== null && t !== tickMode) drawMarkers();
   });
@@ -942,6 +945,7 @@
     if (card && !e.target.closest("a, button, input")) focusPark(card.dataset.park);
   });
   map.on("moveend", function () {
+    if (zoomGesture) return;  // every frame of a one-finger zoom: thousands of markers redrawn 60 times a second froze phones
     loadRegionsInView();
     loadCasters();
     saveView();
@@ -1235,6 +1239,7 @@
     });
   }
   map.on("zoomend", function () {
+    if (zoomGesture) return;
     var mode = map.getZoom() >= CHARGER_ICON_ZOOM ? "icon" : "dot";
     if (mode !== chargerMode) drawChargers();
   });
@@ -1379,36 +1384,52 @@
     var el = map.getContainer(), last = null, down = null, g = null, snap = map.options.zoomSnap;
     var skip = ".leaflet-control, .leaflet-popup, .map-start";
     el.addEventListener("pointerdown", function (e) {
+      if (g) finish();  // a gesture whose end never arrived must not leave the map unable to pan
       if (e.pointerType !== "touch" || !e.isPrimary || e.target.closest(skip)) { last = null; return; }
       var now = Date.now();
       if (last && now - last.t < 300 && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 40) {
         clearTimeout(tapTimer);
         map.dragging.disable();  // this touch zooms; it must not also pan
-        g = { id: e.pointerId, y: e.clientY, z: map.getZoom(), pt: map.mouseEventToContainerPoint(e), moved: false };
+        g = { id: e.pointerId, y: e.clientY, z: map.getZoom(), pt: map.mouseEventToContainerPoint(e), moved: false, want: null, raf: 0 };
         last = null;
         return;
       }
       down = { id: e.pointerId, x: e.clientX, y: e.clientY, t: now };
     }, true);
-    el.addEventListener("pointermove", function (e) {
+    // On the window, not the map: the finger often slides onto the sheet or off the map while zooming.
+    window.addEventListener("pointermove", function (e) {
       if (!g || e.pointerId !== g.id) return;
       var dy = e.clientY - g.y;
       if (!g.moved && Math.abs(dy) < 8) return;
       g.moved = true;
+      zoomGesture = true;
       map.options.zoomSnap = 0;
-      var z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), g.z + dy / 110));  // ~110px a zoom level
-      map.setZoomAround(g.pt, z, { animate: false });
+      g.want = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), g.z + dy / 110));  // ~110px a zoom level
+      // One zoom per frame, however many move events arrive.
+      if (!g.raf) g.raf = requestAnimationFrame(function () {
+        if (!g) return;
+        g.raf = 0;
+        map.setZoomAround(g.pt, g.want, { animate: false });
+      });
     }, true);
-    function end(e) {
-      if (g && e.pointerId === g.id) {
-        map.options.zoomSnap = snap;
-        // A drag ends on the nearest whole level (links and the saved view use whole zooms).
-        var z = g.moved ? Math.round(map.getZoom()) : Math.min(map.getMaxZoom(), Math.round(map.getZoom()) + 1);
-        map.setZoomAround(g.pt, z, { animate: !g.moved });
-        map.dragging.enable();
-        g = null; gestureAt = Date.now();
-        return;
+    function finish() {
+      var x = g;
+      g = null; gestureAt = Date.now();
+      if (x.raf) cancelAnimationFrame(x.raf);
+      map.options.zoomSnap = snap;
+      zoomGesture = false;
+      map.dragging.enable();
+      if (x.moved) {
+        // A drag ends on the nearest whole level (links and the saved view use whole zooms); the
+        // markers, regions and saved view held back during the drag catch up now.
+        map.setZoomAround(x.pt, Math.round(x.want !== null ? x.want : map.getZoom()), { animate: false });
+        map.fire("zoomend"); map.fire("moveend");
+      } else {
+        map.setZoomAround(x.pt, Math.min(map.getMaxZoom(), Math.round(map.getZoom()) + 1));  // double tap
       }
+    }
+    function end(e) {
+      if (g && e.pointerId === g.id) { finish(); return; }
       if (down && e.pointerId === down.id) {
         // A short, still touch counts as the first tap of a gesture.
         last = Date.now() - down.t < 250 && Math.hypot(e.clientX - down.x, e.clientY - down.y) < 12
@@ -1416,8 +1437,10 @@
         down = null;
       }
     }
-    el.addEventListener("pointerup", end, true);
-    el.addEventListener("pointercancel", end, true);
+    window.addEventListener("pointerup", end, true);
+    window.addEventListener("pointercancel", end, true);
+    window.addEventListener("touchend", function (e) { if (g && !e.touches.length) finish(); }, true);
+    window.addEventListener("touchcancel", function () { if (g) finish(); }, true);
   })();
   // Keep a place in the strip of map between the floating controls and the half sheet.
   function keepInView(ll) {

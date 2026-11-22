@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 164,
+   "distance_m": 172,
    "location": {
-    "lat": 25.020606,
-    "lng": 121.304059
+    "lat": 25.020557,
+    "lng": 121.304002
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2981969835",
+   "name": "7-ELEVEN 國揚門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/129526391",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/129526391",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -49,7 +49,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/583903545",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 10212,
@@ -393,7 +393,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1335568780"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -419,7 +419,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1562597601"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -445,7 +445,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780897"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -471,7 +471,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1562597602"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -497,7 +497,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780898"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -523,7 +523,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1562596725"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -544,7 +544,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/129526391",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -875,12 +875,12 @@
   },
   "source": "https://www.openstreetmap.org/way/129526391",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -892,5 +892,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

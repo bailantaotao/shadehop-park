@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 77,
+   "distance_m": 74,
    "location": {
-    "lat": 24.999067,
-    "lng": 121.34099
+    "lat": 24.999027,
+    "lng": 121.340911
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/9307228166",
+   "name": "7-ELEVEN 千禧門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/549658678",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/549658678",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -60,7 +60,7 @@
    "name": "龜山眷村故事館2F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 12142,
@@ -215,7 +215,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268242"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -241,7 +241,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268241"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -267,7 +267,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/465561576"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -293,7 +293,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268244"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -319,7 +319,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268243"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -355,7 +355,7 @@
     "url": "https://www.openstreetmap.org/way/554582058"
    },
    "osm_name": "中山地下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -376,7 +376,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/549658678",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -707,12 +707,12 @@
   },
   "source": "https://www.openstreetmap.org/way/549658678",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -730,5 +730,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

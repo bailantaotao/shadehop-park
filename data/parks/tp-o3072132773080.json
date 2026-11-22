@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/4899588538",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -34,25 +34,25 @@
    "name": null,
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
    "category": null,
    "changing_table": null,
    "confidence": "medium",
-   "distance_m": 128,
+   "distance_m": 127,
    "family": null,
    "family_room": null,
    "location": {
-    "lat": 25.064358,
-    "lng": 121.568379
+    "lat": 25.06442,
+    "lng": 121.568394
    },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3575335830",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -211,7 +211,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/364650966"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -237,7 +237,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/229033347"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -263,7 +263,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/349844551"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -299,7 +299,7 @@
     "url": "https://www.openstreetmap.org/way/358272598"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -335,7 +335,7 @@
     "url": "https://www.openstreetmap.org/way/286924265"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -361,7 +361,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/345206698"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -382,7 +382,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -391,7 +391,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.07,
-  "buildings_considered": 339,
+  "buildings_considered": 340,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -713,12 +713,12 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -736,5 +736,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

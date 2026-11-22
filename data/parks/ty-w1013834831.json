@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 109,
+   "distance_m": 188,
    "location": {
-    "lat": 24.917051,
-    "lng": 121.184216
+    "lat": 24.914456,
+    "lng": 121.184508
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9588074546",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/10798745025",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1013834831",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "埔心站",
    "source": "https://www.openstreetmap.org/node/4420612322",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "changing_table": null,
@@ -44,7 +44,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1013834831",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1308,
@@ -59,7 +59,7 @@
   "10": {
    "end": "08:00",
    "end_slot": 4,
-   "mean": 0.71,
+   "mean": 0.7,
    "start": "06:00",
    "start_slot": 0
   },
@@ -343,7 +343,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1043791286"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -369,7 +369,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1544046546"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -395,7 +395,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1016257847"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -421,7 +421,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1016257846"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -447,7 +447,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1016241925"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -473,7 +473,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/999740512"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -494,7 +494,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1013834831",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -825,12 +825,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1013834831",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -842,5 +842,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

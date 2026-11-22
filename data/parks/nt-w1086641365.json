@@ -5,14 +5,14 @@
    "confidence": "medium",
    "distance_m": 198,
    "location": {
-    "lat": 25.158712,
-    "lng": 121.431799
+    "lat": 25.158743,
+    "lng": 121.431656
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/3724691190",
+   "name": "7-ELEVEN 左岸門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1086641365",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -34,7 +34,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1086641365",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8224322343",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 276,
@@ -290,7 +290,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727683"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -316,7 +316,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727684"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -342,7 +342,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714659315"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -368,7 +368,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12040088205"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -404,7 +404,7 @@
     "url": "https://www.openstreetmap.org/way/1086193542"
    },
    "osm_name": "新北永續環境教育中心停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -430,7 +430,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812274"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -451,7 +451,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1086641365",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -782,12 +782,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1086641365",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -811,5 +811,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

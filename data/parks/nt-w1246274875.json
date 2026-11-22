@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/8118272757",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1246274875",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運中和站",
    "source": "https://www.openstreetmap.org/node/5444300912",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "中油嘉尤加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 365,
@@ -198,7 +198,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13022226590"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -224,7 +224,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/539509207"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -250,7 +250,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846065"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -276,7 +276,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846066"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -312,43 +312,33 @@
     "url": "https://www.openstreetmap.org/way/1474846070"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
-   "capacity": 235,
+   "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 585,
+   "distance_m": 583,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
+   "kind": null,
+   "kind_label": "停車場",
    "location": {
-    "lat": 25.001606,
-    "lng": 121.491407
+    "lat": 25.012323,
+    "lng": 121.494753
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "管得寬中和板南站停車場",
-   "official": {
-    "address": "新北市中和區建康路191號後方",
-    "cars": 235,
-    "fare": null,
-    "hours": "0~24時",
-    "match_m": 50,
-    "name": "管得寬中和板南站停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
+   "name": "停車場",
+   "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 1474846071,
+    "id": 528948157,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846071"
+    "url": "https://www.openstreetmap.org/way/528948157"
    },
-   "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -369,7 +359,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1246274875",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -700,7 +690,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1246274875",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -719,12 +709,12 @@
    "source": "https://www.openstreetmap.org/way/1246274875",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -736,5 +726,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

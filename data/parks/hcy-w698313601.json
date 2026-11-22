@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 8,
+   "distance_m": 9,
    "location": {
-    "lat": 24.770145,
-    "lng": 121.055121
+    "lat": 24.770261,
+    "lng": 121.055392
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9534929195",
+   "name": "7-ELEVEN 菄族門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/698313601",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/698313601",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "changing_table": null,
@@ -41,7 +41,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/698313601",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1956,
@@ -160,7 +160,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/477059248"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -196,7 +196,7 @@
     "url": "https://www.openstreetmap.org/way/975948039"
    },
    "osm_name": "二重停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -222,7 +222,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4704711231"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -248,7 +248,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183380114"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -274,7 +274,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1164615495"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -300,7 +300,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/145506382"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -321,7 +321,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/698313601",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹縣",
@@ -652,12 +652,12 @@
   },
   "source": "https://www.openstreetmap.org/way/698313601",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -675,5 +675,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

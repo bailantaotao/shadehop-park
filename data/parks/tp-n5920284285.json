@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 71,
+   "distance_m": 100,
    "location": {
-    "lat": 25.030999,
-    "lng": 121.515801
+    "lat": 25.032037,
+    "lng": 121.515324
    },
    "method": "osm",
-   "name": "心心便利超商",
-   "source": "https://www.openstreetmap.org/node/3522084132",
+   "name": "7-ELEVEN 南海門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/5920284285",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運中正紀念堂站",
    "source": "https://www.openstreetmap.org/node/3494960750",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -66,7 +66,7 @@
    "name": "郵政博物館2樓",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 357,
@@ -114,11 +114,11 @@
    "start_slot": 1
   },
   "4": {
-   "end": "10:00",
-   "end_slot": 8,
-   "mean": 0.61,
-   "start": "09:00",
-   "start_slot": 6
+   "end": "18:00",
+   "end_slot": 24,
+   "mean": 0.84,
+   "start": "16:00",
+   "start_slot": 20
   },
   "5": {
    "end": "06:30",
@@ -142,11 +142,11 @@
    "start_slot": 0
   },
   "8": {
-   "end": "06:30",
-   "end_slot": 1,
-   "mean": 0.77,
-   "start": "06:00",
-   "start_slot": 0
+   "end": "17:30",
+   "end_slot": 23,
+   "mean": 0.78,
+   "start": "16:30",
+   "start_slot": 21
   },
   "9": {
    "end": "11:00",
@@ -206,7 +206,7 @@
    "verified_at": "2026-11-09"
   }
  ],
- "daytime_shaded_share": 0.21,
+ "daytime_shaded_share": 0.26,
  "geometry_estimated": true,
  "id": "tp-n5920284285",
  "indoor": false,
@@ -251,7 +251,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/314799135"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -287,7 +287,7 @@
     "url": "https://www.openstreetmap.org/way/314799458"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -323,7 +323,7 @@
     "url": "https://www.openstreetmap.org/way/314799456"
    },
    "osm_name": "嘟嘟房寧波站",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -349,7 +349,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13167467833"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -375,7 +375,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/507544227"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -411,7 +411,7 @@
     "url": "https://www.openstreetmap.org/way/252994056"
    },
    "osm_name": "仰德立體停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -432,7 +432,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/5920284285",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -440,8 +440,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.41,
-  "buildings_considered": 411,
+  "building_height_known_share": 0.39,
+  "buildings_considered": 434,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -466,11 +466,11 @@
     0.26,
     0.14,
     0.06,
-    0.02,
-    0.02,
-    0.02,
-    0.02,
-    0.02,
+    0.11,
+    0.31,
+    0.61,
+    1.0,
+    1.0,
     null,
     null
    ],
@@ -492,11 +492,11 @@
     0.06,
     0.02,
     0.02,
-    0.02,
-    0.02,
-    0.02,
-    0.03,
-    0.03,
+    0.14,
+    0.65,
+    1.0,
+    1.0,
+    1.0,
     null,
     null
    ],
@@ -517,11 +517,11 @@
     0.26,
     0.13,
     0.06,
-    0.02,
-    0.02,
-    0.02,
-    0.02,
-    0.02,
+    0.05,
+    0.34,
+    0.62,
+    1.0,
+    1.0,
     1.0,
     null,
     null
@@ -544,10 +544,10 @@
     0.21,
     0.11,
     0.05,
-    0.02,
-    0.02,
-    0.02,
-    0.02,
+    0.2,
+    0.34,
+    1.0,
+    1.0,
     1.0,
     null,
     null
@@ -571,11 +571,11 @@
     0.09,
     0.03,
     0.02,
-    0.02,
-    0.02,
-    0.02,
-    0.02,
-    0.03,
+    0.29,
+    0.73,
+    1.0,
+    1.0,
+    1.0,
     null
    ],
    "3": [
@@ -597,11 +597,11 @@
     0.02,
     0.02,
     0.02,
-    0.02,
-    0.02,
-    0.03,
-    0.04,
-    0.06,
+    0.07,
+    0.55,
+    1.0,
+    1.0,
+    1.0,
     1.0
    ],
    "4": [
@@ -624,11 +624,11 @@
     0.02,
     0.03,
     0.05,
-    0.07,
-    0.09,
-    0.1,
-    0.12,
-    0.46
+    0.31,
+    0.8,
+    0.94,
+    0.88,
+    0.73
    ],
    "5": [
     0.81,
@@ -650,11 +650,11 @@
     0.07,
     0.09,
     0.11,
-    0.12,
-    0.14,
     0.15,
-    0.16,
-    0.18
+    0.43,
+    0.58,
+    0.46,
+    0.35
    ],
    "6": [
     1.0,
@@ -677,10 +677,10 @@
     0.12,
     0.14,
     0.15,
-    0.16,
-    0.17,
-    0.19,
-    0.2
+    0.26,
+    0.39,
+    0.31,
+    0.24
    ],
    "7": [
     1.0,
@@ -703,10 +703,10 @@
     0.11,
     0.12,
     0.13,
-    0.15,
-    0.16,
-    0.17,
-    0.19
+    0.26,
+    0.46,
+    0.39,
+    0.3
    ],
    "8": [
     0.77,
@@ -728,11 +728,11 @@
     0.03,
     0.05,
     0.07,
-    0.09,
-    0.11,
-    0.12,
     0.14,
-    0.15
+    0.55,
+    0.85,
+    0.71,
+    0.57
    ],
    "9": [
     1.0,
@@ -753,22 +753,22 @@
     0.02,
     0.02,
     0.02,
-    0.03,
-    0.04,
-    0.06,
-    0.07,
-    0.23,
+    0.11,
+    0.61,
+    1.0,
+    0.99,
+    0.97,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/node/5920284285",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -786,5 +786,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 177,
+   "distance_m": 166,
    "location": {
-    "lat": 25.029555,
-    "lng": 121.45956
+    "lat": 25.030884,
+    "lng": 121.461708
    },
    "method": "osm",
-   "name": "全家便利商店",
-   "source": "https://www.openstreetmap.org/node/2588798048",
+   "name": "7-ELEVEN 大漢門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344200573",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運頭前庄站",
    "source": "https://www.openstreetmap.org/node/3812564427",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8224192807",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 65744,
@@ -258,7 +258,7 @@
     "url": "https://www.openstreetmap.org/way/970537251"
    },
    "osm_name": "江翠停五停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -294,7 +294,7 @@
     "url": "https://www.openstreetmap.org/way/1574727739"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -330,7 +330,7 @@
     "url": "https://www.openstreetmap.org/way/970537250"
    },
    "osm_name": "力揚停車新海抽水站公有停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -356,7 +356,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/970537248"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -382,7 +382,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/329664608"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -418,7 +418,7 @@
     "url": "https://www.openstreetmap.org/way/543505685"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -439,7 +439,7 @@
   "note": "約 1342 m² 在高架/屋頂下（佔 2%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/344200573",
   "value": "partial",
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -770,7 +770,7 @@
   },
   "source": "https://www.openstreetmap.org/way/344200573",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -824,12 +824,12 @@
    "source": "https://www.openstreetmap.org/way/344200573",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -847,5 +847,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

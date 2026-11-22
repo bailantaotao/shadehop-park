@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/9773243940",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1344784824",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新店區公所站",
    "source": "https://www.openstreetmap.org/node/3502209233",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1344784812",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 256,
@@ -305,7 +305,7 @@
     "url": "https://www.openstreetmap.org/way/365556846"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -341,7 +341,7 @@
     "url": "https://www.openstreetmap.org/node/2264127540"
    },
    "osm_name": "馬公友誼公園地下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -367,7 +367,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/365556843"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -403,7 +403,7 @@
     "url": "https://www.openstreetmap.org/way/1293787485"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -429,7 +429,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/759407259"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -455,7 +455,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/365556917"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -476,7 +476,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1344784824",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -807,7 +807,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1344784824",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -820,12 +820,12 @@
    "trees": 1,
    "type": "tree_canopy",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -849,5 +849,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

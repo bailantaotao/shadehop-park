@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 148,
+   "distance_m": 159,
    "location": {
-    "lat": 24.785795,
-    "lng": 121.010378
+    "lat": 24.785498,
+    "lng": 121.010232
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/3485551525",
+   "name": "7-ELEVEN 學圓門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/556634537",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新莊站",
    "source": "https://www.openstreetmap.org/node/1553495847",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8985327055",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 7240,
@@ -293,7 +293,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/256994743"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -319,7 +319,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326864730"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -345,7 +345,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3677437814"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -371,7 +371,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1012670837"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -397,7 +397,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326864729"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -423,7 +423,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/519981164"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -444,7 +444,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/556634537",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹市",
@@ -453,7 +453,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.14,
-  "buildings_considered": 134,
+  "buildings_considered": 135,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -775,12 +775,12 @@
   },
   "source": "https://www.openstreetmap.org/way/556634537",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -792,5 +792,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

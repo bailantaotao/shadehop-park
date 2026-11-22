@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 233,
+   "distance_m": 47,
    "location": {
-    "lat": 24.823701,
-    "lng": 121.014259
+    "lat": 24.826878,
+    "lng": 121.012903
    },
    "method": "osm",
-   "name": "全家便利商店",
-   "source": "https://www.openstreetmap.org/node/7924924416",
+   "name": "7-ELEVEN 新竹縣政府門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/321415413",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "竹北站",
    "source": "https://www.openstreetmap.org/node/279154134",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "新竹縣政府前棟1F(地政處)",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 4607,
@@ -280,7 +280,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019355903"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -306,7 +306,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/930059692"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -332,7 +332,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/323399495"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -358,7 +358,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1227114689"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1227114685"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -410,7 +410,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1227114688"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -431,7 +431,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/321415413",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹縣",
@@ -762,12 +762,12 @@
   },
   "source": "https://www.openstreetmap.org/way/321415413",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -779,5 +779,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

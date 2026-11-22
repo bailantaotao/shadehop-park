@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 107,
+   "distance_m": 113,
    "location": {
-    "lat": 24.978546,
-    "lng": 121.444132
+    "lat": 24.978598,
+    "lng": 121.444212
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/8118272998",
+   "name": "7-ELEVEN 摩漾門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/555322946",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運土城站",
    "source": "https://www.openstreetmap.org/node/373399553",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "員和公園地下停車場B1",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 189,
@@ -428,15 +428,28 @@
   "lat": 24.97896,
   "lng": 121.443074
  },
- "name": "遊戲場（近中央路二段61巷）",
- "name_source": "nearest_street",
- "official": null,
+ "name": "員和公園 遊戲場",
+ "name_source": "park_name",
+ "official": {
+  "address": "中央路二段61巷旁",
+  "distance_m": null,
+  "equipment": null,
+  "facilities": null,
+  "features": null,
+  "management": "土城區公所",
+  "method": "name_match",
+  "name": "員和公園",
+  "phone": "(02)22732000",
+  "registry_points": 1,
+  "source": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342",
+  "verified_at": "2026-11-08"
+ },
  "osm": {
   "id": 555322946,
   "type": "way",
   "url": "https://www.openstreetmap.org/way/555322946"
  },
- "park_name": null,
+ "park_name": "員和公園",
  "parking": [
   {
    "access": "yes",
@@ -471,7 +484,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9110645194"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -497,7 +510,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780955"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -533,7 +546,7 @@
     "url": "https://www.openstreetmap.org/way/1377473065"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -559,7 +572,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1075648854"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -585,7 +598,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1075648853"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -611,7 +624,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1460253889"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -632,7 +645,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/555322946",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -963,12 +976,12 @@
   },
   "source": "https://www.openstreetmap.org/way/555322946",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -980,11 +993,17 @@
    "url": "https://data.gov.tw/dataset/170220"
   },
   {
+   "as_of": "2026-11-08T22:56:39+00:00",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府農業局「新北市公園」",
+   "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
    "as_of": "2026-11-22",
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府交通局 新北市路外公共停車場資訊",
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

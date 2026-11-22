@@ -2,14 +2,17 @@
  "address": null,
  "amenities": {
   "convenience_store": {
-   "confidence": "low",
-   "distance_m": null,
-   "location": null,
+   "confidence": "medium",
+   "distance_m": 486,
+   "location": {
+    "lat": 25.077219,
+    "lng": 121.400282
+   },
    "method": "osm",
-   "name": null,
-   "source": "https://www.openstreetmap.org/way/1103146204",
-   "value": null,
-   "verified_at": "2026-11-07"
+   "name": "7-ELEVEN 工林門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
+   "value": true,
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1103146204",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1103146204",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "changing_table": null,
@@ -38,7 +41,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1103146204",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 159,
@@ -112,7 +115,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1154458119"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -148,7 +151,7 @@
     "url": "https://www.openstreetmap.org/way/1103146201"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -184,7 +187,7 @@
     "url": "https://www.openstreetmap.org/way/1103146202"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -210,7 +213,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064952170"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -236,7 +239,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1455695105"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -272,7 +275,7 @@
     "url": "https://www.openstreetmap.org/way/259017510"
    },
    "osm_name": "林口一停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -293,7 +296,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1103146204",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -624,12 +627,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1103146204",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -641,5 +644,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/way/1107277724",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1022152122",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "六家站",
    "source": "https://www.openstreetmap.org/node/3560261986",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "changing_table": null,
@@ -44,7 +44,7 @@
    "note": "300m 內沒有登記或標示的公廁；不代表沒有",
    "source": "https://www.openstreetmap.org/way/1022152122",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 2624,
@@ -371,7 +371,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1542787152"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -407,7 +407,7 @@
     "url": "https://www.openstreetmap.org/way/323447613"
    },
    "osm_name": "高鐵二路停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -433,7 +433,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612804"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -459,7 +459,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614639"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -485,7 +485,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612803"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -511,7 +511,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614644"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -532,7 +532,7 @@
   "note": "約 2369 m² 在高架/屋頂下（佔 90%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1022152122",
   "value": true,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹縣",
@@ -863,7 +863,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1022152122",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -897,7 +897,7 @@
    "source": "https://www.openstreetmap.org/way/1022152122",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "low",
@@ -908,12 +908,12 @@
    "source": "https://www.openstreetmap.org/way/1022152122",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -931,5 +931,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

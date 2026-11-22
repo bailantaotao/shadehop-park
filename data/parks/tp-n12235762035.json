@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 9,
+   "distance_m": 7,
    "location": {
-    "lat": 25.023555,
-    "lng": 121.542933
+    "lat": 25.023523,
+    "lng": 121.54291
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2188231670",
+   "name": "7-ELEVEN 龍淵門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/12235762035",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運科技大樓站",
    "source": "https://www.openstreetmap.org/node/3497302604",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/324901036",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -116,7 +116,7 @@
   "4": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 0.78,
+   "mean": 0.8,
    "start": "17:00",
    "start_slot": 22
   },
@@ -314,7 +314,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -425,7 +425,7 @@
    "speed": "unknown",
    "speed_label": "未標示",
    "speed_source": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -543,7 +543,7 @@
     "url": "https://www.openstreetmap.org/way/438301751"
    },
    "osm_name": "博客停車",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -569,7 +569,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3315810090"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -595,7 +595,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/324901038"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -621,7 +621,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3315810103"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -647,7 +647,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3315810105"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -683,7 +683,7 @@
     "url": "https://www.openstreetmap.org/node/13912360479"
    },
    "osm_name": "正好停 科技大樓地下場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -704,7 +704,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/12235762035",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -712,8 +712,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.56,
-  "buildings_considered": 501,
+  "building_height_known_share": 0.53,
+  "buildings_considered": 527,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -900,7 +900,7 @@
     0.0,
     0.06,
     0.81,
-    0.74
+    0.78
    ],
    "5": [
     0.78,
@@ -926,7 +926,7 @@
     0.0,
     0.0,
     0.39,
-    0.49
+    0.51
    ],
    "6": [
     0.9,
@@ -952,7 +952,7 @@
     0.0,
     0.0,
     0.13,
-    0.32
+    0.41
    ],
    "7": [
     0.87,
@@ -978,7 +978,7 @@
     0.0,
     0.0,
     0.12,
-    0.42
+    0.45
    ],
    "8": [
     0.71,
@@ -1035,12 +1035,12 @@
   },
   "source": "https://www.openstreetmap.org/node/12235762035",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1064,5 +1064,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

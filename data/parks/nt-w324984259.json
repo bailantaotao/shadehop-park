@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 83,
+   "distance_m": 108,
    "location": {
-    "lat": 25.071871,
-    "lng": 121.487654
+    "lat": 25.070017,
+    "lng": 121.488331
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9491209684",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/4405339850",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/324984259",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運三和國中站",
    "source": "https://www.openstreetmap.org/node/3812564387",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -66,7 +66,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/5060415484",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 737,
@@ -306,7 +306,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/495176464"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -332,7 +332,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4853097954"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -358,7 +358,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4340649184"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -394,7 +394,7 @@
     "url": "https://www.openstreetmap.org/way/1281873734"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -420,7 +420,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/633634726"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -446,7 +446,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/508705845"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -467,7 +467,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/324984259",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -798,12 +798,12 @@
   },
   "source": "https://www.openstreetmap.org/way/324984259",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -821,5 +821,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

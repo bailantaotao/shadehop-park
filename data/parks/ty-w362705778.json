@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 139,
+   "distance_m": 128,
    "location": {
-    "lat": 24.954473,
-    "lng": 121.207617
+    "lat": 24.954566,
+    "lng": 121.207695
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/6842590221",
+   "name": "7-ELEVEN 廣城門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/362705778",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運老街溪站",
    "source": "https://www.openstreetmap.org/node/4653215487",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -55,7 +55,7 @@
    "name": "平鎮區婦幼活動中心1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 6826,
@@ -84,7 +84,7 @@
   "12": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.81,
+   "mean": 0.83,
    "start": "16:30",
    "start_slot": 21
   },
@@ -419,7 +419,7 @@
     "url": "https://www.openstreetmap.org/way/460181345"
    },
    "osm_name": "廣北站",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -445,7 +445,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1305088448"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -481,7 +481,7 @@
     "url": "https://www.openstreetmap.org/way/1305088374"
    },
    "osm_name": "正光二街場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -517,7 +517,7 @@
     "url": "https://www.openstreetmap.org/way/320635343"
    },
    "osm_name": "五福停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -543,7 +543,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1303731751"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -569,7 +569,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1307703750"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -590,7 +590,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/362705778",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -599,7 +599,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.08,
-  "buildings_considered": 916,
+  "buildings_considered": 924,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -680,7 +680,7 @@
     0.13,
     0.27,
     0.56,
-    0.85,
+    0.91,
     null,
     null
    ],
@@ -706,7 +706,7 @@
     0.15,
     0.31,
     0.53,
-    0.81,
+    0.83,
     null,
     null
    ],
@@ -921,12 +921,12 @@
   },
   "source": "https://www.openstreetmap.org/way/362705778",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -944,5 +944,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

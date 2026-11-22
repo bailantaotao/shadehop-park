@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 104,
+   "distance_m": 128,
    "location": {
-    "lat": 25.038632,
-    "lng": 121.534559
+    "lat": 25.038516,
+    "lng": 121.534331
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/1446842517",
+   "name": "7-ELEVEN 中廣門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運忠孝新生站",
    "source": "https://www.openstreetmap.org/node/3812564401",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "丹堤咖啡濟南店",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -74,7 +74,7 @@
   "11": {
    "end": "08:30",
    "end_slot": 5,
-   "mean": 0.93,
+   "mean": 0.92,
    "start": "06:30",
    "start_slot": 1
   },
@@ -302,7 +302,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10035706038"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -338,7 +338,7 @@
     "url": "https://www.openstreetmap.org/way/673327068"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -364,7 +364,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1090659933"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -390,7 +390,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/131473145"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -426,7 +426,7 @@
     "url": "https://www.openstreetmap.org/way/1425491824"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -462,7 +462,7 @@
     "url": "https://www.openstreetmap.org/way/663577173"
    },
    "osm_name": "臨沂二停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -483,7 +483,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -814,12 +814,12 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -843,5 +843,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

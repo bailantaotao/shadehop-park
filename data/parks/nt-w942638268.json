@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 295,
+   "distance_m": 86,
    "location": {
-    "lat": 25.062024,
-    "lng": 121.450787
+    "lat": 25.061024,
+    "lng": 121.455488
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2412213981",
+   "name": "7-ELEVEN 莫內門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/942638268",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新北產業園區站",
    "source": "https://www.openstreetmap.org/node/3509945102",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "中油大全加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 2782,
@@ -362,7 +362,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/904722444"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -388,7 +388,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/904721102"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -424,7 +424,7 @@
     "url": "https://www.openstreetmap.org/way/1474846133"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -460,7 +460,7 @@
     "url": "https://www.openstreetmap.org/way/1369590149"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -486,7 +486,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1085760878"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -512,7 +512,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1369583569"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -533,7 +533,7 @@
   "note": "約 1476 m² 在高架/屋頂下（佔 53%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/942638268",
   "value": true,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -864,7 +864,7 @@
   },
   "source": "https://www.openstreetmap.org/way/942638268",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -888,7 +888,7 @@
    "source": "https://www.openstreetmap.org/way/942638268",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "low",
@@ -899,12 +899,12 @@
    "source": "https://www.openstreetmap.org/way/942638268",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -928,5 +928,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

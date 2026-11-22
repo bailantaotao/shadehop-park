@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 305,
+   "distance_m": 322,
    "location": {
-    "lat": 24.964611,
-    "lng": 121.333021
+    "lat": 24.964655,
+    "lng": 121.333196
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/5455666171",
+   "name": "7-ELEVEN 長虹門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/545770024",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運鶯桃福德站",
    "source": "https://www.openstreetmap.org/node/4990733837",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -63,7 +63,7 @@
    "name": "鳳祥里活動中心",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 2035,
@@ -160,7 +160,7 @@
     "url": "https://www.openstreetmap.org/way/1533439802"
    },
    "osm_name": "Times鶯歌鶯桃路第二停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -196,7 +196,7 @@
     "url": "https://www.openstreetmap.org/way/1047537181"
    },
    "osm_name": "Times鶯歌鳳鳴路停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -222,7 +222,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727693"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -248,7 +248,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/547082504"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -274,7 +274,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1004821523"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -300,7 +300,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/516282287"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -321,7 +321,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/545770024",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -652,12 +652,12 @@
   },
   "source": "https://www.openstreetmap.org/way/545770024",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -675,5 +675,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

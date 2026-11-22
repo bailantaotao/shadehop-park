@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 38,
+   "distance_m": 29,
    "location": {
-    "lat": 24.98277,
-    "lng": 121.453532
+    "lat": 24.982687,
+    "lng": 121.453568
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/9871731675",
+   "name": "7-ELEVEN 隆城門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1100764233",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運海山站",
    "source": "https://www.openstreetmap.org/node/3639530951",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "統一超商隆城門市1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1572,
@@ -137,7 +137,7 @@
   "9": {
    "end": "09:00",
    "end_slot": 6,
-   "mean": 0.89,
+   "mean": 0.88,
    "start": "06:00",
    "start_slot": 0
   }
@@ -296,7 +296,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1023830436"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -322,7 +322,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1023830437"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -358,7 +358,7 @@
     "url": "https://www.openstreetmap.org/way/1075934524"
    },
    "osm_name": "宜舍停車",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1075939213"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -420,7 +420,7 @@
     "url": "https://www.openstreetmap.org/way/526404505"
    },
    "osm_name": "幸福花園停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -456,7 +456,7 @@
     "url": "https://www.openstreetmap.org/way/1075934519"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -477,7 +477,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1100764233",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -808,12 +808,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1100764233",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -831,5 +831,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

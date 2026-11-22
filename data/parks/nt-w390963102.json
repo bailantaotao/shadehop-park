@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 38,
+   "distance_m": 62,
    "location": {
-    "lat": 24.951617,
-    "lng": 121.549577
+    "lat": 24.951895,
+    "lng": 121.54759
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9327511749",
+   "name": "7-ELEVEN 新宜門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/390963102",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新店站",
    "source": "https://www.openstreetmap.org/node/3461854239",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "青潭公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 9684,
@@ -165,7 +165,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/377994547"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -191,7 +191,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/748625322"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -226,7 +226,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/956264091"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -247,7 +247,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/390963102",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -390,7 +390,7 @@
     0.0,
     0.0,
     0.02,
-    0.09,
+    0.1,
     null
    ],
    "3": [
@@ -416,7 +416,7 @@
     0.0,
     0.0,
     0.02,
-    0.08,
+    0.07,
     0.1
    ],
    "4": [
@@ -443,7 +443,7 @@
     0.0,
     0.03,
     0.1,
-    0.11
+    0.13
    ],
    "5": [
     0.12,
@@ -521,7 +521,7 @@
     0.0,
     0.02,
     0.06,
-    0.11
+    0.12
    ],
    "8": [
     0.12,
@@ -547,7 +547,7 @@
     0.0,
     0.02,
     0.08,
-    0.11
+    0.1
    ],
    "9": [
     0.19,
@@ -572,18 +572,18 @@
     0.0,
     0.0,
     0.04,
-    0.09,
+    0.08,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/390963102",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -601,5 +601,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

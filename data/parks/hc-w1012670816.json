@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/4579686690",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1012670816",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新莊站",
    "source": "https://www.openstreetmap.org/node/1553495847",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/2701409823",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1114,
@@ -256,12 +256,20 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1244816052"
    },
-   "sockets": [],
+   "sockets": [
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
    "source": "osm",
    "speed": "fast",
-   "speed_label": "快充 (DC)（依營運商判斷）",
-   "speed_source": "brand",
-   "verified_at": "2026-11-07"
+   "speed_label": "快充 (DC)",
+   "speed_source": "sockets",
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -347,7 +355,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1012670817"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -373,7 +381,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326864729"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -399,7 +407,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326864730"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -425,7 +433,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1492461595"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -451,7 +459,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/256994743"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -477,7 +485,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3677437814"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -498,7 +506,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1012670816",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹市",
@@ -507,7 +515,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.18,
-  "buildings_considered": 138,
+  "buildings_considered": 139,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -829,12 +837,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1012670816",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -846,5 +854,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

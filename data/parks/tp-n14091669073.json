@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 78,
+   "distance_m": 26,
    "location": {
-    "lat": 25.058973,
-    "lng": 121.618481
+    "lat": 25.059345,
+    "lng": 121.617583
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/13461655097",
+   "name": "7-ELEVEN 三井門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/14091669073",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運南港軟體園區站",
    "source": "https://www.openstreetmap.org/node/3501186379",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "LALAPORT南港6樓B區",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -417,7 +417,7 @@
     "url": "https://www.openstreetmap.org/way/499749927"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -453,7 +453,7 @@
     "url": "https://www.openstreetmap.org/way/1002545260"
    },
    "osm_name": "Times",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -489,7 +489,7 @@
     "url": "https://www.openstreetmap.org/node/1720289811"
    },
    "osm_name": "嘟嘟房",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -525,7 +525,7 @@
     "url": "https://www.openstreetmap.org/node/1720289827"
    },
    "osm_name": "南港軟體園區地下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -561,7 +561,7 @@
     "url": "https://www.openstreetmap.org/way/1042128041"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -597,7 +597,7 @@
     "url": "https://www.openstreetmap.org/node/6595942372"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -618,7 +618,7 @@
   "note": "OSM 標示為室內場所；可能需購票或有開放時間，請先確認",
   "source": "https://www.openstreetmap.org/node/14091669073",
   "value": true,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -949,7 +949,7 @@
   },
   "source": "https://www.openstreetmap.org/node/14091669073",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -960,7 +960,7 @@
    "source": "https://www.openstreetmap.org/node/14091669073",
    "type": "indoor",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "low",
@@ -971,12 +971,12 @@
    "source": "https://www.openstreetmap.org/node/14091669073",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -994,5 +994,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

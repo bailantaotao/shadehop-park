@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 47,
+   "distance_m": 40,
    "location": {
-    "lat": 25.015282,
-    "lng": 121.462007
+    "lat": 25.01521,
+    "lng": 121.462031
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/9706657583",
+   "name": "7-ELEVEN 新板橋門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/182810255",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運板橋站",
    "source": "https://www.openstreetmap.org/node/3639530948",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -55,7 +55,7 @@
    "name": "板橋環球購物中心2F西內側",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 17602,
@@ -566,7 +566,7 @@
     "url": "https://www.openstreetmap.org/way/232201651"
    },
    "osm_name": "新北市板橋區特專三臨時平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -602,7 +602,7 @@
     "url": "https://www.openstreetmap.org/way/808480742"
    },
    "osm_name": "新北市市民廣場地下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -637,7 +637,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317253532"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -663,7 +663,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/330670511"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -699,7 +699,7 @@
     "url": "https://www.openstreetmap.org/node/9307980676"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -725,7 +725,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9317442058"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -746,7 +746,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/182810255",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -1077,7 +1077,7 @@
   },
   "source": "https://www.openstreetmap.org/way/182810255",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -1096,12 +1096,12 @@
    "source": "https://www.openstreetmap.org/way/182810255",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1119,5 +1119,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

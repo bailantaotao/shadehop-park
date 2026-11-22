@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 47,
+   "distance_m": 58,
    "location": {
-    "lat": 25.044578,
-    "lng": 121.516649
+    "lat": 25.044699,
+    "lng": 121.51661
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2876179606",
+   "name": "7-ELEVEN 鑫公信門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/9652216797",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運台北車站",
    "source": "https://www.openstreetmap.org/node/3495094870",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "麥當勞台北公園店",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 306,
@@ -493,7 +493,7 @@
     "url": "https://www.openstreetmap.org/way/1574727780"
    },
    "osm_name": "臺大醫院景福停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -519,7 +519,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10736611558"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "permit",
@@ -555,7 +555,7 @@
     "url": "https://www.openstreetmap.org/node/10736611401"
    },
    "osm_name": "中正第一分局停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -591,7 +591,7 @@
     "url": "https://www.openstreetmap.org/node/9654394171"
    },
    "osm_name": "臺大兒醫停車場 (入口)",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -627,7 +627,7 @@
     "url": "https://www.openstreetmap.org/relation/18469576"
    },
    "osm_name": "信陽街平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -653,7 +653,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846062"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -674,7 +674,7 @@
   "note": "約 120 m² 在高架/屋頂下（佔 39%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/node/9652216797",
   "value": "partial",
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -683,7 +683,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.4,
-  "buildings_considered": 600,
+  "buildings_considered": 599,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -1005,7 +1005,7 @@
   },
   "source": "https://www.openstreetmap.org/node/9652216797",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -1024,12 +1024,12 @@
    "source": "https://www.openstreetmap.org/node/9652216797",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1047,5 +1047,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

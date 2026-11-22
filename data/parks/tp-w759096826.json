@@ -12,7 +12,7 @@
    "name": "全家便利商店",
    "source": "https://www.openstreetmap.org/node/2300009547",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/759096826",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運萬隆站",
    "source": "https://www.openstreetmap.org/node/3530915062",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": "公有興隆市場1樓",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 200,
@@ -130,7 +130,7 @@
   "6": {
    "end": "08:00",
    "end_slot": 4,
-   "mean": 0.9,
+   "mean": 0.89,
    "start": "06:00",
    "start_slot": 0
   },
@@ -411,7 +411,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/420085007"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -446,7 +446,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/222081024"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -482,7 +482,7 @@
     "url": "https://www.openstreetmap.org/way/420084972"
    },
    "osm_name": "景豐停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -517,7 +517,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/8708472"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -543,7 +543,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/759339571"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -569,7 +569,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/10696799"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -590,7 +590,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/759096826",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -921,12 +921,12 @@
   },
   "source": "https://www.openstreetmap.org/way/759096826",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -950,5 +950,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

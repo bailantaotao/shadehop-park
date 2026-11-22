@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 81,
+   "distance_m": 149,
    "location": {
-    "lat": 25.021376,
-    "lng": 121.450791
+    "lat": 25.021615,
+    "lng": 121.451434
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/13651197363",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/13423799021",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/545016798",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運板橋站",
    "source": "https://www.openstreetmap.org/node/3639530948",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "車容坊板橋新月橋站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 2555,
@@ -230,7 +230,7 @@
     "url": "https://www.openstreetmap.org/way/517839017"
    },
    "osm_name": "板橋果菜市場第二停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -256,7 +256,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/6216281357"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -282,7 +282,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/6216281356"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -308,7 +308,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/664078125"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -344,7 +344,7 @@
     "url": "https://www.openstreetmap.org/way/587411727"
    },
    "osm_name": "江翠水岸特區停四停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -370,7 +370,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/587411711"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -391,7 +391,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/545016798",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -722,12 +722,12 @@
   },
   "source": "https://www.openstreetmap.org/way/545016798",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -751,5 +751,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

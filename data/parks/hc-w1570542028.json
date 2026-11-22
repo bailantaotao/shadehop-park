@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 91,
+   "distance_m": 133,
    "location": {
-    "lat": 24.794643,
-    "lng": 121.009163
+    "lat": 24.794698,
+    "lng": 121.008569
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9969417624",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/7922528441",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1570542028",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "全國加油(股)公司新竹交流道站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 10582,
@@ -102,12 +102,20 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1244816052"
    },
-   "sockets": [],
+   "sockets": [
+    {
+     "count": 8,
+     "current": "DC",
+     "label": "CCS2",
+     "output_kw": null,
+     "type": "type2_combo"
+    }
+   ],
    "source": "osm",
    "speed": "fast",
-   "speed_label": "快充 (DC)（依營運商判斷）",
-   "speed_source": "brand",
-   "verified_at": "2026-11-07"
+   "speed_label": "快充 (DC)",
+   "speed_source": "sockets",
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -200,7 +208,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/161757934"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -226,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/286896824"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -252,7 +260,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/6538685937"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -278,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1553559265"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -304,7 +312,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3864582008"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -330,7 +338,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/286896823"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -351,7 +359,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1570542028",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹市",
@@ -682,12 +690,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1570542028",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -699,5 +707,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

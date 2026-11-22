@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 319,
+   "distance_m": 328,
    "location": {
-    "lat": 24.998201,
-    "lng": 121.581117
+    "lat": 24.998314,
+    "lng": 121.581155
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2128934126",
+   "name": "7-ELEVEN 動物園門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/12458560821",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運動物園站",
    "source": "https://www.openstreetmap.org/node/689422202",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -66,7 +66,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/6682287302",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -219,7 +219,7 @@
    "speed": "fast",
    "speed_label": "快充 (DC)",
    "speed_source": "sockets",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "daytime_shaded_share": 0.0,
@@ -267,21 +267,21 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/657396312"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
    "capacity": 1276,
    "capacity_disabled": "26",
    "capacity_parent": null,
-   "distance_m": 101,
+   "distance_m": 100,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 24.997836,
-    "lng": 121.577442
+    "lat": 24.997773,
+    "lng": 121.577352
    },
    "maxheight_m": null,
    "method": "osm",
@@ -291,7 +291,7 @@
     "cars": 1228,
     "fare": "計時：小型車週六至週日60元/時(06-18)、10元/時(18-06)，停車全程以半小時計。計次：小型車週一至週五50元/次，大客車週一至週五100元/次。月租：小型車全日週一至週五3,600元/月，日間500元/月。",
     "hours": "00:00:00-23:59:59",
-    "match_m": 20,
+    "match_m": 32,
     "name": "嘟嘟房動物園堤外站停車場",
     "source": "taipei"
    },
@@ -303,7 +303,7 @@
     "url": "https://www.openstreetmap.org/way/261084906"
    },
    "osm_name": "動物園河川高灘地堤外停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -329,7 +329,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1231636174"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -364,7 +364,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483457809"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -400,7 +400,7 @@
     "url": "https://www.openstreetmap.org/way/1350697420"
    },
    "osm_name": "捷運木柵站轉乘停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -436,7 +436,7 @@
     "url": "https://www.openstreetmap.org/way/1466666863"
    },
    "osm_name": "Hi PARKING 和平東路四段 381 巷平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -457,7 +457,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/12458560821",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -788,12 +788,12 @@
   },
   "source": "https://www.openstreetmap.org/node/12458560821",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -811,5 +811,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

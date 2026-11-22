@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 76,
+   "distance_m": 79,
    "location": {
-    "lat": 24.973004,
-    "lng": 121.533875
+    "lat": 24.972862,
+    "lng": 121.533887
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2937868071",
+   "name": "7-ELEVEN 福強門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/289578419",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運小碧潭站",
    "source": "https://www.openstreetmap.org/node/3800658231",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": "福民活動中心1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 3747,
@@ -304,7 +304,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/773820285"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -340,7 +340,7 @@
     "url": "https://www.openstreetmap.org/node/12374937252"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -349,7 +349,7 @@
    "capacity_parent": null,
    "distance_m": 369,
    "distance_method": "straight_line",
-   "fee": null,
+   "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -366,7 +366,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/5664115"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -392,7 +392,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/686428843"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -418,7 +418,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3645402231"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -454,7 +454,7 @@
     "url": "https://www.openstreetmap.org/node/1101090916"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -475,7 +475,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/289578419",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -806,12 +806,12 @@
   },
   "source": "https://www.openstreetmap.org/way/289578419",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -835,5 +835,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

@@ -2,17 +2,14 @@
  "address": null,
  "amenities": {
   "convenience_store": {
-   "confidence": "medium",
-   "distance_m": 49,
-   "location": {
-    "lat": 25.186086,
-    "lng": 121.525215
-   },
+   "confidence": "low",
+   "distance_m": null,
+   "location": null,
    "method": "osm",
-   "name": "二子坪合作社",
-   "source": "https://www.openstreetmap.org/node/4307465176",
-   "value": true,
-   "verified_at": "2026-11-07"
+   "name": null,
+   "source": "https://www.openstreetmap.org/way/293151415",
+   "value": null,
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/293151415",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +28,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/293151415",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -49,7 +46,7 @@
    "name": "陽明山國家公園大屯自然公園遊客服務站—",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 96860,
@@ -133,7 +130,7 @@
     "url": "https://www.openstreetmap.org/way/230730613"
    },
    "osm_name": "大屯公園2號停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -169,7 +166,7 @@
     "url": "https://www.openstreetmap.org/way/293152200"
    },
    "osm_name": "大屯公園1號停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -205,7 +202,7 @@
     "url": "https://www.openstreetmap.org/way/136183945"
    },
    "osm_name": "二子坪2號停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -231,7 +228,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/136183946"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -267,7 +264,7 @@
     "url": "https://www.openstreetmap.org/way/136183944"
    },
    "osm_name": "大屯山鞍部停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -288,7 +285,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/293151415",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -619,7 +616,7 @@
   },
   "source": "https://www.openstreetmap.org/way/293151415",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -643,12 +640,12 @@
    "source": "https://www.openstreetmap.org/way/293151415",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -660,5 +657,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

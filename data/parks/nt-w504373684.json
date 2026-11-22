@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 172,
+   "distance_m": 84,
    "location": {
-    "lat": 25.02714,
-    "lng": 121.415738
+    "lat": 25.028161,
+    "lng": 121.413505
    },
    "method": "osm",
-   "name": "萊爾富",
-   "source": "https://www.openstreetmap.org/node/9340934984",
+   "name": "7-ELEVEN 雙鳳門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/504373684",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運迴龍站",
    "source": "https://www.openstreetmap.org/node/3812564425",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -55,7 +55,7 @@
    "name": "丹鳳派出所1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 3397,
@@ -291,7 +291,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/6161807525"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -327,7 +327,7 @@
     "url": "https://www.openstreetmap.org/way/367111504"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -362,7 +362,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/442131567"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -388,7 +388,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666866"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -414,7 +414,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/415197496"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -450,7 +450,7 @@
     "url": "https://www.openstreetmap.org/way/659425078"
    },
    "osm_name": "嘟嘟房",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -471,7 +471,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/504373684",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -802,12 +802,12 @@
   },
   "source": "https://www.openstreetmap.org/way/504373684",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -831,5 +831,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

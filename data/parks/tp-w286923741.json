@@ -2,14 +2,17 @@
  "address": null,
  "amenities": {
   "convenience_store": {
-   "confidence": "low",
-   "distance_m": null,
-   "location": null,
+   "confidence": "medium",
+   "distance_m": 488,
+   "location": {
+    "lat": 25.072843,
+    "lng": 121.575629
+   },
    "method": "osm",
-   "name": null,
-   "source": "https://www.openstreetmap.org/way/286923741",
-   "value": null,
-   "verified_at": "2026-11-07"
+   "name": "7-ELEVEN 匯陽門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
+   "value": true,
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -21,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/286923741",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +37,7 @@
    "name": "捷運港墘站",
    "source": "https://www.openstreetmap.org/node/3501186374",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +55,7 @@
    "name": "台亞堤頂交流道加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 91,
@@ -334,7 +337,7 @@
     "url": "https://www.openstreetmap.org/way/286924265"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -360,7 +363,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/615596185"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -396,7 +399,7 @@
     "url": "https://www.openstreetmap.org/way/1081532409"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -431,7 +434,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/345186878"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -457,7 +460,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/349844551"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -493,7 +496,7 @@
     "url": "https://www.openstreetmap.org/node/8146242008"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -514,7 +517,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/286923741",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -845,12 +848,12 @@
   },
   "source": "https://www.openstreetmap.org/way/286923741",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -868,5 +871,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

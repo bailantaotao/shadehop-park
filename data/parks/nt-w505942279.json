@@ -2,14 +2,17 @@
  "address": null,
  "amenities": {
   "convenience_store": {
-   "confidence": "low",
-   "distance_m": null,
-   "location": null,
+   "confidence": "medium",
+   "distance_m": 415,
+   "location": {
+    "lat": 25.161234,
+    "lng": 121.414773
+   },
    "method": "osm",
-   "name": null,
-   "source": "https://www.openstreetmap.org/way/505942279",
-   "value": null,
-   "verified_at": "2026-11-07"
+   "name": "7-ELEVEN 鎮江道門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
+   "value": true,
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/505942279",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/505942279",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -46,7 +49,7 @@
    "name": "八里文化公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 429,
@@ -133,7 +136,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/492981140"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -159,7 +162,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1211980564"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -185,7 +188,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714659305"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -211,7 +214,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12040069816"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -247,7 +250,7 @@
     "url": "https://www.openstreetmap.org/node/12040088216"
    },
    "osm_name": "俥亭停車場-八里仁愛站",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -273,7 +276,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812261"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -294,7 +297,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/505942279",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -625,12 +628,12 @@
   },
   "source": "https://www.openstreetmap.org/way/505942279",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -648,5 +651,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

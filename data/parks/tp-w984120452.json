@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 246,
+   "distance_m": 277,
    "location": {
-    "lat": 25.024396,
-    "lng": 121.517366
+    "lat": 25.024728,
+    "lng": 121.517507
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9395836059",
+   "name": "7-ELEVEN 新文華門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/984120452",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,14 +37,14 @@
    "name": "捷運古亭站",
    "source": "https://www.openstreetmap.org/node/3812564396",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
    "category": null,
    "changing_table": true,
    "confidence": "medium",
-   "distance_m": 23,
+   "distance_m": 25,
    "family": null,
    "family_room": null,
    "location": {
@@ -55,15 +55,15 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/9099373837",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
- "area_m2": 1637,
+ "area_m2": 1572,
  "best_shade_windows": {
   "1": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.66,
+   "mean": 0.68,
    "start": "07:00",
    "start_slot": 2
   },
@@ -77,7 +77,7 @@
   "11": {
    "end": "07:00",
    "end_slot": 2,
-   "mean": 0.76,
+   "mean": 0.79,
    "start": "06:30",
    "start_slot": 1
   },
@@ -89,7 +89,13 @@
   "6": null,
   "7": null,
   "8": null,
-  "9": null
+  "9": {
+   "end": "06:30",
+   "end_slot": 1,
+   "mean": 0.6,
+   "start": "06:00",
+   "start_slot": 0
+  }
  },
  "charger_summary": {
   "fast": 0,
@@ -203,7 +209,7 @@
     "url": "https://www.openstreetmap.org/way/1442270505"
    },
    "osm_name": "168Parking 重慶南場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -229,7 +235,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/313786184"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -255,7 +261,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/4601745"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "permissive",
@@ -281,7 +287,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/314322694"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -316,14 +322,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/772708554"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
    "capacity": 442,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 439,
+   "distance_m": 438,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
@@ -342,7 +348,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1194888161"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -365,7 +371,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/984120452",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -373,8 +379,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.61,
-  "buildings_considered": 228,
+  "building_height_known_share": 0.48,
+  "buildings_considered": 286,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -384,7 +390,7 @@
    "1": [
     null,
     null,
-    0.66,
+    0.68,
     0.0,
     0.0,
     0.0,
@@ -409,7 +415,7 @@
    ],
    "10": [
     0.92,
-    0.46,
+    0.48,
     0.0,
     0.0,
     0.0,
@@ -435,7 +441,7 @@
    ],
    "11": [
     null,
-    0.76,
+    0.79,
     0.02,
     0.0,
     0.0,
@@ -488,7 +494,7 @@
    "2": [
     null,
     null,
-    0.48,
+    0.5,
     0.0,
     0.0,
     0.0,
@@ -513,7 +519,7 @@
    ],
    "3": [
     null,
-    0.56,
+    0.54,
     0.0,
     0.0,
     0.0,
@@ -538,7 +544,7 @@
     0.0
    ],
    "4": [
-    0.18,
+    0.14,
     0.0,
     0.0,
     0.0,
@@ -561,7 +567,7 @@
     0.0,
     0.0,
     0.0,
-    0.46
+    0.48
    ],
    "5": [
     0.0,
@@ -668,7 +674,7 @@
     0.0
    ],
    "9": [
-    0.59,
+    0.6,
     0.02,
     0.0,
     0.0,
@@ -696,12 +702,12 @@
   },
   "source": "https://www.openstreetmap.org/way/984120452",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -719,5 +725,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

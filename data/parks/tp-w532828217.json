@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 126,
+   "distance_m": 130,
    "location": {
-    "lat": 25.094662,
-    "lng": 121.523835
+    "lat": 25.094685,
+    "lng": 121.52379
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/3133642225",
+   "name": "7-ELEVEN 福正門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/532828217",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運士林站",
    "source": "https://www.openstreetmap.org/node/3495094876",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -48,14 +48,14 @@
    "family": {
     "accessible": false,
     "category": "交通",
-    "changing_table": true,
+    "changing_table": false,
     "distance_m": 156,
     "family_room": true,
     "location": {
      "lat": 25.093601,
      "lng": 121.526222
     },
-    "name": "捷運士林站北"
+    "name": "捷運劍潭站南"
    },
    "family_room": false,
    "location": {
@@ -66,7 +66,7 @@
    "name": "士林1號",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 138,
@@ -486,7 +486,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/262650676"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -512,7 +512,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/532828221"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -538,7 +538,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/532849016"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -564,7 +564,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/532828224"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -600,7 +600,7 @@
     "url": "https://www.openstreetmap.org/way/780995545"
    },
    "osm_name": "捷運士林停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -636,7 +636,7 @@
     "url": "https://www.openstreetmap.org/way/822578015"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -657,7 +657,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/532828217",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -988,12 +988,12 @@
   },
   "source": "https://www.openstreetmap.org/way/532828217",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1011,5 +1011,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

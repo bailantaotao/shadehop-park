@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 130,
+   "distance_m": 95,
    "location": {
-    "lat": 25.048009,
-    "lng": 121.546505
+    "lat": 25.047816,
+    "lng": 121.546062
    },
    "method": "osm",
-   "name": "全家便利商店",
-   "source": "https://www.openstreetmap.org/node/3196860213",
+   "name": "7-ELEVEN 庫德門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運南京復興站",
    "source": "https://www.openstreetmap.org/node/3497302606",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": "臺北市立圖書館中崙分館8F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -529,7 +529,7 @@
     "url": "https://www.openstreetmap.org/way/1387020823"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -565,7 +565,7 @@
     "url": "https://www.openstreetmap.org/way/678672888"
    },
    "osm_name": "復興南路平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -601,7 +601,7 @@
     "url": "https://www.openstreetmap.org/way/907042536"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -637,7 +637,7 @@
     "url": "https://www.openstreetmap.org/node/3097339788"
    },
    "osm_name": "市民大道停車場 (復興 - 敦化)",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -673,7 +673,7 @@
     "url": "https://www.openstreetmap.org/node/3249098935"
    },
    "osm_name": "Civic Boulevard Car Park (Fuxing-Dunhua)",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -699,7 +699,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/477132764"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -720,7 +720,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -1051,12 +1051,12 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1080,5 +1080,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

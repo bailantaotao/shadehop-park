@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/way/520945825",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1391751107",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -31,10 +31,10 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1391751107",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
-   "accessible": false,
+   "accessible": true,
    "category": "民眾洽公場所",
    "changing_table": false,
    "confidence": "high",
@@ -46,10 +46,10 @@
     "lng": 121.243982
    },
    "method": "official_data",
-   "name": "退輔會桃園市榮民服務處1F西側",
+   "name": "退輔會桃園市榮民服務處1F東側",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1460,
@@ -200,7 +200,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474872187"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -226,7 +226,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1389560000"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -252,7 +252,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/685333265"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -278,7 +278,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1389560001"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -304,7 +304,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1389560002"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -330,7 +330,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/685333266"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -351,7 +351,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1391751107",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -682,12 +682,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1391751107",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -699,5 +699,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

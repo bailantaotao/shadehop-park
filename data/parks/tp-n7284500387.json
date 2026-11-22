@@ -5,14 +5,14 @@
    "confidence": "medium",
    "distance_m": 111,
    "location": {
-    "lat": 25.085696,
-    "lng": 121.521556
+    "lat": 25.085879,
+    "lng": 121.521541
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/3835835528",
+   "name": "7-ELEVEN 前港門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/7284500387",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運劍潭站",
    "source": "https://www.openstreetmap.org/node/3495094875",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -66,7 +66,7 @@
    "name": "前港公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -445,7 +445,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/736665520"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -481,7 +481,7 @@
     "url": "https://www.openstreetmap.org/way/377457829"
    },
    "osm_name": "福港街平面停車站",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -507,7 +507,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/654351077"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -543,7 +543,7 @@
     "url": "https://www.openstreetmap.org/node/10790516021"
    },
    "osm_name": "士林運動中心停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -578,7 +578,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3763974840"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -604,7 +604,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/501654673"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -625,7 +625,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/7284500387",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -956,12 +956,12 @@
   },
   "source": "https://www.openstreetmap.org/node/7284500387",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -979,5 +979,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

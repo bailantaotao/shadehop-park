@@ -159,7 +159,7 @@
     var p = f.properties;
     if (filters.rain && p.rain !== true) return false;
     if (filters.shade && !(p.rain === true || (shadeAt(f) || 0) >= 0.6)) return false;
-    if (filters.parking && !(p.parking_nearest_m !== null && p.parking_nearest_m <= 300)) return false;
+    if (filters.parking && !(p.parking_display_m != null && p.parking_display_m <= 300)) return false;
     if (filters.fast && p.fast_nearest_m === null) return false;
     if (filters.slow && p.slow_nearest_m === null) return false;
     if (filters.toilet && !p.toilet) return false;
@@ -232,7 +232,7 @@
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
       (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">8–17 點沒有明顯遮陰時段，避開中午</span>') + "</div>" +
       (vd.cls === "lo" ? sunnyAlternatives(f) : "") +
-      '<div class="pp-grid">' + tile(I("parking"), "停車", p.parking_nearest_m, "parking") + tile(I("toilet"), "廁所", p.toilet_m, "toilet") +
+      '<div class="pp-grid">' + tile(I("parking"), esc(p.parking_display_name || "停車"), p.parking_display_m, "parking") + tile(I("toilet"), "廁所", p.toilet_m, "toilet") +
       tile(I("store"), "超商", p.shop_m, "shop") + charge + "</div>" +
       // Most parents looking at this card are deciding whether to go: navigating is the main action.
       '<div class="pp-btns">' + (p.nav ? '<a class="pp-btn primary" href="' + esc(p.nav) + '" target="_blank" rel="noopener">導航</a>' : "") +
@@ -487,7 +487,7 @@
       '</div><div class="tl-axis" aria-hidden="true"><span>6</span><span>9</span><span>12</span><span>15</span><span>18</span></div>' +
       '<div class="facts">' +
       (best ? '<span>最陰涼：' + best.start + "–" + best.end + ' <button class="link" data-jump="' + best.start_slot + '">跳到這個時間</button></span>' : "<span>8–17 點沒有明顯遮陰時段</span>") +
-      "<span>" + I("parking") + (p.parking_name ? esc(p.parking_name) + " " + p.parking_nearest_m + "m" : PARKING_R + "m 內未標示停車場") + "</span>" +
+      "<span>" + I("parking") + (p.parking_display_name ? esc(p.parking_display_name) + " " + p.parking_display_m + "m" : PARKING_R + "m 內未標示停車場") + "</span>" +
       "<span>" + I("bolt") + (p.fast_nearest_m !== null ? "快充 " + p.fast_nearest_m + "m" : CHARGER_R + "m 內沒有快充") + " · " + I("plug") + (p.slow_nearest_m !== null ? "慢充 " + p.slow_nearest_m + "m" : CHARGER_R + "m 內沒有慢充") + "</span>" +
       '<span class="small">' + dist.replace(/^ · /, "") + "</span>" +
       '</div><button class="link" data-focus="' + esc(p.id) + '">在地圖上看</button></article>';
@@ -700,12 +700,13 @@
   }
   function nearPlaces(d, kind) {
     var a = d.amenities || {}, one = function (x) { return x && x.value && x.location ? [x] : []; };
-    if (kind === "parking") return (d.parking || []).slice(0, 5);
+    if (kind === "parking") return (d.parking || []).slice().sort(function (a, b) { return a.display_rank - b.display_rank; }).slice(0, 5);
     if (kind === "charge") return d.chargers || [];
     if (kind === "toilet") return one(a.toilet);
     return one(a.convenience_store);
   }
   function placeName(x, kind) {
+    if (kind === "parking" && x.display_name) return x.display_name;
     var n = (x.name || "").trim();
     return n && n !== x.kind_label ? n : NEAR[kind].label;
   }
@@ -719,7 +720,7 @@
     // "停車場" made the Google Maps app list the lots around the phone instead of this one.
     var named = placeName(x, kind) !== NEAR[kind].label;
     return "https://www.google.com/maps/dir/?api=1&destination=" +
-      encodeURIComponent(named ? placeName(x, kind) + " " + area : x.location.lat + "," + x.location.lng);
+      encodeURIComponent(named ? placeName(x, kind) + " " + ((x.official || {}).address || area) : x.location.lat + "," + x.location.lng);
   }
   // Bottom edge (in map pixels) of what floats over the top of the map: the chips and the night/weather note.
   function overlayBottom() {
@@ -779,8 +780,11 @@
           .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, k)) + "</strong>" +
             '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
             more +
-            '<div class="near-btns"><a class="pp-btn primary" href="' + esc(placeRoute(x, k, area)) + '" target="_blank" rel="noopener">導航</a>' +
-            (placeName(x, k) !== NEAR[k].label ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "") +
+            (k === "parking" ? '<span class="near-fact">' + ({ taipei: "臺北市停車管理工程處", newtaipei: "新北市政府交通局", tdx: "交通部 TDX" }[off.source] || "OpenStreetMap") + (off.address ? "・" + esc(off.address) : "") + '</span>' : "") +
+            '<div class="near-btns">' + (k === "parking" && (!x.display_name || x.display_name === "未具名停車點") ?
+              '<span class="near-fact">車輛入口待確認</span><a class="pp-btn" href="' + esc(placeLink({ name: d.name + " 附近停車場", location: x.location }, k, area)) + '" target="_blank" rel="noopener">搜尋公園附近停車場</a>' :
+              '<a class="pp-btn primary" href="' + esc(placeRoute(x, k, area)) + '" target="_blank" rel="noopener">導航</a>' +
+              (placeName(x, k) !== NEAR[k].label ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "")) +
             "</div></div>",
             { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, overlayBottom() + 12),
               autoPanPaddingBottomRight: L.point(16, phone.matches ? sheetMetrics().half + 16 : 16) })

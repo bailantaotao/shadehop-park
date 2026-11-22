@@ -365,7 +365,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
    Wider screens: the sheet is just the page below the map, and the phone-only controls are hidden.
    Phones (<= 600px): a full-screen map, controls floating on top, and a bottom sheet with three
    heights (peek / half / full) holding the answer, the tapped park, the list and the filters. */
-.filter-btn, .date-btn, .search-about, .search-ico, .sheet-head, .sheet-filters, .sheet-park { display: none; }
+.filter-btn, .date-btn, .search-ico, .sheet-head, .sheet-card-head, .sheet-filters, .sheet-park { display: none; }
 @media (max-width: 600px) {
   /* Only the map page is an app screen; park, about and terms pages scroll normally. */
   body.page-map { height: 100%; overflow: hidden; overscroll-behavior: none; }
@@ -405,9 +405,6 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .sheet-search .search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
   .search-cancel { flex: none; min-height: 44px; padding: 0 6px; border: 0; background: none; color: var(--accent); font: inherit; font-weight: 600; cursor: pointer; }
   .search-cancel[hidden] { display: none; }
-  .search-about { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; color: var(--muted); flex: none; }
-  .search-about .i { display: inline-block; width: 22px; height: 22px; }
-  .sheet.searching .search-about { display: none; }
   .search-results { top: calc(100% + 6px); max-height: calc(var(--vvh, 100dvh) - 120px); }
   .sheet.searching { top: calc(env(safe-area-inset-top) + 8px); }
   body.searching .controls { visibility: hidden; }  /* the full sheet covers the chips while searching */
@@ -417,6 +414,7 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   #map .leaflet-bottom { bottom: calc(var(--peek, 72px) + 16px + env(safe-area-inset-bottom)); }
   #map .leaflet-bottom.leaflet-right .map-ctl { margin-right: 12px; margin-bottom: 10px; }
   #map .map-ctl.leaflet-bar, #map .chg-btn { border: 1px solid var(--line); background: var(--surface); box-shadow: 0 2px 10px rgba(0,0,0,.18); }
+  #map .chg-btn[aria-pressed="true"] { background: #d9480f; border-color: #d9480f; color: #fff; }  /* on: keep the orange, or the white bolt vanishes */
   #map .map-ctl .locate { width: 44px; height: 44px; background: none; color: var(--text); border-radius: 12px; }
   #map .map-ctl.leaflet-bar { border-radius: 14px; overflow: hidden; }
   .timebar { flex-wrap: nowrap; gap: 6px; }
@@ -455,7 +453,6 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .sheet-handle { display: block; width: calc(100% + 28px); height: 30px; margin: 0 -14px; padding: 0; border: 0; background: none; cursor: grab; position: relative; }
   .sheet-handle::before { content: ""; position: absolute; left: 50%; top: 11px; width: 44px; height: 5px; margin-left: -22px; border-radius: 3px; background: color-mix(in srgb, var(--muted) 55%, transparent); }
   .sheet-time .timebar { touch-action: none; }
-  .sheet-park .pp-head { touch-action: none; cursor: grab; }
   .sheet-time .timebar { margin: 0 0 8px; cursor: auto; }
   .sheet-summary { font-size: .95rem; line-height: 1.45; }
   .sheet-summary .link { font-size: inherit; }
@@ -467,14 +464,26 @@ a.pp-tile:hover, a.pp-tile:focus-visible { border-color: var(--accent); }
   .sheet-filters:not([hidden]) { display: block; margin-bottom: 12px; }
   .sheet-filters-head { display: flex; justify-content: space-between; align-items: center; margin: 2px 0 10px; }
   .sheet-group { margin: 4px 0 6px; font-size: .82rem; color: var(--muted); }
-  .sheet.has-park .sheet-summary, .sheet.has-park .sheet-key, .sheet.has-park #weather { display: none; }
+  .sheet.has-park .sheet-summary, .sheet.has-park .sheet-key, .sheet.has-park #weather, .sheet.has-park .sheet-search { display: none; }
+  .sheet.card-chg .sheet-time { display: none; }
   .sheet.has-park .sheet-head { padding-bottom: 0; }
   .sheet-filters .chips.filters, .sheet-filters #moreFilters { flex-wrap: wrap; overflow: visible; margin: 0 0 8px; padding: 0; }
   .sheet-filters .chip { min-height: 44px; }
-  .sheet-park:not([hidden]) { display: block; position: relative; padding: 4px 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
-  .sheet-close { position: absolute; top: 0; right: -4px; width: 44px; height: 44px; border: 0; background: none; color: var(--muted); font-size: 1.1rem; cursor: pointer; }
-  .sheet-park .pp-head { padding-right: 40px; }
-  .sheet-park .pp-name { font-size: 17px; }
+  .sheet-park:not([hidden]) { display: block; position: relative; padding: 0 0 12px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+  /* The card's title row sits in the sheet head (where the search was), so it drags the sheet too. */
+  .sheet-card-head:not([hidden]) { display: block; position: relative; margin: -4px 0 10px; }
+  .sheet-card-head .pp-head { display: flex; align-items: flex-start; gap: 6px; padding-right: 44px; margin: 0; }
+  .sheet-card-head .pp-name { font-size: 20px; font-weight: 700; line-height: 1.3; }
+  .sheet-card-head .pp-sub { font-size: 14px; }
+  .sheet-close { position: absolute; top: -6px; right: -10px; width: 44px; height: 44px; border: 0; color: var(--muted); font-size: 15px; cursor: pointer;
+    background: radial-gradient(circle, color-mix(in srgb, var(--text) 10%, transparent) 15px, transparent 15.5px); }
+  .chg-pill { display: inline-flex; align-items: center; gap: 4px; }
+  .chg-pill svg { width: 15px; height: 15px; }
+  .chg-pill.fast svg { color: #d9480f; } .chg-pill.slow svg { color: #1971c2; }
+  .chg-dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 12px 0; font-size: 14px; }
+  .chg-dl dt { color: var(--muted); } .chg-dl dd { margin: 0; overflow-wrap: anywhere; }
+  .chg-none { font-size: 14px; margin: 12px 0; }
+  .pp-src { margin: 10px 0 0; font-size: 12px; color: var(--muted); }
   .sheet-park .pp-pill { font-size: 13px; padding: 3px 10px; }
   .sheet-park .pp-best, .sheet-park .pp-alt { font-size: 14px; }
   .sheet-park .pp-tile { padding: 8px 2px; font-size: 12.5px; }

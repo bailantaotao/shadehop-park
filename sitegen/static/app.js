@@ -214,14 +214,16 @@
     var rain = p.rain === true ? '<span class="pp-pill a">下雨可玩</span>'
       : p.rain === "partial" ? '<span class="pp-pill">部分可躲雨</span>' : '<span class="pp-pill">下雨不適合</span>';
     var best = bestDaytime((p.timetable || {})[String(month())] || []);
-    // A tile with a place opens that spot in Google Maps.
-    var tile = function (icon, label, m, url) {
+    // A tile shows those places around the park on this map (Google Maps frames a category search
+    // its own way, never around the park); each place there opens Google Maps for that one spot.
+    var tile = function (icon, label, m, kind) {
       var inner = "<span>" + icon + "</span>" + label + "<b>" + (m === null || m === undefined ? "—" : m + "m") + "</b>";
-      return url && m !== null && m !== undefined
-        ? '<a class="pp-tile" href="' + esc(url) + '" target="_blank" rel="noopener" title="在 Google 地圖查看' + label + '">' + inner + "</a>"
+      return m !== null && m !== undefined
+        ? '<button type="button" class="pp-tile" data-near="' + kind + '" data-park="' + esc(p.id) + '" aria-pressed="' +
+          String(nearShown === p.id + "|" + kind) + '" title="在地圖上看附近的' + label + '">' + inner + "</button>"
         : '<div class="pp-tile">' + inner + "</div>";
     };
-    var charge = p.fast_nearest_m !== null && p.fast_nearest_m !== undefined ? tile(I("bolt"), "快充", p.fast_nearest_m, p.charger_url) : tile(I("plug"), "慢充", p.slow_nearest_m, p.charger_url);
+    var charge = p.fast_nearest_m !== null && p.fast_nearest_m !== undefined ? tile(I("bolt"), "快充", p.fast_nearest_m, "charge") : tile(I("plug"), "慢充", p.slow_nearest_m, "charge");
     return '<div class="pp">' +
       '<div class="pp-head"><div><div class="pp-name">' + esc(p.name) + '</div><div class="pp-sub">' + esc(p.district) +
       (reportNote(p) || (unsure(p) ? "・遊具待確認" : "")) + (p.indoor === true ? "・室內" : "") + "</div></div>" + Favs.button(p.id) + "</div>" +
@@ -229,8 +231,8 @@
       '<div class="pp-best">' + (today ? "今天" : "這天") + "最陰涼：" +
       (best ? "<b>" + best.start + "–" + best.end + "</b>" : '<span class="muted">8–17 點沒有明顯遮陰時段，避開中午</span>') + "</div>" +
       (vd.cls === "lo" ? sunnyAlternatives(f) : "") +
-      '<div class="pp-grid">' + tile(I("parking"), "停車", p.parking_nearest_m, p.parking_url) + tile(I("toilet"), "廁所", p.toilet_m, p.toilet_url) +
-      tile(I("store"), "超商", p.shop_m, p.shop_url) + charge + "</div>" +
+      '<div class="pp-grid">' + tile(I("parking"), "停車", p.parking_nearest_m, "parking") + tile(I("toilet"), "廁所", p.toilet_m, "toilet") +
+      tile(I("store"), "超商", p.shop_m, "shop") + charge + "</div>" +
       // Most parents looking at this card are deciding whether to go: navigating is the main action.
       '<div class="pp-btns">' + (p.nav ? '<a class="pp-btn primary" href="' + esc(p.nav) + '" target="_blank" rel="noopener">導航</a>' : "") +
       '<a class="pp-btn' + (p.nav ? "" : " primary") + '" href="' + parkHref(p.id) + '">詳情</a>' +
@@ -678,6 +680,83 @@
       setSort(b.dataset.sort);
     });
   });
+  // ------------------------------------------------------- nearby places
+  // 停車 / 廁所 / 超商 / 充電 on a park card: those places around the park, the park in the middle.
+  var nearLayer = L.layerGroup().addTo(map), nearShown = null, parkCache = {};
+  var NEAR = {
+    parking: { label: "停車場", icon: "parking" }, toilet: { label: "公廁", icon: "toilet" },
+    shop: { label: "便利商店", icon: "store" }, charge: { label: "充電站", icon: "bolt" },
+  };
+  function parkDetail(id) {
+    if (!parkCache[id]) parkCache[id] = fetch("api/parks/" + encodeURIComponent(id) + ".json").then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    }).catch(function (e) { delete parkCache[id]; throw e; });
+    return parkCache[id];
+  }
+  function nearPlaces(d, kind) {
+    var a = d.amenities || {}, one = function (x) { return x && x.value && x.location ? [x] : []; };
+    if (kind === "parking") return (d.parking || []).slice(0, 5);
+    if (kind === "charge") return (d.chargers || []).slice(0, 6);
+    if (kind === "toilet") return one(a.toilet);
+    return one(a.convenience_store);
+  }
+  function placeName(x, kind) {
+    var n = (x.name || "").trim();
+    return n && n !== x.kind_label ? n : NEAR[kind].label;
+  }
+  function placeLink(x, kind, area) {
+    // Its own name (with the area) finds that very spot; a nameless one searches the kind there.
+    var ll = x.location.lat + "," + x.location.lng, n = placeName(x, kind);
+    var term = n !== NEAR[kind].label ? n + " " + area : NEAR[kind].label;
+    return "https://maps.google.com/maps?q=" + encodeURIComponent(term) + "&ll=" + ll + "&sll=" + ll + "&z=18";
+  }
+  function clearNear() {
+    nearLayer.clearLayers();
+    if (!nearShown) return;
+    nearShown = null;
+    document.querySelectorAll("[data-near][aria-pressed=true]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+  }
+  function showNear(btn) {
+    var id = btn.dataset.park, kind = btn.dataset.near, key = id + "|" + kind;
+    if (nearShown === key) { clearNear(); return; }  // a second tap puts them away
+    var f = state.features.find(function (x) { return x.properties.id === id; });
+    if (!f) return;
+    btn.classList.add("busy");
+    parkDetail(id).then(function (d) {
+      btn.classList.remove("busy");
+      clearNear();
+      var places = nearPlaces(d, kind);
+      if (!places.length) { mapToast("附近沒有" + NEAR[kind].label + "的資料"); return; }
+      nearShown = key;
+      document.querySelectorAll('[data-near="' + kind + '"][data-park="' + CSS.escape(id) + '"]').forEach(function (b) { b.setAttribute("aria-pressed", "true"); });
+      var c = L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]), area = d.region ? d.region.city + (d.region.district !== d.region.city ? d.region.district : "") : "";
+      var pts = [c];
+      places.forEach(function (x) {
+        var ll = L.latLng(x.location.lat, x.location.lng), fast = x.speed === "fast" || x.speed === "both";
+        var icon = kind === "charge" ? (fast ? "bolt" : "plug") : NEAR[kind].icon;
+        // Mirror each place through the park too, so fitting the box keeps the park in the middle.
+        pts.push(ll, L.latLng(2 * c.lat - ll.lat, 2 * c.lng - ll.lng));
+        var sub = kind === "charge" ? (x.speed_label || "") : kind === "parking" && x.fee ? ({ yes: "收費", no: "免費" }[x.fee] || "") : "";
+        L.marker(ll, { zIndexOffset: 2500, keyboard: true, title: placeName(x, kind), icon: L.divIcon({ className: "near-mk " + kind + (fast ? " fast" : ""),
+          html: '<span class="near-in">' + I(icon) + "<b>" + x.distance_m + "m</b></span>", iconSize: [0, 0], iconAnchor: [0, 0] }) })
+          .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, kind)) + "</strong>" +
+            '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
+            '<a class="pp-btn primary" href="' + esc(placeLink(x, kind, area)) + '" target="_blank" rel="noopener">在 Google 地圖開啟</a></div>',
+            { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, $(".controls").offsetHeight + 16),
+              autoPanPaddingBottomRight: L.point(16, phone.matches ? window.innerHeight - sheet.getBoundingClientRect().top + 16 : 16) })
+          .addTo(nearLayer);
+      });
+      // Fit them into the strip of map the floating chips and the sheet leave open.
+      var top = $(".controls").getBoundingClientRect().bottom - map.getContainer().getBoundingClientRect().top + 24;
+      var bottom = phone.matches ? map.getContainer().getBoundingClientRect().bottom - sheet.getBoundingClientRect().top + 24 : 40;
+      map.fitBounds(L.latLngBounds(pts), { paddingTopLeft: [40, Math.max(40, top)], paddingBottomRight: [70, bottom], maxZoom: 18 });
+    }, function () {
+      btn.classList.remove("busy");
+      mapToast("暫時載入不到附近設施，請稍後再試");
+    });
+  }
+
   // ---------------------------------------------------------------- search
   // By city, park name or district, across all regions (they load on the first keystroke).
   var cardFromSearch = false;
@@ -957,12 +1036,16 @@
   map.on("popupopen", function (e) {
     map.getContainer().classList.add("popup-open");
     var src = e.popup._source;
+    if (nearLayer.hasLayer(src)) return;  // a nearby place's popup: the park stays selected
     popupSel = Object.keys(markers).find(function (id) { return markers[id] === src; }) || null;
+    if (popupSel && nearShown && nearShown.split("|")[0] !== popupSel) clearNear();
     drawSel();
   });
   map.on("popupclose", function (e) {
     map.getContainer().classList.remove("popup-open");
     if (redrawing) return;  // drawMarkers reopens it straight away
+    if (nearLayer.hasLayer(e.popup._source)) return;
+    if (nearShown) return;  // the park's popup gave way to a nearby place's: keep the park marked
     popupSel = null;
     drawSel();
   });
@@ -976,6 +1059,9 @@
       b.addEventListener("click", function (ev) {
         ev.preventDefault(); state.slot = Number(b.dataset.jump); $("#slot").value = state.slot; atNow = false; render();
       });
+    });
+    e.popup.getElement().querySelectorAll("[data-near]").forEach(function (b) {
+      b.addEventListener("click", function (ev) { ev.preventDefault(); showNear(b); });
     });
     e.popup.getElement().querySelectorAll("[data-fav]").forEach(function (b) {
       b.addEventListener("click", function (ev) { ev.preventDefault(); Favs.toggle(b.dataset.fav); });
@@ -1369,6 +1455,7 @@
 
   function showPark(f) {
     if (!f) return;
+    if (nearShown && nearShown.split("|")[0] !== f.properties.id) clearNear();
     state.selected = f.properties.id;
     parkCard(f);  // the park answers the question; the search and area summary step aside
     closeFilters();
@@ -1379,12 +1466,14 @@
     drawSel();
   }
   sheetPark.addEventListener("click", function (e) {
-    var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]");
+    var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]"), nb = e.target.closest("[data-near]");
+    if (nb) { showNear(nb); return; }
     if (go) { e.preventDefault(); focusPark(go.dataset.goto); }
     if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
   });
 
   function closePark() {
+    clearNear();
     sheetPark.hidden = true; cardHead.hidden = true; cardKind = null;
     sheet.classList.remove("has-park", "card-chg"); state.selected = null; drawSel();
   }

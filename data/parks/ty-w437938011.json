@@ -434,7 +434,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "公二停車場",
+   "name": "公二地下停車場",
+   "official": {
+    "address": "桃園市八德區福國北街220號",
+    "cars": null,
+    "fare": "臨停20元/時、進場未滿30分鐘免費、月租2400元",
+    "hours": null,
+    "match_m": 8,
+    "name": "公二地下停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "桃園市政府",
    "osm": {
@@ -442,6 +451,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3372755338"
    },
+   "osm_name": "公二停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -486,7 +496,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "永福停車場",
+   "name": "八德區永福停車場",
+   "official": {
+    "address": "桃園市八德區永福西街36號對面",
+    "cars": null,
+    "fare": "計時:每小時20元當日最高100元月租2000元",
+    "hours": null,
+    "match_m": 21,
+    "name": "八德區永福停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "桃園市政府",
    "osm": {
@@ -494,6 +513,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/884090559"
    },
+   "osm_name": "永福停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -939,6 +959,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

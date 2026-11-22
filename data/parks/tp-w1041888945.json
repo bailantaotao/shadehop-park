@@ -282,7 +282,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 18,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 24,
@@ -296,14 +296,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "萬慶平面停車場",
-   "opening_hours": null,
+   "name": "萬慶街平面停車場",
+   "official": {
+    "address": "萬慶街48號對面",
+    "cars": 18,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
+    "hours": "收費日：周一至六，收費時間：上午9時至下午5時",
+    "match_m": 17,
+    "name": "萬慶街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：周一至六，收費時間：上午9時至下午5時",
    "operator": null,
    "osm": {
     "id": 429419983,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/429419983"
    },
+   "osm_name": "萬慶平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -323,7 +333,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "台北景福停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "景福街168號巷口空地",
+    "cars": 49,
+    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "台北景福停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "陳昱光",
    "osm": {
     "id": 440646815,
@@ -360,7 +379,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 399,
@@ -374,19 +393,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "景文平面停車場",
+   "official": {
+    "address": "景文街90巷內廣場停車場",
+    "cars": 53,
+    "fare": "小型車：計時 30元/時，全程以半小時計。",
+    "hours": "周一至周六 9時至17時",
+    "match_m": 3,
+    "name": "景文平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六 9時至17時",
    "operator": null,
    "osm": {
     "id": 358671227,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358671227"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 493,
@@ -400,14 +429,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景美集應廟文化願景館地下停車場",
-   "opening_hours": null,
+   "name": "景美集應廟站停車場",
+   "official": {
+    "address": "景後街130號地下1至3層",
+    "cars": 50,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "景美集應廟站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 797083838,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/797083838"
    },
+   "osm_name": "景美集應廟文化願景館地下停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -800,6 +839,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

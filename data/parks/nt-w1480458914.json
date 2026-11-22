@@ -490,7 +490,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 43,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 113,
@@ -504,19 +504,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 新北三重神農光復停車場",
-   "opening_hours": null,
+   "name": "光復神農停車場",
+   "official": {
+    "address": "新北市三重區神農街50號對面空地",
+    "cars": 43,
+    "fare": "小型車計時80元;",
+    "hours": "0~24時",
+    "match_m": 13,
+    "name": "光復神農停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1466666869,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666869"
    },
+   "osm_name": "Hi PARKING 新北三重神農光復停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 81,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 117,
@@ -530,14 +540,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "晉呈資產管理有限公司神農四停車場",
+   "official": {
+    "address": "新北市三重區五谷王北街與五谷王北街27巷交叉口旁空地",
+    "cars": 81,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 27,
+    "name": "晉呈資產管理有限公司神農四停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 12943446,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943446"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -961,6 +981,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

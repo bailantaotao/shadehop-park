@@ -188,7 +188,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 39,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 325,
@@ -202,19 +202,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "林口信義路停車場",
+   "official": {
+    "address": "新北市林口區信義路136號旁空地",
+    "cars": 39,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "林口信義路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1136144671,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1136144671"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 39,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 337,
@@ -228,19 +238,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 新北文化二路停車場",
-   "opening_hours": null,
+   "name": "林口信義路停車場",
+   "official": {
+    "address": "新北市林口區信義路136號旁空地",
+    "cars": 39,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 18,
+    "name": "林口信義路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1310980916,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980916"
    },
+   "osm_name": "Hi PARKING 新北文化二路停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 440,
@@ -254,14 +274,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "禮頓企業有限公司林口中山站停車場",
+   "official": {
+    "address": "新北市林口區中山路490號旁空地",
+    "cars": 38,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "禮頓企業有限公司林口中山站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1310980939,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980939"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -318,7 +348,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 166,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 528,
@@ -332,14 +362,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "廣停一平面停車場",
+   "official": {
+    "address": "新北市林口區文化二路1段及文化二路1段525巷交叉口",
+    "cars": 166,
+    "fare": "小型車計時20元;小型車月租1200元;身障車月租1000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "廣停一平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 570835118,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/570835118"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -707,6 +747,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

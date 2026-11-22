@@ -228,7 +228,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 61,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 626,
@@ -242,14 +242,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "隔頂停車場",
-   "opening_hours": null,
+   "name": "隔頂平面停車場",
+   "official": {
+    "address": "新北市瑞芳區瑞雙公路及瑞金公路口旁空地",
+    "cars": 61,
+    "fare": "小型車計次150元;小型車計時50元;小型車月租10000元;身障車月租5000元;重型機車計次150元;重型機車計時50元;重型機車月租10000元;",
+    "hours": "0~24時",
+    "match_m": 14,
+    "name": "隔頂平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 197518216,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/197518216"
    },
+   "osm_name": "隔頂停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -611,6 +621,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

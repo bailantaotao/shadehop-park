@@ -519,7 +519,7 @@
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 850,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 129,
@@ -533,19 +533,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "林口世大運選手村社會住宅地下停車場D區",
+   "official": {
+    "address": "新北市林口區文化一路1段140、142、146、148、150、152、156、158、160、162、166號地下1層及2層合併空間",
+    "cars": 850,
+    "fare": "小型車計時50元;小型車月租4000元;機車計時30元;機車月租600元;",
+    "hours": "0~24時",
+    "match_m": 53,
+    "name": "林口世大運選手村社會住宅地下停車場D區",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1455628177,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1455628177"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 192,
@@ -559,14 +569,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times林口文化一路一段停車場",
+   "official": {
+    "address": "新北市林口區文化一路1段100巷8弄6號旁",
+    "cars": 23,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 49,
+    "name": "Times林口文化一路一段停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1310980945,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1310980945"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -623,7 +643,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 166,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 235,
@@ -637,14 +657,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "廣停一平面停車場",
+   "official": {
+    "address": "新北市林口區文化二路1段及文化二路1段525巷交叉口",
+    "cars": 166,
+    "fare": "小型車計時20元;小型車月租1200元;身障車月租1000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "廣停一平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 570835118,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/570835118"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -1012,6 +1042,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

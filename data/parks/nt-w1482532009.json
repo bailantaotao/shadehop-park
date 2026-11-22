@@ -330,7 +330,7 @@
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 170,
@@ -344,19 +344,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "萊客有限公司三重停車場",
+   "official": {
+    "address": "新北市三重區電信街20號旁空地",
+    "cars": 35,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 23,
+    "name": "萊客有限公司三重停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1098660258,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1098660258"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 302,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 291,
@@ -371,7 +381,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "光興國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市三重區正義南路62號B1、B2",
+    "cars": 302,
+    "fare": "小型車計時40元;小型車月租4500元;身障車月租2350元;機車計次20元;機車月租月租300元;身障機車月租150元;重型機車計時40元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "光興國小地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 5295049482,
@@ -797,6 +816,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

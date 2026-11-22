@@ -208,7 +208,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 42,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 78,
@@ -222,14 +222,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "泰山國小停車場",
+   "official": {
+    "address": "新北市泰山區泰林路2段2段255號對面空地",
+    "cars": 42,
+    "fare": "小型車計時30元;小型車月租3500元;小型車月租3000元;身障車月租1750元;身障車月租1500元;機車計次30元;",
+    "hours": "0~24時",
+    "match_m": 10,
+    "name": "泰山國小停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1149344623,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1149344623"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -274,19 +284,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "泰山區同興平面停車場",
+   "official": {
+    "address": "新北市泰山區福興ㄧ街與同義街18巷交叉口",
+    "cars": 32,
+    "fare": "小型車計時20元;小型車月租2500元;身障車月租1500元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 40,
+    "name": "泰山區同興平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "新北市政府",
    "osm": {
     "id": 882012822,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/882012822"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 57,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 252,
@@ -300,14 +320,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "山腳停車場",
-   "opening_hours": null,
+   "name": "泰山區山腳平面停車場",
+   "official": {
+    "address": "新北市泰山區憲訓路與美寧街交會處",
+    "cars": 57,
+    "fare": "小型車計時20元;小型車月租1800元;身障車月租1600元;",
+    "hours": "0~24時",
+    "match_m": 11,
+    "name": "泰山區山腳平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 17445215,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/17445215"
    },
+   "osm_name": "山腳停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -733,6 +763,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

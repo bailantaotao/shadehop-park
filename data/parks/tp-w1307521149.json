@@ -267,7 +267,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 63,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 156,
@@ -281,19 +281,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市客家文化中心附設地下停車場",
+   "official": {
+    "address": "汀州路3段2號",
+    "cars": 63,
+    "fare": "小型車：計時 40元/時，停車全程以半小時計，停車未滿15分鐘者免費。月租：全日17,400元/3個月、日間8,700元/3個月、夜間8,700元/3個月。機車：僅供洽公或活動參與民眾使用，車輛駛入1日內可免費停放，如超過1日則以日計費（隔夜計費），每日收費30元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "臺北市客家文化中心附設地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3765552240,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3765552240"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 249,
@@ -307,14 +317,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "螢橋國中停車場",
+   "official": {
+    "address": "汀州路3段4號",
+    "cars": 40,
+    "fare": "月租：小型車全日1,500元/月，採按季收費4,500元。",
+    "hours": "星期一到星期五19時至翌日上午7時；例假日、星期六至星期一上午7時，國定假日至翌日上午7時。",
+    "match_m": 42,
+    "name": "螢橋國中停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一到星期五19時至翌日上午7時；例假日、星期六至星期一上午7時，國定假日至翌日上午7時。",
    "operator": null,
    "osm": {
     "id": 325850652,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/325850652"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -385,7 +405,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "同安停車場",
+   "name": "博客停車場-家福同安場",
+   "official": {
+    "address": "同安街71號地下1層",
+    "cars": 17,
+    "fare": "計時：60元/時，全程以半小時計費。月租：6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 26,
+    "name": "博客停車場-家福同安場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -393,6 +422,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/11263971962"
    },
+   "osm_name": "同安停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -798,6 +828,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

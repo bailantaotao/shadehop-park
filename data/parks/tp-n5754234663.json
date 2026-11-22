@@ -305,7 +305,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 91,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 122,
@@ -319,14 +319,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "新和庭園平面停車場",
+   "official": {
+    "address": "中華路2段416巷與416巷10弄交叉口",
+    "cars": 91,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "新和庭園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 1002930390,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002930390"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
@@ -383,7 +393,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 261,
@@ -397,14 +407,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "中正永昌停車場",
+   "official": {
+    "address": "汀州路1段137號旁空地",
+    "cars": 34,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日6,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "中正永昌停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 915548816,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/915548816"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -450,7 +470,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "青年公園高爾夫球場地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "國興路5號地下共2層",
+    "cars": 331,
+    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日4,800元/月，夜間(18-08)2,400元/月，機車全日300元/月，大型重型機車全日2,400元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "青年公園高爾夫球場地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3192426190,
@@ -824,6 +853,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

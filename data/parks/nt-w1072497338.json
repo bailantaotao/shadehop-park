@@ -210,7 +210,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 83,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 300,
@@ -224,14 +224,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "錦和運動公園停車場",
-   "opening_hours": null,
+   "name": "中和國民運動中心停車場",
+   "official": {
+    "address": "新北市中和區錦和路350之2號1樓、B1",
+    "cars": 83,
+    "fare": "小型車計時50元;小型車月租4000元;小型車計時10元;機車月租300元;",
+    "hours": "0~24時",
+    "match_m": 53,
+    "name": "中和國民運動中心停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 548111261,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/548111261"
    },
+   "osm_name": "錦和運動公園停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -701,6 +711,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

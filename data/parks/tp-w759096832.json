@@ -274,7 +274,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 85,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 194,
@@ -288,19 +288,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "花卉市場地下停車場",
-   "opening_hours": null,
+   "name": "台灣聯通興隆停車場",
+   "official": {
+    "address": "興隆路1段15號地上1、3層",
+    "cars": 85,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 29,
+    "name": "台灣聯通興隆停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4524318973,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4524318973"
    },
+   "osm_name": "花卉市場地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 17,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 352,
@@ -315,7 +325,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "溪洲街平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "汀州路4段與溪洲街交叉口",
+    "cars": 17,
+    "fare": "計時：20元/時，全程以半小時計費。月租：4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "溪洲街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "汎得企業",
    "osm": {
     "id": 356598084,
@@ -366,14 +385,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "義芳第一停車場",
-   "opening_hours": null,
+   "name": "義芳第二停車場",
+   "official": {
+    "address": "興隆路1段137巷88號旁空地",
+    "cars": 148,
+    "fare": "月租：3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 50,
+    "name": "義芳第二停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 8708471,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/8708471"
    },
+   "osm_name": "義芳第一停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -793,6 +822,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

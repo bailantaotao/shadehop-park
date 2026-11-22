@@ -246,7 +246,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 69,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
@@ -260,19 +260,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "富山八里商港一路停車場",
+   "official": {
+    "address": "新北市八里區商港一路與商港二路交叉口北側空地",
+    "cars": 69,
+    "fare": "小型車計時50元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 17,
+    "name": "富山八里商港一路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1568139995,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1568139995"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 72,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 275,
@@ -286,19 +296,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "八里停七停車場",
-   "opening_hours": null,
+   "name": "八里停七平面停車場",
+   "official": {
+    "address": "新北市八里區商港一路及商港六路交叉口",
+    "cars": 72,
+    "fare": "小型車計時20元;小型車月租1300元;身障車月租650元;",
+    "hours": "0~24時",
+    "match_m": 36,
+    "name": "八里停七平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 848343544,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/848343544"
    },
+   "osm_name": "八里停七停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 62,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 336,
@@ -312,19 +332,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times八里舊城路停車場",
-   "opening_hours": null,
+   "name": "八里區下庄公有零售市場附設停車場",
+   "official": {
+    "address": "新北市八里區舊城路19號B1",
+    "cars": 62,
+    "fare": "小型車計時20元;小型車月租4000元;",
+    "hours": "0~24時",
+    "match_m": 46,
+    "name": "八里區下庄公有零售市場附設停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1299807164,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299807164"
    },
+   "osm_name": "Times八里舊城路停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 220,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 380,
@@ -338,14 +368,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "八里區第一立體停車場",
-   "opening_hours": null,
+   "name": "八里第一立體停車場",
+   "official": {
+    "address": "新北市八里區舊城路12號",
+    "cars": 220,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2300元;身障車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 8,
+    "name": "八里第一立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 714659313,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714659313"
    },
+   "osm_name": "八里區第一立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -745,6 +785,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

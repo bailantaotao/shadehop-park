@@ -299,7 +299,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 207,
@@ -313,14 +313,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "忠孝五停車場",
+   "official": {
+    "address": "忠孝東路5段236巷27弄10號旁空地",
+    "cars": 33,
+    "fare": "70元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "忠孝五停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 597617486,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/597617486"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -403,7 +413,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 467,
@@ -417,14 +427,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 台北松信路停車場",
-   "opening_hours": null,
+   "name": "台北松信路停車場",
+   "official": {
+    "address": "松信路與虎林街120巷交叉口空地",
+    "cars": 49,
+    "fare": "計時：100元/時，停車全程以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 18,
+    "name": "台北松信路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 964323335,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/964323335"
    },
+   "osm_name": "Hi PARKING 台北松信路停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -798,6 +818,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

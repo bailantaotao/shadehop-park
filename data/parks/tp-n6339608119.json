@@ -274,6 +274,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "永建市場旁平面停車場",
+   "official": {
+    "address": "木柵路1段191巷內",
+    "cars": 18,
+    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計。",
+    "hours": "周一至周六 9時至17時",
+    "match_m": 5,
+    "name": "永建市場旁平面停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -285,7 +294,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 212,
    "capacity_disabled": "yes",
    "capacity_parent": "yes",
    "distance_m": 282,
@@ -300,7 +309,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "永建國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "木柵路1段311巷1號地下1至2層",
+    "cars": 212,
+    "fare": "計時：小型車(含大型重型機車)20元/時，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日4,200元/月，機車全日300元/月，大型重型機車全日4,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 41,
+    "name": "永建國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "山發物業股份有限公司",
    "osm": {
     "id": 5097128281,
@@ -726,6 +744,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

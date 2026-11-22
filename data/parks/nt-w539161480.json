@@ -215,7 +215,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 19,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 122,
@@ -229,19 +229,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times汐止福德路停車場",
+   "official": {
+    "address": "新北市汐止區福德路26號旁",
+    "cars": 19,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 43,
+    "name": "Times汐止福德路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1540237605,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1540237605"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 98,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 377,
@@ -256,7 +266,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "正記樟樹停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市汐止區樟樹一路155巷",
+    "cars": 98,
+    "fare": "小型車月租2600元;",
+    "hours": "0~24時",
+    "match_m": 13,
+    "name": "正記樟樹停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1113669135,
@@ -267,7 +286,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 408,
@@ -281,14 +300,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "汐止區福德段平面停車場",
+   "official": {
+    "address": "新北市汐止區湖前街2巷1號及康寧街474巷間",
+    "cars": 25,
+    "fare": "小型車計時30元;小型車月租2500元;身障車月租1250元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "汐止區福德段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1444907662,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1444907662"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -308,7 +337,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "忠厚市場地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市汐止區樟樹一路137巷26號B1",
+    "cars": 73,
+    "fare": "小型車計時20元;小型車月租3500元;重型機車計時20元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 33,
+    "name": "忠厚市場地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "俥亭",
    "osm": {
     "id": 10129713103,
@@ -734,6 +772,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -390,19 +390,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "師大路收費停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房師大3站停車場",
+   "official": {
+    "address": "師大路105巷11號",
+    "cars": 12,
+    "fare": "小型車：計時 120元/時，全程以半小時計;月租 全日12,000元",
+    "hours": "臨停：7時至23時59分前取車；月租：24小時",
+    "match_m": 3,
+    "name": "嘟嘟房師大3站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "臨停：7時至23時59分前取車；月租：24小時",
    "operator": null,
    "osm": {
     "id": 629020465,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/629020465"
    },
+   "osm_name": "師大路收費停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 165,
@@ -416,14 +426,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房師大3站停車場",
+   "official": {
+    "address": "師大路105巷11號",
+    "cars": 12,
+    "fare": "小型車：計時 120元/時，全程以半小時計;月租 全日12,000元",
+    "hours": "臨停：7時至23時59分前取車；月租：24小時",
+    "match_m": 16,
+    "name": "嘟嘟房師大3站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "臨停：7時至23時59分前取車；月租：24小時",
    "operator": null,
    "osm": {
     "id": 1574727728,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727728"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -443,7 +463,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "泰順街停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "泰順街60巷26號空地",
+    "cars": 5,
+    "fare": "月租：小型車全日5,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 0,
+    "name": "泰順街停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 629020466,
@@ -454,7 +483,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 87,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 229,
@@ -468,19 +497,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣捷通古亭停車場",
+   "official": {
+    "address": "羅斯福路3段37號",
+    "cars": 87,
+    "fare": "計時：80元/時，停車未滿1小時以1小時計；逾1小時以上者，未滿半小時以半小時計。月租：全日8,000元/月、日間7,000元/月(08-20)、夜間6,000元/月(20-08)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 59,
+    "name": "台灣捷通古亭停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1002356744,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1002356744"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 9,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 230,
@@ -494,14 +533,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times蒲城街平面停車場",
-   "opening_hours": null,
+   "name": "Times浦城街",
+   "official": {
+    "address": "浦城街1號旁空地",
+    "cars": 9,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "Times浦城街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 440646821,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440646821"
    },
+   "osm_name": "Times蒲城街平面停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -882,6 +931,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -104,7 +104,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 42,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 261,
@@ -119,7 +119,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "興偉承停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市新莊區新北大道7段498巷1號",
+    "cars": 42,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 14,
+    "name": "興偉承停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 442131567,
@@ -539,6 +548,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

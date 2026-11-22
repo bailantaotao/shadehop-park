@@ -365,7 +365,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 480,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 364,
@@ -379,14 +379,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "忠孝國中地下停車場",
-   "opening_hours": null,
+   "name": "板橋區忠孝國中地下停車場",
+   "official": {
+    "address": "新北市板橋區重慶路168號B1、B2",
+    "cars": 480,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4000元;小型車月租3200元;機車計次20元;機車月租300元;機車月租240元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 41,
+    "name": "板橋區忠孝國中地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1100987529,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1100987529"
    },
+   "osm_name": "忠孝國中地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -443,7 +453,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 64,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 441,
@@ -457,19 +467,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "新北市板橋府中站汽、機車平面停車場",
+   "official": {
+    "address": "新北市板橋區縣民大道1段與府中路交叉口及縣民大道1段與民族路交叉口",
+    "cars": 64,
+    "fare": "小型車計時100元;小型車月租1萬元;機車計次100元;機車月租1000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "新北市板橋府中站汽、機車平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1050774064,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1050774064"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 841,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 551,
@@ -483,14 +503,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新北市市民廣場地下停車場",
-   "opening_hours": null,
+   "name": "市民廣場地下停車場",
+   "official": {
+    "address": "新北市板橋區縣民大道二段22號B1-B3",
+    "cars": 841,
+    "fare": "小型車計時30元;小型車計時40元;小型車計時20元;小型車月租4000元;身障車月租2150元;重型機車計時30元;重型機車計時40元;重型機車計時20元;重型機車月租1500元;機車計時10元;機車月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "市民廣場地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "台灣國際開發事業有限公司",
    "osm": {
     "id": 808480742,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/808480742"
    },
+   "osm_name": "新北市市民廣場地下停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -877,6 +907,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

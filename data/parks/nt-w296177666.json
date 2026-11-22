@@ -295,7 +295,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 361,
@@ -309,19 +309,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times新莊中正路第3停車場",
+   "official": {
+    "address": "新北市新莊區中正路196號旁停車場",
+    "cars": 24,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 13,
+    "name": "Times新莊中正路第3停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1060408476,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1060408476"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 16,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 470,
@@ -335,14 +345,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times新莊新泰路停車場",
+   "official": {
+    "address": "新北市新莊區新泰路122號旁空地",
+    "cars": 16,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "Times新莊新泰路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1019533724,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019533724"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
@@ -742,6 +762,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

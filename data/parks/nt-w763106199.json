@@ -342,7 +342,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 456,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 23,
@@ -356,14 +356,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "鷺江停車場",
-   "opening_hours": null,
+   "name": "蘆洲區鷺江立體停車場",
+   "official": {
+    "address": "新北市蘆洲區民權路26號",
+    "cars": 456,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3500元;身障車月租2000元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 5,
+    "name": "蘆洲區鷺江立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 448583589,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/448583589"
    },
+   "osm_name": "鷺江停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -394,7 +404,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 47,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 243,
@@ -408,14 +418,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "蘆洲區民權平面停車場",
+   "official": {
+    "address": "新北市蘆洲區民權路6號旁",
+    "cars": 47,
+    "fare": "小型車計時30元;小型車月租2450元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 4,
+    "name": "蘆洲區民權平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 770610810,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/770610810"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -835,6 +855,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -206,7 +206,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 15,
@@ -220,19 +220,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "市地重劃B區臨時平面停車場",
+   "official": {
+    "address": "新北市金山區仁愛路與福德街交叉口路口市地重劃區",
+    "cars": 20,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租1200元;身障車月租600元;",
+    "hours": "0~24時",
+    "match_m": 35,
+    "name": "市地重劃B區臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1055740472,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1055740472"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 82,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 43,
@@ -246,14 +256,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣聯通金山停車場",
+   "official": {
+    "address": "新北市金山區忠孝一路76號對面空地",
+    "cars": 82,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "台灣聯通金山停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1485652441,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1485652441"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -272,19 +292,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times金山老街停車場",
+   "official": {
+    "address": "新北市金山區忠孝一路52號對面",
+    "cars": 13,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 4,
+    "name": "Times金山老街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 1485652304,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1485652304"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 13,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 102,
@@ -298,14 +328,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times金山老街停車場",
+   "official": {
+    "address": "新北市金山區忠孝一路52號對面",
+    "cars": 13,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 36,
+    "name": "Times金山老街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1492969240,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1492969240"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -731,6 +771,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

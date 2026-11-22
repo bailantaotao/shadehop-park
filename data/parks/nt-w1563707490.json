@@ -197,7 +197,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 46,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 602,
@@ -211,19 +211,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "廣停五平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛一路及民富街交叉口",
+    "cars": 46,
+    "fare": "小型車計時20元;小型車月租1000元;身障車月租800元;",
+    "hours": "0~24時",
+    "match_m": 40,
+    "name": "廣停五平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 570835117,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/570835117"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 603,
@@ -237,14 +247,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "廣停六平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛一路及民富街交叉口",
+    "cars": 48,
+    "fare": "小型車計時20元;小型車月租1000元;身障車月租800元;",
+    "hours": "0~24時",
+    "match_m": 43,
+    "name": "廣停六平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 570835119,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/570835119"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -606,6 +626,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -337,7 +337,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 97,
@@ -351,14 +351,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通停車場",
-   "opening_hours": null,
+   "name": "台灣聯通新興停車場",
+   "official": {
+    "address": "林森北路522號",
+    "cars": 35,
+    "fare": "小型車：計時 100元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計;月租 全日10,000元，日間9,000元(08時~20時)，夜間8,000元(20時~08時)",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "台灣聯通新興停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 5110489759,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5110489759"
    },
+   "osm_name": "台灣聯通停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -389,7 +399,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 9,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 221,
@@ -403,19 +413,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "ViVi Park",
-   "opening_hours": null,
+   "name": "168停車聯盟-中山場",
+   "official": {
+    "address": "中山北路2段105號旁空地",
+    "cars": 9,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "168停車聯盟-中山場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 948881124,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948881124"
    },
+   "osm_name": "ViVi Park",
    "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 89,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 224,
@@ -429,14 +449,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通",
-   "opening_hours": null,
+   "name": "台灣捷通林森停車場",
+   "official": {
+    "address": "錦州街46、48號地下1層，林森北路413號、錦州街46、48、50號地下2層",
+    "cars": 89,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 55,
+    "name": "台灣捷通林森停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣聯通停車場開發股份有限公司",
    "osm": {
     "id": 5110489314,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5110489314"
    },
+   "osm_name": "台灣聯通",
    "verified_at": "2026-11-07"
   },
   {
@@ -456,7 +486,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "永盛公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "中山北路2段93巷30號地下",
+    "cars": 224,
+    "fare": "小型車：計時 50元/時(08時~24時)，30元/時，全程以半小時計；月租 全日4,800元。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 27,
+    "name": "永盛公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 916913293,
@@ -875,6 +914,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

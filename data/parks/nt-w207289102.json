@@ -324,7 +324,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 71,
@@ -338,19 +338,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "樹林區公所平面停車場",
+   "official": {
+    "address": "新北市樹林區鎮前街93號樹林區公所旁",
+    "cars": 37,
+    "fare": "小型車計時30元;小型車月租3000元;機車計次30元;",
+    "hours": "0~24時",
+    "match_m": 43,
+    "name": "樹林區公所平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 263648603,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/263648603"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 121,
@@ -364,14 +374,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "樹林區公有臨時停車場",
-   "opening_hours": null,
+   "name": "樹林區公所平面停車場",
+   "official": {
+    "address": "新北市樹林區鎮前街93號樹林區公所旁",
+    "cars": 37,
+    "fare": "小型車計時30元;小型車月租3000元;機車計次30元;",
+    "hours": "0~24時",
+    "match_m": 23,
+    "name": "樹林區公所平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 206802199,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/206802199"
    },
+   "osm_name": "樹林區公有臨時停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -390,19 +410,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "樹林車站前站B區停車場",
+   "official": {
+    "address": "新北市樹林區樹林火車站/鎮前街左右二側",
+    "cars": null,
+    "fare": "機車計次40元;機車月租800元;身障機車月租400元;",
+    "hours": "0~24時",
+    "match_m": 33,
+    "name": "樹林車站前站B區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 263648602,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/263648602"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 264,
@@ -416,14 +446,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times板橋滿平街停車場",
+   "official": {
+    "address": "新北市板橋區滿平街25號旁",
+    "cars": 10,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 48,
+    "name": "Times板橋滿平街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 600938635,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/600938635"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -817,6 +857,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

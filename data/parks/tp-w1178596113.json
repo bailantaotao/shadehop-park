@@ -343,7 +343,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 249,
@@ -357,19 +357,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "天成車業服務股份有限公司瑞二停車場",
+   "official": {
+    "address": "舊宗路2段171巷與瑞湖街交叉口空地",
+    "cars": 48,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 22,
+    "name": "天成車業服務股份有限公司瑞二停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1081532409,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1081532409"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 88,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 362,
@@ -383,14 +393,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "Times 陽光街",
+   "official": {
+    "address": "陽光街381號旁空地",
+    "cars": 88,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 23,
+    "name": "Times 陽光街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "Yangguang Jie Parking",
    "osm": {
     "id": 8146242008,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/8146242008"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -836,6 +856,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

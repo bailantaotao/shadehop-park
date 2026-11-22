@@ -237,6 +237,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "深坑兒童遊戲場地下停車場",
+   "official": {
+    "address": "新北市深坑區平埔街3號B1、B2",
+    "cars": 168,
+    "fare": "小型車計時20元;小型車計時40元;小型車月租3000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "深坑兒童遊戲場地下停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -262,7 +271,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "深坑平埔街全聯停車場",
+   "name": "吉順新深坑老街停車場",
+   "official": {
+    "address": "新北市深坑區平埔街22巷19號旁空地",
+    "cars": 71,
+    "fare": "小型車計時80元;小型車計時150元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 17,
+    "name": "吉順新深坑老街停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -270,6 +288,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/545470333"
    },
+   "osm_name": "深坑平埔街全聯停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -288,7 +307,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "深坑老街停車場",
+   "name": "吉順新深坑老街停車場",
+   "official": {
+    "address": "新北市深坑區平埔街22巷19號旁空地",
+    "cars": 71,
+    "fare": "小型車計時80元;小型車計時150元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 37,
+    "name": "吉順新深坑老街停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -296,6 +324,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/545470332"
    },
+   "osm_name": "深坑老街停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -326,7 +355,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 121,
@@ -340,14 +369,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房深坑站停車場",
+   "official": {
+    "address": "新北市深坑區北深路2段142號旁停車場",
+    "cars": 12,
+    "fare": "小型車計時100元;",
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "嘟嘟房深坑站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 3098174244,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3098174244"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -741,6 +780,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

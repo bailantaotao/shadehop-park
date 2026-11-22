@@ -303,7 +303,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 245,
@@ -317,19 +317,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "藏壽司停車場",
-   "opening_hours": null,
+   "name": "博客停車場開發股份有限公司藏壽司思源場停車場",
+   "official": {
+    "address": "新北市新莊區思源路168號",
+    "cars": 26,
+    "fare": "小型車計時50元;小型車計時60元;",
+    "hours": "0~24時",
+    "match_m": 50,
+    "name": "博客停車場開發股份有限公司藏壽司思源場停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1090916269,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1090916269"
    },
+   "osm_name": "藏壽司停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 116,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 366,
@@ -343,19 +353,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times  新莊福德一街停車場",
+   "official": {
+    "address": "新北市新莊區福德一街33號旁",
+    "cars": 116,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "Times  新莊福德一街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1549402151,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402151"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 154,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 485,
@@ -369,14 +389,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "湯城三期二站停車場",
+   "official": {
+    "address": "新北市三重區重新路5段609巷旁空地",
+    "cars": 154,
+    "fare": "小型車計時50元;小型車月租6000元;機車計時20元;機車月租800元;",
+    "hours": "0~24時",
+    "match_m": 35,
+    "name": "湯城三期二站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 232886916,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/232886916"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -769,6 +799,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -494,19 +494,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "日月亭松山富邦場",
-   "opening_hours": null,
+   "name": "富邦松山停車場",
+   "official": {
+    "address": "基隆路1段98號地下2至4層",
+    "cars": 144,
+    "fare": "月租：小型車全日6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "富邦松山停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 12424853901,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12424853901"
    },
+   "osm_name": "日月亭松山富邦場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 226,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 322,
@@ -521,7 +531,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "松山高中地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "基隆路1段156號地下",
+    "cars": 226,
+    "fare": "計時：週一~週五30元/時(08-20)，10元/時(20-08)，週六、週日、行政機關放假之紀念日與民俗日30元/時(08-09)，60元/時(09-19)，30元/時(19-20)，10元/時(20-08)，全程以半小時計。月租：小型車全日5,760元/月，大型重機2,880元/月。本場常因配合大巨蛋活動調整費率為80元/時，請參閱現場費率調整公告。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "松山高中地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 5249515030,
@@ -532,7 +551,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 226,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 328,
@@ -546,14 +565,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "松山高中地下停車場",
+   "official": {
+    "address": "基隆路1段156號地下",
+    "cars": 226,
+    "fare": "計時：週一~週五30元/時(08-20)，10元/時(20-08)，週六、週日、行政機關放假之紀念日與民俗日30元/時(08-09)，60元/時(09-19)，30元/時(19-20)，10元/時(20-08)，全程以半小時計。月租：小型車全日5,760元/月，大型重機2,880元/月。本場常因配合大巨蛋活動調整費率為80元/時，請參閱現場費率調整公告。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "松山高中地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 5340382964,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5340382964"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -584,7 +613,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 333,
@@ -598,14 +627,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 台北永吉路停車場",
-   "opening_hours": null,
+   "name": "台北永吉路停車場",
+   "official": {
+    "address": "永吉路120巷83號虎林街120巷交叉口",
+    "cars": 40,
+    "fare": "計時：小型車120元/時，停車全程以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "台北永吉路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 764466776,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/764466776"
    },
+   "osm_name": "Hi PARKING 台北永吉路停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -979,6 +1018,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

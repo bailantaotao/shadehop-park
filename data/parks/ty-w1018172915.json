@@ -499,7 +499,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "假日花市停車場",
+   "official": {
+    "address": "桃園市桃園區萬山路190號對面",
+    "cars": null,
+    "fare": "計時30元/時",
+    "hours": null,
+    "match_m": 54,
+    "name": "假日花市停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "假日花市停車場",
    "osm": {
@@ -507,6 +516,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/911543866"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -525,7 +535,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
+   "name": "創新園區二期停車場",
+   "official": {
+    "address": "桃園市桃園區成功路三段1號",
+    "cars": null,
+    "fare": "計時:每小時20元當日最高100元月租2400元季繳6000元",
+    "hours": null,
+    "match_m": 7,
+    "name": "創新園區二期停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "阜爾運通股份有限公司",
    "osm": {
@@ -533,6 +552,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1312437664"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
@@ -932,6 +952,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

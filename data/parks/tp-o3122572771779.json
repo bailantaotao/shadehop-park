@@ -255,7 +255,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 160,
@@ -269,19 +269,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "USPACE南港研究院路停車場",
+   "official": {
+    "address": "研究院路1段101巷16弄8號旁",
+    "cars": 34,
+    "fare": "計時：120元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "USPACE南港研究院路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 970993365,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/970993365"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 178,
@@ -295,14 +305,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "USPACE南港研究院路停車場",
+   "official": {
+    "address": "研究院路1段101巷16弄8號旁",
+    "cars": 34,
+    "fare": "計時：120元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 42,
+    "name": "USPACE南港研究院路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1563979101,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1563979101"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -333,7 +353,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 421,
@@ -347,14 +367,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房中南站",
-   "opening_hours": null,
+   "name": "通通停南港中南停車場",
+   "official": {
+    "address": "中南街42巷22號之空地",
+    "cars": 26,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "通通停南港中南停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 1042128037,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1042128037"
    },
+   "osm_name": "嘟嘟房中南站",
    "verified_at": "2026-11-07"
   },
   {
@@ -780,6 +810,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

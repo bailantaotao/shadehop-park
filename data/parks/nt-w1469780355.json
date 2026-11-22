@@ -239,7 +239,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 2,
@@ -253,19 +253,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城區明德平面停車場",
+   "official": {
+    "address": "新北市土城區延吉街及永豐路交界處",
+    "cars": 40,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3000元;身障車月租1300元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 23,
+    "name": "土城區明德平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1453886956,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1453886956"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 23,
@@ -279,14 +289,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城區明德平面停車場",
+   "official": {
+    "address": "新北市土城區延吉街及永豐路交界處",
+    "cars": 40,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3000元;身障車月租1300元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 6,
+    "name": "土城區明德平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 914493351,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/914493351"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -369,7 +389,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 102,
    "capacity_disabled": "2",
    "capacity_parent": null,
    "distance_m": 370,
@@ -383,14 +403,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城區永豐平面停車場",
+   "official": {
+    "address": "新北市土城區立德路113號",
+    "cars": 102,
+    "fare": "小型車計時30元;小型車月租3600元;身障車月租1800元;",
+    "hours": "0~24時",
+    "match_m": 2,
+    "name": "土城區永豐平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "宜舍停車場(永豐停車場)",
    "osm": {
     "id": 1335087507,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1335087507"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -770,6 +800,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -372,7 +372,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 256,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 346,
@@ -386,19 +386,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "三腳渡平面停車場",
-   "opening_hours": null,
+   "name": "劍潭抽水站堤外平面停車場",
+   "official": {
+    "address": "通河街323巷底",
+    "cars": 256,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計，全日雙月票6,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：8時-17時",
+    "match_m": 23,
+    "name": "劍潭抽水站堤外平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：8時-17時",
    "operator": null,
    "osm": {
     "id": 230723905,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/230723905"
    },
+   "osm_name": "三腳渡平面停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 124,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 373,
@@ -412,19 +422,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "三腳渡平面停車場",
+   "official": {
+    "address": "劍潭抽水站堤外",
+    "cars": 124,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計，全日雙月票6,000元。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：09-17",
+    "match_m": 21,
+    "name": "三腳渡平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 230723904,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/230723904"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 62,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 470,
@@ -438,14 +458,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "福港街平面停車站",
-   "opening_hours": null,
+   "name": "福港街平面停車場",
+   "official": {
+    "address": "福港街149巷2號對面",
+    "cars": 62,
+    "fare": "計時：小型車20元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "福港街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 377457829,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/377457829"
    },
+   "osm_name": "福港街平面停車站",
    "verified_at": "2026-11-07"
   },
   {
@@ -865,6 +895,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -520,7 +520,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "松壽廣場地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "松智路15號（地下共3層）",
+    "cars": 446,
+    "fare": "小型車：計時 週一至週五30元/時(09-22)，10元/時(22-09)，週六、日及行政機關放假之紀念日與民俗日60元/時(09-22)，10元/時(22-09)，停車全程以半小時計；月租 全日4,200元，夜間1,000元(19-08)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 47,
+    "name": "松壽廣場地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 2847707207,
@@ -598,6 +607,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "台北君悅酒店停車場",
+   "official": {
+    "address": "松壽路2號地下1至2層",
+    "cars": 490,
+    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日6,800元/月。半年租：小型車全日36,720元/半年。年租：小型車全日65,280元/年。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "台北君悅酒店停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -609,7 +627,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 130,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 390,
@@ -623,14 +641,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "國泰置地廣場停車場",
-   "opening_hours": null,
+   "name": "微風信義地下停車場",
+   "official": {
+    "address": "忠孝東路5段68號地下3層",
+    "cars": 130,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "微風信義地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 6741640233,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/6741640233"
    },
+   "osm_name": "國泰置地廣場停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -650,7 +678,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "信義廣場地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "信義路5段11號地下(地下共2層)",
+    "cars": 369,
+    "fare": "計時：小型車(含大型重型機車)週一至週五50元/時(08-22)，週六至週日及政府行政機關放假之紀念日、民俗節日60元/時(08-22)，停車全程以半小時計，每日(22-08)10元。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日4,800元/月，日間(07-20)3,500元/月，夜間(21-08)500元/月，機車全日300元/月，大型重型機車全日2,400元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 52,
+    "name": "信義廣場地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 12388351796,
@@ -1024,6 +1061,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

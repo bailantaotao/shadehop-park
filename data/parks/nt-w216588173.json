@@ -307,7 +307,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 99,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 102,
@@ -321,19 +321,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times板橋林家花園停車場",
+   "official": {
+    "address": "新北市板橋區西門街40號對面",
+    "cars": 99,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 25,
+    "name": "Times板橋林家花園停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 317123810,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317123810"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 76,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 163,
@@ -347,14 +357,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "聖若望平面停車場",
+   "official": {
+    "address": "新北市板橋區南雅西路2段7巷底",
+    "cars": 76,
+    "fare": "小型車計時30元;小型車月租3000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "聖若望平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 218099549,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/218099549"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -425,14 +445,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "永琦停車場",
-   "opening_hours": null,
+   "name": "Times板橋北門街停車場",
+   "official": {
+    "address": "新北市板橋區北門街25號旁",
+    "cars": 45,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 28,
+    "name": "Times板橋北門街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "永琦資產管理",
    "osm": {
     "id": 317607080,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317607080"
    },
+   "osm_name": "永琦停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -800,6 +830,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

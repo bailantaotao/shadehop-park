@@ -126,7 +126,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "青草湖停車場",
+   "name": "青草湖立體停車場",
+   "official": {
+    "address": "新竹市東區明湖里明湖路1075巷101號",
+    "cars": null,
+    "fare": "當日計次：每次30元",
+    "hours": null,
+    "match_m": 16,
+    "name": "青草湖立體停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -134,6 +143,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/281821770"
    },
+   "osm_name": "青草湖停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -178,7 +188,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "明湖公園停車場",
+   "name": "明湖公園平面停車場",
+   "official": {
+    "address": "新竹市東區柴橋里明湖路775巷28號",
+    "cars": null,
+    "fare": "計次:30元/當日當次",
+    "hours": null,
+    "match_m": 15,
+    "name": "明湖公園平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -186,6 +205,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/372474325"
    },
+   "osm_name": "明湖公園停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -649,6 +669,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

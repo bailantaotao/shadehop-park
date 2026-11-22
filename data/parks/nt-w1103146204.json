@@ -116,7 +116,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 454,
@@ -130,19 +130,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "林口區停七平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛路1段與中正路57巷交叉口東側",
+    "cars": 38,
+    "fare": "小型車計次60元;小型車月租1800元;身障車月租1000元;重型機車計次60元;",
+    "hours": "0~24時",
+    "match_m": 3,
+    "name": "林口區停七平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1103146201,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1103146201"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 497,
@@ -156,14 +166,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "林口區停六平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛路1段及中正路57巷交叉口西側",
+    "cars": 36,
+    "fare": "小型車計次60元;小型車月租1800元;身障車月租1000元;重型機車計次60元;",
+    "hours": "0~24時",
+    "match_m": 0,
+    "name": "林口區停六平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1103146202,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1103146202"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -220,7 +240,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 67,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 622,
@@ -234,14 +254,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "林口一停車場",
-   "opening_hours": null,
+   "name": "林口區行政段226地號平面停車場",
+   "official": {
+    "address": "新北市林口區中正路102號對面",
+    "cars": 67,
+    "fare": "小型車計時20元;小型車月租2000元;身障車月租1500元;重型機車計時20元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "林口區行政段226地號平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 259017510,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/259017510"
    },
+   "osm_name": "林口一停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -603,6 +633,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

@@ -134,7 +134,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 217,
@@ -148,14 +148,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "汐止區福德段平面停車場",
+   "official": {
+    "address": "新北市汐止區湖前街2巷1號及康寧街474巷間",
+    "cars": 25,
+    "fare": "小型車計時30元;小型車月租2500元;身障車月租1250元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "汐止區福德段平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1444907662,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1444907662"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -186,7 +196,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 44,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 412,
@@ -200,19 +210,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "都市空間中興停車場",
+   "official": {
+    "address": "新北市汐止區工建路356號旁",
+    "cars": 44,
+    "fare": "小型車計時100元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 29,
+    "name": "都市空間中興停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1106989951,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1106989951"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 19,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 415,
@@ -226,14 +246,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times汐止福德路停車場",
+   "official": {
+    "address": "新北市汐止區福德路26號旁",
+    "cars": 19,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 43,
+    "name": "Times汐止福德路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1540237605,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1540237605"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -647,6 +677,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

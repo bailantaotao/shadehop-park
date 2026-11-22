@@ -278,7 +278,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 115,
@@ -292,19 +292,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "中華道明會停車場",
+   "official": {
+    "address": "吉林路378號地下1層",
+    "cars": 6,
+    "fare": "計時：120元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 32,
+    "name": "中華道明會停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 944580785,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/944580785"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 207,
@@ -318,19 +328,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "松江站停車場",
+   "official": {
+    "address": "錦州街175巷11號空地",
+    "cars": 5,
+    "fare": "計時：小型車200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日20,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 0,
+    "name": "松江站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 764471352,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/764471352"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 214,
@@ -344,19 +364,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "NaviPark 農安街",
+   "official": {
+    "address": "農安街151號旁空地",
+    "cars": 29,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "NaviPark 農安街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 529491032,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/529491032"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 217,
@@ -370,19 +400,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新生高架橋下停車場",
-   "opening_hours": null,
+   "name": "新生高架(錦州街-民權東路)",
+   "official": {
+    "address": "新生北路1段新生高架(錦州街-民權東路)",
+    "cars": 50,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。免費停車：機車。",
+    "hours": "週一至週六07-2130，週日09-17。",
+    "match_m": 35,
+    "name": "新生高架(錦州街-民權東路)",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六07-2130，週日09-17。",
    "operator": null,
    "osm": {
     "id": 661829408,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/661829408"
    },
+   "osm_name": "新生高架橋下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 234,
@@ -396,14 +436,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "NaviPark 農安街",
+   "official": {
+    "address": "農安街151號旁空地",
+    "cars": 29,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "NaviPark 農安街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 529491041,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/529491041"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -803,6 +853,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

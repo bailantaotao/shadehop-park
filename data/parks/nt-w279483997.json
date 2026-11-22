@@ -190,14 +190,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "瑞芳國小假日停車場",
-   "opening_hours": null,
+   "name": "瑞芳國民小學停車場",
+   "official": {
+    "address": "新北市瑞芳區中山路2號B1",
+    "cars": 13,
+    "fare": "小型車計時20元;小型車月租1000元;",
+    "hours": "計時：國定例假日8~16時、月租：每日夜間19時至隔日7時",
+    "match_m": 57,
+    "name": "瑞芳國民小學停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "計時：國定例假日8~16時、月租：每日夜間19時至隔日7時",
    "operator": null,
    "osm": {
     "id": 2837088135,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/2837088135"
    },
+   "osm_name": "瑞芳國小假日停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -228,7 +238,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 66,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 203,
@@ -242,14 +252,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "後火車站收費平面停車場",
-   "opening_hours": null,
+   "name": "瑞芳區後火車站平面停車場",
+   "official": {
+    "address": "新北市瑞芳區瑞芳街54號對面",
+    "cars": 66,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2000元;身障車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 20,
+    "name": "瑞芳區後火車站平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 710697929,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/710697929"
    },
+   "osm_name": "後火車站收費平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -689,6 +709,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

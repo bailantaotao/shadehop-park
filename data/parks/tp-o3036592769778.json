@@ -242,7 +242,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 15,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 128,
@@ -256,14 +256,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "City Parking停車場",
-   "opening_hours": null,
+   "name": "永康停車場",
+   "official": {
+    "address": "信義路2段243巷與信義路2段交叉口旁",
+    "cars": 15,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日8,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "永康停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 391063766,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/391063766"
    },
+   "osm_name": "City Parking停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -294,7 +304,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 11,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 192,
@@ -308,14 +318,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 台北東門連雲停車場",
-   "opening_hours": null,
+   "name": "東門連雲平面停車場",
+   "official": {
+    "address": "臨沂街75巷31號",
+    "cars": 11,
+    "fare": "小型車：計時 160元/時，停車全程以半小時計；月租 全日12,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "東門連雲平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "和泰汽車",
    "osm": {
     "id": 1466666865,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666865"
    },
+   "osm_name": "Hi PARKING 台北東門連雲停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -346,7 +366,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 263,
@@ -360,19 +380,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房仁愛新生2站停車場",
+   "official": {
+    "address": "仁愛路2段100號",
+    "cars": 20,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 41,
+    "name": "嘟嘟房仁愛新生2站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1322083834,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1322083834"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 275,
@@ -386,14 +416,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房仁愛新生2站停車場",
+   "official": {
+    "address": "仁愛路2段100號",
+    "cars": 20,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "嘟嘟房仁愛新生2站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1425491824,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1425491824"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -767,6 +807,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

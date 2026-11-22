@@ -312,7 +312,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 224,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -326,14 +326,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "樹林長壽公園地下停車場",
-   "opening_hours": null,
+   "name": "樹林區長壽公園地下停車場",
+   "official": {
+    "address": "新北市樹林區樹德街40號B1~B3",
+    "cars": 224,
+    "fare": "小型車計時30元;小型車月租3600元;身障車月租1800元;機車計次20元;機車月租月租300元;身障機車月租150元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "樹林區長壽公園地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1416219232,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1416219232"
    },
+   "osm_name": "樹林長壽公園地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -352,14 +362,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停七",
-   "opening_hours": null,
+   "name": "Times樹林復興路第2停車場",
+   "official": {
+    "address": "新北市樹林區復興路227號旁",
+    "cars": 6,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "Times樹林復興路第2停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 235917720,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/235917720"
    },
+   "osm_name": "停七",
    "verified_at": "2026-11-07"
   },
   {
@@ -404,19 +424,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "樹林車站前站B區停車場",
+   "official": {
+    "address": "新北市樹林區樹林火車站/鎮前街左右二側",
+    "cars": null,
+    "fare": "機車計次40元;機車月租800元;身障機車月租400元;",
+    "hours": "0~24時",
+    "match_m": 33,
+    "name": "樹林車站前站B區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 263648602,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/263648602"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 244,
@@ -430,19 +460,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "樹林車站前站A區停車場",
+   "official": {
+    "address": "新北市樹林區樹林火車站/臨鎮前街左右2側",
+    "cars": 56,
+    "fare": "小型車計時80元;小型車月租8000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "樹林車站前站A區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1507487007,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1507487007"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 276,
@@ -456,14 +496,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "樹林區公所平面停車場",
+   "official": {
+    "address": "新北市樹林區鎮前街93號樹林區公所旁",
+    "cars": 37,
+    "fare": "小型車計時30元;小型車月租3000元;機車計次30元;",
+    "hours": "0~24時",
+    "match_m": 43,
+    "name": "樹林區公所平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 263648603,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/263648603"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -837,6 +887,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

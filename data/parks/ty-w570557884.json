@@ -310,7 +310,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中山地下停車場",
+   "name": "嘟嘟房龜山公所站停車場",
+   "official": {
+    "address": "桃園市龜山區中山街26號旁B1-B2",
+    "cars": null,
+    "fare": "20/小時(00-00)",
+    "hours": null,
+    "match_m": 33,
+    "name": "嘟嘟房龜山公所站停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "公有中山地下停車場",
    "osm": {
@@ -318,6 +327,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/554582058"
    },
+   "osm_name": "中山地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -815,6 +825,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -368,7 +368,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 46,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 33,
@@ -382,14 +382,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房瑞安站",
-   "opening_hours": null,
+   "name": "台北瑞安停車場",
+   "official": {
+    "address": "和平東路2段89號旁空地",
+    "cars": 46,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "台北瑞安停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 6889839,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/6889839"
    },
+   "osm_name": "嘟嘟房瑞安站",
    "verified_at": "2026-11-07"
   },
   {
@@ -420,7 +430,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 730,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 213,
@@ -435,7 +445,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "龍門國中地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "建國南路2段269號地下",
+    "cars": 730,
+    "fare": "小型車(含大型重型機車)：計時 30元/時，停車全程以半小時計；月租 全日4,320元，日間2,700元(07時~19時)，夜間1,800元(19時~08時)，大型重機2,160元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 41,
+    "name": "龍門國中地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 834673867,
@@ -446,7 +465,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 11,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 321,
@@ -460,14 +479,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "禾典新生站",
-   "opening_hours": null,
+   "name": "驛馬站收費停車場(新生站)",
+   "official": {
+    "address": "和平東路2段18巷6號對面空地",
+    "cars": 11,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月，日間(08-18)8,000元/月，夜間(18-08)6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "驛馬站收費停車場(新生站)",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 531660303,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/531660303"
    },
+   "osm_name": "禾典新生站",
    "verified_at": "2026-11-07"
   },
   {
@@ -486,7 +515,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "正好停 科技大樓地下場",
+   "name": "科技大樓地下停車場",
+   "official": {
+    "address": "復興南路2段228-230號地上2至地下4層",
+    "cars": 113,
+    "fare": "計時：小型車(含大型重型機車)50元/時(09-21)、10元/時(21-09)，機車10元/時，當日單次停車最高收費上限30元/次，隔日另計，以00時為基準，停車全程以半小時計，自行車：5元/時，當日當次上限10元，隔日另計。月租：小型車全日5,760元/月，機車全日300元/月，大型重型機車全日2,880元/月，自行車全日月票150元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 36,
+    "name": "科技大樓地下停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "正好停",
    "osm": {
@@ -494,11 +532,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13912360479"
    },
+   "osm_name": "正好停 科技大樓地下場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 4,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 374,
@@ -512,14 +551,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "博客停車",
-   "opening_hours": null,
+   "name": "博客停車場科技大樓站",
+   "official": {
+    "address": "和平東路2段118巷2-2號旁",
+    "cars": 4,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "博客停車場科技大樓站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 438301751,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/438301751"
    },
+   "osm_name": "博客停車",
    "verified_at": "2026-11-07"
   }
  ],
@@ -893,6 +942,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -181,7 +181,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 112,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 439,
@@ -196,7 +196,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "陽明山第二停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "陽金公路(陽明山國家公園遊客服務中心對面)",
+    "cars": 112,
+    "fare": "計時：小型車(含大型重型機車)週一至週五20元/時，週六至週日及政府行政機關放假之紀念日、民俗節日30元/時，大客車週一至週五40元/時，週六至週日及政府行政機關放假之紀念日、民俗節日60元/時，停車全程以半小時計，收費時段為每日7時至19時（其餘時段開放免費停車）。計次：機車20元/次。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 55,
+    "name": "陽明山第二停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 34921725,
@@ -648,6 +657,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

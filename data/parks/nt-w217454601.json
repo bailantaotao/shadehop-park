@@ -287,7 +287,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 107,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 67,
@@ -301,14 +301,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "民生花市平面停車場",
+   "official": {
+    "address": "新北市板橋區民生路2段200及207號對面",
+    "cars": 107,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租3500元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 5,
+    "name": "民生花市平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 262972268,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/262972268"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -339,7 +349,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 353,
@@ -353,14 +363,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "板新觀光停車場",
+   "official": {
+    "address": "新北市板橋區觀光街19號對面空地",
+    "cars": 6,
+    "fare": "小型車計時100元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 27,
+    "name": "板新觀光停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1474846025,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846025"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -812,6 +832,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

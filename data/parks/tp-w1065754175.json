@@ -212,7 +212,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 46,
@@ -226,19 +226,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "臺北市內湖區內湖國民小學孝悌樓地下停車場",
+   "official": {
+    "address": "內湖路2段41號地下1層",
+    "cars": 49,
+    "fare": "月租：小型車全日2,000元/月。於抽得車位後繳交停車費及租用保證金1期新臺幣5,000元。",
+    "hours": "周一至周五晚間6時30分起至翌日早上6時30分止及例假日全天",
+    "match_m": 18,
+    "name": "臺北市內湖區內湖國民小學孝悌樓地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周五晚間6時30分起至翌日早上6時30分止及例假日全天",
    "operator": null,
    "osm": {
     "id": 1065754178,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1065754178"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 245,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 275,
@@ -253,7 +263,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "港富立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "內湖路1段737巷50弄32號",
+    "cars": 245,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日3,600元，夜間2,000元(20-08)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "港富立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 206983525,
@@ -264,7 +283,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 311,
@@ -278,19 +297,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "便利停車場港墘站",
+   "official": {
+    "address": "內湖路1段596號",
+    "cars": 12,
+    "fare": "計時：小型車60元/時(08-22)、10元/時(22-08)，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "便利停車場港墘站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 905032865,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/905032865"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 335,
@@ -304,14 +333,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "便利停車場港墘站",
+   "official": {
+    "address": "內湖路1段596號",
+    "cars": 12,
+    "fare": "計時：小型車60元/時(08-22)、10元/時(22-08)，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 34,
+    "name": "便利停車場港墘站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1474846090,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846090"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -731,6 +770,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

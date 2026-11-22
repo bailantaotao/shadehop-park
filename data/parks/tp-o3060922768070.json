@@ -314,7 +314,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 194,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 371,
@@ -329,7 +329,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "嘉興公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "嘉興街373號地下室(共3層)",
+    "cars": 194,
+    "fare": "小型車：計時 30元/時，全程以半小時計；月租 全日4,800元，大型重機2,400元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 35,
+    "name": "嘉興公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 507996671,
@@ -340,7 +349,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 439,
@@ -354,19 +363,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "33046Times信安街平面停車場",
-   "opening_hours": null,
+   "name": "Times信安街",
+   "official": {
+    "address": "信安街162號旁",
+    "cars": 5,
+    "fare": "計時：小型車200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "Times信安街",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 727408925,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/727408925"
    },
+   "osm_name": "33046Times信安街平面停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 556,
@@ -380,14 +399,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北市芳和實驗中學",
+   "official": {
+    "address": "臥龍街170號",
+    "cars": 37,
+    "fare": "月租：2,000元/月，1次收取3個月費用。",
+    "hours": "平日：18時至翌日07時；假日：週六至週一上午07時；國定假日前1晚18時至國定假日結束後翌日07時",
+    "match_m": 2,
+    "name": "臺北市芳和實驗中學",
+    "source": "taipei"
+   },
+   "opening_hours": "平日：18時至翌日07時；假日：週六至週一上午07時；國定假日前1晚18時至國定假日結束後翌日07時",
    "operator": null,
    "osm": {
     "id": 359844704,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/359844704"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -761,6 +790,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -395,7 +395,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 457,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
@@ -410,6 +410,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "民生立體停車場",
+   "official": {
+    "address": "民生東路5段84號",
+    "cars": 457,
+    "fare": "小型車：計時 30元/時，全程以半小時計，全日雙月票11,520元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "民生立體停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -473,7 +482,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 716,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 541,
@@ -487,14 +496,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "民權公園地下停車場",
+   "official": {
+    "address": "民權東路4段180號地下(地下共3層)",
+    "cars": 716,
+    "fare": "計時：小型車及大型重型機車30元/時(08-22)，10元/時(22-08)，停車全程以半小時計。月租：小型車全日5,000元/月，日間2,800元/月(07-19)，大型重型機車2,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 51,
+    "name": "民權公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 5379708828,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5379708828"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -920,6 +939,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

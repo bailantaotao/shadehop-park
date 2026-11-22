@@ -241,7 +241,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 429,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 140,
@@ -255,14 +255,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "環翠段臨時平面停車場",
+   "official": {
+    "address": "新北市板橋區文新路與仁化街交叉口停車場",
+    "cars": 429,
+    "fare": "小型車計時20元;小型車月租3000元;身障車月租1500元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "環翠段臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 847854326,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/847854326"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -293,7 +303,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 356,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 302,
@@ -307,14 +317,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "華江區停車場",
+   "official": {
+    "address": "新北市板橋區江子翠水門進入後左轉至華江橋間堤外高灘地",
+    "cars": 356,
+    "fare": "大型車月租8000元;小型車計時20元;小型車計時40元;小型車月租2200元;身障車月租1100元;重型機車月租1500元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "華江區停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 284005431,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/284005431"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -708,6 +728,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

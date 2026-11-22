@@ -161,7 +161,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -175,14 +175,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "博嘉運動公園停車場",
+   "official": {
+    "address": "木柵路4段159巷16號地上1及地下2層",
+    "cars": 36,
+    "fare": "計時:20元/時，全程以半小時計費。月租:1,500元/月。",
+    "hours": "5時至22時(月租24小時)",
+    "match_m": 44,
+    "name": "博嘉運動公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "5時至22時(月租24小時)",
    "operator": null,
    "osm": {
     "id": 483457811,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483457811"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -201,7 +211,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "汽車停車場",
+   "name": "博嘉運動公園停車場",
+   "official": {
+    "address": "木柵路4段159巷16號地上1及地下2層",
+    "cars": 36,
+    "fare": "計時:20元/時，全程以半小時計費。月租:1,500元/月。",
+    "hours": "5時至22時(月租24小時)",
+    "match_m": 49,
+    "name": "博嘉運動公園停車場",
+    "source": "taipei"
+   },
    "opening_hours": "Tu-Su 05:00-22:00",
    "operator": null,
    "osm": {
@@ -209,6 +228,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4761932378"
    },
+   "osm_name": "汽車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -227,7 +247,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "動物園河川高灘地堤外停車場",
+   "name": "嘟嘟房動物園堤外站停車場",
+   "official": {
+    "address": "新光路2段2號河川高灘地",
+    "cars": 1228,
+    "fare": "計時：小型車週六至週日60元/時(06-18)、10元/時(18-06)，停車全程以半小時計。計次：小型車週一至週五50元/次，大客車週一至週五100元/次。月租：小型車全日週一至週五3,600元/月，日間500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 20,
+    "name": "嘟嘟房動物園堤外站停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -235,6 +264,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/261084906"
    },
+   "osm_name": "動物園河川高灘地堤外停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -254,7 +284,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "和平東路四段381巷平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "和平東路4段381巷內",
+    "cars": 26,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "和平東路四段381巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 483457809,
@@ -291,7 +330,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 424,
@@ -305,14 +344,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 和平東路四段 381 巷平面停車場",
-   "opening_hours": null,
+   "name": "和平東路四段381巷平面停車場",
+   "official": {
+    "address": "和平東路4段381巷內",
+    "cars": 26,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 46,
+    "name": "和平東路四段381巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1466666863,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666863"
    },
+   "osm_name": "Hi PARKING 和平東路四段 381 巷平面停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -705,6 +754,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

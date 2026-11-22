@@ -578,7 +578,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 596,
@@ -592,19 +592,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "忠孝五停車場",
+   "official": {
+    "address": "忠孝東路5段236巷27弄10號旁空地",
+    "cars": 33,
+    "fare": "70元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "忠孝五停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 597617486,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/597617486"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 15,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 603,
@@ -618,14 +628,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "中坡北停車場",
+   "official": {
+    "address": "中坡北路15巷8號旁空地",
+    "cars": 15,
+    "fare": "計時：80元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "中坡北停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 582290634,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/582290634"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -999,6 +1019,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

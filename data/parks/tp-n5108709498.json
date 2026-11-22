@@ -335,7 +335,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 253,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 311,
@@ -350,7 +350,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "景美國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "景文街142巷2號地下(共3層)",
+    "cars": 253,
+    "fare": "小型車及大型重型機車：計時 週一至週四(11-21)30元/時，(21-11)20元/時，週五至週日(11-21)40元/時，(21-11)20元/時，停車全程以半小時計；月租 全日4,800元，日間(07-19)2,500元，夜間(19-08)1,000元，大型重機2,400元/月。機車：當日當次收費最高上限20元/(隔日另計)；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 16,
+    "name": "景美國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 373245310,
@@ -387,7 +396,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 324,
@@ -401,14 +410,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "景文平面停車場",
+   "official": {
+    "address": "景文街90巷內廣場停車場",
+    "cars": 53,
+    "fare": "小型車：計時 30元/時，全程以半小時計。",
+    "hours": "周一至周六 9時至17時",
+    "match_m": 3,
+    "name": "景文平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六 9時至17時",
    "operator": null,
    "osm": {
     "id": 358671227,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358671227"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -808,6 +827,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

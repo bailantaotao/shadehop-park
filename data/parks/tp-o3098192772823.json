@@ -249,19 +249,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "安康停車場",
+   "official": {
+    "address": "安康路12號旁空地",
+    "cars": null,
+    "fare": "月租：大客車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 21,
+    "name": "安康停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 557524891,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/557524891"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 99,
@@ -275,19 +285,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣聯通安美停車場",
+   "official": {
+    "address": "潭美街399號旁",
+    "cars": 38,
+    "fare": "計時：100元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "台灣聯通安美停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1574727700,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727700"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 108,
@@ -301,14 +321,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣聯通安美停車場",
+   "official": {
+    "address": "潭美街399號旁",
+    "cars": 38,
+    "fare": "計時：100元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 22,
+    "name": "台灣聯通安美停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1574727699,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727699"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -339,7 +369,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 197,
@@ -353,19 +383,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "內湖安康停車場",
+   "official": {
+    "address": "成功路2段安康路交叉口",
+    "cars": 48,
+    "fare": "計時：50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租 全日5,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "內湖安康停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1553115883,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1553115883"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 280,
@@ -379,14 +419,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "台灣聯通山仔頂停車場",
+   "official": {
+    "address": "成功路2段115巷1弄24號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "台灣聯通山仔頂停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1573297547,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1573297547"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -760,6 +810,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

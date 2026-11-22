@@ -411,7 +411,7 @@
  "parking": [
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 178,
@@ -425,19 +425,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "USPACE 長春復興停車場",
+   "official": {
+    "address": "長春路343號地下2層",
+    "cars": 22,
+    "fare": "計時：150元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：10,000元/月。",
+    "hours": "07:00:00-23:00:00",
+    "match_m": 34,
+    "name": "USPACE 長春復興停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "07:00:00-23:00:00",
    "operator": "大來飯店停車場",
    "osm": {
     "id": 7731649076,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/7731649076"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 182,
@@ -451,14 +461,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "慶城停車場",
+   "official": {
+    "address": "慶城街42號旁空地",
+    "cars": 28,
+    "fare": "計時：100元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 12,
+    "name": "慶城停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 857246450,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/857246450"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -489,7 +509,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 265,
@@ -503,14 +523,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台灣聯通",
-   "opening_hours": null,
+   "name": "台灣聯通復興北停車場",
+   "official": {
+    "address": "南京東路3段256巷11號",
+    "cars": 26,
+    "fare": "小型車：計時 80元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計;月租 全日8,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "台灣聯通復興北停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣聯通停車場開發股份有限公司",
    "osm": {
     "id": 12840184505,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12840184505"
    },
+   "osm_name": "台灣聯通",
    "verified_at": "2026-11-07"
   },
   {
@@ -529,19 +559,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "遼寧街185巷7弄機車平面停車場",
+   "official": {
+    "address": "遼寧街185巷7弄",
+    "cars": null,
+    "fare": "機車：20元/次，隔日另計。",
+    "hours": "周一至周五 9時至17時",
+    "match_m": 1,
+    "name": "遼寧街185巷7弄機車平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周五 9時至17時",
    "operator": null,
    "osm": {
     "id": 977124981,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/977124981"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 30,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 384,
@@ -555,14 +595,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "博客停車場-盤古南京場",
+   "official": {
+    "address": "南京東路3段194巷18號地上1、地下2至3層",
+    "cars": 30,
+    "fare": "月租：小型車全日平面車位6,500元/月，全日機械車位5,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 52,
+    "name": "博客停車場-盤古南京場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 311430377,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311430377"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -936,6 +986,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

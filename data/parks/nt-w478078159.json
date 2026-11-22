@@ -417,7 +417,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 58,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 12,
@@ -431,14 +431,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "車堡寶實業股份有限公司五工場停車場",
+   "official": {
+    "address": "新北市新莊區福慧路250號右側空地停車場",
+    "cars": 58,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "車堡寶實業股份有限公司五工場停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1474846133,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846133"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -495,7 +505,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 259,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 25,
@@ -509,14 +519,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房五工1站停車場",
+   "official": {
+    "address": "新北市新莊區五工路95號旁/近機場捷運線新北產業園區站",
+    "cars": 259,
+    "fare": "小型車計時100元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 36,
+    "name": "嘟嘟房五工1站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 551198203,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/551198203"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -950,6 +970,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

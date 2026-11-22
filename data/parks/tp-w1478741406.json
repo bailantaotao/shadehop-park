@@ -339,7 +339,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 100,
@@ -353,14 +353,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "龍江路停車場",
-   "opening_hours": null,
+   "name": "龍江平面停車場",
+   "official": {
+    "address": "龍江路155巷與遼寧街口",
+    "cars": 26,
+    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "龍江平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 420571836,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/420571836"
    },
+   "osm_name": "龍江路停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -379,19 +389,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "遼寧街185巷7弄機車平面停車場",
+   "official": {
+    "address": "遼寧街185巷7弄",
+    "cars": null,
+    "fare": "機車：20元/次，隔日另計。",
+    "hours": "周一至周五 9時至17時",
+    "match_m": 1,
+    "name": "遼寧街185巷7弄機車平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周五 9時至17時",
    "operator": null,
    "osm": {
     "id": 977124981,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/977124981"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 71,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 153,
@@ -406,7 +426,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "宏盛國際停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "南京東路3段168號地下2至4層",
+    "cars": 71,
+    "fare": "計時：小型車80元/時，停車15分鐘內免費，逾15分鐘以上，未滿半小時以半小時計。月租：小型車全日16,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "宏盛國際停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 11493855851,
@@ -417,7 +446,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 200,
@@ -431,7 +460,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "長春路龍江路臨時平面停車場",
+   "official": {
+    "address": "長春路龍江路交叉口",
+    "cars": 38,
+    "fare": "小型車：計時 40元/時，全程以半小時計；月租 全日4,800元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "長春路龍江路臨時平面停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -439,11 +477,12 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/322454661"
    },
+   "osm_name": "停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 30,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 219,
@@ -457,14 +496,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "博客停車場-盤古南京場",
+   "official": {
+    "address": "南京東路3段194巷18號地上1、地下2至3層",
+    "cars": 30,
+    "fare": "月租：小型車全日平面車位6,500元/月，全日機械車位5,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 52,
+    "name": "博客停車場-盤古南京場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 311430377,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311430377"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -871,6 +920,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

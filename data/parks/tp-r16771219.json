@@ -374,7 +374,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 204,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 251,
@@ -388,19 +388,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大安國宅地下停車場",
-   "opening_hours": null,
+   "name": "臺北市大安福邸公寓大廈社區中庭地下停車場",
+   "official": {
+    "address": "信義路3段134巷40號地下1層",
+    "cars": 204,
+    "fare": "小型車：計時 40元/時，停車全程以半小時計；月租 全日4,800元。",
+    "hours": "臨停：上午7時至下午6時；月租：24小時",
+    "match_m": 47,
+    "name": "臺北市大安福邸公寓大廈社區中庭地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "臨停：上午7時至下午6時；月租：24小時",
    "operator": null,
    "osm": {
     "id": 834272128,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/834272128"
    },
+   "osm_name": "大安國宅地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 282,
@@ -414,19 +424,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "信義路停車場",
+   "official": {
+    "address": "建國南路2段25巷29號對面空地",
+    "cars": 6,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "信義路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1474846099,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846099"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "permissive",
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 304,
@@ -440,19 +460,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "嘟嘟房信義1站停車場",
+   "official": {
+    "address": "信義路3段140號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 15,
+    "name": "嘟嘟房信義1站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 1534443894,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1534443894"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 325,
@@ -466,14 +496,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "建國南路停車場",
+   "official": {
+    "address": "建國南路1段304巷10號旁空地",
+    "cars": 24,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日18,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 17,
+    "name": "建國南路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1152877192,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1152877192"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -867,6 +907,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

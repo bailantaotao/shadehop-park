@@ -470,7 +470,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 295,
@@ -485,7 +485,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "南京東路停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "南京東路4段53巷8弄巷口空地",
+    "cars": 48,
+    "fare": "小型車：計時 100元/時，停車全程以半小時計；月租 全日8,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "南京東路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 9643419,
@@ -522,7 +531,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 358,
@@ -536,19 +545,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣聯通復源停車場",
+   "official": {
+    "address": "光復南路6巷48弄7號對面空地",
+    "cars": 21,
+    "fare": "計時：100元/時，停車全程以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "台灣聯通復源停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 746296431,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/746296431"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 372,
@@ -562,19 +581,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "和停有限公司南京場",
+   "official": {
+    "address": "南京東路4段53巷3弄12號旁空地",
+    "cars": 12,
+    "fare": "計時:150元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租:全日10,000元/月，日間6,000元/月(07-19)，夜間5,000元/月(19-07)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "和停有限公司南京場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 980477252,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/980477252"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 479,
@@ -588,14 +617,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "光復北路平面停車場",
+   "official": {
+    "address": "八德路4段17巷9號",
+    "cars": 24,
+    "fare": "計時：小型車50元/時，停車全程以半小時計。本場未出售月票。",
+    "hours": "收費日：星期一至星期六，收費時間：07-20",
+    "match_m": 2,
+    "name": "光復北路平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期六，收費時間：07-20",
    "operator": null,
    "osm": {
     "id": 753739165,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/753739165"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -969,6 +1008,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

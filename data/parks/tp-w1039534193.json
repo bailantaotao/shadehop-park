@@ -249,7 +249,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 254,
@@ -264,7 +264,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "和興路53巷臨時平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "和興路53巷口",
+    "cars": 25,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
+    "hours": "收費日：周一至周六，收費時間：9時至17時",
+    "match_m": 19,
+    "name": "和興路53巷臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：周一至周六，收費時間：9時至17時",
    "operator": null,
    "osm": {
     "id": 1263163792,
@@ -275,7 +284,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 44,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 287,
@@ -289,14 +298,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房文山試院站停車場",
+   "official": {
+    "address": "木柵路1段52、56號地下1至2層",
+    "cars": 44,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 23,
+    "name": "嘟嘟房文山試院站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 512644437,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/512644437"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -341,14 +360,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "和興水岸社會住宅地下停車場",
+   "official": {
+    "address": "和興路88號地下1至2層",
+    "cars": 113,
+    "fare": "計時：小型車(含大型重型機車) 20元/時，機車10元/時，當日當次上限20元，隔日另計，停車全程以半小時計；月租：小型車全日4,200元，大型重機全日2,100元/月，機車全日300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "和興水岸社會住宅地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 12661280166,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12661280166"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -716,6 +745,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

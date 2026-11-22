@@ -267,7 +267,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 76,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 92,
@@ -281,19 +281,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "聖若望平面停車場",
+   "official": {
+    "address": "新北市板橋區南雅西路2段7巷底",
+    "cars": 76,
+    "fare": "小型車計時30元;小型車月租3000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "聖若望平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 218099549,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/218099549"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 180,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 226,
@@ -307,19 +317,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "板橋果菜市場第二停車場",
-   "opening_hours": null,
+   "name": "板橋果菜批發市場第二停車場",
+   "official": {
+    "address": "新北市板橋區板城路1000號對面",
+    "cars": 180,
+    "fare": "小型車計時30元;小型車月租2700元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 50,
+    "name": "板橋果菜批發市場第二停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 517839017,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/517839017"
    },
+   "osm_name": "板橋果菜市場第二停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 99,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 243,
@@ -333,19 +353,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times板橋林家花園停車場",
+   "official": {
+    "address": "新北市板橋區西門街40號對面",
+    "cars": 99,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 25,
+    "name": "Times板橋林家花園停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 317123810,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317123810"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 30,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 275,
@@ -359,14 +389,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新北市立大觀國民中學停車場",
+   "official": {
+    "address": "新北市板橋區僑中一街1號B1",
+    "cars": 30,
+    "fare": "小型車月租2700元;",
+    "hours": "0~24時",
+    "match_m": 26,
+    "name": "新北市立大觀國民中學停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "大觀國中",
    "osm": {
     "id": 10731851762,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10731851762"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -734,6 +774,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

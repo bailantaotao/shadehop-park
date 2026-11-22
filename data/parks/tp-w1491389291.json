@@ -322,7 +322,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 73,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 383,
@@ -336,14 +336,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "炬嘉仁愛停車場",
+   "official": {
+    "address": "仁愛路2段6號",
+    "cars": 73,
+    "fare": "小型車：月租 全日8,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 27,
+    "name": "炬嘉仁愛停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 154829902,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/154829902"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -749,6 +759,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

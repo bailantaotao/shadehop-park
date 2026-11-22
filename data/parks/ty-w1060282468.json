@@ -115,7 +115,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "大園區廣停二停車場",
+   "official": {
+    "address": "桃園市大園區南區中路1號",
+    "cars": null,
+    "fare": "免費",
+    "hours": null,
+    "match_m": 10,
+    "name": "大園區廣停二停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -123,6 +132,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1201008596"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -141,7 +151,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "兒四公園停車場",
+   "name": "大園區停六停車場",
+   "official": {
+    "address": "桃園市大園區學十二街2號",
+    "cars": null,
+    "fare": "免費",
+    "hours": null,
+    "match_m": 26,
+    "name": "大園區停六停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -149,6 +168,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1201595569"
    },
+   "osm_name": "兒四公園停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -167,7 +187,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "大園區停三停車場",
+   "official": {
+    "address": "桃園市大園區學二街1號",
+    "cars": null,
+    "fare": "免費",
+    "hours": null,
+    "match_m": 35,
+    "name": "大園區停三停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "南港市民活動中心停車場",
    "osm": {
@@ -175,6 +204,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1201003170"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -536,6 +566,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

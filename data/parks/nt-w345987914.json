@@ -219,7 +219,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
@@ -233,19 +233,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城青雲平面停車場",
+   "official": {
+    "address": "新北市土城區青福街68號斜對面",
+    "cars": 35,
+    "fare": "小型車計時50元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "土城青雲平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1276780958,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780958"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 204,
@@ -259,19 +269,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城區青山平面停車場",
+   "official": {
+    "address": "新北市土城區青雲路351-1號旁",
+    "cars": 53,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2000元;身障車月租1800元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 12,
+    "name": "土城區青山平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 325349353,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/325349353"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 235,
@@ -285,19 +305,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "土城區青山平面停車場",
+   "official": {
+    "address": "新北市土城區青雲路351-1號旁",
+    "cars": 53,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租2000元;身障車月租1800元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 41,
+    "name": "土城區青山平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 325349355,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/325349355"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 43,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 241,
@@ -311,14 +341,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "土城青福街停車場",
+   "official": {
+    "address": "新北市土城區青福街與青和街口東南側空地",
+    "cars": 43,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 2,
+    "name": "土城青福街停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1276780957,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780957"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -718,6 +758,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

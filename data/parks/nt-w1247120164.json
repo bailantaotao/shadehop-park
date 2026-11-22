@@ -316,7 +316,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 5,
@@ -330,19 +330,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房土城延和站停車場",
+   "official": {
+    "address": "新北市土城區延和路250巷13號對面停車場",
+    "cars": 38,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 35,
+    "name": "嘟嘟房土城延和站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1247120163,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1247120163"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 38,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 11,
@@ -356,19 +366,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房土城延和站停車場",
+   "official": {
+    "address": "新北市土城區延和路250巷13號對面停車場",
+    "cars": 38,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 21,
+    "name": "嘟嘟房土城延和站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1247120162,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1247120162"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 42,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 149,
@@ -382,14 +402,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "博客金城站停車場",
+   "official": {
+    "address": "新北市土城區金城路3段202號",
+    "cars": 42,
+    "fare": "小型車計時60元;小型車月租3500元;",
+    "hours": "0~24時",
+    "match_m": 12,
+    "name": "博客金城站停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1335083599,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1335083599"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -408,14 +438,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "土城延吉立體停車場",
-   "opening_hours": null,
+   "name": "土城區延吉立體停車場",
+   "official": {
+    "address": "新北市土城區德峰街65號",
+    "cars": 435,
+    "fare": "小型車計時30元;小型車月租3300元;身障車月租1850元;機車計次20元;機車月租月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 2,
+    "name": "土城區延吉立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1335082301,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1335082301"
    },
+   "osm_name": "土城延吉立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -841,6 +881,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

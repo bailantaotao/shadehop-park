@@ -327,7 +327,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 85,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 51,
@@ -341,19 +341,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房捷運北投站停車場",
+   "official": {
+    "address": "光明路1號",
+    "cars": 85,
+    "fare": "小型車：計時 週一至週五30元/時(06-24)，10元/時(24-06)，週六、週日、行政機關放假之紀念日與民俗日30元/時(06-11)，40元/時(11-22)，30元/時(22-24)，10元/時(24-06)，停車全程以半小時計，入場前10分鐘免費。季租：小型車全日10,500元，機車全日900元。機車：20元/次，隔日另計，以2時為基準。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "嘟嘟房捷運北投站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1354600646,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1354600646"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 44,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 426,
@@ -367,14 +377,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "光明路停車場",
+   "official": {
+    "address": "光明路133號旁空地",
+    "cars": 44,
+    "fare": "計時：60元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：6,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "光明路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 824745543,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/824745543"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -405,7 +425,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 40,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 464,
@@ -419,14 +439,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "大業路280巷臨時平面停車場",
+   "official": {
+    "address": "大業路280巷",
+    "cars": 40,
+    "fare": "計次：小型車50元/次。本場未出售月票。",
+    "hours": "收費日：星期一至星期六，收費時間：09-17",
+    "match_m": 1,
+    "name": "大業路280巷臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期六，收費時間：09-17",
    "operator": null,
    "osm": {
     "id": 375985537,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/375985537"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -852,6 +882,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -168,7 +168,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 147,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 199,
@@ -182,19 +182,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "淡水新市停車場",
+   "official": {
+    "address": "新北市淡水區新市一路3段101巷與101巷17弄交接處",
+    "cars": 147,
+    "fare": "小型車計時30元;小型車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 46,
+    "name": "淡水新市停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 586655994,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/586655994"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 83,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 200,
@@ -208,19 +218,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "淡水新市一路平面停車場",
+   "official": {
+    "address": "新北市淡水區新市一路3段108號旁停車場",
+    "cars": 83,
+    "fare": "小型車計時50元;小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 1,
+    "name": "淡水新市一路平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1463728425,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1463728425"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 446,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 232,
@@ -234,14 +254,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "水碓停車場",
-   "opening_hours": null,
+   "name": "水碓立體停車場",
+   "official": {
+    "address": "新北市淡水區中山北路1段189號",
+    "cars": 446,
+    "fare": "小型車計時30元;小型車月租2500元;",
+    "hours": "0~24時",
+    "match_m": 8,
+    "name": "水碓立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 289148978,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/289148978"
    },
+   "osm_name": "水碓停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -272,7 +302,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 76,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 304,
@@ -286,14 +316,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times淡水中山北路二段停車場",
+   "official": {
+    "address": "新北市淡水區中山北路2段189巷32號對面",
+    "cars": 76,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 35,
+    "name": "Times淡水中山北路二段停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "Times",
    "osm": {
     "id": 590411965,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/590411965"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -687,6 +727,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

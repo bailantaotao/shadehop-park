@@ -380,7 +380,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 96,
@@ -395,7 +395,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "義芳第三停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "景豐街13號對面",
+    "cars": 49,
+    "fare": "月租：3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 12,
+    "name": "義芳第三停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 420085007,
@@ -406,7 +415,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 178,
@@ -421,7 +430,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "興隆市場旁平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興隆路2段97號旁",
+    "cars": 35,
+    "fare": "計時：20元/時，全程以半小時計費。月租：4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "興隆市場旁平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 222081024,
@@ -446,14 +464,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景豐停車場",
-   "opening_hours": null,
+   "name": "景豐臨時平面停車場",
+   "official": {
+    "address": "景豐街79號旁(文山景美運動公園內)",
+    "cars": 44,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "景豐臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 420084972,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/420084972"
    },
+   "osm_name": "景豐停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -473,7 +501,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "義芳第二停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興隆路1段137巷88號旁空地",
+    "cars": 148,
+    "fare": "月租：3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "義芳第二停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 8708472,
@@ -905,6 +942,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

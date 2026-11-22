@@ -269,7 +269,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 233,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 137,
@@ -283,19 +283,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "寶中停車場",
-   "opening_hours": null,
+   "name": "城市車旅新店寶中停車場",
+   "official": {
+    "address": "新北市新店區寶中路63號對面空地",
+    "cars": 233,
+    "fare": "小型車計時100元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 49,
+    "name": "城市車旅新店寶中停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 18155466,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/18155466"
    },
+   "osm_name": "寶中停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 850,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 139,
@@ -309,14 +319,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "綠湖公園地下停車場",
-   "opening_hours": null,
+   "name": "裕隆城停車場",
+   "official": {
+    "address": "新北市新店區中興路3段70號B1，B2/442~825號汽車格及1~27號卸貨車格，B3",
+    "cars": 850,
+    "fare": "小型車計時50元;小型車計時60元;小型車月租4500元;機車計時10元;機車月租500元;重型機車計時50元;重型機車計時60元;",
+    "hours": "0~24時",
+    "match_m": 53,
+    "name": "裕隆城停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1293787486,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1293787486"
    },
+   "osm_name": "綠湖公園地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -768,6 +788,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

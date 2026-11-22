@@ -410,7 +410,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "日月亭",
+   "name": "停五停車場",
+   "official": {
+    "address": "桃園市龜山區中興路152號",
+    "cars": null,
+    "fare": "計時:20/時。進場24小時收費60元",
+    "hours": null,
+    "match_m": 3,
+    "name": "停五停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -418,6 +427,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1039268240"
    },
+   "osm_name": "日月亭",
    "verified_at": "2026-11-07"
   },
   {
@@ -436,7 +446,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "中興里停車場",
+   "official": {
+    "address": "桃園市龜山區萬壽路二段1204之2號旁",
+    "cars": null,
+    "fare": "季繳費率3個月5000",
+    "hours": null,
+    "match_m": 17,
+    "name": "中興里停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -444,6 +463,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/953736387"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -462,7 +482,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
+   "name": "中興里停車場",
+   "official": {
+    "address": "桃園市龜山區萬壽路二段1204之2號旁",
+    "cars": null,
+    "fare": "季繳費率3個月5000",
+    "hours": null,
+    "match_m": 46,
+    "name": "中興里停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -470,6 +499,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/953736495"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -863,6 +893,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

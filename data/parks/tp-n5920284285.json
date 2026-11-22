@@ -255,7 +255,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 112,
@@ -269,19 +269,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-南昌場",
+   "official": {
+    "address": "南昌路1段54巷6號對面空地",
+    "cars": 6,
+    "fare": "計時：150元/時，全程以半小時計費。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 44,
+    "name": "168停車聯盟-南昌場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 314799458,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/314799458"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 125,
@@ -295,14 +305,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房寧波站",
-   "opening_hours": null,
+   "name": "168停車聯盟-南昌場",
+   "official": {
+    "address": "南昌路1段54巷6號對面空地",
+    "cars": 6,
+    "fare": "計時：150元/時，全程以半小時計費。月租：10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 15,
+    "name": "168停車聯盟-南昌場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 314799456,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/314799456"
    },
+   "osm_name": "嘟嘟房寧波站",
    "verified_at": "2026-11-07"
   },
   {
@@ -373,14 +393,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "仰德立體停車場",
-   "opening_hours": null,
+   "name": "仰德大樓停車場",
+   "official": {
+    "address": "南昌路1段5號地上1及地下1層",
+    "cars": 115,
+    "fare": "計時：小型車70元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。計次：機車60元/次，隔日另計，以00時為基準。月租：小型車全日10,000元/月。",
+    "hours": "臨停：7時至23時；月租：24小時",
+    "match_m": 38,
+    "name": "仰德大樓停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "臨停：7時至23時；月租：24小時",
    "operator": null,
    "osm": {
     "id": 252994056,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/252994056"
    },
+   "osm_name": "仰德立體停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -748,6 +778,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

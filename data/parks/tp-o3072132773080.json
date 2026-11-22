@@ -267,7 +267,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 403,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 507,
@@ -281,19 +281,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "基隆河5、6號水門堤外觀山段河濱公園附設平面停車場",
+   "official": {
+    "address": "基隆河5、6號水門堤外觀山段",
+    "cars": 403,
+    "fare": "小型車：計時 週一~週五20元/時，最高上限100元/日，隔日另計，週六、週日20元/時，停車全程以半小時計。機車：免費停車。",
+    "hours": "收費日：星期一至星期日，收費時間：9時-17時",
+    "match_m": 15,
+    "name": "基隆河5、6號水門堤外觀山段河濱公園附設平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：星期一至星期日，收費時間：9時-17時",
    "operator": null,
    "osm": {
     "id": 358272598,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358272598"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 568,
@@ -307,14 +317,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "內湖污水處理廠附屬公園停車場",
+   "official": {
+    "address": "舊宗路2段2號",
+    "cars": 53,
+    "fare": "小型車：計時 週一~週六20元/時(09時~17時)，停車全程以半小時計，本場未出售月票。",
+    "hours": "收費日：周一至周六，收費時間：9時至17時",
+    "match_m": 11,
+    "name": "內湖污水處理廠附屬公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：周一至周六，收費時間：9時至17時",
    "operator": null,
    "osm": {
     "id": 286924265,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/286924265"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -708,6 +728,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -395,7 +395,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 259,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 2,
@@ -410,7 +410,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "興隆公園地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "仙岩路128號地下",
+    "cars": 259,
+    "fare": "小型車：計時 20元/時，全程以半小時計；月租 全日4,800元。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "興隆公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1124074723,
@@ -473,7 +482,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 46,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 165,
@@ -487,19 +496,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "驛林交通股份有限公司興隆站",
+   "official": {
+    "address": "興隆路2段160號地下1、2層",
+    "cars": 46,
+    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日5,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "驛林交通股份有限公司興隆站",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4716576275,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4716576275"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 160,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 192,
@@ -513,14 +532,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-興岩社福大樓",
+   "official": {
+    "address": "興隆路2段88號地下1至2層",
+    "cars": 160,
+    "fare": "小型車：計時 60元/時，停車全程以半小時計；月租 全日5,800元。機車：10元/時，停車全程以半小時計；月租500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 49,
+    "name": "168停車聯盟-興岩社福大樓",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 757399166,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/757399166"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -914,6 +943,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

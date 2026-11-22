@@ -422,7 +422,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 199,
@@ -436,14 +436,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "城市車旅三重中正停車場",
+   "official": {
+    "address": "新北市三重區中正北路109號",
+    "cars": 12,
+    "fare": "小型車計時80元;小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 45,
+    "name": "城市車旅三重中正停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1496517386,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1496517386"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -474,7 +484,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 73,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 256,
@@ -488,14 +498,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新北市果菜運銷股份有限公司停車場",
+   "official": {
+    "address": "三重區中正北路111號",
+    "cars": 73,
+    "fare": ";",
+    "hours": "0~14時",
+    "match_m": 38,
+    "name": "新北市果菜運銷股份有限公司停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~14時",
    "operator": null,
    "osm": {
     "id": 772891713,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/772891713"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -895,6 +915,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

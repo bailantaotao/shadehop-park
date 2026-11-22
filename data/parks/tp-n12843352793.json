@@ -104,7 +104,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 1695,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 215,
@@ -118,14 +118,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "汽車停車場",
-   "opening_hours": null,
+   "name": "臺北市第一果菜批發市場堤外專屬停車場",
+   "official": {
+    "address": "華中橋堤外",
+    "cars": 1695,
+    "fare": "計時：小型車20元/時，當日單次停車最高收費上限150元/日，隔日另計，以00時為基準，停車15分鐘內免費，逾15分鐘以上，未滿半小時以半小時計。月租：小型車全日1,800元/月，市場承銷業者自用車及小型採購車全日1,500元/月，市場承銷業者小型採購車固定車位全日2,000元/月，理貨(分包)車3,500元/月，電動送貨車1,360元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "臺北市第一果菜批發市場堤外專屬停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 528943185,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/528943185"
    },
+   "osm_name": "汽車停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -617,6 +627,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

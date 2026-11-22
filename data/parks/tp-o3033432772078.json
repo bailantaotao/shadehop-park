@@ -348,7 +348,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 8,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 44,
@@ -362,19 +362,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新生北路2段77巷臨時平面停車場",
+   "official": {
+    "address": "新生北路2段77巷與新生北路2段55巷3弄交叉口",
+    "cars": 8,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
+    "hours": "周一至周六9時至17時",
+    "match_m": 16,
+    "name": "新生北路2段77巷臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六9時至17時",
    "operator": null,
    "osm": {
     "id": 1158985486,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1158985486"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
@@ -388,19 +398,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新生北停車場",
-   "opening_hours": null,
+   "name": "新生北路停車場",
+   "official": {
+    "address": "新生北路2段101巷1號空地",
+    "cars": 23,
+    "fare": "計時：小型車100元/時，停車全程以半小時計。月租：小型車全日7,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "新生北路停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1158985485,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1158985485"
    },
+   "osm_name": "新生北停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 182,
@@ -414,14 +434,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times 民生東路",
+   "official": {
+    "address": "民生東路2段16號旁",
+    "cars": 5,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "Times 民生東路",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1158985488,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1158985488"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -452,7 +482,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 234,
@@ -466,19 +496,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "吉林停車場",
+   "official": {
+    "address": "民生東路2段49號旁空地",
+    "cars": 6,
+    "fare": "計時：小型車80元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 4,
+    "name": "吉林停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1158985487,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1158985487"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 252,
@@ -492,14 +532,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新生北路高架橋下停車場",
-   "opening_hours": null,
+   "name": "新生高架(南京東路-長春路)",
+   "official": {
+    "address": "新生北路1段新生高架(南京東路-長春路)",
+    "cars": 25,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。免費停車：機車。",
+    "hours": "週一至週六07-2130，週日09-17。",
+    "match_m": 17,
+    "name": "新生高架(南京東路-長春路)",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六07-2130，週日09-17。",
    "operator": null,
    "osm": {
     "id": 445405188,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/445405188"
    },
+   "osm_name": "新生北路高架橋下停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -873,6 +923,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

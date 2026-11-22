@@ -324,7 +324,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 193,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 10,
@@ -338,19 +338,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "金華公園地下停車場",
+   "official": {
+    "address": "金華街190號地下",
+    "cars": 193,
+    "fare": "小型車：計時 50元/時(08時~22時)，10元/時(22時~08時)，全程以半小時計；月租 全日6,000元，大型重機3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "金華公園地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1524300390,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1524300390"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 119,
@@ -364,19 +374,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "金華站停車場",
+   "official": {
+    "address": "永康街75巷10號旁空地",
+    "cars": 20,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日8,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 9,
+    "name": "金華站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 911847142,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/911847142"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 147,
@@ -390,14 +410,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times永康街平面停車場",
-   "opening_hours": null,
+   "name": "Times 永康街第5",
+   "official": {
+    "address": "永康街47巷2號旁空地",
+    "cars": 10,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "Times 永康街第5",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 491580551,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/491580551"
    },
+   "osm_name": "Times永康街平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -862,6 +892,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

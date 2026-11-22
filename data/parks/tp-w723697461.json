@@ -518,7 +518,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 179,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 392,
@@ -532,19 +532,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "承德橋下停車場",
+   "official": {
+    "address": "明倫高中後方越堤道路(通河街-橋下)",
+    "cars": 179,
+    "fare": "計時：小型車20元/時，全程以半小時計費。月租：小型車全日3,000元/月。機車免費。",
+    "hours": "星期一至星期日 9時至17時",
+    "match_m": 47,
+    "name": "承德橋下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "星期一至星期日 9時至17時",
    "operator": null,
    "osm": {
     "id": 501914558,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/501914558"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 86,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 444,
@@ -558,19 +568,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 兒童育樂中心平面停車場",
-   "opening_hours": null,
+   "name": "兒童育樂中心平面停車場",
+   "official": {
+    "address": "玉門街與敦煌路口兒童育樂中心旁",
+    "cars": 86,
+    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "兒童育樂中心平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 921809838,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/921809838"
    },
+   "osm_name": "Hi PARKING 兒童育樂中心平面停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 1,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 518,
@@ -584,14 +604,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times 承德路第5【月租】",
+   "official": {
+    "address": "承德路3段203號旁空地",
+    "cars": 1,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "Times 承德路第5【月租】",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 824890594,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/824890594"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
@@ -1011,6 +1041,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

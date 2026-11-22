@@ -233,7 +233,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 125,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 122,
@@ -247,14 +247,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "第一停車場",
-   "opening_hours": null,
+   "name": "大板根酒店本館地下室收費停車場",
+   "official": {
+    "address": "新北市三峽區插角里79號B2、B3",
+    "cars": 125,
+    "fare": "小型車計時50元;",
+    "hours": "0~24時",
+    "match_m": 53,
+    "name": "大板根酒店本館地下室收費停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 525934675,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/525934675"
    },
+   "osm_name": "第一停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -668,6 +678,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

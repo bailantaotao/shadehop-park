@@ -157,7 +157,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 213,
@@ -171,19 +171,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "萊客有限公司八里忠二場停車場",
+   "official": {
+    "address": "新北市八里區忠二街與文心街交叉口空地",
+    "cars": 6,
+    "fare": "小型車計時80元;",
+    "hours": "0~24時",
+    "match_m": 38,
+    "name": "萊客有限公司八里忠二場停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 769979067,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/769979067"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 18,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 261,
@@ -197,19 +207,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "city parking停車場",
-   "opening_hours": null,
+   "name": "城市車旅八里水岸停車場",
+   "official": {
+    "address": "新北市八里區文心街與忠二街交叉口空地",
+    "cars": 18,
+    "fare": "小型車計時100元;小型車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 22,
+    "name": "城市車旅八里水岸停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "City parking",
    "osm": {
     "id": 1299812275,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1299812275"
    },
+   "osm_name": "city parking停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 18,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 286,
@@ -223,19 +243,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "文心停車場",
-   "opening_hours": null,
+   "name": "城市車旅八里水岸停車場",
+   "official": {
+    "address": "新北市八里區文心街與忠二街交叉口空地",
+    "cars": 18,
+    "fare": "小型車計時100元;小型車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 37,
+    "name": "城市車旅八里水岸停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 714662189,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/714662189"
    },
+   "osm_name": "文心停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 39,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 515,
@@ -249,14 +279,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新北永續環境教育中心停車場",
-   "opening_hours": null,
+   "name": "永續環境教育中心停車場",
+   "official": {
+    "address": "新北市八里區觀海大道36號",
+    "cars": 39,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租3500元;身障車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 37,
+    "name": "永續環境教育中心停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1086193542,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1086193542"
    },
+   "osm_name": "新北永續環境教育中心停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -650,6 +690,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

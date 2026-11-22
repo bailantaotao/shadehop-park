@@ -312,7 +312,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 549,
@@ -326,19 +326,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房大直站停車場",
+   "official": {
+    "address": "敬業一路141號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 36,
+    "name": "嘟嘟房大直站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 948277331,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/948277331"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 572,
@@ -352,14 +362,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "Times北安路第3",
+   "official": {
+    "address": "北安路588巷22號旁",
+    "cars": 20,
+    "fare": "計時：200元/時，停車全程以半小時計；月租：全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "Times北安路第3",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 957535830,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/957535830"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -721,6 +741,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

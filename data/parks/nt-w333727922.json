@@ -134,7 +134,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 169,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 121,
@@ -148,19 +148,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "老街第二停車場(正義)",
-   "opening_hours": null,
+   "name": "鶯歌區老街第二平面停車場",
+   "official": {
+    "address": "新北市鶯歌區尖山埔路295號旁",
+    "cars": 169,
+    "fare": "大型車計時20元;小型車計時30元;小型車月租1300元;身障車月租750元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 58,
+    "name": "鶯歌區老街第二平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 333727931,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727931"
    },
+   "osm_name": "老街第二停車場(正義)",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 169,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 122,
@@ -174,14 +184,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "老街第二停車場(正義)",
-   "opening_hours": null,
+   "name": "鶯歌區老街第二平面停車場",
+   "official": {
+    "address": "新北市鶯歌區尖山埔路295號旁",
+    "cars": 169,
+    "fare": "大型車計時20元;小型車計時30元;小型車月租1300元;身障車月租750元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 15,
+    "name": "鶯歌區老街第二平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 333727930,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/333727930"
    },
+   "osm_name": "老街第二停車場(正義)",
    "verified_at": "2026-11-07"
   },
   {
@@ -238,7 +258,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 613,
@@ -252,14 +272,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "第一停車場",
-   "opening_hours": null,
+   "name": "鶯歌國民小學第一停車場",
+   "official": {
+    "address": "新北市鶯歌區尖山埔路106號",
+    "cars": 49,
+    "fare": "小型車計時40元;",
+    "hours": "0~24時",
+    "match_m": 29,
+    "name": "鶯歌國民小學第一停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1381668305,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1381668305"
    },
+   "osm_name": "第一停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -647,6 +677,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

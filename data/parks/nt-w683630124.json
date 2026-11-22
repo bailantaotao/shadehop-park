@@ -289,7 +289,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 17,
@@ -303,19 +303,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "金全興商店1號停車場",
+   "official": {
+    "address": "新北市金山區民生路47號",
+    "cars": 10,
+    "fare": "小型車計次100元;",
+    "hours": "0~24時",
+    "match_m": 5,
+    "name": "金全興商店1號停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1365311035,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1365311035"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 52,
@@ -329,19 +339,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "金全興商店2號停車場",
+   "official": {
+    "address": "新北市金山區民生路47號",
+    "cars": 21,
+    "fare": "小型車計次100元;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "金全興商店2號停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1365311036,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1365311036"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 350,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 55,
@@ -355,14 +375,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "金山立體停車場",
-   "opening_hours": null,
+   "name": "金山區金山立體停車場",
+   "official": {
+    "address": "新北市金山區中興路101號",
+    "cars": 350,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租1200元;小型車月租960元;身障車月租600元;機車計次20元;機車月租300元;機車月租240元;身障機車月租150元 ;重型機車計時20元;重型機車計時30元;重型機車月租1200元;",
+    "hours": "0~24時",
+    "match_m": 27,
+    "name": "金山區金山立體停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 696410634,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/696410634"
    },
+   "osm_name": "金山立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -393,7 +423,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 83,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 112,
@@ -407,14 +437,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "客萊停金山一場停車場",
+   "official": {
+    "address": "新北市金山區媽祖街(櫻花公園)旁空地",
+    "cars": 83,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 23,
+    "name": "客萊停金山一場停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1365311064,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1365311064"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -845,6 +885,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

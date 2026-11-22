@@ -540,7 +540,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 841,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -554,19 +554,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新北市市民廣場地下停車場",
-   "opening_hours": null,
+   "name": "市民廣場地下停車場",
+   "official": {
+    "address": "新北市板橋區縣民大道二段22號B1-B3",
+    "cars": 841,
+    "fare": "小型車計時30元;小型車計時40元;小型車計時20元;小型車月租4000元;身障車月租2150元;重型機車計時30元;重型機車計時40元;重型機車計時20元;重型機車月租1500元;機車計時10元;機車月租200元;身障機車月租100元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "市民廣場地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "台灣國際開發事業有限公司",
    "osm": {
     "id": 808480742,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/808480742"
    },
+   "osm_name": "新北市市民廣場地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -580,14 +590,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "(板橋區)USPACE車位共享平臺停車場",
+   "official": {
+    "address": null,
+    "cars": 20,
+    "fare": ";",
+    "hours": "每車位每日不逾8小時，每月不逾240小時（各地之實際營業時間詳共享車位清單）",
+    "match_m": 57,
+    "name": "(板橋區)USPACE車位共享平臺停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "每車位每日不逾8小時，每月不逾240小時（各地之實際營業時間詳共享車位清單）",
    "operator": null,
    "osm": {
     "id": 9307980676,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9307980676"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -658,14 +678,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新北市板橋區特專三臨時平面停車場",
-   "opening_hours": null,
+   "name": "特專三平面停車場",
+   "official": {
+    "address": "新北市板橋區漢生東路64號旁",
+    "cars": 271,
+    "fare": "大型車計時40元;大型車計時60元;大型車月租8000元;小型車計時30元;小型車月租3000元;身障車月租1500元;機車計次10元;機車計次20元;機車月租200元;身障機車月租100元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "特專三平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "俥亭停車事業股份有限公司",
    "osm": {
     "id": 232201651,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/232201651"
    },
+   "osm_name": "新北市板橋區特專三臨時平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -1078,6 +1108,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

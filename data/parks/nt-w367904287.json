@@ -144,7 +144,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 67,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 382,
@@ -158,19 +158,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "林口舊街臨時平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛路1段326號旁空地",
+    "cars": 67,
+    "fare": "小型車計時30元;小型車月租3800元;",
+    "hours": "0~24時",
+    "match_m": 20,
+    "name": "林口舊街臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1213001351,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1213001351"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 396,
@@ -184,19 +194,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "USPACE林口仁愛停車場",
+   "official": {
+    "address": "新北市林口區仁愛路1段657巷21號對面空地",
+    "cars": 25,
+    "fare": "小型車計時80元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "USPACE林口仁愛停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1213001353,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1213001353"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 54,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 400,
@@ -210,19 +230,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "林口區停四停車場",
-   "opening_hours": null,
+   "name": "林口區停四平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛路1段與興林路交叉口",
+    "cars": 54,
+    "fare": "小型車計時20元;小型車月租1800元;身障車月租1000元;重型機車計時20元;",
+    "hours": "0~24時",
+    "match_m": 1,
+    "name": "林口區停四平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 259017518,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/259017518"
    },
+   "osm_name": "林口區停四停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 67,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 487,
@@ -236,19 +266,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "林口一停車場",
-   "opening_hours": null,
+   "name": "林口區行政段226地號平面停車場",
+   "official": {
+    "address": "新北市林口區中正路102號對面",
+    "cars": 67,
+    "fare": "小型車計時20元;小型車月租2000元;身障車月租1500元;重型機車計時20元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "林口區行政段226地號平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 259017510,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/259017510"
    },
+   "osm_name": "林口一停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 498,
@@ -262,14 +302,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "林口區停六平面停車場",
+   "official": {
+    "address": "新北市林口區仁愛路1段及中正路57巷交叉口西側",
+    "cars": 36,
+    "fare": "小型車計次60元;小型車月租1800元;身障車月租1000元;重型機車計次60元;",
+    "hours": "0~24時",
+    "match_m": 0,
+    "name": "林口區停六平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1103146202,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1103146202"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -637,6 +687,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

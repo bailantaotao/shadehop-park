@@ -196,7 +196,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 114,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 138,
@@ -210,14 +210,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "iRent台北新生停車場",
-   "opening_hours": null,
+   "name": "新生公園停車場",
+   "official": {
+    "address": "民族東路與吉林路口(新生公園溫水游泳池旁)",
+    "cars": 114,
+    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,500元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "新生公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 857744135,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/857744135"
    },
+   "osm_name": "iRent台北新生停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -274,7 +284,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 114,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
@@ -288,19 +298,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "新生公園停車場",
+   "official": {
+    "address": "民族東路與吉林路口(新生公園溫水游泳池旁)",
+    "cars": 114,
+    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,500元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 50,
+    "name": "新生公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 860129262,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/860129262"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 114,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 175,
@@ -314,14 +334,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "新生公園停車場",
+   "official": {
+    "address": "民族東路與吉林路口(新生公園溫水游泳池旁)",
+    "cars": 114,
+    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,500元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 37,
+    "name": "新生公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 860129263,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/860129263"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -689,6 +719,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

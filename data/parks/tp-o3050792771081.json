@@ -497,7 +497,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 180,
@@ -511,19 +511,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "詮營長安停車場",
+   "official": {
+    "address": "長安東路2段259號對面",
+    "cars": 10,
+    "fare": "計時：小型車90元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "詮營長安停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1387020823,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1387020823"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 207,
@@ -537,19 +547,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "復興南路平面停車場",
-   "opening_hours": null,
+   "name": "Times 復興南路",
+   "official": {
+    "address": "復興南路1段18號旁",
+    "cars": 14,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 0,
+    "name": "Times 復興南路",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 678672888,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/678672888"
    },
+   "osm_name": "復興南路平面停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 218,
@@ -563,14 +583,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "芝蔴停車場",
+   "official": {
+    "address": "長安東路2段215號地上1層",
+    "cars": 12,
+    "fare": "計時：200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：全日8,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 36,
+    "name": "芝蔴停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 907042536,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/907042536"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -589,19 +619,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "市民大道停車場 (復興 - 敦化)",
-   "opening_hours": null,
+   "name": "市民大道復敦段停車場",
+   "official": {
+    "address": "市民大道4段(復興南路至敦化南路)地下(地下共2層)",
+    "cars": 214,
+    "fare": "計時：小型車(含大型重型機車)週一至週四30元/時(08-12)，週一至週四40元/時(12-23)，週一至週四20元/時(23-08)，週五至週日及政府行政機關放假之紀念日、民俗節日40元/時(08-12)，週五至週日及政府行政機關放假之紀念日、民俗節日50元/時(12-23)，週五至週日20元/時(23-08)，停車全程以半小時計。月租：小型車全日6,500元/月，日間(07-19)3,600元/月，夜間(19-08)3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "市民大道復敦段停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3097339788,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3097339788"
    },
+   "osm_name": "市民大道停車場 (復興 - 敦化)",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 4,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 276,
@@ -615,7 +655,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Civic Boulevard Car Park (Fuxing-Dunhua)",
+   "name": "Times敦南市民",
+   "official": {
+    "address": "市民大道4段83號旁",
+    "cars": 4,
+    "fare": "計時：200元/時，停車全程以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "Times敦南市民",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -623,6 +672,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3249098935"
    },
+   "osm_name": "Civic Boulevard Car Park (Fuxing-Dunhua)",
    "verified_at": "2026-11-07"
   },
   {
@@ -1022,6 +1072,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

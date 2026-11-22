@@ -288,7 +288,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 42,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 267,
@@ -302,19 +302,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "驛馬站北投一收費停車場",
+   "official": {
+    "address": "溫泉路80號旁空地",
+    "cars": 42,
+    "fare": "計時：150元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "驛馬站北投一收費停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 824890872,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/824890872"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 385,
@@ -328,19 +338,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "華南銀行行員活動中心停車場",
-   "opening_hours": null,
+   "name": "華南巷停車場",
+   "official": {
+    "address": "泉源路華南巷2號對面空地",
+    "cars": 32,
+    "fare": "計時：50元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：2,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "華南巷停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1155279598,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1155279598"
    },
+   "osm_name": "華南銀行行員活動中心停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 453,
@@ -354,19 +374,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "北投國中教職員工停車場",
+   "official": {
+    "address": "溫泉路62號地下1層",
+    "cars": 36,
+    "fare": "小型車：月租 全日1,200元。",
+    "hours": "夜間：18時50分至翌日6時50分，例假日：全日",
+    "match_m": 38,
+    "name": "北投國中教職員工停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "夜間：18時50分至翌日6時50分，例假日：全日",
    "operator": null,
    "osm": {
     "id": 1574727727,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727727"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 466,
@@ -381,7 +411,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "開勝平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "珠海路88號旁",
+    "cars": 29,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。免費停車：機車。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "開勝平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 377896431,
@@ -755,6 +794,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

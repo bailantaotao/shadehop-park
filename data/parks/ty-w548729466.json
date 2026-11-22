@@ -461,7 +461,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大興停車場",
+   "name": "大興平面停車場",
+   "official": {
+    "address": "桃園市平鎮區大興街與金城交叉口",
+    "cars": null,
+    "fare": "臨停20元/時、月租2400元/月",
+    "hours": null,
+    "match_m": 13,
+    "name": "大興平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -469,6 +478,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1030416337"
    },
+   "osm_name": "大興停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -565,7 +575,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "上海平面停車場",
+   "official": {
+    "address": "桃園市平鎮區中庸路與上海路交叉口",
+    "cars": null,
+    "fare": "臨停20元/時、月租2400元/月",
+    "hours": null,
+    "match_m": 43,
+    "name": "上海平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -573,6 +592,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780904"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -591,7 +611,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "大連停車場",
+   "name": "大連平面停車場",
+   "official": {
+    "address": "桃園市平鎮區上海路148號旁",
+    "cars": null,
+    "fare": "臨停20元/時、月租2400元/月",
+    "hours": null,
+    "match_m": 20,
+    "name": "大連平面停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -599,6 +628,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/730073074"
    },
+   "osm_name": "大連停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -972,6 +1002,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "桃園市政府工務局「桃園市公園（特色遊戲場、埤塘公園）」",
    "url": "https://data.gov.tw/dataset/148726"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

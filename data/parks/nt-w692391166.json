@@ -127,7 +127,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 300,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 389,
@@ -142,6 +142,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "水湳洞停車場",
+   "official": {
+    "address": "新北市瑞芳區水湳洞段4、4-1、27-3、27-9地號(台2線78.5K)",
+    "cars": 300,
+    "fare": "小型車免費;",
+    "hours": "平日8~17時、例假日8~19時",
+    "match_m": 32,
+    "name": "水湳洞停車場",
+    "source": "newtaipei"
+   },
    "opening_hours": "Mo-Fr 08:00-17:00; Sa-Su 08:00-19:00; PH 08:00-19:00",
    "operator": null,
    "osm": {
@@ -562,6 +571,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

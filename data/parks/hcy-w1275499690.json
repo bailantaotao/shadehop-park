@@ -303,7 +303,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "勝利十一路停車場",
+   "name": "勝利十一街路外停車場",
+   "official": {
+    "address": "新竹縣竹北市勝利十一路65號",
+    "cars": null,
+    "fare": "第一小時20元，逾1小時以半小時計費，每半小時10元",
+    "hours": null,
+    "match_m": 23,
+    "name": "勝利十一街路外停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -311,6 +320,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/904940657"
    },
+   "osm_name": "勝利十一路停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -808,6 +818,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

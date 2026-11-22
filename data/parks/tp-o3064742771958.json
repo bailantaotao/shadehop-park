@@ -363,7 +363,7 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 457,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 353,
@@ -378,6 +378,15 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "民生立體停車場",
+   "official": {
+    "address": "民生東路5段84號",
+    "cars": 457,
+    "fare": "小型車：計時 30元/時，全程以半小時計，全日雙月票11,520元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 19,
+    "name": "民生立體停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -508,7 +517,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "吉祥平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "光復北路11巷81號旁",
+    "cars": 32,
+    "fare": "小型車：計時 30元/時，全程以半小時計；月租 全日7,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "吉祥平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 390780634,
@@ -888,6 +906,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

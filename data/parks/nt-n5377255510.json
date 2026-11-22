@@ -284,7 +284,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 645,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 27,
@@ -298,14 +298,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場行人出入口",
-   "opening_hours": null,
+   "name": "永和仁愛公園地下停車場",
+   "official": {
+    "address": "新北市永和區仁愛路244-1號B1、B2",
+    "cars": 645,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "永和仁愛公園地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 5716821723,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5716821723"
    },
+   "osm_name": "停車場行人出入口",
    "verified_at": "2026-11-07"
   },
   {
@@ -376,14 +386,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "智驛保生公有停車場",
-   "opening_hours": null,
+   "name": "永和區保生路平面停車場",
+   "official": {
+    "address": "新北市永和區保安路292號旁",
+    "cars": 31,
+    "fare": "小型車計時30元;小型車月租3500元;身障車月租1650元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "永和區保生路平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 601524131,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/601524131"
    },
+   "osm_name": "智驛保生公有停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -783,6 +803,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

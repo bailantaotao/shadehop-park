@@ -513,7 +513,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 83,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
@@ -527,14 +527,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times 南港車站前停車場",
-   "opening_hours": null,
+   "name": "Times 南港車站前",
+   "official": {
+    "address": "市民大道8段335號旁空地",
+    "cars": 83,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "Times 南港車站前",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1059167870,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1059167870"
    },
+   "osm_name": "Times 南港車站前停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -565,7 +575,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 1100,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 288,
@@ -579,19 +589,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "南港車站地下停車場",
+   "official": {
+    "address": "忠孝東路7段265巷1號地下1層、地下1層夾層、地下2層、地下3層夾層",
+    "cars": 1100,
+    "fare": "計時：小型車100元/時，停車全程以半小時計，臨停15分鐘內離場者，免費停車，入場30分鐘內，以半小時計費。計次：機車70元/次(隔日另計)。月租：小型車全日10,000元/月，大型重機8,000元/月；機車3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 40,
+    "name": "南港車站地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3679608801,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3679608801"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 638,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 305,
@@ -606,7 +626,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "興中立體停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興中路44巷1號",
+    "cars": 638,
+    "fare": "小型車(含大型重型機車)：計時 20元/時，停車全程以半小時計；月租 全日3,000元，大型重機1,500元/月。機車：20元/次，隔日另計；月租300元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 34,
+    "name": "興中立體停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 73750276,
@@ -1012,6 +1041,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

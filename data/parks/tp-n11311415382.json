@@ -423,7 +423,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 14,
@@ -437,14 +437,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "台北長安林森停車場",
-   "opening_hours": null,
+   "name": "長安林森停車場",
+   "official": {
+    "address": "長安東路1段30巷1號旁空地",
+    "cars": 21,
+    "fare": "小型車：計時 160元/時，停車全程以半小時計；月租 全日12,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "長安林森停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1466666864,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666864"
    },
+   "osm_name": "台北長安林森停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -463,7 +473,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
+   "name": "通通停長安停車場",
+   "official": {
+    "address": "長安東路1段26號空地",
+    "cars": 16,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "通通停長安停車場",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": "寶盛國際股份有限公司",
    "osm": {
@@ -471,6 +490,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436568797"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
@@ -489,14 +509,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "長安東三站停車場",
-   "opening_hours": null,
+   "name": "台北長安站停車場",
+   "official": {
+    "address": "長安東路1段57號空地",
+    "cars": 15,
+    "fare": "計時：小型車160元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "台北長安站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "新長越企業有限公司",
    "osm": {
     "id": 436568801,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436568801"
    },
+   "osm_name": "長安東三站停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -515,19 +545,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "希望廣場停車場",
-   "opening_hours": null,
+   "name": "168停車聯盟-北平東場",
+   "official": {
+    "address": "北平東路30號地下2層",
+    "cars": 59,
+    "fare": "計時：150元/時，全程以半小時計費。月租：15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 58,
+    "name": "168停車聯盟-北平東場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 387505813,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/387505813"
    },
+   "osm_name": "希望廣場停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 973,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 167,
@@ -541,19 +581,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "市民大道停車場 (林森 - 金山)",
-   "opening_hours": null,
+   "name": "市民大道林金段停車場",
+   "official": {
+    "address": "市民大道2段(林森北路至金山北路)地下1至2層",
+    "cars": 973,
+    "fare": "小型車(含大型重型機車)：計時 週一至週五30元/時(09-18)，20元/時(18-09)，週六、週日、行政機關放假之紀念日與民俗日20元/時，全程以半小時計；月租 全日3,600元，日間2,400元(07-19)，夜間1,000元(週一至週五19-08，週六、日及政府行政機關放假之紀念日、民俗節日之全日)，大型重機1,800元/月",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 42,
+    "name": "市民大道林金段停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3196998919,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3196998919"
    },
+   "osm_name": "市民大道停車場 (林森 - 金山)",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 7,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 174,
@@ -567,14 +617,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "林森五條通平面停車場",
-   "opening_hours": null,
+   "name": "五條通停車場",
+   "official": {
+    "address": "長安東路1段43巷6號邊空地",
+    "cars": 7,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 14,
+    "name": "五條通停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 436568799,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436568799"
    },
+   "osm_name": "林森五條通平面停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -948,6 +1008,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

@@ -297,7 +297,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "桃園區大有立體停車場",
+   "name": "桃園區大有立體暨殯葬園區平面公有停車場",
+   "official": {
+    "address": "桃園市桃園區大有路916-2號",
+    "cars": null,
+    "fare": "汽車 30元/時 (24小時)，每日最高收費90元、機車20/次、機汽車隔日另計。",
+    "hours": null,
+    "match_m": 15,
+    "name": "桃園區大有立體暨殯葬園區平面公有停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -305,6 +314,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1044429287"
    },
+   "osm_name": "桃園區大有立體停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -349,7 +359,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "殯葬管理所停車場",
+   "name": "殯葬園區停車場",
+   "official": {
+    "address": "桃園市桃園區大有路916號",
+    "cars": null,
+    "fare": "計時30元/時",
+    "hours": null,
+    "match_m": 6,
+    "name": "殯葬園區停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": null,
    "osm": {
@@ -357,6 +376,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929503741"
    },
+   "osm_name": "殯葬管理所停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -802,6 +822,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

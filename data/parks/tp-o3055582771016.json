@@ -543,7 +543,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 4,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 321,
@@ -557,7 +557,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Civic Boulevard Car Park (Fuxing-Dunhua)",
+   "name": "Times敦南市民",
+   "official": {
+    "address": "市民大道4段83號旁",
+    "cars": 4,
+    "fare": "計時：200元/時，停車全程以半小時計。月租：全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 56,
+    "name": "Times敦南市民",
+    "source": "taipei"
+   },
    "opening_hours": "24/7",
    "operator": null,
    "osm": {
@@ -565,6 +574,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3249098935"
    },
+   "osm_name": "Civic Boulevard Car Park (Fuxing-Dunhua)",
    "verified_at": "2026-11-07"
   },
   {
@@ -635,14 +645,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "市民大道停車場 (復興 - 敦化)",
-   "opening_hours": null,
+   "name": "市民大道復敦段停車場",
+   "official": {
+    "address": "市民大道4段(復興南路至敦化南路)地下(地下共2層)",
+    "cars": 214,
+    "fare": "計時：小型車(含大型重型機車)週一至週四30元/時(08-12)，週一至週四40元/時(12-23)，週一至週四20元/時(23-08)，週五至週日及政府行政機關放假之紀念日、民俗節日40元/時(08-12)，週五至週日及政府行政機關放假之紀念日、民俗節日50元/時(12-23)，週五至週日20元/時(23-08)，停車全程以半小時計。月租：小型車全日6,500元/月，日間(07-19)3,600元/月，夜間(19-08)3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 33,
+    "name": "市民大道復敦段停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 3097339788,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3097339788"
    },
+   "osm_name": "市民大道停車場 (復興 - 敦化)",
    "verified_at": "2026-11-07"
   },
   {
@@ -661,14 +681,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新長越市民大道停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房市民延吉1站停車場",
+   "official": {
+    "address": "市民大道4段259號旁空地",
+    "cars": 16,
+    "fare": "小型車：計時 120元/時，未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計;月租 全日15,000元",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "嘟嘟房市民延吉1站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 368877196,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/368877196"
    },
+   "osm_name": "新長越市民大道停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -1042,6 +1072,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

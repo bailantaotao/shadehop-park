@@ -266,7 +266,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 212,
    "capacity_disabled": "yes",
    "capacity_parent": "yes",
    "distance_m": 206,
@@ -281,7 +281,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "永建國小地下停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "木柵路1段311巷1號地下1至2層",
+    "cars": 212,
+    "fare": "計時：小型車(含大型重型機車)20元/時，機車10元/時，當日單次停車最高收費上限20元/日，隔日另計，以00時為基準，停車全程以半小時計。月租：小型車全日4,200元/月，機車全日300元/月，大型重型機車全日4,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 41,
+    "name": "永建國小地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "山發物業股份有限公司",
    "osm": {
     "id": 5097128281,
@@ -333,7 +342,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "木柵公園平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "興隆路4段與下崙路口",
+    "cars": 8,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
+    "hours": "周一至周六 9時至17時",
+    "match_m": 11,
+    "name": "木柵公園平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六 9時至17時",
    "operator": null,
    "osm": {
     "id": 478532550,
@@ -344,7 +362,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 341,
@@ -358,14 +376,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房文山光輝站",
-   "opening_hours": null,
+   "name": "文山光輝停車場",
+   "official": {
+    "address": "光輝路96號旁空地",
+    "cars": 14,
+    "fare": "月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 32,
+    "name": "文山光輝停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 380194351,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/380194351"
    },
+   "osm_name": "嘟嘟房文山光輝站",
    "verified_at": "2026-11-07"
   },
   {
@@ -384,14 +412,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "實踐國中停車場",
-   "opening_hours": null,
+   "name": "臺北市立實踐國民中學收費停車場",
+   "official": {
+    "address": "忠順街1段9巷靠忠順街1段路口",
+    "cars": 32,
+    "fare": "計時：20元/時，全程以半小時計費。月租：4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "臺北市立實踐國民中學收費停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "臺北市立實踐國民中學",
    "osm": {
     "id": 630656567,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/630656567"
    },
+   "osm_name": "實踐國中停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -410,14 +448,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "興隆路三段308號臨時平面停車場",
-   "opening_hours": null,
+   "name": "興隆路3段308號臨時平面停車場",
+   "official": {
+    "address": "興隆路3段308號",
+    "cars": 50,
+    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日4,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 11,
+    "name": "興隆路3段308號臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 13416561453,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/13416561453"
    },
+   "osm_name": "興隆路三段308號臨時平面停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -791,6 +839,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

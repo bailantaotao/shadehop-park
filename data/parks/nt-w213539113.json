@@ -259,7 +259,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 243,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -273,14 +273,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "三民地下停車場",
+   "official": {
+    "address": "新北市新店區三民路20-1號B1、B2",
+    "cars": 243,
+    "fare": "小型車計時30元;小型車計時40元;小型車月租4200元;小型車月租2100元;身障車月租2000元;機車計次20元;機車月租300元;身障機車月租120元;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "三民地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1101090916,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/1101090916"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -784,6 +794,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

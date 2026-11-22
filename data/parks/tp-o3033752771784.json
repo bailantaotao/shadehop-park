@@ -417,7 +417,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 126,
@@ -431,14 +431,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "新生北路高架橋下停車場",
-   "opening_hours": null,
+   "name": "新生高架(南京東路-長春路)",
+   "official": {
+    "address": "新生北路1段新生高架(南京東路-長春路)",
+    "cars": 25,
+    "fare": "計時：小型車40元/時，停車全程以半小時計。月租：小型車全日4,800元/月。免費停車：機車。",
+    "hours": "週一至週六07-2130，週日09-17。",
+    "match_m": 17,
+    "name": "新生高架(南京東路-長春路)",
+    "source": "taipei"
+   },
+   "opening_hours": "週一至週六07-2130，週日09-17。",
    "operator": null,
    "osm": {
     "id": 445405188,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/445405188"
    },
+   "osm_name": "新生北路高架橋下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -495,7 +505,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 252,
@@ -509,14 +519,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
+   "name": "神旺商務酒店停車場",
+   "official": {
+    "address": "南京東路1段128號",
+    "cars": 48,
+    "fare": "計時:70元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租:5,500元/月，15,000元/季繳，28,000元/半年繳，半日租(12小時)3,500元/月，10,000元/季繳，19,500元/半年繳。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 21,
+    "name": "神旺商務酒店停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 951666245,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/951666245"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -916,6 +936,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

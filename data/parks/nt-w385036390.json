@@ -162,7 +162,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 62,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 779,
@@ -176,14 +176,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "龍形停車場",
-   "opening_hours": null,
+   "name": "八里龍形平面停車場",
+   "official": {
+    "address": "新北市八里區龍米路1段與龍形一街交叉口",
+    "cars": 62,
+    "fare": "小型車計時20元;小型車月租1300元;身障車月租650元;",
+    "hours": "0~24時",
+    "match_m": 14,
+    "name": "八里龍形平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1226378386,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1226378386"
    },
+   "osm_name": "龍形停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -590,6 +600,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

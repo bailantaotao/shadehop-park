@@ -257,7 +257,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 5,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 391,
@@ -272,7 +272,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "萬寧街臨時平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "萬寧街125號旁",
+    "cars": 5,
+    "fare": "小型車： 計次 週一~週五30元/次(09時~17時)。",
+    "hours": "收費日：1-5；收費時間：9~17",
+    "match_m": 2,
+    "name": "萬寧街臨時平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "收費日：1-5；收費時間：9~17",
    "operator": null,
    "osm": {
     "id": 1264436598,
@@ -692,6 +701,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

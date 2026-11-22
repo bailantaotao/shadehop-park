@@ -262,7 +262,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 26,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 103,
@@ -276,14 +276,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Hi PARKING 和平東路四段 381 巷平面停車場",
-   "opening_hours": null,
+   "name": "和平東路四段381巷平面停車場",
+   "official": {
+    "address": "和平東路4段381巷內",
+    "cars": 26,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 46,
+    "name": "和平東路四段381巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 1466666863,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1466666863"
    },
+   "osm_name": "Hi PARKING 和平東路四段 381 巷平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -303,7 +313,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "和平東路四段381巷平面停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "和平東路4段381巷內",
+    "cars": 26,
+    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "和平東路四段381巷平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 483457809,
@@ -328,7 +347,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "汽車停車場",
+   "name": "博嘉運動公園停車場",
+   "official": {
+    "address": "木柵路4段159巷16號地上1及地下2層",
+    "cars": 36,
+    "fare": "計時:20元/時，全程以半小時計費。月租:1,500元/月。",
+    "hours": "5時至22時(月租24小時)",
+    "match_m": 49,
+    "name": "博嘉運動公園停車場",
+    "source": "taipei"
+   },
    "opening_hours": "Tu-Su 05:00-22:00",
    "operator": null,
    "osm": {
@@ -336,11 +364,12 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4761932378"
    },
+   "osm_name": "汽車停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 155,
@@ -354,14 +383,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "博嘉運動公園停車場",
+   "official": {
+    "address": "木柵路4段159巷16號地上1及地下2層",
+    "cars": 36,
+    "fare": "計時:20元/時，全程以半小時計費。月租:1,500元/月。",
+    "hours": "5時至22時(月租24小時)",
+    "match_m": 44,
+    "name": "博嘉運動公園停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "5時至22時(月租24小時)",
    "operator": null,
    "osm": {
     "id": 483457811,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483457811"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -392,7 +431,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 146,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 233,
@@ -406,14 +445,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "捷運木柵站轉乘停車場",
-   "opening_hours": null,
+   "name": "歐特儀股份有限公司捷運木柵站轉乘停車場",
+   "official": {
+    "address": "木柵路4段135號地下1-2層",
+    "cars": 146,
+    "fare": "計時：小型車20元/時(06-22)、10元/時(22-06)，停車全程以半小時計。計次：機車20元/次，隔日另計，以02時為基準。月租：小型車全日2,500元/月，日間週一至週五(06-21)1,500元/月，夜間(19-08)1,200元/月，機車全日300元/月。未滿10分鐘內免費。",
+    "hours": "00:00:00-24:00:00",
+    "match_m": 37,
+    "name": "歐特儀股份有限公司捷運木柵站轉乘停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-24:00:00",
    "operator": null,
    "osm": {
     "id": 1350697420,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1350697420"
    },
+   "osm_name": "捷運木柵站轉乘停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -787,6 +836,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

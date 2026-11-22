@@ -150,7 +150,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 216,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -164,14 +164,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "力行地下停車場",
-   "opening_hours": null,
+   "name": "三重區力行地下停車場",
+   "official": {
+    "address": "新北市三重區永福街10巷8號B1~B3",
+    "cars": 216,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 38,
+    "name": "三重區力行地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 611723197,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/611723197"
    },
+   "osm_name": "力行地下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -202,7 +212,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 210,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 265,
@@ -216,19 +226,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "永福國小地下停車場",
-   "opening_hours": null,
+   "name": "三重區永福國小地下停車場",
+   "official": {
+    "address": "新北市三重區永福街66號B1、B2",
+    "cars": 210,
+    "fare": "小型車計時30元;小型車計時10元;小型車月租4000元;身障車月租2000元;重型機車計時30元;重型機車計時10元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 2,
+    "name": "三重區永福國小地下停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 4448603115,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4448603115"
    },
+   "osm_name": "永福國小地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 31,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 273,
@@ -242,14 +262,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "永福國小未來樓收費停車場",
+   "official": {
+    "address": "新北市三重區永福街66號/未來樓B1",
+    "cars": 31,
+    "fare": "小型車月租3000元;",
+    "hours": "0~24時",
+    "match_m": 16,
+    "name": "永福國小未來樓收費停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 4448603135,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4448603135"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -280,7 +310,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 27,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 449,
@@ -294,14 +324,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台灣聯通重陽停車場",
+   "official": {
+    "address": "新北市蘆洲區重陽街46號旁空地",
+    "cars": 27,
+    "fare": "小型車計時30元;小型車計時100元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "台灣聯通重陽停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 771271703,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/771271703"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -669,6 +709,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

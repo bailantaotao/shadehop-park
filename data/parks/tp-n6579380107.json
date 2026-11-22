@@ -316,7 +316,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 97,
@@ -330,19 +330,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "城市車旅永康二站停車場",
+   "official": {
+    "address": "永康街13巷8號旁空地",
+    "cars": 14,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "城市車旅永康二站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 312302611,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/312302611"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 149,
@@ -356,14 +366,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times永康街平面停車場",
-   "opening_hours": null,
+   "name": "Times 永康街第5",
+   "official": {
+    "address": "永康街47巷2號旁空地",
+    "cars": 10,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 3,
+    "name": "Times 永康街第5",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 491580551,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/491580551"
    },
+   "osm_name": "Times永康街平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -382,14 +402,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "27247Times金山南路平面停車場",
-   "opening_hours": null,
+   "name": "Times金山南路",
+   "official": {
+    "address": "金山南路2段31巷25號旁",
+    "cars": 4,
+    "fare": "計時：200元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "Times金山南路",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "Times停車場",
    "osm": {
     "id": 674101024,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/674101024"
    },
+   "osm_name": "27247Times金山南路平面停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -828,6 +858,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

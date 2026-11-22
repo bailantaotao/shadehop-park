@@ -235,7 +235,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 8,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
@@ -249,14 +249,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
+   "name": "通通停士東國小站停車場",
+   "official": {
+    "address": "中山北路6段424號空地",
+    "cars": 8,
+    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 8,
+    "name": "通通停士東國小站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "寶盛國際股份有限公司",
    "osm": {
     "id": 5219051422,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/5219051422"
    },
+   "osm_name": "嘟嘟房",
    "verified_at": "2026-11-07"
   },
   {
@@ -760,6 +770,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

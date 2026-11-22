@@ -369,19 +369,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景美愛買地下停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房景美愛買站停車場",
+   "official": {
+    "address": "景中街30巷12號地下1層",
+    "cars": 42,
+    "fare": "計時：100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：全日8,000元/月。",
+    "hours": "06:00:00-23:00:00",
+    "match_m": 36,
+    "name": "嘟嘟房景美愛買站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "06:00:00-23:00:00",
    "operator": null,
    "osm": {
     "id": 7890666803,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/7890666803"
    },
+   "osm_name": "景美愛買地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 79,
@@ -395,19 +405,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景美集應廟文化願景館地下停車場",
-   "opening_hours": null,
+   "name": "景美集應廟站停車場",
+   "official": {
+    "address": "景後街130號地下1至3層",
+    "cars": 50,
+    "fare": "小型車：計時 180元/時，停車全程以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 13,
+    "name": "景美集應廟站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 797083838,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/797083838"
    },
+   "osm_name": "景美集應廟文化願景館地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 42,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 95,
@@ -421,19 +441,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "永固便利停車場",
-   "opening_hours": null,
+   "name": "啟鑫開發有限公司瀚星站停車場",
+   "official": {
+    "address": "景興路188號地下3-4層",
+    "cars": 42,
+    "fare": "計時：小型車週一至週五30元/時，週六至週日50元/時，停車全程以半小時計。月租：小型車全日4,500元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 5,
+    "name": "啟鑫開發有限公司瀚星站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 4298876983,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4298876983"
    },
+   "osm_name": "永固便利停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 71,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 104,
@@ -447,14 +477,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台北市文山區景華停車場",
+   "official": {
+    "address": "景中街33號旁空地",
+    "cars": 71,
+    "fare": "計時：小型車(含大型重型機車)80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日9,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 57,
+    "name": "台北市文山區景華停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 334124759,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/334124759"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -473,19 +513,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "景新分館地下停車場",
-   "opening_hours": null,
+   "name": "景新地下停車場",
+   "official": {
+    "address": "景後街151號地下2至3層",
+    "cars": 47,
+    "fare": "計時：60元/時，停車全程以半小時計；月租：7,200元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 25,
+    "name": "景新地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "俥亭",
    "osm": {
     "id": 3635673679,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3635673679"
    },
+   "osm_name": "景新分館地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 271,
@@ -499,14 +549,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "景文平面停車場",
+   "official": {
+    "address": "景文街90巷內廣場停車場",
+    "cars": 53,
+    "fare": "小型車：計時 30元/時，全程以半小時計。",
+    "hours": "周一至周六 9時至17時",
+    "match_m": 3,
+    "name": "景文平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "周一至周六 9時至17時",
    "operator": null,
    "osm": {
     "id": 358671227,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358671227"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -880,6 +940,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

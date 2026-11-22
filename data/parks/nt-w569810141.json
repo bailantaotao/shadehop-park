@@ -96,7 +96,7 @@
  "parking": [
   {
    "access": "customers",
-   "capacity": null,
+   "capacity": 30,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 240,
@@ -110,14 +110,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "香帥蛋糕附設停車場",
-   "opening_hours": null,
+   "name": "香帥蛋糕停車場",
+   "official": {
+    "address": "新北市汐止區汐萬路1段211巷26號旁空地",
+    "cars": 30,
+    "fare": "小型車計時80元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 37,
+    "name": "香帥蛋糕停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 644674118,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/644674118"
    },
+   "osm_name": "香帥蛋糕附設停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -148,7 +158,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 113,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 514,
@@ -162,14 +172,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "汐止樟樹二路停車場",
+   "official": {
+    "address": "新北市汐止區樟樹二路342巷高架橋下",
+    "cars": 113,
+    "fare": "小型車月租2200元;",
+    "hours": "0~24時",
+    "match_m": 45,
+    "name": "汐止樟樹二路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1113669136,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1113669136"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -226,7 +246,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 98,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 640,
@@ -241,7 +261,16 @@
    "maxheight_m": null,
    "method": "osm",
    "name": "正記樟樹停車場",
-   "opening_hours": null,
+   "official": {
+    "address": "新北市汐止區樟樹一路155巷",
+    "cars": 98,
+    "fare": "小型車月租2600元;",
+    "hours": "0~24時",
+    "match_m": 13,
+    "name": "正記樟樹停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1113669135,
@@ -628,6 +657,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

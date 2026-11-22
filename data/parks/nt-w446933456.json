@@ -128,7 +128,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 93,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 115,
@@ -142,14 +142,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "萬善同停車場",
+   "official": {
+    "address": "新北市三重區大臺北公園中山橋下北側萬善同旁",
+    "cars": 93,
+    "fare": "小型車計時20元;小型車計時10元;小型車月租2200元;",
+    "hours": "0~24時",
+    "match_m": 15,
+    "name": "萬善同停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 925883747,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/925883747"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -180,7 +190,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 334,
@@ -194,14 +204,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中山高架橋下停車場",
-   "opening_hours": null,
+   "name": "Times三重忠孝水漾停車場",
+   "official": {
+    "address": "新北市三重區忠孝路3段與水漾路2段交叉口",
+    "cars": 25,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 53,
+    "name": "Times三重忠孝水漾停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1015443508,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1015443508"
    },
+   "osm_name": "中山高架橋下停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -232,7 +252,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 262,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 358,
@@ -246,19 +266,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "中山高架橋下停車場",
-   "opening_hours": null,
+   "name": "文中小平面停車場",
+   "official": {
+    "address": "新北市三重區新北大道1段159號對面停車場",
+    "cars": 262,
+    "fare": "小型車計時20元;小型車計時30元;小型車月租3300元;身障車月租1650元;機車計次10元;機車月租200元;身障機車月租100元;重型機車計時20元;重型機車計時30元;重型機車月租1500元;",
+    "hours": "0~24時",
+    "match_m": 39,
+    "name": "文中小平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1015443507,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1015443507"
    },
+   "osm_name": "中山高架橋下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 361,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 393,
@@ -272,14 +302,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "光復平面停車場",
+   "official": {
+    "address": "新北市三重區頂文路及神農街交叉口",
+    "cars": 361,
+    "fare": "大型車計時40元;大型車月租5000元;小型車計時20元;小型車月租4000元;身障車月租2000元;機車計次10元;機車月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 54,
+    "name": "光復平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 12943462,
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943462"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -647,6 +687,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

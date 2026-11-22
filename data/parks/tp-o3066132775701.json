@@ -251,7 +251,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 34,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 200,
@@ -265,19 +265,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
+   "name": "文湖平面停車場",
+   "official": {
+    "address": "文湖街21巷口文湖國小旁",
+    "cars": 34,
+    "fare": "小型車：計時 20元/時，全程以半小時計；月租 全日4,800元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "文湖平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 961275515,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/961275515"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 542,
@@ -291,14 +301,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times 植福路",
+   "official": {
+    "address": "北安路830號旁",
+    "cars": 56,
+    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "Times 植福路",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 864676280,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/864676280"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
@@ -795,6 +815,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

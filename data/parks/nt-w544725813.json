@@ -174,14 +174,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新店區民安段臨時平面停車場",
+   "official": {
+    "address": "新北市新店區安民街78號旁",
+    "cars": 40,
+    "fare": "小型車計時30元;小型車月租3200元;身障車月租2000元;",
+    "hours": "0~24時",
+    "match_m": 30,
+    "name": "新店區民安段臨時平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1518002057,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1518002057"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -238,7 +248,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 114,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 441,
@@ -252,14 +262,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
+   "name": "台灣聯通新店安光停車場",
+   "official": {
+    "address": "新北市新店區安光路75號B1/573~686號汽車位及435~452號機車位",
+    "cars": 114,
+    "fare": "小型車計時100元;小型車月租8000元;機車免費;",
+    "hours": "0~24時",
+    "match_m": 19,
+    "name": "台灣聯通新店安光停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": "台灣聯通",
    "osm": {
     "id": 7808521598,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/7808521598"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -647,6 +667,12 @@
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

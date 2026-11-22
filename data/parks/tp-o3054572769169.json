@@ -332,7 +332,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 106,
@@ -346,14 +346,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "停車塔",
-   "opening_hours": null,
+   "name": "台灣捷通安和停車場",
+   "official": {
+    "address": "安和路2段86號",
+    "cars": 50,
+    "fare": "計時：80元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：全天10,000元/月、日間8,000元/月(07-19)、夜間6,000元/月(19-07)。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 1,
+    "name": "台灣捷通安和停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 657035014,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/657035014"
    },
+   "osm_name": "停車塔",
    "verified_at": "2026-11-07"
   },
   {
@@ -384,7 +394,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 156,
@@ -398,19 +408,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "多多站敦南二場",
+   "official": {
+    "address": "敦化南路2段63巷21弄16號對面空地",
+    "cars": 6,
+    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 28,
+    "name": "多多站敦南二場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 203619488,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/203619488"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 163,
@@ -424,19 +444,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "敦南二站停車場",
+   "official": {
+    "address": "敦化南路2段201號旁空地",
+    "cars": 49,
+    "fare": "計時：小型車180元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "敦南二站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 303680417,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/303680417"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 24,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 187,
@@ -450,19 +480,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "台北安和1停車場",
+   "official": {
+    "address": "安和路2段32巷19號對面",
+    "cars": 24,
+    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 24,
+    "name": "台北安和1停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 204616108,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/204616108"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 233,
@@ -476,14 +516,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "敦和停車場",
-   "opening_hours": null,
+   "name": "多多站收費停車場（敦南場）",
+   "official": {
+    "address": "敦化南路2段63巷21弄24號旁空地",
+    "cars": 14,
+    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日12,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 34,
+    "name": "多多站收費停車場（敦南場）",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 765955867,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/765955867"
    },
+   "osm_name": "敦和停車場",
    "verified_at": "2026-11-07"
   }
  ],
@@ -857,6 +907,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

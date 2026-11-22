@@ -171,7 +171,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 368,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
@@ -185,19 +185,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "馬公友誼公園地下停車場",
-   "opening_hours": null,
+   "name": "新店北新公有停車場",
+   "official": {
+    "address": "新北市新店區北新路1段92號B1、B2",
+    "cars": 368,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;機車計次10元;機車月租月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 46,
+    "name": "新店北新公有停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 2264127540,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/2264127540"
    },
+   "osm_name": "馬公友誼公園地下停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 368,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 14,
@@ -211,14 +221,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "新店北新公有停車場",
+   "official": {
+    "address": "新北市新店區北新路1段92號B1、B2",
+    "cars": 368,
+    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;機車計次10元;機車月租月租300元;身障機車月租150元;",
+    "hours": "0~24時",
+    "match_m": 32,
+    "name": "新店北新公有停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 365556846,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/365556846"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -249,7 +269,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 117,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 215,
@@ -263,14 +283,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "俥亭新店中正平面停車場",
+   "official": {
+    "address": "新北市新店區中正路30號旁空地",
+    "cars": 117,
+    "fare": "小型車計時60元;小型車月租6000元;",
+    "hours": "0~24時",
+    "match_m": 31,
+    "name": "俥亭新店中正平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1293787485,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1293787485"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -690,6 +720,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

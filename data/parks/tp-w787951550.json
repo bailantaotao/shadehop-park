@@ -361,7 +361,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 62,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 80,
@@ -375,14 +375,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "福港街平面停車站",
-   "opening_hours": null,
+   "name": "福港街平面停車場",
+   "official": {
+    "address": "福港街149巷2號對面",
+    "cars": 62,
+    "fare": "計時：小型車20元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 2,
+    "name": "福港街平面停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 377457829,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/377457829"
    },
+   "osm_name": "福港街平面停車站",
    "verified_at": "2026-11-07"
   },
   {
@@ -439,7 +449,7 @@
   },
   {
    "access": "yes",
-   "capacity": null,
+   "capacity": 63,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 289,
@@ -453,19 +463,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "士林運動中心停車場",
-   "opening_hours": null,
+   "name": "臺北市士林運動中心地下停車場",
+   "official": {
+    "address": "士商路1號地下1至2層",
+    "cars": 63,
+    "fare": "計時：小型車60元/時，機車10元/時，停車全程以半小時計，機車當日上限30元，並於隔日3時另計。月租：小型車全日4,200元/月，日間(07-19)3,600元/月，夜間(19-07)3,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 7,
+    "name": "臺北市士林運動中心地下停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": "士林運動中心停車場",
    "osm": {
     "id": 10790516021,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/10790516021"
    },
+   "osm_name": "士林運動中心停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 47,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 324,
@@ -479,14 +499,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "嘟嘟房士林基河站停車場",
+   "official": {
+    "address": "基河路240巷10號對面空地",
+    "cars": 47,
+    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 6,
+    "name": "嘟嘟房士林基河站停車場",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
     "id": 654351074,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/654351074"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   },
   {
@@ -886,6 +916,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "臺北市政府工務局公園路燈工程管理處「臺北市公園設施資料（兒童遊戲場）」",
    "url": "https://data.gov.tw/dataset/136476"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "臺北市停車管理工程處 臺北市停車場資訊",
+   "url": "https://data.taipei/"
   }
  ],
  "updated_at": "2026-11-07"

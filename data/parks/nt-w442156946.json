@@ -248,7 +248,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 63,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 67,
@@ -262,14 +262,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
+   "name": "Times板橋華江一路停車場",
+   "official": {
+    "address": "新北市板橋區華江一路162號旁",
+    "cars": 63,
+    "fare": "小型車計時80元;小型車月租8000元;",
+    "hours": "0~24時",
+    "match_m": 1,
+    "name": "Times板橋華江一路停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1453872816,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1453872816"
    },
+   "osm_name": "Times",
    "verified_at": "2026-11-07"
   },
   {
@@ -352,7 +362,7 @@
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 43,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 238,
@@ -366,14 +376,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "板橋區江翠停二平面停車場",
+   "official": {
+    "address": "新北市板橋區華江一路與華江五路交叉口",
+    "cars": 43,
+    "fare": "小型車計時30元;小型車月租3200元;身障車月租1700元 ;機車計次10元;機車月租300元;身障機車月租 150元 ;",
+    "hours": "0~24時",
+    "match_m": 38,
+    "name": "板橋區江翠停二平面停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1453872832,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1453872832"
    },
+   "osm_name": null,
    "verified_at": "2026-11-07"
   }
  ],
@@ -741,6 +761,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

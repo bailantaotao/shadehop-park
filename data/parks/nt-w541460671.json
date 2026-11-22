@@ -162,7 +162,7 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
+   "capacity": 108,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 38,
@@ -176,19 +176,29 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "月租停車場",
-   "opening_hours": null,
+   "name": "汐止區橫科停車場",
+   "official": {
+    "address": "新北市汐止區橫科路119號左測約100公尺處",
+    "cars": 108,
+    "fare": "小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 59,
+    "name": "汐止區橫科停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1089813559,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1089813559"
    },
+   "osm_name": "月租停車場",
    "verified_at": "2026-11-07"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 108,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 44,
@@ -202,14 +212,24 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "月租停車場",
-   "opening_hours": null,
+   "name": "汐止區橫科停車場",
+   "official": {
+    "address": "新北市汐止區橫科路119號左測約100公尺處",
+    "cars": 108,
+    "fare": "小型車月租5000元;",
+    "hours": "0~24時",
+    "match_m": 38,
+    "name": "汐止區橫科停車場",
+    "source": "newtaipei"
+   },
+   "opening_hours": "0~24時",
    "operator": null,
    "osm": {
     "id": 1089813560,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1089813560"
    },
+   "osm_name": "月租停車場",
    "verified_at": "2026-11-07"
   },
   {
@@ -687,6 +707,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "新北市政府農業局「新北市公園」",
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "新北市政府交通局 新北市路外公共停車場資訊",
+   "url": "https://data.gov.tw/dataset/122955"
   }
  ],
  "updated_at": "2026-11-07"

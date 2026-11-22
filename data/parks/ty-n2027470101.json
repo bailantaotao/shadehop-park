@@ -426,7 +426,16 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "城市車旅",
+   "name": "龍安一停車場",
+   "official": {
+    "address": "桃園市桃園區國強一街與國豐一街",
+    "cars": null,
+    "fare": "小型車臨時停車收費：  全日計時：每小時20元，當日最高收費150元  ※ 入場前30分鐘免費停車。 ※ 相關停車須知皆以現場公告為準。",
+    "hours": null,
+    "match_m": 13,
+    "name": "龍安一停車場",
+    "source": "tdx"
+   },
    "opening_hours": null,
    "operator": "阜爾運通股份有限公司",
    "osm": {
@@ -434,6 +443,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064765178"
    },
+   "osm_name": "城市車旅",
    "verified_at": "2026-11-07"
   },
   {
@@ -879,6 +889,12 @@
    "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
    "name": "資料介接「交通部TDX平臺」：交通部「充電站之基本資料」",
    "url": "https://data.gov.tw/dataset/170220"
+  },
+  {
+   "as_of": "2026-11-22",
+   "license": "政府資料開放授權條款第1版（相容 CC BY 4.0）",
+   "name": "交通部 TDX 路外停車場基本資料",
+   "url": "https://tdx.transportdata.tw/"
   }
  ],
  "updated_at": "2026-11-07"

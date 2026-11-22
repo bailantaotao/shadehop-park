@@ -54,6 +54,7 @@
   // tolerance widens every marker's tap area by 12px (a 10px dot becomes a ~44px target).
   var map = L.map("map", { zoomControl: true, preferCanvas: true, renderer: L.canvas({ tolerance: 12 }) });
   map.createPane("chargers").style.zIndex = 650;
+  map.createPane("near").style.zIndex = 660;  // a park's nearby places sit above the charger layer
   // ------------------------------------------------------------ base map
   // OSM vector map (OpenFreeMap "Liberty") drawn by MapLibre inside Leaflet, simplified for this
   // map: no shop/bank/restaurant icons, no 3D buildings, Chinese-only labels. MapLibre needs
@@ -720,43 +721,60 @@
     nearShown = null;
     document.querySelectorAll("[data-near][aria-pressed=true]").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
   }
+  // A tile expands its kind to every place nearby; tapping it again goes back to the overview.
   function showNear(btn) {
-    var id = btn.dataset.park, kind = btn.dataset.near, key = id + "|" + kind;
-    if (nearShown === key) { clearNear(); return; }  // a second tap puts them away
-    var f = state.features.find(function (x) { return x.properties.id === id; });
-    if (!f) return;
+    var id = btn.dataset.park, kind = btn.dataset.near;
+    if (nearShown === id + "|" + kind) { phone.matches ? nearFor(id, "all", { fit: false }) : clearNear(); return; }
     btn.classList.add("busy");
-    parkDetail(id).then(function (d) {
-      btn.classList.remove("busy");
+    nearFor(id, kind, { fit: true }).then(function () { btn.classList.remove("busy"); });
+  }
+  // kind "all": the nearest parking, toilet, shop and charger, shown as soon as a park is tapped on a
+  // phone (where to park and where the toilet is are the next questions); a kind: all of that kind.
+  function nearFor(id, kind, opt) {
+    var f = state.features.find(function (x) { return x.properties.id === id; });
+    if (!f) return Promise.resolve();
+    return parkDetail(id).then(function (d) {
+      if (kind === "all" ? state.selected !== id : false) return;  // the parent moved on meanwhile
       clearNear();
-      var places = nearPlaces(d, kind);
-      if (!places.length) { mapToast("附近沒有" + NEAR[kind].label + "的資料"); return; }
-      nearShown = key;
-      document.querySelectorAll('[data-near="' + kind + '"][data-park="' + CSS.escape(id) + '"]').forEach(function (b) { b.setAttribute("aria-pressed", "true"); });
+      var items = [];
+      (kind === "all" ? ["parking", "toilet", "shop", "charge"] : [kind]).forEach(function (k) {
+        nearPlaces(d, k).slice(0, kind === "all" ? 1 : 6).forEach(function (x) { items.push({ x: x, k: k }); });
+      });
+      if (!items.length) { if (kind !== "all") mapToast("附近沒有" + NEAR[kind].label + "的資料"); return; }
+      nearShown = id + "|" + kind;
+      if (kind !== "all") document.querySelectorAll('[data-near="' + kind + '"][data-park="' + CSS.escape(id) + '"]').forEach(function (b) { b.setAttribute("aria-pressed", "true"); });
       var c = L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]), area = d.region ? d.region.city + (d.region.district !== d.region.city ? d.region.district : "") : "";
       var pts = [c];
-      places.forEach(function (x) {
-        var ll = L.latLng(x.location.lat, x.location.lng), fast = x.speed === "fast" || x.speed === "both";
-        var icon = kind === "charge" ? (fast ? "bolt" : "plug") : NEAR[kind].icon;
+      items.forEach(function (it) {
+        var x = it.x, k = it.k, ll = L.latLng(x.location.lat, x.location.lng), fast = x.speed === "fast" || x.speed === "both";
+        var icon = k === "charge" ? (fast ? "bolt" : "plug") : NEAR[k].icon;
         // Mirror each place through the park too, so fitting the box keeps the park in the middle.
         pts.push(ll, L.latLng(2 * c.lat - ll.lat, 2 * c.lng - ll.lng));
-        var sub = kind === "charge" ? (x.speed_label || "") : kind === "parking" && x.fee ? ({ yes: "收費", no: "免費" }[x.fee] || "") : "";
-        L.marker(ll, { zIndexOffset: 2500, keyboard: true, title: placeName(x, kind), icon: L.divIcon({ className: "near-mk " + kind + (fast ? " fast" : ""),
+        var sub = k === "charge" ? (x.speed_label || "") : k === "parking" && x.fee ? ({ yes: "收費", no: "免費" }[x.fee] || "") : "";
+        L.marker(ll, { pane: "near", keyboard: true, title: placeName(x, k), icon: L.divIcon({ className: "near-mk " + k + (fast ? " fast" : ""),
           html: '<span class="near-in">' + I(icon) + "<b>" + x.distance_m + "m</b></span>", iconSize: [0, 0], iconAnchor: [0, 0] }) })
-          .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, kind)) + "</strong>" +
+          .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, k)) + "</strong>" +
             '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
-            '<a class="pp-btn primary" href="' + esc(placeLink(x, kind, area)) + '" target="_blank" rel="noopener">在 Google 地圖開啟</a></div>',
+            '<a class="pp-btn primary" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖開啟</a></div>',
             { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, $(".controls").offsetHeight + 16),
-              autoPanPaddingBottomRight: L.point(16, phone.matches ? window.innerHeight - sheet.getBoundingClientRect().top + 16 : 16) })
+              autoPanPaddingBottomRight: L.point(16, phone.matches ? sheetMetrics().half + 16 : 16) })
           .addTo(nearLayer);
       });
-      // Fit them into the strip of map the floating chips and the sheet leave open.
-      var top = $(".controls").getBoundingClientRect().bottom - map.getContainer().getBoundingClientRect().top + 24;
-      var bottom = phone.matches ? map.getContainer().getBoundingClientRect().bottom - sheet.getBoundingClientRect().top + 24 : 40;
-      map.fitBounds(L.latLngBounds(pts), { paddingTopLeft: [40, Math.max(40, top)], paddingBottomRight: [70, bottom], maxZoom: 18 });
+      // Fit them into the strip of map the floating chips and the sheet leave open. The overview only
+      // zooms out when a place would be off screen; it never zooms in past where the park put it.
+      var mapBox = map.getContainer().getBoundingClientRect();
+      var top = $(".controls").getBoundingClientRect().bottom - mapBox.top + 24;
+      var bottom = phone.matches ? mapBox.bottom - (window.innerHeight - sheetMetrics().half) + 24 : 40;
+      var b = L.latLngBounds(pts), pad = { paddingTopLeft: [40, Math.max(40, top)], paddingBottomRight: [70, Math.max(40, bottom)] };
+      if (opt.fit) { pad.maxZoom = 18; map.fitBounds(b, pad); return; }
+      // Measure against where the park's zoom-in lands, not a frame of its animation.
+      var check = function () {
+        var z = map.getBoundsZoom(b, false, L.point(110, Math.max(40, top) + Math.max(40, bottom)));
+        if (z < map.getZoom()) centreOn(c, Math.floor(z));
+      };
+      if (map._animatingZoom) map.once("zoomend", check); else check();
     }, function () {
-      btn.classList.remove("busy");
-      mapToast("暫時載入不到附近設施，請稍後再試");
+      if (kind !== "all") mapToast("暫時載入不到附近設施，請稍後再試");
     });
   }
 
@@ -1555,6 +1573,7 @@
     centreOn(L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]), Math.max(map.getZoom(), PARK_ZOOM));
     render(true);
     drawSel();
+    if (!nearShown || nearShown.split("|")[0] !== f.properties.id) nearFor(f.properties.id, "all", { fit: false });
   }
   sheetPark.addEventListener("click", function (e) {
     var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]"), nb = e.target.closest("[data-near]");

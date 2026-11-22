@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 333,
+   "distance_m": 348,
    "location": {
-    "lat": 25.02353,
-    "lng": 121.481834
+    "lat": 25.023307,
+    "lng": 121.48177
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/7902835004",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/7902835002",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/352622128",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運江子翠站",
    "source": "https://www.openstreetmap.org/node/3639530950",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "福翠里民活動中心",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 68103,
@@ -256,7 +256,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12109217008"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -282,7 +282,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1307603834"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -308,7 +308,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/284005421"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -334,7 +334,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317594677"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -360,7 +360,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1085269453"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -386,7 +386,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/284005419"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -407,7 +407,7 @@
   "note": "約 3214 m² 在高架/屋頂下（佔 5%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/352622128",
   "value": "partial",
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -592,7 +592,7 @@
     0.05,
     0.05,
     0.05,
-    0.06,
+    0.05,
     0.06,
     0.06,
     0.07,
@@ -679,7 +679,7 @@
     0.08,
     0.09,
     0.11,
-    0.14,
+    0.13,
     0.17,
     0.23
    ],
@@ -738,7 +738,7 @@
   },
   "source": "https://www.openstreetmap.org/way/352622128",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -753,6 +753,11 @@
      "url": "https://www.openstreetmap.org/way/770953636"
     },
     {
+     "id": 326955643,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/326955643"
+    },
+    {
      "id": 136988443,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/136988443"
@@ -761,23 +766,18 @@
      "id": 111808373,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/111808373"
-    },
-    {
-     "id": 326955643,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/326955643"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/352622128",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -795,5 +795,5 @@
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

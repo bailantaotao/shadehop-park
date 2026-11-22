@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 180,
+   "distance_m": 164,
    "location": {
-    "lat": 24.806976,
-    "lng": 121.041346
+    "lat": 24.806875,
+    "lng": 121.041231
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/12119815704",
+   "name": "7-ELEVEN 星空門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/805993387",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "六家站",
    "source": "https://www.openstreetmap.org/node/3560261986",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "六家車站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1264,
@@ -473,7 +473,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612803"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -499,7 +499,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612804"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -525,7 +525,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/2785047695"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -551,7 +551,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/321663144"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -577,7 +577,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/363060183"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -603,7 +603,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614639"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -624,7 +624,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/805993387",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹縣",
@@ -679,7 +679,7 @@
     0.0,
     0.0,
     0.0,
-    0.04,
+    0.03,
     0.12,
     0.22,
     0.34,
@@ -812,7 +812,7 @@
     0.03,
     0.1,
     0.18,
-    0.28,
+    0.27,
     0.38,
     0.51,
     0.66,
@@ -836,9 +836,9 @@
     0.0,
     0.01,
     0.05,
-    0.12,
-    0.2,
-    0.29,
+    0.11,
+    0.19,
+    0.28,
     0.38,
     0.5,
     0.64,
@@ -863,7 +863,7 @@
     0.01,
     0.05,
     0.11,
-    0.19,
+    0.18,
     0.27,
     0.36,
     0.47,
@@ -888,11 +888,11 @@
     0.0,
     0.0,
     0.04,
-    0.1,
+    0.09,
     0.17,
-    0.26,
-    0.35,
-    0.46,
+    0.25,
+    0.34,
+    0.45,
     0.58,
     0.74,
     0.95,
@@ -941,8 +941,8 @@
     0.0,
     0.03,
     0.1,
-    0.2,
-    0.3,
+    0.19,
+    0.29,
     0.41,
     0.55,
     0.73,
@@ -955,7 +955,7 @@
   },
   "source": "https://www.openstreetmap.org/way/805993387",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -974,12 +974,12 @@
    "source": "https://www.openstreetmap.org/way/805993387",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -991,5 +991,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1150084515",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1150084515",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +28,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1150084515",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -46,7 +46,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/11399754227",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1010,
@@ -54,7 +54,7 @@
   "1": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.81,
+   "mean": 0.82,
    "start": "14:00",
    "start_slot": 16
   },
@@ -131,7 +131,7 @@
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.8,
+   "mean": 0.79,
    "start": "13:30",
    "start_slot": 15
   }
@@ -202,7 +202,7 @@
     "url": "https://www.openstreetmap.org/way/1176878062"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -228,7 +228,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1312931509"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -249,7 +249,7 @@
   "note": "約 438 m² 在高架/屋頂下（佔 43%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1150084515",
   "value": true,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -471,7 +471,7 @@
     0.97,
     1.0,
     1.0,
-    0.54
+    0.53
    ],
    "6": [
     0.09,
@@ -549,7 +549,7 @@
     0.96,
     1.0,
     1.0,
-    0.52
+    0.51
    ],
    "9": [
     0.06,
@@ -580,7 +580,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1150084515",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -590,6 +590,11 @@
    "method": "computed",
    "osm": [
     {
+     "id": 827002725,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/827002725"
+    },
+    {
      "id": 137326796,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/137326796"
@@ -598,23 +603,18 @@
      "id": 1133685539,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1133685539"
-    },
-    {
-     "id": 827002725,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/827002725"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/1150084515",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -626,5 +626,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

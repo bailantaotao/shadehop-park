@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 373,
+   "distance_m": 442,
    "location": {
-    "lat": 24.776973,
-    "lng": 121.037223
+    "lat": 24.781295,
+    "lng": 121.030316
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2927136204",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/2927135966",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/948369496",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "竹中站",
    "source": "https://www.openstreetmap.org/node/6548984264",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "台灣中油北基工研院加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1032,
@@ -60,14 +60,14 @@
   "1": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.88,
+   "mean": 0.82,
    "start": "16:30",
    "start_slot": 21
   },
   "10": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.93,
+   "mean": 0.86,
    "start": "16:30",
    "start_slot": 21
   },
@@ -83,7 +83,7 @@
   "3": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.69,
+   "mean": 0.63,
    "start": "17:00",
    "start_slot": 22
   },
@@ -91,7 +91,7 @@
   "5": {
    "end": "18:00",
    "end_slot": 24,
-   "mean": 1.0,
+   "mean": 0.94,
    "start": "17:30",
    "start_slot": 23
   },
@@ -107,7 +107,7 @@
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.98,
+   "mean": 0.92,
    "start": "17:00",
    "start_slot": 22
   }
@@ -168,7 +168,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/595271278"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -194,7 +194,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/142006894"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -220,7 +220,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992970539"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -246,7 +246,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1240393691"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -272,7 +272,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992970535"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -298,7 +298,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/149849219"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -319,7 +319,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/948369496",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹縣",
@@ -357,7 +357,7 @@
     0.0,
     0.0,
     0.0,
-    0.88,
+    0.82,
     null,
     null
    ],
@@ -383,7 +383,7 @@
     0.0,
     0.0,
     0.0,
-    0.93,
+    0.86,
     null,
     null
    ],
@@ -408,7 +408,7 @@
     0.0,
     0.0,
     0.0,
-    0.37,
+    0.31,
     0.0,
     null,
     null
@@ -434,7 +434,7 @@
     0.0,
     0.0,
     0.0,
-    0.31,
+    0.25,
     0.0,
     null,
     null
@@ -461,7 +461,7 @@
     0.0,
     0.0,
     0.0,
-    0.04,
+    0.0,
     0.66,
     null
    ],
@@ -488,7 +488,7 @@
     0.0,
     0.0,
     0.0,
-    0.69,
+    0.63,
     0.0
    ],
    "4": [
@@ -514,7 +514,7 @@
     0.0,
     0.0,
     0.0,
-    0.27,
+    0.2,
     0.26
    ],
    "5": [
@@ -541,7 +541,7 @@
     0.0,
     0.0,
     0.0,
-    1.0
+    0.94
    ],
    "6": [
     0.0,
@@ -567,7 +567,7 @@
     0.0,
     0.0,
     0.0,
-    0.44
+    0.37
    ],
    "7": [
     0.0,
@@ -593,7 +593,7 @@
     0.0,
     0.0,
     0.0,
-    0.38
+    0.3
    ],
    "8": [
     0.0,
@@ -644,22 +644,22 @@
     0.0,
     0.0,
     0.0,
-    0.98,
+    0.92,
     null
    ]
   },
   "source": "https://www.openstreetmap.org/way/948369496",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

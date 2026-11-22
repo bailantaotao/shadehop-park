@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/2632041133",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/436440942",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新竹站",
    "source": "https://www.openstreetmap.org/node/3372916575",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "竹蓮市場1樓-A",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 2826,
@@ -312,7 +312,7 @@
     "url": "https://www.openstreetmap.org/node/8637539734"
    },
    "osm_name": "竹蓮市場停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -347,7 +347,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3335372347"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -383,7 +383,7 @@
     "url": "https://www.openstreetmap.org/way/245280575"
    },
    "osm_name": "西大路立體停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -409,7 +409,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1462978506"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
+  },
+  {
+   "access": null,
+   "capacity": null,
+   "capacity_disabled": null,
+   "capacity_parent": null,
+   "distance_m": 338,
+   "distance_method": "straight_line",
+   "fee": null,
+   "kind": "surface",
+   "kind_label": "平面停車場",
+   "location": {
+    "lat": 24.795653,
+    "lng": 120.974946
+   },
+   "maxheight_m": null,
+   "method": "osm",
+   "name": "平面停車場",
+   "opening_hours": null,
+   "operator": null,
+   "osm": {
+    "id": 1577434374,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/1577434374"
+   },
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -435,43 +461,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/497056972"
    },
-   "verified_at": "2026-11-07"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 362,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.800857,
-    "lng": 120.973925
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "火車站後站(一、二、三、四)汽車停車場",
-   "official": {
-    "address": "300新竹市東區公竹路",
-    "cars": null,
-    "fare": "平假日 20元/時(24小時)",
-    "hours": null,
-    "match_m": 30,
-    "name": "火車站後站(一、二、三、四)汽車停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1240705540,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1240705540"
-   },
-   "osm_name": "後站第一汽車停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -492,7 +482,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/436440942",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹市",
@@ -500,8 +490,8 @@
   "id": "hsinchucity"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.13,
-  "buildings_considered": 142,
+  "building_height_known_share": 0.08,
+  "buildings_considered": 229,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -823,12 +813,12 @@
   },
   "source": "https://www.openstreetmap.org/way/436440942",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -852,5 +842,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

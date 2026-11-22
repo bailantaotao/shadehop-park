@@ -5,14 +5,14 @@
    "confidence": "medium",
    "distance_m": 62,
    "location": {
-    "lat": 25.019982,
-    "lng": 121.50382
+    "lat": 25.019972,
+    "lng": 121.503875
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/8823530657",
+   "name": "7-ELEVEN 青年門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1228990126",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運頂溪站",
    "source": "https://www.openstreetmap.org/node/3812564426",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -55,7 +55,7 @@
    "name": "青年公園6號",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 396,
@@ -343,7 +343,7 @@
     "url": "https://www.openstreetmap.org/way/229774713"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -369,7 +369,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1239123884"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -405,7 +405,7 @@
     "url": "https://www.openstreetmap.org/way/310165306"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -441,21 +441,21 @@
     "url": "https://www.openstreetmap.org/way/310165307"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 297,
+   "distance_m": 303,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
-    "lat": 25.01717,
-    "lng": 121.501116
+    "lat": 25.017035,
+    "lng": 121.50006
    },
    "maxheight_m": null,
    "method": "osm",
@@ -467,42 +467,33 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/112003051"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
-   "capacity": 276,
-   "capacity_disabled": "6",
+   "capacity": null,
+   "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 356,
+   "distance_m": 305,
    "distance_method": "straight_line",
    "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
+   "kind": "surface",
+   "kind_label": "平面停車場",
    "location": {
-    "lat": 25.023837,
-    "lng": 121.503156
+    "lat": 25.017039,
+    "lng": 121.501197
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "青年公園棒球場地下停車場",
-   "official": {
-    "address": "青年路69號地下",
-    "cars": 276,
-    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日4,800元/月，夜間(18-08)2,400元/月，機車全日300元/月，大型重型機車全日2,400元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 8,
-    "name": "青年公園棒球場地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
+   "name": "汽車停車場",
+   "opening_hours": null,
    "operator": null,
    "osm": {
-    "id": 3192426185,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3192426185"
+    "id": 528943185,
+    "type": "way",
+    "url": "https://www.openstreetmap.org/way/528943185"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -523,7 +514,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1228990126",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -854,12 +845,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1228990126",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -883,5 +874,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

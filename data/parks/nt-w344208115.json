@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 202,
+   "distance_m": 176,
    "location": {
-    "lat": 25.068216,
-    "lng": 121.473035
+    "lat": 25.062889,
+    "lng": 121.479737
    },
    "method": "osm",
-   "name": "萊爾富",
-   "source": "https://www.openstreetmap.org/node/13413753097",
+   "name": "7-ELEVEN 雲鼎門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344208115",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運三重站",
    "source": "https://www.openstreetmap.org/node/4653351593",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "幸福水漾公園(疏洪)",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 199983,
@@ -275,7 +275,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729763"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -301,7 +301,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457992996"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -337,7 +337,7 @@
     "url": "https://www.openstreetmap.org/way/925883747"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -372,7 +372,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729765"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -398,7 +398,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729755"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -434,7 +434,7 @@
     "url": "https://www.openstreetmap.org/way/1015443508"
    },
    "osm_name": "中山高架橋下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -455,7 +455,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/344208115",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -786,7 +786,7 @@
   },
   "source": "https://www.openstreetmap.org/way/344208115",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -805,12 +805,12 @@
    "source": "https://www.openstreetmap.org/way/344208115",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -834,5 +834,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

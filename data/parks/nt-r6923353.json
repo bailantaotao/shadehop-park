@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 72,
+   "distance_m": 22,
    "location": {
-    "lat": 24.97915,
-    "lng": 121.523499
+    "lat": 24.979138,
+    "lng": 121.523996
    },
    "method": "osm",
-   "name": "全家便利商店",
-   "source": "https://www.openstreetmap.org/node/2931294192",
+   "name": "7-ELEVEN 溪園門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/relation/6923353",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "十四張站",
    "source": "https://www.openstreetmap.org/node/8041597963",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1467831341",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 4274,
@@ -90,11 +90,11 @@
    "start_slot": 1
   },
   "12": {
-   "end": "07:30",
-   "end_slot": 3,
-   "mean": 0.64,
-   "start": "07:00",
-   "start_slot": 2
+   "end": "17:00",
+   "end_slot": 22,
+   "mean": 0.74,
+   "start": "16:30",
+   "start_slot": 21
   },
   "2": {
    "end": "08:00",
@@ -286,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064570573"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -322,7 +322,7 @@
     "url": "https://www.openstreetmap.org/way/1064570014"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -348,7 +348,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/462954233"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
     "url": "https://www.openstreetmap.org/way/237014528"
    },
    "osm_name": "小碧潭中安橋下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -410,7 +410,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/371456962"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -436,7 +436,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/462954240"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -457,7 +457,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/relation/6923353",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -547,7 +547,7 @@
     0.32,
     0.47,
     0.58,
-    0.61,
+    0.8,
     null,
     null
    ],
@@ -573,7 +573,7 @@
     0.3,
     0.46,
     0.53,
-    0.58,
+    0.74,
     null,
     null
    ],
@@ -600,7 +600,7 @@
     0.29,
     0.42,
     0.57,
-    0.66,
+    0.68,
     null
    ],
    "3": [
@@ -627,7 +627,7 @@
     0.33,
     0.48,
     0.69,
-    0.79
+    0.89
    ],
    "4": [
     0.43,
@@ -788,12 +788,12 @@
   },
   "source": "https://www.openstreetmap.org/relation/6923353",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -811,5 +811,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

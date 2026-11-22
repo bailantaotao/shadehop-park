@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 122,
+   "distance_m": 145,
    "location": {
-    "lat": 24.944967,
-    "lng": 121.375081
+    "lat": 24.945372,
+    "lng": 121.373617
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/10092252233",
+   "name": "7-ELEVEN 新北大門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/232979856",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運三峽站",
    "source": "https://www.openstreetmap.org/node/13976613665",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -55,7 +55,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/12292029540",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1775,
@@ -295,7 +295,7 @@
     "url": "https://www.openstreetmap.org/relation/20682273"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -331,7 +331,7 @@
     "url": "https://www.openstreetmap.org/way/824238161"
    },
    "osm_name": "LI PARKING",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -367,7 +367,7 @@
     "url": "https://www.openstreetmap.org/way/1513916992"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -403,7 +403,7 @@
     "url": "https://www.openstreetmap.org/way/358298799"
    },
    "osm_name": "LI PARKING",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -439,7 +439,7 @@
     "url": "https://www.openstreetmap.org/way/441755605"
    },
    "osm_name": "錢都停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -475,7 +475,7 @@
     "url": "https://www.openstreetmap.org/way/386752407"
    },
    "osm_name": "嘟嘟房三峽大德站",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -496,7 +496,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/232979856",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -827,12 +827,12 @@
   },
   "source": "https://www.openstreetmap.org/way/232979856",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -850,5 +850,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

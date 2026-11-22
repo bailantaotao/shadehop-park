@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 254,
+   "distance_m": 99,
    "location": {
-    "lat": 25.030201,
-    "lng": 121.446492
+    "lat": 25.027089,
+    "lng": 121.444106
    },
    "method": "osm",
-   "name": "萊爾富",
-   "source": "https://www.openstreetmap.org/node/13423799018",
+   "name": "7-ELEVEN 莊霖門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344200571",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "浮洲站",
    "source": "https://www.openstreetmap.org/node/1320065245",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/8224274223",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 328471,
@@ -126,7 +126,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008627007"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -152,7 +152,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008627010"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -178,7 +178,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/281748352"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -214,7 +214,7 @@
     "url": "https://www.openstreetmap.org/way/692388996"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -240,7 +240,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008627008"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -266,7 +266,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1008627009"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -287,7 +287,7 @@
   "note": "約 11684 m² 在高架/屋頂下（佔 4%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/344200571",
   "value": "partial",
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -618,7 +618,7 @@
   },
   "source": "https://www.openstreetmap.org/way/344200571",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -627,16 +627,6 @@
    "level": "B",
    "method": "computed",
    "osm": [
-    {
-     "id": 205362975,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/205362975"
-    },
-    {
-     "id": 205362977,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/205362977"
-    },
     {
      "id": 1303486333,
      "type": "way",
@@ -651,13 +641,23 @@
      "id": 325985054,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/325985054"
+    },
+    {
+     "id": 205362975,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/205362975"
+    },
+    {
+     "id": 205362977,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/205362977"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/344200571",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "low",
@@ -669,12 +669,12 @@
    "trees": 3,
    "type": "tree_canopy",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -686,5 +686,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

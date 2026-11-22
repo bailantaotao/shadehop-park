@@ -12,7 +12,7 @@
    "name": "OK超商",
    "source": "https://www.openstreetmap.org/node/7922528399",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/730094915",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "新豐站",
    "source": "https://www.openstreetmap.org/node/418760215",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -52,7 +52,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1164815631",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 634,
@@ -203,7 +203,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/730094912"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -229,7 +229,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992984677"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -255,7 +255,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326355158"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -264,7 +264,7 @@
    "capacity_parent": null,
    "distance_m": 407,
    "distance_method": "straight_line",
-   "fee": null,
+   "fee": "yes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -273,15 +273,15 @@
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
+   "name": "Times新豐明新康樂停車場",
    "opening_hours": null,
-   "operator": null,
+   "operator": "台灣普客二四股份有限公司",
    "osm": {
     "id": 1471852939,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1471852939"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -307,7 +307,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/992984676"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -333,7 +333,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/673078847"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -354,7 +354,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/730094915",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹縣",
@@ -685,12 +685,12 @@
   },
   "source": "https://www.openstreetmap.org/way/730094915",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -702,5 +702,5 @@
    "url": "https://data.gov.tw/dataset/170220"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

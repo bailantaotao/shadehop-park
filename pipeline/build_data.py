@@ -144,8 +144,9 @@ def _build_worker(job: tuple[str, int]) -> dict | None:
 
 class Builder:
     def __init__(self, raw: dict, city: dict | None = None, region: dict | None = None, tdx: dict | None = None,
-                 toilets: dict | None = None):
+                 toilets: dict | None = None, stores711: dict | None = None):
         self.raw = raw
+        self.official_711 = stores711  # 7-ELEVEN's own store list (fetch_711), replaces its OSM points
         self.moenv_toilets = toilets  # 環境部公廁 (fetch_toilets), merged with OSM toilets
         # Shade timetables from the previous build, by fingerprint (see shade_cache); main() fills it.
         self.tt_cache: dict = {}
@@ -251,7 +252,7 @@ class Builder:
                 self.toilets.append(item)
             if tags.get("amenity") == "drinking_water":
                 self.water.append(item)
-            if tags.get("shop") == "convenience" and access not in EXCLUDED_ACCESS:
+            if tags.get("shop") == "convenience" and access not in EXCLUDED_ACCESS and _is_convenience_chain(tags):
                 self.convenience.append(item)
             if tags.get("railway") == "station" and tags.get("name") and el["type"] in ("node", "way"):
                 self.stations.append(item)
@@ -262,6 +263,7 @@ class Builder:
             c["charger"] = self._osm_charger(c)
         self._merge_tdx_chargers()
         self._merge_official_toilets()
+        self._merge_official_711()
         self.shade = ShadeModel(self.casters)
         self.cover_tree = STRtree([c["geom"] for c in self.covers]) if self.covers else None
         self.tree_tree = STRtree(self.trees_xy) if self.trees_xy else None
@@ -376,6 +378,18 @@ class Builder:
                           "geom": pt, "xy": self.proj.to_xy(pt), "official": st})
         keep = [t for t in self.toilets if not any(o["xy"].distance(t["xy"]) <= config.TOILET_MERGE_M for o in items)]
         self.toilets = keep + items
+
+    def _merge_official_711(self) -> None:
+        """7-ELEVEN's own list is complete and current, so it replaces every 7-ELEVEN point from OSM
+        (other chains stay as mapped)."""
+        if not self.official_711:
+            return
+        items = []
+        for st in self.official_711["stores"]:
+            pt = Point(st["lng"], st["lat"])
+            items.append({"el": {"type": "711", "id": st["id"]}, "tags": {"brand": "7-ELEVEN", "name": f"{st['name']}門市"},
+                          "geom": pt, "xy": self.proj.to_xy(pt), "official": st})
+        self.convenience = [c for c in self.convenience if not _is_711(c["tags"])] + items
 
     # ---------------------------------------------------------------- helpers
     def _nearest(self, items: list[dict], zone, radius: float) -> list[tuple[float, dict]]:
@@ -622,7 +636,7 @@ class Builder:
                                    distance_m=int(round(water[0][0])) if water else None,
                                    location=self._latlng(water[0][1]["geom"]) if water else None),
             "convenience_store": fact(bool(shops) or None, "osm", d, "medium" if shops else "low",
-                                      osm_ref(shops[0][1]["el"])["url"] if shops else src,
+                                      _shop_source(shops[0][1]) if shops else src,
                                       distance_m=int(round(shops[0][0])) if shops else None,
                                       name=_shop_name(shops[0][1]["tags"]) if shops else None,
                                       location=self._latlng(shops[0][1]["geom"]) if shops else None),
@@ -979,6 +993,46 @@ class Builder:
         }
 
 
+_PARCEL_NAMES = ("蝦皮", "shopee")
+
+
+def _is_parcel_point(tags: dict) -> bool:
+    """Courier pick-up points (蝦皮店到店) are mapped in OSM as shop=convenience, but you cannot buy anything there."""
+    if tags.get("office") == "courier":
+        return True
+    text = " ".join(tags.get(k, "") for k in ("name", "brand", "alt_name", "name:en", "brand:en")).lower()
+    return any(n in text for n in _PARCEL_NAMES)
+
+
+def _tag_text(tags: dict) -> str:
+    return " ".join(tags.get(k, "") for k in ("name", "brand", "brand:en", "alt_name", "name:en")).lower()
+
+
+def _is_convenience_chain(tags: dict) -> bool:
+    """OSM's shop=convenience also holds supermarkets, kiosks and parcel pick-up points (蝦皮店到店). Only the four
+    chains that sell what a visitor wants count; matching is by brand or name, so unbranded points are left out."""
+    if _is_parcel_point(tags):
+        return False
+    text = _tag_text(tags)
+    if _is_711(tags) or any(k in text for k in _CHAIN_KEYWORDS):
+        return True
+    return "ok" in (tags.get("name", "").strip().lower(), tags.get("brand", "").strip().lower())
+
+
+_CHAIN_KEYWORDS = ("全家", "familymart", "family mart", "萊爾富", "hi-life", "hilife", "ok超商", "ok mart", "okmart", "ok-mart", "來來超商")
+
+
+def _is_711(tags: dict) -> bool:
+    text = _tag_text(tags)
+    return any(k in text for k in ("7-eleven", "7-11", "7eleven", "統一超商", "7－11")) or tags.get("brand:wikidata") == "Q259340"
+
+
+def _shop_source(item: dict) -> str:
+    if item["el"]["type"] == "711":
+        return "https://emap.pcsc.com.tw/emap.aspx"
+    return osm_ref(item["el"])["url"]
+
+
 def _shop_name(tags: dict) -> str:
     """'7-ELEVEN 木柵門市' etc.; brand alone when the branch is not named."""
     name, brand = tags.get("name"), tags.get("brand")
@@ -1144,6 +1198,11 @@ def load_toilets(region_id: str = config.DEFAULT_REGION, path: Path | None = Non
     return json.loads(path.read_text()) if path.exists() else None
 
 
+def load_711(path: Path | None = None) -> dict | None:
+    path = path or DATA / "raw" / "711.stores.json"
+    return json.loads(path.read_text()) if path.exists() else None
+
+
 def load_tdx(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -> dict | None:
     path = path or DATA / "raw" / f"{region_id}.tdx_chargers.json"
     return json.loads(path.read_text()) if path.exists() else None
@@ -1152,9 +1211,10 @@ def load_tdx(region_id: str = config.DEFAULT_REGION, path: Path | None = None) -
 def main(argv: list[str]) -> None:
     region_ids = argv or list(config.REGIONS)
     parks, metas, casters, chargers = [], [], [], []
+    stores711 = load_711()
     for rid in region_ids:
         t = time.time()
-        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid), load_toilets(rid))
+        b = Builder(load_raw(rid), load_city(rid), config.REGIONS[rid], load_tdx(rid), load_toilets(rid), stores711)
         b.tt_cache = shade_cache.load(rid)
         mine = b.build()
         om = official_parking.Matcher(official_parking.load(rid))  # names, fees and hours the city registered

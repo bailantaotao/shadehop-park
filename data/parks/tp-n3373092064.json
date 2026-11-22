@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 161,
+   "distance_m": 166,
    "location": {
-    "lat": 25.050095,
-    "lng": 121.54423
+    "lat": 25.050146,
+    "lng": 121.544193
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/6568146963",
+   "name": "7-ELEVEN 樂得門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/3373092064",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運南京復興站",
    "source": "https://www.openstreetmap.org/node/3497302606",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -66,7 +66,7 @@
    "name": "台灣中油復興北路加油站",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -102,7 +102,7 @@
   "2": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.82,
+   "mean": 0.83,
    "start": "13:30",
    "start_slot": 15
   },
@@ -494,7 +494,7 @@
     "url": "https://www.openstreetmap.org/way/1387020823"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -530,7 +530,7 @@
     "url": "https://www.openstreetmap.org/way/907042536"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -566,7 +566,7 @@
     "url": "https://www.openstreetmap.org/node/12840184505"
    },
    "osm_name": "台灣聯通",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -602,7 +602,7 @@
     "url": "https://www.openstreetmap.org/way/311430377"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -638,7 +638,7 @@
     "url": "https://www.openstreetmap.org/way/678672888"
    },
    "osm_name": "復興南路平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -674,7 +674,7 @@
     "url": "https://www.openstreetmap.org/way/980477252"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -695,7 +695,7 @@
   "note": "約 116 m² 在高架/屋頂下（佔 26%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/node/3373092064",
   "value": "partial",
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -1026,7 +1026,7 @@
   },
   "source": "https://www.openstreetmap.org/node/3373092064",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -1045,12 +1045,12 @@
    "source": "https://www.openstreetmap.org/node/3373092064",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1074,5 +1074,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 133,
+   "distance_m": 126,
    "location": {
-    "lat": 25.022346,
-    "lng": 121.47623
+    "lat": 25.022787,
+    "lng": 121.474228
    },
    "method": "osm",
-   "name": "OK超商",
-   "source": "https://www.openstreetmap.org/node/9969422640",
+   "name": "7-ELEVEN 萬板門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/217454608",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運新埔站",
    "source": "https://www.openstreetmap.org/node/3639530946",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": "廁所",
    "source": "https://www.openstreetmap.org/way/286704347",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1053,
@@ -269,7 +269,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1088766931"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -295,7 +295,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1088765696"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -321,7 +321,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3999297170"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -357,7 +357,7 @@
     "url": "https://www.openstreetmap.org/way/904416002"
    },
    "osm_name": "台灣聯通",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -383,7 +383,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/947372738"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -409,7 +409,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317459956"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -430,7 +430,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/217454608",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -761,12 +761,12 @@
   },
   "source": "https://www.openstreetmap.org/way/217454608",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -784,5 +784,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

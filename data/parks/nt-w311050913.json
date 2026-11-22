@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 67,
+   "distance_m": 63,
    "location": {
-    "lat": 25.044487,
-    "lng": 121.444854
+    "lat": 25.044536,
+    "lng": 121.444865
    },
    "method": "osm",
-   "name": "全家便利商店",
-   "source": "https://www.openstreetmap.org/node/5491394104",
+   "name": "7-ELEVEN 中平門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/311050913",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運泰山站",
    "source": "https://www.openstreetmap.org/node/4653215488",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -63,7 +63,7 @@
    "name": "家樂福中平店B1",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 1653,
@@ -78,14 +78,14 @@
   "10": {
    "end": "09:00",
    "end_slot": 6,
-   "mean": 0.79,
+   "mean": 0.8,
    "start": "06:00",
    "start_slot": 0
   },
   "11": {
    "end": "08:30",
    "end_slot": 5,
-   "mean": 0.83,
+   "mean": 0.84,
    "start": "06:30",
    "start_slot": 1
   },
@@ -406,7 +406,7 @@
     "url": "https://www.openstreetmap.org/way/313026797"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -432,7 +432,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/313026796"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -468,7 +468,7 @@
     "url": "https://www.openstreetmap.org/way/1145069464"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -504,7 +504,7 @@
     "url": "https://www.openstreetmap.org/way/312380973"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -530,7 +530,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12348719"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -556,7 +556,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1017867668"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -577,7 +577,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/311050913",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -908,12 +908,12 @@
   },
   "source": "https://www.openstreetmap.org/way/311050913",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -937,5 +937,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

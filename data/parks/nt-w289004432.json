@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 2,
+   "distance_m": 32,
    "location": {
-    "lat": 25.002626,
-    "lng": 121.500873
+    "lat": 25.000921,
+    "lng": 121.50208
    },
    "method": "osm",
-   "name": "印尼便利商店TOKO INDO ISABELLA",
-   "source": "https://www.openstreetmap.org/node/2924915295",
+   "name": "7-ELEVEN 廣麗門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/289004432",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運中和站",
    "source": "https://www.openstreetmap.org/node/5444300912",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/2924917847",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 5495,
@@ -347,7 +347,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3440914200"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -382,7 +382,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1060247645"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -408,7 +408,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1416712237"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -434,7 +434,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3450014417"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -460,7 +460,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311768100"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -486,7 +486,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/311573881"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -507,7 +507,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/289004432",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -838,12 +838,12 @@
   },
   "source": "https://www.openstreetmap.org/way/289004432",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -867,5 +867,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

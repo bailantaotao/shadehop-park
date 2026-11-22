@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 141,
+   "distance_m": 133,
    "location": {
-    "lat": 25.028057,
-    "lng": 121.502497
+    "lat": 25.028055,
+    "lng": 121.50257
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2414201447",
+   "name": "7-ELEVEN 國雙門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/426065310",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "萬華站",
    "source": "https://www.openstreetmap.org/node/1273038428",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "新和國小地下停車場",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 359,
@@ -417,7 +417,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1347486771"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -443,7 +443,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12464380988"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -479,7 +479,7 @@
     "url": "https://www.openstreetmap.org/way/1002930390"
    },
    "osm_name": "嘟嘟房",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -505,7 +505,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1376741504"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -541,7 +541,7 @@
     "url": "https://www.openstreetmap.org/way/287208259"
    },
    "osm_name": "莒光路立體停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -567,7 +567,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317608281"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -588,7 +588,7 @@
   "note": "位於 OSM 建物輪廓內，可能是室內場館或社區中庭，請確認",
   "source": "https://www.openstreetmap.org/way/426065310",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -596,8 +596,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.16,
-  "buildings_considered": 657,
+  "building_height_known_share": 0.17,
+  "buildings_considered": 627,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -919,12 +919,12 @@
   },
   "source": "https://www.openstreetmap.org/way/426065310",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -942,5 +942,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

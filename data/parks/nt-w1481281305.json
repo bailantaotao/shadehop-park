@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 146,
+   "distance_m": 143,
    "location": {
-    "lat": 24.938007,
-    "lng": 121.366907
+    "lat": 24.937976,
+    "lng": 121.366929
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/13430408095",
+   "name": "7-ELEVEN 勇興門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,20 +21,20 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1481281305",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
-   "distance_m": 200,
+   "distance_m": 202,
    "location": {
-    "lat": 24.93899,
-    "lng": 121.367158
+    "lat": 24.938987,
+    "lng": 121.36712
    },
    "method": "osm",
    "name": "捷運臺北大學站",
    "source": "https://www.openstreetmap.org/node/4990733842",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -63,7 +63,7 @@
    "name": "三峽區里民公共活動場所(鳶山里)",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 33,
@@ -407,7 +407,7 @@
     "url": "https://www.openstreetmap.org/relation/20246466"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -443,7 +443,7 @@
     "url": "https://www.openstreetmap.org/way/1469956788"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -469,7 +469,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1453010881"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -495,7 +495,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/336335160"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -521,7 +521,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1469956787"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -547,7 +547,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1457140904"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -568,7 +568,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1481281305",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -577,7 +577,7 @@
  },
  "shade_timetable": {
   "building_height_known_share": 0.05,
-  "buildings_considered": 423,
+  "buildings_considered": 424,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -899,7 +899,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1481281305",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -911,12 +911,12 @@
    "source": "https://www.openstreetmap.org/way/1481281305",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -934,5 +934,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

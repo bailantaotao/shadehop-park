@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 113,
+   "distance_m": 116,
    "location": {
-    "lat": 25.048778,
-    "lng": 121.525434
+    "lat": 25.048814,
+    "lng": 121.5265
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/6881370461",
+   "name": "全家便利商店",
+   "source": "https://www.openstreetmap.org/node/4205229642",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/11311415382",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運善導寺站",
    "source": "https://www.openstreetmap.org/node/3578751641",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -55,7 +55,7 @@
    "name": "市民大道地下停車場林金段林森長安1號出口B1",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -455,7 +455,7 @@
     "url": "https://www.openstreetmap.org/way/1466666864"
    },
    "osm_name": "台北長安林森停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -491,7 +491,7 @@
     "url": "https://www.openstreetmap.org/way/436568797"
    },
    "osm_name": "嘟嘟房",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -527,7 +527,7 @@
     "url": "https://www.openstreetmap.org/way/436568801"
    },
    "osm_name": "長安東三站停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -563,7 +563,7 @@
     "url": "https://www.openstreetmap.org/way/387505813"
    },
    "osm_name": "希望廣場停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -599,7 +599,7 @@
     "url": "https://www.openstreetmap.org/node/3196998919"
    },
    "osm_name": "市民大道停車場 (林森 - 金山)",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -635,7 +635,7 @@
     "url": "https://www.openstreetmap.org/way/436568799"
    },
    "osm_name": "林森五條通平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -656,7 +656,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/11311415382",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -987,12 +987,12 @@
   },
   "source": "https://www.openstreetmap.org/node/11311415382",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -1016,5 +1016,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

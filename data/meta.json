@@ -25,31 +25,31 @@
   "VIADUCT_DECK_TOP_M": 10.0
  },
  "counts": {
-  "buildings_in_bbox": 423848,
-  "buildings_with_height": 93417,
+  "buildings_in_bbox": 425029,
+  "buildings_with_height": 93476,
   "by_level": {
    "A": 46,
-   "B": 142,
+   "B": 143,
    "C": 55,
-   "none": 3028
+   "none": 3029
   },
   "chargers_in_bbox": 1333,
   "chargers_official": 1237,
   "chargers_osm_only": 96,
   "city_registry_parks": 1736,
-  "convenience_stores": 15135,
-  "mapped_playgrounds": 780,
-  "matched_city_registry": 708,
+  "convenience_stores": 25899,
+  "mapped_playgrounds": 782,
+  "matched_city_registry": 709,
   "official_only": 296,
   "park_candidates": 2128,
-  "parking_lots_in_bbox": 14671,
-  "parks": 3271,
-  "stations": 524,
+  "parking_lots_in_bbox": 14690,
+  "parks": 3273,
+  "stations": 522,
   "toilets_official": 5675
  },
  "coverage": "新北市、臺北市、桃園市、新竹市、新竹縣",
- "fetched_at": "2026-11-08T22:55:03+00:00",
- "generated_from_osm_base": "2026-11-07T21:21:36Z",
+ "fetched_at": "2026-11-22T14:23:27+00:00",
+ "generated_from_osm_base": "2026-11-21T21:20:51Z",
  "level_labels": {
   "A": "全天候遮蔽（下雨可玩）",
   "B": "部分遮陽設施 / 樹蔭",
@@ -70,7 +70,7 @@
     120.87942,
     24.71257,
     121.03354,
-    24.85321
+    24.85342
    ],
    "charger_source": {
     "attribution": "資料介接「交通部TDX平臺」",
@@ -321,8 +321,8 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 12572,
-    "buildings_with_height": 1553,
+    "buildings_in_bbox": 12701,
+    "buildings_with_height": 1555,
     "by_level": {
      "A": 8,
      "B": 15,
@@ -333,12 +333,12 @@
     "chargers_official": 67,
     "chargers_osm_only": 7,
     "city_registry_parks": 115,
-    "convenience_stores": 637,
+    "convenience_stores": 4068,
     "mapped_playgrounds": 59,
     "matched_city_registry": 66,
     "official_only": 0,
     "park_candidates": 172,
-    "parking_lots_in_bbox": 979,
+    "parking_lots_in_bbox": 982,
     "parks": 275,
     "stations": 12,
     "toilets_official": 224
@@ -354,8 +354,8 @@
     "university": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-11-08T22:55:03+00:00",
-   "generated_from_osm_base": "2026-11-07T21:21:36Z",
+   "fetched_at": "2026-11-22T14:23:27+00:00",
+   "generated_from_osm_base": "2026-11-21T21:20:51Z",
    "region": {
     "city": "新竹市",
     "city_en": "Hsinchu City",
@@ -373,7 +373,7 @@
   },
   "hsinchucounty": {
    "bbox": [
-    120.92959,
+    120.92909,
     24.42737,
     121.41233,
     24.94637
@@ -390,8 +390,8 @@
    "city_registry": null,
    "city_registry_not_in_osm": [],
    "counts": {
-    "buildings_in_bbox": 47064,
-    "buildings_with_height": 4468,
+    "buildings_in_bbox": 47413,
+    "buildings_with_height": 4471,
     "by_level": {
      "A": 3,
      "B": 10,
@@ -402,12 +402,12 @@
     "chargers_official": 64,
     "chargers_osm_only": 12,
     "city_registry_parks": null,
-    "convenience_stores": 1691,
-    "mapped_playgrounds": 80,
+    "convenience_stores": 4596,
+    "mapped_playgrounds": 81,
     "matched_city_registry": 0,
     "official_only": 0,
-    "park_candidates": 313,
-    "parking_lots_in_bbox": 2152,
+    "park_candidates": 312,
+    "parking_lots_in_bbox": 2160,
     "parks": 393,
     "stations": 37,
     "toilets_official": 320
@@ -427,8 +427,8 @@
     "university": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-11-08T22:55:03+00:00",
-   "generated_from_osm_base": "2026-11-07T21:21:36Z",
+   "fetched_at": "2026-11-22T14:23:27+00:00",
+   "generated_from_osm_base": "2026-11-21T21:20:51Z",
    "region": {
     "city": "新竹縣",
     "city_en": "Hsinchu County",
@@ -928,10 +928,6 @@
     {
      "address": "福仁街與慶利街交叉口",
      "name": "員仁社區公園"
-    },
-    {
-     "address": "中央路二段61巷旁",
-     "name": "員和公園"
     },
     {
      "address": "樂利街16號",
@@ -2983,26 +2979,26 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 158007,
-    "buildings_with_height": 40678,
+    "buildings_in_bbox": 158198,
+    "buildings_with_height": 40710,
     "by_level": {
      "A": 13,
      "B": 63,
      "C": 18,
-     "none": 1028
+     "none": 1029
     },
     "chargers_in_bbox": 316,
     "chargers_official": 286,
     "chargers_osm_only": 30,
     "city_registry_parks": 1047,
-    "convenience_stores": 5405,
+    "convenience_stores": 6229,
     "mapped_playgrounds": 198,
-    "matched_city_registry": 443,
+    "matched_city_registry": 444,
     "official_only": 0,
-    "park_candidates": 924,
-    "parking_lots_in_bbox": 4996,
-    "parks": 1122,
-    "stations": 222,
+    "park_candidates": 925,
+    "parking_lots_in_bbox": 4997,
+    "parks": 1123,
+    "stations": 221,
     "toilets_official": 2529
    },
    "default_building_heights_by_type": {
@@ -3039,8 +3035,8 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-11-08T22:55:03+00:00",
-   "generated_from_osm_base": "2026-11-07T21:21:36Z",
+   "fetched_at": "2026-11-22T14:23:27+00:00",
+   "generated_from_osm_base": "2026-11-21T21:20:51Z",
    "region": {
     "city": "新北市",
     "city_en": "New Taipei City",
@@ -3086,11 +3082,11 @@
    },
    "city_registry_not_in_osm": [],
    "counts": {
-    "buildings_in_bbox": 107024,
-    "buildings_with_height": 34532,
+    "buildings_in_bbox": 107198,
+    "buildings_with_height": 34547,
     "by_level": {
      "A": 9,
-     "B": 27,
+     "B": 28,
      "C": 19,
      "none": 556
     },
@@ -3098,14 +3094,14 @@
     "chargers_official": 439,
     "chargers_osm_only": 16,
     "city_registry_parks": 520,
-    "convenience_stores": 3465,
-    "mapped_playgrounds": 315,
+    "convenience_stores": 5357,
+    "mapped_playgrounds": 316,
     "matched_city_registry": 151,
     "official_only": 296,
     "park_candidates": 0,
     "parking_lots_in_bbox": 2590,
-    "parks": 611,
-    "stations": 151,
+    "parks": 612,
+    "stations": 150,
     "toilets_official": 1484
    },
    "default_building_heights_by_type": {
@@ -3140,15 +3136,15 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-11-08T22:55:03+00:00",
-   "generated_from_osm_base": "2026-11-07T21:21:36Z",
+   "fetched_at": "2026-11-22T14:23:27+00:00",
+   "generated_from_osm_base": "2026-11-21T21:20:51Z",
    "region": {
     "city": "臺北市",
     "city_en": "Taipei City",
     "fetch_tiles": 3,
     "id": "taipei",
     "id_prefix": "tp",
-    "label": "台北市",
+    "label": "臺北市",
     "moenv_county": "63000",
     "name": "臺北市",
     "name_en": "Taipei City",
@@ -3241,8 +3237,8 @@
     }
    ],
    "counts": {
-    "buildings_in_bbox": 99181,
-    "buildings_with_height": 12186,
+    "buildings_in_bbox": 99519,
+    "buildings_with_height": 12193,
     "by_level": {
      "A": 13,
      "B": 27,
@@ -3253,12 +3249,12 @@
     "chargers_official": 381,
     "chargers_osm_only": 31,
     "city_registry_parks": 54,
-    "convenience_stores": 3937,
+    "convenience_stores": 5649,
     "mapped_playgrounds": 128,
     "matched_city_registry": 48,
     "official_only": 0,
     "park_candidates": 719,
-    "parking_lots_in_bbox": 3954,
+    "parking_lots_in_bbox": 3961,
     "parks": 870,
     "stations": 102,
     "toilets_official": 1118
@@ -3289,8 +3285,8 @@
     "warehouse": 9.0,
     "yes": 9.0
    },
-   "fetched_at": "2026-11-08T22:55:03+00:00",
-   "generated_from_osm_base": "2026-11-07T21:21:36Z",
+   "fetched_at": "2026-11-22T14:23:27+00:00",
+   "generated_from_osm_base": "2026-11-21T21:20:51Z",
    "region": {
     "city": "桃園市",
     "city_en": "Taoyuan City",

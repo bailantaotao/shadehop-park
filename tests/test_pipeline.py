@@ -457,6 +457,8 @@ def test_nearby_toilets_shops_and_stations():
     data = raw()
     data["elements"] += [
         node(95, 150, 0, shop="convenience", brand="7-ELEVEN", name="測試門市"),
+        node(97, 60, 0, shop="convenience", office="courier", name="蝦皮店到店"),  # nearer, but a parcel point
+        node(98, 70, 0, shop="convenience", name="蝦皮店到店"),  # same, without the office tag
         node(96, 900, 0, railway="station", station="subway", name="測試"),
     ]
     lat0, lng0 = P.lnglat(32, 0)[1], P.lnglat(32, 0)[0]  # same spot as the OSM toilet: one place
@@ -496,3 +498,46 @@ def test_hsinchu_registry_normalised(monkeypatch):
     assert not by["北區/南寮環保公園"]["playground"] and by["北區/南寮環保公園"]["facilities"] is None
     assert "香山區/香山公園" in by
     assert seen["verify"].endswith(".pem")  # certificate check stays on
+
+
+def test_official_711_replaces_osm_711_but_not_other_chains():
+    from .fixture import node
+    data = raw()
+    data["elements"] += [
+        node(95, 100, 0, shop="convenience", brand="7-ELEVEN", name="舊的OSM門市"),  # same chain: replaced
+        node(96, 300, 0, shop="convenience", brand="全家便利商店", name="全家測試店"),
+    ]
+    lng, lat = P.lnglat(200, 0)
+    stores = {"stores": [{"id": "1", "name": "測試", "lat": lat, "lng": lng, "address": "x", "hours": "06:00 ~ 23:59", "toilet": True}]}
+    a = {x["osm"]["id"]: x for x in Builder(data, stores711=stores).build()}[10]["amenities"]["convenience_store"]
+    assert a["name"] == "7-ELEVEN 測試門市" and a["source"] == "https://emap.pcsc.com.tw/emap.aspx"
+    assert 180 < a["distance_m"] < 200  # the official store, not the OSM one at 100 m
+    b = {x["osm"]["id"]: x for x in Builder(raw(), stores711=None).build()}[10]["amenities"]["convenience_store"]
+    assert b["value"] is None
+
+
+def test_parse_711_locator_xml():
+    import xml.etree.ElementTree as ET
+    from pipeline.fetch_711 import parse_stores
+    xml = ("<r><MessageID>00000</MessageID><GeoPosition><POIID>261371   </POIID><POIName>大台</POIName>"
+           "<X>121532554.5</X><Y>25017604</Y><Address>台北市大安區羅斯福路三段</Address>"
+           "<StoreImageTitle>02廁所,03ATM</StoreImageTitle><OP_TIME>06:00 ~ 23:59</OP_TIME></GeoPosition>"
+           "<GeoPosition><POIID></POIID><POIName>壞資料</POIName></GeoPosition></r>")
+    [s] = parse_stores(ET.fromstring(xml))
+    assert s == {"id": "261371", "name": "大台", "lat": 25.017604, "lng": 121.532555, "address": "台北市大安區羅斯福路三段",
+                 "hours": "06:00 ~ 23:59", "toilet": True}
+
+
+def test_only_the_four_chains_count_as_convenience_stores():
+    from .fixture import node
+    from pipeline.build_data import _is_convenience_chain as chain
+    for tags in ({"brand": "全家便利商店"}, {"name": "FamilyMart 木柵店"}, {"name": "萊爾富 景美店"}, {"brand": "Hi-Life"},
+                 {"name": "OK超商 中壢店"}, {"brand": "OK"}, {"name": "7-ELEVEN 木柵門市"}, {"brand": "統一超商"}):
+        assert chain(tags), tags
+    for tags in ({}, {"name": "家樂福超市"}, {"name": "義美食品"}, {"name": "玉霞商店"}, {"name": "蝦皮店到店"},
+                 {"name": "全家 蝦皮店到店", "office": "courier"}, {"name": "OKAY 小舖"}):
+        assert not chain(tags), tags
+    data = raw()
+    data["elements"] += [node(95, 100, 0, shop="convenience", name="家樂福超市"), node(96, 300, 0, shop="convenience", brand="全家便利商店", name="全家測試店")]
+    a = {x["osm"]["id"]: x for x in Builder(data).build()}[10]["amenities"]["convenience_store"]
+    assert a["name"] == "全家便利商店 全家測試店"  # the nearer supermarket at 100 m is skipped

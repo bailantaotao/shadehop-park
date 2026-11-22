@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 33,
+   "distance_m": 227,
    "location": {
-    "lat": 24.799146,
-    "lng": 120.992453
+    "lat": 24.800598,
+    "lng": 120.994384
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/2621335193",
+   "name": "萊爾富",
+   "source": "https://www.openstreetmap.org/node/2626124581",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1558545492",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "千甲站",
    "source": "https://www.openstreetmap.org/node/1543862084",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "赤土崎公有停車場B1樓前",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 408,
@@ -125,7 +125,7 @@
   "9": {
    "end": "08:30",
    "end_slot": 5,
-   "mean": 0.69,
+   "mean": 0.68,
    "start": "06:30",
    "start_slot": 1
   }
@@ -239,7 +239,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/286896818"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -265,7 +265,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/403218162"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -291,7 +291,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1376936180"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -317,7 +317,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/987497792"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -352,7 +352,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/4903681128"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -378,7 +378,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1494492202"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -399,7 +399,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/1558545492",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新竹市",
@@ -730,12 +730,12 @@
   },
   "source": "https://www.openstreetmap.org/way/1558545492",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -753,5 +753,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

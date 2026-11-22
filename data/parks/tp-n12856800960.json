@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 56,
+   "distance_m": 57,
    "location": {
-    "lat": 25.040684,
-    "lng": 121.547321
+    "lat": 25.040876,
+    "lng": 121.547076
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/4837986367",
+   "name": "7-ELEVEN 敦南門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/12856800960",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運忠孝敦化站",
    "source": "https://www.openstreetmap.org/node/3639530945",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -52,7 +52,7 @@
    "name": "東區地下街廣7",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -137,7 +137,7 @@
   "9": {
    "end": "17:30",
    "end_slot": 23,
-   "mean": 0.82,
+   "mean": 0.83,
    "start": "15:30",
    "start_slot": 19
   }
@@ -431,7 +431,7 @@
     "url": "https://www.openstreetmap.org/way/430830499"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -467,7 +467,7 @@
     "url": "https://www.openstreetmap.org/way/328934099"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -503,7 +503,7 @@
     "url": "https://www.openstreetmap.org/way/1005879800"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -539,7 +539,7 @@
     "url": "https://www.openstreetmap.org/way/456206416"
    },
    "osm_name": "叭叭房興三停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -575,7 +575,7 @@
     "url": "https://www.openstreetmap.org/way/1097514923"
    },
    "osm_name": "寶星停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -611,7 +611,7 @@
     "url": "https://www.openstreetmap.org/way/312138781"
    },
    "osm_name": "叭叭房復興停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -632,7 +632,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/node/12856800960",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -963,12 +963,12 @@
   },
   "source": "https://www.openstreetmap.org/node/12856800960",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -992,5 +992,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1495317755",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/1495317755",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -28,7 +28,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/1495317755",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": false,
@@ -46,7 +46,7 @@
    "name": "圳頭軍史公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 3333,
@@ -61,7 +61,7 @@
   "10": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.89,
+   "mean": 0.88,
    "start": "07:00",
    "start_slot": 2
   },
@@ -186,7 +186,7 @@
   "note": "約 2972 m² 在高架/屋頂下（佔 89%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/1495317755",
   "value": true,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -517,7 +517,7 @@
   },
   "source": "https://www.openstreetmap.org/way/1495317755",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -527,14 +527,14 @@
    "method": "computed",
    "osm": [
     {
-     "id": 213137798,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/213137798"
-    },
-    {
      "id": 27696491,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/27696491"
+    },
+    {
+     "id": 213137798,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/213137798"
     },
     {
      "id": 213137797,
@@ -556,7 +556,7 @@
    "source": "https://www.openstreetmap.org/way/1495317755",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "low",
@@ -567,16 +567,16 @@
    "source": "https://www.openstreetmap.org/way/1495317755",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

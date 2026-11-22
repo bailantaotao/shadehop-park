@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 63,
+   "distance_m": 68,
    "location": {
-    "lat": 25.097262,
-    "lng": 121.524164
+    "lat": 25.097251,
+    "lng": 121.524099
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/5201866121",
+   "name": "7-ELEVEN 丹樺門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "medium",
@@ -24,7 +24,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/node/7950983406",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -37,7 +37,7 @@
    "name": "捷運士林站",
    "source": "https://www.openstreetmap.org/node/3495094876",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -55,7 +55,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/7680564659",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 437,
@@ -84,7 +84,7 @@
   "12": {
    "end": "17:00",
    "end_slot": 22,
-   "mean": 0.83,
+   "mean": 0.84,
    "start": "07:00",
    "start_slot": 2
   },
@@ -326,7 +326,7 @@
     "url": "https://www.openstreetmap.org/way/431549439"
    },
    "osm_name": "美德平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -352,7 +352,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/431549438"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -388,7 +388,7 @@
     "url": "https://www.openstreetmap.org/way/685830971"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -414,7 +414,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/262650676"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -450,7 +450,7 @@
     "url": "https://www.openstreetmap.org/way/685830970"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "permit",
@@ -476,7 +476,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/558243045"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -497,7 +497,7 @@
   "note": "約 372 m² 在高架/屋頂下（佔 85%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/node/7950983406",
   "value": true,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -828,7 +828,7 @@
   },
   "source": "https://www.openstreetmap.org/node/7950983406",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -852,7 +852,7 @@
    "source": "https://www.openstreetmap.org/node/7950983406",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "low",
@@ -863,12 +863,12 @@
    "source": "https://www.openstreetmap.org/node/7950983406",
    "type": "building_shadow",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -886,5 +886,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

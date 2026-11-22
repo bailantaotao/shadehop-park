@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 375,
+   "distance_m": 308,
    "location": {
-    "lat": 25.080403,
-    "lng": 121.510959
+    "lat": 25.079794,
+    "lng": 121.510854
    },
    "method": "osm",
-   "name": "蝦皮店到店",
-   "source": "https://www.openstreetmap.org/node/9321252513",
+   "name": "7-ELEVEN 海光門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://data.gov.tw/dataset/136476",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,25 +34,25 @@
    "name": "捷運圓山站",
    "source": "https://www.openstreetmap.org/node/3495094874",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
    "category": null,
    "changing_table": null,
    "confidence": "medium",
-   "distance_m": 124,
+   "distance_m": 122,
    "family": null,
    "family_room": null,
    "location": {
-    "lat": 25.076939,
-    "lng": 121.50832
+    "lat": 25.076927,
+    "lng": 121.508338
    },
    "method": "osm",
    "name": null,
    "source": "https://www.openstreetmap.org/node/3621779443",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 452,
@@ -283,7 +283,7 @@
     "url": "https://www.openstreetmap.org/way/827809838"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -309,7 +309,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/874772966"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -335,7 +335,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/444996977"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -370,7 +370,7 @@
     "type": "node",
     "url": "https://www.openstreetmap.org/node/3033922309"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -396,7 +396,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457599238"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -422,7 +422,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727762"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -443,7 +443,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://data.gov.tw/dataset/136476",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -774,12 +774,12 @@
   },
   "source": "https://data.gov.tw/dataset/136476",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -803,5 +803,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

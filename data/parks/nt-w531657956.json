@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 87,
+   "distance_m": 88,
    "location": {
-    "lat": 24.988625,
-    "lng": 121.426351
+    "lat": 24.988702,
+    "lng": 121.426475
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/7969362866",
+   "name": "7-ELEVEN 溪州門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,20 +21,20 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/531657956",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
-   "distance_m": 428,
+   "distance_m": 448,
    "location": {
-    "lat": 24.991216,
-    "lng": 121.424535
+    "lat": 24.99135,
+    "lng": 121.424413
    },
    "method": "osm",
    "name": "樹林站",
    "source": "https://www.openstreetmap.org/node/4802842931",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "溪洲公園",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 943,
@@ -214,7 +214,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/266259223"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "permissive",
@@ -240,7 +240,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1304370510"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -266,7 +266,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/791595174"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -292,7 +292,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/266259228"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -318,7 +318,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/600938638"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "customers",
@@ -354,7 +354,7 @@
     "url": "https://www.openstreetmap.org/way/600938635"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -375,7 +375,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/531657956",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -706,12 +706,12 @@
   },
   "source": "https://www.openstreetmap.org/way/531657956",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -735,5 +735,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

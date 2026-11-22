@@ -12,7 +12,7 @@
    "name": "萊爾富",
    "source": "https://www.openstreetmap.org/node/323394361",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/344208112",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "捷運三重站",
    "source": "https://www.openstreetmap.org/node/4653351593",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
@@ -63,7 +63,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/4483244395",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 233253,
@@ -234,7 +234,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/317123808"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -260,7 +260,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457991746"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -286,7 +286,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457991748"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -312,7 +312,7 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/12943452"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -348,7 +348,7 @@
     "url": "https://www.openstreetmap.org/relation/12943438"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -384,7 +384,7 @@
     "url": "https://www.openstreetmap.org/way/492887844"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -405,7 +405,7 @@
   "note": "約 33119 m² 在高架/屋頂下（佔 14%）；由 OSM 幾何交集推算，尚未實地驗證，請確認該區域可進入",
   "source": "https://www.openstreetmap.org/way/344208112",
   "value": "partial",
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -736,7 +736,7 @@
   },
   "source": "https://www.openstreetmap.org/way/344208112",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -746,6 +746,16 @@
    "method": "computed",
    "osm": [
     {
+     "id": 307574289,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/307574289"
+    },
+    {
+     "id": 301739511,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/301739511"
+    },
+    {
      "id": 1010223598,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1010223598"
@@ -754,6 +764,16 @@
      "id": 1010223599,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/1010223599"
+    },
+    {
+     "id": 1413009202,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1413009202"
+    },
+    {
+     "id": 137116260,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/137116260"
     },
     {
      "id": 1209715157,
@@ -776,26 +796,6 @@
      "url": "https://www.openstreetmap.org/way/194431412"
     },
     {
-     "id": 1413009202,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/1413009202"
-    },
-    {
-     "id": 137116260,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/137116260"
-    },
-    {
-     "id": 1010223585,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/1010223585"
-    },
-    {
-     "id": 1010223586,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/1010223586"
-    },
-    {
      "id": 194431413,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/194431413"
@@ -806,31 +806,31 @@
      "url": "https://www.openstreetmap.org/way/1152677533"
     },
     {
-     "id": 307574289,
+     "id": 1010223585,
      "type": "way",
-     "url": "https://www.openstreetmap.org/way/307574289"
-    },
-    {
-     "id": 301739511,
-     "type": "way",
-     "url": "https://www.openstreetmap.org/way/301739511"
+     "url": "https://www.openstreetmap.org/way/1010223585"
     },
     {
      "id": 301740133,
      "type": "way",
      "url": "https://www.openstreetmap.org/way/301740133"
+    },
+    {
+     "id": 1010223586,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1010223586"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/344208112",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -854,5 +854,5 @@
    "url": "https://data.gov.tw/dataset/122955"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

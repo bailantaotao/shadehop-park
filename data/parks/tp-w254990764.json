@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 331,
+   "distance_m": 329,
    "location": {
-    "lat": 25.033118,
-    "lng": 121.49166
+    "lat": 25.033164,
+    "lng": 121.4917
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/3806468028",
+   "name": "7-ELEVEN 華雙門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,11 +21,11 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/254990764",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
-   "distance_m": 1069,
+   "distance_m": 1073,
    "location": {
     "lat": 25.035284,
     "lng": 121.499581
@@ -34,14 +34,14 @@
    "name": "捷運龍山寺站",
    "source": "https://www.openstreetmap.org/node/3639530981",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": null,
    "category": null,
    "changing_table": null,
    "confidence": "medium",
-   "distance_m": 29,
+   "distance_m": 40,
    "family": null,
    "family_room": null,
    "location": {
@@ -52,57 +52,57 @@
    "name": null,
    "source": "https://www.openstreetmap.org/node/11516238260",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
- "area_m2": 2410,
+ "area_m2": 1272,
  "best_shade_windows": {
   "1": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.84,
+   "mean": 0.81,
    "start": "07:00",
    "start_slot": 2
   },
   "10": {
-   "end": "06:30",
-   "end_slot": 1,
-   "mean": 0.98,
+   "end": "07:00",
+   "end_slot": 2,
+   "mean": 0.81,
    "start": "06:00",
    "start_slot": 0
   },
   "11": {
    "end": "07:00",
    "end_slot": 2,
-   "mean": 0.81,
+   "mean": 0.78,
    "start": "06:30",
    "start_slot": 1
   },
   "12": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.91,
+   "mean": 0.93,
    "start": "07:00",
    "start_slot": 2
   },
   "2": {
    "end": "07:30",
    "end_slot": 3,
-   "mean": 0.78,
+   "mean": 0.85,
    "start": "07:00",
    "start_slot": 2
   },
   "3": {
    "end": "07:00",
    "end_slot": 2,
-   "mean": 0.85,
+   "mean": 0.94,
    "start": "06:30",
    "start_slot": 1
   },
   "4": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.81,
+   "mean": 0.9,
    "start": "06:00",
    "start_slot": 0
   },
@@ -112,23 +112,23 @@
   "8": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.69,
+   "mean": 0.79,
    "start": "06:00",
    "start_slot": 0
   },
   "9": {
    "end": "06:30",
    "end_slot": 1,
-   "mean": 0.8,
+   "mean": 0.85,
    "start": "06:00",
    "start_slot": 0
   }
  },
  "charger_summary": {
   "fast": 0,
-  "nearest_any_m": 185,
+  "nearest_any_m": 182,
   "nearest_fast_m": null,
-  "nearest_slow_m": 185,
+  "nearest_slow_m": 182,
   "radius_m": 500,
   "slow": 4,
   "total": 4,
@@ -140,7 +140,7 @@
    "brand": null,
    "capacity": 2,
    "charging_rate": "計度/10元每度",
-   "distance_m": 185,
+   "distance_m": 182,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "B1",
@@ -178,7 +178,7 @@
    "brand": null,
    "capacity": 5,
    "charging_rate": "AC/計度/一般/ 8.000元每度",
-   "distance_m": 246,
+   "distance_m": 251,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "1",
@@ -223,7 +223,7 @@
    "brand": null,
    "capacity": 2,
    "charging_rate": "計度/10元每度",
-   "distance_m": 256,
+   "distance_m": 253,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "B1",
@@ -261,7 +261,7 @@
    "brand": null,
    "capacity": 4,
    "charging_rate": "計時/固定/1 元每分",
-   "distance_m": 480,
+   "distance_m": 481,
    "distance_method": "straight_line",
    "fee": null,
    "floors": "4",
@@ -310,8 +310,8 @@
  "level": "none",
  "level_label": "大多曝曬",
  "location": {
-  "lat": 25.034893,
-  "lng": 121.488697
+  "lat": 25.034903,
+  "lng": 121.488677
  },
  "name": "雙園河濱公園 遊戲場",
  "name_source": "park_name",
@@ -328,7 +328,7 @@
    "capacity": 147,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 111,
+   "distance_m": 119,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
@@ -356,14 +356,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/374876250"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
    "capacity": 748,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 157,
+   "distance_m": 168,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
@@ -391,14 +391,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/609732943"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 193,
+   "distance_m": 198,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "multi-storey",
@@ -417,14 +417,14 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1012095443"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
    "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 444,
+   "distance_m": 441,
    "distance_method": "straight_line",
    "fee": null,
    "kind": "surface",
@@ -453,14 +453,14 @@
     "url": "https://www.openstreetmap.org/way/311039075"
    },
    "osm_name": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
    "capacity": 422,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 508,
+   "distance_m": 513,
    "distance_method": "straight_line",
    "fee": "yes",
    "kind": "surface",
@@ -489,33 +489,43 @@
     "url": "https://www.openstreetmap.org/way/349570060"
    },
    "osm_name": "環南平面停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
-   "capacity": null,
+   "capacity": 483,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 605,
+   "distance_m": 598,
    "distance_method": "straight_line",
    "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
+   "kind": null,
+   "kind_label": "停車場",
    "location": {
-    "lat": 25.029296,
-    "lng": 121.490426
+    "lat": 25.029019,
+    "lng": 121.488846
    },
    "maxheight_m": null,
    "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
+   "name": "臺北市環南綜合市場自治會",
+   "official": {
+    "address": "環河南路2段245號地下1至2、地上1層",
+    "cars": 483,
+    "fare": "計時：小型車30元/時，大客車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
+    "hours": "00:00:00-23:59:59",
+    "match_m": 41,
+    "name": "臺北市環南綜合市場自治會",
+    "source": "taipei"
+   },
+   "opening_hours": "00:00:00-23:59:59",
    "operator": null,
    "osm": {
-    "id": 1474846006,
+    "id": 1576485971,
     "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846006"
+    "url": "https://www.openstreetmap.org/way/1576485971"
    },
-   "verified_at": "2026-11-07"
+   "osm_name": null,
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -536,7 +546,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/254990764",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "臺北市",
@@ -544,8 +554,8 @@
   "id": "taipei"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.12,
-  "buildings_considered": 69,
+  "building_height_known_share": 0.1,
+  "buildings_considered": 68,
   "confidence": "low",
   "method": "computed",
   "note": "依 OSM 建物高度/樓層、高架、屋頂、樹木與太陽位置推算（每月 15 日）；未計地形與臨時遮蔽",
@@ -555,10 +565,10 @@
    "1": [
     null,
     null,
-    0.84,
-    0.44,
-    0.15,
-    0.03,
+    0.81,
+    0.46,
+    0.14,
+    0.04,
     0.0,
     0.0,
     0.0,
@@ -579,10 +589,10 @@
     null
    ],
    "10": [
-    0.98,
-    0.56,
-    0.19,
-    0.04,
+    0.99,
+    0.63,
+    0.17,
+    0.05,
     0.0,
     0.0,
     0.0,
@@ -606,10 +616,10 @@
    ],
    "11": [
     null,
-    0.81,
-    0.39,
-    0.14,
-    0.02,
+    0.78,
+    0.41,
+    0.12,
+    0.04,
     0.0,
     0.0,
     0.0,
@@ -633,10 +643,10 @@
    "12": [
     null,
     null,
-    0.91,
-    0.33,
-    0.1,
-    0.01,
+    0.93,
+    0.35,
+    0.09,
+    0.03,
     0.0,
     0.0,
     0.0,
@@ -659,10 +669,10 @@
    "2": [
     null,
     null,
-    0.78,
-    0.27,
+    0.85,
+    0.25,
     0.07,
-    0.0,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -684,9 +694,9 @@
    ],
    "3": [
     null,
-    0.85,
-    0.29,
-    0.08,
+    0.94,
+    0.25,
+    0.07,
     0.01,
     0.0,
     0.0,
@@ -709,10 +719,10 @@
     0.0
    ],
    "4": [
-    0.81,
-    0.26,
-    0.08,
-    0.02,
+    0.9,
+    0.2,
+    0.05,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -735,10 +745,10 @@
     0.0
    ],
    "5": [
-    0.35,
-    0.11,
-    0.04,
-    0.01,
+    0.3,
+    0.06,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -761,10 +771,10 @@
     0.0
    ],
    "6": [
-    0.29,
-    0.1,
+    0.22,
     0.04,
-    0.01,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -787,10 +797,10 @@
     0.0
    ],
    "7": [
-    0.4,
-    0.13,
-    0.05,
-    0.01,
+    0.39,
+    0.08,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -813,10 +823,10 @@
     0.0
    ],
    "8": [
-    0.69,
-    0.22,
-    0.07,
-    0.02,
+    0.79,
+    0.15,
+    0.04,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -839,10 +849,10 @@
     0.0
    ],
    "9": [
-    0.8,
-    0.35,
-    0.11,
-    0.02,
+    0.85,
+    0.31,
+    0.08,
+    0.01,
     0.0,
     0.0,
     0.0,
@@ -867,12 +877,12 @@
   },
   "source": "https://www.openstreetmap.org/way/254990764",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -890,5 +900,5 @@
    "url": "https://data.taipei/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

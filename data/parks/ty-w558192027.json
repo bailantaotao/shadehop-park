@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 150,
+   "distance_m": 155,
    "location": {
-    "lat": 25.002159,
-    "lng": 121.315013
+    "lat": 25.002116,
+    "lng": 121.314979
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/12422165810",
+   "name": "7-ELEVEN 央晉門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/558192027",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "low",
@@ -31,7 +31,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/558192027",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -49,7 +49,7 @@
    "name": "新永和市場2樓",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 15046,
@@ -326,7 +326,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1027007344"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -362,7 +362,7 @@
     "url": "https://www.openstreetmap.org/way/1216491436"
    },
    "osm_name": "新永和市場汽車停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -388,7 +388,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1304386295"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -424,7 +424,7 @@
     "url": "https://www.openstreetmap.org/way/442976877"
    },
    "osm_name": "城市車旅",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -450,7 +450,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1061693778"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -476,7 +476,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1495767817"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -491,13 +491,13 @@
  "playground_mapped": false,
  "rain_cover": {
   "confidence": "low",
-  "covered_area_m2": 42,
+  "covered_area_m2": 30,
   "covered_ratio": 0.0,
   "method": "computed",
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/558192027",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -637,7 +637,7 @@
     0.01,
     0.01,
     0.01,
-    0.02,
+    0.01,
     0.03,
     0.19,
     0.75,
@@ -649,7 +649,7 @@
     0.03,
     0.01,
     0.01,
-    0.01,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -701,7 +701,6 @@
     0.05,
     0.01,
     0.01,
-    0.01,
     0.0,
     0.0,
     0.0,
@@ -715,7 +714,8 @@
     0.0,
     0.0,
     0.0,
-    0.01,
+    0.0,
+    0.0,
     0.01,
     0.01,
     0.02,
@@ -727,7 +727,7 @@
     0.06,
     0.01,
     0.01,
-    0.01,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -805,7 +805,7 @@
     0.03,
     0.01,
     0.01,
-    0.01,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -828,7 +828,7 @@
   },
   "source": "https://www.openstreetmap.org/way/558192027",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [
   {
@@ -852,7 +852,7 @@
    "source": "https://www.openstreetmap.org/way/558192027",
    "type": "pavilion",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "medium",
@@ -861,16 +861,16 @@
    "method": "computed",
    "osm": [
     {
-     "id": 14184469223,
-     "type": "node",
-     "url": "https://www.openstreetmap.org/node/14184469223"
+     "id": 1580344527,
+     "type": "way",
+     "url": "https://www.openstreetmap.org/way/1580344527"
     }
    ],
    "rain_proof": true,
    "source": "https://www.openstreetmap.org/way/558192027",
    "type": "roof",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "confidence": "medium",
@@ -888,12 +888,12 @@
    "source": "https://www.openstreetmap.org/way/558192027",
    "type": "under_viaduct",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -911,5 +911,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

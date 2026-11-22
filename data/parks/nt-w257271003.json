@@ -9,7 +9,7 @@
    "name": null,
    "source": "https://www.openstreetmap.org/way/257271003",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -18,7 +18,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/257271003",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -31,10 +31,10 @@
    "name": "貢寮站",
    "source": "https://www.openstreetmap.org/node/2542659596",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
-   "accessible": true,
+   "accessible": false,
    "category": "社福機構、集會場所",
    "changing_table": false,
    "confidence": "high",
@@ -60,7 +60,7 @@
    "name": "貢寮市民活動中心公廁",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 51207,
@@ -147,7 +147,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/702316770"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -173,7 +173,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/361512691"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -199,7 +199,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/503897335"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -220,7 +220,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/257271003",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "新北市",
@@ -551,12 +551,12 @@
   },
   "source": "https://www.openstreetmap.org/way/257271003",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -568,5 +568,5 @@
    "url": "https://data.ntpc.gov.tw/datasets/5FE3A136-29CC-4695-A17E-6636A32C3342"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

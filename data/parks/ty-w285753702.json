@@ -3,16 +3,16 @@
  "amenities": {
   "convenience_store": {
    "confidence": "medium",
-   "distance_m": 113,
+   "distance_m": 122,
    "location": {
-    "lat": 24.994833,
-    "lng": 121.305715
+    "lat": 24.99474,
+    "lng": 121.305761
    },
    "method": "osm",
-   "name": "7-Eleven",
-   "source": "https://www.openstreetmap.org/node/4217227372",
+   "name": "7-ELEVEN 瑞家門市",
+   "source": "https://emap.pcsc.com.tw/emap.aspx",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "drinking_water": {
    "confidence": "low",
@@ -21,7 +21,7 @@
    "method": "osm",
    "source": "https://www.openstreetmap.org/way/285753702",
    "value": null,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "station": {
    "confidence": "medium",
@@ -34,7 +34,7 @@
    "name": "桃園站",
    "source": "https://www.openstreetmap.org/node/246416407",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   "toilet": {
    "accessible": true,
@@ -52,7 +52,7 @@
    "name": "桃園敏盛綜合醫院(三民院區)東區1F",
    "source": "https://data.gov.tw/dataset/30794",
    "value": true,
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  },
  "area_m2": 4480,
@@ -350,7 +350,7 @@
     "url": "https://www.openstreetmap.org/way/1255792516"
    },
    "osm_name": "西門公有地下停車場",
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -376,7 +376,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1047350116"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -402,7 +402,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1574727685"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -428,7 +428,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1189791234"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": "yes",
@@ -454,7 +454,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/409274648"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   },
   {
    "access": null,
@@ -480,7 +480,7 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/549283651"
    },
-   "verified_at": "2026-11-07"
+   "verified_at": "2026-11-21"
   }
  ],
  "playground": {
@@ -501,7 +501,7 @@
   "note": "OSM 未標示覆蓋此處的高架或屋頂；未實地驗證",
   "source": "https://www.openstreetmap.org/way/285753702",
   "value": false,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "region": {
   "city": "桃園市",
@@ -509,7 +509,7 @@
   "id": "taoyuan"
  },
  "shade_timetable": {
-  "building_height_known_share": 0.18,
+  "building_height_known_share": 0.19,
   "buildings_considered": 122,
   "confidence": "low",
   "method": "computed",
@@ -832,12 +832,12 @@
   },
   "source": "https://www.openstreetmap.org/way/285753702",
   "value": null,
-  "verified_at": "2026-11-07"
+  "verified_at": "2026-11-21"
  },
  "shade_types": [],
  "sources": [
   {
-   "as_of": "2026-11-07T21:21:36Z",
+   "as_of": "2026-11-21T21:20:51Z",
    "license": "ODbL 1.0",
    "name": "OpenStreetMap",
    "url": "https://www.openstreetmap.org/copyright"
@@ -861,5 +861,5 @@
    "url": "https://tdx.transportdata.tw/"
   }
  ],
- "updated_at": "2026-11-07"
+ "updated_at": "2026-11-21"
 }

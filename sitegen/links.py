@@ -32,16 +32,37 @@ def directions_url(p: dict) -> str:
     return "https://www.google.com/maps/dir/?api=1&destination=" + quote(_place_query(p))
 
 
-def place_url(loc: dict | None, name: str | None = None, kind: str | None = None) -> str | None:
-    """Google Maps for a nearby parking lot, toilet, shop, station or charger: search its name (or
-    the kind of place when it has none, e.g. 停車場) around its coordinates (q + ll/sll), so Google
-    lists its own labelled places there, nearest first - a chain name such as 7-Eleven lands on the
-    branch at that spot. The undocumented /maps/search/<term>/@lat,lng path showed only a dropped
-    pin in the Google Maps app; q/ll is understood by both the app and the web."""
+def _area(p: dict) -> str:
+    r = p["region"]
+    return r["city"] + (r["district"] if r["district"] != r["city"] else "")
+
+
+def _anchor(p: dict) -> str | None:
+    """Words that pin a search to this park without coordinates: its name and area, or for a park we
+    named after the nearest street, that street and area (an address Google can find)."""
+    q = _place_query(p)
+    if not re.fullmatch(r"-?[\d.]+,-?[\d.]+", q):
+        return q
+    m = re.search(r"[（(]近(.+?)[）)]", p.get("name") or "")
+    return _area(p) + m.group(1) if m else None
+
+
+def place_url(loc: dict | None, name: str | None = None, kind: str | None = None, park: dict | None = None) -> str | None:
+    """Google Maps for a nearby parking lot, toilet, shop, station or charger.
+
+    The Google Maps app ignores the q/ll centre for a plain category search and lists 停車場 around
+    the phone instead (a park found by search, across town, got the parent's own neighbourhood). So
+    the words carry the place: "<park> <area> 附近的停車場" for the kind of place, "<name> <area>"
+    for a named one. ll/sll stay for the web version, which honours them."""
     if not loc:
         return None
     ll = f"{loc['lat']},{loc['lng']}"
-    term = (name or "").strip() or (kind or "").strip()
-    if not term:
+    name, kind = (name or "").strip(), (kind or "").strip()
+    if name:
+        term = f"{name} {_area(park)}" if park else name
+    elif kind:
+        anchor = _anchor(park) if park else None
+        term = f"{anchor} 附近的{kind}" if anchor else kind
+    else:
         return f"https://www.google.com/maps/search/?api=1&query={ll}"
     return f"https://maps.google.com/maps?q={quote(term, safe='')}&ll={ll}&sll={ll}&z=18"

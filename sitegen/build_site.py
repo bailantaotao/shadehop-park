@@ -302,9 +302,11 @@ def build(out: Path = OUT) -> None:
             "gmaps": p["google_maps_url"], "nav": p["directions_url"],
             "toilet_m": near(p, "toilet").get("distance_m"), "shop_m": near(p, "convenience_store").get("distance_m"),
             "toilet_url": place_url(near(p, "toilet").get("location"), near(p, "toilet").get("name"), "公廁"),
-            "shop_url": place_url(near(p, "convenience_store").get("location"), near(p, "convenience_store").get("name"), "便利商店"),
-            "parking_url": place_url(p["parking"][0]["location"], parking_name(p["parking"][0]), "停車場") if p["parking"] else None,
-            "charger_url": place_url(c["location"], c.get("name"), "充電站") if c else None,
+            # The tiles answer "where is one nearby", so they search the kind of place around the nearest
+            # one: every chain (7-Eleven, 全家, OK, 萊爾富) and every lot or charger, nearest first.
+            "shop_url": place_url(near(p, "convenience_store").get("location"), "", "便利商店"),
+            "parking_url": place_url(p["parking"][0]["location"], "", "停車場") if p["parking"] else None,
+            "charger_url": place_url(c["location"], "", "電動車充電站") if c else None,
         }
     if out.exists():
         shutil.rmtree(out)

@@ -1023,7 +1023,7 @@
       (p.floors ? "樓層：" + esc(p.floors) + "<br>" : "") +
       (p.restriction ? "限制：" + esc(p.restriction) + "<br>" : "") +
       (p.operator ? "營運：" + esc(p.operator) + "<br>" : "") +
-      '<a href="https://www.google.com/maps/search/' + encodeURIComponent(p.name) + "/@" + f.geometry.coordinates[1] + "," + f.geometry.coordinates[0] + ',19z" rel="noopener" target="_blank">在 Google 地圖查看</a> · ' +
+      '<a href="https://maps.google.com/maps?q=' + encodeURIComponent(p.name) + "&ll=" + f.geometry.coordinates[1] + "," + f.geometry.coordinates[0] + "&sll=" + f.geometry.coordinates[1] + "," + f.geometry.coordinates[0] + '&z=18" rel="noopener" target="_blank">在 Google 地圖查看</a> · ' +
       (p.source === "tdx" ? '<span class="small">資料介接「交通部TDX平臺」</span>'
         : '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>');
   }

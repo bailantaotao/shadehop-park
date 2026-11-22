@@ -34,12 +34,14 @@ def directions_url(p: dict) -> str:
 
 def place_url(loc: dict | None, name: str | None = None, kind: str | None = None) -> str | None:
     """Google Maps for a nearby parking lot, toilet, shop, station or charger: search its name (or
-    the kind of place when it has none, e.g. 停車場) with the map centred on its coordinates, so
-    Google shows its own labelled place there rather than an anonymous dropped pin, and a chain
-    name such as 7-Eleven picks the branch at that spot."""
+    the kind of place when it has none, e.g. 停車場) around its coordinates (q + ll/sll), so Google
+    lists its own labelled places there, nearest first - a chain name such as 7-Eleven lands on the
+    branch at that spot. The undocumented /maps/search/<term>/@lat,lng path showed only a dropped
+    pin in the Google Maps app; q/ll is understood by both the app and the web."""
     if not loc:
         return None
+    ll = f"{loc['lat']},{loc['lng']}"
     term = (name or "").strip() or (kind or "").strip()
     if not term:
-        return f"https://www.google.com/maps/search/?api=1&query={loc['lat']},{loc['lng']}"
-    return f"https://www.google.com/maps/search/{quote(term, safe='')}/@{loc['lat']},{loc['lng']},19z"
+        return f"https://www.google.com/maps/search/?api=1&query={ll}"
+    return f"https://maps.google.com/maps?q={quote(term, safe='')}&ll={ll}&sll={ll}&z=18"

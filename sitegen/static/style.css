@@ -74,6 +74,10 @@ button.link { background: none; border: 0; color: var(--accent); font: inherit; 
 #map { height: 58vh; min-height: 340px; border-radius: 12px; border: 1px solid var(--line); margin: 12px 0; }
 /* The vector map's own paper colour while it loads, so it fades in instead of popping out of grey. */
 #map.leaflet-container { background: #f8f4f0; }
+/* Tap-and-drag zoom and double taps must not start iOS text selection or its magnifier on the
+   map's labels, markers or attribution. Popups keep selectable text (addresses, names). */
+#map, .controls, .sheet-head { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+#map .leaflet-popup { -webkit-user-select: text; user-select: text; }
 .legend { display: flex; gap: 8px 14px; flex-wrap: wrap; font-size: .85rem; color: var(--muted); }
 .legend-box { margin: 0 0 4px; }
 .legend-box summary { cursor: pointer; color: var(--muted); font-size: .88rem; padding: 4px 0; }

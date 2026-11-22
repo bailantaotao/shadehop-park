@@ -321,6 +321,7 @@
         m = L.circleMarker(ll, { radius: rain ? 9 : mid ? 7 : 6, color: rain ? css("--a") : mid ? "#6b5000" : css("--surface"),
           weight: rain ? 3 : 1.5, fillColor: css(cls === "night" ? "--muted" : "--" + cls), fillOpacity: cls === "night" ? .85 : 1 });
       }
+      m.options.bubblingMouseEvents = false;  // a tap on a park is not a tap on the empty map
       if (!looks[p.id]) looks[p.id] = { ll: ll, r: m.options.radius, fill: m.options.fillColor, stroke: m.options.color, weight: m.options.weight };
       // Keep the popup clear of the zoom buttons (top left) and the charger toggle (top right) when it opens.
       if (phone.matches) m.on("click", function () { showPark(f); });
@@ -333,7 +334,7 @@
     drawSel();
     if (phone.matches && state.selected && !$("#sheetPark").hidden) {
       var sel = state.features.find(function (x) { return x.properties.id === state.selected; });
-      if (sel && passes(sel)) $("#sheetParkBody").innerHTML = popupHtml(sel);  // the selected time changed
+      if (sel && passes(sel)) parkCard(sel);  // the selected time changed
       else { closePark(); setSheet("peek"); }  // a filter just hid it
     }
   }
@@ -679,6 +680,7 @@
   });
   // ---------------------------------------------------------------- search
   // By city, park name or district, across all regions (they load on the first keystroke).
+  var cardFromSearch = false;
   var searchQ = "", searchEl = $("#search"), resultsEl = $("#searchResults");
   function norm(t) { return String(t || "").replace(/臺/g, "台").replace(/\s+/g, "").toLowerCase(); }
   function runSearch() {
@@ -737,7 +739,9 @@
       if (f && !markers[li.dataset.id]) mapToast("這座公園不符合目前的篩選條件，先幫你移過去");
       if (f) {
         map.setView([f.geometry.coordinates[1], f.geometry.coordinates[0]], 17);
+        cardFromSearch = true;  // its ✕ comes back to these results
         if (markers[li.dataset.id]) focusPark(li.dataset.id);
+        cardFromSearch = false;
       }
     } else if (li.dataset.region) {
       var r = state.regions.find(function (x) { return x.id === li.dataset.region; });
@@ -773,13 +777,19 @@
   function startSearch(e) {
     if (!phone.matches || searching) return;
     e.preventDefault();
-    searchFrom = sheetState; searching = true;
+    searchFrom = sheetState;
+    openSearch(true);
+  }
+  // focus=false: back from a park chosen in the results; the results come back without the keyboard.
+  function openSearch(focus) {
+    searching = true;
     closePark(); closeFilters();
     sheet.classList.add("searching"); document.body.classList.add("searching");
     sheet.style.transition = "none"; setSheet("full"); void sheet.offsetHeight; sheet.style.transition = "";
     $("#searchCancel").hidden = false;
-    searchEl.blur(); searchEl.readOnly = false; searchEl.focus();
-    if (searchQ) runSearch();
+    searchEl.readOnly = false;
+    if (focus) { searchEl.blur(); searchEl.focus(); }
+    if (searchQ) { searchEl.value = searchQ; runSearch(); }
   }
   searchEl.addEventListener("touchend", startSearch, { passive: false });
   searchEl.addEventListener("click", startSearch);
@@ -815,6 +825,7 @@
   });
   resultsEl.addEventListener("click", function (e) { chooseResult(e.target.closest("li")); });
   document.addEventListener("click", function (e) {
+    if (phone.matches && searching) return;  // the phone search screen keeps its results until it closes
     if (!e.target.closest(".search")) { resultsEl.hidden = true; searchEl.setAttribute("aria-expanded", "false"); }
   });
 
@@ -1076,6 +1087,29 @@
         : '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>');
   }
 
+  // Phones: the same facts as a card in the sheet, laid out like the park card.
+  function chargerCard(f) {
+    var p = f.properties, ll = f.geometry.coordinates[1] + "," + f.geometry.coordinates[0];
+    var fast = p.speed === "fast" || p.speed === "both", slow = p.speed === "slow";
+    var note = p.speed_source === "brand" ? "依營運商判斷" : p.speed_source === "name" ? "依站名判斷" : "";
+    var speed = p.speed === "unknown" ? "快慢充未標示" : p.speed_label.replace(/（.*）$/, "");
+    var pill = '<span class="pp-pill chg-pill ' + (fast ? "fast" : slow ? "slow" : "") + '">' + (fast ? BOLT_SVG : slow ? PLUG_SVG : "") +
+      esc(speed) + (p.max_kw ? "・最高 " + p.max_kw + " kW" : "") + "</span>";
+    var rows = [["插頭", p.sockets.length ? p.sockets.join("、") : ""], ["充電車位", p.capacity], ["充電費率", p.charging_rate],
+      ["停車費率", p.parking_rate], ["時間", p.opening_hours], ["樓層", p.floors], ["限制", p.restriction]]
+      .filter(function (r) { return r[1]; })
+      .map(function (r) { return "<dt>" + r[0] + "</dt><dd>" + esc(String(r[1])) + "</dd>"; }).join("");
+    var head = '<div class="pp-head"><div><div class="pp-name">' + esc(p.name) + '</div><div class="pp-sub">' +
+      esc(p.operator || "充電站") + "</div></div></div>";
+    var body = '<div class="pp">' + '<div class="pp-pills">' + pill + (note ? '<span class="pp-pill">' + note + "</span>" : "") + "</div>" +
+      (rows ? '<dl class="chg-dl">' + rows + "</dl>" : '<p class="muted chg-none">OSM 沒有標示插頭、費率或時間</p>') +
+      '<div class="pp-btns"><a class="pp-btn primary" href="https://maps.google.com/maps?q=' + encodeURIComponent(p.name) + "&ll=" + ll + "&sll=" + ll +
+      '&z=18" target="_blank" rel="noopener">在 Google 地圖查看</a></div>' +
+      '<p class="pp-src">' + (p.source === "tdx" ? "資料介接「交通部TDX平臺」"
+        : '<a href="' + esc(p.osm) + '" rel="noopener" target="_blank">OpenStreetMap 資料</a>') + "</p></div>";
+    return { head: head, body: body };
+  }
+
   // Show how many stations are in view, so the toggle never looks dead when the area has none.
   function countChargers() {
     var b = map.getBounds(), n = 0;
@@ -1109,7 +1143,10 @@
         // swallow every click meant for the parks underneath.
         : L.circleMarker(ll, { radius: 3.5, weight: 1, color: "#fff",
             fillColor: DOT_COLOR[p.speed] || DOT_COLOR.unknown, fillOpacity: 0.9 });
-      m.bindPopup(function () { return chargerPopup(f); }).addTo(chargerLayer);
+      m.options.bubblingMouseEvents = false;
+      if (phone.matches) m.on("click", function () { showCharger(f); });
+      else m.bindPopup(function () { return chargerPopup(f); });
+      m.addTo(chargerLayer);
     });
   }
   map.on("zoomend", function () {
@@ -1210,7 +1247,53 @@
   // Three heights: peek (one-line answer), half (the tapped park or the first cards), full (list or
   // filters). Drag the head, or tap it to step up; positions are set as a translateY.
   var sheet = $("#sheet"), sheetHead = $("#sheetHead"), sheetBody = $("#sheetBody"), sheetPark = $("#sheetPark");
-  sheetPark.innerHTML = '<button type="button" class="sheet-close" aria-label="關閉這座公園">✕</button><div id="sheetParkBody"></div>';
+  sheetPark.innerHTML = '<div id="sheetParkBody"></div>';
+  // A tapped park (or charger) takes the sheet over like a place card: its name and ✕ on top where
+  // the search was. ✕ goes back to where the parent came from: the search results, or the map.
+  var cardHead = $("#sheetCardHead"), cardKind = null, cardFrom = null;
+  function setCard(kind, head, body) {
+    if (!cardKind) cardFrom = cardFromSearch && searchQ ? "search" : "map";
+    cardKind = kind;
+    cardHead.innerHTML = head + '<button type="button" class="sheet-close" aria-label="' + (kind === "chg" ? "關閉這個充電站" : "關閉這座公園") + '">✕</button>';
+    cardHead.hidden = false;
+    $("#sheetParkBody").innerHTML = body;
+    sheetPark.hidden = false;
+    sheet.classList.add("has-park");
+    sheet.classList.toggle("card-chg", kind === "chg");
+  }
+  function parkCard(f) {
+    var box = document.createElement("div");
+    box.innerHTML = popupHtml(f);
+    var head = box.querySelector(".pp-head");
+    head.remove();
+    setCard("park", head.outerHTML, box.innerHTML);
+  }
+  function returnFromCard() {
+    var back = cardFrom === "search" && searchQ;
+    closePark(); render(true);
+    if (back) { searchFrom = "peek"; openSearch(false); } else setSheet("peek");
+  }
+  cardHead.addEventListener("click", function (e) {
+    if (e.target.closest(".sheet-close")) returnFromCard();
+  });
+  // A tap on the empty map puts the card away, as ✕ does.
+  map.on("click", function () { if (phone.matches && !sheetPark.hidden) returnFromCard(); });
+  // Keep a place in the strip of map between the floating controls and the half sheet.
+  function keepInView(ll) {
+    var top = $(".controls").offsetHeight + 8, bottom = window.innerHeight - sheetMetrics().half - map.getContainer().getBoundingClientRect().top;
+    var y = map.latLngToContainerPoint(ll).y, want = (top + bottom) / 2;
+    if (y < top + 20 || y > bottom - 20) map.panBy([0, y - want]);
+  }
+  function showCharger(f) {
+    state.selected = null;
+    setCard("chg", chargerCard(f).head, chargerCard(f).body);
+    closeFilters();
+    sheetBody.scrollTop = 0;
+    setSheet("half");
+    keepInView(L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]));
+    render(true);
+    drawSel();
+  }
   var sheetState = "peek";
   function sheetMetrics() {
     var full = sheet.offsetHeight, peek = sheetHead.offsetHeight, half = Math.round(window.innerHeight * 0.48);
@@ -1225,7 +1308,14 @@
   }
   function setSheet(st) {
     // Collapsing to the one-line answer puts away whatever was open.
-    if (st === "peek" && phone.matches) { if (!sheetPark.hidden) { closePark(); render(true); } if (!$("#sheetFilters").hidden) closeFilters(); }
+    if (st === "peek" && phone.matches) {
+      if (!sheetPark.hidden) {  // dragged down: same as ✕
+        var back = cardFrom === "search" && searchQ;
+        closePark(); render(true);
+        if (back) { searchFrom = "peek"; openSearch(false); return; }
+      }
+      if (!$("#sheetFilters").hidden) closeFilters();
+    }
     if (searching && st !== "full") endSearch();  // dragged down while searching
     sheetState = st;
     if (!phone.matches) { sheet.style.transform = ""; return; }
@@ -1280,28 +1370,24 @@
   function showPark(f) {
     if (!f) return;
     state.selected = f.properties.id;
-    $("#sheetParkBody").innerHTML = popupHtml(f);
-    sheetPark.hidden = false;
-    sheet.classList.add("has-park");  // the park answers the question; the area summary steps aside
+    parkCard(f);  // the park answers the question; the search and area summary step aside
     closeFilters();
     sheetBody.scrollTop = 0;
     setSheet("half");
-    // Keep the park in the strip of map between the floating controls and the half sheet.
-    var ll = L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]);
-    var top = $(".controls").offsetHeight + 8, bottom = window.innerHeight - sheetMetrics().half - map.getContainer().getBoundingClientRect().top;
-    var y = map.latLngToContainerPoint(ll).y, want = (top + bottom) / 2;
-    if (y < top + 20 || y > bottom - 20) map.panBy([0, y - want]);
+    keepInView(L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]));
     render(true);
     drawSel();
   }
   sheetPark.addEventListener("click", function (e) {
-    if (e.target.closest(".sheet-close")) { closePark(); setSheet("peek"); render(true); return; }
     var go = e.target.closest("[data-goto]"), j = e.target.closest("[data-jump]");
     if (go) { e.preventDefault(); focusPark(go.dataset.goto); }
     if (j) { e.preventDefault(); state.slot = Number(j.dataset.jump); $("#slot").value = state.slot; atNow = false; render(); }
   });
 
-  function closePark() { sheetPark.hidden = true; sheet.classList.remove("has-park"); state.selected = null; drawSel(); }
+  function closePark() {
+    sheetPark.hidden = true; cardHead.hidden = true; cardKind = null;
+    sheet.classList.remove("has-park", "card-chg"); state.selected = null; drawSel();
+  }
   // Filters take the sheet over; the park card the parent was looking at comes back when they are done.
   var parkBeforeFilters = null;
   function openFilters() {

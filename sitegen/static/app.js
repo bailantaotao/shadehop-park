@@ -775,21 +775,25 @@
         var icon = k === "charge" ? (fast ? "bolt" : "plug") : NEAR[k].icon;
         // Mirror each place through the park too, so fitting the box keeps the park in the middle.
         pts.push(ll, L.latLng(2 * c.lat - ll.lat, 2 * c.lng - ll.lng));
-        var sub = k === "charge" ? (x.speed_label || "") : k === "parking" && x.fee ? ({ yes: "收費", no: "免費" }[x.fee] || "") : "";
-        var off = x.official || {};  // the city's registered name, fare and hours for this lot
-        var more = (off.fare ? '<span class="near-fact">' + esc(off.fare.length > 70 ? off.fare.slice(0, 70) + "…" : off.fare) + "</span>" : "") +
-          (off.hours ? '<span class="near-fact">開放：' + esc(off.hours) + "</span>" : "");
-        L.marker(ll, { pane: "near", keyboard: true, title: placeName(x, k), icon: L.divIcon({ className: "near-mk " + k + (fast ? " fast" : ""),
+        var lot = k === "parking";
+        var nameless = lot && (!x.display_name || x.display_name === "未具名停車點");
+        // A parking pin says one thing: what it is, whether it costs, and where to open it. Registry,
+        // fare and hours stay on the park page and in the API; Google's page has the rest.
+        var title = nameless ? "停車場・離公園 " + x.distance_m + "m" : placeName(x, k);
+        var sub = lot ? (x.fee ? { yes: "收費", no: "免費" }[x.fee] || "" : "")
+          : "離公園 " + x.distance_m + "m（直線）" + (k === "charge" && x.speed_label ? "・" + x.speed_label : "");
+        var go = function (href, label, primary) {
+          return '<a class="pp-btn' + (primary ? " primary" : "") + '" href="' + esc(href) + '" target="_blank" rel="noopener">' + label + "</a>";
+        };
+        var btns = lot ? (x.google_place_id ? go(placeLink(x, k, area), "在 Google 地圖開啟", true)
+            : nameless ? go(placeLink({ name: d.name + " 附近停車場", location: x.location }, k, area), "搜尋附近停車場", true)
+            : go(placeRoute(x, k, area), "導航", true))
+          : go(placeRoute(x, k, area), "導航", true) + (placeName(x, k) !== NEAR[k].label ? go(placeLink(x, k, area), "在 Google 地圖查看") : "");
+        L.marker(ll, { pane: "near", keyboard: true, title: placeName(x, k) + " " + x.distance_m + "m", icon: L.divIcon({ className: "near-mk " + k + (fast ? " fast" : ""),
           html: '<span class="near-in">' + I(icon) + "<b>" + x.distance_m + "m</b></span>", iconSize: [0, 0], iconAnchor: [0, 0] }) })
-          .bindPopup('<div class="near-pop"><strong>' + esc(placeName(x, k)) + "</strong>" +
-            '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
-            more +
-            (k === "parking" ? '<span class="near-fact">' + ({ taipei: "臺北市停車管理工程處", newtaipei: "新北市政府交通局", tdx: "交通部 TDX" }[off.source] || "OpenStreetMap") + (off.address ? "・" + esc(off.address) : "") + '</span>' : "") +
-            '<div class="near-btns">' + (k === "parking" && !x.google_place_id && (!x.display_name || x.display_name === "未具名停車點") ?
-              '<span class="near-fact">車輛入口待確認</span><a class="pp-btn" href="' + esc(placeLink({ name: d.name + " 附近停車場", location: x.location }, k, area)) + '" target="_blank" rel="noopener">搜尋公園附近停車場</a>' :
-              '<a class="pp-btn primary" href="' + esc(placeRoute(x, k, area)) + '" target="_blank" rel="noopener">導航</a>' +
-              (placeName(x, k) !== NEAR[k].label || x.google_place_id ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "")) +
-            "</div></div>",
+          .bindPopup('<div class="near-pop"><strong>' + esc(title) + "</strong>" +
+            (sub ? '<span class="muted">' + esc(sub) + "</span>" : "") +
+            '<div class="near-btns">' + btns + "</div></div>",
             { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, overlayBottom() + 12),
               autoPanPaddingBottomRight: L.point(16, phone.matches ? sheetMetrics().half + 16 : 16) })
           .addTo(nearLayer);

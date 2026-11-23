@@ -349,7 +349,12 @@ button.pp-tile.busy { opacity: .6; }
 .near-pop { display: grid; gap: 6px; min-width: 180px; font-size: 14px; }
 .near-btns { display: flex; gap: 6px; margin-top: 2px; }
 .near-fact { font-size: 13px; color: var(--muted); line-height: 1.4; }
-.near-pop .pp-btn { display: inline-flex; justify-content: center; align-items: center; min-height: 40px; }
+.near-pop strong { font-size: 16px; line-height: 1.3; }
+.near-pop .pp-btn { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; font-size: 14px; }
+/* The popup shell is Leaflet's white; theme it like the park popup so dark mode keeps its contrast. */
+.near-popup .leaflet-popup-content-wrapper, .near-popup .leaflet-popup-tip { background: var(--surface); color: var(--text); }
+.near-popup .leaflet-popup-content-wrapper { border-radius: 14px; }
+.near-popup .leaflet-popup-content { margin: 12px 14px; line-height: 1.45; }
 .pp-tile span { display: block; line-height: 1; margin-bottom: 3px; color: var(--accent); }
 .pp-tile span .i { width: 18px; height: 18px; vertical-align: 0; }
 .pp-tile b { display: block; color: var(--text); font-size: 13px; }

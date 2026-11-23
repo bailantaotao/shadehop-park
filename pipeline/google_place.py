@@ -20,6 +20,10 @@ Each answer is then checked once more: Place Details (types only) must say the p
 parking_lot, parking_garage) or a 交通服務 (how Google files some lots). A restaurant, shop or office the
 name search landed on is rejected, so it counts as "Google has no car park there".
 
+Bike-share docks are filed by Google as car parks too (YouBike三井站 is "parking_lot"). Each match is
+therefore also checked against a "YouBike" search on the same spot: a place that search returns is a dock,
+not a lot, and the lot is asked again with docks excluded.
+
 Answers live in data/raw/google_places.json, keyed by OSM element, so a lot is asked about once.
 """
 
@@ -124,6 +128,40 @@ def ask(key: str, lat: float, lng: float, text: str = "停車場", half: float =
     raise RuntimeError("Places API unreachable")
 
 
+SHARED_QUERIES = ("YouBike", "微笑單車")  # Google lists YouBike docks under both names
+
+
+def ask_many(key: str, lat: float, lng: float, text: str, half: float, parking_only: bool, size: int = 5) -> list[str]:
+    """Place IDs Google lists for a text within a box around the spot (IDs only, up to size)."""
+    body = {"textQuery": text, "languageCode": "zh-TW", "pageSize": size,
+            "locationRestriction": {"rectangle": {
+                "low": {"latitude": lat - half, "longitude": lng - half * 1.1},
+                "high": {"latitude": lat + half, "longitude": lng + half * 1.1}}}}
+    if parking_only:
+        body.update({"includedType": "parking", "strictTypeFiltering": True})
+    req = urllib.request.Request(ENDPOINT, json.dumps(body).encode(), {
+        "Content-Type": "application/json", "X-Goog-Api-Key": key, "X-Goog-FieldMask": "places.id"})
+    for attempt in range(4):
+        try:
+            return [p["id"] for p in json.load(urllib.request.urlopen(req, timeout=20)).get("places") or []]
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 503) and attempt < 3:
+                time.sleep(2 + attempt * 3)
+                continue
+            raise RuntimeError(f"Places API {e.code}: {e.read().decode()[:200]}") from e
+        except (urllib.error.URLError, TimeoutError):
+            time.sleep(1 + attempt)
+    raise RuntimeError("Places API unreachable")
+
+
+def shared_ids(key: str, lat: float, lng: float, half: float) -> set[str]:
+    out: set[str] = set()
+    for text in SHARED_QUERIES:
+        out.update(ask_many(key, lat, lng, text, half, False, 20))
+        time.sleep(0.1)
+    return out
+
+
 PARKISH = {"parking", "parking_lot", "parking_garage", "transportation_service"}
 
 
@@ -202,6 +240,40 @@ def main(argv: list[str]) -> None:
             time.sleep(0.1)
         save(lots)
         print(f"verified {len(unchecked)}; rejected {rejected} that are not car parks", file=sys.stderr)
+    if "--apply" not in argv:
+        key = _key()
+        spots = {}
+        for p in parks:
+            for q in p.get("parking") or []:
+                k = lot_key(q)
+                if k and lots.get(k, {}).get("id") and "dock_checked" not in lots[k] and q.get("location"):
+                    spots[k] = (q["location"]["lat"], q["location"]["lng"], search_name(q), q)
+        found = redone = 0
+        for n, (k, (lat, lng, text, q)) in enumerate(spots.items(), 1):
+            half = HALF_DEG if is_generic(q) else HALF_DEG_NAMED
+            try:
+                docks = shared_ids(key, lat, lng, half)
+                if lots[k]["id"] in docks:
+                    found += 1
+                    old = lots[k]["id"]
+                    new = None
+                    for cand in ask_many(key, lat, lng, text, half, half == HALF_DEG, 5):
+                        if cand not in docks and cand != old and verify(key, cand):
+                            new = cand
+                            break
+                    redone += bool(new)
+                    lots[k] = {"id": new, "rejected": old, "why": "bike-share dock", "at": lots[k]["at"], "dock_checked": True}
+                else:
+                    lots[k]["dock_checked"] = True
+            except RuntimeError as e:
+                print(f"dock check stopped at {k}: {e}", file=sys.stderr)
+                break
+            if n % 200 == 0:
+                save(lots)
+                print(f"  {n}/{len(spots)} checked for docks, {found} were docks ({redone} re-matched)", file=sys.stderr)
+            time.sleep(0.1)
+        save(lots)
+        print(f"dock check: {found} matches were bike-share docks; {redone} lots found a real car park instead", file=sys.stderr)
     changed = sum(apply(p, lots) for p in parks)
     left = len(pending(parks, lots))
     write_outputs(parks, json.loads((DATA / "meta.json").read_text()))

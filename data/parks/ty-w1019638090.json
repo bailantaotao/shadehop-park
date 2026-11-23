@@ -204,6 +204,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJw8OMpFofaDQRixoLWdFdum4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -230,6 +231,7 @@
    "distance_m": 278,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJZY4Oii8faDQRDOunkssjIhQ",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -263,61 +265,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 281,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.977526,
-    "lng": 121.268966
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "城市車旅",
-   "osm": {
-    "id": 1213659307,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1213659307"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 435,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.976785,
-    "lng": 121.267864
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1213659313,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1213659313"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 487,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ9_JO6agfaDQR_uInZXsS32I",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -344,6 +295,7 @@
    "distance_m": 523,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ75f-a7IfaDQR79CgM7wKQew",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

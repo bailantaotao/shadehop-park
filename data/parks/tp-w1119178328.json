@@ -345,38 +345,13 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 86,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.000427,
-    "lng": 121.541801
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 10696799,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/10696799"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
    "capacity": 39,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 103,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJNyWdpQSqQjQRwAYggjg7KvQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -405,32 +380,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 114,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "street_side",
-   "kind_label": "路邊停車",
-   "location": {
-    "lat": 25.000886,
-    "lng": 121.542136
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1474846009,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846009"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 10,
    "capacity_disabled": null,
@@ -438,6 +387,7 @@
    "distance_m": 206,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJSVBxg8erQjQRtBOalYhyB1c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -474,6 +424,7 @@
    "distance_m": 210,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJl4K-hhyqQjQRXLZWmvXQnDQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -499,42 +450,6 @@
     "type": "relation",
     "url": "https://www.openstreetmap.org/relation/8708472"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 17,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 260,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.00223,
-    "lng": 121.542647
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "義芳第二停車場",
-   "official": {
-    "address": "興隆路1段137巷88號旁空地",
-    "cars": 148,
-    "fare": "月租：3,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 50,
-    "name": "義芳第二停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 8708471,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/8708471"
-   },
-   "osm_name": "義芳第一停車場",
    "verified_at": "2026-11-21"
   }
  ],

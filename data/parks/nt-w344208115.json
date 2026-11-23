@@ -253,38 +253,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 109,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 0,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.063466,
-    "lng": 121.472366
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中山棒球區停車場",
-   "opening_hours": null,
-   "operator": "歐特儀股份有限公司",
-   "osm": {
-    "id": 440729763,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/440729763"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 541,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1TkyQ-moQjQR3mUle6vhqGI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -311,6 +286,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJc1YEJe-oQjQRdXOPxl0t_JA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -347,6 +323,7 @@
    "distance_m": 39,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJK8C7_-qoQjQRt-LAIdCxwh8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -376,38 +353,13 @@
   },
   {
    "access": null,
-   "capacity": 59,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 93,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.063697,
-    "lng": 121.471064
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "疏洪籃球區停車場",
-   "opening_hours": null,
-   "operator": "歐特儀股份有限公司",
-   "osm": {
-    "id": 440729755,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/440729755"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 25,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 104,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoYyN_F6pQjQR5MPSF5qUfLs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

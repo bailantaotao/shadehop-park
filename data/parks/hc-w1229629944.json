@@ -277,6 +277,7 @@
    "distance_m": 17,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9RUX_ck1aDQRGmvtioxtgug",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -292,136 +293,6 @@
     "id": 507946423,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/507946423"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 212,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.820503,
-    "lng": 120.96135
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "士林市場停車場",
-   "opening_hours": null,
-   "operator": "新竹市政府",
-   "osm": {
-    "id": 197626297,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/197626297"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 265,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.818748,
-    "lng": 120.966811
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 454903797,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/454903797"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 234,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 273,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.81685,
-    "lng": 120.962919
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新竹國軍醫院第一停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 115786687,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/115786687"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 288,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.819916,
-    "lng": 120.967272
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "武陵路高架橋下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 454903794,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/454903794"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 289,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.81687,
-    "lng": 120.963737
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 556257022,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/556257022"
    },
    "verified_at": "2026-11-21"
   }

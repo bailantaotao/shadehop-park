@@ -362,38 +362,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 69,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.997768,
-    "lng": 121.546725
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 757511733,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/757511733"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 32,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 70,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJIZZ4zvurQjQRpYY0rX1HYck",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -423,94 +398,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 32,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 70,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.996641,
-    "lng": 121.545431
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "景興路臨時平面停車場",
-   "official": {
-    "address": "景興路53巷~85巷之間",
-    "cars": 32,
-    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計。",
-    "hours": "星期一至星期六9時至17時",
-    "match_m": 47,
-    "name": "景興路臨時平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "星期一至星期六9時至17時",
-   "operator": null,
-   "osm": {
-    "id": 759151875,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/759151875"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 75,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.998092,
-    "lng": 121.546796
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 759339571,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/759339571"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 90,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.996515,
-    "lng": 121.546819
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 543938341,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/543938341"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 200,
    "capacity_disabled": null,
@@ -518,6 +405,7 @@
    "distance_m": 205,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJhWN1FASqQjQREr5Mb0yTcoQ",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

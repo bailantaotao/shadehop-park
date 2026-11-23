@@ -139,64 +139,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 34,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 223,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 24.809244,
-    "lng": 120.987492
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "公道五橋下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 669916818,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/669916818"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 256,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.81039,
-    "lng": 120.986603
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 935726597,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/935726597"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 42,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 315,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJl3Utx9c1aDQRVhjnjUDOhUA",
    "kind": "lane",
    "kind_label": "路邊停車格",
    "location": {
@@ -223,6 +172,7 @@
    "distance_m": 527,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJIYTL58k1aDQRhbjfMATdJ1E",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -249,6 +199,7 @@
    "distance_m": 574,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJyWBKGNk1aDQRMBxxL288Ico",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -275,6 +226,7 @@
    "distance_m": 624,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJe7eQRf43aDQRLrjv-jU1AXk",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

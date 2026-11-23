@@ -280,6 +280,7 @@
    "distance_m": 143,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJEZ_wumc3aDQRayidxLj0M08",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -299,32 +300,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 152,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.801735,
-    "lng": 120.995785
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 8670492803,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/8670492803"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -332,6 +307,7 @@
    "distance_m": 162,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJp6iBcHM2aDQRknBUFdnx_44",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -351,32 +327,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 164,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.803315,
-    "lng": 120.992232
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "石頭日式燒肉",
-   "osm": {
-    "id": 798329478,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/798329478"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 246,
    "capacity_disabled": "6",
@@ -384,6 +334,7 @@
    "distance_m": 215,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJZ0sUNAA3aDQRFD82jcSKOgs",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -399,32 +350,6 @@
     "id": 12625015379,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12625015379"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 232,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.803315,
-    "lng": 120.991845
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "台南溫體牛",
-   "osm": {
-    "id": 798329477,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/798329477"
    },
    "verified_at": "2026-11-21"
   }

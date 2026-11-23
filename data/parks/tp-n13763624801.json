@@ -296,6 +296,7 @@
    "distance_m": 32,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ3VmkX6ytQjQR13udxjIrv-4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -332,6 +333,7 @@
    "distance_m": 80,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJQ0qx_yyrQjQRGaqHqaDF5T0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -362,110 +364,13 @@
   },
   {
    "access": null,
-   "capacity": 38,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 85,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.061257,
-    "lng": 121.593521
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通安美停車場",
-   "official": {
-    "address": "潭美街399號旁",
-    "cars": 38,
-    "fare": "計時：100元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：8,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 19,
-    "name": "台灣聯通安美停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1574727700,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1574727700"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 48,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 125,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.060542,
-    "lng": 121.591887
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "內湖安康停車場",
-   "official": {
-    "address": "成功路2段安康路交叉口",
-    "cars": 48,
-    "fare": "計時：50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租 全日5,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 3,
-    "name": "內湖安康停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1553115883,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1553115883"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 218,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.062136,
-    "lng": 121.594818
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1574727698,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1574727698"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 343,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJH8tIOoOsQjQRqg9o_loUADI",
    "kind": null,
    "kind_label": "停車場",
    "location": {

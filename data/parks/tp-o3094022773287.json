@@ -352,6 +352,7 @@
    "distance_m": 174,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJf2B6_gWtQjQRW-r7743f25I",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -388,6 +389,7 @@
    "distance_m": 182,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJGbcxeISsQjQRwuDnk1ZUS0k",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -424,6 +426,7 @@
    "distance_m": 233,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJWaxQwIGsQjQRTrUf8F_03j8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -460,6 +463,7 @@
    "distance_m": 258,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ-0REjXatQjQR-G3ytYmS5ys",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -486,6 +490,7 @@
    "distance_m": 273,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJYyheYACtQjQR3InuntGxAOI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -512,42 +517,6 @@
     "url": "https://www.openstreetmap.org/way/1276780950"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 18,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 273,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.069353,
-    "lng": 121.588696
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "內湖區行政中心停車場",
-   "official": {
-    "address": "民權東路6段99號地上1層及地下1層",
-    "cars": 45,
-    "fare": "計時：日間(地上1層)前30分鐘免費，逾30分鐘至1小時30元，逾1小時80元/時，全程半小時計費。月租：夜間1,500元/月(地上1層，0800前須出場)、1,800元/月(地下1層，0730前須出場），未於規定時間出場80元/時，全程半小時計費。",
-    "hours": "地上1層:周一至五0830-1730(計時)，例假日不開放；夜間：1800-0800(地上1層)、1800-0730(地下1層)，選舉期間、特殊活動不開放。",
-    "match_m": 35,
-    "name": "內湖區行政中心停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "08:30-17:30; PH off",
-   "operator": null,
-   "osm": {
-    "id": 1435368598,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1435368598"
-   },
-   "osm_name": "內湖區行政中心便民停車場 (汽車)",
    "verified_at": "2026-11-21"
   }
  ],

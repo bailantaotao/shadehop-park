@@ -284,6 +284,7 @@
    "distance_m": 134,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJJ1GDL9SpQjQR_JAt_0MtJLY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -314,38 +315,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 150,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.058995,
-    "lng": 121.502177
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 586139717,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/586139717"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 76,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 162,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJnxReMxqpQjQRJJVBa-PaNzE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -372,6 +348,7 @@
    "distance_m": 265,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ_beRAhmpQjQRsMb8cHu5Uy8",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -407,6 +384,7 @@
    "distance_m": 464,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJtTrUtRupQjQRFaH9SAe0t2Y",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -422,32 +400,6 @@
     "id": 9928927304,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/9928927304"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 480,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.054854,
-    "lng": 121.495315
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "重安段停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9928927301,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9928927301"
    },
    "verified_at": "2026-11-21"
   }

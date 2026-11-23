@@ -183,6 +183,7 @@
    "distance_m": 8,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJDYPolpynQjQRYqrJhuAFYSc",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -202,58 +203,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 236,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.021011,
-    "lng": 121.417518
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 572819569,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/572819569"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 271,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.017947,
-    "lng": 121.422915
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "宏元停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 653665228,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/653665228"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -261,6 +210,7 @@
    "distance_m": 305,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ6XslRfWnQjQRMXC6g8afIFw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -284,35 +234,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 305,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.017676,
-    "lng": 121.423295
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "成功停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 653665230,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/653665230"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 364,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJw65M-l8daDQRMvSs3sG317w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

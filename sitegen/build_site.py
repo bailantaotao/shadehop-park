@@ -325,7 +325,7 @@ def build(out: Path = OUT) -> None:
             # one: every chain (7-Eleven, 全家, OK, 萊爾富) and every lot or charger, nearest first.
             "shop_url": place_url(near(p, "convenience_store").get("location"), "", "便利商店", p),
             "parking_display_name": first.get("display_name"), "parking_display_m": first.get("distance_m"),
-            "parking_url": place_url(first.get("location"), parking_name(first), "停車場", p),
+            "parking_url": place_url(first.get("location"), parking_name(first), "停車場", p, first.get("google_place_id")),
             "charger_url": place_url(c["location"], "", "電動車充電站", p) if c else None,
         }
     if out.exists():

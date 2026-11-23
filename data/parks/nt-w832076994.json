@@ -281,6 +281,7 @@
    "distance_m": 66,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJffy3scWpQjQRQR-xugXzbYU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -311,38 +312,13 @@
   },
   {
    "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 130,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.011922,
-    "lng": 121.505775
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場行人出入口",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5716821722,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5716821722"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
    "capacity": 645,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 169,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJh4hvN8SpQjQRu4MdI2dOUb8",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -366,71 +342,10 @@
    "capacity": 645,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 170,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.010544,
-    "lng": 121.506302
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "永和仁愛公園地下停車場",
-   "official": {
-    "address": "新北市永和區仁愛路244-1號B1、B2",
-    "cars": 645,
-    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;",
-    "hours": "0~24時",
-    "match_m": 59,
-    "name": "永和仁愛公園地下停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 5716821723,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5716821723"
-   },
-   "osm_name": "停車場行人出入口",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 176,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.01173,
-    "lng": 121.506343
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場行人出入口",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5716821721,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5716821721"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 645,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 199,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJffy3scWpQjQRh3SNm5WiLUo",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

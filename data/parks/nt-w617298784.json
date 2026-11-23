@@ -239,6 +239,7 @@
    "distance_m": 105,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJsUjAnlWlQjQRux4iJeXaQRQ",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -272,35 +273,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 213,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.180232,
-    "lng": 121.442384
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "月租停車場",
-   "osm": {
-    "id": 1098702578,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1098702578"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 221,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJyWFbaf-vQjQR8GNVTzuaCiI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -327,6 +303,7 @@
    "distance_m": 266,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJt29fzt6vQjQRvFJQuiIH2-o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -353,6 +330,7 @@
    "distance_m": 288,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJXUr7p7uvQjQRuy0tisuoesQ",
    "kind": "城市車旅全聯淡大站場",
    "kind_label": "停車場",
    "location": {
@@ -368,32 +346,6 @@
     "id": 1459671335,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1459671335"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 318,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.17761,
-    "lng": 121.447168
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 2913705301,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2913705301"
    },
    "verified_at": "2026-11-21"
   }

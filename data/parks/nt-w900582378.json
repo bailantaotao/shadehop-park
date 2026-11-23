@@ -293,6 +293,7 @@
    "distance_m": 207,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJw4InlxcdaDQRpduWll9Bdw4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -329,6 +330,7 @@
    "distance_m": 212,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZfwDQB0daDQRpQzv-SBK7DY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -348,104 +350,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 215,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.986085,
-    "lng": 121.421422
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1257655947,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1257655947"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 37,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 251,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.989981,
-    "lng": 121.424278
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "樹林區公所平面停車場",
-   "official": {
-    "address": "新北市樹林區鎮前街93號樹林區公所旁",
-    "cars": 37,
-    "fare": "小型車計時30元;小型車月租3000元;機車計次30元;",
-    "hours": "0~24時",
-    "match_m": 43,
-    "name": "樹林區公所平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 263648603,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/263648603"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 37,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 306,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.990151,
-    "lng": 121.424762
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "樹林區公所平面停車場",
-   "official": {
-    "address": "新北市樹林區鎮前街93號樹林區公所旁",
-    "cars": 37,
-    "fare": "小型車計時30元;小型車月租3000元;機車計次30元;",
-    "hours": "0~24時",
-    "match_m": 23,
-    "name": "樹林區公所平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 206802199,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/206802199"
-   },
-   "osm_name": "樹林區公有臨時停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 50,
    "capacity_disabled": null,
@@ -453,6 +357,7 @@
    "distance_m": 312,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3RN1DhsdaDQR894-i7bbUmk",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

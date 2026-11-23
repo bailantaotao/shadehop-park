@@ -268,67 +268,6 @@
  "park_name": "木柵公園",
  "parking": [
   {
-   "access": "yes",
-   "capacity": 10,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 155,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.986989,
-    "lng": 121.560546
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "木柵公園平面停車場",
-   "official": {
-    "address": "興隆路4段與下崙路口",
-    "cars": 8,
-    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
-    "hours": "周一至周六 9時至17時",
-    "match_m": 11,
-    "name": "木柵公園平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "周一至周六 9時至17時",
-   "operator": null,
-   "osm": {
-    "id": 478532550,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/478532550"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 324,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.99059,
-    "lng": 121.558506
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 523625202,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/523625202"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 212,
    "capacity_disabled": "yes",
@@ -336,6 +275,7 @@
    "distance_m": 352,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJr1Lw5qKrQjQR7FWjN7Ld6DI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -371,6 +311,7 @@
    "distance_m": 389,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJJXYJcnQBaDQRWwXEanNHyzI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -407,6 +348,7 @@
    "distance_m": 390,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKdZbxuEBaDQRjMbfgb2QK8s",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -433,32 +375,6 @@
     "url": "https://www.openstreetmap.org/way/380194351"
    },
    "osm_name": "嘟嘟房文山光輝站",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 408,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.986995,
-    "lng": 121.563291
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1574727738,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1574727738"
-   },
    "verified_at": "2026-11-21"
   }
  ],

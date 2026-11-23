@@ -496,6 +496,7 @@
    "distance_m": 53,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJMUwnh-qrQjQRBVTMBtin_ko",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -526,48 +527,13 @@
   },
   {
    "access": null,
-   "capacity": 53,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 61,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.050937,
-    "lng": 121.564311
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "驛林交通股份有限公司南京東興場",
-   "official": {
-    "address": "南京東路5段200號地下2層",
-    "cars": 53,
-    "fare": "小型車：計時 100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日10,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 30,
-    "name": "驛林交通股份有限公司南京東興場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 4837986376,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4837986376"
-   },
-   "osm_name": "宏達停車南京場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 347,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 146,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJdfjrXZWrQjQRgCUc4I_2lB0",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -603,6 +569,7 @@
    "distance_m": 238,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJJ9HSGZWrQjQRjrPCF3VyuJg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -638,6 +605,7 @@
    "distance_m": 276,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJfcSXjpOrQjQRvdi3XLFvOyU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -664,6 +632,7 @@
    "distance_m": 280,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJPf_UK76rQjQR_eAN2t23HgY",
    "kind": null,
    "kind_label": "停車場",
    "location": {

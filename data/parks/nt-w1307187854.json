@@ -95,58 +95,6 @@
  "park_name": "瑠公紀念生態園區",
  "parking": [
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 159,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "sheds",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.963302,
-    "lng": 121.519727
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "新北市政府",
-   "osm": {
-    "id": 842418062,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/842418062"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 385,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.956886,
-    "lng": 121.514676
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1033127788,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1033127788"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -154,6 +102,7 @@
    "distance_m": 419,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ8y7CPTgCaDQRUenCNM2RNpI",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -180,6 +129,7 @@
    "distance_m": 562,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ2zUMOwADaDQRXo1O3eUH_DM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -206,6 +156,7 @@
    "distance_m": 566,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJW7CcGTkCaDQR9l2YymZt04g",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -232,42 +183,6 @@
     "url": "https://www.openstreetmap.org/way/1518002057"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 77,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 606,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.96284,
-    "lng": 121.512558
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "成美收費停車場",
-   "official": {
-    "address": "新北市新店區安德街26巷1號B1、B2",
-    "cars": 77,
-    "fare": "小型車計時40元;",
-    "hours": "0~24時",
-    "match_m": 30,
-    "name": "成美收費停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 6315265189,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/6315265189"
-   },
-   "osm_name": "安康公有停車場",
    "verified_at": "2026-11-21"
   }
  ],

@@ -312,38 +312,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 49,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.064926,
-    "lng": 121.532029
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3811447095,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3811447095"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 29,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 52,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJs0vGjsepQjQRg0KUfcyw9rs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -368,130 +343,6 @@
     "id": 529491041,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/529491041"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 29,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 53,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.065059,
-    "lng": 121.531334
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "NaviPark 農安街",
-   "official": {
-    "address": "農安街151號旁空地",
-    "cars": 29,
-    "fare": "計時：小型車100元/時，停車全程以半小時計。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 3,
-    "name": "NaviPark 農安街",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 529491032,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/529491032"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 153,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.066904,
-    "lng": 121.532824
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 943140427,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/943140427"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 174,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.067211,
-    "lng": 121.532421
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1530965441,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1530965441"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 188,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.064564,
-    "lng": 121.53016
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中華道明會停車場",
-   "official": {
-    "address": "吉林路378號地下1層",
-    "cars": 6,
-    "fare": "計時：120元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 32,
-    "name": "中華道明會停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 944580785,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/944580785"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

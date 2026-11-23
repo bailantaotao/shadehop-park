@@ -308,6 +308,7 @@
    "distance_m": 26,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJGUP-ad2vQjQRd8rq05cBTBg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -338,38 +339,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 118,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.12002,
-    "lng": 121.532541
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 671424771,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/671424771"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 82,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 428,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ6xhnPICuQjQRWGwFwqUNmEs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -396,94 +372,6 @@
     "url": "https://www.openstreetmap.org/way/262945679"
    },
    "osm_name": "臺北市立大學天母校區停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "permissive",
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 454,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.117845,
-    "lng": 121.538159
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺北市立天母國民中學停車場",
-   "official": {
-    "address": "天母東路120號",
-    "cars": 20,
-    "fare": "季租：6,000元/季(3個月為一期)。",
-    "hours": "夜間：22時至翌日6時30分；例假日：星期六、日及國定假日全天。",
-    "match_m": 1,
-    "name": "臺北市立天母國民中學停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "夜間：22時至翌日6時30分；例假日：星期六、日及國定假日全天。",
-   "operator": null,
-   "osm": {
-    "id": 861794474,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/861794474"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 511,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.117077,
-    "lng": 121.529516
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 518996962,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/518996962"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 596,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.116503,
-    "lng": 121.52901
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 518996963,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/518996963"
-   },
    "verified_at": "2026-11-21"
   }
  ],

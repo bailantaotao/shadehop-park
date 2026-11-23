@@ -370,6 +370,7 @@
    "distance_m": 100,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJm5BYu2CpQjQRucZUT_kT314",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -406,6 +407,7 @@
    "distance_m": 199,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ8fCUGACpQjQRhObQcoKPDNo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -442,6 +444,7 @@
    "distance_m": 269,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJqcHjk0KpQjQRrRQrg1NT1RI",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -471,32 +474,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 276,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.061063,
-    "lng": 121.523269
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 1019909255,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1019909255"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 224,
    "capacity_disabled": null,
@@ -504,6 +481,7 @@
    "distance_m": 330,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJdz0J2kKpQjQRx4Our245NJA",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -539,6 +517,7 @@
    "distance_m": 369,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJSbF476upQjQRnwwFu04OQsA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

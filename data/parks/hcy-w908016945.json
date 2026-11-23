@@ -529,6 +529,7 @@
    "distance_m": 22,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJwR3DATs3aDQRqD7FhLGgr3I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -555,6 +556,7 @@
    "distance_m": 164,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJrdcMlbA3aDQRKMXF8aqdZb4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -581,6 +583,7 @@
    "distance_m": 179,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_5RMkao3aDQRZniF2wxeP-I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -617,6 +620,7 @@
    "distance_m": 184,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJizraiKs3aDQRRR-FCkLCZPY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -653,6 +657,7 @@
    "distance_m": 276,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJB_veok03aDQR9fgj2Wu6imY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -668,32 +673,6 @@
     "id": 1183614645,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1183614645"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 75,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 308,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.805686,
-    "lng": 121.038714
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "五都高鐵新竹五站停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1183614644,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1183614644"
    },
    "verified_at": "2026-11-21"
   }

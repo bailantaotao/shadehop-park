@@ -230,6 +230,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJEe6aO_I2aDQRmvY2vAI2HWU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -256,6 +257,7 @@
    "distance_m": 193,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoZcG6O02aDQRZkxa1C-F0JA",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -276,38 +278,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 209,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.825487,
-    "lng": 121.014831
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "稅捐稽徵局停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1019355879,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1019355879"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 115,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 214,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTwNvBwA3aDQRZTwIxAuUkmE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -334,68 +311,6 @@
     "url": "https://www.openstreetmap.org/way/323046911"
    },
    "osm_name": "東元停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 216,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.82364,
-    "lng": 121.013631
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "東元醫院停車場(廣停13)",
-   "official": {
-    "address": "新竹縣竹北市縣政三街29號",
-    "cars": null,
-    "fare": "每小時20元",
-    "hours": null,
-    "match_m": 28,
-    "name": "東元醫院停車場(廣停13)",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1315884154,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1315884154"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 230,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.825719,
-    "lng": 121.015166
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "衛生局停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1019355881,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1019355881"
-   },
    "verified_at": "2026-11-21"
   }
  ],

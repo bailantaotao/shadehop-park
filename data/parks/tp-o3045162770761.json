@@ -394,6 +394,7 @@
    "distance_m": 134,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJlzSu4XOrQjQR6jLOlaVDCmI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -430,6 +431,7 @@
    "distance_m": 135,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJBwgUB9mrQjQRgBiGE-KpbX8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -466,6 +468,7 @@
    "distance_m": 142,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJexolWdirQjQRmC_vhxQpsy0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -502,6 +505,7 @@
    "distance_m": 150,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKSV4PdmrQjQRKOCLuFoyb-Y",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -532,48 +536,13 @@
   },
   {
    "access": null,
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 193,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.0455,
-    "lng": 121.53882
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "通通停中崙停車場",
-   "official": {
-    "address": "八德路2段174巷11弄5號空地",
-    "cars": 20,
-    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 3,
-    "name": "通通停中崙停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 430830501,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/430830501"
-   },
-   "osm_name": "八德二月租場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 200,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJi45NTB6rQjQR4NOQqbctGmc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

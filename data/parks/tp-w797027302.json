@@ -249,58 +249,6 @@
  "park_name": "克強公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 38,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.107685,
-    "lng": 121.521814
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 864673582,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/864673582"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 118,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.106047,
-    "lng": 121.521861
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 877258316,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/877258316"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
@@ -308,6 +256,7 @@
    "distance_m": 281,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJqWnzk1uvQjQRp66wYkDDvC4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -334,6 +283,7 @@
    "distance_m": 305,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJm2wuTUCvQjQRDYhsjytpnLc",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -363,42 +313,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 4,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 367,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.104499,
-    "lng": 121.519437
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "萊客有限公司文林北停車場",
-   "official": {
-    "address": "文林北路20號旁空地",
-    "cars": 4,
-    "fare": "小型車：計時 160元/時，停車全程以半小時計；月租 全日15,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 35,
-    "name": "萊客有限公司文林北停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 6780010550,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/6780010550"
-   },
-   "osm_name": "明德敦品停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 47,
    "capacity_disabled": null,
@@ -406,6 +320,7 @@
    "distance_m": 502,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJT8WWawCvQjQRc55fREpHnZs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

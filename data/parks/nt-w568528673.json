@@ -239,6 +239,7 @@
    "distance_m": 46,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJo0sOH-mpQjQRsxE6eF6MZKI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -265,6 +266,7 @@
    "distance_m": 74,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZ-DlyaSpQjQRYsmiV7Ib2-Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -301,6 +303,7 @@
    "distance_m": 204,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJH4WSiWGpQjQRB1DwTCu4E7A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -331,48 +334,13 @@
   },
   {
    "access": null,
-   "capacity": 38,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 210,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.008308,
-    "lng": 121.518315
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停佳安國光停車場",
-   "official": {
-    "address": "新北市永和區大新街73巷32號旁",
-    "cars": 38,
-    "fare": "小型車計時60元;小型車月租7000元;",
-    "hours": "0~24時",
-    "match_m": 18,
-    "name": "停佳安國光停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1225451366,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1225451366"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 214,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-e0IIxWpQjQRALQI9GcFO8M",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -389,42 +357,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1225451369"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 38,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 221,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.008277,
-    "lng": 121.518085
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停佳安國光停車場",
-   "official": {
-    "address": "新北市永和區大新街73巷32號旁",
-    "cars": 38,
-    "fare": "小型車計時60元;小型車月租7000元;",
-    "hours": "0~24時",
-    "match_m": 39,
-    "name": "停佳安國光停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1225451367,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1225451367"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

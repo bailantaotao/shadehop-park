@@ -149,58 +149,6 @@
  "park_name": null,
  "parking": [
   {
-   "access": "permissive",
-   "capacity": 50,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 296,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.04611,
-    "lng": 121.13476
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "草漯第二停車場",
-   "osm": {
-    "id": 1083453056,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1083453056"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 337,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.04257,
-    "lng": 121.13715
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1201600530,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1201600530"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": null,
    "capacity_disabled": null,
@@ -208,6 +156,7 @@
    "distance_m": 394,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ9eV_-_InaDQR3UVPGl_2Hf0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -223,32 +172,6 @@
     "id": 1336743820,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1336743820"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 415,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.044042,
-    "lng": 121.137807
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "草漯第三停車場",
-   "osm": {
-    "id": 1083453058,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1083453058"
    },
    "verified_at": "2026-11-21"
   }

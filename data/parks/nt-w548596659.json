@@ -245,6 +245,7 @@
    "distance_m": 164,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_VbMMRoCaDQROpx_bY4bGIk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -271,6 +272,7 @@
    "distance_m": 195,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJU-Nd9C8DaDQRYy552vs8D3o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -286,120 +288,6 @@
     "id": 1064570573,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1064570573"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 126,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 223,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.98027,
-    "lng": 121.525192
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "央北停車場",
-   "official": {
-    "address": "新北市新店區中山路與央北二路交叉口",
-    "cars": 126,
-    "fare": "小型車計時40元;小型車月租4000元;",
-    "hours": "0~24時",
-    "match_m": 2,
-    "name": "央北停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1064570014,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1064570014"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 315,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.976952,
-    "lng": 121.529777
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 686428843,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/686428843"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 355,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.981766,
-    "lng": 121.524785
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 462954233,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/462954233"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 433,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.983064,
-    "lng": 121.525298
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 462954240,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/462954240"
    },
    "verified_at": "2026-11-21"
   }

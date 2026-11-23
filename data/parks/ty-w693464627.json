@@ -110,6 +110,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ81H3OgAvaDQRgFlhP1or5Qo",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -133,35 +134,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 20,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.990432,
-    "lng": 121.01678
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1066169246,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1066169246"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 74,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKV7VXfQuaDQRj4Ep4RH87Ms",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -185,35 +161,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 130,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.987806,
-    "lng": 121.015783
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 27696465,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/27696465"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 268,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJG_XS3fEuaDQRNjCPVefYI9o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -229,32 +180,6 @@
     "id": 1498514952,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1498514952"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 509,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.987502,
-    "lng": 121.020578
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台61橋下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1251224604,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1251224604"
    },
    "verified_at": "2026-11-21"
   }

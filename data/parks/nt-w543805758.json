@@ -173,35 +173,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 18,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.121246,
-    "lng": 121.919349
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 543812763,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/543812763"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 280,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJeWuObx5DXTQRNDAUoZTpo0I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -228,6 +203,7 @@
    "distance_m": 491,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ9ROMkZxDXTQRZqCRJPuts1o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -258,48 +234,13 @@
   },
   {
    "access": null,
-   "capacity": 99,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 621,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.116984,
-    "lng": 121.915569
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "貢寮龍洞灣平面停車場",
-   "official": {
-    "address": "新北市貢寮區龍洞街63-8號旁空地停車場",
-    "cars": 99,
-    "fare": "大型車計次150元;小型車計時50元;",
-    "hours": "0~24時",
-    "match_m": 34,
-    "name": "貢寮龍洞灣平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1181241264,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1181241264"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 671,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJVbWyWYVDXTQRzqjw72dKphw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -326,32 +267,6 @@
     "url": "https://www.openstreetmap.org/way/261857081"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 713,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.116208,
-    "lng": 121.914737
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1230289062,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1230289062"
-   },
    "verified_at": "2026-11-21"
   }
  ],

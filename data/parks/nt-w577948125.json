@@ -228,6 +228,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJWxP4n8WqQjQRiDKmw2QLn3g",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -263,6 +264,7 @@
    "distance_m": 9,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmSMgJ5WrQjQRQbfxqPad9m0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -293,74 +295,13 @@
   },
   {
    "access": null,
-   "capacity": 81,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 18,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.000721,
-    "lng": 121.615307
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "吉順新深坑老街停車場",
-   "official": {
-    "address": "新北市深坑區平埔街22巷19號旁空地",
-    "cars": 71,
-    "fare": "小型車計時80元;小型車計時150元;小型車月租6000元;",
-    "hours": "0~24時",
-    "match_m": 37,
-    "name": "吉順新深坑老街停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "24/7",
-   "operator": null,
-   "osm": {
-    "id": 545470332,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/545470332"
-   },
-   "osm_name": "深坑老街停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 95,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.000959,
-    "lng": 121.614526
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 545472299,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/545472299"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 121,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJMfieEQCrQjQRm5gr5iBvLzM",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -397,6 +338,7 @@
    "distance_m": 199,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ78Jq48SqQjQRzRB0M-d41JU",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

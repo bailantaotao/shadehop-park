@@ -169,6 +169,7 @@
    "distance_m": 178,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJS2qFR4UCaDQRjEfuytA_yqA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -189,100 +190,13 @@
   },
   {
    "access": null,
-   "capacity": 19,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 311,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.998175,
-    "lng": 121.483983
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "豪庭電機股份有限公司全聯中和新生店停車場",
-   "official": {
-    "address": "新北市中和區新生街255號",
-    "cars": 19,
-    "fare": "小型車計時50元;機車計次20元;",
-    "hours": "0~24時",
-    "match_m": 23,
-    "name": "豪庭電機股份有限公司全聯中和新生店停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1474846032,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846032"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 331,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.997681,
-    "lng": 121.484193
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1474846034,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846034"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 334,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.998924,
-    "lng": 121.484453
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1474846061,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846061"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 339,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJt3EEFIQCaDQREW6GuqYXxhA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -298,32 +212,6 @@
     "id": 483469187,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483469187"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 385,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.996655,
-    "lng": 121.484505
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "連城停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 483469186,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/483469186"
    },
    "verified_at": "2026-11-21"
   }

@@ -138,6 +138,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJddOaDwADaDQRXnLK1brCGBg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -174,6 +175,7 @@
    "distance_m": 5,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_WOFsIoDaDQRyL7YW6g1Vcw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -210,6 +212,7 @@
    "distance_m": 180,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ_wARPcUCaDQRCAmhdZwChKg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -240,74 +243,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 243,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.978068,
-    "lng": 121.458565
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 325349354,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/325349354"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 53,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 246,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.978378,
-    "lng": 121.458809
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "土城區青山平面停車場",
-   "official": {
-    "address": "新北市土城區青雲路351-1號旁",
-    "cars": 53,
-    "fare": "小型車計時20元;小型車計時30元;小型車月租2000元;身障車月租1800元;機車免費;",
-    "hours": "0~24時",
-    "match_m": 41,
-    "name": "土城區青山平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 325349355,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/325349355"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 273,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ4yP431QDaDQRWIPqWQiBdCo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

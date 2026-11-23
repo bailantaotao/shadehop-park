@@ -236,6 +236,7 @@
    "distance_m": 3,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJO17ZuSyhQjQRPmJOIS8CgXw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -272,6 +273,7 @@
    "distance_m": 12,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJO4hY2wWhQjQRPKwVl0jEix0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -298,94 +300,6 @@
     "url": "https://www.openstreetmap.org/way/1054198540"
    },
    "osm_name": "A10山鼻站停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 114,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.080838,
-    "lng": 121.283915
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1251015132,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1251015132"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 166,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.081359,
-    "lng": 121.286409
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "南崁廣停二平面停車場",
-   "official": {
-    "address": "桃園市蘆竹區山鼻路16巷10弄16號旁",
-    "cars": null,
-    "fare": "計時每小時20園前12小時80元月租1200元季繳3000元",
-    "hours": null,
-    "match_m": 13,
-    "name": "南崁廣停二平面停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1219687065,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1219687065"
-   },
-   "osm_name": "力揚停車場廣停二站",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 644,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.073791,
-    "lng": 121.28843
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 438425545,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/438425545"
-   },
    "verified_at": "2026-11-21"
   }
  ],

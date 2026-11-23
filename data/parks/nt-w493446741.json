@@ -180,6 +180,7 @@
    "distance_m": 128,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJw4InlxcdaDQRpduWll9Bdw4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -209,94 +210,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 216,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.986085,
-    "lng": 121.421422
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1257655947,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1257655947"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 33,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 274,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.989122,
-    "lng": 121.417766
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "樹林國小慶福樓地下室及家長接送區停車場",
-   "official": {
-    "address": "新北市樹林區育英街176號B1及校外平面停車場",
-    "cars": 33,
-    "fare": "小型車月租2500元;小型車月租1500元;",
-    "hours": "0~24時",
-    "match_m": 33,
-    "name": "樹林國小慶福樓地下室及家長接送區停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 263053193,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/263053193"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 410,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.9828,
-    "lng": 121.420172
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "花漾年華停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 770857937,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/770857937"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 50,
    "capacity_disabled": null,
@@ -304,6 +217,7 @@
    "distance_m": 414,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJCTTsYBodaDQReStg-pcKXLM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -340,6 +254,7 @@
    "distance_m": 416,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3RN1DhsdaDQR894-i7bbUmk",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

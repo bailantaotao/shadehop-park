@@ -98,60 +98,7 @@
   "url": "https://www.openstreetmap.org/way/769219470"
  },
  "park_name": "內厝河濱公園",
- "parking": [
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 764,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.057822,
-    "lng": 121.274859
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 428693197,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/428693197"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 784,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.069163,
-    "lng": 121.2858
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1103426401,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1103426401"
-   },
-   "verified_at": "2026-11-21"
-  }
- ],
+ "parking": [],
  "playground": {
   "equipment": [],
   "fee": null,

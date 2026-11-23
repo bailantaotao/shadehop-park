@@ -380,6 +380,7 @@
    "distance_m": 145,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJH7ateOKoQjQR1uWpsTMj54Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -399,32 +400,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "permit",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 151,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.056797,
-    "lng": 121.491519
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9928927269,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9928927269"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 83,
    "capacity_disabled": null,
@@ -432,6 +407,7 @@
    "distance_m": 182,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJj8DRER2pQjQRLxt6yCDEqMg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -461,58 +437,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 193,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.0576,
-    "lng": 121.490617
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "重安段停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9928724097,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9928724097"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 231,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.055536,
-    "lng": 121.493538
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "重安段停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9928724106,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9928724106"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 322,
    "capacity_disabled": null,
@@ -520,6 +444,7 @@
    "distance_m": 233,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJgfjMauKoQjQRtQrl3pgZxI8",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

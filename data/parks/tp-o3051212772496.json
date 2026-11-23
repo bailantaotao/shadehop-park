@@ -318,6 +318,7 @@
    "distance_m": 103,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJj67SbOWrQjQRdoUyUPfGUW0",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -347,42 +348,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": 334,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 133,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.060804,
-    "lng": 121.546996
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "民有市場地下停車場",
-   "official": {
-    "address": "民權東路3段140巷15號地下",
-    "cars": 334,
-    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日5,750元，夜間3,200元(19時~08時)。機車：10元/時，當日單次停車最高收費上限20元/次，隔日另計；月租300元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 26,
-    "name": "民有市場地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "民有市場地下停車場",
-   "osm": {
-    "id": 12814487568,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/12814487568"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 14,
    "capacity_disabled": null,
@@ -390,6 +355,7 @@
    "distance_m": 186,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoRAafbqrQjQRuTJtac2l_TM",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -420,48 +386,13 @@
   },
   {
    "access": "yes",
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 278,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.062297,
-    "lng": 121.546473
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "永春常載停車場",
-   "official": {
-    "address": "信義路6段76巷8弄10-20號前方",
-    "cars": 6,
-    "fare": "月租：全日6,500元/月(季、年繳)。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 11,
-    "name": "永春常載停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 743280265,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/743280265"
-   },
-   "osm_name": "民權東路三段153巷西側平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
    "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 308,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJazSu6u-rQjQRwzTmVb-2gnI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -498,6 +429,7 @@
    "distance_m": 355,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJM2Ut4u-rQjQR9AMlhWGpgYI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

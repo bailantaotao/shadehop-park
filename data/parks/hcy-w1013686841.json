@@ -175,32 +175,6 @@
  "park_name": null,
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 80,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.783744,
-    "lng": 121.034508
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992970539,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992970539"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 9,
    "capacity_disabled": null,
@@ -208,6 +182,7 @@
    "distance_m": 219,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-XNdxro3aDQRFt4mmSVrJ9I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -234,6 +209,7 @@
    "distance_m": 356,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJead8hOc3aDQRa1-EtVr1d0Q",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -260,6 +236,7 @@
    "distance_m": 562,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJiZhcGv43aDQRiq694lSRYq0",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -275,32 +252,6 @@
     "id": 1240393691,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1240393691"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 597,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.782129,
-    "lng": 121.0279
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992970535,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992970535"
    },
    "verified_at": "2026-11-21"
   }

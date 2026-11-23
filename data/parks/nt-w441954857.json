@@ -158,61 +158,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 79,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.012088,
-    "lng": 121.424625
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 241503929,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/241503929"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 116,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.011475,
-    "lng": 121.422475
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 241503930,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/241503930"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 378,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJw65M-l8daDQRMvSs3sG317w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -233,38 +182,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 384,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.016918,
-    "lng": 121.424257
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1562478246,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1562478246"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 65,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 393,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJwRSZ3r8daDQRnCpbeER-CXU",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -289,42 +213,6 @@
     "id": 326324272,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326324272"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 60,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 433,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.01279,
-    "lng": 121.428212
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "市達停車場西盛街二站",
-   "official": {
-    "address": "新北市新莊區西盛街387巷旁空地",
-    "cars": 60,
-    "fare": "小型車計時30元;小型車月租3000元;",
-    "hours": "0~24時",
-    "match_m": 11,
-    "name": "市達停車場西盛街二站",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 326324271,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/326324271"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

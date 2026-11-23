@@ -312,32 +312,6 @@
  "park_name": "淡水河畔公園",
  "parking": [
   {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 427,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.082112,
-    "lng": 121.494331
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "自強臨時平面停車場",
-   "osm": {
-    "id": 1394452993,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1394452993"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -345,6 +319,7 @@
    "distance_m": 436,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJf27acjmpQjQRazVXV3yulG4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -371,6 +346,7 @@
    "distance_m": 473,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9VzC9UWpQjQRQy3rn96iJmc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -397,6 +373,7 @@
    "distance_m": 493,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJy1NIPyupQjQRHZ9pwShifFk",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -423,6 +400,7 @@
    "distance_m": 494,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJF5WW4_apQjQRh3Fy87l6gzc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -449,42 +427,6 @@
     "url": "https://www.openstreetmap.org/way/777210705"
    },
    "osm_name": "宏達仁義場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 124,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 508,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.079554,
-    "lng": 121.499039
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "宏達經營管理顧問有限公司仁義停車場",
-   "official": {
-    "address": "新北市三重區仁義街79巷與元富一街交叉口",
-    "cars": 124,
-    "fare": "小型車計時40元;小型車月租4000元;",
-    "hours": "0~24時",
-    "match_m": 51,
-    "name": "宏達經營管理顧問有限公司仁義停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 777210706,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/777210706"
-   },
-   "osm_name": "宏達仁義2場",
    "verified_at": "2026-11-21"
   }
  ],

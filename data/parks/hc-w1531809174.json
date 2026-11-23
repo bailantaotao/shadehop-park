@@ -402,32 +402,6 @@
  "park_name": "龍山公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 148,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.789901,
-    "lng": 121.009473
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1012670817,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1012670817"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 357,
    "capacity_disabled": null,
@@ -435,6 +409,7 @@
    "distance_m": 213,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJjR2yJz42aDQR59rfQu7yRj0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -455,64 +430,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 237,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.792592,
-    "lng": 121.011531
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1553559265,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1553559265"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 276,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.789514,
-    "lng": 121.007147
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1492461595,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1492461595"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 96,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 343,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ0bBLWts3aDQR8YEWvbe_R6s",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -539,6 +463,7 @@
    "distance_m": 367,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJdU7KO_Q3aDQRQoqQhyLNFYo",
    "kind": null,
    "kind_label": "停車場",
    "location": {

@@ -243,6 +243,7 @@
    "distance_m": 151,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJy2dWc_ynQjQRYhoge0vCA5o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -279,6 +280,7 @@
    "distance_m": 187,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ1__ZhFupQjQRUlYXSTX7A0k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -312,35 +314,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 215,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.05467,
-    "lng": 121.446918
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "日月停車",
-   "osm": {
-    "id": 1376061675,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1376061675"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 256,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ7fWc0FapQjQREmXTY499JOA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -367,6 +344,7 @@
    "distance_m": 272,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJYwaK5OmnQjQR2CxeCG-Iw8k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -393,32 +371,6 @@
     "url": "https://www.openstreetmap.org/way/1108279744"
    },
    "osm_name": "台灣聯通",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 277,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.053004,
-    "lng": 121.445212
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "麥當勞",
-   "osm": {
-    "id": 771786032,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/771786032"
-   },
    "verified_at": "2026-11-21"
   }
  ],

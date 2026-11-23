@@ -355,38 +355,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 129,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.056732,
-    "lng": 121.512514
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5110489233,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5110489233"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 244,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 196,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJBe_yZ8mpQjQRSjC4U4RAxRE",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -423,6 +398,7 @@
    "distance_m": 251,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJBTOguhWpQjQRjrS4C8JzY8Q",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -458,6 +434,7 @@
    "distance_m": 255,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJD9WX7T-pQjQRMeQTDRQRuu0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -484,68 +461,6 @@
     "url": "https://www.openstreetmap.org/way/505340533"
    },
    "osm_name": "停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 49,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 283,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.060484,
-    "lng": 121.513744
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-涼州場",
-   "official": {
-    "address": "重慶北路2段與涼州街交叉口空地",
-    "cars": 49,
-    "fare": "計時：小型車150元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 44,
-    "name": "168停車聯盟-涼州場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 5110489238,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5110489238"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 435,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 25.060868,
-    "lng": 121.516355
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1479975729,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1479975729"
-   },
    "verified_at": "2026-11-21"
   }
  ],

@@ -194,38 +194,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 64,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.995241,
-    "lng": 121.534167
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 378584548,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/378584548"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 99,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1Uuz6AGqQjQRMUSSOMydp3c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -249,35 +224,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 106,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.99318,
-    "lng": 121.537667
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 655308047,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/655308047"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 150,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJk6AixwGqQjQRPMCcx-Xz99k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -304,6 +254,7 @@
    "distance_m": 466,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmXD3kQCqQjQRgMJg0SfUYIw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -319,32 +270,6 @@
     "id": 358671227,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/358671227"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 493,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.988422,
-    "lng": 121.534047
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 7131463,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/7131463"
    },
    "verified_at": "2026-11-21"
   }

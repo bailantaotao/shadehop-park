@@ -47,7 +47,8 @@ def _anchor(p: dict) -> str | None:
     return _area(p) + m.group(1) if m else None
 
 
-def place_url(loc: dict | None, name: str | None = None, kind: str | None = None, park: dict | None = None) -> str | None:
+def place_url(loc: dict | None, name: str | None = None, kind: str | None = None, park: dict | None = None,
+              place_id: str | None = None) -> str | None:
     """Google Maps for a nearby parking lot, toilet, shop, station or charger.
 
     The Google Maps app ignores the q/ll centre for a plain category search and lists 停車場 around
@@ -57,6 +58,9 @@ def place_url(loc: dict | None, name: str | None = None, kind: str | None = None
     if not loc:
         return None
     ll = f"{loc['lat']},{loc['lng']}"
+    if place_id:
+        # Google's own listing for this very place: it shows its name, not our coordinates.
+        return f"https://www.google.com/maps/search/?api=1&query={ll}&query_place_id={quote(place_id, safe='')}"
     name, kind = (name or "").strip(), (kind or "").strip()
     if name:
         term = f"{name} {_area(park)}" if park else name

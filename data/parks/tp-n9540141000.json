@@ -244,6 +244,7 @@
    "distance_m": 200,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJAV9LTnSrQjQRWjzKlWNAYBw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -280,6 +281,7 @@
    "distance_m": 201,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJzQtoebmrQjQRFZdTvvNrEXU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -300,74 +302,13 @@
   },
   {
    "access": null,
-   "capacity": 180,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 206,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.045953,
-    "lng": 121.586168
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "成德立體停車場",
-   "official": {
-    "address": "成福路1號",
-    "cars": 180,
-    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日4,500元，日間2,500元(07-19)，夜間2,400元(19-07)。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 3,
-    "name": "成德立體停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 447502429,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/447502429"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 226,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.049439,
-    "lng": 121.589065
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 763957990,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/763957990"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 95,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 272,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJw8urjnarQjQR_Qy_LqxnpoQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -392,42 +333,6 @@
     "id": 710686218,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/710686218"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 95,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 278,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.049286,
-    "lng": 121.586217
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-昆陽場(南港信義保管場)",
-   "official": {
-    "address": "忠孝東路6段135號旁空地",
-    "cars": 95,
-    "fare": "小型車：計時 150元/時，停車全程以半小時計；月租 全日15,000元。機車：50元/次(隔日另計)。違規停車保管費：小型車100元/半日、機車25元/半日(隔日另計)，逾1小時以上，未滿12小時者以半日計費。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 41,
-    "name": "168停車聯盟-昆陽場(南港信義保管場)",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 763957993,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/763957993"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

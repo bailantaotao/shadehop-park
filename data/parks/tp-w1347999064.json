@@ -228,6 +228,7 @@
    "distance_m": 56,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmyGcDACvQjQRn2tFEr_GINw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -264,6 +265,7 @@
    "distance_m": 217,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ250aZsiuQjQRsWnz7vi3gEg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -300,6 +302,7 @@
    "distance_m": 259,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9bAN-4mvQjQRfR3U2slISAE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -326,6 +329,7 @@
    "distance_m": 286,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ5TAWb8KvQjQRvzwD9usAbtw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -356,48 +360,13 @@
   },
   {
    "access": null,
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 316,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.0918,
-    "lng": 121.51713
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺北市立陽明高級中學學生活動中心地下停車場",
-   "official": {
-    "address": "中正路510號",
-    "cars": 20,
-    "fare": "小型車：月租 全日1,500元，季租4,500元。",
-    "hours": "週一至週四19-翌日7時，週五及國定假日19-假日結束翌日7時",
-    "match_m": 37,
-    "name": "臺北市立陽明高級中學學生活動中心地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "週一至週四19-翌日7時，週五及國定假日19-假日結束翌日7時",
-   "operator": null,
-   "osm": {
-    "id": 4462637481,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4462637481"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 31,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 406,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJk2WIZQCvQjQRLkCH5f_WWz4",
    "kind": null,
    "kind_label": "停車場",
    "location": {

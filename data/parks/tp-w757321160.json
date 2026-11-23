@@ -224,38 +224,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 33,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.006316,
-    "lng": 121.550428
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 756594488,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/756594488"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 66,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfbljnVSrQjQRprxKm48I4Nw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -282,140 +257,6 @@
     "url": "https://www.openstreetmap.org/relation/14703117"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 14,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 66,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.006177,
-    "lng": 121.549779
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "興旺平面停車場",
-   "official": {
-    "address": "福興路106巷28弄與福興路106巷交叉口",
-    "cars": 14,
-    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 15,
-    "name": "興旺平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 756327148,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/756327148"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 14,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 78,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.006333,
-    "lng": 121.549706
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "興旺平面停車場",
-   "official": {
-    "address": "福興路106巷28弄與福興路106巷交叉口",
-    "cars": 14,
-    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 8,
-    "name": "興旺平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1104560399,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1104560399"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 14,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 78,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.006333,
-    "lng": 121.549706
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "興旺平面停車場",
-   "official": {
-    "address": "福興路106巷28弄與福興路106巷交叉口",
-    "cars": 14,
-    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 8,
-    "name": "興旺平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 14703116,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/14703116"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 145,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.006347,
-    "lng": 121.548926
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福興停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 420084987,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/420084987"
-   },
    "verified_at": "2026-11-21"
   }
  ],

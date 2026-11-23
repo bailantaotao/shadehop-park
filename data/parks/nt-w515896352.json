@@ -177,58 +177,6 @@
  "park_name": "大公雞公園",
  "parking": [
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 374,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.074774,
-    "lng": 121.635481
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "金龍湖停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 421735082,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/421735082"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 430,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.078964,
-    "lng": 121.64508
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 515884107,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/515884107"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 113,
    "capacity_disabled": null,
@@ -236,6 +184,7 @@
    "distance_m": 478,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ3SzlYwBTXTQRRgfTotK2xOM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -272,6 +221,7 @@
    "distance_m": 675,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJJb8vsCpTXTQR-ZKzdlhMf5w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -288,78 +238,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1115909064"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 61,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 733,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.071718,
-    "lng": 121.633076
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福田停車場",
-   "official": {
-    "address": "新北市汐止區湖前街110巷2弄與湖東街交叉口",
-    "cars": 61,
-    "fare": "小型車月租2200元;",
-    "hours": "0~24時",
-    "match_m": 37,
-    "name": "福田停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1480102469,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1480102469"
-   },
-   "osm_name": "俥停停車汐止明𡶶二場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 61,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 742,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.071942,
-    "lng": 121.632837
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福田停車場",
-   "official": {
-    "address": "新北市汐止區湖前街110巷2弄與湖東街交叉口",
-    "cars": 61,
-    "fare": "小型車月租2200元;",
-    "hours": "0~24時",
-    "match_m": 49,
-    "name": "福田停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1480102467,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1480102467"
-   },
-   "osm_name": "金龍湖畔停車場",
    "verified_at": "2026-11-21"
   }
  ],

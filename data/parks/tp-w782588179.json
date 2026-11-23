@@ -317,6 +317,7 @@
    "distance_m": 122,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ58P1QaWrQjQR0i-Vfu0MQQ8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -353,6 +354,7 @@
    "distance_m": 175,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ50sC6zuqQjQRpOU0Jm_64c0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -373,100 +375,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 228,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.015585,
-    "lng": 121.550348
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1385606641,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1385606641"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 236,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.018785,
-    "lng": 121.55381
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 676281963,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/676281963"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 37,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 295,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.018881,
-    "lng": 121.549984
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺北市芳和實驗中學",
-   "official": {
-    "address": "臥龍街170號",
-    "cars": 37,
-    "fare": "月租：2,000元/月，1次收取3個月費用。",
-    "hours": "平日：18時至翌日07時；假日：週六至週一上午07時；國定假日前1晚18時至國定假日結束後翌日07時",
-    "match_m": 2,
-    "name": "臺北市芳和實驗中學",
-    "source": "taipei"
-   },
-   "opening_hours": "平日：18時至翌日07時；假日：週六至週一上午07時；國定假日前1晚18時至國定假日結束後翌日07時",
-   "operator": null,
-   "osm": {
-    "id": 359844704,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/359844704"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 62,
    "capacity_disabled": "2",
    "capacity_parent": "1",
    "distance_m": 310,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJg4WwdwCrQjQRgkm1us8rq3g",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

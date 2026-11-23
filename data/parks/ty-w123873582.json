@@ -507,58 +507,6 @@
  "park_name": "兒九公園",
  "parking": [
   {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 0,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.005165,
-    "lng": 121.211942
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1212925800,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1212925800"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 142,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.00341,
-    "lng": 121.211556
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1330542397,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1330542397"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -566,6 +514,7 @@
    "distance_m": 279,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJvQ0aysMhaDQRZp14SsgKVlk",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -592,6 +541,7 @@
    "distance_m": 392,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJh2lToYUhaDQRAmnl4-217r0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -618,6 +568,7 @@
    "distance_m": 419,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ3XWqoGUhaDQR3VtJVqwYeUg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -644,32 +595,6 @@
     "url": "https://www.openstreetmap.org/way/1013718941"
    },
    "osm_name": "宜舍中壢永發★uTagGo",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 430,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.008973,
-    "lng": 121.21487
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 560102498,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/560102498"
-   },
    "verified_at": "2026-11-21"
   }
  ],

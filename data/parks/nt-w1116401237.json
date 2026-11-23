@@ -180,94 +180,6 @@
  "park_name": "永平公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 94,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 24.983095,
-    "lng": 121.517187
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 529456705,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/529456705"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 532,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.982597,
-    "lng": 121.511147
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 442934223,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/442934223"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 163,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 592,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.981366,
-    "lng": 121.522281
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "萊茵區停車場",
-   "official": {
-    "address": "新北市新店區中安大橋下萊茵區高灘地",
-    "cars": 163,
-    "fare": "小型車計時20元;小型車計時40元;小型車月租2200元;身障車月租1100元;機車免費;",
-    "hours": "0~24時",
-    "match_m": 20,
-    "name": "萊茵區停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 237014528,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/237014528"
-   },
-   "osm_name": "小碧潭中安橋下停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 192,
    "capacity_disabled": null,
@@ -275,6 +187,7 @@
    "distance_m": 637,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJN9lBZdipQjQRLaB04u7zabo",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -311,6 +224,7 @@
    "distance_m": 648,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-43jjBcDaDQRy3fcIKE6nro",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -337,6 +251,7 @@
    "distance_m": 682,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9X3WMo8DaDQRvG4h7NGCzcw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

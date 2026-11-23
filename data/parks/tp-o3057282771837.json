@@ -444,6 +444,7 @@
    "distance_m": 93,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmxeTtOmrQjQRrDbWnSOVoRc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -473,74 +474,13 @@
   },
   {
    "access": null,
-   "capacity": 12,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 232,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.052253,
-    "lng": 121.550205
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "和停有限公司南京場",
-   "official": {
-    "address": "南京東路4段53巷3弄12號旁空地",
-    "cars": 12,
-    "fare": "計時:150元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租:全日10,000元/月，日間6,000元/月(07-19)，夜間5,000元/月(19-07)。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 33,
-    "name": "和停有限公司南京場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 980477252,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/980477252"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 365,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.055502,
-    "lng": 121.555477
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9831613976,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9831613976"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 28,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 536,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJgRmASOarQjQR7SaxhkUMIcA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -577,6 +517,7 @@
    "distance_m": 631,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJRwOt3e2rQjQRh7OJXb3neQA",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -603,6 +544,7 @@
    "distance_m": 642,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJL3IrfuqrQjQRbsvizimHahY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

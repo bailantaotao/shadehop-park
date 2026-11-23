@@ -235,6 +235,7 @@
    "distance_m": 61,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJG1Hnh_Y3aDQR7QI3OjUTjuw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -261,6 +262,7 @@
    "distance_m": 184,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJB2oov6M1aDQR1A8LvwfZ5Hc",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -287,6 +289,7 @@
    "distance_m": 211,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJoQkyAPc3aDQRASnHQI3Fhgk",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -313,6 +316,7 @@
    "distance_m": 214,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJjeYHWis3aDQR9mZUUcQaMvg",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -328,58 +332,6 @@
     "id": 800638424,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/800638424"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 217,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.800011,
-    "lng": 120.989029
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "光復停車場",
-   "osm": {
-    "id": 803226465,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/803226465"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 218,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.801337,
-    "lng": 120.990713
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 803226452,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/803226452"
    },
    "verified_at": "2026-11-21"
   }

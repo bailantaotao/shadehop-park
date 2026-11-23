@@ -354,6 +354,7 @@
    "distance_m": 57,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJLV0a_1WpQjQRCGm4MWfmzpk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -380,6 +381,7 @@
    "distance_m": 251,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTdaqlSqqQjQRQOEi8FH9HY8",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -416,6 +418,7 @@
    "distance_m": 282,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJOUj_dwCrQjQRydAIGbrI6IQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -445,42 +448,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "permissive",
-   "capacity": 49,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 304,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.033143,
-    "lng": 121.539736
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房信義1站停車場",
-   "official": {
-    "address": "信義路3段140號旁空地",
-    "cars": 49,
-    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 15,
-    "name": "嘟嘟房信義1站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 1534443894,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1534443894"
-   },
-   "osm_name": "嘟嘟房",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 24,
    "capacity_disabled": null,
@@ -488,6 +455,7 @@
    "distance_m": 325,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJFeetsPepQjQRj5u9-NsXM0I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -514,32 +482,6 @@
     "url": "https://www.openstreetmap.org/way/1152877192"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 399,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.033055,
-    "lng": 121.532073
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "私有停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 208022098,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/208022098"
-   },
    "verified_at": "2026-11-21"
   }
  ],

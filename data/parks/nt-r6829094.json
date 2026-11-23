@@ -332,74 +332,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 305,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.972245,
-    "lng": 121.544599
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 759407259,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/759407259"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 3,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 345,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.977427,
-    "lng": 121.542538
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "北新路二段停車場",
-   "official": {
-    "address": "新北市新店區北新路2段185號旁空地",
-    "cars": 3,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 12,
-    "name": "北新路二段停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 447197574,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/447197574"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 243,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 360,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJB8sPRosBaDQRuOvh_sS08yE",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -436,6 +375,7 @@
    "distance_m": 371,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTVu8uPMBaDQRBCfTa9Gao50",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -462,6 +402,7 @@
    "distance_m": 381,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJB8sPRosBaDQRn4uxFT7sLPc",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -488,6 +429,7 @@
    "distance_m": 385,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJB8sPRosBaDQRZF1Sdp3-8ms",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

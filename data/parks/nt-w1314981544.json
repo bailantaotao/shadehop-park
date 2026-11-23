@@ -179,35 +179,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 46,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "carports",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.980731,
-    "lng": 121.421945
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 389024089,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/389024089"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 107,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJM2uroxgdaDQRDCPvBkCgh6I",
    "kind": "sheds",
    "kind_label": "停車場",
    "location": {
@@ -224,120 +199,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/389024087"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 194,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "carports",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.977783,
-    "lng": 121.422476
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 238566800,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/238566800"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 217,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "carports",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.977486,
-    "lng": 121.421195
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 238566851,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/238566851"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 299,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "carports",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.979722,
-    "lng": 121.425368
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 598518686,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/598518686"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": 86,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 306,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.977984,
-    "lng": 121.418972
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "國凱停車場",
-   "official": {
-    "address": "新北市樹林區國凱街19-1號對面",
-    "cars": 86,
-    "fare": "小型車月租3000元;",
-    "hours": "0~24時",
-    "match_m": 19,
-    "name": "國凱停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 206803359,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/206803359"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

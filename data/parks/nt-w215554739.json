@@ -266,6 +266,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJUeSW9NGoQjQR0o20ENKRaso",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -296,48 +297,13 @@
   },
   {
    "access": null,
-   "capacity": 27,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 24,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.082742,
-    "lng": 121.481852
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通重陽停車場",
-   "official": {
-    "address": "新北市蘆洲區重陽街46號旁空地",
-    "cars": 27,
-    "fare": "小型車計時30元;小型車計時100元;",
-    "hours": "0~24時",
-    "match_m": 26,
-    "name": "台灣聯通重陽停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 771271704,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/771271704"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 187,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJl3mBIc6oQjQR9HgZbEW6YAQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -364,6 +330,7 @@
    "distance_m": 200,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJX9Hl5SGpQjQRFsbLLXkCJpU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -390,6 +357,7 @@
    "distance_m": 362,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJYREedtWpQjQR6xixQUFoy8k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -405,32 +373,6 @@
     "id": 637363668,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/637363668"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 385,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078637,
-    "lng": 121.479102
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1496517382,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1496517382"
    },
    "verified_at": "2026-11-21"
   }

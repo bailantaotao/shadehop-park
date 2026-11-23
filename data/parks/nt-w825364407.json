@@ -226,6 +226,7 @@
    "distance_m": 155,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJB6xIs5alQjQRKX8omsTvfW8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -252,6 +253,7 @@
    "distance_m": 169,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJEZ1cOQClQjQRjKSQVe4Js4o",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -288,6 +290,7 @@
    "distance_m": 275,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZUwrBlWkQjQRVL2iFnHj2EA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -324,6 +327,7 @@
    "distance_m": 336,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJDR1RLKulQjQRk893hR5044U",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -354,48 +358,13 @@
   },
   {
    "access": null,
-   "capacity": 220,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 380,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.146843,
-    "lng": 121.400233
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "八里第一立體停車場",
-   "official": {
-    "address": "新北市八里區舊城路12號",
-    "cars": 220,
-    "fare": "小型車計時20元;小型車計時30元;小型車月租2300元;身障車月租1500元;",
-    "hours": "0~24時",
-    "match_m": 8,
-    "name": "八里第一立體停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 714659313,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/714659313"
-   },
-   "osm_name": "八里區第一立體停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 607,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ7SjSb1SlQjQR_CSF_pyukuI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

@@ -229,42 +229,6 @@
  "park_name": "原住民族多功能文化傳承場域",
  "parking": [
   {
-   "access": "yes",
-   "capacity": 260,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 47,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.910045,
-    "lng": 121.184605
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "五福公園停車場",
-   "official": {
-    "address": "桃園市楊梅區文化街295巷",
-    "cars": null,
-    "fare": "計時",
-    "hours": null,
-    "match_m": 36,
-    "name": "五福公園停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 961498505,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/961498505"
-   },
-   "osm_name": "五福停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -272,6 +236,7 @@
    "distance_m": 60,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ8z5IGSkjaDQRd84t5JJQiPk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -292,64 +257,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 64,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.909065,
-    "lng": 121.185632
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1016255392,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1016255392"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 163,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.910103,
-    "lng": 121.183712
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1016984130,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1016984130"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 76,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 177,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJg6QtYAojaDQRJ_a2-BzUW5E",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -365,32 +279,6 @@
     "id": 875809549,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/875809549"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 185,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.910128,
-    "lng": 121.183448
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1016984132,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1016984132"
    },
    "verified_at": "2026-11-21"
   }

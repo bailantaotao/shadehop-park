@@ -189,61 +189,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 332,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.056303,
-    "lng": 121.361944
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1310980929,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1310980929"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 378,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.056467,
-    "lng": 121.362583
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1310980934,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1310980934"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 489,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJX2IvmmanQjQRCW-IuD93_Ts",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -270,6 +219,7 @@
    "distance_m": 529,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmzay6kenQjQRrsJOn5bVXlg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -296,6 +246,7 @@
    "distance_m": 557,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJbwgT2SqnQjQR39uoo1Rnfms",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -322,6 +273,7 @@
    "distance_m": 557,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJVRh-3COnQjQRFuJH7M0BLgM",
    "kind": null,
    "kind_label": "停車場",
    "location": {

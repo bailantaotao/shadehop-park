@@ -358,6 +358,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJKZCej1SpQjQRJibJT-QmXdE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -388,48 +389,13 @@
   },
   {
    "access": null,
-   "capacity": 167,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 15,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078601,
-    "lng": 121.495696
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅三重元信停車場",
-   "official": {
-    "address": "新北市三重區元信一街與元信二街交叉口",
-    "cars": 167,
-    "fare": "小型車計時100元;小型車月租5000元;",
-    "hours": "0~24時",
-    "match_m": 37,
-    "name": "城市車旅三重元信停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 550535672,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/550535672"
-   },
-   "osm_name": "永侑停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 290,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 62,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3ZfryuGpQjQR4U50Jg05GfU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -466,6 +432,7 @@
    "distance_m": 83,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ0RAK1SOpQjQR1md_nWi1Y1A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -492,6 +459,7 @@
    "distance_m": 234,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9VzC9UWpQjQRQy3rn96iJmc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -518,6 +486,7 @@
    "distance_m": 252,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJy1NIPyupQjQRHZ9pwShifFk",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

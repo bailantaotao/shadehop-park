@@ -359,84 +359,6 @@
  "park_name": "蘭雅公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 75,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.110295,
-    "lng": 121.530886
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 557230239,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/557230239"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 137,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.110846,
-    "lng": 121.530956
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "蘭雅國中",
-   "osm": {
-    "id": 557230238,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/557230238"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 190,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.110279,
-    "lng": 121.532112
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "蘭雅國中",
-   "osm": {
-    "id": 557230237,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/557230237"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": 1503,
    "capacity_disabled": null,
@@ -444,6 +366,7 @@
    "distance_m": 200,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ1Sg0iIOuQjQRMhns737nZsM",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -480,6 +403,7 @@
    "distance_m": 236,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ2-plQJuuQjQR6Vu2I9v7nJ4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -504,42 +428,6 @@
     "id": 258411040,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/258411040"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 34,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 316,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.106639,
-    "lng": 121.529395
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "忠誠路（二）平面停車場",
-   "official": {
-    "address": "忠誠路1段與德行東路132巷7弄交叉口旁",
-    "cars": 34,
-    "fare": "計時：小型車(含大型重型機車)30元/時，停車全程以半小時計。月租：小型車全日7,200元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 2,
-    "name": "忠誠路（二）平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 258410987,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/258410987"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

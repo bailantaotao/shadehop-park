@@ -205,6 +205,7 @@
    "distance_m": 85,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJvY1-lTOnQjQRebmv_dzMxts",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -231,6 +232,7 @@
    "distance_m": 89,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ5eABnGmnQjQRSp3F9fxhgJE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -250,84 +252,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 128,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.026562,
-    "lng": 121.422008
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1455925768,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1455925768"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 150,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.024211,
-    "lng": 121.420218
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 443991752,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/443991752"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 298,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.029444,
-    "lng": 121.422279
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通",
-   "opening_hours": null,
-   "operator": "台灣聯通停車場開發股份有限公司",
-   "osm": {
-    "id": 415474137,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/415474137"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 192,
    "capacity_disabled": null,
@@ -335,6 +259,7 @@
    "distance_m": 389,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJvRHhN_OnQjQRnsRiLmEQQ5A",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

@@ -713,12 +713,16 @@
   function placeLink(x, kind, area) {
     // A named place: Google's own listing for it (name and area find that very spot).
     var ll = x.location.lat + "," + x.location.lng;
+    if (x.google_place_id) return "https://www.google.com/maps/search/?api=1&query=" + ll + "&query_place_id=" + encodeURIComponent(x.google_place_id);
     return "https://maps.google.com/maps?q=" + encodeURIComponent(placeName(x, kind) + " " + area) + "&ll=" + ll + "&sll=" + ll + "&z=18";
   }
   function placeRoute(x, kind, area) {
     // Directions straight to it. A nameless lot or toilet goes by its coordinates: searching just
     // "停車場" made the Google Maps app list the lots around the phone instead of this one.
     var named = placeName(x, kind) !== NEAR[kind].label;
+    // A lot Google knows: open its place page (route button on it). The directions URL with a place ID
+    // still showed bare coordinates in mobile Safari; the place page shows Google's own name.
+    if (x.google_place_id) return placeLink(x, kind, area);
     return "https://www.google.com/maps/dir/?api=1&destination=" +
       encodeURIComponent(named ? placeName(x, kind) + " " + ((x.official || {}).address || area) : x.location.lat + "," + x.location.lng);
   }
@@ -781,10 +785,10 @@
             '<span class="muted">離公園 ' + x.distance_m + "m（直線）" + (sub ? "・" + esc(sub) : "") + "</span>" +
             more +
             (k === "parking" ? '<span class="near-fact">' + ({ taipei: "臺北市停車管理工程處", newtaipei: "新北市政府交通局", tdx: "交通部 TDX" }[off.source] || "OpenStreetMap") + (off.address ? "・" + esc(off.address) : "") + '</span>' : "") +
-            '<div class="near-btns">' + (k === "parking" && (!x.display_name || x.display_name === "未具名停車點") ?
+            '<div class="near-btns">' + (k === "parking" && !x.google_place_id && (!x.display_name || x.display_name === "未具名停車點") ?
               '<span class="near-fact">車輛入口待確認</span><a class="pp-btn" href="' + esc(placeLink({ name: d.name + " 附近停車場", location: x.location }, k, area)) + '" target="_blank" rel="noopener">搜尋公園附近停車場</a>' :
               '<a class="pp-btn primary" href="' + esc(placeRoute(x, k, area)) + '" target="_blank" rel="noopener">導航</a>' +
-              (placeName(x, k) !== NEAR[k].label ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "")) +
+              (placeName(x, k) !== NEAR[k].label || x.google_place_id ? '<a class="pp-btn" href="' + esc(placeLink(x, k, area)) + '" target="_blank" rel="noopener">在 Google 地圖查看</a>' : "")) +
             "</div></div>",
             { className: "near-popup", closeButton: false, autoPanPaddingTopLeft: L.point(16, overlayBottom() + 12),
               autoPanPaddingBottomRight: L.point(16, phone.matches ? sheetMetrics().half + 16 : 16) })

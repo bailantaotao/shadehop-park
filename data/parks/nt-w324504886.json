@@ -309,6 +309,7 @@
    "distance_m": 183,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJuzzGnaMCaDQRmtiIAZwr55g",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -344,6 +345,7 @@
    "distance_m": 220,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJT-dceKMCaDQRLGLpOcAs_4U",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -380,6 +382,7 @@
    "distance_m": 262,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJscVQe6ICaDQR_RKI41YMK3k",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -412,35 +415,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 324,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "carports",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.996566,
-    "lng": 121.468776
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "佳恩停車場",
-   "osm": {
-    "id": 1245262262,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1245262262"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 330,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ5b-lqqICaDQR6xxkdjl9CzY",
    "kind": "carports",
    "kind_label": "停車場",
    "location": {
@@ -467,6 +445,7 @@
    "distance_m": 378,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJYRrY1LEDaDQRzshaLW8VqzM",
    "kind": "carports",
    "kind_label": "停車場",
    "location": {

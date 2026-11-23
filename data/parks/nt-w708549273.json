@@ -322,6 +322,7 @@
    "distance_m": 56,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJq75K3rCpQjQR6ITmPDT0Ybg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -358,6 +359,7 @@
    "distance_m": 105,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJG8JiG7ipQjQRKYkNuw9Qf0M",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -384,6 +386,7 @@
    "distance_m": 182,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJH7ateOKoQjQR1uWpsTMj54Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -410,6 +413,7 @@
    "distance_m": 186,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJgfjMauKoQjQRtQrl3pgZxI8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -436,78 +440,6 @@
     "url": "https://www.openstreetmap.org/node/9928724094"
    },
    "osm_name": "重安段停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 322,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 187,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.057956,
-    "lng": 121.490076
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "三重區重新立體停車場",
-   "official": {
-    "address": "新北市三重區重安街1號",
-    "cars": 322,
-    "fare": "小型車計時20元;小型車月租3300元;身障車月租1650元;",
-    "hours": "0~24時",
-    "match_m": 37,
-    "name": "三重區重新立體停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 9928788158,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9928788158"
-   },
-   "osm_name": "重安段停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 322,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 201,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.058247,
-    "lng": 121.489921
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "三重區重新立體停車場",
-   "official": {
-    "address": "新北市三重區重安街1號",
-    "cars": 322,
-    "fare": "小型車計時20元;小型車月租3300元;身障車月租1650元;",
-    "hours": "0~24時",
-    "match_m": 4,
-    "name": "三重區重新立體停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 446436568,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/446436568"
-   },
-   "osm_name": "新北市重新立體停車場",
    "verified_at": "2026-11-21"
   }
  ],

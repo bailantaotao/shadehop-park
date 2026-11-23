@@ -265,6 +265,7 @@
    "distance_m": 24,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJFxm2Nek1aDQRWnKMOncVi7s",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -294,48 +295,13 @@
   },
   {
    "access": null,
-   "capacity": 28,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 57,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.797032,
-    "lng": 120.971763
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "頂竹圍地下停車場",
-   "official": {
-    "address": "新竹市東區頂竹里竹蓮街16號",
-    "cars": null,
-    "fare": "平假日 20元/時(24小時)",
-    "hours": null,
-    "match_m": 48,
-    "name": "頂竹圍地下停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 8637539734,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/8637539734"
-   },
-   "osm_name": "竹蓮市場停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 284,
    "capacity_disabled": "6",
    "capacity_parent": null,
    "distance_m": 234,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJvRjBXwA1aDQRmeVaqpQTMaY",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -369,35 +335,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 323,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.794538,
-    "lng": 120.97324
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1462978506,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1462978506"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 328,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJDXO9Oug1aDQRUthrBEA-jGc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -424,32 +365,6 @@
     "url": "https://www.openstreetmap.org/way/1240705540"
    },
    "osm_name": "後站第一汽車停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 331,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.795653,
-    "lng": 120.974946
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1577434374,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1577434374"
-   },
    "verified_at": "2026-11-21"
   }
  ],

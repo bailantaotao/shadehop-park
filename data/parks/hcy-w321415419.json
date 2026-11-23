@@ -183,38 +183,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 25,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 24.82723,
-    "lng": 121.018938
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1227114695,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1227114695"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 305,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 61,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJEe6aO_I2aDQRmvY2vAI2HWU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -241,6 +216,7 @@
    "distance_m": 71,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoZcG6O02aDQRZkxa1C-F0JA",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -256,84 +232,6 @@
     "id": 326525330,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/326525330"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 137,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.825719,
-    "lng": 121.015166
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "衛生局停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1019355881,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1019355881"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 138,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.825487,
-    "lng": 121.014831
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "稅捐稽徵局停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1019355879,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1019355879"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 161,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 24.826303,
-    "lng": 121.015251
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1227114684,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1227114684"
    },
    "verified_at": "2026-11-21"
   }

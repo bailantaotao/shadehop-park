@@ -337,6 +337,7 @@
    "distance_m": 108,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJZwieEgCpQjQRdyu-yyHCwX8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -373,6 +374,7 @@
    "distance_m": 138,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJqRn9M-MDaDQReg8O6x7BqCA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -392,68 +394,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 130,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 204,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.002382,
-    "lng": 121.491113
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中和板南停車場",
-   "official": {
-    "address": "新北市中和區板南路與大洋街交叉口空地",
-    "cars": 130,
-    "fare": "小型車計時80元;小型車月租5000元;",
-    "hours": "0~24時",
-    "match_m": 32,
-    "name": "中和板南停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1474846070,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846070"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 356,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.000458,
-    "lng": 121.495395
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "海宴停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1387519634,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1387519634"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "permit",
    "capacity": null,
    "capacity_disabled": null,
@@ -461,6 +401,7 @@
    "distance_m": 402,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJx9_QVwCpQjQRMaewjU4Svyk",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -487,6 +428,7 @@
    "distance_m": 415,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJVR6KEyQDaDQRk2h-dGWVgVc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

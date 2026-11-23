@@ -261,6 +261,7 @@
    "distance_m": 160,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJN7FfHACrQjQRXuLjhgUj-d8",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -291,48 +292,13 @@
   },
   {
    "access": null,
-   "capacity": 34,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 178,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.051105,
-    "lng": 121.616004
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "USPACE南港研究院路停車場",
-   "official": {
-    "address": "研究院路1段101巷16弄8號旁",
-    "cars": 34,
-    "fare": "計時：120元/時，停車未滿1小時以1小時計，逾1小時以上者，未滿半小時以半小時計。月租：10,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 42,
-    "name": "USPACE南港研究院路停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1563979101,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1563979101"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 392,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ3Zih1FarQjQRjLmh55GjnLI",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -353,48 +319,13 @@
   },
   {
    "access": null,
-   "capacity": 26,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 421,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.053628,
-    "lng": 121.612676
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "通通停南港中南停車場",
-   "official": {
-    "address": "中南街42巷22號之空地",
-    "cars": 26,
-    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 7,
-    "name": "通通停南港中南停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 1042128037,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1042128037"
-   },
-   "osm_name": "嘟嘟房中南站",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 429,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJF37MNLerQjQRnNdav5X3OPQ",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -410,32 +341,6 @@
     "id": 1042128038,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1042128038"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 446,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.050215,
-    "lng": 121.620744
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "月租停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1089813560,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1089813560"
    },
    "verified_at": "2026-11-21"
   }

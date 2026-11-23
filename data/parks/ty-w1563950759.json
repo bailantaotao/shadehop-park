@@ -368,6 +368,7 @@
    "distance_m": 15,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ4aZY3B09aDQRAOzPMxo3WZM",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -401,71 +402,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 18,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.867922,
-    "lng": 121.218338
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "運動公園平面停車場",
-   "official": {
-    "address": "桃園市龍潭區北龍路262號旁",
-    "cars": null,
-    "fare": "30元/每小時,24小時營運，月租3600元",
-    "hours": null,
-    "match_m": 35,
-    "name": "運動公園平面停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 563242621,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/563242621"
-   },
-   "osm_name": "龍潭運動公園平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 73,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.868757,
-    "lng": 121.218091
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 565286940,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/565286940"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 293,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJezDJh3M9aDQRfFpCZA7EmFU",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -492,6 +432,7 @@
    "distance_m": 389,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJMydO1489aDQR6BBQWK0mWOw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -518,32 +459,6 @@
     "url": "https://www.openstreetmap.org/way/659302021"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 390,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.868011,
-    "lng": 121.214672
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1007312282,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1007312282"
-   },
    "verified_at": "2026-11-21"
   }
  ],

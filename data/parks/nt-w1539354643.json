@@ -222,64 +222,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 7,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 231,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.011716,
-    "lng": 121.520627
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "桂林停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1538991967,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1538991967"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 442,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 231,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.017564,
-    "lng": 121.518289
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "綠光河岸停車場",
-   "opening_hours": "24/7",
-   "operator": null,
-   "osm": {
-    "id": 1194888161,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1194888161"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 242,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJDUC7bGupQjQRQ7XEv0v8b8Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -306,6 +255,7 @@
    "distance_m": 401,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ1Yt0zeupQjQRU6LlfuZ1dao",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -342,6 +292,7 @@
    "distance_m": 412,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZ-DlyaSpQjQRYsmiV7Ib2-Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -368,42 +319,6 @@
     "url": "https://www.openstreetmap.org/way/1299931215"
    },
    "osm_name": "竹林停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 7,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 464,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.010971,
-    "lng": 121.517083
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "USPACE永和耕莘醫院停車場",
-   "official": {
-    "address": "新北市永和區中興街52巷1弄28號1樓及B3",
-    "cars": 38,
-    "fare": "小型車計時60元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 51,
-    "name": "USPACE永和耕莘醫院停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": "國雲樓管",
-   "osm": {
-    "id": 1301418680,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1301418680"
-   },
-   "osm_name": "永和耕莘平面停車場",
    "verified_at": "2026-11-21"
   }
  ],

@@ -104,64 +104,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 69,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070054,
-    "lng": 121.467492
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1160425965,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1160425965"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 63,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 73,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.069493,
-    "lng": 121.465511
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "遙控賽車區停車場",
-   "opening_hours": null,
-   "operator": "歐特儀股份有限公司",
-   "osm": {
-    "id": 441731087,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/441731087"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 268,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 93,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJK8C7_-qoQjQRt-LAIdCxwh8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -197,6 +146,7 @@
    "distance_m": 196,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNdb2YACpQjQRr4DWCiUtFaQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -223,6 +173,7 @@
    "distance_m": 332,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1TkyQ-moQjQR3mUle6vhqGI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -238,32 +189,6 @@
     "id": 457992996,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/457992996"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 416,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.072437,
-    "lng": 121.469517
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大都市科學園區停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3054761527,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3054761527"
    },
    "verified_at": "2026-11-21"
   }

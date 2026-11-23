@@ -229,38 +229,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 22,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.030945,
-    "lng": 121.51548
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 314799135,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/314799135"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 112,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9bBz3ZipQjQRPSO7N3CURrs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -291,74 +266,13 @@
   },
   {
    "access": null,
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 125,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.031152,
-    "lng": 121.516473
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-南昌場",
-   "official": {
-    "address": "南昌路1段54巷6號對面空地",
-    "cars": 6,
-    "fare": "計時：150元/時，全程以半小時計費。月租：10,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 15,
-    "name": "168停車聯盟-南昌場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 314799456,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/314799456"
-   },
-   "osm_name": "嘟嘟房寧波站",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 174,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.031441,
-    "lng": 121.513173
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 13167467833,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/13167467833"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 207,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJb3_W7lypQjQR1utCL-6s4j0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -385,6 +299,7 @@
    "distance_m": 221,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJQ_ZeOZ-pQjQR5D3fmXmeuH0",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

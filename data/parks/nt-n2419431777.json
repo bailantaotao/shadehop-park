@@ -171,35 +171,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 64,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.982609,
-    "lng": 121.411642
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 432826805,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/432826805"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 248,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ_39fZGQdaDQRp_ZD_uUivfE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -219,42 +194,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 17,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 309,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.980418,
-    "lng": 121.414916
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "金樹林停車場",
-   "official": {
-    "address": "新北市樹林區福順街2號",
-    "cars": 17,
-    "fare": "小型車月租2500元;",
-    "hours": "0~24時",
-    "match_m": 42,
-    "name": "金樹林停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 366250194,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/366250194"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 11,
    "capacity_disabled": null,
@@ -262,6 +201,7 @@
    "distance_m": 337,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJf0P-0OgdaDQRJhG9PgbSgxM",
    "kind": "carports",
    "kind_label": "停車場",
    "location": {
@@ -295,35 +235,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 363,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.980901,
-    "lng": 121.415611
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "車位出租",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3380927779,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3380927779"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 366,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJbYrkWosdaDQRQtkUNWyeAG4",
    "kind": null,
    "kind_label": "停車場",
    "location": {

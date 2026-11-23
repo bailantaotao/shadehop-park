@@ -152,6 +152,7 @@
    "distance_m": 314,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-8bElaECaDQR03MBPF4-GTs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -171,58 +172,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 447,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.008367,
-    "lng": 121.463624
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "板橋地政側門停車場",
-   "opening_hours": null,
-   "operator": "新北市板橋區地政事務所",
-   "osm": {
-    "id": 345967867,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/345967867"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 25,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 515,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.010469,
-    "lng": 121.46701
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "第一運動場西門停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 8190008817,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/8190008817"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 480,
    "capacity_disabled": null,
@@ -230,6 +179,7 @@
    "distance_m": 529,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJiVPmtWIDaDQRzJCcZTnWi4o",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -259,32 +209,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 658,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.011525,
-    "lng": 121.469015
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "第一運動場地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 8190008317,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/8190008317"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -292,6 +216,7 @@
    "distance_m": 667,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJnfi_yyCoQjQRfrDxq2xgzNk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

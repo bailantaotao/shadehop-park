@@ -168,64 +168,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 497,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078964,
-    "lng": 121.367589
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1086756774,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1086756774"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 510,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078068,
-    "lng": 121.367948
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1082650196,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1082650196"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 46,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 549,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3ymwyd6mQjQRouKns2WUKQs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -262,6 +211,7 @@
    "distance_m": 551,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ69GvSdmmQjQROCwgmk1vY2c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -282,48 +232,13 @@
   },
   {
    "access": null,
-   "capacity": 166,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 559,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.075735,
-    "lng": 121.372799
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "廣停一平面停車場",
-   "official": {
-    "address": "新北市林口區文化二路1段及文化二路1段525巷交叉口",
-    "cars": 166,
-    "fare": "小型車計時20元;小型車月租1200元;身障車月租1000元;",
-    "hours": "0~24時",
-    "match_m": 59,
-    "name": "廣停一平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 570835118,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/570835118"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 584,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJXdMFUNenQjQRqXElAIKXTbc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

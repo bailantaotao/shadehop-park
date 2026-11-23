@@ -291,35 +291,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 122,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.004011,
-    "lng": 121.312339
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "置地生活廣場地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1577632097,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1577632097"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 131,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJwZvBWj4faDQRUsH6GkxfhQQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -356,6 +331,7 @@
    "distance_m": 236,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfdGhgGwfaDQRbAwL7HGU4XA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -382,6 +358,7 @@
    "distance_m": 259,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJi66CzaofaDQRgH52Hdh0s0A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -408,6 +385,7 @@
    "distance_m": 260,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJx_q6sZEfaDQRU_USOwhQd3c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -423,32 +401,6 @@
     "id": 1276780901,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276780901"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 267,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.00097,
-    "lng": 121.312764
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "俥亭",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1276352263,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1276352263"
    },
    "verified_at": "2026-11-21"
   }

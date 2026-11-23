@@ -320,35 +320,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 138,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.027268,
-    "lng": 121.462925
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": "新埔國小",
-   "osm": {
-    "id": 10074303324,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10074303324"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 279,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJHYEdch2oQjQR5jjDgFjlxJA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -364,130 +339,6 @@
     "id": 1011480083,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1011480083"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 23,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 285,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.024049,
-    "lng": 121.460131
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "英士路平面停車場",
-   "official": {
-    "address": "新北市板橋區新海路135巷口",
-    "cars": 23,
-    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;",
-    "hours": "0~24時",
-    "match_m": 7,
-    "name": "英士路平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1189482910,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1189482910"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 23,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 332,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.023656,
-    "lng": 121.459805
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "英士路平面停車場",
-   "official": {
-    "address": "新北市板橋區新海路135巷口",
-    "cars": 23,
-    "fare": "小型車計時30元;小型車月租4000元;身障車月租2000元;",
-    "hours": "0~24時",
-    "match_m": 54,
-    "name": "英士路平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 16090397,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/16090397"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 384,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.020851,
-    "lng": 121.462879
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場入口 (J棟)",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 448751885,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/448751885"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 402,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.023469,
-    "lng": 121.459169
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1189482928,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1189482928"
    },
    "verified_at": "2026-11-21"
   }

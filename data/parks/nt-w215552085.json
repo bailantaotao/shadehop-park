@@ -376,6 +376,7 @@
    "distance_m": 126,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ47vJ5-eoQjQR-i7Oaa6U1Y4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -396,38 +397,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 153,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.063686,
-    "lng": 121.481968
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 516998421,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/516998421"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 12,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 199,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJsTai4TSpQjQRFsJUhXKapBM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -458,38 +434,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 201,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.065775,
-    "lng": 121.485752
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1496517387,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1496517387"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 73,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 256,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJH3WcVueoQjQR1tE57Jj0lCs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -516,32 +467,6 @@
     "url": "https://www.openstreetmap.org/way/772891713"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 261,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.06146,
-    "lng": 121.484772
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中山高架橋下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1015443505,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1015443505"
-   },
    "verified_at": "2026-11-21"
   }
  ],

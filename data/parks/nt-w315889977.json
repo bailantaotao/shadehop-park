@@ -297,6 +297,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ7TIi_yodaDQRkW-zG1QWzf8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -316,67 +317,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 8,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.973922,
-    "lng": 121.44306
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 547795239,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/547795239"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 44,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 70,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.972203,
-    "lng": 121.443126
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新北市土城區公所行政大樓前廣場停車場",
-   "official": {
-    "address": "新北市土城區金城路1段101號",
-    "cars": 44,
-    "fare": "小型車計時30元;",
-    "hours": "週一~週五上午8時~下午6時止、國定例假日不開放",
-    "match_m": 7,
-    "name": "新北市土城區公所行政大樓前廣場停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "週一~週五上午8時~下午6時止、國定例假日不開放",
-   "operator": null,
-   "osm": {
-    "id": 544737340,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/544737340"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 30,
    "capacity_disabled": null,
@@ -384,6 +324,7 @@
    "distance_m": 172,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJi5kiRdMCaDQR226W08UxfIg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -420,6 +361,7 @@
    "distance_m": 215,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoYzzRTwdaDQRISntqGyvEKc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -435,32 +377,6 @@
     "id": 1075648853,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1075648853"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 228,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.976208,
-    "lng": 121.445629
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1075648854,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1075648854"
    },
    "verified_at": "2026-11-21"
   }

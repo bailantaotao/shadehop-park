@@ -318,6 +318,7 @@
    "distance_m": 42,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJj67SbOWrQjQRdoUyUPfGUW0",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -348,84 +349,13 @@
   },
   {
    "access": "yes",
-   "capacity": 334,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 89,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.060669,
-    "lng": 121.546528
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "民有市場地下停車場",
-   "official": {
-    "address": "民權東路3段140巷15號地下",
-    "cars": 334,
-    "fare": "小型車：計時 30元/時，停車全程以半小時計；月租 全日5,750元，夜間3,200元(19時~08時)。機車：10元/時，當日單次停車最高收費上限20元/次，隔日另計；月租300元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 28,
-    "name": "民有市場地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "中山國中地下停車場",
-   "osm": {
-    "id": 12814486632,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/12814486632"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 176,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.062297,
-    "lng": 121.546473
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "永春常載停車場",
-   "official": {
-    "address": "信義路6段76巷8弄10-20號前方",
-    "cars": 6,
-    "fare": "月租：全日6,500元/月(季、年繳)。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 11,
-    "name": "永春常載停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 743280265,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/743280265"
-   },
-   "osm_name": "民權東路三段153巷西側平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
    "capacity": 37,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 177,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJazSu6u-rQjQRwzTmVb-2gnI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -462,6 +392,7 @@
    "distance_m": 183,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJM2Ut4u-rQjQR9AMlhWGpgYI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -488,42 +419,6 @@
     "url": "https://www.openstreetmap.org/way/1464153864"
    },
    "osm_name": "民權東路三段197巷口西側平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 13,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 205,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.062038,
-    "lng": 121.549354
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "民權東路3段197巷口東側平面停車場",
-   "official": {
-    "address": "民權東路3段197巷與民權東路口",
-    "cars": 13,
-    "fare": "計時：週一~週五30元/時(09時~17時)，停車全程以半小時計。",
-    "hours": "週一至週五09-17",
-    "match_m": 7,
-    "name": "民權東路3段197巷口東側平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "週一至週五09-17",
-   "operator": null,
-   "osm": {
-    "id": 1464153865,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1464153865"
-   },
-   "osm_name": "民權東路三段197巷口東側平面停車場",
    "verified_at": "2026-11-21"
   }
  ],

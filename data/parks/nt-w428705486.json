@@ -273,6 +273,7 @@
    "distance_m": 113,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJjcr8SgunQjQRPXyJ46yTCXE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -309,6 +310,7 @@
    "distance_m": 192,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ6weChE-nQjQRK2EGOZXfPWI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -345,6 +347,7 @@
    "distance_m": 201,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJnX4QPzKmQjQRYvNX21Eq2Nw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -371,6 +374,7 @@
    "distance_m": 304,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmWqCgC2mQjQRv3LOx4OAFTs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -386,58 +390,6 @@
     "id": 938146287,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/938146287"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 316,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.058318,
-    "lng": 121.435794
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1549402224,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1549402224"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 346,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.057368,
-    "lng": 121.42851
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 7796926779,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/7796926779"
    },
    "verified_at": "2026-11-21"
   }

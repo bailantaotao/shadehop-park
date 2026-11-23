@@ -121,6 +121,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJiZhcGv43aDQRiq694lSRYq0",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -140,32 +141,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 327,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.782129,
-    "lng": 121.0279
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992970535,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992970535"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 9,
    "capacity_disabled": null,
@@ -173,6 +148,7 @@
    "distance_m": 330,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-XNdxro3aDQRFt4mmSVrJ9I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -199,6 +175,7 @@
    "distance_m": 421,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTVi_rC82aDQRLmlQ_gfUlzU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -214,58 +191,6 @@
     "id": 669916823,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/669916823"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 457,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.777471,
-    "lng": 121.024923
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 2779143435,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2779143435"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 69,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 469,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.777142,
-    "lng": 121.024665
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "金山十八街停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 669916821,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/669916821"
    },
    "verified_at": "2026-11-21"
   }

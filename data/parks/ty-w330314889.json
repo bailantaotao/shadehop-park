@@ -464,6 +464,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJr602clEfaDQRErESeiRNBUY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -500,6 +501,7 @@
    "distance_m": 50,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJv2iqmDIfaDQRDDVaBOAGw-U",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -533,61 +535,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 145,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.962144,
-    "lng": 121.295641
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 1524828801,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1524828801"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 148,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.963326,
-    "lng": 121.295295
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
-   "operator": "台灣普客二四股份有限公司",
-   "osm": {
-    "id": 559390846,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/559390846"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 157,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJM7a-BIkfaDQROqoPnosCLUc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -603,32 +554,6 @@
     "id": 1355195204,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1355195204"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 201,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.965099,
-    "lng": 121.298778
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": "廣豐地下停車場",
-   "osm": {
-    "id": 809204888,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/809204888"
    },
    "verified_at": "2026-11-21"
   }

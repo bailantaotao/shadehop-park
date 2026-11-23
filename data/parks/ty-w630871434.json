@@ -165,61 +165,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 80,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.043803,
-    "lng": 121.286878
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 462326474,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/462326474"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 163,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.050247,
-    "lng": 121.28702
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1574727770,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1574727770"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 242,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJw0apV98faDQRPG97tCpanII",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -246,6 +195,7 @@
    "distance_m": 247,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJu0bwTr0faDQRayPf1YFuEKM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -272,6 +222,7 @@
    "distance_m": 261,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNws2JwAfaDQRAkYuW7Osxe4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -298,6 +249,7 @@
    "distance_m": 269,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKYg31d4faDQRMIPRsI5a-Ds",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

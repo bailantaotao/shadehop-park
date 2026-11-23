@@ -284,6 +284,7 @@
    "distance_m": 4,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJRcSBRvSpQjQRnzEy4STil_w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -314,84 +315,13 @@
   },
   {
    "access": null,
-   "capacity": 22,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 11,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.028012,
-    "lng": 121.473099
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times板橋莊敬路停車場",
-   "official": {
-    "address": "新北市板橋區莊敬路10號旁",
-    "cars": 22,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 2,
-    "name": "Times板橋莊敬路停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1238314660,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1238314660"
-   },
-   "osm_name": "Times",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 22,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 16,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.028196,
-    "lng": 121.472738
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times板橋莊敬路停車場",
-   "official": {
-    "address": "新北市板橋區莊敬路10號旁",
-    "cars": 22,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 42,
-    "name": "Times板橋莊敬路停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1238353509,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1238353509"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 280,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 36,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJkSo6eR-pQjQRDnMACkeR5DI",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -428,6 +358,7 @@
    "distance_m": 208,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJF2MkfT-oQjQRZe_flS1XjiA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -454,6 +385,7 @@
    "distance_m": 273,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJE9zGmD-oQjQRK2xCyuQ7slU",
    "kind": "carports",
    "kind_label": "停車場",
    "location": {

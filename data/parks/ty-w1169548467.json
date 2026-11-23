@@ -350,6 +350,7 @@
    "distance_m": 10,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJr0IuKugfaDQRkFebmegfbA4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -376,6 +377,7 @@
    "distance_m": 100,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJd2x_HPIfaDQRR_BUAhlP9rU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -402,6 +404,7 @@
    "distance_m": 209,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJeXq9HgAfaDQRaUjZ5ZeSq9w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -438,6 +441,7 @@
    "distance_m": 311,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJBSb3gW8faDQRz3AvhX_Ip6I",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -464,68 +468,6 @@
     "url": "https://www.openstreetmap.org/way/953736387"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 324,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.993896,
-    "lng": 121.330366
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中興里停車場",
-   "official": {
-    "address": "桃園市龜山區萬壽路二段1204之2號旁",
-    "cars": null,
-    "fare": "季繳費率3個月5000",
-    "hours": null,
-    "match_m": 46,
-    "name": "中興里停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 953736495,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/953736495"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 367,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.987577,
-    "lng": 121.333863
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 563249059,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/563249059"
-   },
    "verified_at": "2026-11-21"
   }
  ],

@@ -147,61 +147,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 1,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.870409,
-    "lng": 121.248
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 521215932,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/521215932"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 50,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.869645,
-    "lng": 121.248685
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 521215933,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/521215933"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 112,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJueSRmEM9aDQRQX4PmJexZ1Y",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -217,32 +166,6 @@
     "id": 521262477,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/521262477"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 794,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.872659,
-    "lng": 121.255139
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1056187858,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1056187858"
    },
    "verified_at": "2026-11-21"
   }

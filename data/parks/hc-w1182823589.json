@@ -351,6 +351,7 @@
    "distance_m": 34,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ2Zl__6k1aDQRkHkaJp6Na9U",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -383,35 +384,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 167,
-   "distance_method": "straight_line",
-   "fee": "free of charge if purchase >NT550",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.818214,
-    "lng": 120.970641
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "MEGA PXMART underground parking",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 2078267415,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2078267415"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 180,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1XHMCRs1aDQRxV9EjmKZAqk",
    "kind": "rooftop",
    "kind_label": "屋頂停車場",
    "location": {
@@ -427,84 +403,6 @@
     "id": 385146180,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/385146180"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 180,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.816084,
-    "lng": 120.971946
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 424877736,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/424877736"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 217,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.819214,
-    "lng": 120.97049
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大全聯平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 512494428,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/512494428"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 234,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.814436,
-    "lng": 120.969441
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1009877370,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1009877370"
    },
    "verified_at": "2026-11-21"
   }

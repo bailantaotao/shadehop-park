@@ -474,6 +474,7 @@
    "distance_m": 44,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJjdiiiq-rQjQRjzK6efAhGRs",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -500,6 +501,7 @@
    "distance_m": 58,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJFbzZka-rQjQRKbm5Y0Dfnps",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -529,38 +531,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 148,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.03671,
-    "lng": 121.574012
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 344689944,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/344689944"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 319,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJXYT96KSrQjQRpsfdi-LeVCQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -597,6 +574,7 @@
    "distance_m": 348,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ5_ObWq6rQjQREcIiBt8DTZA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -623,42 +601,6 @@
     "url": "https://www.openstreetmap.org/way/258816696"
    },
    "osm_name": "力揚信義松德停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 86,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 417,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.031316,
-    "lng": 121.57375
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "松德臨時平面停車場",
-   "official": {
-    "address": "松德路底(中強公園旁)",
-    "cars": 86,
-    "fare": "計時：小型車30元/時，停車全程以半小時計。月租：小型車全日7,200元/月，日間2,000元/月(07-19)。機車免費停車。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 30,
-    "name": "松德臨時平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1341472295,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1341472295"
-   },
-   "osm_name": "寧波同鄉會墓園停車場",
    "verified_at": "2026-11-21"
   }
  ],

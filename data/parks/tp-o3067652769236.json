@@ -420,32 +420,6 @@
  "park_name": "景新公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 68,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.031181,
-    "lng": 121.562648
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 607932902,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/607932902"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 47,
    "capacity_disabled": null,
@@ -453,6 +427,7 @@
    "distance_m": 202,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJy7dZfrarQjQRnJFRtAlcs70",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -489,6 +464,7 @@
    "distance_m": 265,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNcb-vLerQjQRxrRzS8qKFjg",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -515,6 +491,7 @@
    "distance_m": 272,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJsywPf7SrQjQR-9rittqIjNo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -545,47 +522,13 @@
   },
   {
    "access": null,
-   "capacity": 169,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 333,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.029126,
-    "lng": 121.56614
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺北市災害應變中心地下停車場",
-   "official": {
-    "address": "莊敬路391巷11弄2號地下",
-    "cars": 169,
-    "fare": "小型車：計時 30元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日5,000元。機車：10元/時，當日單次停車最高收費上限20元/次，隔日另計，以0時為基準；月租300元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 39,
-    "name": "臺北市災害應變中心地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "24/7",
-   "operator": null,
-   "osm": {
-    "id": 115493256,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/115493256"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 376,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ01Z7XQCrQjQR2rhMqVVSKMI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

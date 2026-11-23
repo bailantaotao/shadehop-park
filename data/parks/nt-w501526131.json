@@ -127,6 +127,7 @@
    "distance_m": 36,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ-d_TRxQCaDQRJjbWzJtYXx4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -153,6 +154,7 @@
    "distance_m": 135,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJCbsrNxQCaDQRoKsmDXopVcE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -172,42 +174,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 163,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 408,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.981366,
-    "lng": 121.522281
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "萊茵區停車場",
-   "official": {
-    "address": "新北市新店區中安大橋下萊茵區高灘地",
-    "cars": 163,
-    "fare": "小型車計時20元;小型車計時40元;小型車月租2200元;身障車月租1100元;機車免費;",
-    "hours": "0~24時",
-    "match_m": 20,
-    "name": "萊茵區停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 237014528,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/237014528"
-   },
-   "osm_name": "小碧潭中安橋下停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 67,
    "capacity_disabled": null,
@@ -215,6 +181,7 @@
    "distance_m": 430,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ8eFn8BUCaDQRQ_ETl742WtA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -251,6 +218,7 @@
    "distance_m": 469,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJh1R2agADaDQRXlw9JpK8-8w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -266,32 +234,6 @@
     "id": 444572981,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/444572981"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 491,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.973281,
-    "lng": 121.518942
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 415231962,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/415231962"
    },
    "verified_at": "2026-11-21"
   }

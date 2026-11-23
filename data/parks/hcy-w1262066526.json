@@ -427,6 +427,7 @@
    "distance_m": 97,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJwR3DATs3aDQRqD7FhLGgr3I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -453,6 +454,7 @@
    "distance_m": 117,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJizraiKs3aDQRRR-FCkLCZPY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -489,6 +491,7 @@
    "distance_m": 217,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJB_veok03aDQR9fgj2Wu6imY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -508,32 +511,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 75,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 247,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.805686,
-    "lng": 121.038714
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "五都高鐵新竹五站停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1183614644,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1183614644"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
@@ -541,6 +518,7 @@
    "distance_m": 273,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ4-oEaAA3aDQR8LSbYUYjTdw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -556,32 +534,6 @@
     "id": 371450827,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/371450827"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 281,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.803945,
-    "lng": 121.039119
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 1542787152,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1542787152"
    },
    "verified_at": "2026-11-21"
   }

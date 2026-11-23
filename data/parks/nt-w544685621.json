@@ -447,48 +447,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 50,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 94,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.98122,
-    "lng": 121.450809
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "晉呈資產管理有限公司明德停車場",
-   "official": {
-    "address": "新北市土城區明德路2段101號旁空地",
-    "cars": 50,
-    "fare": "小型車計時100元;小型車月租5000元;",
-    "hours": "0~24時",
-    "match_m": 18,
-    "name": "晉呈資產管理有限公司明德停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 526404505,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/526404505"
-   },
-   "osm_name": "幸福花園停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 109,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJlTudds0CaDQR21_6eHHnwR0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -515,6 +480,7 @@
    "distance_m": 240,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJrd69XWsDaDQRQAiAe_siptg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -551,6 +517,7 @@
    "distance_m": 315,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJCaKNnyQDaDQRQ8mRELrvIas",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -570,42 +537,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 36,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 328,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.979097,
-    "lng": 121.453795
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "土城區綜合球場平面停車場",
-   "official": {
-    "address": "新北市土城區明德路1段與清水路交叉口停車場",
-    "cars": 36,
-    "fare": "小型車計時20元;小型車月租3500元;身障車月租1500元;",
-    "hours": "0~24時",
-    "match_m": 19,
-    "name": "土城區綜合球場平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1075934519,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1075934519"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": 801,
    "capacity_disabled": null,
@@ -613,6 +544,7 @@
    "distance_m": 364,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJe2J7GOQDaDQRrdytWnGyx5Y",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

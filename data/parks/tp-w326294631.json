@@ -311,6 +311,7 @@
    "distance_m": 206,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ-QHNMACtQjQR6hYJG-rUhbk",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -341,74 +342,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 241,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.068552,
-    "lng": 121.576921
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 615596185,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/615596185"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 48,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 273,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070865,
-    "lng": 121.576177
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "天成車業服務股份有限公司瑞二停車場",
-   "official": {
-    "address": "舊宗路2段171巷與瑞湖街交叉口空地",
-    "cars": 48,
-    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日8,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 22,
-    "name": "天成車業服務股份有限公司瑞二停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1081532409,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1081532409"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 562,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 409,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ619XD4erQjQRbPsFuuAMFtA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -444,6 +384,7 @@
    "distance_m": 497,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ1ULrenysQjQRD85pc64fvt8",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -470,32 +411,6 @@
     "url": "https://www.openstreetmap.org/node/8146242008"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 518,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.062742,
-    "lng": 121.572298
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 349844551,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/349844551"
-   },
    "verified_at": "2026-11-21"
   }
  ],

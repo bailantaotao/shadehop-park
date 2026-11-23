@@ -108,61 +108,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 468,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.810039,
-    "lng": 121.021146
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 929241768,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/929241768"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 518,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.810316,
-    "lng": 121.021392
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 929241771,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/929241771"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 556,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJk6KfDSk3aDQRh2qFMP9uL4s",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -178,58 +127,6 @@
     "id": 545782333,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/545782333"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 638,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.809905,
-    "lng": 121.023829
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 842926092,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/842926092"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 652,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.812533,
-    "lng": 121.01969
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺灣新竹地方法院停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 545782334,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/545782334"
    },
    "verified_at": "2026-11-21"
   }

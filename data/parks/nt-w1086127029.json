@@ -267,35 +267,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 262,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070664,
-    "lng": 121.488118
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 495176464,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/495176464"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 401,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJvdUR39ioQjQRFllPQMjM-sU",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -322,6 +297,7 @@
    "distance_m": 403,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJscrZsdioQjQRLsjG-9sbbiA",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -348,6 +324,7 @@
    "distance_m": 413,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJLSRMO9apQjQRjWlqzp27z7g",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -378,38 +355,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 537,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.077628,
-    "lng": 121.488108
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 902948905,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/902948905"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 216,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 577,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJd6RCh9CoQjQR2JMAAAF0WhA",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

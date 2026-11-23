@@ -384,6 +384,7 @@
    "distance_m": 113,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJHzyYccE1aDQRanz7wgMIpJI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -420,6 +421,7 @@
    "distance_m": 139,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJo5m1RcE1aDQRmQAGmvdoGpI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -453,45 +455,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 144,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.806329,
-    "lng": 120.969431
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "稅務大樓地下停車場",
-   "official": {
-    "address": "中央路112號",
-    "cars": null,
-    "fare": "停車費用 - 平日： 20元 機車：未收費 *\t停車費用 - 假日： 20元 機車：未收費",
-    "hours": null,
-    "match_m": 47,
-    "name": "稅務大樓地下停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 368257742,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/368257742"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 194,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJWRQ6aAA1aDQRAv7YyKmqSZM",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -512,38 +479,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 224,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.803046,
-    "lng": 120.972372
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 288148592,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/288148592"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 216,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 236,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ7Tz7dsQ1aDQRmi83Ku3a9UE",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {

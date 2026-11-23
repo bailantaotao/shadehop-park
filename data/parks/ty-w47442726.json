@@ -150,6 +150,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJlTGvMQAfaDQREHq9h8OeZ54",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -173,35 +174,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 333,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "street_side",
-   "kind_label": "路邊停車",
-   "location": {
-    "lat": 25.0103,
-    "lng": 121.324884
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1435665397,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1435665397"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 569,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoy9zjkMfaDQRjJVCukqoIoE",
    "kind": "street_side",
    "kind_label": "路邊停車",
    "location": {
@@ -228,6 +204,7 @@
    "distance_m": 632,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJpXAMJq0faDQRJmXmZ9b406E",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -254,6 +231,7 @@
    "distance_m": 641,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJeabSc1seaDQRuoY0DDSFNNQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -269,32 +247,6 @@
     "id": 254610008,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/254610008"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 660,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.011553,
-    "lng": 121.320994
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "和雲行動",
-   "opening_hours": null,
-   "operator": "和泰汽車",
-   "osm": {
-    "id": 558777067,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/558777067"
    },
    "verified_at": "2026-11-21"
   }

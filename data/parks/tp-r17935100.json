@@ -356,6 +356,7 @@
    "distance_m": 9,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ0ZC9rXqpQjQRXPNJn65ByHg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -392,6 +393,7 @@
    "distance_m": 52,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJf7bsjjCpQjQRHhYUilfwcgI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -428,6 +430,7 @@
    "distance_m": 121,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJI2JYTQCpQjQRGV9B2XVsonA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -464,6 +467,7 @@
    "distance_m": 125,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJnwrNZ4ypQjQR7CNoNHK1h3M",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -493,42 +497,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 42,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 130,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.045248,
-    "lng": 121.526372
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房華山站停車場",
-   "official": {
-    "address": "北平東路30之1號地下1至3層",
-    "cars": 42,
-    "fare": "計時：小型車120元/時，停車全程以半小時計。月租：小型車全日12,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 35,
-    "name": "嘟嘟房華山站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 12076385682,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/12076385682"
-   },
-   "osm_name": "城市車旅華山站",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 70,
    "capacity_disabled": null,
@@ -536,6 +504,7 @@
    "distance_m": 164,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJYXaJDwCpQjQRAgG1HWE86hM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

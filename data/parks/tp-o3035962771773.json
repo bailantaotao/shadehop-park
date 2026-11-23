@@ -363,6 +363,7 @@
    "distance_m": 119,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJMQFt52CpQjQR47x6CNL1-i8",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -389,6 +390,7 @@
    "distance_m": 138,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJLYF1pGCpQjQRmBlSU902Zqg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -419,74 +421,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 193,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.05255,
-    "lng": 121.529184
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 366797533,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/366797533"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 22,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 193,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.054646,
-    "lng": 121.532425
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "永田停車場 京王場",
-   "official": {
-    "address": "長春路158、160、162號地下4層",
-    "cars": 22,
-    "fare": "計時：小型車100元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日10,000元/月。",
-    "hours": "臨停、月租：8時至22時",
-    "match_m": 9,
-    "name": "永田停車場 京王場",
-    "source": "taipei"
-   },
-   "opening_hours": "臨停、月租：8時至22時",
-   "operator": null,
-   "osm": {
-    "id": 3685275307,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3685275307"
-   },
-   "osm_name": "安婷停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 238,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJt9I724ypQjQRjIoUi11XMJE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -522,6 +463,7 @@
    "distance_m": 295,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZZyvVGGpQjQRlEDDF1bMr9Y",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

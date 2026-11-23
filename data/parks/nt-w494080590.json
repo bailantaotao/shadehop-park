@@ -201,123 +201,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 162,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.013364,
-    "lng": 121.481528
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1491399410,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1491399410"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 228,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.013029,
-    "lng": 121.481125
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 13668397871,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/13668397871"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 131,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 523,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.010239,
-    "lng": 121.483563
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "晉呈資產管理有限公司立德三停車場",
-   "official": {
-    "address": "新北市中和區立德街213號旁空地",
-    "cars": 131,
-    "fare": "小型車計時80元;小型車月租5000元;機車計次50元;機車月租1000元;",
-    "hours": "0~24時",
-    "match_m": 22,
-    "name": "晉呈資產管理有限公司立德三停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1474846064,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846064"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 547,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.017494,
-    "lng": 121.476171
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 281748353,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/281748353"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 548,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJnflydQepQjQRL-RDNqBjWcE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -333,32 +220,6 @@
     "id": 1267928827,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1267928827"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 566,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.010486,
-    "lng": 121.478432
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Vivi Park",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 947735827,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/947735827"
    },
    "verified_at": "2026-11-21"
   }

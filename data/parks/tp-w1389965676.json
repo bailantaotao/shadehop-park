@@ -437,6 +437,7 @@
    "distance_m": 48,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJp58MJwCrQjQRVz9KdztBzqg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -473,6 +474,7 @@
    "distance_m": 54,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJOflIdgCrQjQR4lNcNooFwMQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -503,48 +505,13 @@
   },
   {
    "access": null,
-   "capacity": 21,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 117,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.041591,
-    "lng": 121.570944
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "雅祥虎林(二)",
-   "official": {
-    "address": "忠孝東路5段275巷2號對面空地",
-    "cars": 21,
-    "fare": "計時：小型車120元/時，停車全程以半小時計。月租：小型車全日7,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 30,
-    "name": "雅祥虎林(二)",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1390296816,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1390296816"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ5wXnPQCrQjQRO76m6KKiiLY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -575,38 +542,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 212,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.040658,
-    "lng": 121.570969
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1391735382,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1391735382"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 278,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 223,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJn9QRDyurQjQRd2tlTocTUok",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

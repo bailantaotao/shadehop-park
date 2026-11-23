@@ -220,6 +220,7 @@
    "distance_m": 135,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ06JM9c4YaDQRRon--MoYCNs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -255,6 +256,7 @@
    "distance_m": 264,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNZ6M9q0ZaDQRsufltyDQPaw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -281,6 +283,7 @@
    "distance_m": 288,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJqcJccmUZaDQREdlh82tp7HA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -307,6 +310,7 @@
    "distance_m": 303,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJdeLGA2QZaDQRPKLc03SglsQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -333,6 +337,7 @@
    "distance_m": 490,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJv7TQfjAZaDQRwlwpDMTq1b8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -348,32 +353,6 @@
     "id": 1164327050,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1164327050"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 504,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.958199,
-    "lng": 121.291472
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "廣明停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1266702309,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1266702309"
    },
    "verified_at": "2026-11-21"
   }

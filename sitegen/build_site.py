@@ -223,8 +223,15 @@ def slim(p: dict) -> dict:
 
 
 def parking_name(q: dict) -> str:
-    """A lot's own name, or "" when the name is only its kind (平面停車場) - search 停車場 then."""
-    return "" if q.get("name") == q.get("kind_label") else (q.get("name") or "")
+    name = ((q.get("official") or {}).get("name") or q.get("name") or "").strip()
+    return "" if name in {q.get("kind_label"), "停車場", "平面停車場", "地下停車場", "立體停車場", "Parking", "parking"} else name
+
+
+def display_parking(lots):
+    def priority(q):
+        name = parking_name(q)
+        return (0 if name and q.get("official") else 1 if name else 2, q["distance_m"])
+    return sorted(lots, key=priority)
 
 
 def best_daytime(row: list) -> dict | None:
@@ -305,6 +312,11 @@ def build(out: Path = OUT) -> None:
     links = {}
     for p in parks:
         c = charger(p)
+        lots = display_parking(p["parking"])
+        for rank, lot in enumerate(lots):
+            lot["display_rank"] = rank
+            lot["display_name"] = parking_name(lot) or "未具名停車點"
+        first = lots[0] if lots else {}
         links[p["id"]] = {
             "gmaps": p["google_maps_url"], "nav": p["directions_url"], "share": share_summary(p, date.today().month),
             "toilet_m": near(p, "toilet").get("distance_m"), "shop_m": near(p, "convenience_store").get("distance_m"),
@@ -312,7 +324,8 @@ def build(out: Path = OUT) -> None:
             # The tiles answer "where is one nearby", so they search the kind of place around the nearest
             # one: every chain (7-Eleven, 全家, OK, 萊爾富) and every lot or charger, nearest first.
             "shop_url": place_url(near(p, "convenience_store").get("location"), "", "便利商店", p),
-            "parking_url": place_url(p["parking"][0]["location"], "", "停車場", p, p["parking"][0].get("google_place_id")) if p["parking"] else None,
+            "parking_display_name": first.get("display_name"), "parking_display_m": first.get("distance_m"),
+            "parking_url": place_url(first.get("location"), parking_name(first), "停車場", p, first.get("google_place_id")),
             "charger_url": place_url(c["location"], "", "電動車充電站", p) if c else None,
         }
     if out.exists():

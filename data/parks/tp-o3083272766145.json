@@ -167,6 +167,7 @@
    "distance_m": 280,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJD7iNRwCrQjQRo-u_0dEuLw8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -197,119 +198,13 @@
   },
   {
    "access": null,
-   "capacity": 36,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 298,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.000643,
-    "lng": 121.575277
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "博嘉運動公園停車場",
-   "official": {
-    "address": "木柵路4段159巷16號地上1及地下2層",
-    "cars": 36,
-    "fare": "計時:20元/時，全程以半小時計費。月租:1,500元/月。",
-    "hours": "5時至22時(月租24小時)",
-    "match_m": 49,
-    "name": "博嘉運動公園停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "Tu-Su 05:00-22:00",
-   "operator": null,
-   "osm": {
-    "id": 4761932378,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4761932378"
-   },
-   "osm_name": "汽車停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 1276,
-   "capacity_disabled": "26",
-   "capacity_parent": null,
-   "distance_m": 314,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.997773,
-    "lng": 121.577352
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房動物園堤外站停車場",
-   "official": {
-    "address": "新光路2段2號河川高灘地",
-    "cars": 1228,
-    "fare": "計時：小型車週六至週日60元/時(06-18)、10元/時(18-06)，停車全程以半小時計。計次：小型車週一至週五50元/次，大客車週一至週五100元/次。月租：小型車全日週一至週五3,600元/月，日間500元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 32,
-    "name": "嘟嘟房動物園堤外站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "24/7",
-   "operator": null,
-   "osm": {
-    "id": 261084906,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/261084906"
-   },
-   "osm_name": "動物園河川高灘地堤外停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 25,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 397,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.999491,
-    "lng": 121.574827
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "和平東路四段381巷平面停車場",
-   "official": {
-    "address": "和平東路4段381巷內",
-    "cars": 26,
-    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 3,
-    "name": "和平東路四段381巷平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 483457809,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/483457809"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 402,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJb_QMIFWrQjQRabweYdertS4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -326,42 +221,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1231636174"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 26,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 424,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.99963,
-    "lng": 121.574369
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "和平東路四段381巷平面停車場",
-   "official": {
-    "address": "和平東路4段381巷內",
-    "cars": 26,
-    "fare": "計時：小型車(含大型重型機車)20元/時，停車全程以半小時計。月租：小型車全日4,800元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 46,
-    "name": "和平東路四段381巷平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1466666863,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1466666863"
-   },
-   "osm_name": "Hi PARKING 和平東路四段 381 巷平面停車場",
    "verified_at": "2026-11-21"
   }
  ],

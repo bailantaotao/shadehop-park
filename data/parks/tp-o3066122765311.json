@@ -233,110 +233,6 @@
  "park_name": "興家公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 2,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.994532,
-    "lng": 121.560848
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1350668904,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1350668904"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 113,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.993889,
-    "lng": 121.56188
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1350668912,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1350668912"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 162,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.993848,
-    "lng": 121.558871
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 367284508,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/367284508"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 162,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.995878,
-    "lng": 121.559419
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 383956215,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/383956215"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 21,
    "capacity_disabled": "1",
@@ -344,6 +240,7 @@
    "distance_m": 184,
    "distance_method": "straight_line",
    "fee": "Mo-Sa 09:00-17:00",
+   "google_place_id": "ChIJkRMeQWyrQjQRpOBn2GR7kpY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -370,32 +267,6 @@
     "url": "https://www.openstreetmap.org/way/991517223"
    },
    "osm_name": "興隆路三段229巷平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 185,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.995083,
-    "lng": 121.56304
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 512571064,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/512571064"
-   },
    "verified_at": "2026-11-21"
   }
  ],

@@ -312,7 +312,7 @@ def build(out: Path = OUT) -> None:
             # The tiles answer "where is one nearby", so they search the kind of place around the nearest
             # one: every chain (7-Eleven, 全家, OK, 萊爾富) and every lot or charger, nearest first.
             "shop_url": place_url(near(p, "convenience_store").get("location"), "", "便利商店", p),
-            "parking_url": place_url(p["parking"][0]["location"], "", "停車場", p) if p["parking"] else None,
+            "parking_url": place_url(p["parking"][0]["location"], "", "停車場", p, p["parking"][0].get("google_place_id")) if p["parking"] else None,
             "charger_url": place_url(c["location"], "", "電動車充電站", p) if c else None,
         }
     if out.exists():

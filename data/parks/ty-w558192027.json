@@ -307,35 +307,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 0,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.002331,
-    "lng": 121.315995
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1027007344,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1027007344"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 3,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJvSMVKCYfaDQR-QN965r9Kik",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -365,68 +340,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 12,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "rooftop",
-   "kind_label": "屋頂停車場",
-   "location": {
-    "lat": 25.001896,
-    "lng": 121.316606
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "屋頂停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1304386295,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1304386295"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 12,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.00213,
-    "lng": 121.318084
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "三民公園停車場",
-   "official": {
-    "address": "桃園市桃園區三元街",
-    "cars": null,
-    "fare": "計時：30元/時、月租3600元",
-    "hours": null,
-    "match_m": 37,
-    "name": "三民公園停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 442976877,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/442976877"
-   },
-   "osm_name": "城市車旅",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -434,6 +347,7 @@
    "distance_m": 69,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJqXzhFugfaDQRlz_72xAFbU0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -460,6 +374,7 @@
    "distance_m": 124,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3W9xNfEfaDQRBjQ36TE-GQ0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

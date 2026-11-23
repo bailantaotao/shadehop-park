@@ -480,58 +480,6 @@
  "park_name": "成功公園",
  "parking": [
   {
-   "access": "permit",
-   "capacity": 34,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 158,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.000627,
-    "lng": 121.327036
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "桃園市立桃園高級中等學校",
-   "osm": {
-    "id": 442973366,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/442973366"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "permit",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 169,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.999965,
-    "lng": 121.327168
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": "桃園市立桃園高級中等學校",
-   "osm": {
-    "id": 858159422,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/858159422"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 35,
    "capacity_disabled": "2",
@@ -539,6 +487,7 @@
    "distance_m": 183,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJHSg4Z0gfaDQRJK_PQqaFoCU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -575,6 +524,7 @@
    "distance_m": 206,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJXzibNxAfaDQRpp3wrxZrh8g",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -611,6 +561,7 @@
    "distance_m": 218,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ19DQ-GcfaDQRSGvhHDLLDQs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -637,6 +588,7 @@
    "distance_m": 253,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJU_8g9JwfaDQRmgIlSWlDwt0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

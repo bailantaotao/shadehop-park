@@ -348,48 +348,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 8,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 44,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.056528,
-    "lng": 121.528343
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新生北路2段77巷臨時平面停車場",
-   "official": {
-    "address": "新生北路2段77巷與新生北路2段55巷3弄交叉口",
-    "cars": 8,
-    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
-    "hours": "周一至周六9時至17時",
-    "match_m": 16,
-    "name": "新生北路2段77巷臨時平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "周一至周六9時至17時",
-   "operator": null,
-   "osm": {
-    "id": 1158985486,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1158985486"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 23,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 166,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJHYFbC12pQjQRjXefDCPuG8s",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -426,6 +391,7 @@
    "distance_m": 182,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJhbu-NHOpQjQR28zFfk7aQ2w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -462,6 +428,7 @@
    "distance_m": 216,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJp1S-gWCpQjQRdPmwaJyyttk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -488,6 +455,7 @@
    "distance_m": 234,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJgS-yKCypQjQRrbG0KEYVYAo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -524,6 +492,7 @@
    "distance_m": 252,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJa61keWapQjQRJ8kLoXwZNQU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

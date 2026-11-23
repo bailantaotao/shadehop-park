@@ -304,6 +304,7 @@
    "distance_m": 82,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJJXYJcnQBaDQRWwXEanNHyzI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -340,6 +341,7 @@
    "distance_m": 229,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKdZbxuEBaDQRjMbfgb2QK8s",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -376,6 +378,7 @@
    "distance_m": 327,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJm-6H2OYBaDQRpc2vfJhLDOU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -405,41 +408,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": 10,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 509,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.986989,
-    "lng": 121.560546
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "木柵公園平面停車場",
-   "official": {
-    "address": "興隆路4段與下崙路口",
-    "cars": 8,
-    "fare": "小型車：計時 20元/時，停車全程以半小時計。",
-    "hours": "周一至周六 9時至17時",
-    "match_m": 11,
-    "name": "木柵公園平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "周一至周六 9時至17時",
-   "operator": null,
-   "osm": {
-    "id": 478532550,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/478532550"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": 19,
    "capacity_disabled": null,
@@ -447,6 +415,7 @@
    "distance_m": 543,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJt1ylerWrQjQRqhV7NmDj5LU",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -473,32 +442,6 @@
     "url": "https://www.openstreetmap.org/node/3835339696"
    },
    "osm_name": "忠順超市停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 590,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.982205,
-    "lng": 121.550606
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1228241766,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1228241766"
-   },
    "verified_at": "2026-11-21"
   }
  ],

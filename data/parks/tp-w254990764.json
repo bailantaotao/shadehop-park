@@ -331,6 +331,7 @@
    "distance_m": 119,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJlbjjeE2oQjQRmUivWPpimkk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -360,47 +361,13 @@
   },
   {
    "access": null,
-   "capacity": 748,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 168,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.032247,
-    "lng": 121.487469
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "雙園堤外平面停車場",
-   "official": {
-    "address": "長順街底堤外",
-    "cars": 748,
-    "fare": "小型車：計時 20元/時，停車全程以半小時計；月租 全日3,000元，雙園堤外平面與雙園平面停車場月票可互通使用。大型車：計時40元/時。機車：免費停車。",
-    "hours": "星期一至星期六 9時至17時",
-    "match_m": 48,
-    "name": "雙園堤外平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "星期一至星期六 9時至17時",
-   "operator": null,
-   "osm": {
-    "id": 609732943,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/609732943"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 198,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ0zLRKq2pQjQRQxRgUEHY9ns",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -427,6 +394,7 @@
    "distance_m": 441,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJBRoHorKpQjQRnQ1QL3AJjrE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -463,6 +431,7 @@
    "distance_m": 513,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1XWQe0yoQjQR0wq0YMVUd_Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -499,6 +468,7 @@
    "distance_m": 598,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJmz-dzzOpQjQRVWLdd_DmpkU",
    "kind": null,
    "kind_label": "停車場",
    "location": {

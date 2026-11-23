@@ -422,6 +422,7 @@
    "distance_m": 67,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJo5m1RcE1aDQRmQAGmvdoGpI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -458,6 +459,7 @@
    "distance_m": 95,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJedrnUMo1aDQRFEpr65V7frA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -484,6 +486,7 @@
    "distance_m": 117,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJHzyYccE1aDQRanz7wgMIpJI",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -514,48 +517,13 @@
   },
   {
    "access": null,
-   "capacity": 98,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 148,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.806149,
-    "lng": 120.969801
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "稅務大樓地下停車場",
-   "official": {
-    "address": "中央路112號",
-    "cars": null,
-    "fare": "停車費用 - 平日： 20元 機車：未收費 *\t停車費用 - 假日： 20元 機車：未收費",
-    "hours": null,
-    "match_m": 12,
-    "name": "稅務大樓地下停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 10983579270,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10983579270"
-   },
-   "osm_name": "稅務大樓停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 17,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 183,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJNTKydsQ1aDQRqt0kTYqeQkM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -582,6 +550,7 @@
    "distance_m": 211,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJkUf2RMQ1aDQRZZGdlUaVsIk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

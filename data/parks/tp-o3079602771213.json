@@ -400,6 +400,7 @@
    "distance_m": 264,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJs1l2JJirQjQRM8E8mA_LhpU",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -436,6 +437,7 @@
    "distance_m": 284,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1zun6ZmrQjQRppLhc_RNFuY",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -464,32 +466,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 300,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.048294,
-    "lng": 121.571154
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1293936235,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1293936235"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 430,
    "capacity_disabled": null,
@@ -497,6 +473,7 @@
    "distance_m": 373,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJecEWLoyrQjQR0_8CtVpNKHw",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -532,6 +509,7 @@
    "distance_m": 441,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJSSZ_V1GrQjQRvql46dG0YLs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -558,32 +536,6 @@
     "url": "https://www.openstreetmap.org/way/1466666862"
    },
    "osm_name": "Hi PARKING 南松饒河二站停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 450,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.049142,
-    "lng": 121.578818
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "CITYLINK停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 6681607202,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/6681607202"
-   },
    "verified_at": "2026-11-21"
   }
  ],

@@ -168,6 +168,7 @@
    "distance_m": 58,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJB3cFPdI1aDQRurhcubrICfs",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -194,6 +195,7 @@
    "distance_m": 287,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJMwC414s1aDQRGIcbEN1KG6I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -214,64 +216,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 290,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.816633,
-    "lng": 120.979589
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台大醫院新竹分院停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 328742960,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/328742960"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 309,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 321,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 24.816649,
-    "lng": 120.979975
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台大醫院新竹分院停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 328742958,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/328742958"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 51,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 397,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ92jfHsw1aDQRUXMsNNtEw_A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -298,6 +249,7 @@
    "distance_m": 420,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJg79pgvg1aDQRD3zas2TH_ao",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

@@ -313,38 +313,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 84,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.067211,
-    "lng": 121.532421
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1530965441,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1530965441"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 114,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 105,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJn9R8xi6pQjQRwusKkfL0kVo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -371,120 +346,6 @@
     "url": "https://www.openstreetmap.org/way/857744135"
    },
    "osm_name": "iRent台北新生停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 107,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.067519,
-    "lng": 121.532666
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 943140425,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/943140425"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 122,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.067269,
-    "lng": 121.532837
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 943140428,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/943140428"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 130,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.066904,
-    "lng": 121.532824
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 943140427,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/943140427"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 114,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 149,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.068923,
-    "lng": 121.531077
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新生公園停車場",
-   "official": {
-    "address": "民族東路與吉林路口(新生公園溫水游泳池旁)",
-    "cars": 114,
-    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,500元/月。免費停車：機車。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 37,
-    "name": "新生公園停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 860129263,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/860129263"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

@@ -239,6 +239,7 @@
    "distance_m": 125,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ2SsDCVqlQjQRuEiqvgitjrw",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -275,6 +276,7 @@
    "distance_m": 179,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJR93BnxmlQjQRj7rTs9_QJFc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -311,6 +313,7 @@
    "distance_m": 256,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ36MBxI-lQjQRvx3-Aw-rrjo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -330,32 +333,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 276,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.174565,
-    "lng": 121.436696
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "淡水國中收費停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 299394481,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/299394481"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -363,6 +340,7 @@
    "distance_m": 323,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3z-CopClQjQR3hj0nTVaSIk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -399,6 +377,7 @@
    "distance_m": 351,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJLRCV51mlQjQRXRup8imymP4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

@@ -251,6 +251,7 @@
    "distance_m": 81,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ-1WTs4aoQjQRj1BUkjz3kJw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -287,6 +288,7 @@
    "distance_m": 106,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJOVfNjT2pQjQRvx1Y5Po7ufg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -323,6 +325,7 @@
    "distance_m": 132,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJMTQA3oaoQjQRmwRgaZvVTQc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -353,48 +356,13 @@
   },
   {
    "access": null,
-   "capacity": 28,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 135,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.055449,
-    "lng": 121.452902
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times新莊榮華路停車場",
-   "official": {
-    "address": "新北市新莊區榮華路1段",
-    "cars": 28,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 16,
-    "name": "Times新莊榮華路停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1549402273,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1549402273"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 154,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ5y5aIACpQjQR-fcWn0SDDOc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -411,42 +379,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1474846114"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 28,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 175,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.055143,
-    "lng": 121.452453
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times新莊榮華路停車場",
-   "official": {
-    "address": "新北市新莊區榮華路1段",
-    "cars": 28,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 54,
-    "name": "Times新莊榮華路停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1549402271,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1549402271"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

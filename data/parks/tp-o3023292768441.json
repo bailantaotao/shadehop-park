@@ -199,6 +199,7 @@
    "distance_m": 182,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJATD4k0WpQjQRGG9ENKWe5LE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -229,38 +230,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 198,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.021778,
-    "lng": 121.520118
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 679004557,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/679004557"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 89,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 259,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNSm2WpepQjQRzIrMCb5tNeg",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -291,48 +267,13 @@
   },
   {
    "access": null,
-   "capacity": 89,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 266,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.025779,
-    "lng": 121.518992
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房牯嶺2站停車場",
-   "official": {
-    "address": "牯嶺街101號",
-    "cars": 89,
-    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
-    "hours": "08:00:00-19:00:00",
-    "match_m": 19,
-    "name": "嘟嘟房牯嶺2站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "08:00:00-19:00:00",
-   "operator": null,
-   "osm": {
-    "id": 1474846060,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846060"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 124,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 298,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1Q1AnKapQjQREPwM61pdpn4",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -359,32 +300,6 @@
     "url": "https://www.openstreetmap.org/node/11263971962"
    },
    "osm_name": "同安停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 312,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.025824,
-    "lng": 121.517003
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 313786184,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/313786184"
-   },
    "verified_at": "2026-11-21"
   }
  ],

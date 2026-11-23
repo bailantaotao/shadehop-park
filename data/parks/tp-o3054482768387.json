@@ -461,48 +461,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 106,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.023527,
-    "lng": 121.55008
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "驛馬站收費停車場",
-   "official": {
-    "address": "樂業街21號旁空地",
-    "cars": 20,
-    "fare": "計時：小型車100元/時，停車全程以半小時計。月租：小型車全日10,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 2,
-    "name": "驛馬站收費停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 491719316,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/491719316"
-   },
-   "osm_name": "普驛收費停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 150,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJn2CmmzGqQjQRNu1rayqEh0w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -538,6 +503,7 @@
    "distance_m": 151,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJVcuNjTGqQjQRO2R5TQ0nj3k",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -573,6 +539,7 @@
    "distance_m": 172,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJI74qNC6qQjQRwXZF6lekhyY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -599,6 +566,7 @@
    "distance_m": 218,
    "distance_method": "straight_line",
    "fee": "30/hr",
+   "google_place_id": "ChIJT0neKi6qQjQR8v_bp97ypNc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -625,6 +593,7 @@
    "distance_m": 251,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJn4VYAzGqQjQRb4F_2gP8BUI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

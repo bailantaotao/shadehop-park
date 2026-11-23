@@ -167,38 +167,13 @@
  "parking": [
   {
    "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 196,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.995286,
-    "lng": 121.518507
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通秀山場",
-   "opening_hours": "24/7",
-   "operator": "台灣聯通停車場開發股份有限公司",
-   "osm": {
-    "id": 1198603205,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1198603205"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
    "capacity": 56,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 254,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJXRTf03QCaDQRCIaNq_jv4JU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -225,6 +200,7 @@
    "distance_m": 339,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJp5jtAQoCaDQRhGG160w_JZc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -244,32 +220,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 460,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.993102,
-    "lng": 121.520406
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1453319638,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1453319638"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 192,
    "capacity_disabled": null,
@@ -277,6 +227,7 @@
    "distance_m": 607,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJN9lBZdipQjQRLaB04u7zabo",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -313,6 +264,7 @@
    "distance_m": 640,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJn-YaJwADaDQRWyGgywyjLBI",
    "kind": null,
    "kind_label": "停車場",
    "location": {

@@ -151,32 +151,6 @@
  "park_name": null,
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 72,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.872663,
-    "lng": 121.407416
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 527264956,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/527264956"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": 60,
    "capacity_disabled": null,
@@ -184,6 +158,7 @@
    "distance_m": 97,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJWbCuu4waaDQR_qTF2vM1w9A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -203,68 +178,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": 80,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 111,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.872782,
-    "lng": 121.406601
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大板根第三停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 423260211,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/423260211"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 125,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 122,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.870656,
-    "lng": 121.407538
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大板根酒店本館地下室收費停車場",
-   "official": {
-    "address": "新北市三峽區插角里79號B2、B3",
-    "cars": 125,
-    "fare": "小型車計時50元;",
-    "hours": "0~24時",
-    "match_m": 53,
-    "name": "大板根酒店本館地下室收費停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 525934675,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/525934675"
-   },
-   "osm_name": "第一停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -272,6 +185,7 @@
    "distance_m": 207,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJSchpNwkbaDQRrdRBcgJ2OGw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -287,32 +201,6 @@
     "id": 525934668,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/525934668"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 60,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 436,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.869106,
-    "lng": 121.411807
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 423260116,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/423260116"
    },
    "verified_at": "2026-11-21"
   }

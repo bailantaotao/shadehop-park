@@ -183,6 +183,7 @@
    "distance_m": 107,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJATD4k0WpQjQRGG9ENKWe5LE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -216,35 +217,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 316,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.025824,
-    "lng": 121.517003
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 313786184,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/313786184"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 347,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJx7sLsJCpQjQR7Ltziwy3YTE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -264,32 +240,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 425,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.023616,
-    "lng": 121.510593
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 314322694,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/314322694"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 260,
    "capacity_disabled": null,
@@ -297,6 +247,7 @@
    "distance_m": 432,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ4VHSIrypQjQRBwRWHxEPiU4",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -321,32 +272,6 @@
     "id": 772708554,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/772708554"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 442,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 438,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.017564,
-    "lng": 121.518289
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "綠光河岸停車場",
-   "opening_hours": "24/7",
-   "operator": null,
-   "osm": {
-    "id": 1194888161,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1194888161"
    },
    "verified_at": "2026-11-21"
   }

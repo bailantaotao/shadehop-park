@@ -430,6 +430,7 @@
    "distance_m": 101,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJY0fHYQCnQjQRF-698afnMI4",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -460,38 +461,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 254,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.072402,
-    "lng": 121.377638
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "應安168林口社會住宅D區",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 13349356636,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/13349356636"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 166,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 350,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3ymwyd6mQjQRouKns2WUKQs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -522,74 +498,13 @@
   },
   {
    "access": null,
-   "capacity": 46,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 442,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.075934,
-    "lng": 121.371929
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "廣停五平面停車場",
-   "official": {
-    "address": "新北市林口區仁愛一路及民富街交叉口",
-    "cars": 46,
-    "fare": "小型車計時20元;小型車月租1000元;身障車月租800元;",
-    "hours": "0~24時",
-    "match_m": 40,
-    "name": "廣停五平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 570835117,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/570835117"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 444,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.073683,
-    "lng": 121.371806
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 677575664,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/677575664"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 470,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJXdMFUNenQjQRqXElAIKXTbc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

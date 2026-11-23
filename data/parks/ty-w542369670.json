@@ -179,6 +179,7 @@
    "distance_m": 124,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJP2MsklcfaDQRC0Si-0bfDss",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -205,6 +206,7 @@
    "distance_m": 173,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJBXzC_RIfaDQRf-u5Iirbt5Y",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -224,32 +226,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 182,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.992397,
-    "lng": 121.286547
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "鉑宴會館",
-   "osm": {
-    "id": 1284366826,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1284366826"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -257,6 +233,7 @@
    "distance_m": 186,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJdd9pAhMfaDQRNOXqktk_wcA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -272,58 +249,6 @@
     "id": 552090727,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/552090727"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 330,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.991585,
-    "lng": 121.288882
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "歐維斯停車場國際三站",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1452044110,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1452044110"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 356,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.991028,
-    "lng": 121.287781
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 552090730,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/552090730"
    },
    "verified_at": "2026-11-21"
   }

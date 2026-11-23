@@ -361,6 +361,7 @@
    "distance_m": 38,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJMyhYcgCrQjQROVvCYdGZtvM",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -397,6 +398,7 @@
    "distance_m": 79,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJAbX7aB6rQjQRSrxvh-Gla1I",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -426,78 +428,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 42,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 95,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.992323,
-    "lng": 121.543809
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "啟鑫開發有限公司瀚星站停車場",
-   "official": {
-    "address": "景興路188號地下3-4層",
-    "cars": 42,
-    "fare": "計時：小型車週一至週五30元/時，週六至週日50元/時，停車全程以半小時計。月租：小型車全日4,500元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 5,
-    "name": "啟鑫開發有限公司瀚星站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 4298876983,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4298876983"
-   },
-   "osm_name": "永固便利停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 71,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 104,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.993207,
-    "lng": 121.544174
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台北市文山區景華停車場",
-   "official": {
-    "address": "景中街33號旁空地",
-    "cars": 71,
-    "fare": "計時：小型車(含大型重型機車)80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日9,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 57,
-    "name": "台北市文山區景華停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 334124759,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/334124759"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 47,
    "capacity_disabled": null,
@@ -505,6 +435,7 @@
    "distance_m": 263,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJx3Z9sACqQjQRaijkCMmfAwA",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -541,6 +472,7 @@
    "distance_m": 271,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmXD3kQCqQjQRgMJg0SfUYIw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

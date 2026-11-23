@@ -134,38 +134,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 156,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.948912,
-    "lng": 121.5315
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 325972586,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/325972586"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 79,
    "capacity_disabled": "2",
    "capacity_parent": null,
    "distance_m": 505,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJB8sPRosBaDQR4GMC0TZv_vY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -192,6 +167,7 @@
    "distance_m": 695,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJkc8cEocBaDQR3ZO8zeZjwKw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -218,32 +194,6 @@
     "url": "https://www.openstreetmap.org/way/332016444"
    },
    "osm_name": "國校停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 705,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.956948,
-    "lng": 121.532431
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 205420861,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/205420861"
-   },
    "verified_at": "2026-11-21"
   }
  ],

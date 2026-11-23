@@ -533,6 +533,7 @@
    "distance_m": 78,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJUThFSWCpQjQRHR5Jp9-O9wg",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -569,6 +570,7 @@
    "distance_m": 111,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJd47UkqqpQjQRFz_Y3dKbf4M",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -589,48 +591,13 @@
   },
   {
    "access": null,
-   "capacity": 241,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 116,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.052403,
-    "lng": 121.5355
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通南京停車場",
-   "official": {
-    "address": "南京東路2段139號地下3-7層",
-    "cars": 241,
-    "fare": "計時：80元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。月租：全天10,000元/月，日間：8,000元/月(07-19)，夜間6,000元/月(19-07)。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 11,
-    "name": "台灣聯通南京停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 4031297492,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4031297492"
-   },
-   "osm_name": "臺灣聯通",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 22,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 145,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJs4rHPWCpQjQR1rwdCR7ilEs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -667,6 +634,7 @@
    "distance_m": 190,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJMQFt52CpQjQR47x6CNL1-i8",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -693,6 +661,7 @@
    "distance_m": 196,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJlaPtWf-pQjQRd4apu5EASzo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

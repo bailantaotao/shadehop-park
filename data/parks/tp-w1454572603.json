@@ -531,6 +531,7 @@
    "distance_m": 68,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ5ZQLJW6pQjQR8opBvsivPhU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -566,6 +567,7 @@
    "distance_m": 73,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJR1R_426pQjQRQ5-0LMK_4cI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -602,6 +604,7 @@
    "distance_m": 139,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ8QsIQACpQjQRPmKPaspEz08",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -638,6 +641,7 @@
    "distance_m": 153,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJL_zg0vWpQjQRv86hnZzXCyI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -667,42 +671,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": 23,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 171,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.049251,
-    "lng": 121.520366
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "華陰街平面停車場",
-   "official": {
-    "address": "華陰街18號對面",
-    "cars": 23,
-    "fare": "計時：小型車(含大型重型機車)40元/時，停車全程以半小時計。月租：小型車全日9,600元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 2,
-    "name": "華陰街平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 204408791,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/204408791"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 12,
    "capacity_disabled": null,
@@ -710,6 +678,7 @@
    "distance_m": 266,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ6Q3Kq0qpQjQRjEnWKR2vSas",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

@@ -283,6 +283,7 @@
    "distance_m": 116,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJXV9nHfOpQjQRDK7qK0ZeEzY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -303,38 +304,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 184,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.012477,
-    "lng": 121.529532
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1226120164,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1226120164"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 143,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 202,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJdUVsYcOpQjQRyFlFSLq0F0M",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -361,6 +337,7 @@
    "distance_m": 339,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJOeBQUQCpQjQRQ9dY1HKt6Jo",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -376,58 +353,6 @@
     "id": 12255465357,
     "type": "node",
     "url": "https://www.openstreetmap.org/node/12255465357"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 495,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 389,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.014701,
-    "lng": 121.529517
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": "24/7",
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 957165119,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/957165119"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 509,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.010246,
-    "lng": 121.53314
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "藝術市集",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1226576400,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1226576400"
    },
    "verified_at": "2026-11-21"
   }

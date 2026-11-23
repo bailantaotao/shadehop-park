@@ -300,6 +300,7 @@
    "distance_m": 22,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_VbMMRoCaDQROpx_bY4bGIk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -323,35 +324,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 42,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.976952,
-    "lng": 121.529777
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 686428843,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/686428843"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 53,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJU-Nd9C8DaDQRYy552vs8D3o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -371,42 +347,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 126,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 127,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.98027,
-    "lng": 121.525192
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "央北停車場",
-   "official": {
-    "address": "新北市新店區中山路與央北二路交叉口",
-    "cars": 126,
-    "fare": "小型車計時40元;小型車月租4000元;",
-    "hours": "0~24時",
-    "match_m": 2,
-    "name": "央北停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1064570014,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1064570014"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 17,
    "capacity_disabled": null,
@@ -414,6 +354,7 @@
    "distance_m": 143,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJeTnJ_y0DaDQRHD3RRnwI-qk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -450,6 +391,7 @@
    "distance_m": 189,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3XWFbcwDaDQRA-SzhRLen5U",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

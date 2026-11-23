@@ -284,38 +284,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 38,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 13,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.814182,
-    "lng": 120.976383
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "果菜市場停車場",
-   "osm": {
-    "id": 669916805,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/669916805"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 150,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 292,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJoYaBUdw1aDQRuNJw8i0KTNo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -339,35 +314,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 295,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.816084,
-    "lng": 120.971946
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 424877736,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/424877736"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 320,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJHZlfb7E1aDQRYTYVfMj_lXU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -394,6 +344,7 @@
    "distance_m": 326,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJuf0SVwA1aDQRrt-Um7Esi0Y",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -420,6 +371,7 @@
    "distance_m": 376,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJRb1-LwA1aDQRggiFz5APXc0",
    "kind": null,
    "kind_label": "停車場",
    "location": {

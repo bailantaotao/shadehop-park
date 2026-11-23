@@ -405,6 +405,7 @@
    "distance_m": 212,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJbx4036urQjQRzVV3GsYkqFE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -435,48 +436,13 @@
   },
   {
    "access": null,
-   "capacity": 102,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 241,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.039584,
-    "lng": 121.544272
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嵨開安旅",
-   "official": {
-    "address": "忠孝東路4段26巷60號",
-    "cars": 102,
-    "fare": "小型車：計時 80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計；月租 全日6,500元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 14,
-    "name": "嵨開安旅",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 328934099,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/328934099"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 14,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 242,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJheCMA9GrQjQRMJYDKid-G0s",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -513,6 +479,7 @@
    "distance_m": 348,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJQS-hBJmrQjQR3Ud9Q871ATU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -549,6 +516,7 @@
    "distance_m": 369,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJi-LhANqrQjQRMssd1kUYim4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -575,42 +543,6 @@
     "url": "https://www.openstreetmap.org/way/1097514923"
    },
    "osm_name": "寶星停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 17,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 372,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.039962,
-    "lng": 121.542865
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "通通停復興SOGO一站停車場",
-   "official": {
-    "address": "仁愛路3段123巷13弄與仁愛路3段143巷口(西北側)",
-    "cars": 17,
-    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 3,
-    "name": "通通停復興SOGO一站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 312138781,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/312138781"
-   },
-   "osm_name": "叭叭房復興停車場",
    "verified_at": "2026-11-21"
   }
  ],

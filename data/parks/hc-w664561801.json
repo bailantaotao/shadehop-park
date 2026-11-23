@@ -155,6 +155,7 @@
    "distance_m": 375,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJhUlNTQA1aDQRtWVSKTAKLyM",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -175,116 +176,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 458,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "street_side",
-   "kind_label": "路邊停車",
-   "location": {
-    "lat": 24.822075,
-    "lng": 120.95939
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "士林市場路邊停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 483630465,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/483630465"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 471,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.822223,
-    "lng": 120.969176
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 15818409,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/15818409"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 515,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.821039,
-    "lng": 120.96092
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大客車停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 483630458,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/483630458"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 518,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.820503,
-    "lng": 120.96135
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "士林市場停車場",
-   "opening_hours": null,
-   "operator": "新竹市政府",
-   "osm": {
-    "id": 197626297,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/197626297"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 57,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 544,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ9RUX_ck1aDQRGmvtioxtgug",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

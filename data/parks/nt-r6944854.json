@@ -416,6 +416,7 @@
    "distance_m": 2,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfyEV-yeoQjQRFW-dDdosgjg",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -452,6 +453,7 @@
    "distance_m": 95,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJYfsSOpCpQjQReC9FIKkPLK0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -482,38 +484,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 95,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.002521,
-    "lng": 121.479992
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 331855098,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/331855098"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 118,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 162,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJLQ-t6p0CaDQRGOif_GiIzcc",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -550,6 +527,7 @@
    "distance_m": 195,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJE0KNYACpQjQRHRN_A62SUmQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -576,32 +554,6 @@
     "url": "https://www.openstreetmap.org/way/483577230"
    },
    "osm_name": "湯海悅停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 290,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.006566,
-    "lng": 121.481888
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "合立停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 483577201,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/483577201"
-   },
    "verified_at": "2026-11-21"
   }
  ],

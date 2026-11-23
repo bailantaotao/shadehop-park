@@ -367,61 +367,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 72,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.962941,
-    "lng": 121.294762
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1295001136,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1295001136"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 75,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.962144,
-    "lng": 121.295641
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 1524828801,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1524828801"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 82,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_yiBRi0ZaDQRdQgQqr36-hs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -445,35 +394,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 91,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.961281,
-    "lng": 121.293756
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅桃園大湳站",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 1524828800,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1524828800"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 100,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJB1exIs0YaDQRcdad9BZXtkc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -489,32 +413,6 @@
     "id": 330879028,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/330879028"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 108,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.960848,
-    "lng": 121.294146
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times八德中路街停車場",
-   "opening_hours": null,
-   "operator": "台灣普客二四股份有限公司",
-   "osm": {
-    "id": 734885840,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/734885840"
    },
    "verified_at": "2026-11-21"
   }

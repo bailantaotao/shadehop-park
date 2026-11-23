@@ -239,6 +239,7 @@
    "distance_m": 212,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKdZbxuEBaDQRjMbfgb2QK8s",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -275,6 +276,7 @@
    "distance_m": 334,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJr1Lw5qKrQjQR7FWjN7Ld6DI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -310,6 +312,7 @@
    "distance_m": 349,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ881lygmqQjQRf1OEVti04q4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -345,6 +348,7 @@
    "distance_m": 361,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJJXYJcnQBaDQRWwXEanNHyzI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -371,58 +375,6 @@
     "url": "https://www.openstreetmap.org/way/630656567"
    },
    "osm_name": "實踐國中停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 408,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "street_side",
-   "kind_label": "路邊停車",
-   "location": {
-    "lat": 24.989949,
-    "lng": 121.552818
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 980452376,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/980452376"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 411,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "street_side",
-   "kind_label": "路邊停車",
-   "location": {
-    "lat": 24.98988,
-    "lng": 121.552758
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 980452375,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/980452375"
-   },
    "verified_at": "2026-11-21"
   }
  ],

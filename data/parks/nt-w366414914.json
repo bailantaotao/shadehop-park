@@ -183,6 +183,7 @@
    "distance_m": 123,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZUwrBlWkQjQRVL2iFnHj2EA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -219,6 +220,7 @@
    "distance_m": 212,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJB6xIs5alQjQRKX8omsTvfW8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -245,6 +247,7 @@
    "distance_m": 246,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJEZ1cOQClQjQRjKSQVe4Js4o",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -281,6 +284,7 @@
    "distance_m": 271,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJqWTGPJ6lQjQRNQ6ju-fG8-0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -307,6 +311,7 @@
    "distance_m": 280,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJDR1RLKulQjQRk893hR5044U",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -333,42 +338,6 @@
     "url": "https://www.openstreetmap.org/way/714659313"
    },
    "osm_name": "八里區第一立體停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 62,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 341,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.145926,
-    "lng": 121.399926
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "八里區下庄公有零售市場附設停車場",
-   "official": {
-    "address": "新北市八里區舊城路19號B1",
-    "cars": 62,
-    "fare": "小型車計時20元;小型車月租4000元;",
-    "hours": "0~24時",
-    "match_m": 46,
-    "name": "八里區下庄公有零售市場附設停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1299807164,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1299807164"
-   },
-   "osm_name": "Times八里舊城路停車場",
    "verified_at": "2026-11-21"
   }
  ],

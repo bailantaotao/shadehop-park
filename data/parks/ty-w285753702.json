@@ -324,6 +324,7 @@
    "distance_m": 157,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ2bxMEQMfaDQR7_bJLser0cQ",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -360,6 +361,7 @@
    "distance_m": 192,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTw6P_wIfaDQRlNX-_W0ErOs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -386,6 +388,7 @@
    "distance_m": 371,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJeYc1W3MfaDQRaKY1WneqyFg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -412,6 +415,7 @@
    "distance_m": 407,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJldm5uJkfaDQR123lnxrzdsc",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -427,58 +431,6 @@
     "id": 1189791234,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1189791234"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 418,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.991426,
-    "lng": 121.305672
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 409274648,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/409274648"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 418,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.993998,
-    "lng": 121.302201
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 549283651,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/549283651"
    },
    "verified_at": "2026-11-21"
   }

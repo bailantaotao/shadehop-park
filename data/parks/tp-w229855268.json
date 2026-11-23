@@ -412,6 +412,7 @@
    "distance_m": 62,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJbVnSagCpQjQRidohJz627rg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -442,48 +443,13 @@
   },
   {
    "access": null,
-   "capacity": 5,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 69,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.022634,
-    "lng": 121.52897
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房師大3站停車場",
-   "official": {
-    "address": "師大路105巷11號",
-    "cars": 12,
-    "fare": "小型車：計時 120元/時，全程以半小時計;月租 全日12,000元",
-    "hours": "臨停：7時至23時59分前取車；月租：24小時",
-    "match_m": 3,
-    "name": "嘟嘟房師大3站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "臨停：7時至23時59分前取車；月租：24小時",
-   "operator": null,
-   "osm": {
-    "id": 629020465,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/629020465"
-   },
-   "osm_name": "師大路收費停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 82,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJDxdjIimpQjQRHTwyzrtIzKI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -503,41 +469,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": 5,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 137,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.022371,
-    "lng": 121.529575
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "泰順街停車場",
-   "official": {
-    "address": "泰順街60巷26號空地",
-    "cars": 5,
-    "fare": "月租：小型車全日5,500元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 0,
-    "name": "泰順街停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 629020466,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/629020466"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 9,
    "capacity_disabled": null,
@@ -545,6 +476,7 @@
    "distance_m": 149,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJn-N5wRWpQjQRPuDzXXiXJvo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -571,32 +503,6 @@
     "url": "https://www.openstreetmap.org/way/440646821"
    },
    "osm_name": "Times蒲城街平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 164,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.023607,
-    "lng": 121.530044
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 544370710,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/544370710"
-   },
    "verified_at": "2026-11-21"
   }
  ],

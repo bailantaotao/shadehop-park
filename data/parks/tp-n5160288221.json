@@ -302,6 +302,7 @@
    "distance_m": 21,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJwQGMuOCrQjQRs8D6WqJCpyw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -338,6 +339,7 @@
    "distance_m": 25,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1S2eSuerQjQRoE3QfEA6T3s",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -374,6 +376,7 @@
    "distance_m": 206,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJRUHgGgCrQjQRGwyp9U9sTW0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -410,6 +413,7 @@
    "distance_m": 255,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJAwj3KwCrQjQRy4yU41xx7v8",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -438,42 +442,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 30,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 260,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.05127,
-    "lng": 121.542704
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "博客停車場-盤古南京場",
-   "official": {
-    "address": "南京東路3段194巷18號地上1、地下2至3層",
-    "cars": 30,
-    "fare": "月租：小型車全日平面車位6,500元/月，全日機械車位5,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 52,
-    "name": "博客停車場-盤古南京場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 311430377,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/311430377"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": 22,
    "capacity_disabled": null,
@@ -481,6 +449,7 @@
    "distance_m": 269,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJbTSdVxKrQjQR1_dBYWA7zlk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

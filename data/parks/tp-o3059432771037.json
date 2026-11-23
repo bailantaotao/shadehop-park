@@ -516,6 +516,7 @@
    "distance_m": 99,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ4V4_XgCrQjQRQTc72iKvxeA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -546,38 +547,13 @@
   },
   {
    "access": null,
-   "capacity": 24,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 101,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.047526,
-    "lng": 121.55393
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "叭叭房八德一停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 368877190,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/368877190"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 16,
    "capacity_disabled": "1",
    "capacity_parent": null,
    "distance_m": 169,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJmTSH2sCrQjQR3om2QC7qxCk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -614,6 +590,7 @@
    "distance_m": 226,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJOwXZt8arQjQR0WqQZTLgTq4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -650,6 +627,7 @@
    "distance_m": 257,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJuVHfAkqrQjQRffF7FfyxsPw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -676,42 +654,6 @@
     "url": "https://www.openstreetmap.org/way/331650859"
    },
    "osm_name": "俥停 大安光復場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 2,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 258,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.044136,
-    "lng": 121.55553
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-文教地下室停車場",
-   "official": {
-    "address": "光復南路72巷73號地下1層",
-    "cars": 2,
-    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 18,
-    "name": "168停車聯盟-文教地下室停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1340310151,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1340310151"
-   },
-   "osm_name": "應安168 華視三場",
    "verified_at": "2026-11-21"
   }
  ],

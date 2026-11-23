@@ -222,64 +222,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 252,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.077628,
-    "lng": 121.488108
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 902948905,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/902948905"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 418,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078447,
-    "lng": 121.486022
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 902948906,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/902948906"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 167,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 426,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJKZCej1SpQjQRJibJT-QmXdE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -316,6 +265,7 @@
    "distance_m": 431,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ0RAK1SOpQjQR1md_nWi1Y1A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -331,68 +281,6 @@
     "id": 1019780901,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019780901"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 167,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 440,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078601,
-    "lng": 121.495696
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅三重元信停車場",
-   "official": {
-    "address": "新北市三重區元信一街與元信二街交叉口",
-    "cars": 167,
-    "fare": "小型車計時100元;小型車月租5000元;",
-    "hours": "0~24時",
-    "match_m": 37,
-    "name": "城市車旅三重元信停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 550535672,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/550535672"
-   },
-   "osm_name": "永侑停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "permissive",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 442,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.082112,
-    "lng": 121.494331
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "自強臨時平面停車場",
-   "osm": {
-    "id": 1394452993,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1394452993"
    },
    "verified_at": "2026-11-21"
   }

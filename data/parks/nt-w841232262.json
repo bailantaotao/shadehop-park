@@ -106,32 +106,6 @@
  "park_name": null,
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 143,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.945486,
-    "lng": 121.366424
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 841116432,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/841116432"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
@@ -139,6 +113,7 @@
    "distance_m": 398,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJY_W9agocaDQRDJ6IDdhJcOs",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -158,32 +133,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 442,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.940906,
-    "lng": 121.36758
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1315935065,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1315935065"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 96,
    "capacity_disabled": "2",
@@ -191,6 +140,7 @@
    "distance_m": 498,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJh_QOJgAbaDQRSwpbdqi8pf8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -206,58 +156,6 @@
     "id": 1150877115,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1150877115"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 506,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.94516,
-    "lng": 121.370021
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "行政大樓運動場地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5236086458,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5236086458"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 507,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.941711,
-    "lng": 121.360759
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "客家文化園區地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 12334679060,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/12334679060"
    },
    "verified_at": "2026-11-21"
   }

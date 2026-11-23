@@ -352,6 +352,7 @@
    "distance_m": 174,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJkW_iEACrQjQRBtPy1VVnMc4",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -388,6 +389,7 @@
    "distance_m": 198,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ7yazPCyqQjQRODe1vjfDxss",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -424,6 +426,7 @@
    "distance_m": 222,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJdavHvSyqQjQRCk07-ulc32w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -460,6 +463,7 @@
    "distance_m": 302,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJlaYh9eirQjQRIIE32LZT-qg",
    "kind": "lane",
    "kind_label": "路邊停車格",
    "location": {
@@ -489,42 +493,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 5,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 347,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 25.025689,
-    "lng": 121.545468
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "榮帝科技全聯大安北師店停車場",
-   "official": {
-    "address": "和平東路2段311巷29號地下1層",
-    "cars": 5,
-    "fare": "小型車：計時 100元/時，全程以半小時計;月租 全日10,000元",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 13,
-    "name": "榮帝科技全聯大安北師店停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1526301845,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1526301845"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 4,
    "capacity_disabled": null,
@@ -532,6 +500,7 @@
    "distance_m": 352,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJtQ-6ZACrQjQRbFNZe6Ogy0Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

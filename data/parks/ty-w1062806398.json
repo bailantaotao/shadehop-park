@@ -313,87 +313,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 0,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.986675,
-    "lng": 121.296163
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1065463360,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1065463360"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 51,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.987229,
-    "lng": 121.296416
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1065463358,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1065463358"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 51,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.986036,
-    "lng": 121.295616
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 1453033117,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1453033117"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 87,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJzdazY1AfaDQRd0k0SxZWeds",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -420,6 +343,7 @@
    "distance_m": 125,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJPWsiDnIfaDQR4wOQuR1Utes",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -446,6 +370,7 @@
    "distance_m": 208,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJlz5N7zMfaDQRLO1trUbnDj0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

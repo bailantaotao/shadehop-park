@@ -135,6 +135,7 @@
    "distance_m": 217,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJoRp_oqweaDQRMEovbvIgQgI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -164,94 +165,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": 169,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 221,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.949217,
-    "lng": 121.343206
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "鶯歌區老街第二平面停車場",
-   "official": {
-    "address": "新北市鶯歌區尖山埔路295號旁",
-    "cars": 169,
-    "fare": "大型車計時20元;小型車計時30元;小型車月租1300元;身障車月租750元;機車計次10元;機車月租300元;身障機車月租150元;",
-    "hours": "0~24時",
-    "match_m": 15,
-    "name": "鶯歌區老街第二平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 333727930,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/333727930"
-   },
-   "osm_name": "老街第二停車場(正義)",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 514,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "第二停車場",
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.951585,
-    "lng": 121.345171
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1381668298,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1381668298"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 633,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.942878,
-    "lng": 121.336908
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 334970469,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/334970469"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -259,6 +172,7 @@
    "distance_m": 647,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ164ffUsfaDQRpFScBkBJOpQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -274,32 +188,6 @@
     "id": 1475188725,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1475188725"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 687,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.953487,
-    "lng": 121.345522
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1475188726,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1475188726"
    },
    "verified_at": "2026-11-21"
   }

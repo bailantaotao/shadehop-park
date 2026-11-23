@@ -228,6 +228,7 @@
    "distance_m": 87,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJVR6KEyQDaDQRk2h-dGWVgVc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -258,48 +259,13 @@
   },
   {
    "access": null,
-   "capacity": 17,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 89,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.998833,
-    "lng": 121.486016
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "探索中和停車場",
-   "official": {
-    "address": "新北市中和區建八路3號",
-    "cars": 17,
-    "fare": "小型車計時50元;小型車計時10元;小型車月租4000元;小型車月租1500元;",
-    "hours": "0~24時",
-    "match_m": 17,
-    "name": "探索中和停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 922782363,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/922782363"
-   },
-   "osm_name": "漢堡停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 147,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJt3EEFIQCaDQREW6GuqYXxhA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -315,84 +281,6 @@
     "id": 483469186,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/483469186"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 153,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 24.999214,
-    "lng": 121.486584
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 8566267753,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/8566267753"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 163,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.998924,
-    "lng": 121.484453
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1474846061,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846061"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 178,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.997681,
-    "lng": 121.484193
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1474846034,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846034"
    },
    "verified_at": "2026-11-21"
   }

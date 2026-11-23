@@ -429,6 +429,7 @@
    "distance_m": 14,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJI2JYTQCpQjQRGV9B2XVsonA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -465,6 +466,7 @@
    "distance_m": 77,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJi95E11CpQjQRsqHV6emkfoA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -494,42 +496,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 16,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 119,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.048832,
-    "lng": 121.526764
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台北長安站停車場",
-   "official": {
-    "address": "長安東路1段57號空地",
-    "cars": 15,
-    "fare": "計時：小型車160元/時，停車全程以半小時計。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 6,
-    "name": "台北長安站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "新長越企業有限公司",
-   "osm": {
-    "id": 436568801,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/436568801"
-   },
-   "osm_name": "長安東三站停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 42,
    "capacity_disabled": null,
@@ -537,6 +503,7 @@
    "distance_m": 158,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ0ZC9rXqpQjQRXPNJn65ByHg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -573,6 +540,7 @@
    "distance_m": 167,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJf7bsjjCpQjQRHhYUilfwcgI",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -609,6 +577,7 @@
    "distance_m": 174,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJNSRvViSpQjQRvvnSfZ_NbkE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

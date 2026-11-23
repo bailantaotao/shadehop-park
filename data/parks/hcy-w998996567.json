@@ -205,6 +205,7 @@
    "distance_m": 181,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJG5ivUwAzaDQRNS1zMkyTJjs",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -231,6 +232,7 @@
    "distance_m": 342,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-y4gAMcxaDQRr_oAZzv3-3E",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -246,110 +248,6 @@
     "id": 1471852939,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1471852939"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 347,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.863584,
-    "lng": 120.987097
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 326355158,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/326355158"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 348,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.863621,
-    "lng": 120.985342
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992984677,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992984677"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 381,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.865279,
-    "lng": 120.989956
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "USPACE明新科大鄰近停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1580973606,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1580973606"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 382,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.865826,
-    "lng": 120.990222
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 673078847,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/673078847"
    },
    "verified_at": "2026-11-21"
   }

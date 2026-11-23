@@ -179,61 +179,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 283,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.197944,
-    "lng": 121.428642
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1458495453,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1458495453"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 520,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.197407,
-    "lng": 121.435407
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1460159424,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1460159424"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 575,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-74lewC7QjQRXnp3mShiqmw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -254,48 +203,13 @@
   },
   {
    "access": null,
-   "capacity": 40,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 632,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.196351,
-    "lng": 121.436229
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新市段平面停車場",
-   "official": {
-    "address": "新北市淡水區崁頂二路250號旁",
-    "cars": 40,
-    "fare": "大型車計時40元;大型車月租4000元;小型車計時20元;小型車月租2000元;身障車月租月租1000元;機車計次20元;機車月租300元;機車月租240元;身障機車月租150元 ;",
-    "hours": "0~24時",
-    "match_m": 39,
-    "name": "新市段平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 774848438,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/774848438"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 36,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 783,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ6yuUy2G7QjQRitFq_jE0Ptw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

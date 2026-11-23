@@ -214,6 +214,7 @@
    "distance_m": 78,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ73CVKzKmQjQRgefZLbWmDH4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -250,6 +251,7 @@
    "distance_m": 92,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJnX4QPzKmQjQRYvNX21Eq2Nw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -276,6 +278,7 @@
    "distance_m": 222,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJjcr8SgunQjQRPXyJ46yTCXE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -312,6 +315,7 @@
    "distance_m": 252,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZcIFJjGmQjQRjSWforvTmUo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -338,58 +342,6 @@
     "url": "https://www.openstreetmap.org/relation/17445215"
    },
    "osm_name": "山腳停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 259,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.064545,
-    "lng": 121.427762
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1252069665,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1252069665"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 327,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.057368,
-    "lng": 121.42851
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 7796926779,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/7796926779"
-   },
    "verified_at": "2026-11-21"
   }
  ],

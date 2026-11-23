@@ -179,6 +179,7 @@
    "distance_m": 176,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJoZ3gWwBTXTQRi4LHa8lzxD0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -215,6 +216,7 @@
    "distance_m": 178,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJo5k4MgBTXTQRZf0ebg2SPq0",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -245,38 +247,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 182,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.071266,
-    "lng": 121.63021
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 79669513,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/79669513"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 9,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 225,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ2XUpjNFTXTQRZD2iG-RZMFs",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -303,78 +280,6 @@
     "url": "https://www.openstreetmap.org/way/1480102468"
    },
    "osm_name": "多多停收費停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 61,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 231,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.071718,
-    "lng": 121.633076
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福田停車場",
-   "official": {
-    "address": "新北市汐止區湖前街110巷2弄與湖東街交叉口",
-    "cars": 61,
-    "fare": "小型車月租2200元;",
-    "hours": "0~24時",
-    "match_m": 37,
-    "name": "福田停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1480102469,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1480102469"
-   },
-   "osm_name": "俥停停車汐止明𡶶二場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 61,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 274,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.071942,
-    "lng": 121.632837
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福田停車場",
-   "official": {
-    "address": "新北市汐止區湖前街110巷2弄與湖東街交叉口",
-    "cars": 61,
-    "fare": "小型車月租2200元;",
-    "hours": "0~24時",
-    "match_m": 49,
-    "name": "福田停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1480102467,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1480102467"
-   },
-   "osm_name": "金龍湖畔停車場",
    "verified_at": "2026-11-21"
   }
  ],

@@ -240,6 +240,7 @@
    "distance_m": 114,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJYUT76SGpQjQRFCRt9QuDhjQ",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -266,6 +267,7 @@
    "distance_m": 346,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJobbITwCpQjQRiZQUC7NXA00",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -302,6 +304,7 @@
    "distance_m": 348,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJWynM2OGoQjQRwkc0gAWc_bs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -331,42 +334,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": 130,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 381,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.061126,
-    "lng": 121.490805
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新北市立聯合醫院三重院區停車場",
-   "official": {
-    "address": "新北市三重區新北大道1段3號1樓/3~34、37~39、43~51、83、87~99號汽車位，1~86號機車位及新北大道1段3-1號B2、B3/1~20、22~42號汽車位",
-    "cars": 130,
-    "fare": "小型車計時40元;小型車月租4600元;機車計次30元;",
-    "hours": "0~24時",
-    "match_m": 48,
-    "name": "新北市立聯合醫院三重院區停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 548927763,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/548927763"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "customers",
    "capacity": null,
    "capacity_disabled": null,
@@ -374,6 +341,7 @@
    "distance_m": 426,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJa3KV2COpQjQRScBmKHz-g08",
    "kind": "carports",
    "kind_label": "停車場",
    "location": {
@@ -400,6 +368,7 @@
    "distance_m": 447,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJQSvAluGoQjQR0wq-ZaWHu7E",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

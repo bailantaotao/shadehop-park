@@ -415,6 +415,7 @@
    "distance_m": 32,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJde_-kqGrQjQRiy2BN61igqY",
    "kind": "lane",
    "kind_label": "路邊停車格",
    "location": {
@@ -451,6 +452,7 @@
    "distance_m": 63,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJlaYh9eirQjQRIIE32LZT-qg",
    "kind": "lane",
    "kind_label": "路邊停車格",
    "location": {
@@ -475,140 +477,6 @@
     "id": 1526301841,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1526301841"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 5,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 63,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 25.025667,
-    "lng": 121.545863
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "榮帝科技全聯大安北師店停車場",
-   "official": {
-    "address": "和平東路2段311巷29號地下1層",
-    "cars": 5,
-    "fare": "小型車：計時 100元/時，全程以半小時計;月租 全日10,000元",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 41,
-    "name": "榮帝科技全聯大安北師店停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1526301842,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1526301842"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 5,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 70,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 25.025707,
-    "lng": 121.545692
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "榮帝科技全聯大安北師店停車場",
-   "official": {
-    "address": "和平東路2段311巷29號地下1層",
-    "cars": 5,
-    "fare": "小型車：計時 100元/時，全程以半小時計;月租 全日10,000元",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 27,
-    "name": "榮帝科技全聯大安北師店停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "24/7",
-   "operator": "USPACE",
-   "osm": {
-    "id": 20819287,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/20819287"
-   },
-   "osm_name": "USPACE 成功郵局鄰近車位",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 73,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.025637,
-    "lng": 121.547466
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 553983226,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/553983226"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 5,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 99,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 25.025689,
-    "lng": 121.545468
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "榮帝科技全聯大安北師店停車場",
-   "official": {
-    "address": "和平東路2段311巷29號地下1層",
-    "cars": 5,
-    "fare": "小型車：計時 100元/時，全程以半小時計;月租 全日10,000元",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 13,
-    "name": "榮帝科技全聯大安北師店停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1526301845,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1526301845"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

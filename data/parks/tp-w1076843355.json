@@ -240,6 +240,7 @@
    "distance_m": 421,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ0dm9l6urQjQRzZiPBZeHuxk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -276,6 +277,7 @@
    "distance_m": 438,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJP-nRe52rQjQRp0hNiCLGkYM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -296,74 +298,13 @@
   },
   {
    "access": null,
-   "capacity": 49,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 469,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.059258,
-    "lng": 121.576414
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "長揚停車場民善站",
-   "official": {
-    "address": "民善街61號旁空地",
-    "cars": 49,
-    "fare": "臨停:計時30元/時，停車時數未滿1小時以1小時計，未滿30分鐘以半小時計。計次:130元/次(07:00~24:00)月租:全日4,000元/月，夜間(19:00~08:00)2,500元/月，日間(08:00~19:00)3,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 43,
-    "name": "長揚停車場民善站",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 615595608,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/615595608"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 485,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.06018,
-    "lng": 121.579764
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1574727694,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1574727694"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 548,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 499,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ21A6rMCrQjQRVDVp8gJLKEo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -390,32 +331,6 @@
     "url": "https://www.openstreetmap.org/way/345207904"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 507,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.058986,
-    "lng": 121.575034
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 345185880,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/345185880"
-   },
    "verified_at": "2026-11-21"
   }
  ],

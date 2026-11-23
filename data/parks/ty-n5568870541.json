@@ -408,6 +408,7 @@
    "distance_m": 17,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ-SSCnW6nQjQRiiG0njyxumA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -444,6 +445,7 @@
    "distance_m": 111,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJnxFcFACnQjQRsyn3n7raVQ8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -464,38 +466,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 172,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.056061,
-    "lng": 121.369796
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1310980930,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1310980930"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 185,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 317,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJAxjfwpqnQjQRRqdC42L9ZhE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -522,6 +499,7 @@
    "distance_m": 326,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKWuI0-2nQjQRzNk3xzU4WUA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -537,32 +515,6 @@
     "id": 1561397737,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1561397737"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 326,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.059048,
-    "lng": 121.371695
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 673067749,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/673067749"
    },
    "verified_at": "2026-11-21"
   }

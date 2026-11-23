@@ -219,38 +219,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 110,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.995241,
-    "lng": 121.534167
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 378584548,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/378584548"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 204,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1Uuz6AGqQjQRMUSSOMydp3c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -286,6 +261,7 @@
    "distance_m": 336,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJk6AixwGqQjQRPMCcx-Xz99k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -315,32 +291,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 338,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.99318,
-    "lng": 121.537667
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 655308047,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/655308047"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 10,
    "capacity_disabled": null,
@@ -348,6 +298,7 @@
    "distance_m": 645,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJSVBxg8erQjQRtBOalYhyB1c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -384,6 +335,7 @@
    "distance_m": 687,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTWkxkwYCaDQRC-ziQF14eXE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

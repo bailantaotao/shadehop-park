@@ -273,6 +273,7 @@
    "distance_m": 255,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_x4AcqmpQjQR8j8325KujnE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -309,6 +310,7 @@
    "distance_m": 286,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJnWSC066pQjQRVTzohAkHMHc",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -338,48 +340,13 @@
   },
   {
    "access": null,
-   "capacity": 4,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 293,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.035852,
-    "lng": 121.499435
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "艋舺公園地下停車場",
-   "official": {
-    "address": "西園路1段145號地下室",
-    "cars": 518,
-    "fare": "小型車：計時 週六、週日、行政機關放假之紀念日與民俗日(08時~22時)40元/時，(22時~08時)10元/時，週一~週五(08時~22時)30元/時，(22時~08時)10元/時，全程以半小時計;月租 全日4,800元，日間2,400元(07時~19時)，夜間2,400元(19時~08時)，大型重機2,400元/月，日間時段性月票2,400元/月(10-22)。。機車：機車收費10元/時，隔日另計;機車月租300元/月",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 59,
-    "name": "艋舺公園地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 313195266,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/313195266"
-   },
-   "osm_name": "大客車停車位",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 15,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 305,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJIVjMpa6pQjQRzn6mX7qAxD4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -416,6 +383,7 @@
    "distance_m": 324,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJd-kjCrOpQjQRWdsqkWO1ius",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -452,6 +420,7 @@
    "distance_m": 431,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJDTAMTFGpQjQRE9P2njWfzOA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

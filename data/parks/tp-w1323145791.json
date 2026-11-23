@@ -350,38 +350,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 68,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 5,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.013815,
-    "lng": 121.536882
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "臺大附幼前停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 193424497,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/193424497"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 27,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 19,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJuyk2l4qpQjQRTSWBWKi206E",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -411,68 +386,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": 27,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 26,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.013314,
-    "lng": 121.536192
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "吉拾停車場台大尊賢場",
-   "official": {
-    "address": "羅斯福路4段83號地下2層",
-    "cars": 27,
-    "fare": "計時：小型車50元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日4,500元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 37,
-    "name": "吉拾停車場台大尊賢場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1323146910,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1323146910"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 84,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.014463,
-    "lng": 121.535706
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1323152476,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1323152476"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 421,
    "capacity_disabled": null,
@@ -480,6 +393,7 @@
    "distance_m": 120,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJUWjDxa-rQjQRdUwpCgPTyCc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -516,6 +430,7 @@
    "distance_m": 188,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ6-eIbf-pQjQRges-7EkqvOo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

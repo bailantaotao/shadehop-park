@@ -292,58 +292,6 @@
  "park_name": "福志公園",
  "parking": [
   {
-   "access": "yes",
-   "capacity": 21,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 159,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.098064,
-    "lng": 121.533907
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1526310268,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1526310268"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 21,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 174,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.097975,
-    "lng": 121.533988
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 13911440084,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/13911440084"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -351,6 +299,7 @@
    "distance_m": 281,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJu3o3sgKvQjQRvl4zOfBmbyA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -381,74 +330,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 294,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.102281,
-    "lng": 121.533923
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9364537,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/9364537"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 88,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 341,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.096161,
-    "lng": 121.532568
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "福林路平面停車場",
-   "official": {
-    "address": "福林路與中正路交叉口南側空地",
-    "cars": 88,
-    "fare": "計時：小型車(含大型重型機車)20元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日3,500元/月。免費停車：機車。",
-    "hours": "收費日：星期一至星期日，收費時間：09時-17時",
-    "match_m": 28,
-    "name": "福林路平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "收費日：星期一至星期日，收費時間：09時-17時",
-   "operator": null,
-   "osm": {
-    "id": 502359097,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/502359097"
-   },
-   "osm_name": "小型車停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 13,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 388,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNdLYZyCsQjQRkTbThIkjjII",
    "kind": null,
    "kind_label": "停車場",
    "location": {

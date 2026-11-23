@@ -336,6 +336,7 @@
    "distance_m": 1,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJF5WW4_apQjQRh3Fy87l6gzc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -366,48 +367,13 @@
   },
   {
    "access": null,
-   "capacity": 124,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 9,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.079554,
-    "lng": 121.499039
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "宏達經營管理顧問有限公司仁義停車場",
-   "official": {
-    "address": "新北市三重區仁義街79巷與元富一街交叉口",
-    "cars": 124,
-    "fare": "小型車計時40元;小型車月租4000元;",
-    "hours": "0~24時",
-    "match_m": 51,
-    "name": "宏達經營管理顧問有限公司仁義停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 777210706,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/777210706"
-   },
-   "osm_name": "宏達仁義2場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 68,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJRUyAx3ypQjQRuuqVB1Rc_CE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -434,6 +400,7 @@
    "distance_m": 69,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJT51S_pypQjQRP_Ir_SEh1Q4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -470,6 +437,7 @@
    "distance_m": 102,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJTxcZ65WpQjQRarcfTBpnWso",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -485,32 +453,6 @@
     "id": 1019780887,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1019780887"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 117,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.077629,
-    "lng": 121.498619
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1474846109,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846109"
    },
    "verified_at": "2026-11-21"
   }

@@ -116,38 +116,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 401,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.134229,
-    "lng": 121.482705
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5931726058,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5931726058"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 64,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 466,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJCzaUfwCvQjQRumphwwwCMdw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -174,32 +149,6 @@
     "url": "https://www.openstreetmap.org/way/256190303"
    },
    "osm_name": "行天宮北投分宮停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 480,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.134692,
-    "lng": 121.486406
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大客車停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 381708675,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/381708675"
-   },
    "verified_at": "2026-11-21"
   }
  ],

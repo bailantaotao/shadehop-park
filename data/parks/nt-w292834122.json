@@ -186,6 +186,7 @@
    "distance_m": 47,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJsUjAnlWlQjQRux4iJeXaQRQ",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -219,35 +220,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 184,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.180232,
-    "lng": 121.442384
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "月租停車場",
-   "osm": {
-    "id": 1098702578,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1098702578"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 221,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJyWFbaf-vQjQR8GNVTzuaCiI",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -274,6 +250,7 @@
    "distance_m": 254,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJt29fzt6vQjQRvFJQuiIH2-o",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -297,35 +274,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 297,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 25.179666,
-    "lng": 121.441073
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
-   "operator": "台灣大車位停車場",
-   "osm": {
-    "id": 1250220931,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1250220931"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 298,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJXUr7p7uvQjQRuy0tisuoesQ",
    "kind": "城市車旅全聯淡大站場",
    "kind_label": "停車場",
    "location": {

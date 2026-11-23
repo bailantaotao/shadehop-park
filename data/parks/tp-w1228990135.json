@@ -325,6 +325,7 @@
    "distance_m": 197,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJDaJW9LipQjQRPCbV0wj6Vrw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -361,6 +362,7 @@
    "distance_m": 251,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ-YPJCgCpQjQRnVr2i-l1oV8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -391,48 +393,13 @@
   },
   {
    "access": null,
-   "capacity": 24,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 252,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.019241,
-    "lng": 121.501276
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "通通停萬華青年站停車場",
-   "official": {
-    "address": "青年路168巷51弄富民路145巷口",
-    "cars": 24,
-    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日10,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 10,
-    "name": "通通停萬華青年站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 310165306,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/310165306"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 282,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJgwYI98ipQjQRi2l8Atm-VVo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -448,58 +415,6 @@
     "id": 112003051,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/112003051"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 287,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.017039,
-    "lng": 121.501197
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "汽車停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 528943185,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/528943185"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 17,
-   "capacity_disabled": "1",
-   "capacity_parent": null,
-   "distance_m": 313,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.02125,
-    "lng": 121.506994
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1239123884,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1239123884"
    },
    "verified_at": "2026-11-21"
   }

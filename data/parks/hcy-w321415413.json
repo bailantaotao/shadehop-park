@@ -264,6 +264,7 @@
    "distance_m": 3,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJJ5qIXAA3aDQRH49w2hNMBxY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -287,61 +288,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 7,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.826344,
-    "lng": 121.013699
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 930059692,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/930059692"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 12,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.826673,
-    "lng": 121.013544
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "縣府前棟右側停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 323399495,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/323399495"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 66,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ23zHMCM3aDQRV8lHnRl7uSc",
    "kind": "lane",
    "kind_label": "路邊停車格",
    "location": {
@@ -357,58 +307,6 @@
     "id": 1227114689,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1227114689"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 76,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 24.826851,
-    "lng": 121.014124
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1227114685,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1227114685"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 86,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "lane",
-   "kind_label": "路邊停車格",
-   "location": {
-    "lat": 24.824954,
-    "lng": 121.011598
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車格",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1227114688,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1227114688"
    },
    "verified_at": "2026-11-21"
   }

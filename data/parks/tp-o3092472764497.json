@@ -212,32 +212,6 @@
  "park_name": "水景公園",
  "parking": [
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 303,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.988633,
-    "lng": 121.584144
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 5572031976,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/5572031976"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 50,
    "capacity_disabled": "1",
@@ -245,6 +219,7 @@
    "distance_m": 385,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ34bjGeOrQjQRLLsXDbG2jC8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -271,84 +246,6 @@
     "url": "https://www.openstreetmap.org/way/582500914"
    },
    "osm_name": "Hi PARKING 政大三街臨時平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 408,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.988887,
-    "lng": 121.58303
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 397085489,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/397085489"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 419,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.989155,
-    "lng": 121.58293
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 397085488,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/397085488"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 767,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.986246,
-    "lng": 121.578929
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 223359892,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/223359892"
-   },
    "verified_at": "2026-11-21"
   }
  ],

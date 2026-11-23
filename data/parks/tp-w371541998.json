@@ -196,38 +196,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 22,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.046369,
-    "lng": 121.613368
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 371541996,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/371541996"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 88,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJH5eJJFurQjQRkunv2AEo0EQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -258,64 +233,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 126,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.045412,
-    "lng": 121.613115
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 832863399,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/832863399"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 155,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.045539,
-    "lng": 121.614529
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 345839846,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/345839846"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 7,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 160,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ5RzcPkWrQjQRRAGSypNDlI0",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -340,42 +264,6 @@
     "id": 345839845,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/345839845"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 7,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 176,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.045326,
-    "lng": 121.614745
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "研究院路平面停車場",
-   "official": {
-    "address": "研究院路2段84巷",
-    "cars": 7,
-    "fare": "小型車：計時 20元/時(09時~17時)，停車全程以半小時計，本場未出售月票。",
-    "hours": "周一至周日 9時至17時",
-    "match_m": 43,
-    "name": "研究院路平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "周一至周日 9時至17時",
-   "operator": null,
-   "osm": {
-    "id": 345839847,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/345839847"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

@@ -288,6 +288,7 @@
    "distance_m": 140,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ1VKoMwCpQjQRUE6ay3uYJlQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -324,6 +325,7 @@
    "distance_m": 179,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNSm2WpepQjQRzIrMCb5tNeg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -360,6 +362,7 @@
    "distance_m": 183,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJpWxcgUipQjQRbI5x1jbuYWE",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -396,6 +399,7 @@
    "distance_m": 187,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTeSwPXupQjQRyfDCFbXGg3k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -422,6 +426,7 @@
    "distance_m": 188,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJLYXKBgCpQjQRn37UlWjFN_k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -447,42 +452,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1056656057"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 89,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 199,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.025542,
-    "lng": 121.519273
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房牯嶺2站停車場",
-   "official": {
-    "address": "牯嶺街101號",
-    "cars": 89,
-    "fare": "計時：小型車120元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日12,000元/月。",
-    "hours": "08:00:00-19:00:00",
-    "match_m": 23,
-    "name": "嘟嘟房牯嶺2站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "08:00:00-19:00:00",
-   "operator": null,
-   "osm": {
-    "id": 1576470360,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1576470360"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

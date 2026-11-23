@@ -408,38 +408,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 105,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.820623,
-    "lng": 121.031934
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1449552053,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1449552053"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 48,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 114,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTcSYK2Q3aDQRLGkRjtl_oFA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -476,6 +451,7 @@
    "distance_m": 204,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJnYt6KwA3aDQRWfUWTy0ZuFs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -496,38 +472,13 @@
   },
   {
    "access": null,
-   "capacity": 13,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 231,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.819007,
-    "lng": 121.030524
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "鼎豐竹北東興停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1183614715,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1183614715"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 240,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJj1b7SB43aDQR7rk7pi0zmf8",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -554,6 +505,7 @@
    "distance_m": 242,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ45emtrk3aDQRu82DtCnDm0Y",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

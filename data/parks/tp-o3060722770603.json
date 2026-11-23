@@ -488,6 +488,7 @@
    "distance_m": 49,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJGV7hS8arQjQRdQKkCiwLBsY",
    "kind": "street_side",
    "kind_label": "路邊停車",
    "location": {
@@ -523,6 +524,7 @@
    "distance_m": 120,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJuVHfAkqrQjQRffF7FfyxsPw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -553,48 +555,13 @@
   },
   {
    "access": null,
-   "capacity": 2,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 125,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.04386,
-    "lng": 121.555294
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-文教地下室停車場",
-   "official": {
-    "address": "光復南路72巷73號地下1層",
-    "cars": 2,
-    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 29,
-    "name": "168停車聯盟-文教地下室停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 368877182,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/368877182"
-   },
-   "osm_name": "嘟嘟房 華視文教加盟場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 124,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 151,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJbR8Var6rQjQRj9tts5EMHyM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -621,78 +588,6 @@
     "url": "https://www.openstreetmap.org/way/368877200"
    },
    "osm_name": "華視二場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 14,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 154,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.0442,
-    "lng": 121.555845
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-文教二場",
-   "official": {
-    "address": "光復南路116巷7號1層(華視攝影大樓後方空地)",
-    "cars": 14,
-    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 44,
-    "name": "168停車聯盟-文教二場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 331650859,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/331650859"
-   },
-   "osm_name": "俥停 大安光復場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 2,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 155,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.044136,
-    "lng": 121.55553
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "168停車聯盟-文教地下室停車場",
-   "official": {
-    "address": "光復南路72巷73號地下1層",
-    "cars": 2,
-    "fare": "計時：小型車150元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 18,
-    "name": "168停車聯盟-文教地下室停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1340310151,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1340310151"
-   },
-   "osm_name": "應安168 華視三場",
    "verified_at": "2026-11-21"
   }
  ],

@@ -296,6 +296,7 @@
    "distance_m": 90,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJDxJ95VGpQjQRhDmOxJrKz4A",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -316,48 +317,13 @@
   },
   {
    "access": null,
-   "capacity": 14,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 97,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.032566,
-    "lng": 121.53024
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅永康二站停車場",
-   "official": {
-    "address": "永康街13巷8號旁空地",
-    "cars": 14,
-    "fare": "計時：小型車200元/時，停車全程以半小時計。月租：小型車全日15,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 6,
-    "name": "城市車旅永康二站停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 312302611,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/312302611"
-   },
-   "osm_name": "嘟嘟房",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 10,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 149,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ4Vmqg-6pQjQRdonLK_38bNs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -394,6 +360,7 @@
    "distance_m": 175,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJsQw8-52pQjQRWj9Fb4Q7_7w",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -420,58 +387,6 @@
     "url": "https://www.openstreetmap.org/way/674101024"
    },
    "osm_name": "27247Times金山南路平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 229,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.032398,
-    "lng": 121.527335
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 856333416,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/856333416"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 248,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.033055,
-    "lng": 121.532073
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "私有停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 208022098,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/208022098"
-   },
    "verified_at": "2026-11-21"
   }
  ],

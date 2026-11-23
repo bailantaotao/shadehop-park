@@ -196,6 +196,7 @@
    "distance_m": 156,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJNZ6M9q0ZaDQRsufltyDQPaw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -222,6 +223,7 @@
    "distance_m": 172,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJdeLGA2QZaDQRPKLc03SglsQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -248,6 +250,7 @@
    "distance_m": 199,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJqcJccmUZaDQREdlh82tp7HA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -274,6 +277,7 @@
    "distance_m": 231,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ06JM9c4YaDQRRon--MoYCNs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -309,6 +313,7 @@
    "distance_m": 343,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJv7TQfjAZaDQRwlwpDMTq1b8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -324,32 +329,6 @@
     "id": 1164327050,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1164327050"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 406,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.950256,
-    "lng": 121.298834
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大湳森林公園停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1206583568,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1206583568"
    },
    "verified_at": "2026-11-21"
   }

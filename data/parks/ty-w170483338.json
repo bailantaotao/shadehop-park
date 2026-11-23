@@ -332,6 +332,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfZzBHP8eaDQRfq3SrFjMaCU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -368,6 +369,7 @@
    "distance_m": 28,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJozP7EdsfaDQROANGIGiSkq4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -394,6 +396,7 @@
    "distance_m": 71,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJx_q6sZEfaDQRU_USOwhQd3c",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -409,94 +412,6 @@
     "id": 1276352263,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1276352263"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 161,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.001663,
-    "lng": 121.313334
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1276780901,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1276780901"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 263,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.002324,
-    "lng": 121.313895
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新永和停車場",
-   "official": {
-    "address": "桃園市桃園區三民路二段8號",
-    "cars": null,
-    "fare": "汽車：計時平日20元/時，假日30元/時。月租3500元/月。機車：計次10元/次，月租500元/月。",
-    "hours": null,
-    "match_m": 58,
-    "name": "新永和停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1515750532,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1515750532"
-   },
-   "osm_name": "清溪第三停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 361,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.002331,
-    "lng": 121.315995
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1027007344,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1027007344"
    },
    "verified_at": "2026-11-21"
   }

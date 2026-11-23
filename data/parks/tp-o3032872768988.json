@@ -326,38 +326,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 85,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.027796,
-    "lng": 121.529032
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1565795497,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1565795497"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 189,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJy1ws0zapQjQRXt6xgmkiOgw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -387,32 +362,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 212,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.027419,
-    "lng": 121.525773
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "嘟嘟房",
-   "opening_hours": null,
-   "operator": "寶盛國際股份有限公司",
-   "osm": {
-    "id": 591202410,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/591202410"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 20,
    "capacity_disabled": null,
@@ -420,6 +369,7 @@
    "distance_m": 228,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJsZxC7OOpQjQR3KvFz5mbw48",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -456,6 +406,7 @@
    "distance_m": 264,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ4Vmqg-6pQjQRdonLK_38bNs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -482,42 +433,6 @@
     "url": "https://www.openstreetmap.org/way/491580551"
    },
    "osm_name": "Times永康街平面停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 280,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.028365,
-    "lng": 121.525089
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "通通停潮州停車場",
-   "official": {
-    "address": "潮州街82巷12號空地",
-    "cars": 6,
-    "fare": "小型車：月租 全日10,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 2,
-    "name": "通通停潮州停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 361124413,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/361124413"
-   },
-   "osm_name": "潮州月租場",
    "verified_at": "2026-11-21"
   }
  ],

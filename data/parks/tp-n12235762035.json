@@ -517,6 +517,7 @@
    "distance_m": 69,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJtQ-6ZACrQjQRbFNZe6Ogy0Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -546,110 +547,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 131,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.023967,
-    "lng": 121.544075
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3315810090,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3315810090"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 136,
-   "distance_method": "straight_line",
-   "fee": "no",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.023749,
-    "lng": 121.544381
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 324901038,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/324901038"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 182,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.023814,
-    "lng": 121.544635
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3315810103,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3315810103"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 239,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.023846,
-    "lng": 121.545197
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3315810105,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3315810105"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 113,
    "capacity_disabled": "4",
@@ -657,6 +554,7 @@
    "distance_m": 262,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJkW_iEACrQjQRBtPy1VVnMc4",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {

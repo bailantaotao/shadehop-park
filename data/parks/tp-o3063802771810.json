@@ -395,32 +395,6 @@
  "park_name": "長壽公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 394,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.055502,
-    "lng": 121.555477
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 9831613976,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/9831613976"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 30,
    "capacity_disabled": null,
@@ -428,6 +402,7 @@
    "distance_m": 396,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJJ9HSGZWrQjQRjrPCF3VyuJg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -463,6 +438,7 @@
    "distance_m": 439,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfcSXjpOrQjQRvdi3XLFvOyU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -489,6 +465,7 @@
    "distance_m": 443,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJdfjrXZWrQjQRgCUc4I_2lB0",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -524,6 +501,7 @@
    "distance_m": 445,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ7WiEn-qrQjQRoyGQA9-90Ac",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -548,42 +526,6 @@
     "id": 558762935,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/558762935"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 24,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 453,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.04906,
-    "lng": 121.558317
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "光復北路平面停車場",
-   "official": {
-    "address": "八德路4段17巷9號",
-    "cars": 24,
-    "fare": "計時：小型車50元/時，停車全程以半小時計。本場未出售月票。",
-    "hours": "收費日：星期一至星期六，收費時間：07-20",
-    "match_m": 2,
-    "name": "光復北路平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "收費日：星期一至星期六，收費時間：07-20",
-   "operator": null,
-   "osm": {
-    "id": 753739165,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/753739165"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

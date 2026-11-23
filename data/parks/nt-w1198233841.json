@@ -277,6 +277,7 @@
    "distance_m": 293,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJwwvbn9qpQjQREv4I1rm0ZSg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -310,71 +311,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 324,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.001921,
-    "lng": 121.5003
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 3440914200,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3440914200"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": 23,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 326,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.007373,
-    "lng": 121.502989
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times 永和仁愛路停車場",
-   "official": {
-    "address": "新北市永和區仁愛路318號旁",
-    "cars": 23,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 41,
-    "name": "Times 永和仁愛路停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1246039397,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1246039397"
-   },
-   "osm_name": "World Gym 停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 393,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJodhjt_apQjQR192kE1FQVIQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -401,6 +341,7 @@
    "distance_m": 402,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJySFkrNepQjQRlTBZHA4A_j8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -425,32 +366,6 @@
     "id": 1060247645,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1060247645"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 511,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.000216,
-    "lng": 121.50051
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1416712237,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1416712237"
    },
    "verified_at": "2026-11-21"
   }

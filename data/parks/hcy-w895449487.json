@@ -87,60 +87,7 @@
   "url": "https://www.openstreetmap.org/way/895449487"
  },
  "park_name": "打中午活動公園",
- "parking": [
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 0,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.747383,
-    "lng": 120.975518
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 895449488,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/895449488"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 464,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.741848,
-    "lng": 120.977217
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新城風糖休閒園區停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 264456008,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/264456008"
-   },
-   "verified_at": "2026-11-21"
-  }
- ],
+ "parking": [],
  "playground": {
   "equipment": [],
   "fee": null,

@@ -204,6 +204,7 @@
    "distance_m": 96,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ_ch3US2nQjQRnppFOGi7IJA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -240,6 +241,7 @@
    "distance_m": 254,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJHxWElC-pQjQRCWV7ba3PnJw",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -266,6 +268,7 @@
    "distance_m": 377,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJF5dR9aypQjQRI2Rtx5HcJNM",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -302,6 +305,7 @@
    "distance_m": 448,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ8eAlfPypQjQRxU6eeFYuWDY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -328,58 +332,6 @@
     "url": "https://www.openstreetmap.org/way/1060408476"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 520,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.029684,
-    "lng": 121.444881
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1574727677,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1574727677"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 593,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.030718,
-    "lng": 121.449125
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 948654550,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/948654550"
-   },
    "verified_at": "2026-11-21"
   }
  ],

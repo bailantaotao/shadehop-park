@@ -447,6 +447,7 @@
    "distance_m": 11,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJh2lToYUhaDQRAmnl4-217r0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -470,61 +471,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 27,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.008156,
-    "lng": 121.207154
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times",
-   "opening_hours": null,
-   "operator": "台灣普客二四股份有限公司",
-   "osm": {
-    "id": 1209789909,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1209789909"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 84,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.009784,
-    "lng": 121.206999
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1209780643,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1209780643"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 106,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ8YgAuBUhaDQRlLSexG4n2Ow",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -551,6 +501,7 @@
    "distance_m": 113,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ3XWqoGUhaDQR3VtJVqwYeUg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -577,32 +528,6 @@
     "url": "https://www.openstreetmap.org/way/1013718941"
    },
    "osm_name": "宜舍中壢永發★uTagGo",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 135,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.007477,
-    "lng": 121.206639
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1209789908,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1209789908"
-   },
    "verified_at": "2026-11-21"
   }
  ],

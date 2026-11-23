@@ -269,6 +269,7 @@
    "distance_m": 41,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJvdUR39ioQjQRFllPQMjM-sU",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -295,6 +296,7 @@
    "distance_m": 168,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJscrZsdioQjQRLsjG-9sbbiA",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -318,35 +320,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 175,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070664,
-    "lng": 121.488118
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 495176464,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/495176464"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 395,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJgT8_HSepQjQRAttOb0zXDYU",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -362,58 +339,6 @@
     "id": 436187823,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/436187823"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 400,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070683,
-    "lng": 121.493601
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 508705845,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/508705845"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 445,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.07135,
-    "lng": 121.494047
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "台灣聯通停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 4340649186,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4340649186"
    },
    "verified_at": "2026-11-21"
   }

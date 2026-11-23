@@ -474,6 +474,7 @@
    "distance_m": 11,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJWVM9l9imQjQRh3Eye-JTkBA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -510,6 +511,7 @@
    "distance_m": 84,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJD7ZbDxynQjQRM3iKX_ZqHH0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -536,6 +538,7 @@
    "distance_m": 129,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJZcjleIynQjQRMMLHPVsV3DU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -560,114 +563,6 @@
     "id": 574181616,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/574181616"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 83,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 174,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.071194,
-    "lng": 121.367098
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "廣停七平面停車場",
-   "official": {
-    "address": "新北市林口區文化三路1段394巷及文化二路1段241巷交叉口",
-    "cars": 83,
-    "fare": "小型車計時20元;小型車計時30元;小型車月租2500元;身障車月租2000元;",
-    "hours": "0~24時",
-    "match_m": 34,
-    "name": "廣停七平面停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": "私人",
-   "osm": {
-    "id": 960949430,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/960949430"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 43,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 201,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070192,
-    "lng": 121.368752
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "樺山企業公園停車場",
-   "official": {
-    "address": "新北市林口區公園路125號旁空地",
-    "cars": 43,
-    "fare": "小型車計時100元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 18,
-    "name": "樺山企業公園停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1561417899,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1561417899"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 53,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 221,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.070653,
-    "lng": 121.370708
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "樺山企業忠孝停車場",
-   "official": {
-    "address": "新北市林口區忠孝路407號旁停車場",
-    "cars": 53,
-    "fare": "小型車計時100元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 24,
-    "name": "樺山企業忠孝停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 677575673,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/677575673"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

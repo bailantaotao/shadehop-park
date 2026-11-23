@@ -291,6 +291,7 @@
    "distance_m": 244,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJQ45pdhapQjQRQwODN2IPeUk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -321,84 +322,13 @@
   },
   {
    "access": null,
-   "capacity": 70,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 244,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.054614,
-    "lng": 121.457615
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times新莊中原路第5停車場",
-   "official": {
-    "address": "新北市新莊區中原路71號對面",
-    "cars": 70,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 32,
-    "name": "Times新莊中原路第5停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1549402177,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1549402177"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 70,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 272,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.054801,
-    "lng": 121.457503
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "Times新莊中原路第5停車場",
-   "official": {
-    "address": "新北市新莊區中原路71號對面",
-    "cars": 70,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 32,
-    "name": "Times新莊中原路第5停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1549402179,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1549402179"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 50,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 279,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ7XLuTVypQjQRStVWSfKv3YA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -435,6 +365,7 @@
    "distance_m": 282,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ89tbkICpQjQRoVTYhvGgVyc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -451,42 +382,6 @@
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1549402115"
    },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 29,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 292,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.054881,
-    "lng": 121.458155
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "鼎天餐飲店停車場",
-   "official": {
-    "address": "新北市新莊區中原路39號斜對面",
-    "cars": 29,
-    "fare": "小型車計時200元;",
-    "hours": "0~24時",
-    "match_m": 26,
-    "name": "鼎天餐飲店停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 4577164112,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4577164112"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

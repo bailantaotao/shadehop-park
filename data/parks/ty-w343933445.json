@@ -496,6 +496,7 @@
    "distance_m": 3,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJuVOJHFEjaDQRZDfoB_kbAQE",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -531,6 +532,7 @@
    "distance_m": 4,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJbYdy9EIjaDQRubXME_gm3-A",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -566,6 +568,7 @@
    "distance_m": 156,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJN9oWMzojaDQRcCBlsxzcn-E",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -595,41 +598,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 169,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.927804,
-    "lng": 121.253022
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "貿東停車場",
-   "official": {
-    "address": "桃園市中壢區平鎮區貿五路18號",
-    "cars": null,
-    "fare": "小型車臨時停車收費方式： 平日計時：每小時30元，當日最高收費150元 假日計時：每小時30元，當日最高收費200元  ​※ 相關停車須知皆以現場公告為準。",
-    "hours": null,
-    "match_m": 12,
-    "name": "貿東停車場",
-    "source": "tdx"
-   },
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 653772764,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/653772764"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": null,
    "capacity_disabled": null,
@@ -637,6 +605,7 @@
    "distance_m": 172,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ_w5KXgAjaDQRfJPtIdY_Ajk",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -663,32 +632,6 @@
     "url": "https://www.openstreetmap.org/way/1037702992"
    },
    "osm_name": "創新停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 178,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.926633,
-    "lng": 121.254841
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中正停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 752122758,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/752122758"
-   },
    "verified_at": "2026-11-21"
   }
  ],

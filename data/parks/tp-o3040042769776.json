@@ -329,6 +329,7 @@
    "distance_m": 127,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJFeetsPepQjQRj5u9-NsXM0I",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -365,6 +366,7 @@
    "distance_m": 231,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJLV0a_1WpQjQRCGm4MWfmzpk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -388,35 +390,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 364,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.033055,
-    "lng": 121.532073
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "私有停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 208022098,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/208022098"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 411,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJU9qrA4KpQjQRAVb4Aa7aHFA",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -443,6 +420,7 @@
    "distance_m": 412,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ7SYYPQCpQjQR9BQi_u-7k_A",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -469,42 +447,6 @@
     "url": "https://www.openstreetmap.org/way/1425491824"
    },
    "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 15,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 413,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.033936,
-    "lng": 121.530936
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "永康停車場",
-   "official": {
-    "address": "信義路2段243巷與信義路2段交叉口旁",
-    "cars": 15,
-    "fare": "小型車：計時 200元/時，停車全程以半小時計；月租 全日8,000元。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 6,
-    "name": "永康停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 391063766,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/391063766"
-   },
-   "osm_name": "City Parking停車場",
    "verified_at": "2026-11-21"
   }
  ],

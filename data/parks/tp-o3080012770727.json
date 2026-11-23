@@ -234,38 +234,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 115,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.043778,
-    "lng": 121.576156
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 967562084,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/967562084"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 49,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 323,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ5wXnPQCrQjQRO76m6KKiiLY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -296,38 +271,13 @@
   },
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 335,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.044139,
-    "lng": 121.578271
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "富璟建設建築用地",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 584368137,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/584368137"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 21,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 400,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJOflIdgCrQjQR4lNcNooFwMQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -364,6 +314,7 @@
    "distance_m": 410,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJp58MJwCrQjQRVz9KdztBzqg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -390,32 +341,6 @@
     "url": "https://www.openstreetmap.org/way/764466776"
    },
    "osm_name": "Hi PARKING 台北永吉路停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 415,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.041802,
-    "lng": 121.578765
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 582554684,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/582554684"
-   },
    "verified_at": "2026-11-21"
   }
  ],

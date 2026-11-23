@@ -152,100 +152,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 32,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 1,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.947103,
-    "lng": 121.496528
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新店區中國城停車場",
-   "official": {
-    "address": "新北市新店區富貴街9巷及如意街交叉口",
-    "cars": 32,
-    "fare": "小型車月租2000元;",
-    "hours": "0~24時",
-    "match_m": 7,
-    "name": "新店區中國城停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1175312177,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1175312177"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 103,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.947354,
-    "lng": 121.495739
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1175313617,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1175313617"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 152,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.945569,
-    "lng": 121.497574
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1175313618,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1175313618"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 224,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJIcf47agDaDQRlUHypnC3C60",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -272,6 +185,7 @@
    "distance_m": 348,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJZ5qvIQADaDQRVl3q7nQy7cI",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -287,32 +201,6 @@
     "id": 944191156,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/944191156"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 530,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.949756,
-    "lng": 121.501896
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 2251351927,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2251351927"
    },
    "verified_at": "2026-11-21"
   }

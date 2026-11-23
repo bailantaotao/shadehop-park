@@ -137,32 +137,6 @@
  "park_name": "民族公園",
  "parking": [
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 128,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.768997,
-    "lng": 121.054209
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "伍聯社停車場",
-   "opening_hours": null,
-   "operator": "伍聯社",
-   "osm": {
-    "id": 477059248,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/477059248"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 30,
    "capacity_disabled": null,
@@ -170,6 +144,7 @@
    "distance_m": 134,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ05u4U_I3aDQRMWmeXar8hgc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -199,32 +174,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 186,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.768582,
-    "lng": 121.053913
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "伍聯社第二停車場",
-   "opening_hours": null,
-   "operator": "伍聯社",
-   "osm": {
-    "id": 4704711231,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4704711231"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 10,
    "capacity_disabled": null,
@@ -232,6 +181,7 @@
    "distance_m": 226,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJKeGH3UA3aDQRs4-3veB87fs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -255,35 +205,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 234,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.772161,
-    "lng": 121.057075
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "公5停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1164615495,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1164615495"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 642,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJgZHkunU3aDQRMRkBULLeIjY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

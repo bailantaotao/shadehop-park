@@ -285,64 +285,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 133,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.068537,
-    "lng": 121.5291
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 859373280,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/859373280"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 139,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.068582,
-    "lng": 121.530122
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 859373278,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/859373278"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 114,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 177,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJn9R8xi6pQjQRwusKkfL0kVo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -369,114 +318,6 @@
     "url": "https://www.openstreetmap.org/way/857744135"
    },
    "osm_name": "iRent台北新生停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 114,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 227,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.068923,
-    "lng": 121.531077
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新生公園停車場",
-   "official": {
-    "address": "民族東路與吉林路口(新生公園溫水游泳池旁)",
-    "cars": 114,
-    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,500元/月。免費停車：機車。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 37,
-    "name": "新生公園停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 860129263,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/860129263"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 114,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 237,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 25.069035,
-    "lng": 121.531122
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新生公園停車場",
-   "official": {
-    "address": "民族東路與吉林路口(新生公園溫水游泳池旁)",
-    "cars": 114,
-    "fare": "計時：小型車週一至週五30元/時，週六至週日及政府行政機關放假之紀念日、民俗節日40元/時，停車全程以半小時計。月租：小型車全日4,500元/月。免費停車：機車。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 50,
-    "name": "新生公園停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 860129262,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/860129262"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 6,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 261,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.064564,
-    "lng": 121.53016
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "中華道明會停車場",
-   "official": {
-    "address": "吉林路378號地下1層",
-    "cars": 6,
-    "fare": "計時：120元/時，停車未滿1小時以1小時計算，逾1小時以上，未滿半小時以半小時計算。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 32,
-    "name": "中華道明會停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 944580785,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/944580785"
-   },
-   "osm_name": null,
    "verified_at": "2026-11-21"
   }
  ],

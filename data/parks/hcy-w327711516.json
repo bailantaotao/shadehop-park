@@ -387,6 +387,7 @@
    "distance_m": 31,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJybuLd6k3aDQRusP3hUx7ExU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -413,6 +414,7 @@
    "distance_m": 109,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ2XCmmak3aDQRXXGSesGFirI",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -439,6 +441,7 @@
    "distance_m": 111,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJXWwOu6k3aDQR9qxw_HyU4NQ",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -462,35 +465,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 117,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.803945,
-    "lng": 121.039119
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 1542787152,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1542787152"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 118,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJhZv-Owg3aDQRbuZzBFRQC2Q",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -506,32 +484,6 @@
     "id": 929612804,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/929612804"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 135,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.805693,
-    "lng": 121.039536
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "城市車旅",
-   "opening_hours": null,
-   "operator": "阜爾運通股份有限公司",
-   "osm": {
-    "id": 929612803,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/929612803"
    },
    "verified_at": "2026-11-21"
   }

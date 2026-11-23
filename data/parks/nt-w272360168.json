@@ -342,32 +342,6 @@
  "park_name": "復興公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 51,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.064729,
-    "lng": 121.654639
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 445898979,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/445898979"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": 379,
    "capacity_disabled": null,
@@ -375,6 +349,7 @@
    "distance_m": 64,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJN2IkCmxTXTQRvaQgPQ9IqWI",
    "kind": "multi-storey",
    "kind_label": "立體停車場",
    "location": {
@@ -404,58 +379,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 161,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.065427,
-    "lng": 121.657208
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "地下停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 7099705177,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/7099705177"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 259,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.063271,
-    "lng": 121.658701
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 547143610,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/547143610"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 27,
    "capacity_disabled": null,
@@ -463,6 +386,7 @@
    "distance_m": 418,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJVxTPms1TXTQRBduSdiTJn0g",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -499,6 +423,7 @@
    "distance_m": 446,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfYa8B2pTXTQR7EQiIpbTbNY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

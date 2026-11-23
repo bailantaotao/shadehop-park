@@ -235,58 +235,6 @@
  "park_name": "馥華森林公園",
  "parking": [
   {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 74,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.00536,
-    "lng": 121.445294
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "人人平安停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 2784801619,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2784801619"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 183,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.004417,
-    "lng": 121.444952
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大觀停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 2784798557,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/2784798557"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 88,
    "capacity_disabled": null,
@@ -294,6 +242,7 @@
    "distance_m": 217,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJQRsyfKsCaDQRksH1AUCyic8",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -330,6 +279,7 @@
    "distance_m": 239,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJBQpVbZgdaDQRKcOSisrB5C4",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -353,35 +303,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 281,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.003377,
-    "lng": 121.444746
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 256389596,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/256389596"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 286,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJE78YJ1MdaDQRVdaAEyxWksc",
    "kind": "carports",
    "kind_label": "停車場",
    "location": {

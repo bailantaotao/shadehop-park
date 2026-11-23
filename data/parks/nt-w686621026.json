@@ -126,6 +126,7 @@
    "distance_m": 123,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJKykCyGupQjQRLsRktpfVzss",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -152,6 +153,7 @@
    "distance_m": 284,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJHWa6FgCpQjQR5uwnMTM6qFQ",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -178,6 +180,7 @@
    "distance_m": 395,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJk0qNWUypQjQRnSMytpeu4zs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -198,38 +201,13 @@
   },
   {
    "access": null,
-   "capacity": 63,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 507,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.069493,
-    "lng": 121.465511
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "遙控賽車區停車場",
-   "opening_hours": null,
-   "operator": "歐特儀股份有限公司",
-   "osm": {
-    "id": 441731087,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/441731087"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 268,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 531,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJK8C7_-qoQjQRt-LAIdCxwh8",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -254,32 +232,6 @@
     "id": 440729765,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/440729765"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 68,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 551,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.061699,
-    "lng": 121.460283
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "捷運新北產業園區站轉乘停車場",
-   "opening_hours": null,
-   "operator": "應安停車場",
-   "osm": {
-    "id": 13514372102,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/13514372102"
    },
    "verified_at": "2026-11-21"
   }

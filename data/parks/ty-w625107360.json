@@ -138,60 +138,7 @@
   "url": "https://www.openstreetmap.org/way/625107360"
  },
  "park_name": "楓樹二號公園",
- "parking": [
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 277,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.003098,
-    "lng": 121.350268
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 630199822,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/630199822"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 793,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.99825,
-    "lng": 121.344906
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1039268244,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1039268244"
-   },
-   "verified_at": "2026-11-21"
-  }
- ],
+ "parking": [],
  "playground": {
   "equipment": [],
   "fee": null,

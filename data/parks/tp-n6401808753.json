@@ -358,6 +358,7 @@
    "distance_m": 137,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJfYsUbIipQjQR6PSpXb0HGCg",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -377,94 +378,6 @@
    "verified_at": "2026-11-21"
   },
   {
-   "access": "yes",
-   "capacity": 32,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 150,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.021908,
-    "lng": 121.536518
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "國立臺灣大學綜合體育館地下停車場",
-   "official": {
-    "address": "羅斯福路4段1號臺北市辛亥路二段39號對面",
-    "cars": 208,
-    "fare": "計時：小型車80元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。計次：機車20元/次，隔日另計，以00時為基準。月租：小型車全日9,000元/月，日間(07-18)7,000元/月，夜間(18-08)5,000元/月，機車全日600元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 54,
-    "name": "國立臺灣大學綜合體育館地下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": "國立臺灣大學",
-   "osm": {
-    "id": 12248026712,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/12248026712"
-   },
-   "osm_name": "凝態館地下停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 159,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.021501,
-    "lng": 121.538131
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1324162870,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1324162870"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
-   "capacity": 208,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 185,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "underground",
-   "kind_label": "地下停車場",
-   "location": {
-    "lat": 25.021748,
-    "lng": 121.535431
-   },
-   "maxheight_m": 1.9,
-   "method": "osm",
-   "name": "綜合體育館地下停車場",
-   "opening_hours": null,
-   "operator": "國立臺灣大學",
-   "osm": {
-    "id": 12248026713,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/12248026713"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": null,
    "capacity": 353,
    "capacity_disabled": null,
@@ -472,6 +385,7 @@
    "distance_m": 196,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ9dad7M-pQjQRN9M1F_dvjh8",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -487,32 +401,6 @@
     "id": 363983115,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/363983115"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 315,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "street_side",
-   "kind_label": "路邊停車",
-   "location": {
-    "lat": 25.017528,
-    "lng": 121.537318
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "路邊停車",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1324168716,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1324168716"
    },
    "verified_at": "2026-11-21"
   }

@@ -152,32 +152,6 @@
  "park_name": "十八尖山公園",
  "parking": [
   {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 0,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.792764,
-    "lng": 120.981542
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 257131841,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/257131841"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
    "access": "yes",
    "capacity": null,
    "capacity_disabled": null,
@@ -185,6 +159,7 @@
    "distance_m": 0,
    "distance_method": "straight_line",
    "fee": "no",
+   "google_place_id": "ChIJEcdiLuE1aDQRP59L4bWVcXk",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -211,6 +186,7 @@
    "distance_m": 1,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ9eNhEgs1aDQRwCWLd0F0_cM",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -231,38 +207,13 @@
   },
   {
    "access": null,
-   "capacity": 20,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 10,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.79208,
-    "lng": 120.976815
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "建華國中後方停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 325737086,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/325737086"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 90,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJQRaQIOA1aDQRpMKfiLn0vX4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -278,32 +229,6 @@
     "id": 257146098,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/257146098"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 92,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.787825,
-    "lng": 120.982998
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "高峰植物園停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1481651873,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1481651873"
    },
    "verified_at": "2026-11-21"
   }

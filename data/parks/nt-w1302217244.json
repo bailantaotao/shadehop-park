@@ -233,38 +233,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 3,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.979821,
-    "lng": 121.458382
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1276780956,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1276780956"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 35,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 102,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ4yP431QDaDQRWIPqWQiBdCo",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -295,100 +270,13 @@
   },
   {
    "access": null,
-   "capacity": 43,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 108,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.979168,
-    "lng": 121.457892
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "土城青福街停車場",
-   "official": {
-    "address": "新北市土城區青福街與青和街口東南側空地",
-    "cars": 43,
-    "fare": "小型車計時80元;小型車月租8000元;",
-    "hours": "0~24時",
-    "match_m": 2,
-    "name": "土城青福街停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 1276780957,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1276780957"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 116,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.980174,
-    "lng": 121.45656
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1075939212,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1075939212"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 128,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.980269,
-    "lng": 121.456091
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "俥亭停車",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1075939213,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1075939213"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 193,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ_wARPcUCaDQRCAmhdZwChKg",
    "kind": null,
    "kind_label": "停車場",
    "location": {

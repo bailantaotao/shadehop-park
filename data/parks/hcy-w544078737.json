@@ -102,38 +102,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 555,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.733002,
-    "lng": 121.087465
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 4107836660,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/4107836660"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 68,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 587,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJ3yt5D0hHaDQRgiRktapTMCw",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -158,110 +133,6 @@
     "id": 895449468,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/895449468"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 603,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.732864,
-    "lng": 121.083797
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": "竹東鎮立羽球館",
-   "osm": {
-    "id": 3351424078,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3351424078"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 682,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.722193,
-    "lng": 121.090196
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 557532157,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/557532157"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 692,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.733618,
-    "lng": 121.083332
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1458050067,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1458050067"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 696,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.733591,
-    "lng": 121.083348
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "大願寺停車場",
-   "opening_hours": null,
-   "operator": "大願寺",
-   "osm": {
-    "id": 3351424218,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/3351424218"
    },
    "verified_at": "2026-11-21"
   }

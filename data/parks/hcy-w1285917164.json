@@ -87,34 +87,7 @@
   "url": "https://www.openstreetmap.org/way/1285917164"
  },
  "park_name": null,
- "parking": [
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 689,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.914029,
-    "lng": 120.983953
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1117756170,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1117756170"
-   },
-   "verified_at": "2026-11-21"
-  }
- ],
+ "parking": [],
  "playground": {
   "equipment": [],
   "fee": null,

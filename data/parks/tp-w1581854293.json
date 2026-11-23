@@ -222,90 +222,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 260,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.069144,
-    "lng": 121.568958
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 229033347,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/229033347"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 403,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.062742,
-    "lng": 121.572298
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 349844551,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/349844551"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 417,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.064271,
-    "lng": 121.56442
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 364650966,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/364650966"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 53,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 419,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ-QHNMACtQjQR6hYJG-rUhbk",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -330,68 +253,6 @@
     "id": 286924265,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/286924265"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 520,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.063565,
-    "lng": 121.573418
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 345206698,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/345206698"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": 403,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 592,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.059989,
-    "lng": 121.569615
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "基隆河5、6號水門堤外觀山段河濱公園附設平面停車場",
-   "official": {
-    "address": "基隆河5、6號水門堤外觀山段",
-    "cars": 403,
-    "fare": "小型車：計時 週一~週五20元/時，最高上限100元/日，隔日另計，週六、週日20元/時，停車全程以半小時計。機車：免費停車。",
-    "hours": "收費日：星期一至星期日，收費時間：9時-17時",
-    "match_m": 15,
-    "name": "基隆河5、6號水門堤外觀山段河濱公園附設平面停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "收費日：星期一至星期日，收費時間：9時-17時",
-   "operator": null,
-   "osm": {
-    "id": 358272598,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/358272598"
    },
    "osm_name": null,
    "verified_at": "2026-11-21"

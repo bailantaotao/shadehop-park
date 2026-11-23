@@ -231,6 +231,7 @@
    "distance_m": 111,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJa_v28oUfaDQRO1uEwFR5ce0",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -251,38 +252,13 @@
   },
   {
    "access": "yes",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 192,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.011553,
-    "lng": 121.320994
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "和雲行動",
-   "opening_hours": null,
-   "operator": "和泰汽車",
-   "osm": {
-    "id": 558777067,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/558777067"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "yes",
    "capacity": 20,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 279,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJESLoDwAfaDQRMiNtMJ8vFnc",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -309,6 +285,7 @@
    "distance_m": 304,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJvVNymuwfaDQROXbwtW07aOY",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -335,6 +312,7 @@
    "distance_m": 359,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJoy9zjkMfaDQRjJVCukqoIoE",
    "kind": "street_side",
    "kind_label": "路邊停車",
    "location": {
@@ -361,6 +339,7 @@
    "distance_m": 381,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJpXAMJq0faDQRJmXmZ9b406E",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

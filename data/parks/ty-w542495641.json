@@ -170,60 +170,7 @@
   "url": "https://www.openstreetmap.org/way/542495641"
  },
  "park_name": null,
- "parking": [
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 15,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.953965,
-    "lng": 121.326757
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 542495647,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/542495647"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 118,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.952986,
-    "lng": 121.325527
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "八德市清潔隊",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 542495648,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/542495648"
-   },
-   "verified_at": "2026-11-21"
-  }
- ],
+ "parking": [],
  "playground": {
   "equipment": [],
   "fee": null,

@@ -393,6 +393,7 @@
    "distance_m": 40,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJU7seUjWtQjQRy_rJXiBYhug",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -423,48 +424,13 @@
   },
   {
    "access": null,
-   "capacity": 16,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 93,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.074924,
-    "lng": 121.57689
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "久誼展業瑞光路停車場",
-   "official": {
-    "address": "瑞光路196號旁空地",
-    "cars": 16,
-    "fare": "計時：小型車200元/時，停車未滿1小時以1小時計，逾1小時以上，未滿半小時以半小時計。月租：小型車全日20,000元/月，日間(08-18)16,000元/月，夜間(18-08)12,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 2,
-    "name": "久誼展業瑞光路停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1424072194,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1424072194"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 33,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 232,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJTcWUgnusQjQRQfHya4506ss",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -501,6 +467,7 @@
    "distance_m": 294,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJLykddmOsQjQRZ8PekoETjFA",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -531,48 +498,13 @@
   },
   {
    "access": null,
-   "capacity": 12,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 305,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.078492,
-    "lng": 121.577633
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "便利停車場港墘站",
-   "official": {
-    "address": "內湖路1段596號",
-    "cars": 12,
-    "fare": "計時：小型車60元/時(08-22)、10元/時(22-08)，停車全程以半小時計。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 34,
-    "name": "便利停車場港墘站",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 1474846090,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1474846090"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 88,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 316,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ1ULrenysQjQRD85pc64fvt8",
    "kind": null,
    "kind_label": "停車場",
    "location": {

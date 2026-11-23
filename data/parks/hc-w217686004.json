@@ -229,6 +229,7 @@
    "distance_m": 23,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJAchg2RI2aDQRc3KdSx5zzL4",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -252,35 +253,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 66,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.793871,
-    "lng": 121.001406
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "順發停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1294931338,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1294931338"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 73,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJoXpf7LA3aDQROnE66jQI5-k",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -296,84 +272,6 @@
     "id": 225951795,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/225951795"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 76,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "multi-storey",
-   "kind_label": "立體停車場",
-   "location": {
-    "lat": 24.7941,
-    "lng": 121.001285
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "立體停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 779854521,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/779854521"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 201,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.797087,
-    "lng": 121.003449
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "新竹市立馬偕兒童醫院停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 10024605149,
-    "type": "node",
-    "url": "https://www.openstreetmap.org/node/10024605149"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 371,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.79056,
-    "lng": 121.003323
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 856342948,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/856342948"
    },
    "verified_at": "2026-11-21"
   }

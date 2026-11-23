@@ -117,35 +117,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 136,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.970821,
-    "lng": 121.264093
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "A區停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 541998304,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/541998304"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 245,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJjSzaFtUfaDQRlzl-FRoyWLY",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -161,110 +136,6 @@
     "id": 551856459,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/551856459"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 287,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.970403,
-    "lng": 121.265594
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 541999521,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/541999521"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 317,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.974625,
-    "lng": 121.260604
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 542024808,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/542024808"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 320,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.97169,
-    "lng": 121.25885
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 8383516,
-    "type": "relation",
-    "url": "https://www.openstreetmap.org/relation/8383516"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 350,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 24.976254,
-    "lng": 121.262653
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": "慈善寺停車場",
-   "osm": {
-    "id": 991814510,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/991814510"
    },
    "verified_at": "2026-11-21"
   }

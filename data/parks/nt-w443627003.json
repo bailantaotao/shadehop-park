@@ -134,126 +134,13 @@
  "parking": [
   {
    "access": null,
-   "capacity": 9,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 103,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.01616,
-    "lng": 121.413612
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "聯永物業股份有限公司-樹林三俊站停車場",
-   "official": {
-    "address": "新北市樹林區三俊街65巷旁",
-    "cars": 9,
-    "fare": "小型車計時60元;小型車月租6000元;",
-    "hours": "0~24時",
-    "match_m": 28,
-    "name": "聯永物業股份有限公司-樹林三俊站停車場",
-    "source": "newtaipei"
-   },
-   "opening_hours": "0~24時",
-   "operator": null,
-   "osm": {
-    "id": 414220681,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/414220681"
-   },
-   "osm_name": null,
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 195,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.017102,
-    "lng": 121.412168
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1072544050,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1072544050"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": "customers",
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 488,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.021011,
-    "lng": 121.417518
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 572819569,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/572819569"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 498,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.020757,
-    "lng": 121.411603
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 1453045172,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/1453045172"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 544,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJDYPolpynQjQRYqrJhuAFYSc",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -269,32 +156,6 @@
     "id": 432366866,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/432366866"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 574,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 25.013312,
-    "lng": 121.409913
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 271099161,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/271099161"
    },
    "verified_at": "2026-11-21"
   }

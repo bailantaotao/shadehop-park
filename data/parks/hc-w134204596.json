@@ -304,6 +304,7 @@
    "distance_m": 59,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJW_OP7Fo3aDQRTkOx1koy8ok",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -330,6 +331,7 @@
    "distance_m": 117,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJ_7WGbgc3aDQRdeuWwLuCy58",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -356,6 +358,7 @@
    "distance_m": 142,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJQVkOWQA3aDQRWayMjPM2qOs",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -382,6 +385,7 @@
    "distance_m": 143,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJt9RActg3aDQRP48ESKwPQRU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -397,58 +401,6 @@
     "id": 1168956200,
     "type": "way",
     "url": "https://www.openstreetmap.org/way/1168956200"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 145,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.786136,
-    "lng": 121.017386
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992098806,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992098806"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 222,
-   "distance_method": "straight_line",
-   "fee": null,
-   "kind": null,
-   "kind_label": "停車場",
-   "location": {
-    "lat": 24.78608,
-    "lng": 121.022526
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 992970530,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/992970530"
    },
    "verified_at": "2026-11-21"
   }

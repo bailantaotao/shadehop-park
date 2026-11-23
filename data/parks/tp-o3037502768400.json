@@ -280,6 +280,7 @@
    "distance_m": 32,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJw0dTAiqpQjQRPTDo-0KyZns",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {
@@ -316,6 +317,7 @@
    "distance_m": 58,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJEyXGhIipQjQRmCrcIGOu6Ow",
    "kind": "underground",
    "kind_label": "地下停車場",
    "location": {
@@ -346,48 +348,13 @@
   },
   {
    "access": null,
-   "capacity": 89,
-   "capacity_disabled": null,
-   "capacity_parent": null,
-   "distance_m": 84,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.022445,
-    "lng": 121.533867
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "辛亥高架橋下停車場",
-   "official": {
-    "address": "新生南路、辛亥高架橋下",
-    "cars": 89,
-    "fare": "計時：小型車(含大型重型機車)30元/時(07-21:30)、10元/時(21:30-07)，全程以半小時計費。月租：小型車全日4,000元/月。",
-    "hours": "00:00:00-23:59:59",
-    "match_m": 20,
-    "name": "辛亥高架橋下停車場",
-    "source": "taipei"
-   },
-   "opening_hours": "00:00:00-23:59:59",
-   "operator": null,
-   "osm": {
-    "id": 751353369,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/751353369"
-   },
-   "osm_name": "辛亥路橋下停車場",
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
    "capacity": 6,
    "capacity_disabled": null,
    "capacity_parent": null,
    "distance_m": 183,
    "distance_method": "straight_line",
    "fee": null,
+   "google_place_id": "ChIJN8hhHACpQjQRvUOXpXpl8C0",
    "kind": null,
    "kind_label": "停車場",
    "location": {
@@ -421,35 +388,10 @@
    "capacity": null,
    "capacity_disabled": null,
    "capacity_parent": null,
-   "distance_m": 253,
-   "distance_method": "straight_line",
-   "fee": "yes",
-   "kind": "surface",
-   "kind_label": "平面停車場",
-   "location": {
-    "lat": 25.023607,
-    "lng": 121.530044
-   },
-   "maxheight_m": null,
-   "method": "osm",
-   "name": "平面停車場",
-   "opening_hours": null,
-   "operator": null,
-   "osm": {
-    "id": 544370710,
-    "type": "way",
-    "url": "https://www.openstreetmap.org/way/544370710"
-   },
-   "verified_at": "2026-11-21"
-  },
-  {
-   "access": null,
-   "capacity": null,
-   "capacity_disabled": null,
-   "capacity_parent": null,
    "distance_m": 266,
    "distance_method": "straight_line",
    "fee": "yes",
+   "google_place_id": "ChIJR_ww5dOpQjQRbek2LFOlgRU",
    "kind": "surface",
    "kind_label": "平面停車場",
    "location": {

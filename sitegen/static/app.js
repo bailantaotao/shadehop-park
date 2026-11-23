@@ -1038,11 +1038,9 @@
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (w) {
         var rainy = w.pop !== null && w.pop >= 60, msg = "", ico = "", undo = "";
         if (rainy) {
-          ico = "rain"; msg = where.district + "未來 3 小時降雨機率 " + w.pop + "%" + (w.weather ? "（" + w.weather + "）" : "") + "，已幫你開啟「下雨可玩」。";
-          if (!filters.rain) {
-            filters.rain = true; document.querySelector('[data-filter="rain"]').setAttribute("aria-pressed", "true");
-            undo = '<button type="button" class="link" data-clear="rain">不用，顯示全部</button>';
-          }
+          // Say it, but leave the filter alone: whether to narrow the map is the parent's call.
+          ico = "rain"; msg = where.district + "未來 3 小時降雨機率 " + w.pop + "%" + (w.weather ? "（" + w.weather + "）" : "") + "。";
+          if (!filters.rain) undo = '<button type="button" class="link" data-set="rain">只看下雨可玩的公園</button>';
         } else if (w.uv !== null && w.uv >= 6) {
           ico = "sun"; msg = where.district + "今天紫外線指數 " + w.uv + "，挑標示「適合」的公園比較不會曬。";
         }
@@ -1057,6 +1055,8 @@
   $("#weather").addEventListener("click", function (e) {
     var b = e.target.closest("[data-clear]");
     if (b) { clearFilter(b.dataset.clear); b.remove(); }
+    var on = e.target.closest("[data-set]");
+    if (on) { var chip = document.querySelector('[data-filter="' + on.dataset.set + '"]'); if (chip && chip.getAttribute("aria-pressed") !== "true") chip.click(); on.remove(); }
   });
 
   // ------------------------------------------------------- regions & view
